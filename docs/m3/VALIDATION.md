@@ -54,6 +54,7 @@ CPU最终suite runs/m3-cpu-20261010T053356468174Z/manifest.json和0..5.log：六
 最终白名单联合校验gpu-01执行 `python3 scripts/m3_validate_public.py` exit0；核对源/binary、跨机hash成员、520样本/400非warmup/20分布以及4652条collective成员，输出及退出码保存runs/m3-final-public/validation.log、validation.exit，公开public-validation.json，该项PASS。首次调用误用不存在的Python路径exit127，原日志runs/m3-final-node-0/public-validation.log与.exit保留，未发生GPU操作；改用本阶段其它CPU检查一致的python3后新日志exit0。敏感原始数据不离开服务器，GitHub只同步源/文档/白名单样本。
 公开命令的地址/UUID脱敏补强后，同一只读联合核验再执行一次exit0，日志runs/m3-final-public/validation2.log与validation2.exit；未改变实验行、rank、duration或分布。
 CSV导出默认CRLF令git diff --check报告尾部空白exit2，原输出保存runs/m3-final-public/csv-preformat-diff.log/.exit。只把公开CSV换行改为LF，并逐字段比较确认完全相同（csv-format.json）；导出器固定LF。联合核验validation3.log通过，暂存diff-check.log为空且exit0。一次提交因服务器没有Git作者配置exit128，不影响测试；使用本阶段已有提交身份的单命令Git配置重试，无全局配置改动。
+收尾规范化之后的实际完整命令/退出码/日志统一保存在gpu-01 runs/m3-final-public/final-manifest.json：python3 scripts/m3_validate_public.py、git add、git diff --cached --check、git -c user.name=Codex -c user.email=codex@localhost commit、python3 runs/m3-package-publish.py均exit0，逐项final-0.log至final-4.log。GitHub首份41个变化blob和完整tree匹配、Draft PR分支回读见SYNC.json。GitHub操作不作为GPU实验PASS依据。
 
 ## 未覆盖
 真实default stream Profile、混合communicator Group、多设备/捕获/非阻塞InProgress、异步初始化、并发多线程Profile、未包装NCCL API与真实CUDA错误注入均NOT_RUN/UNSUPPORTED；CPU mock不替代GPU验收。未做GPU降频/OOM/网络拥塞/MoE/BOCD/Redis/M4自动定位，也未做论文20s自动窗口/正式吞吐开销比较。

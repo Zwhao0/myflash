@@ -1,0 +1,231 @@
+{
+  "status": "PASS",
+  "authoritative_source": "gpu-01:/home/campus/zhangweihao/myflash",
+  "source_commit": "831c53e7e023302e30ea1267f44db7c357f6e608",
+  "source_tree": "c4ce7dd1b5740e10e7c30d2966279662064570a8",
+  "source_branch": "codex/m3-profile",
+  "reviewed_m2_source_commit": "64badbf5b09fba37217fab89c423bd530750dc2b",
+  "reviewed_m2_tree": "79a1254d7a4adcc529b005ab6a87a34bcf2e2f1d",
+  "reviewed_m2_pr_latest": "f8316cf555ea8747e5257e5614de446538629e45",
+  "github_parent": "672e82aaeb100b2660aca97de6c58040262d413a",
+  "github_commit": "eebe891d46f107bc3e978f7b7c14443774680c0e",
+  "github_tree": "c4ce7dd1b5740e10e7c30d2966279662064570a8",
+  "github_branch": "codex/m3-profile",
+  "pull_request": "https://github.com/Zwhao0/myflash/pull/2",
+  "draft": true,
+  "merged": false,
+  "main_updated_by_m3": false,
+  "raw_sensitive_logs_uploaded": false,
+  "blob_count": 41,
+  "all_blob_shas_equal": true,
+  "complete_tree_equal": true,
+  "branch_head_readback": true,
+  "files": [
+    {
+      "path": "GAPS.md",
+      "mode": "100644",
+      "sha": "36229e488fddbc80fd6692ee410da725afdbb38c"
+    },
+    {
+      "path": "STATUS.md",
+      "mode": "100644",
+      "sha": "fbb7428732c692e277a3d7eef3fbc8cc4dcb897f"
+    },
+    {
+      "path": "docs/m3/DESIGN.md",
+      "mode": "100644",
+      "sha": "a413a1af1579dfb189c3d600077a0edcc37f1b9d"
+    },
+    {
+      "path": "docs/m3/RESULTS.md",
+      "mode": "100644",
+      "sha": "e07876d3107bb8d15ad7132a5f0628b48be3e0fe"
+    },
+    {
+      "path": "docs/m3/SOURCES.md",
+      "mode": "100644",
+      "sha": "e4c60cd31d16bba836660954e7daa04405ae945e"
+    },
+    {
+      "path": "docs/m3/VALIDATION.md",
+      "mode": "100644",
+      "sha": "08bba0219eb6c7169a608875e549e3655bf1a3d3"
+    },
+    {
+      "path": "docs/m3/baseline-hashes.json",
+      "mode": "100644",
+      "sha": "631651a1a0d89ad60b3b001281932948b37c8dc1"
+    },
+    {
+      "path": "docs/m3/distributions-node-0.csv",
+      "mode": "100644",
+      "sha": "152e3be88d39d59329caa049b2a7dbc948ac763d"
+    },
+    {
+      "path": "docs/m3/distributions-node-1.csv",
+      "mode": "100644",
+      "sha": "cfe23ad7814f1d79fd55dad659167beed4b443d3"
+    },
+    {
+      "path": "docs/m3/evidence-node-0.json",
+      "mode": "100644",
+      "sha": "57845f949aa1d49446fa5eb4b210d9573c5f2acd"
+    },
+    {
+      "path": "docs/m3/evidence-node-1.json",
+      "mode": "100644",
+      "sha": "1bf9ddbc50d08161ab65d7668630b200304e0258"
+    },
+    {
+      "path": "docs/m3/final-validation-node-0.json",
+      "mode": "100644",
+      "sha": "f1d8b9ed4dcfdd0bfba85c36207319203815e890"
+    },
+    {
+      "path": "docs/m3/final-validation-node-1.json",
+      "mode": "100644",
+      "sha": "483e94dd9e2120568e78c292a9bf29636f78f0b0"
+    },
+    {
+      "path": "docs/m3/postflight-node-0.json",
+      "mode": "100644",
+      "sha": "46e04e1b957f4f7d089d088eedcdd1c8b0a97ae7"
+    },
+    {
+      "path": "docs/m3/postflight-node-1.json",
+      "mode": "100644",
+      "sha": "c687808f64e17f5c7f52c41dd725cd7e3d732458"
+    },
+    {
+      "path": "docs/m3/profile-samples-node-0.csv",
+      "mode": "100644",
+      "sha": "8394a700db275bea7a8474e638f66f7e53725291"
+    },
+    {
+      "path": "docs/m3/profile-samples-node-1.csv",
+      "mode": "100644",
+      "sha": "97804d2b516cff723f69c4de4d3bd75acecb1a9f"
+    },
+    {
+      "path": "docs/m3/public-validation.json",
+      "mode": "100644",
+      "sha": "fd94a6e63db1880a4e156bd404824549431d98e3"
+    },
+    {
+      "path": "docs/m3/samples-node-0.csv",
+      "mode": "100644",
+      "sha": "32b86fb8fda4e0722a7ba5820059dae05e103b0f"
+    },
+    {
+      "path": "docs/m3/samples-node-1.csv",
+      "mode": "100644",
+      "sha": "939c559f88029f958a92417219d5d6e519af7cbb"
+    },
+    {
+      "path": "flash/reader.py",
+      "mode": "100644",
+      "sha": "4f380c95dbfe53d03e70016fc4b19eb760b12ca8"
+    },
+    {
+      "path": "native/probe.cpp",
+      "mode": "100644",
+      "sha": "b0b3244f5b5b9c81972a19fe988c5e374f0e288c"
+    },
+    {
+      "path": "native/ring.cpp",
+      "mode": "100644",
+      "sha": "06f393b79729baf90ea0617d1a18d76a63e47318"
+    },
+    {
+      "path": "native/ring.hpp",
+      "mode": "100644",
+      "sha": "88101dd36e6e68a4c89ade78c33f1f09bf883367"
+    },
+    {
+      "path": "scripts/m3_build.py",
+      "mode": "100644",
+      "sha": "5f61f74f63ace43da62b33112242f876005d1ea9"
+    },
+    {
+      "path": "scripts/m3_cpu_suite.py",
+      "mode": "100644",
+      "sha": "710d2aa31456adfd4ec5bf0d45e3895f65410e35"
+    },
+    {
+      "path": "scripts/m3_export.py",
+      "mode": "100644",
+      "sha": "e3ea43e885e66900dfd7a6f4311ccdb046d993ac"
+    },
+    {
+      "path": "scripts/m3_launch.py",
+      "mode": "100644",
+      "sha": "3140096454ca9c507f7dad643c799baa578122ab"
+    },
+    {
+      "path": "scripts/m3_postflight.py",
+      "mode": "100644",
+      "sha": "9dbacdead3b797c95b7e73bd1cfebde78c3dc3ae"
+    },
+    {
+      "path": "scripts/m3_run_node.py",
+      "mode": "100644",
+      "sha": "0d371dae69dcf80415d7ac26e89c2f5f7720fe89"
+    },
+    {
+      "path": "scripts/m3_validate_all.py",
+      "mode": "100644",
+      "sha": "723308eb6fcfba6122fab58cdbecb72c3f614d10"
+    },
+    {
+      "path": "scripts/m3_validate_public.py",
+      "mode": "100644",
+      "sha": "dcb64ac115914aa2886b10b6bf807aa28ea003eb"
+    },
+    {
+      "path": "scripts/m3_verify.py",
+      "mode": "100644",
+      "sha": "aef2c05d237781914ef856d23ca92df2e7212c05"
+    },
+    {
+      "path": "tasks/03_profile.md",
+      "mode": "100644",
+      "sha": "aa3fb0a92dee75dda5a17ae23183a0c58462dd31"
+    },
+    {
+      "path": "tests/m3_hook.py",
+      "mode": "100644",
+      "sha": "bcc7402c1ff57a3ba36de0a97715dbef897a79ab"
+    },
+    {
+      "path": "tests/m3_mechanism.py",
+      "mode": "100644",
+      "sha": "7b3da6eb21a5a3fa7531b4caba8a85337584296b"
+    },
+    {
+      "path": "tests/m3_mock_cuda.cpp",
+      "mode": "100644",
+      "sha": "f80a13ed569e3eaf3d94ac539c9d32d6edc02e82"
+    },
+    {
+      "path": "tests/m3_mock_nccl.cpp",
+      "mode": "100644",
+      "sha": "08307f14346de41d288592ccbb4624c9d82fb9c2"
+    },
+    {
+      "path": "tests/m3_reader.py",
+      "mode": "100644",
+      "sha": "ac2b16dc1e426d2cb0864a7bb489942c2783e03e"
+    },
+    {
+      "path": "tests/m3_regression.py",
+      "mode": "100644",
+      "sha": "91703d66c700fdf6d8947c240a1e5afa7728170e"
+    },
+    {
+      "path": "tests/m3_validation.py",
+      "mode": "100644",
+      "sha": "4d55b4c83de90f5ed9cb301a4eb0b2a9c0fe9029"
+    }
+  ],
+  "note": "Receipt records the reviewed implementation/evidence snapshot. This receipt and its STATUS entry form a subsequent documentation-only commit; final heads/tree are recorded outside the tree in .git/m3-final-sync.json. Source and GitHub commit histories differ; equality is established by the complete tree."
+}

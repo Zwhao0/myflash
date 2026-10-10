@@ -111,3 +111,5 @@ GitHub审核分支已发布：codex/m2-monitor；Draft PR https://github.com/Zwh
 最终两节点Probe SHA256 c9f6987d35d2bff32aed205c2bac0741a41fe6804861b2e82450f4369c541e77与核心源hash完全相同；两节点检查62/50个本轮rank PID、剩余进程/GPU PID/shm均0；单run<=300s、预检3072MiB余量、1536目标/2048运行末界限，最高约1058MiB。Profile的stop等待独立统计，AR02全rank之和35.651ms/DDP02 122.267ms，不当墙钟开销或无开销结论。
 首轮header重载build exit1、gpu-02 postflight因源Git对象未导入exit1/底层128、一次GitHub连接器查询传输失败均保留。postflight改为审批源blob hash比较，范围不变、两节点新run/日志exit0。原敏感实验日志只在服务器，公开520机制原始样本/完整分布与其它Profile成员数据均白名单导出、不改原时延/标签。
 下一唯一任务：用户审核M3交付及G09适用边界；未经明确通过不进入M4。未授权/未执行降频、OOM、网络拥塞、其它作业终止、Redis、BOCD、自动检测/两阶段定位或训练恢复。GitHub审核分支/PR及完整tree回读结果以docs/m3/SYNC.json或后续回执为准。
+
+M3审核发布已完成：Draft PR https://github.com/Zwhao0/myflash/pull/2 ，分支codex/m3-profile。从权威gpu-01源831c53e7e023302e30ea1267f44db7c357f6e608同步到GitHub eebe891d46f107bc3e978f7b7c14443774680c0e；41个变化blob及完整tree c4ce7dd1b5740e10e7c30d2966279662064570a8逐SHA完全相同，PR分支回读PASS，main保持672e82aa且M3未合并。公开回执docs/m3/SYNC.json；本回执/状态后续仅文档提交的最终双方SHA/tree在.git/m3-final-sync.json保存。收尾联合验证与diff/commit命令、退出码、日志见服务器runs/m3-final-public/final-manifest.json，均0。M3结束，停止等待审核；M4 NOT_RUN。
