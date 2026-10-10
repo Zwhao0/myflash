@@ -1,0 +1,30 @@
+{
+  "created": "2026-10-10",
+  "kind": "planning_and_task_kit_not_runtime_implementation",
+  "source_filename": "中文论文(20261010-013855).pdf",
+  "source_sha256": "1221fe9eb75d19084b786265114b8a9a91dc1df5b96950ddd47bc827333470db",
+  "source_pdf_pages": [
+    35,
+    64
+  ],
+  "source_printed_pages": [
+    19,
+    48
+  ],
+  "excerpt_sha256": "49694130e79e0f08e17aec8ad2f7955f2551cf0942f076389d8b11cf2aebadaa",
+  "excerpt_validation": {
+    "page_count": 30,
+    "all_page_text_equal": true,
+    "pixel_equal_samples_source_pages": [
+      35,
+      40,
+      46,
+      52,
+      64
+    ]
+  },
+  "greyhound_code_search_snapshot": "d641b3997c17de700e1ef7d37e353418df7e336d",
+  "server_execution": "NOT_RUN",
+  "kit_version": "2_clean_start",
+  "project_policy": "new repository only; never access prior failed implementation"
+}

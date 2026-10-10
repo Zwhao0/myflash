@@ -1,0 +1,104 @@
+[
+  {
+    "command": "git rev-parse --show-toplevel",
+    "cwd": "/home/campus/zhangweihao/myflash",
+    "exit_code": 128,
+    "log": "docs/m0/01_bootstrap.log"
+  },
+  {
+    "command": "git init -b main",
+    "cwd": "/home/campus/zhangweihao/myflash",
+    "exit_code": 0,
+    "log": "docs/m0/01_bootstrap.log"
+  },
+  {
+    "command": "git rev-parse --show-toplevel",
+    "cwd": "/home/campus/zhangweihao/myflash",
+    "exit_code": 0,
+    "log": "docs/m0/01_bootstrap.log"
+  },
+  {
+    "command": "git status --short --branch",
+    "cwd": "/home/campus/zhangweihao/myflash",
+    "exit_code": 0,
+    "log": "docs/m0/01_bootstrap.log"
+  },
+  {
+    "command": "git rev-parse --show-toplevel",
+    "cwd": "/home/campus/zhangweihao/myflash",
+    "exit_code": 0,
+    "log": "docs/m0/02_verify.log"
+  },
+  {
+    "command": "git branch --show-current",
+    "cwd": "/home/campus/zhangweihao/myflash",
+    "exit_code": 0,
+    "log": "docs/m0/02_verify.log"
+  },
+  {
+    "command": "git remote",
+    "cwd": "/home/campus/zhangweihao/myflash",
+    "exit_code": 0,
+    "log": "docs/m0/02_verify.log"
+  },
+  {
+    "command": "git check-ignore --no-index build/example example.so __pycache__/x.pyc .venv/x runs/example .env config.local.json '服务器.md' temporary.log",
+    "cwd": "/home/campus/zhangweihao/myflash",
+    "exit_code": 0,
+    "log": "docs/m0/02_verify.log"
+  },
+  {
+    "command": "git check-ignore --no-index AGENTS.md SPEC.md ARCHITECTURE.md SOURCE_MAP.md ENVIRONMENT_PLAN.md docs/m0/01_bootstrap.log",
+    "cwd": "/home/campus/zhangweihao/myflash",
+    "exit_code": 1,
+    "log": "docs/m0/02_verify.log"
+  },
+  {
+    "command": "python3 -c 'from pathlib import Path\nimport hashlib,json,subprocess,shlex,platform,sys\nroot=Path('\"'\"'/home/campus/zhangweihao/myflash'\"'\"')\ncommands=json.loads((root/'\"'\"'docs/m0/commands.json'\"'\"').read_text())\nlines=['\"'\"'HOST: '\"'\"'+platform.node(),'\"'\"'CWD: '\"'\"'+str(root)]\ndef run(args, expected=0):\n r=subprocess.run(args,cwd=root,capture_output=True,text=True)\n lines.extend(['\"'\"'COMMAND: '\"'\"'+shlex.join(args),'\"'\"'STDOUT:\\n'\"'\"'+r.stdout,'\"'\"'STDERR:\\n'\"'\"'+r.stderr,'\"'\"'EXIT_CODE: '\"'\"'+str(r.returncode)])\n commands.append({'\"'\"'command'\"'\"':shlex.join(args),'\"'\"'cwd'\"'\"':str(root),'\"'\"'exit_code'\"'\"':r.returncode,'\"'\"'log'\"'\"':'\"'\"'docs/m0/02_verify.log'\"'\"'})\n assert r.returncode==expected, args\n return r\nassert run(['\"'\"'git'\"'\"','\"'\"'rev-parse'\"'\"','\"'\"'--show-toplevel'\"'\"']).stdout.strip()==str(root)\nassert run(['\"'\"'git'\"'\"','\"'\"'branch'\"'\"','\"'\"'--show-current'\"'\"']).stdout.strip()=='\"'\"'main'\"'\"'\nassert not run(['\"'\"'git'\"'\"','\"'\"'remote'\"'\"']).stdout.strip()\nmanifest=json.loads((root/'\"'\"'docs/m0/transfer_manifest.json'\"'\"').read_text())\nfor name,expected in manifest.items():\n assert hashlib.sha256((root/name).read_bytes()).hexdigest()==expected,name\nlines.append('\"'\"'ALL_TRANSFER_HASHES_MATCH: '\"'\"'+str(len(manifest)))\noriginal=json.loads((root/'\"'\"'docs/m0/input_hashes.json'\"'\"').read_text())\nfor name,expected in original.items():\n if name not in ['\"'\"'GAPS.md'\"'\"','\"'\"'STATUS.md'\"'\"']:\n  assert hashlib.sha256((root/name).read_bytes()).hexdigest()==expected,name\nlines.append('\"'\"'IMMUTABLE_KIT_HASHES_MATCH: true'\"'\"')\nsource=json.loads((root/'\"'\"'references/source_manifest.json'\"'\"').read_text())\nassert hashlib.sha256((root/'\"'\"'references/chapter3.pdf'\"'\"').read_bytes()).hexdigest()==source['\"'\"'excerpt_sha256'\"'\"']\nfor name in ['\"'\"'ARCHITECTURE.md'\"'\"','\"'\"'SOURCE_MAP.md'\"'\"','\"'\"'ENVIRONMENT_PLAN.md'\"'\"','\"'\"'STATUS.md'\"'\"','\"'\"'GAPS.md'\"'\"']:\n assert (root/name).stat().st_size>100\nfor folder in ['\"'\"'native'\"'\"','\"'\"'flash'\"'\"','\"'\"'scripts'\"'\"','\"'\"'tests'\"'\"']:\n assert [p.name for p in (root/folder).iterdir()]==['\"'\"'.gitkeep'\"'\"']\nassert not (root/'\"'\"'服务器.md'\"'\"').exists()\nassert not (root/'\"'\"'build'\"'\"').exists() and not (root/'\"'\"'runs'\"'\"').exists()\nfor p in root.rglob('\"'\"'*'\"'\"'):\n if '\"'\"'.git'\"'\"' not in p.parts and p.is_file():\n  assert p.suffix not in ['\"'\"'.py'\"'\"','\"'\"'.cpp'\"'\"','\"'\"'.cc'\"'\"','\"'\"'.c'\"'\"','\"'\"'.cu'\"'\"','\"'\"'.h'\"'\"','\"'\"'.hpp'\"'\"','\"'\"'.so'\"'\"','\"'\"'.sh'\"'\"'],str(p)\nrun(['\"'\"'git'\"'\"','\"'\"'check-ignore'\"'\"','\"'\"'--no-index'\"'\"','\"'\"'build/example'\"'\"','\"'\"'example.so'\"'\"','\"'\"'__pycache__/x.pyc'\"'\"','\"'\"'.venv/x'\"'\"','\"'\"'runs/example'\"'\"','\"'\"'.env'\"'\"','\"'\"'config.local.json'\"'\"','\"'\"'服务器.md'\"'\"','\"'\"'temporary.log'\"'\"'])\nrun(['\"'\"'git'\"'\"','\"'\"'check-ignore'\"'\"','\"'\"'--no-index'\"'\"','\"'\"'AGENTS.md'\"'\"','\"'\"'SPEC.md'\"'\"','\"'\"'ARCHITECTURE.md'\"'\"','\"'\"'SOURCE_MAP.md'\"'\"','\"'\"'ENVIRONMENT_PLAN.md'\"'\"','\"'\"'docs/m0/01_bootstrap.log'\"'\"'],1)\nassert all(('\"'\"'G%02d'\"'\"'%i) in (root/'\"'\"'GAPS.md'\"'\"').read_text() for i in range(1,21))\nassert '\"'\"'OPEN'\"'\"' in (root/'\"'\"'GAPS.md'\"'\"').read_text()\nassert '\"'\"'许可证状态：NOT_VERIFIED'\"'\"' in (root/'\"'\"'SOURCE_MAP.md'\"'\"').read_text()\nassert '\"'\"'本项目不做 SHIFT'\"'\"' in (root/'\"'\"'ARCHITECTURE.md'\"'\"').read_text()\nlines.extend(['\"'\"'ONLY_DOCUMENTATION_AND_PLACEHOLDERS: true'\"'\"','\"'\"'SECRET_NOTE_NOT_TRANSFERRED: true'\"'\"','\"'\"'M1_AND_GPU_TESTS: NOT_RUN'\"'\"','\"'\"'VALIDATION_EXIT_CODE: 0'\"'\"'])\n# Save the exact command used to invoke this verification, supplied as a nonsecret argument.\ncommands.append({'\"'\"'command'\"'\"':shlex.join(sys.orig_argv),'\"'\"'cwd'\"'\"':str(root),'\"'\"'exit_code'\"'\"':0,'\"'\"'log'\"'\"':'\"'\"'docs/m0/02_verify.log'\"'\"'})\n(root/'\"'\"'docs/m0/commands.json'\"'\"').write_text(json.dumps(commands,indent=2,ensure_ascii=False)+'\"'\"'\\n'\"'\"')\n(root/'\"'\"'docs/m0/02_verify.log'\"'\"').write_text('\"'\"'\\n'\"'\"'.join(lines)+'\"'\"'\\n'\"'\"')\nprint('\"'\"'M0_SCOPE_VERIFICATION PASS; 24 transfer hashes checked; immutable sources intact'\"'\"')\nprint('\"'\"'git root/branch/remote/ignore verified; source directories contain only .gitkeep'\"'\"')\nprint('\"'\"'G01-G20 retained; M1/GPU NOT_RUN'\"'\"')\n'",
+    "cwd": "/home/campus/zhangweihao/myflash",
+    "exit_code": 0,
+    "log": "docs/m0/02_verify.log"
+  },
+  {
+    "command": "git add -- .gitignore AGENTS.md SPEC.md GAPS.md PLAN.md STATUS.md GREYHOUND_MAP.md README.md ARCHITECTURE.md SOURCE_MAP.md ENVIRONMENT_PLAN.md references tasks native flash scripts tests docs",
+    "cwd": "/home/campus/zhangweihao/myflash",
+    "exit_code": 0,
+    "log": "docs/m0/03_snapshot.log"
+  },
+  {
+    "command": "git diff --cached --check",
+    "cwd": "/home/campus/zhangweihao/myflash",
+    "exit_code": 0,
+    "log": "docs/m0/03_snapshot.log"
+  },
+  {
+    "command": "git ls-files",
+    "cwd": "/home/campus/zhangweihao/myflash",
+    "exit_code": 0,
+    "log": "docs/m0/03_snapshot.log"
+  },
+  {
+    "command": "git -c user.name=Codex -c user.email=codex@localhost commit -m 'docs: bootstrap clean-room FLASH M0 on gpu-01'",
+    "cwd": "/home/campus/zhangweihao/myflash",
+    "exit_code": 0,
+    "log": "docs/m0/03_snapshot.log"
+  },
+  {
+    "command": "git rev-parse HEAD",
+    "cwd": "/home/campus/zhangweihao/myflash",
+    "exit_code": 0,
+    "log": "docs/m0/03_snapshot.log"
+  },
+  {
+    "command": "git show --stat --oneline HEAD",
+    "cwd": "/home/campus/zhangweihao/myflash",
+    "exit_code": 0,
+    "log": "docs/m0/03_snapshot.log"
+  },
+  {
+    "command": "git status --porcelain",
+    "cwd": "/home/campus/zhangweihao/myflash",
+    "exit_code": 0,
+    "log": "docs/m0/03_snapshot.log"
+  }
+]

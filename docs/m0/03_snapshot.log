@@ -1,0 +1,139 @@
+HOST: gpu-01
+CWD: /home/campus/zhangweihao/myflash
+COMMAND: git add -- .gitignore AGENTS.md SPEC.md GAPS.md PLAN.md STATUS.md GREYHOUND_MAP.md README.md ARCHITECTURE.md SOURCE_MAP.md ENVIRONMENT_PLAN.md references tasks native flash scripts tests docs
+STDOUT:
+
+STDERR:
+
+EXIT_CODE: 0
+COMMAND: git diff --cached --check
+STDOUT:
+
+STDERR:
+
+EXIT_CODE: 0
+COMMAND: git ls-files
+STDOUT:
+.gitignore
+AGENTS.md
+ARCHITECTURE.md
+ENVIRONMENT_PLAN.md
+GAPS.md
+GREYHOUND_MAP.md
+PLAN.md
+README.md
+SOURCE_MAP.md
+SPEC.md
+STATUS.md
+docs/m0/00_local_reference.log
+docs/m0/01_bootstrap.log
+docs/m0/02_verify.log
+docs/m0/SYNC.md
+docs/m0/VALIDATION.md
+docs/m0/commands.json
+docs/m0/host.json
+docs/m0/input_hashes.json
+docs/m0/transfer_manifest.json
+flash/.gitkeep
+native/.gitkeep
+references/chapter3.pdf
+references/chapter3_extracted.txt
+references/source_manifest.json
+scripts/.gitkeep
+tasks/00_bootstrap.md
+tasks/01_baseline.md
+tasks/TEMPLATE.md
+tests/.gitkeep
+
+STDERR:
+
+EXIT_CODE: 0
+COMMAND: git -c user.name=Codex -c user.email=codex@localhost commit -m 'docs: bootstrap clean-room FLASH M0 on gpu-01'
+STDOUT:
+[main (root-commit) 2d608b7] docs: bootstrap clean-room FLASH M0 on gpu-01
+ 30 files changed, 3021 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 AGENTS.md
+ create mode 100644 ARCHITECTURE.md
+ create mode 100644 ENVIRONMENT_PLAN.md
+ create mode 100644 GAPS.md
+ create mode 100644 GREYHOUND_MAP.md
+ create mode 100644 PLAN.md
+ create mode 100644 README.md
+ create mode 100644 SOURCE_MAP.md
+ create mode 100644 SPEC.md
+ create mode 100644 STATUS.md
+ create mode 100644 docs/m0/00_local_reference.log
+ create mode 100644 docs/m0/01_bootstrap.log
+ create mode 100644 docs/m0/02_verify.log
+ create mode 100644 docs/m0/SYNC.md
+ create mode 100644 docs/m0/VALIDATION.md
+ create mode 100644 docs/m0/commands.json
+ create mode 100644 docs/m0/host.json
+ create mode 100644 docs/m0/input_hashes.json
+ create mode 100644 docs/m0/transfer_manifest.json
+ create mode 100644 flash/.gitkeep
+ create mode 100644 native/.gitkeep
+ create mode 100644 references/chapter3.pdf
+ create mode 100644 references/chapter3_extracted.txt
+ create mode 100644 references/source_manifest.json
+ create mode 100644 scripts/.gitkeep
+ create mode 100644 tasks/00_bootstrap.md
+ create mode 100644 tasks/01_baseline.md
+ create mode 100644 tasks/TEMPLATE.md
+ create mode 100644 tests/.gitkeep
+
+STDERR:
+
+EXIT_CODE: 0
+COMMAND: git rev-parse HEAD
+STDOUT:
+2d608b73fe2ed7ff6af88b4be92dcf4083931557
+
+STDERR:
+
+EXIT_CODE: 0
+COMMAND: git show --stat --oneline HEAD
+STDOUT:
+2d608b7 docs: bootstrap clean-room FLASH M0 on gpu-01
+ .gitignore                        |   22 +
+ AGENTS.md                         |   35 +
+ ARCHITECTURE.md                   |  100 ++
+ ENVIRONMENT_PLAN.md               |   91 ++
+ GAPS.md                           |   54 +
+ GREYHOUND_MAP.md                  |   40 +
+ PLAN.md                           |   80 ++
+ README.md                         |   45 +
+ SOURCE_MAP.md                     |   43 +
+ SPEC.md                           |   89 ++
+ STATUS.md                         |   53 +
+ docs/m0/00_local_reference.log    |   11 +
+ docs/m0/01_bootstrap.log          |   51 +
+ docs/m0/02_verify.log             |   49 +
+ docs/m0/SYNC.md                   |   15 +
+ docs/m0/VALIDATION.md             |   20 +
+ docs/m0/commands.json             |   62 ++
+ docs/m0/host.json                 |   11 +
+ docs/m0/input_hashes.json         |   15 +
+ docs/m0/transfer_manifest.json    |   26 +
+ flash/.gitkeep                    |    0
+ native/.gitkeep                   |    0
+ references/chapter3.pdf           |  Bin 0 -> 4644073 bytes
+ references/chapter3_extracted.txt | 1974 +++++++++++++++++++++++++++++++++++++
+ references/source_manifest.json   |   30 +
+ scripts/.gitkeep                  |    0
+ tasks/00_bootstrap.md             |   38 +
+ tasks/01_baseline.md              |   20 +
+ tasks/TEMPLATE.md                 |   47 +
+ tests/.gitkeep                    |    0
+ 30 files changed, 3021 insertions(+)
+
+STDERR:
+
+EXIT_CODE: 0
+COMMAND: git status --porcelain
+STDOUT:
+
+STDERR:
+
+EXIT_CODE: 0

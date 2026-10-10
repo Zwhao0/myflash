@@ -1,0 +1,49 @@
+HOST: gpu-01
+CWD: /home/campus/zhangweihao/myflash
+COMMAND: git rev-parse --show-toplevel
+STDOUT:
+/home/campus/zhangweihao/myflash
+
+STDERR:
+
+EXIT_CODE: 0
+COMMAND: git branch --show-current
+STDOUT:
+main
+
+STDERR:
+
+EXIT_CODE: 0
+COMMAND: git remote
+STDOUT:
+
+STDERR:
+
+EXIT_CODE: 0
+ALL_TRANSFER_HASHES_MATCH: 24
+IMMUTABLE_KIT_HASHES_MATCH: true
+COMMAND: git check-ignore --no-index build/example example.so __pycache__/x.pyc .venv/x runs/example .env config.local.json '服务器.md' temporary.log
+STDOUT:
+build/example
+example.so
+__pycache__/x.pyc
+.venv/x
+runs/example
+.env
+config.local.json
+"\346\234\215\345\212\241\345\231\250.md"
+temporary.log
+
+STDERR:
+
+EXIT_CODE: 0
+COMMAND: git check-ignore --no-index AGENTS.md SPEC.md ARCHITECTURE.md SOURCE_MAP.md ENVIRONMENT_PLAN.md docs/m0/01_bootstrap.log
+STDOUT:
+
+STDERR:
+
+EXIT_CODE: 1
+ONLY_DOCUMENTATION_AND_PLACEHOLDERS: true
+SECRET_NOTE_NOT_TRANSFERRED: true
+M1_AND_GPU_TESTS: NOT_RUN
+VALIDATION_EXIT_CODE: 0
