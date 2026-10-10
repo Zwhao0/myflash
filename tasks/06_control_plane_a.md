@@ -65,3 +65,15 @@ m3_reader/m3_hook/m3_validation. Preserve full validation01 FAIL receipt/logs.
 Full-tree privacy scanner has >700MiB prior byte evidence and hit120s timeout on
 node-0; separate scanner budget600s, core test120s/M4 180s unchanged. This is a
 validation command budget correction, not a collection-window/scientific change.
+
+Superseding Redis installation authorization (2026-10-10): the human user now
+explicitly permits installing real Redis for M6-A. Earlier missing-dependency
+BLOCKED receipts stay historical. Allow private upstream Redis core source build
+with existing compiler/make, at most2 make jobs/600s own-process-group timeout,
+plus redis-py in new private .venv-m6; all under this project runs/m6a-deps.
+No system installation/service change, formal .venv-m5 replacement, native FLASH
+rebuild or GPU use. Source archive/client wheel fixed SHA256 and upstream licenses
+in docs/m6/dependency-lock.json; retain private build/install commands/exits/logs.
+Existing allowed tests/m6_redis.py may add actual owned Redis restart/data-loss
+proof, with PID-scoped termination and socket0600/no TCP/no system config.
+Verify formal/native bytes unchanged after installation and integration.

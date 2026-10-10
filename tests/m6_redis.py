@@ -92,6 +92,72 @@ class RedisTests(unittest.TestCase):
         self.assertEqual(self.s.global_.start(TRIGGER,self.s.manifest,0,request_id='one')['status'],'PROFILE_REQUESTED')
         self.assertEqual(self.s.global_.start(TRIGGER,self.s.manifest,0,request_id='one')['status'],'DUPLICATE_CONFIRMED')
 
+    def test_actual_server_stop_restart_and_lost_document(self):
+        """UPSTREAM server run_id changes; ADAPTATION refuses active-run recovery."""
+        import redis
+        owned=Path(tempfile.mkdtemp(prefix='m6s-',dir=ROOT/'runs'))
+        os.chmod(owned,0o700);socket=owned/'r.sock'
+        self.assertLess(len(str(socket).encode()),100)
+        command=[shutil.which('redis-server'),'--port','0','--unixsocket',str(socket),
+                 '--unixsocketperm','600','--save','','--appendonly','no','--dir',str(owned)]
+        client=redis.Redis(unix_socket_path=str(socket),socket_timeout=.2,socket_connect_timeout=.2)
+        children=[];logs=[];exits=[];proof={}
+        def start():
+            log=(owned/('server-'+str(len(children))+'.log')).open('wb');logs.append(log)
+            child=subprocess.Popen(command,stdout=log,stderr=subprocess.STDOUT);children.append(child)
+            until=time.monotonic()+5
+            while True:
+                try:client.ping();break
+                except redis.exceptions.ConnectionError:
+                    if time.monotonic()>=until or child.poll() is not None:raise
+                    time.sleep(.05)
+            self.assertEqual(socket.stat().st_mode&0o777,0o600)
+        def stop():
+            child=children[-1]
+            if child.poll() is None:child.terminate()
+            try:code=child.wait(timeout=5)
+            except subprocess.TimeoutExpired:child.kill();code=child.wait(timeout=5)
+            exits.append(code)
+            self.assertEqual(code,0)
+        try:
+            start();store=RedisStore(client)
+            simulated=Simulation(store=store,run='m6s-'+uuid.uuid4().hex)
+            simulated.arm();proof['before_stop']=store.read(simulated.run)
+            old_id=store.server_id;stop()
+            self.assertEqual(simulated.global_.tick(1)['status'],'BLOCKED')
+            self.assertFalse(simulated.global_.receipts[-1]['final_alert'])
+            proof['disconnect_receipt']=simulated.global_.receipts[-1]
+            start();new_id=client.info('server')['run_id']
+            self.assertNotEqual(old_id,new_id)
+            with self.assertRaises(Unavailable):store.read(simulated.run)
+            with self.assertRaises(Unavailable):store.cas(simulated.run,0,proof['before_stop'])
+            self.assertEqual(simulated.global_.tick(2)['status'],'BLOCKED')
+            fresh=RedisStore(client);self.assertIsNone(fresh.read(simulated.run))
+            with self.assertRaises(Unavailable):GlobalController(fresh,simulated.run,simulated.nodes,resume=True)
+            replacement=Simulation(store=fresh,run='m6s-'+uuid.uuid4().hex)
+            result=replacement.cycle(0,'fresh-run')
+            self.assertTrue(result['reset_verified']);self.assertFalse(result['result']['final_alert'])
+            proof.update(old_server_id=old_id,new_server_id=new_id,old_run_lost=True,
+                         replacement_run=fresh.read(replacement.run))
+            self.assertEqual(client.delete(fresh.key(replacement.run)),1)
+            self.assertEqual(client.dbsize(),0)
+        finally:
+            client.close()
+            for child in children:
+                if child.poll() is None:
+                    child.terminate()
+                    try:exits.append(child.wait(timeout=5))
+                    except subprocess.TimeoutExpired:child.kill();exits.append(child.wait(timeout=5))
+            for log in logs:log.close()
+            if socket.exists():socket.unlink()
+            proof.update(command=command,child_exits=exits,
+                         child_finished=all(c.poll() is not None for c in children),
+                         socket_remaining=socket.exists(),other_services_touched=False)
+            (owned/'restart.json').write_text(json.dumps(proof,indent=2)+'\n')
+            if os.environ.get('M6_EVIDENCE_DIR'):
+                (Path(os.environ['M6_EVIDENCE_DIR'])/'actual-server-restart.json').write_text(json.dumps(proof,indent=2)+'\n')
+        self.assertEqual(exits,[0,0])
+
 
 def main():
     global CLIENT
@@ -100,7 +166,7 @@ def main():
     if not executable or module is None:
         print(json.dumps(dict(status='BLOCKED',redis_server_found=bool(executable),
                              existing_python_client_found=module is not None,
-                             reason='no installation authorized',real_gpu=False)))
+                             reason='Redis binary/client missing; install separately only with authorization',real_gpu=False)))
         return 3
     import redis
     runs=ROOT/'runs';runs.mkdir(exist_ok=True)

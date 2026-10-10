@@ -228,3 +228,50 @@ null、正式runtime采纳/M6 NOT_APPROVED/NOT_RUN。完整结果与待批准S2�
 
 下一唯一任务：ChatGPT基于独立M5-S1 Draft PR精确Git tree/代码/证据审核。
 完成发布与核验后停止，不自行合并、科学批准、正式迁移或推进M6。
+
+## M6-A control plane delivery (2026-10-10)
+User explicitly authorizes complete CPU M6-A phasesA–E and independent Draft PR,
+then stop. Baseline PR9 7746fccb88718a5567da0d042d2679672d4226fc /
+2fc769bd39f96d58e7fb1ea261f984bf24380590; branch codex/m6a-control-plane,
+base codex/m5-s1-science-audit. Adds only approved m6 modules/scripts/tests/task/docs;
+STATUS/GAPS append. Existing851 files byte-preserved, formal1424 non-cache files and
+existing native artifacts pre/post SHA equal. Final code acceptance3cc3e9b plus
+exact source hashes; final head/tree/CI in Draft PR/private publication receipt.
+
+PAPER SPEC S1/S2/S4: Redis topology,0/1,500 retention,max(ms/1000×2.2,20s).
+UPSTREAM official Redis EVAL/LTRIM API semantics (no copied source);
+ADAPTATION versioned namespace/CAS/fences/receipts/strict completeness/reset;
+EXTENSION manual CPU logical-node fixture replay/virtual scopes. No GreyHound or
+old failed FLASH implementation accessed. Native/ABI/algorithms/thresholds/seed/
+M5-R/P1/S1 evidence unchanged; no Rbeast fit or formal library migration.
+
+CPU mock PASS: final32 tests, two logical nodes/three ranks each, two independent
+epochs, full20.0 virtual-second window, original M4 provisional result preserved,
+all-rank Monitor reset verified. Missing scope/node/rank/data, corrupted/duplicate/
+old run/epoch samples, missing/old iteration, ACK-only, delay/disconnect/retry,
+fencing/restart/partial reset and ambiguity fail closed with retained evidence.
+final_alert=false/final_fault_ranks=[] always. Real Redis BLOCKED on local/node-0,
+no existing server/client and no install authorized; actual integration CLI exit3.
+Overall M6-A BLOCKED, not unconditional M6-A ENGINEERING PASS.
+
+Actual node-0 Linux/x86_64/Xeon8463B/Python3.12.3, existing Rbeast0.1.25/NumPy2.2.6;
+local macOS arm64/Python3.9.6. Corrected server child exits0,0,3,0,0,0,0,0,0,0,0;
+five original M2/M3 CPU regressions0, M4 65fixtures0, M5 Reporter/detection/contract/
+P1/S1 offline and privacy units0. Final relevant32 tests0/demo0/Redis3, actual wrapper3.
+Completed-test commands/exits/log SHA in docs/m6/validation.json; raw exact commands/
+machine/state/logs remain runs/m6a-server-validation-{01,02},m6a-server-relevant-03
+and local runs/m6a-local-validation-01/m6a-access; private remote archive/index retained.
+Parent detached validation driver exits NOT_CAPTURED; no detached launch claimed
+complete; waited child exits are authoritative. Local old NumPy/Python3.9 failures,
+initial malformed CLI selections and120s privacy timeout retained. M2 lifecycle
+argument parser stopped before torch/GPU; M5 API-field missing argv stopped before
+fit. Registry corrected to CPU-only; privacy scanner budget600s, no test assertion
+or scientific window changed. Early development syntax FAIL retained, early source
+snapshots NOT_CAPTURED/excluded from acceptance. No GPU/NCCL/Redis instance/fault/
+second physical node/automatic detector/M6-B/merge performed.
+
+Current text privacy and original-file preservation PASS; pending binary PDF
+rights/history limitations stay unchanged. Detailed results, source boundaries,
+protocol/state/schema, raw evidence hashes and postflight in docs/m6. G01/G02/G04/
+G09/G13/G20 remain OPEN. Next unique task: independent ChatGPT GitHub technical
+review of M6-A Draft PR. Stop after publication; no automatic follow-up work.

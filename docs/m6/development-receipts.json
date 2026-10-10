@@ -1,0 +1,83 @@
+{
+  "records": [
+    {
+      "command": [
+        "python3",
+        "tests/m6_control.py"
+      ],
+      "execution_machine_alias": "local-macOS",
+      "code_sha": "UNCOMMITTED_NOT_SNAPSHOTTED",
+      "exit_code": 0,
+      "log": "runs/m6a-access/development-01.log",
+      "sha256": "9c37cb323f640c4c171b5ddd7165f497d0f437f8f211130daf97d5fad0fea1eb",
+      "acceptance_evidence": false,
+      "reason": "development diagnostics; exact latest acceptance code separately verified"
+    },
+    {
+      "command": [
+        "python3",
+        "tests/m6_control.py"
+      ],
+      "execution_machine_alias": "local-macOS",
+      "code_sha": "UNCOMMITTED_NOT_SNAPSHOTTED",
+      "exit_code": 1,
+      "log": "runs/m6a-access/development-02.log",
+      "sha256": "641142e4d1de59427aa4d91a80f26df99af7c3af3cc1d8e173d270ba3e04b78b",
+      "acceptance_evidence": false,
+      "reason": "development diagnostics; exact latest acceptance code separately verified"
+    },
+    {
+      "command": [
+        "python3",
+        "tests/m6_control.py"
+      ],
+      "execution_machine_alias": "local-macOS",
+      "code_sha": "UNCOMMITTED_NOT_SNAPSHOTTED",
+      "exit_code": 0,
+      "log": "runs/m6a-access/development-03.log",
+      "sha256": "c47e765d619df2c2869f11d3ce167ad1926c648d19f2dd9f432487b1815aeeb9",
+      "acceptance_evidence": false,
+      "reason": "development diagnostics; exact latest acceptance code separately verified"
+    },
+    {
+      "command": [
+        "python3",
+        "tests/m6_control.py"
+      ],
+      "execution_machine_alias": "local-macOS",
+      "code_sha": "UNCOMMITTED_NOT_SNAPSHOTTED",
+      "exit_code": 0,
+      "log": "runs/m6a-access/development-04.log",
+      "sha256": "b3cccda849cf08d0aef12d38247f228c69abc2367ab7bbaae40e00a06b131507",
+      "acceptance_evidence": false,
+      "reason": "development diagnostics; exact latest acceptance code separately verified"
+    },
+    {
+      "command": [
+        "python3",
+        "tests/m6_control.py"
+      ],
+      "execution_machine_alias": "local-macOS",
+      "code_sha": "803440c3d33b9967f47843917d5bb8bdac1c9d1c",
+      "exit_code": 0,
+      "log": "runs/m6a-access/relevant-05.log",
+      "sha256": "0e4b6183a4126c9d7be6decf3e0c099a9b35c917dc23506954dbad0f4e7dbf15",
+      "acceptance_evidence": false,
+      "reason": "development diagnostics; exact latest acceptance code separately verified"
+    },
+    {
+      "command": [
+        "python3",
+        "tests/m6_control.py"
+      ],
+      "execution_machine_alias": "local-macOS",
+      "code_sha": "3cc3e9bfd82ffd91621572d1846cbb5754fc19e8",
+      "exit_code": 0,
+      "log": "runs/m6a-access/relevant-06.log",
+      "sha256": "71d9f00778904647175cea8f454660d50ac44c721c3ecef0c4dea39f3a4d632e",
+      "acceptance_evidence": false,
+      "reason": "development diagnostics; exact latest acceptance code separately verified"
+    }
+  ],
+  "retained_failure": "development-02 syntax error, exit1; source snapshots not captured for early development, excluded from acceptance"
+}
