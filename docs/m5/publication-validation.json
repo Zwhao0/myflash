@@ -92,7 +92,13 @@
       "log": "runs/m5-access/native-timeout.log"
     }
   ],
-  "ci": "PENDING_GITHUB_RUN",
+  "ci": {
+    "snapshot_head": "d639f66e00fb975a561478e3ed3ead6f1401d6db",
+    "run_id": 38038070584,
+    "status": "completed",
+    "conclusion": "success",
+    "url": "https://github.com/Zwhao0/myflash/actions/runs/38038070584"
+  },
   "final_index_privacy": {
     "command": [
       "python3",
@@ -103,5 +109,14 @@
     "findings": 0,
     "all_final_added_files_staged": true
   },
-  "latest_main_verified": "9c66be49c33b9022573011e1dd2846721cca3833"
+  "latest_main_verified": "9c66be49c33b9022573011e1dd2846721cca3833",
+  "publication": {
+    "draft_pr": "https://github.com/Zwhao0/myflash/pull/6",
+    "source_head": "d639f66e00fb975a561478e3ed3ead6f1401d6db",
+    "source_tree": "9eb49d43b15af19033d6b82f143f74a645450efc",
+    "remote_commit_tree_equal": true,
+    "git_push_exit_code": 0,
+    "changed_files": 90,
+    "final_receipt_location": "server runs/m5-access/publication-receipt.json; receipt commit CI checked separately"
+  }
 }
