@@ -39,3 +39,27 @@ Python3.12末位不一致（严格对照拒绝）；固定原生文件非UTF-8�
 这些失败/命令回执另存私有runs/m5-s1-access/development-failures，先前M5-R/P1
 全部失败与缺失未删除。正式严算在原Python3.12机器验证，本地3.9不是支持的
 精确算术环境；不以环境差异放宽阈值或原验收。
+
+
+## 实际验收收尾
+
+node-0现有CPU/Python3.12.3、Xeon Platinum8463B、Linux x86_64；正式metadata仍
+Rbeast0.1.25/NumPy2.2.6，原.so SHA a7432000… 已只读核对。
+执行源码提交 `2f8971f4d2402ea64363edba1af7cb2ae97bdd4a`；本次11项实际检查均
+exit0：源码/论文引用、12600前缀重算、16新增测试、Reporter4、检测8、算术/
+非法输出contract、M4的65fixtures、P1的531840数组回读、隐私6测试、diff、
+当前树隐私扫描。832原文件（STATUS/GAPS最终仅追加）、1424正式运行库文件
+前后SHA一致；没有新增native fits/依赖/编译/GPU/NCCL/Redis。
+
+`m5-s1-validation-01` 为FAIL，sources1、citation test1；其余检查0。该完整脱敏
+回执在 data/validation-attempt01.json，私有11份log/command回执原样保留。
+`m5-s1-validation-02` 全部0/PASS，原始日志在 runs/m5-s1-validation-02/，每项
+有完整argv/代码与输入快照SHA、输出stdout/stderr SHA和真实环境/退出；公开
+validation.json提供相对入口/脱敏argv。旧P1回读脚本输出的machine字段固定
+写local macOS，本轮实际执行node-0，以本轮外层机器/命令回执为准，未改原脚本。
+新的 native API/真实prefix再次fit、M2/M3编译hook、GPU/Redis/M6均NOT_RUN。
+
+本次16个科学离线测试和完整性审计PASS不等于科学有效性PASS。最终全树检查
+将在纳入source-receipts/validation与状态追加后执行，具体head/tree/文件内容
+及其真实隐私CI由Draft PR与私有publication回执明确绑定；不沿用PR8或较早
+提交CI。此后只发布/核验并停止，下一唯一任务是独立审核M5-S1。

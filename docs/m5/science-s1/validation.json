@@ -1,14 +1,14 @@
 {
   "task": "M5-S1",
-  "run_id": "m5-s1-validation-01",
+  "run_id": "m5-s1-validation-02",
   "baseline": "d2973f5fa66ae99ec7ea09ea7040a11d1b95b845",
-  "executed_head": "1265354ee077e6e1554a403ddfcd09f347353bc1",
-  "working_diff_sha256": "ca5278f80ad58da60b16c3e7dcc1ecd20ad3e712bc5b1ef55bcc34b5251d97c1",
+  "executed_head": "2f8971f4d2402ea64363edba1af7cb2ae97bdd4a",
+  "working_diff_sha256": "c8519de8e4ea8ece429b10e2f0d94cc9bffa22d0829d17bda31f1a77a8032def",
   "machine": "node-0 Intel Xeon Platinum 8463B Linux x86_64 CPU",
   "python": "3.12.3",
   "checks": [
     {
-      "run_id": "m5-s1-validation-01",
+      "run_id": "m5-s1-validation-02",
       "check": "sources",
       "argv": [
         "python3",
@@ -18,25 +18,27 @@
         "--output",
         "docs/m5/science-s1/data/source-receipts.json"
       ],
-      "code_sha": "1265354ee077e6e1554a403ddfcd09f347353bc1",
+      "code_sha": "2f8971f4d2402ea64363edba1af7cb2ae97bdd4a",
+      "input_snapshot_sha256": "bf74e6bf0996aac02571166b0f5ea1dac0e09a41ea18f94e402e72511bb46e1a",
       "working_code_sha256": {
         "scripts/m5_s1_analysis.py": "615919c8b05b7eed1a82c096a274ee4934d407875a577ae89fcce1a7fccfa37c",
-        "scripts/m5_s1_sources.py": "21c5d194cf0cb112c309cb6f3a9ba5d4d278918bd7a9aa2090d1d33428e20f45",
-        "scripts/m5_s1_validate.py": "4712db11801926cfe69f03089e67988e7f130b496e00782fb0b54ff02b3ef54e"
+        "scripts/m5_s1_sources.py": "23c86ff7f3877011b1f9f978b44f7c6bc924a7167ed0d2f96b41ac209dc0e910",
+        "scripts/m5_s1_validate.py": "5a4eacc42fec118f9a82dc7c304d8b6b358140048bc00847c77772b363cf17a1"
       },
       "machine": "node-0 CPU only",
       "python": "3.12.3",
       "os": "Linux",
       "arch": "x86_64",
-      "exit_code": 1,
+      "exit_code": 0,
       "timed_out": false,
-      "log": "runs/m5-s1-validation-01/sources.log",
-      "log_sha256": "934aa6c57f9b515b9a458b3b25fe32dd9893004b646ed344b0b8653e043fa2d8",
-      "elapsed_s": 0.11550430208444595,
-      "status": "FAIL"
+      "log": "runs/m5-s1-validation-02/sources.log",
+      "log_sha256": "b3cad3d6d89f3383f61b11e160bc831b4baec7cd00671418fb60f88825016467",
+      "output_stdout_stderr_sha256": "b3cad3d6d89f3383f61b11e160bc831b4baec7cd00671418fb60f88825016467",
+      "elapsed_s": 0.16560100193601102,
+      "status": "PASS"
     },
     {
-      "run_id": "m5-s1-validation-01",
+      "run_id": "m5-s1-validation-02",
       "check": "analysis",
       "argv": [
         "python3",
@@ -44,11 +46,12 @@
         "--output",
         "docs/m5/science-s1/data"
       ],
-      "code_sha": "1265354ee077e6e1554a403ddfcd09f347353bc1",
+      "code_sha": "2f8971f4d2402ea64363edba1af7cb2ae97bdd4a",
+      "input_snapshot_sha256": "bf74e6bf0996aac02571166b0f5ea1dac0e09a41ea18f94e402e72511bb46e1a",
       "working_code_sha256": {
         "scripts/m5_s1_analysis.py": "615919c8b05b7eed1a82c096a274ee4934d407875a577ae89fcce1a7fccfa37c",
-        "scripts/m5_s1_sources.py": "21c5d194cf0cb112c309cb6f3a9ba5d4d278918bd7a9aa2090d1d33428e20f45",
-        "scripts/m5_s1_validate.py": "4712db11801926cfe69f03089e67988e7f130b496e00782fb0b54ff02b3ef54e"
+        "scripts/m5_s1_sources.py": "23c86ff7f3877011b1f9f978b44f7c6bc924a7167ed0d2f96b41ac209dc0e910",
+        "scripts/m5_s1_validate.py": "5a4eacc42fec118f9a82dc7c304d8b6b358140048bc00847c77772b363cf17a1"
       },
       "machine": "node-0 CPU only",
       "python": "3.12.3",
@@ -56,47 +59,51 @@
       "arch": "x86_64",
       "exit_code": 0,
       "timed_out": false,
-      "log": "runs/m5-s1-validation-01/analysis.log",
-      "log_sha256": "e7ee8d976cc84c92e87b74736cf6545118e493ce448f608545d4377f6e25931a",
-      "elapsed_s": 23.948874120018445,
+      "log": "runs/m5-s1-validation-02/analysis.log",
+      "log_sha256": "eb0646e2434c9a8b675b1720e8832457cab0988d13e3d06e502bc768fcaf1e69",
+      "output_stdout_stderr_sha256": "eb0646e2434c9a8b675b1720e8832457cab0988d13e3d06e502bc768fcaf1e69",
+      "elapsed_s": 23.397334061097354,
       "status": "PASS"
     },
     {
-      "run_id": "m5-s1-validation-01",
+      "run_id": "m5-s1-validation-02",
       "check": "offline-tests",
       "argv": [
         "python3",
         "tests/m5_s1_offline.py"
       ],
-      "code_sha": "1265354ee077e6e1554a403ddfcd09f347353bc1",
+      "code_sha": "2f8971f4d2402ea64363edba1af7cb2ae97bdd4a",
+      "input_snapshot_sha256": "bf74e6bf0996aac02571166b0f5ea1dac0e09a41ea18f94e402e72511bb46e1a",
       "working_code_sha256": {
         "scripts/m5_s1_analysis.py": "615919c8b05b7eed1a82c096a274ee4934d407875a577ae89fcce1a7fccfa37c",
-        "scripts/m5_s1_sources.py": "21c5d194cf0cb112c309cb6f3a9ba5d4d278918bd7a9aa2090d1d33428e20f45",
-        "scripts/m5_s1_validate.py": "4712db11801926cfe69f03089e67988e7f130b496e00782fb0b54ff02b3ef54e"
+        "scripts/m5_s1_sources.py": "23c86ff7f3877011b1f9f978b44f7c6bc924a7167ed0d2f96b41ac209dc0e910",
+        "scripts/m5_s1_validate.py": "5a4eacc42fec118f9a82dc7c304d8b6b358140048bc00847c77772b363cf17a1"
       },
       "machine": "node-0 CPU only",
       "python": "3.12.3",
       "os": "Linux",
       "arch": "x86_64",
-      "exit_code": 1,
+      "exit_code": 0,
       "timed_out": false,
-      "log": "runs/m5-s1-validation-01/offline-tests.log",
-      "log_sha256": "7105bfacb3f8a4d0212deb732e704c16b2a3a148b439319ff6eaa6d6b3b858a6",
-      "elapsed_s": 8.828584189061075,
-      "status": "FAIL"
+      "log": "runs/m5-s1-validation-02/offline-tests.log",
+      "log_sha256": "cb37af0c764a0711c1b49df035f98c39fb21f726192d52396fbf88b2a2f1c6c8",
+      "output_stdout_stderr_sha256": "cb37af0c764a0711c1b49df035f98c39fb21f726192d52396fbf88b2a2f1c6c8",
+      "elapsed_s": 9.228460278944112,
+      "status": "PASS"
     },
     {
-      "run_id": "m5-s1-validation-01",
+      "run_id": "m5-s1-validation-02",
       "check": "reporter",
       "argv": [
         "python3",
         "tests/m5_reporter.py"
       ],
-      "code_sha": "1265354ee077e6e1554a403ddfcd09f347353bc1",
+      "code_sha": "2f8971f4d2402ea64363edba1af7cb2ae97bdd4a",
+      "input_snapshot_sha256": "bf74e6bf0996aac02571166b0f5ea1dac0e09a41ea18f94e402e72511bb46e1a",
       "working_code_sha256": {
         "scripts/m5_s1_analysis.py": "615919c8b05b7eed1a82c096a274ee4934d407875a577ae89fcce1a7fccfa37c",
-        "scripts/m5_s1_sources.py": "21c5d194cf0cb112c309cb6f3a9ba5d4d278918bd7a9aa2090d1d33428e20f45",
-        "scripts/m5_s1_validate.py": "4712db11801926cfe69f03089e67988e7f130b496e00782fb0b54ff02b3ef54e"
+        "scripts/m5_s1_sources.py": "23c86ff7f3877011b1f9f978b44f7c6bc924a7167ed0d2f96b41ac209dc0e910",
+        "scripts/m5_s1_validate.py": "5a4eacc42fec118f9a82dc7c304d8b6b358140048bc00847c77772b363cf17a1"
       },
       "machine": "node-0 CPU only",
       "python": "3.12.3",
@@ -104,23 +111,25 @@
       "arch": "x86_64",
       "exit_code": 0,
       "timed_out": false,
-      "log": "runs/m5-s1-validation-01/reporter.log",
-      "log_sha256": "86e3b017903f4fd5e2c386d185290990bd455f1277f7e089b8dca083d9aa45ea",
-      "elapsed_s": 1.167061157990247,
+      "log": "runs/m5-s1-validation-02/reporter.log",
+      "log_sha256": "b2bef98aa9b8edddda96064994200f37f8237ad1994e5e34c238fcb411233583",
+      "output_stdout_stderr_sha256": "b2bef98aa9b8edddda96064994200f37f8237ad1994e5e34c238fcb411233583",
+      "elapsed_s": 1.1689047730760649,
       "status": "PASS"
     },
     {
-      "run_id": "m5-s1-validation-01",
+      "run_id": "m5-s1-validation-02",
       "check": "detection",
       "argv": [
         "python3",
         "tests/m5_detection.py"
       ],
-      "code_sha": "1265354ee077e6e1554a403ddfcd09f347353bc1",
+      "code_sha": "2f8971f4d2402ea64363edba1af7cb2ae97bdd4a",
+      "input_snapshot_sha256": "bf74e6bf0996aac02571166b0f5ea1dac0e09a41ea18f94e402e72511bb46e1a",
       "working_code_sha256": {
         "scripts/m5_s1_analysis.py": "615919c8b05b7eed1a82c096a274ee4934d407875a577ae89fcce1a7fccfa37c",
-        "scripts/m5_s1_sources.py": "21c5d194cf0cb112c309cb6f3a9ba5d4d278918bd7a9aa2090d1d33428e20f45",
-        "scripts/m5_s1_validate.py": "4712db11801926cfe69f03089e67988e7f130b496e00782fb0b54ff02b3ef54e"
+        "scripts/m5_s1_sources.py": "23c86ff7f3877011b1f9f978b44f7c6bc924a7167ed0d2f96b41ac209dc0e910",
+        "scripts/m5_s1_validate.py": "5a4eacc42fec118f9a82dc7c304d8b6b358140048bc00847c77772b363cf17a1"
       },
       "machine": "node-0 CPU only",
       "python": "3.12.3",
@@ -128,24 +137,26 @@
       "arch": "x86_64",
       "exit_code": 0,
       "timed_out": false,
-      "log": "runs/m5-s1-validation-01/detection.log",
+      "log": "runs/m5-s1-validation-02/detection.log",
       "log_sha256": "fc23540c8545d4075fe2f0420accd022e74e5566176c3bd4c597964ff02c2e14",
-      "elapsed_s": 0.11640919803176075,
+      "output_stdout_stderr_sha256": "fc23540c8545d4075fe2f0420accd022e74e5566176c3bd4c597964ff02c2e14",
+      "elapsed_s": 0.11597985308617353,
       "status": "PASS"
     },
     {
-      "run_id": "m5-s1-validation-01",
+      "run_id": "m5-s1-validation-02",
       "check": "contract",
       "argv": [
         "python3",
         "tests/m5_contract_evidence.py",
-        "runs/m5-s1-validation-01/contract.json"
+        "runs/m5-s1-validation-02/contract.json"
       ],
-      "code_sha": "1265354ee077e6e1554a403ddfcd09f347353bc1",
+      "code_sha": "2f8971f4d2402ea64363edba1af7cb2ae97bdd4a",
+      "input_snapshot_sha256": "bf74e6bf0996aac02571166b0f5ea1dac0e09a41ea18f94e402e72511bb46e1a",
       "working_code_sha256": {
         "scripts/m5_s1_analysis.py": "615919c8b05b7eed1a82c096a274ee4934d407875a577ae89fcce1a7fccfa37c",
-        "scripts/m5_s1_sources.py": "21c5d194cf0cb112c309cb6f3a9ba5d4d278918bd7a9aa2090d1d33428e20f45",
-        "scripts/m5_s1_validate.py": "4712db11801926cfe69f03089e67988e7f130b496e00782fb0b54ff02b3ef54e"
+        "scripts/m5_s1_sources.py": "23c86ff7f3877011b1f9f978b44f7c6bc924a7167ed0d2f96b41ac209dc0e910",
+        "scripts/m5_s1_validate.py": "5a4eacc42fec118f9a82dc7c304d8b6b358140048bc00847c77772b363cf17a1"
       },
       "machine": "node-0 CPU only",
       "python": "3.12.3",
@@ -153,25 +164,27 @@
       "arch": "x86_64",
       "exit_code": 0,
       "timed_out": false,
-      "log": "runs/m5-s1-validation-01/contract.log",
+      "log": "runs/m5-s1-validation-02/contract.log",
       "log_sha256": "a5cf8743802ffd090677978eda15a8c60f51488c16457560567253d03796bcf0",
-      "elapsed_s": 0.11547894100658596,
+      "output_stdout_stderr_sha256": "a5cf8743802ffd090677978eda15a8c60f51488c16457560567253d03796bcf0",
+      "elapsed_s": 0.11625160602852702,
       "status": "PASS"
     },
     {
-      "run_id": "m5-s1-validation-01",
+      "run_id": "m5-s1-validation-02",
       "check": "m4-offline",
       "argv": [
         "python3",
         "tests/m4_offline.py",
         "--output",
-        "runs/m5-s1-validation-01/m4"
+        "runs/m5-s1-validation-02/m4"
       ],
-      "code_sha": "1265354ee077e6e1554a403ddfcd09f347353bc1",
+      "code_sha": "2f8971f4d2402ea64363edba1af7cb2ae97bdd4a",
+      "input_snapshot_sha256": "bf74e6bf0996aac02571166b0f5ea1dac0e09a41ea18f94e402e72511bb46e1a",
       "working_code_sha256": {
         "scripts/m5_s1_analysis.py": "615919c8b05b7eed1a82c096a274ee4934d407875a577ae89fcce1a7fccfa37c",
-        "scripts/m5_s1_sources.py": "21c5d194cf0cb112c309cb6f3a9ba5d4d278918bd7a9aa2090d1d33428e20f45",
-        "scripts/m5_s1_validate.py": "4712db11801926cfe69f03089e67988e7f130b496e00782fb0b54ff02b3ef54e"
+        "scripts/m5_s1_sources.py": "23c86ff7f3877011b1f9f978b44f7c6bc924a7167ed0d2f96b41ac209dc0e910",
+        "scripts/m5_s1_validate.py": "5a4eacc42fec118f9a82dc7c304d8b6b358140048bc00847c77772b363cf17a1"
       },
       "machine": "node-0 CPU only",
       "python": "3.12.3",
@@ -179,25 +192,27 @@
       "arch": "x86_64",
       "exit_code": 0,
       "timed_out": false,
-      "log": "runs/m5-s1-validation-01/m4-offline.log",
+      "log": "runs/m5-s1-validation-02/m4-offline.log",
       "log_sha256": "187ce2c0b2fa62c6314c49834a4e9ed1bd6c14332fe80ad0b498b62170cb6a60",
-      "elapsed_s": 2.571227950975299,
+      "output_stdout_stderr_sha256": "187ce2c0b2fa62c6314c49834a4e9ed1bd6c14332fe80ad0b498b62170cb6a60",
+      "elapsed_s": 2.5207011220045388,
       "status": "PASS"
     },
     {
-      "run_id": "m5-s1-validation-01",
+      "run_id": "m5-s1-validation-02",
       "check": "p1-readback",
       "argv": [
         "python3",
         "scripts/m5_p1_readback.py",
         "--output",
-        "runs/m5-s1-validation-01/p1-readback.json"
+        "runs/m5-s1-validation-02/p1-readback.json"
       ],
-      "code_sha": "1265354ee077e6e1554a403ddfcd09f347353bc1",
+      "code_sha": "2f8971f4d2402ea64363edba1af7cb2ae97bdd4a",
+      "input_snapshot_sha256": "bf74e6bf0996aac02571166b0f5ea1dac0e09a41ea18f94e402e72511bb46e1a",
       "working_code_sha256": {
         "scripts/m5_s1_analysis.py": "615919c8b05b7eed1a82c096a274ee4934d407875a577ae89fcce1a7fccfa37c",
-        "scripts/m5_s1_sources.py": "21c5d194cf0cb112c309cb6f3a9ba5d4d278918bd7a9aa2090d1d33428e20f45",
-        "scripts/m5_s1_validate.py": "4712db11801926cfe69f03089e67988e7f130b496e00782fb0b54ff02b3ef54e"
+        "scripts/m5_s1_sources.py": "23c86ff7f3877011b1f9f978b44f7c6bc924a7167ed0d2f96b41ac209dc0e910",
+        "scripts/m5_s1_validate.py": "5a4eacc42fec118f9a82dc7c304d8b6b358140048bc00847c77772b363cf17a1"
       },
       "machine": "node-0 CPU only",
       "python": "3.12.3",
@@ -205,23 +220,25 @@
       "arch": "x86_64",
       "exit_code": 0,
       "timed_out": false,
-      "log": "runs/m5-s1-validation-01/p1-readback.log",
+      "log": "runs/m5-s1-validation-02/p1-readback.log",
       "log_sha256": "00f155f45bf323d6f4df3e704ac49fb92d90c759a635cac59d81812a7a332150",
-      "elapsed_s": 12.584421742008999,
+      "output_stdout_stderr_sha256": "00f155f45bf323d6f4df3e704ac49fb92d90c759a635cac59d81812a7a332150",
+      "elapsed_s": 12.482769866939634,
       "status": "PASS"
     },
     {
-      "run_id": "m5-s1-validation-01",
+      "run_id": "m5-s1-validation-02",
       "check": "privacy-unit",
       "argv": [
         "python3",
         "tests/privacy_check_test.py"
       ],
-      "code_sha": "1265354ee077e6e1554a403ddfcd09f347353bc1",
+      "code_sha": "2f8971f4d2402ea64363edba1af7cb2ae97bdd4a",
+      "input_snapshot_sha256": "bf74e6bf0996aac02571166b0f5ea1dac0e09a41ea18f94e402e72511bb46e1a",
       "working_code_sha256": {
         "scripts/m5_s1_analysis.py": "615919c8b05b7eed1a82c096a274ee4934d407875a577ae89fcce1a7fccfa37c",
-        "scripts/m5_s1_sources.py": "21c5d194cf0cb112c309cb6f3a9ba5d4d278918bd7a9aa2090d1d33428e20f45",
-        "scripts/m5_s1_validate.py": "4712db11801926cfe69f03089e67988e7f130b496e00782fb0b54ff02b3ef54e"
+        "scripts/m5_s1_sources.py": "23c86ff7f3877011b1f9f978b44f7c6bc924a7167ed0d2f96b41ac209dc0e910",
+        "scripts/m5_s1_validate.py": "5a4eacc42fec118f9a82dc7c304d8b6b358140048bc00847c77772b363cf17a1"
       },
       "machine": "node-0 CPU only",
       "python": "3.12.3",
@@ -229,24 +246,26 @@
       "arch": "x86_64",
       "exit_code": 0,
       "timed_out": false,
-      "log": "runs/m5-s1-validation-01/privacy-unit.log",
+      "log": "runs/m5-s1-validation-02/privacy-unit.log",
       "log_sha256": "c6b9b1f09add0403cc07e90bfdf272129b1ddfa2f8f7675ea8218862f2516371",
-      "elapsed_s": 0.06673501594923437,
+      "output_stdout_stderr_sha256": "c6b9b1f09add0403cc07e90bfdf272129b1ddfa2f8f7675ea8218862f2516371",
+      "elapsed_s": 0.06636805005837232,
       "status": "PASS"
     },
     {
-      "run_id": "m5-s1-validation-01",
+      "run_id": "m5-s1-validation-02",
       "check": "diff",
       "argv": [
         "git",
         "diff",
         "--check"
       ],
-      "code_sha": "1265354ee077e6e1554a403ddfcd09f347353bc1",
+      "code_sha": "2f8971f4d2402ea64363edba1af7cb2ae97bdd4a",
+      "input_snapshot_sha256": "bf74e6bf0996aac02571166b0f5ea1dac0e09a41ea18f94e402e72511bb46e1a",
       "working_code_sha256": {
         "scripts/m5_s1_analysis.py": "615919c8b05b7eed1a82c096a274ee4934d407875a577ae89fcce1a7fccfa37c",
-        "scripts/m5_s1_sources.py": "21c5d194cf0cb112c309cb6f3a9ba5d4d278918bd7a9aa2090d1d33428e20f45",
-        "scripts/m5_s1_validate.py": "4712db11801926cfe69f03089e67988e7f130b496e00782fb0b54ff02b3ef54e"
+        "scripts/m5_s1_sources.py": "23c86ff7f3877011b1f9f978b44f7c6bc924a7167ed0d2f96b41ac209dc0e910",
+        "scripts/m5_s1_validate.py": "5a4eacc42fec118f9a82dc7c304d8b6b358140048bc00847c77772b363cf17a1"
       },
       "machine": "node-0 CPU only",
       "python": "3.12.3",
@@ -254,23 +273,25 @@
       "arch": "x86_64",
       "exit_code": 0,
       "timed_out": false,
-      "log": "runs/m5-s1-validation-01/diff.log",
+      "log": "runs/m5-s1-validation-02/diff.log",
       "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "elapsed_s": 0.0669205259764567,
+      "output_stdout_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "elapsed_s": 0.06526524305809289,
       "status": "PASS"
     },
     {
-      "run_id": "m5-s1-validation-01",
+      "run_id": "m5-s1-validation-02",
       "check": "privacy-current",
       "argv": [
         "python3",
         "scripts/privacy_check.py"
       ],
-      "code_sha": "1265354ee077e6e1554a403ddfcd09f347353bc1",
+      "code_sha": "2f8971f4d2402ea64363edba1af7cb2ae97bdd4a",
+      "input_snapshot_sha256": "bf74e6bf0996aac02571166b0f5ea1dac0e09a41ea18f94e402e72511bb46e1a",
       "working_code_sha256": {
         "scripts/m5_s1_analysis.py": "615919c8b05b7eed1a82c096a274ee4934d407875a577ae89fcce1a7fccfa37c",
-        "scripts/m5_s1_sources.py": "21c5d194cf0cb112c309cb6f3a9ba5d4d278918bd7a9aa2090d1d33428e20f45",
-        "scripts/m5_s1_validate.py": "4712db11801926cfe69f03089e67988e7f130b496e00782fb0b54ff02b3ef54e"
+        "scripts/m5_s1_sources.py": "23c86ff7f3877011b1f9f978b44f7c6bc924a7167ed0d2f96b41ac209dc0e910",
+        "scripts/m5_s1_validate.py": "5a4eacc42fec118f9a82dc7c304d8b6b358140048bc00847c77772b363cf17a1"
       },
       "machine": "node-0 CPU only",
       "python": "3.12.3",
@@ -278,9 +299,10 @@
       "arch": "x86_64",
       "exit_code": 0,
       "timed_out": false,
-      "log": "runs/m5-s1-validation-01/privacy-current.log",
-      "log_sha256": "3cfa7be2f880be21066eee45d332428aa3088a1cda41d1b8428183d14eea9daa",
-      "elapsed_s": 133.65303378505632,
+      "log": "runs/m5-s1-validation-02/privacy-current.log",
+      "log_sha256": "d2aad2e38565a8ff2726108bd180039dfcb88fbc5045c74ff04eac67e5397e95",
+      "output_stdout_stderr_sha256": "d2aad2e38565a8ff2726108bd180039dfcb88fbc5045c74ff04eac67e5397e95",
+      "elapsed_s": 133.39595005405135,
       "status": "PASS"
     }
   ],
@@ -295,8 +317,10 @@
     "input-hashes.json": "a07b4650b9d20ab296bc0ef6d2bb0f1e24c0bc849d0778c02af93c6c987a0638",
     "repeat-coverage.json": "7f6d3b3c24b22732737bd5c399ac242fe1956e06dc863e1f0724aa71d1132804",
     "sensitivity.json": "a41ea46bad43e6be78feace2d829cea15cba0ccd677ed6301f927a635da31bae",
+    "source-receipts.json": "c4bb2687c378bf5adab51933857b2be5c1d1baab02ecfdcd65f73a166d040d73",
     "timeline-summary.json": "a147cda7892244ceff8e469dd148a907a1d2732e5aa8aeccb843018cc6e10800",
-    "timeline.json": "8ca8d05e21912e539a2de209597b9b482f984896a1c2adf661c80dfa2384754c"
+    "timeline.json": "8ca8d05e21912e539a2de209597b9b482f984896a1c2adf661c80dfa2384754c",
+    "validation-attempt01.json": "0b7cbcd109424e5808294a942992f42d9f9c252b60a3088a7a2bc522d53e3c4d"
   },
   "historical_failures_preserved": true,
   "final_alert": false,
@@ -310,6 +334,22 @@
   ],
   "scientific_validity": "NOT_APPROVED",
   "gaps": "OPEN / REQUIRES_OWNER_DECISION",
-  "overall": "FAIL",
-  "publication": "PENDING exact commit/tree and its CI; see PR and private publication receipt"
+  "overall": "PASS",
+  "publication": "Final commit/tree and exact-head CI are bound externally by the Draft PR and private runs/m5-s1-publication-01 receipt; this file records the completed CPU validation snapshot.",
+  "retained_validation_attempts": [
+    {
+      "run_id": "m5-s1-validation-01",
+      "status": "FAIL",
+      "evidence": "data/validation-attempt01.json",
+      "sha256": "0b7cbcd109424e5808294a942992f42d9f9c252b60a3088a7a2bc522d53e3c4d",
+      "reason": "fixed sdist path missing; source check and citation test failed; original arithmetic and other regressions passed"
+    }
+  ],
+  "formal_rbeast_binary_sha256": "a7432000e18465d8e4d2ba895a8618b388007528757718d286fcb82440bbb157",
+  "runtime_versions_readback": {
+    "Rbeast": "0.1.25",
+    "numpy": "2.2.6",
+    "python": "3.12.3"
+  },
+  "source_code_finalization": "Scripts/tests unchanged after executed commit2f8971f; final evidence/docs commit identified by Draft PR and exact-head CI."
 }
