@@ -163,3 +163,26 @@ unapproved; cpPr≈0.8 behavior, production false positives, real GPU fault metr
 and paper1–2 iteration claim are untested. Wheel redistribution/license and PDF
 rights questions remain unresolved. final_alert=false; scientific validity,
 formal adoption and M6 NOT_APPROVED/OPEN. Only next task: independent Draft PR review.
+
+
+## M5-S1 scientific audit (2026-10-10; no decisions approved)
+
+G01/G02/G13: OPEN / REQUIRES_OWNER_DECISION. PAPER full pp26/27/40/43/44,
+fixed UPSTREAM Rbeast0.1.25 sdist and ADAPTATION code at PR8 d2973f5 are
+separated in docs/m5/science-s1. BEAST MCMC/window refit is not proven online
+run-length BOCD; cpPr is local summed/capped occurrence output, distinct from
+pointwise cpOccPr and unproven as P(run_length=0). All24 adapter parameters are
+explicit engineering/model choices without exact paper authority. No replacement.
+G02: inclusive span>20, exclusive elapsed>20, retained count>20, consecutive
+qualified prefixes>20 and k1/k2 guards independently saved/tested, none enabled.
+Sustained candidate22 versus span41/elapsed42 demonstrates differing semantics;
+final alert iteration null. G13: A time growth/B reciprocal-mean throughput proxy
+remain separate strict>0.2; growth20 A first23/B none, growth21 A22/B none;
+recovery diverges30..32. No fixture-driven choice or GPU accuracy claim.
+EXTENSION sensitivity audits all12600 saved C prefixes/280 replays,630 unique
+rows; original832 files and formal1424 runtime files byte-preserved. Current
+node-0 CPU validation02 all11 commands0; validation01 source-path/citation FAIL
+retained, no relaxed arithmetic. Scientific validity/runtime adoption/M6 remain
+NOT_APPROVED. G04/G09/G20 dependencies only; no localization/controller changes.
+See G01_SEMANTICS/G02_TIMELINE/G13_THRESHOLD/DECISION_PROPOSAL/validation.json.
+Only next task: independent owner/ChatGPT review of M5-S1 Draft PR.

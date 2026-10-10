@@ -196,3 +196,35 @@ M5 发布回执：Draft PR https://github.com/Zwhao0/myflash/pull/6 ，base main
 完整测量driver exit0，原Reporter/detection/API-fields/contract/比较器自检/6隐私回归均0；最终独立audit与export0（首次export相对路径处理1保留，修正新导出目录且fit重跑0）。本地macOS/Python3.9.6标准库独立核验全部531840数组哈希/字节数exit0，不称本地native/GPU实验。实际子命令/exit/私有日志在runs/m5-p1-execution-01、runs/m5-p1-comparison-01/02、runs/m5-p1-export-02与项目runs/m5-p1-access；公开脱敏命令/exit见validation.json、postprocessing.json，完整索引data-index.json。原生stdout/stderr/路径/PID只留私有runs；初次格式失败也保留。当前树隐私扫描830文件/0发现；最终提交检查与新head CI见私有最终发布回执。
 正式.venv-m5的1424非缓存文件SHA前后相等，正式.so仍a7432000e18465d8e4d2ba895a8618b388007528757718d286fcb82440bbb157、Rbeast0.1.25/NumPy2.2.6；P1自身工作进程残留0。没有GPU/NCCL/Redis/故障注入/系统安装/节点1迁移。旧M5-R FAIL和三份NOT_CAPTURED不改；G01/G02/G04/G09/G13/G20全部OPEN，科学有效性/正式runtime采纳/M6 NOT_APPROVED。隐私CI不解决历史泄露或PDF/整体许可证待决问题。
 下一唯一任务：ChatGPT审核独立M5-P1 Draft PR的实际代码、来源与完整证据；本轮完成后停止，不自行合并、部署或进入M6。
+
+
+## M5-S1 科学语义审计交付（2026-10-10）
+
+用户完整批准M5-S1内部连续完成与独立Draft PR；基线PR8精确
+ d2973f5fa66ae99ec7ea09ea7040a11d1b95b845/tree c81e05380685e86acccde6ff97638d49d02457c8，
+新codex/m5-s1-science-audit，base codex/m5-p1-avx512-seed。PR7/PR8/main不改。
+执行源码提交2f8971f4d2402ea64363edba1af7cb2ae97bdd4a；最终Git提交/tree与实际diff
+通过独立PR和私有publication回执绑定，文档不硬写自己的提交SHA。
+仅新增tasks/05_science_s1、三scripts/m5_s1_*.py、一tests/m5_s1_offline.py和
+science-s1文档/数值/哈希；本文件与GAPS只追加。来源PAPER完整原页、UPSTREAM
+固定Rbeast0.1.25、ADAPTATION独立算术核验、EXTENSION候选解释/敏感性。
+
+node-0 CPU/Xeon8463B/Linux x86_64/Python3.12.3；正式Rbeast0.1.25/NumPy2.2.6。
+完整命令/真实exit/原始日志在runs/m5-s1-validation-{01,02}/*.command.json与*.log；
+公开docs/m5/science-s1/validation.json记录脱敏argv、运行代码SHA/环境/输入与输出
+哈希。validation01 FAIL（sdist路径缺失、引用测试缺凭据，均1）；其余0且失败
+回执保留data/validation-attempt01.json。validation02全部11项0：固定引用、
+12600前缀/280重放、16新增规则测试、Reporter4/检测8/contract/M4的65例、
+P1全部531840数组/隐私6测试/diff/当前树扫描。832原文件逐字核验（最终本两文件
+仅追加），正式1424非缓存文件前后SHA相等，原.so仍a7432000…；不执行native
+新fit/安装/编译/迁移、GPU/NCCL/Redis或最终告警。原M5-R/P1失败/缺失不改。
+本地开发结构/编码/锚点错误和Python3.9末位精确对照FAIL均保留，不加容差。
+
+审计交付的离线计算/完整性PASS；最终全树隐私与远端精确head的CI以本PR实际
+回执验收，不沿用PR8 CI。科学有效性不是PASS；G01/G02/G13 OPEN /
+REQUIRES_OWNER_DECISION，G04/G09/G20仍OPEN。final_alert=false、最终iteration
+null、正式runtime采纳/M6 NOT_APPROVED/NOT_RUN。完整结果与待批准S2隔离部署/
+保留原wheel/回滚方案见docs/m5/science-s1/RESULTS.md与DECISION_PROPOSAL.md。
+
+下一唯一任务：ChatGPT基于独立M5-S1 Draft PR精确Git tree/代码/证据审核。
+完成发布与核验后停止，不自行合并、科学批准、正式迁移或推进M6。
