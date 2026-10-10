@@ -1,0 +1,18 @@
+{
+  "sdist_sha256": "8265bd53f9c16bdb1ab103de047288ea1af6875415394abf3ac0104cfb2917ec",
+  "files": {
+    "ext_src/abc_rand_pcg_local_avx512.c": "92041e7fea6aae20e53d706463de749aa9fcde694006b19bf4e81028ddef2c21",
+    "ext_src/abc_rand_pcg_local_avx2.c": "4996887c98d9f98f807cabcf735ab874a615a634a6cd779ae7ea5f219f473b34",
+    "ext_src/abc_rand_pcg_local_generic.c": "9bad9ee42919807f01c3918c554eff2c800e561ead78f0fb13a8a25ca068ccff",
+    "ext_src/abc_rand_pcg_local.h": "d7e6f4930af3c5ffd01c398e0b9e1e59d7b9d2b85d8ed91435165dfa61add1fd",
+    "ext_src/beastv2_COREV4.c": "cef68f513a584a4772d260d3c3be6c00de623461a91347f5c0408086657f6a91",
+    "ext_src/beastv2_COREV4_mthrd.c": "75d193c1aa7228a16cc66d5c406372505aecdd3964ff88786d425699393618c7",
+    "ext_src/beastv2_io_in_args.c": "b2683ec418dc5380a4c454daaa07c5efd54b44e4638f6b1f39d73215a551b62e",
+    "ext_src/glue_code.c": "b7242208eb485ce282d57c9bd850b726f1de4446f4a7d53854b47d67e8c912f1",
+    "ext_src/abc_common.c": "79968277ce908c16c65d477ef7f115d039045069a98a16c91c9f20f46c9a2357",
+    "LICENSE": "f8a7108c7df0decd71af2e669dbfafbc9592c381f9cb704c886249e93eebb0aa",
+    "py_src/Rbeast/beast.py": "3f6414e2a62831a58d8aebd3793a8477dc3d3ed04994f820717347b84da5a6ed",
+    "ext_src/abc_rand.h": "e8b3eee88462e2375858afc8f5ad57a3883d66a0cfa930ec2edf231db86ea043",
+    "ext_src/abc_001_config.h": "50a296d865d11a3253756a9aec37850fbfa52c0c5b9e3be6027c2073c0086437"
+  }
+}

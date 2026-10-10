@@ -1,0 +1,93 @@
+{
+  "base_commit": "baa7638d775e1462240f0f63207c145ce209fcab",
+  "machine": "node-0 Intel Xeon Platinum8463B, Linux x86_64, Python3.12.3",
+  "commands": [
+    {
+      "machine": "node-0",
+      "command": "nice -n 10 timeout -k 5 3600 <project>/.venv-m5/bin/python scripts/m5_repeatability.py suite --output runs/m5-r-20261010-01 --count 20",
+      "exit_code": 0,
+      "log": "runs/m5-work/runs/m5-r-launch-20261010-01/suite.stdout",
+      "stderr": "runs/m5-work/runs/m5-r-launch-20261010-01/suite.stderr",
+      "command_receipts": "runs/m5-work/runs/m5-r-20261010-01/reference/**; decisions/**/fit-*.command.json"
+    },
+    {
+      "machine": "node-0",
+      "command": "nice -n 10 timeout -k 5 3600 <project>/.venv-m5/bin/python scripts/m5_repeatability.py suite --output runs/m5-r-20261010-02 --count 20",
+      "exit_code": 0,
+      "log": "runs/m5-work/runs/m5-r-launch-20261010-02/suite.stdout",
+      "stderr": "runs/m5-work/runs/m5-r-launch-20261010-02/suite.stderr",
+      "command_receipts": "runs/m5-work/runs/m5-r-20261010-02/reference/**; decisions/**/fit-*.command.json"
+    },
+    {
+      "machine": "node-0",
+      "command": "<project>/.venv-m5/bin/python scripts/m5_repeatability_report.py --run runs/m5-r-20261010-01 --output docs/m5/repeatability/data",
+      "exit_code": 1,
+      "log": "runs/m5-work/runs/m5-r-launch-20261010-01/export.stderr",
+      "reason": "fit-count assertion; three validation exceptions lost raw in original diagnostic"
+    },
+    {
+      "machine": "node-0",
+      "command": "<project>/.venv-m5/bin/python scripts/m5_repeatability_report.py --run runs/m5-r-20261010-02 --output docs/m5/repeatability/data-complete",
+      "exit_code": 0,
+      "log": "runs/m5-work/runs/m5-r-launch-20261010-02/export.stdout"
+    },
+    {
+      "machine": "node-0",
+      "command": "<project>/.venv-m5/bin/python tests/m5_real_api.py <m5-checkout>/runs/m5-r-strict-20261010-01/api",
+      "exit_code": 1,
+      "log": "runs/m5-work/runs/m5-r-strict-20261010-01/00.log",
+      "result": "FAIL: seeded result not reproducible"
+    },
+    {
+      "machine": "node-0",
+      "command": "<project>/.venv-m5/bin/python scripts/m5_replay.py --input tests/m5_fixtures/records/sustained.json --output <m5-checkout>/runs/m5-r-strict-20261010-01/replay",
+      "exit_code": 0,
+      "log": "runs/m5-work/runs/m5-r-strict-20261010-01/01.log"
+    },
+    {
+      "machine": "node-0",
+      "command": "<project>/.venv-m5/bin/python tests/m5_replay.py <m5-checkout>/runs/m5-r-strict-20261010-01/replay",
+      "exit_code": 1,
+      "log": "runs/m5-work/runs/m5-r-strict-20261010-01/02.log",
+      "result": "FAIL: exact prefix-output assertion"
+    },
+    {
+      "machine": "node-0",
+      "command": "OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 nice -n 10 timeout -k 5 60 <project>/.venv-m5/bin/python <project>/runs/m5-access/m5-r-prefix-capture.py",
+      "exit_code": 1,
+      "log": "runs/m5-work/runs/m5-r-launch-20261010-02/prefix-capture.log",
+      "result": "unchanged strict test via runpy; raw globals captured on assertion failure"
+    },
+    {
+      "machine": "node-0",
+      "command": "<project>/.venv-m5/bin/python <project>/runs/m5-access/m5-r-postflight.py",
+      "exit_code": 0,
+      "log": "runs/m5-work/runs/m5-r-launch-20261010-02/postflight.log"
+    },
+    {
+      "machine": "node-0",
+      "command": "<project>/.venv-m5/bin/python tests/m5_reporter.py",
+      "exit_code": 0,
+      "log": "runs/m5-work/runs/m5-r-strict-20261010-01/03.log"
+    },
+    {
+      "machine": "node-0",
+      "command": "<project>/.venv-m5/bin/python tests/m5_detection.py",
+      "exit_code": 0,
+      "log": "runs/m5-work/runs/m5-r-strict-20261010-01/04.log"
+    },
+    {
+      "machine": "node-0",
+      "command": "<project>/.venv-m5/bin/python tests/privacy_check_test.py",
+      "exit_code": 0,
+      "log": "runs/m5-work/runs/m5-r-strict-20261010-01/05.log"
+    }
+  ],
+  "private_exact_commands": "runs/m5-work/runs/m5-r-strict-20261010-01/validation-private.json; each reference/fit command.json; runs/m5-access/m5-r-{regression,finish,export2,prefix-capture,postflight}.*",
+  "source_command_archives": "runs/m5-access/m5-r-diagnostics.tar; m5-r-diagnostics3.tar; m5-r-report-final.tar",
+  "gpu_experiments": false,
+  "strict_repeatability": "FAIL",
+  "decision_stability": "conditional Run02 stable; Run01 candidate flips retained; no unconditional PASS",
+  "raw_missing_first_batch": 3,
+  "complete_second_batch_native_decision_outputs": 4900
+}

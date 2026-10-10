@@ -1,0 +1,11 @@
+{
+  "machine": "node-0",
+  "native_binary_sha256": "a7432000e18465d8e4d2ba895a8618b388007528757718d286fcb82440bbb157",
+  "native_binary_preserved": true,
+  "Rbeast": "0.1.25",
+  "numpy": "2.2.6",
+  "own_process_leftovers": [],
+  "m1_isolation": "M1 unchanged package isolation",
+  "gpu_experiments": false,
+  "final_alert": false
+}

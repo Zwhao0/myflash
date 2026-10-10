@@ -168,3 +168,14 @@ M4补充发布完成：Draft PR https://github.com/Zwhao0/myflash/pull/5 ，base
 下一唯一任务：用户审核M5，决定真实Rbeast严格重复性上游修复与G01/G02/G13/G20科学规则；本轮停止，M6须另行批准。
 
 M5 发布回执：Draft PR https://github.com/Zwhao0/myflash/pull/6 ，base main9c66be49，首份source head d639f66e00fb975a561478e3ed3ead6f1401d6db/tree9eb49d43b15af19033d6b82f143f74a645450efc，90文件diff（88新文件+STATUS/GAPS），Git SSH普通push exit0，远端commit/tree与本地/服务器相等。539文件当前隐私扫描findings0、6隐私测试0、最后diff检查0；GitHub Publication privacy check run38038070584 completed/success。该段只记录首份快照，文档回执后最终head/tree/CI保存在私有runs/m5-access/publication-receipt.json，不把前次CI冒充后次检查。自身GPU PID结束复核0，原运行日志保留。严格重复性FAIL和科学规则OPEN未被覆盖；M5停止待审核，不进入M6。
+
+
+## M5-R 专项交付（2026-10-10）
+用户只批准M5-R；沿用PR6的codex/m5-iteration-rbeast、起点baa7638d775e1462240f0f63207c145ce209fcab，main9c66be49不改、PR保持Draft不合并。新增tasks/05_repeatability.md、两个scripts/m5_repeatability*.py和docs/m5/repeatability（ROOT_CAUSE/EXPERIMENTS/RESULTS、完整脱敏比较数据、验证/保留记录）；本文件/GAPS仅追加。正式adapter/detection/阈值、原严格断言、M1–M4源码与数据逐字保留。提交/diff最终快照见本地Git和私有runs/m5-r-access/交付回执。
+来源PAPER既有窗口/阈值；UPSTREAM固定Rbeast0.1.25 sdist/wheel、实际导出符号与反汇编；ADAPTATION有界进程/affinity/完整hash/原数组字节采集；EXTENSION固定人工输入重复性，不是GPU实验。源码位置/许可/界限及未批准补丁方案见ROOT_CAUSE，不复制GreyHound或旧失败实现。
+实际node-0 Intel Xeon Platinum8463B、Linux6.8.0 x86_64、Python3.12.3，现有隔离Rbeast0.1.25/NumPy2.2.6。两独立CPU批次m5-r-20261010-01/02：每批32单元×20 reference fits、七固定场景×20×45前缀（4900 native决策fit）。同/新进程、默认/单链、原/固定CPU0与线程1、SSE/AVX2/AVX512实际分派对照完整。默认AVX512仍不重复，SSE/AVX2各单元20次字节一致仅诊断，不改正式默认。初始化缓冲区因果实验和已加载指令确认AVX512旧byte32依赖缺陷；未证明是所有posterior差异的唯一原因，更没有修复后PASS。未patch/rebuild/安装/升级运行时。
+严格重复性FAIL：独立m5-r-strict-20261010-01的原m5_real_api.py与m5_replay.py均exit1，原断言不改；完整API raw/新full-short失败raw和历史FAIL全部保留。完整批次02每场景35/35 fitted前缀后验字节不一致；有效输出候选有无/qualified cp/首次iteration在20次中稳定，低概率raw cp有邻迭代漂移。20% first duration23、throughput无；21% first22、throughput无。不同分母/不同prefix均值影响完整列出。首次批次三次invalid cpOccPr拒绝造成持续退化28/35及19%场景29候选有无翻转，因此决策稳定性不能无条件PASS；不接受通用有界统计重复性代替严格PASS。
+首诊断在候选验证之后保存raw导致这三次raw未采到；源脚本/异常/输入hash/参数/决策/NOT_CAPTURED及导出fit-count断言exit1保留，不补零、不猜数值、不删除重复。仅修正诊断采集顺序，使用独立02完整重跑同一矩阵，4900 raw完整；不替换01失败。源码字段错误已证实，特定cpOccPr无效值和成因因缺raw保持未知。
+命令、机器、exit与私有日志位置见repeatability/validation.json；suite01/02均0（01不代表完整性PASS）、export01为1/export02为0，严格两测试1；node-0原Reporter/8处理/6隐私测试0。私有原始命令/worker stdout/stderr/原模型打印位于服务器runs/m5-work/runs/m5-r-{20261010-01,20261010-02,strict-20261010-01,prefix-capture-01}与runs/m5-r-launch-20261010-{01,02}，入口脚本runs/m5-access/m5-r-*。本地macOS/Python3.9标准库验证5540 fits/132960数组/6300前缀的数据hash、native bytes、输入、固定配置与无未来映射exit0，不称本地真实Rbeast/GPU实验。运行时binary hash前后相同、M1仍无新增包、自身实验进程残留0；无GPU/Redis/自动Profile/控制器/真值读取。
+保留隐私CI工作流和原head成功记录；本轮新head远端CI不得冒充前次PASS。最终当前树扫描/保留SHA/diff及发布状态以publication-validation和私有交付回执为准。Git CLI连接的SSH publickey与HTTPS认证未就绪，M5-R目前交付在本地同名分支，远端PR6仍为原baa7638，未更新；不把未发布的新改动称远端CI PASS。G01/G02/G13/G20全部OPEN、final_alert=false。
+下一唯一任务：用户审核M5-R证据与补丁/独立复测方案，决定是否另行批准隔离native修复；本轮停止，不自动进入M6。
