@@ -6,7 +6,7 @@
 
 ## 权威路径、来源与改动
 
-- 开发机：gpu-01，Linux 6.8.0-142-generic x86_64/glibc2.39；工作目录 `/home/campus/zhangweihao/myflash`，独立 Git 分支 `main`。
+- 开发机：gpu-01，Linux 6.8.0-142-generic x86_64/glibc2.39；工作目录 `/home/campus/zhangweihao/myflash`，当前 Git 分支 `codex/m4-localization`（M0初建为main）。
 - 用户明确在服务器开发；该目录 SSH 只读检查时不存在，创建时再次确认不存在。不访问旧失败实现。
 - 原始输入是本地工作包的文档/第三章 PDF；未将本地连接凭证、其他项目、实现或构建产物传入。输入哈希见 `docs/m0/input_hashes.json`。
 - 新增 `.gitignore`、`ARCHITECTURE.md`、`SOURCE_MAP.md`、`ENVIRONMENT_PLAN.md`、四个目录 `.gitkeep` 与 `docs/m0` 证据；更新本文件与 `GAPS.md`。
@@ -54,7 +54,7 @@ PASS：用户创建并指定 [Zwhao0/myflash](https://github.com/Zwhao0/myflash)
 
 两机已确认各8张H800、运行时CUDA12.8/NCCL2.27.3及实际RoCE通信。Megatron/TE/native训练入口、可用授权容器、Redis实例位置仍缺失/未核验；G01–G20科学未知保持OPEN。M1小模型DDP不能填补论文训练配置。
 
-下一唯一任务：用户审核已完成M2的docs/m2及源码。M3手动剖析/机制验证未授权、未执行；MoE准备仍需独立授权。
+下一唯一任务：用户审核M4的docs/m4及源码，并补充截断M4d要求；M3已审核，M5未开始。MoE仍不在当前批准范围。
 
 ## M1 2026-10-10 早期执行记录（历史）
 
@@ -128,3 +128,5 @@ python3 scripts/m4_replay.py --output runs/m4-replay-final-03 exit0，log同目�
 最终只读python3 scripts/m4_verify_real.py --run-id m4-multigroup-normal-01 exit0，runs/m4-final-check-03/2.log；Reader/source preservation和三个原M3 CPU/公开证据回归均0，runs/m4-final-check-01/3..5.log。postflight本run四PID/对应GPU PID/shm残留全0，公开postflight.json。原失败回放01/02与中转错误保留，不暗改数据/阈值。
 G04权重/20%/std与部分score参照OPEN；候选PROVISIONAL_CANDIDATE/分歧AMBIGUOUS_SPEC，final_fault_ranks为空。M4d消息后半截断未收到，额外验收条件NOT_RUN；新跨机多组/延迟注入多组/混合comm真实Group/Float8真实GPU/完整最终判决NOT_RUN。BOCD/Redis/自动闭环/恢复/MoE/M5未开发未启动。
 下一唯一任务：审核本M4明确交付及G04选项，并补充截断M4d后半；本轮到此停止，不自动推进下一关。审核PR/服务器与GitHub内容树匹配回执待本轮同步完成追加。
+
+M4审核发布完成：Draft PR https://github.com/Zwhao0/myflash/pull/4 ，base=codex/m3-profile（PR2仍未合并），head=codex/m4-localization。服务器源124405ce4d3e3b72dfe96b93d2c532145eb096c4 → GitHub f2b1c54dcbd32db65f06cf10365611f7f9b7cdfc，327变化文件blob及完整tree d9348a2d80c98dca08efa0851150fbbfbe026de5一致，main未改。整包/分批inline tree两次连接器传输错误保留；逐blob上传204个独立对象全部SHA核验后组装完整tree成功，不影响CPU/GPU结果。首次公开中转取数因Expect缓冲区默认太小失败，改显式缓冲后完整payload/每blob hash校验成功；未下载原始敏感数据。docs/m4/SYNC.json记录此次审核快照，文档回执追加的最后双方head/tree写.git/m4-final-sync.json。M4明确范围完成且停止；G04完整判决OPEN，截断附加标准未验收，M5不启动。
