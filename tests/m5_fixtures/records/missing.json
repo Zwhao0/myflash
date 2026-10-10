@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "records": [
+    {
+      "run_id": "fixture",
+      "global_rank": 0,
+      "iteration": 1,
+      "iteration_time_ms": 100,
+      "timestamp": "2026-10-10T00:00:00+00:00",
+      "source": "synthetic-fixed",
+      "timing_boundary": "synthetic-duration",
+      "cuda_completion_wait": false
+    },
+    {
+      "run_id": "fixture",
+      "global_rank": 0,
+      "iteration": 3,
+      "iteration_time_ms": 100,
+      "timestamp": "2026-10-10T00:00:00+00:00",
+      "source": "synthetic-fixed",
+      "timing_boundary": "synthetic-duration",
+      "cuda_completion_wait": false
+    }
+  ]
+}

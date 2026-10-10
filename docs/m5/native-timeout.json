@@ -1,0 +1,44 @@
+{
+  "engine": "Rbeast.beast",
+  "semantics": "retrospective-window-refit",
+  "parameters": {
+    "start": 1,
+    "deltat": 1,
+    "season": "none",
+    "method": "bayes",
+    "tcp_minmax": [
+      0,
+      10
+    ],
+    "torder_minmax": [
+      0,
+      1
+    ],
+    "tseg_minlength": 1,
+    "tseg_leftmargin": 0,
+    "tseg_rightmargin": 0,
+    "mcmc_seed": 20261010,
+    "mcmc_burbin": 200,
+    "mcmc_chains": 3,
+    "mcmc_thin": 5,
+    "mcmc_samples": 8000,
+    "precValue": 1.5,
+    "precPriorType": "componentwise",
+    "hasOutlier": false,
+    "print_param": true,
+    "print_progress": false,
+    "print_warning": true,
+    "quiet": false,
+    "gui": false,
+    "dump_ci": false,
+    "dump_mcmc": false
+  },
+  "probability_field": "trend.cpPr",
+  "probability_meaning": "BEAST localized changepoint occurrence posterior; not P(run_length=0)",
+  "coordinate": "start=1/deltat=1 time; Python index=cp-1",
+  "scientific_status": "AMBIGUOUS_SPEC",
+  "raw": null,
+  "status": "INSUFFICIENT_EVIDENCE",
+  "reason": "NATIVE_TIMEOUT",
+  "native_stdout": null
+}

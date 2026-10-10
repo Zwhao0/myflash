@@ -82,3 +82,26 @@ PAPER：确定部分仅max communicator mean选组、min rank mean排序、CV0.1
 4. 式3-1 clique平均与全组参照的权重：本轮展示本地comm均值等权，明确统计口径，不替代max_avg_latency；未校准概率。
 ADAPTATION G05/G16：同进程/线程/outer group_id scope内每本地comm最多一观测，保留成员数量和独立scope数量。跨comm共享scope相关性风险可见，不假装独立；缺失/无效/重复/身份不可靠直接拒绝，零均值不定义CV。
 批准：用户M4明确允许确定性部分PASS、保留G04。实现flash/profile_input.py/localization.py；测试tests/m4_cases与docs/m4验证记录。科学问题未关闭。
+
+## M5 evidence update (2026-10-10)
+
+All four items remain OPEN. M5 implementation emits AMBIGUOUS_SPEC and no final
+alert; implementation/CPU library compatibility PASS is separate from scientific
+FLASH detection validity. User approved isolated dependency installation, not a
+resolution of these scientific choices.
+
+| ID | Evidence and implementation | Unresolved decision |
+|---|---|---|
+| G01 | PAPER pp26–27 calls Rbeast BOCD/run-length posterior. UPSTREAM approved wheel Rbeast0.1.25 rb.beast fits a full window via BEAST; trend.cp is a time coordinate with start/deltat, cpPr is localized occurrence probability, cpOccPr is pointwise. ADAPTATION uses cp-1 with start1/deltat1 and complete raw output. | Model priors/MCMC/segment margins, interpreting cpPr>=0.8, using all cp slots versus ncp_mode, compressed time after outlier deletion, population z-score and whole-window versus neighboring segments are explicit experimental assumptions. These have not been scientifically approved. No classical incremental BOCD equivalence. |
+| G02 | PAPER §3.4.3 >20 iterations versus §3.4.5 1–2 iterations. Code reports observed original iterations and >20 fact, with required duration/decision=null. | No duration gate selected; replay delay measures candidate evidence only. Native segment minimum/margins are model support, not FLASH persistence. Cannot tune a gate to reproduce paper latency. |
+| G13 | PAPER20% lacks denominator/direction, and injected degradation5–85% lacks equivalent iteration interpretation. Code reports (degraded-baseline)/baseline and (degraded-baseline)/degraded with separate threshold facts. | Neither duration-growth nor throughput-loss rule approved. Strict >0.2 experimental boundary recorded; >= sensitivity at exact equality unresolved. No automatic alert or injected GPU frequency inference. |
+| G20 | PAPER p25 completed-iteration callback versus p35 periodic rank0 sender. ADAPTATION actual begin/end callback, UTC completion timestamp, monotonic duration; optional explicit CUDA completion wait. Local persistence is after timing and must only consume completed records. | General framework boundary/data loading/asynchronous CUDA completion and future transport exactly-once/ACK/restart remain to be agreed for M6. The DDP test boundary is declared and verified, not universal framework support. |
+
+G01 compatibility/reproducibility evidence: approved Rbeast0.1.25+NumPy2.2.6
+imports and fits on Python3.12.3. Same nonzero seed20261010 changes native posterior
+arrays across repeated calls and isolated subprocesses; strict exact-output test
+FAIL is retained. Field compatibility does not close stochastic reproducibility.
+UPSTREAM same-version sdist SHA8265bd53f9c16bdb1ab103de047288ea1af6875415394abf3ac0104cfb2917ec:
+abc_rand_pcg_local_avx512.c:avx512_pcg_set_seed references increment (different union
+member from increment512); possible uninitialized-state cause, not confirmed as the
+wheel execution cause. No binary patch/rebuild, library upgrade or alternate detector.

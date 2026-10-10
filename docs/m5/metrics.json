@@ -1,0 +1,782 @@
+{
+  "stable": {
+    "onset_iteration": null,
+    "event_kind": "no_sustained_event",
+    "matching_tolerance_iterations": 2,
+    "probability_candidate_decisions": 0,
+    "normal_pseudo_candidates": 0,
+    "final_alerts": 0,
+    "classification": "synthetic-window-evidence-not-FLASH-accuracy",
+    "probability": {
+      "first_any_candidate_iteration": null,
+      "first_matched_candidate_iteration": null,
+      "delay_iterations": null,
+      "missed": false,
+      "pseudo_candidate_decisions": 0
+    },
+    "duration_assumption": {
+      "first_any_candidate_iteration": null,
+      "first_matched_candidate_iteration": null,
+      "delay_iterations": null,
+      "missed": false,
+      "pseudo_candidate_decisions": 0
+    },
+    "throughput_assumption": {
+      "first_any_candidate_iteration": null,
+      "first_matched_candidate_iteration": null,
+      "delay_iterations": null,
+      "missed": false,
+      "pseudo_candidate_decisions": 0
+    }
+  },
+  "spike": {
+    "onset_iteration": 21,
+    "event_kind": "synthetic_change",
+    "matching_tolerance_iterations": 2,
+    "probability_candidate_decisions": 0,
+    "normal_pseudo_candidates": null,
+    "final_alerts": 0,
+    "classification": "synthetic-window-evidence-not-FLASH-accuracy",
+    "probability": {
+      "first_any_candidate_iteration": null,
+      "first_matched_candidate_iteration": null,
+      "delay_iterations": null,
+      "missed": true,
+      "pseudo_candidate_decisions": 0
+    },
+    "duration_assumption": {
+      "first_any_candidate_iteration": null,
+      "first_matched_candidate_iteration": null,
+      "delay_iterations": null,
+      "missed": true,
+      "pseudo_candidate_decisions": 0
+    },
+    "throughput_assumption": {
+      "first_any_candidate_iteration": null,
+      "first_matched_candidate_iteration": null,
+      "delay_iterations": null,
+      "missed": true,
+      "pseudo_candidate_decisions": 0
+    }
+  },
+  "sustained": {
+    "onset_iteration": 21,
+    "event_kind": "synthetic_change",
+    "matching_tolerance_iterations": 2,
+    "probability_candidate_decisions": 24,
+    "normal_pseudo_candidates": null,
+    "final_alerts": 0,
+    "classification": "synthetic-window-evidence-not-FLASH-accuracy",
+    "probability": {
+      "first_any_candidate_iteration": 22,
+      "first_matched_candidate_iteration": 22,
+      "delay_iterations": 1,
+      "missed": false,
+      "pseudo_candidate_decisions": 0
+    },
+    "duration_assumption": {
+      "first_any_candidate_iteration": 22,
+      "first_matched_candidate_iteration": 22,
+      "delay_iterations": 1,
+      "missed": false,
+      "pseudo_candidate_decisions": 0
+    },
+    "throughput_assumption": {
+      "first_any_candidate_iteration": 22,
+      "first_matched_candidate_iteration": 22,
+      "delay_iterations": 1,
+      "missed": false,
+      "pseudo_candidate_decisions": 0
+    }
+  },
+  "recovery": {
+    "onset_iteration": 21,
+    "event_kind": "synthetic_change",
+    "matching_tolerance_iterations": 2,
+    "probability_candidate_decisions": 42,
+    "normal_pseudo_candidates": null,
+    "final_alerts": 0,
+    "classification": "synthetic-window-evidence-not-FLASH-accuracy",
+    "probability": {
+      "first_any_candidate_iteration": 22,
+      "first_matched_candidate_iteration": 22,
+      "delay_iterations": 1,
+      "missed": false,
+      "pseudo_candidate_decisions": 18
+    },
+    "duration_assumption": {
+      "first_any_candidate_iteration": 22,
+      "first_matched_candidate_iteration": 22,
+      "delay_iterations": 1,
+      "missed": false,
+      "pseudo_candidate_decisions": 0
+    },
+    "throughput_assumption": {
+      "first_any_candidate_iteration": 22,
+      "first_matched_candidate_iteration": 22,
+      "delay_iterations": 1,
+      "missed": false,
+      "pseudo_candidate_decisions": 0
+    }
+  },
+  "multiple": {
+    "onset_iteration": 16,
+    "event_kind": "synthetic_change",
+    "matching_tolerance_iterations": 2,
+    "probability_candidate_decisions": 66,
+    "normal_pseudo_candidates": null,
+    "final_alerts": 0,
+    "classification": "synthetic-window-evidence-not-FLASH-accuracy",
+    "probability": {
+      "first_any_candidate_iteration": 17,
+      "first_matched_candidate_iteration": 17,
+      "delay_iterations": 1,
+      "missed": false,
+      "pseudo_candidate_decisions": 38
+    },
+    "duration_assumption": {
+      "first_any_candidate_iteration": 17,
+      "first_matched_candidate_iteration": 17,
+      "delay_iterations": 1,
+      "missed": false,
+      "pseudo_candidate_decisions": 14
+    },
+    "throughput_assumption": {
+      "first_any_candidate_iteration": 17,
+      "first_matched_candidate_iteration": 17,
+      "delay_iterations": 1,
+      "missed": false,
+      "pseudo_candidate_decisions": 14
+    }
+  },
+  "warmup": {
+    "onset_iteration": null,
+    "event_kind": "no_sustained_event",
+    "matching_tolerance_iterations": 2,
+    "probability_candidate_decisions": 0,
+    "normal_pseudo_candidates": 0,
+    "final_alerts": 0,
+    "classification": "synthetic-window-evidence-not-FLASH-accuracy",
+    "probability": {
+      "first_any_candidate_iteration": null,
+      "first_matched_candidate_iteration": null,
+      "delay_iterations": null,
+      "missed": false,
+      "pseudo_candidate_decisions": 0
+    },
+    "duration_assumption": {
+      "first_any_candidate_iteration": null,
+      "first_matched_candidate_iteration": null,
+      "delay_iterations": null,
+      "missed": false,
+      "pseudo_candidate_decisions": 0
+    },
+    "throughput_assumption": {
+      "first_any_candidate_iteration": null,
+      "first_matched_candidate_iteration": null,
+      "delay_iterations": null,
+      "missed": false,
+      "pseudo_candidate_decisions": 0
+    }
+  },
+  "outlier": {
+    "onset_iteration": null,
+    "event_kind": "no_sustained_event",
+    "matching_tolerance_iterations": 2,
+    "probability_candidate_decisions": 0,
+    "normal_pseudo_candidates": 0,
+    "final_alerts": 0,
+    "classification": "synthetic-window-evidence-not-FLASH-accuracy",
+    "probability": {
+      "first_any_candidate_iteration": null,
+      "first_matched_candidate_iteration": null,
+      "delay_iterations": null,
+      "missed": false,
+      "pseudo_candidate_decisions": 0
+    },
+    "duration_assumption": {
+      "first_any_candidate_iteration": null,
+      "first_matched_candidate_iteration": null,
+      "delay_iterations": null,
+      "missed": false,
+      "pseudo_candidate_decisions": 0
+    },
+    "throughput_assumption": {
+      "first_any_candidate_iteration": null,
+      "first_matched_candidate_iteration": null,
+      "delay_iterations": null,
+      "missed": false,
+      "pseudo_candidate_decisions": 0
+    }
+  },
+  "adjacent": {
+    "onset_iteration": 21,
+    "event_kind": "synthetic_change",
+    "matching_tolerance_iterations": 2,
+    "probability_candidate_decisions": 42,
+    "normal_pseudo_candidates": null,
+    "final_alerts": 0,
+    "classification": "synthetic-window-evidence-not-FLASH-accuracy",
+    "probability": {
+      "first_any_candidate_iteration": 22,
+      "first_matched_candidate_iteration": 22,
+      "delay_iterations": 1,
+      "missed": false,
+      "pseudo_candidate_decisions": 18
+    },
+    "duration_assumption": {
+      "first_any_candidate_iteration": 23,
+      "first_matched_candidate_iteration": 23,
+      "delay_iterations": 2,
+      "missed": false,
+      "pseudo_candidate_decisions": 18
+    },
+    "throughput_assumption": {
+      "first_any_candidate_iteration": 23,
+      "first_matched_candidate_iteration": 23,
+      "delay_iterations": 2,
+      "missed": false,
+      "pseudo_candidate_decisions": 18
+    }
+  },
+  "constant": {
+    "onset_iteration": null,
+    "event_kind": "no_sustained_event",
+    "matching_tolerance_iterations": 2,
+    "probability_candidate_decisions": 0,
+    "normal_pseudo_candidates": 0,
+    "final_alerts": 0,
+    "classification": "synthetic-window-evidence-not-FLASH-accuracy",
+    "probability": {
+      "first_any_candidate_iteration": null,
+      "first_matched_candidate_iteration": null,
+      "delay_iterations": null,
+      "missed": false,
+      "pseudo_candidate_decisions": 0
+    },
+    "duration_assumption": {
+      "first_any_candidate_iteration": null,
+      "first_matched_candidate_iteration": null,
+      "delay_iterations": null,
+      "missed": false,
+      "pseudo_candidate_decisions": 0
+    },
+    "throughput_assumption": {
+      "first_any_candidate_iteration": null,
+      "first_matched_candidate_iteration": null,
+      "delay_iterations": null,
+      "missed": false,
+      "pseudo_candidate_decisions": 0
+    }
+  },
+  "zero_variance": {
+    "onset_iteration": null,
+    "event_kind": "no_sustained_event",
+    "matching_tolerance_iterations": 2,
+    "probability_candidate_decisions": 0,
+    "normal_pseudo_candidates": 0,
+    "final_alerts": 0,
+    "classification": "synthetic-window-evidence-not-FLASH-accuracy",
+    "probability": {
+      "first_any_candidate_iteration": null,
+      "first_matched_candidate_iteration": null,
+      "delay_iterations": null,
+      "missed": false,
+      "pseudo_candidate_decisions": 0
+    },
+    "duration_assumption": {
+      "first_any_candidate_iteration": null,
+      "first_matched_candidate_iteration": null,
+      "delay_iterations": null,
+      "missed": false,
+      "pseudo_candidate_decisions": 0
+    },
+    "throughput_assumption": {
+      "first_any_candidate_iteration": null,
+      "first_matched_candidate_iteration": null,
+      "delay_iterations": null,
+      "missed": false,
+      "pseudo_candidate_decisions": 0
+    }
+  },
+  "window_boundary": {
+    "onset_iteration": 6,
+    "event_kind": "synthetic_change",
+    "matching_tolerance_iterations": 2,
+    "probability_candidate_decisions": 13,
+    "normal_pseudo_candidates": null,
+    "final_alerts": 0,
+    "classification": "synthetic-window-evidence-not-FLASH-accuracy",
+    "probability": {
+      "first_any_candidate_iteration": 11,
+      "first_matched_candidate_iteration": 11,
+      "delay_iterations": 5,
+      "missed": false,
+      "pseudo_candidate_decisions": 0
+    },
+    "duration_assumption": {
+      "first_any_candidate_iteration": 11,
+      "first_matched_candidate_iteration": 11,
+      "delay_iterations": 5,
+      "missed": false,
+      "pseudo_candidate_decisions": 0
+    },
+    "throughput_assumption": {
+      "first_any_candidate_iteration": 11,
+      "first_matched_candidate_iteration": 11,
+      "delay_iterations": 5,
+      "missed": false,
+      "pseudo_candidate_decisions": 0
+    }
+  },
+  "latest_endpoint": {
+    "onset_iteration": null,
+    "event_kind": "no_sustained_event",
+    "matching_tolerance_iterations": 2,
+    "probability_candidate_decisions": 0,
+    "normal_pseudo_candidates": 0,
+    "final_alerts": 0,
+    "classification": "synthetic-window-evidence-not-FLASH-accuracy",
+    "probability": {
+      "first_any_candidate_iteration": null,
+      "first_matched_candidate_iteration": null,
+      "delay_iterations": null,
+      "missed": false,
+      "pseudo_candidate_decisions": 0
+    },
+    "duration_assumption": {
+      "first_any_candidate_iteration": null,
+      "first_matched_candidate_iteration": null,
+      "delay_iterations": null,
+      "missed": false,
+      "pseudo_candidate_decisions": 0
+    },
+    "throughput_assumption": {
+      "first_any_candidate_iteration": null,
+      "first_matched_candidate_iteration": null,
+      "delay_iterations": null,
+      "missed": false,
+      "pseudo_candidate_decisions": 0
+    }
+  },
+  "empty": {
+    "onset_iteration": null,
+    "event_kind": "no_sustained_event",
+    "matching_tolerance_iterations": 2,
+    "probability_candidate_decisions": 0,
+    "normal_pseudo_candidates": 0,
+    "final_alerts": 0,
+    "classification": "synthetic-window-evidence-not-FLASH-accuracy",
+    "probability": {
+      "first_any_candidate_iteration": null,
+      "first_matched_candidate_iteration": null,
+      "delay_iterations": null,
+      "missed": false,
+      "pseudo_candidate_decisions": 0
+    },
+    "duration_assumption": {
+      "first_any_candidate_iteration": null,
+      "first_matched_candidate_iteration": null,
+      "delay_iterations": null,
+      "missed": false,
+      "pseudo_candidate_decisions": 0
+    },
+    "throughput_assumption": {
+      "first_any_candidate_iteration": null,
+      "first_matched_candidate_iteration": null,
+      "delay_iterations": null,
+      "missed": false,
+      "pseudo_candidate_decisions": 0
+    }
+  },
+  "growth_19": {
+    "onset_iteration": 21,
+    "event_kind": "synthetic_change",
+    "matching_tolerance_iterations": 2,
+    "probability_candidate_decisions": 24,
+    "normal_pseudo_candidates": null,
+    "final_alerts": 0,
+    "classification": "synthetic-window-evidence-not-FLASH-accuracy",
+    "probability": {
+      "first_any_candidate_iteration": 22,
+      "first_matched_candidate_iteration": 22,
+      "delay_iterations": 1,
+      "missed": false,
+      "pseudo_candidate_decisions": 0
+    },
+    "duration_assumption": {
+      "first_any_candidate_iteration": null,
+      "first_matched_candidate_iteration": null,
+      "delay_iterations": null,
+      "missed": true,
+      "pseudo_candidate_decisions": 0
+    },
+    "throughput_assumption": {
+      "first_any_candidate_iteration": null,
+      "first_matched_candidate_iteration": null,
+      "delay_iterations": null,
+      "missed": true,
+      "pseudo_candidate_decisions": 0
+    }
+  },
+  "growth_20": {
+    "onset_iteration": 21,
+    "event_kind": "synthetic_change",
+    "matching_tolerance_iterations": 2,
+    "probability_candidate_decisions": 24,
+    "normal_pseudo_candidates": null,
+    "final_alerts": 0,
+    "classification": "synthetic-window-evidence-not-FLASH-accuracy",
+    "probability": {
+      "first_any_candidate_iteration": 22,
+      "first_matched_candidate_iteration": 22,
+      "delay_iterations": 1,
+      "missed": false,
+      "pseudo_candidate_decisions": 0
+    },
+    "duration_assumption": {
+      "first_any_candidate_iteration": 23,
+      "first_matched_candidate_iteration": 23,
+      "delay_iterations": 2,
+      "missed": false,
+      "pseudo_candidate_decisions": 0
+    },
+    "throughput_assumption": {
+      "first_any_candidate_iteration": null,
+      "first_matched_candidate_iteration": null,
+      "delay_iterations": null,
+      "missed": true,
+      "pseudo_candidate_decisions": 0
+    }
+  },
+  "growth_21": {
+    "onset_iteration": 21,
+    "event_kind": "synthetic_change",
+    "matching_tolerance_iterations": 2,
+    "probability_candidate_decisions": 24,
+    "normal_pseudo_candidates": null,
+    "final_alerts": 0,
+    "classification": "synthetic-window-evidence-not-FLASH-accuracy",
+    "probability": {
+      "first_any_candidate_iteration": 22,
+      "first_matched_candidate_iteration": 22,
+      "delay_iterations": 1,
+      "missed": false,
+      "pseudo_candidate_decisions": 0
+    },
+    "duration_assumption": {
+      "first_any_candidate_iteration": 22,
+      "first_matched_candidate_iteration": 22,
+      "delay_iterations": 1,
+      "missed": false,
+      "pseudo_candidate_decisions": 0
+    },
+    "throughput_assumption": {
+      "first_any_candidate_iteration": null,
+      "first_matched_candidate_iteration": null,
+      "delay_iterations": null,
+      "missed": true,
+      "pseudo_candidate_decisions": 0
+    }
+  },
+  "growth_24": {
+    "onset_iteration": 21,
+    "event_kind": "synthetic_change",
+    "matching_tolerance_iterations": 2,
+    "probability_candidate_decisions": 24,
+    "normal_pseudo_candidates": null,
+    "final_alerts": 0,
+    "classification": "synthetic-window-evidence-not-FLASH-accuracy",
+    "probability": {
+      "first_any_candidate_iteration": 22,
+      "first_matched_candidate_iteration": 22,
+      "delay_iterations": 1,
+      "missed": false,
+      "pseudo_candidate_decisions": 0
+    },
+    "duration_assumption": {
+      "first_any_candidate_iteration": 22,
+      "first_matched_candidate_iteration": 22,
+      "delay_iterations": 1,
+      "missed": false,
+      "pseudo_candidate_decisions": 0
+    },
+    "throughput_assumption": {
+      "first_any_candidate_iteration": null,
+      "first_matched_candidate_iteration": null,
+      "delay_iterations": null,
+      "missed": true,
+      "pseudo_candidate_decisions": 0
+    }
+  },
+  "growth_25": {
+    "onset_iteration": 21,
+    "event_kind": "synthetic_change",
+    "matching_tolerance_iterations": 2,
+    "probability_candidate_decisions": 24,
+    "normal_pseudo_candidates": null,
+    "final_alerts": 0,
+    "classification": "synthetic-window-evidence-not-FLASH-accuracy",
+    "probability": {
+      "first_any_candidate_iteration": 22,
+      "first_matched_candidate_iteration": 22,
+      "delay_iterations": 1,
+      "missed": false,
+      "pseudo_candidate_decisions": 0
+    },
+    "duration_assumption": {
+      "first_any_candidate_iteration": 22,
+      "first_matched_candidate_iteration": 22,
+      "delay_iterations": 1,
+      "missed": false,
+      "pseudo_candidate_decisions": 0
+    },
+    "throughput_assumption": {
+      "first_any_candidate_iteration": 23,
+      "first_matched_candidate_iteration": 23,
+      "delay_iterations": 2,
+      "missed": false,
+      "pseudo_candidate_decisions": 0
+    }
+  },
+  "growth_26": {
+    "onset_iteration": 21,
+    "event_kind": "synthetic_change",
+    "matching_tolerance_iterations": 2,
+    "probability_candidate_decisions": 24,
+    "normal_pseudo_candidates": null,
+    "final_alerts": 0,
+    "classification": "synthetic-window-evidence-not-FLASH-accuracy",
+    "probability": {
+      "first_any_candidate_iteration": 22,
+      "first_matched_candidate_iteration": 22,
+      "delay_iterations": 1,
+      "missed": false,
+      "pseudo_candidate_decisions": 0
+    },
+    "duration_assumption": {
+      "first_any_candidate_iteration": 22,
+      "first_matched_candidate_iteration": 22,
+      "delay_iterations": 1,
+      "missed": false,
+      "pseudo_candidate_decisions": 0
+    },
+    "throughput_assumption": {
+      "first_any_candidate_iteration": 22,
+      "first_matched_candidate_iteration": 22,
+      "delay_iterations": 1,
+      "missed": false,
+      "pseudo_candidate_decisions": 0
+    }
+  },
+  "missing": {
+    "onset_iteration": null,
+    "event_kind": "invalid_input",
+    "matching_tolerance_iterations": 2,
+    "probability_candidate_decisions": 0,
+    "normal_pseudo_candidates": 0,
+    "final_alerts": 0,
+    "classification": "synthetic-window-evidence-not-FLASH-accuracy",
+    "probability": {
+      "first_any_candidate_iteration": null,
+      "first_matched_candidate_iteration": null,
+      "delay_iterations": null,
+      "missed": false,
+      "pseudo_candidate_decisions": 0
+    },
+    "duration_assumption": {
+      "first_any_candidate_iteration": null,
+      "first_matched_candidate_iteration": null,
+      "delay_iterations": null,
+      "missed": false,
+      "pseudo_candidate_decisions": 0
+    },
+    "throughput_assumption": {
+      "first_any_candidate_iteration": null,
+      "first_matched_candidate_iteration": null,
+      "delay_iterations": null,
+      "missed": false,
+      "pseudo_candidate_decisions": 0
+    }
+  },
+  "duplicate": {
+    "onset_iteration": null,
+    "event_kind": "invalid_input",
+    "matching_tolerance_iterations": 2,
+    "probability_candidate_decisions": 0,
+    "normal_pseudo_candidates": 0,
+    "final_alerts": 0,
+    "classification": "synthetic-window-evidence-not-FLASH-accuracy",
+    "probability": {
+      "first_any_candidate_iteration": null,
+      "first_matched_candidate_iteration": null,
+      "delay_iterations": null,
+      "missed": false,
+      "pseudo_candidate_decisions": 0
+    },
+    "duration_assumption": {
+      "first_any_candidate_iteration": null,
+      "first_matched_candidate_iteration": null,
+      "delay_iterations": null,
+      "missed": false,
+      "pseudo_candidate_decisions": 0
+    },
+    "throughput_assumption": {
+      "first_any_candidate_iteration": null,
+      "first_matched_candidate_iteration": null,
+      "delay_iterations": null,
+      "missed": false,
+      "pseudo_candidate_decisions": 0
+    }
+  },
+  "out_of_order": {
+    "onset_iteration": null,
+    "event_kind": "invalid_input",
+    "matching_tolerance_iterations": 2,
+    "probability_candidate_decisions": 0,
+    "normal_pseudo_candidates": 0,
+    "final_alerts": 0,
+    "classification": "synthetic-window-evidence-not-FLASH-accuracy",
+    "probability": {
+      "first_any_candidate_iteration": null,
+      "first_matched_candidate_iteration": null,
+      "delay_iterations": null,
+      "missed": false,
+      "pseudo_candidate_decisions": 0
+    },
+    "duration_assumption": {
+      "first_any_candidate_iteration": null,
+      "first_matched_candidate_iteration": null,
+      "delay_iterations": null,
+      "missed": false,
+      "pseudo_candidate_decisions": 0
+    },
+    "throughput_assumption": {
+      "first_any_candidate_iteration": null,
+      "first_matched_candidate_iteration": null,
+      "delay_iterations": null,
+      "missed": false,
+      "pseudo_candidate_decisions": 0
+    }
+  },
+  "zero_time": {
+    "onset_iteration": null,
+    "event_kind": "invalid_input",
+    "matching_tolerance_iterations": 2,
+    "probability_candidate_decisions": 0,
+    "normal_pseudo_candidates": 0,
+    "final_alerts": 0,
+    "classification": "synthetic-window-evidence-not-FLASH-accuracy",
+    "probability": {
+      "first_any_candidate_iteration": null,
+      "first_matched_candidate_iteration": null,
+      "delay_iterations": null,
+      "missed": false,
+      "pseudo_candidate_decisions": 0
+    },
+    "duration_assumption": {
+      "first_any_candidate_iteration": null,
+      "first_matched_candidate_iteration": null,
+      "delay_iterations": null,
+      "missed": false,
+      "pseudo_candidate_decisions": 0
+    },
+    "throughput_assumption": {
+      "first_any_candidate_iteration": null,
+      "first_matched_candidate_iteration": null,
+      "delay_iterations": null,
+      "missed": false,
+      "pseudo_candidate_decisions": 0
+    }
+  },
+  "negative_time": {
+    "onset_iteration": null,
+    "event_kind": "invalid_input",
+    "matching_tolerance_iterations": 2,
+    "probability_candidate_decisions": 0,
+    "normal_pseudo_candidates": 0,
+    "final_alerts": 0,
+    "classification": "synthetic-window-evidence-not-FLASH-accuracy",
+    "probability": {
+      "first_any_candidate_iteration": null,
+      "first_matched_candidate_iteration": null,
+      "delay_iterations": null,
+      "missed": false,
+      "pseudo_candidate_decisions": 0
+    },
+    "duration_assumption": {
+      "first_any_candidate_iteration": null,
+      "first_matched_candidate_iteration": null,
+      "delay_iterations": null,
+      "missed": false,
+      "pseudo_candidate_decisions": 0
+    },
+    "throughput_assumption": {
+      "first_any_candidate_iteration": null,
+      "first_matched_candidate_iteration": null,
+      "delay_iterations": null,
+      "missed": false,
+      "pseudo_candidate_decisions": 0
+    }
+  },
+  "boolean_time": {
+    "onset_iteration": null,
+    "event_kind": "invalid_input",
+    "matching_tolerance_iterations": 2,
+    "probability_candidate_decisions": 0,
+    "normal_pseudo_candidates": 0,
+    "final_alerts": 0,
+    "classification": "synthetic-window-evidence-not-FLASH-accuracy",
+    "probability": {
+      "first_any_candidate_iteration": null,
+      "first_matched_candidate_iteration": null,
+      "delay_iterations": null,
+      "missed": false,
+      "pseudo_candidate_decisions": 0
+    },
+    "duration_assumption": {
+      "first_any_candidate_iteration": null,
+      "first_matched_candidate_iteration": null,
+      "delay_iterations": null,
+      "missed": false,
+      "pseudo_candidate_decisions": 0
+    },
+    "throughput_assumption": {
+      "first_any_candidate_iteration": null,
+      "first_matched_candidate_iteration": null,
+      "delay_iterations": null,
+      "missed": false,
+      "pseudo_candidate_decisions": 0
+    }
+  },
+  "illegal_time": {
+    "onset_iteration": null,
+    "event_kind": "invalid_input",
+    "matching_tolerance_iterations": 2,
+    "probability_candidate_decisions": 0,
+    "normal_pseudo_candidates": 0,
+    "final_alerts": 0,
+    "classification": "synthetic-window-evidence-not-FLASH-accuracy",
+    "probability": {
+      "first_any_candidate_iteration": null,
+      "first_matched_candidate_iteration": null,
+      "delay_iterations": null,
+      "missed": false,
+      "pseudo_candidate_decisions": 0
+    },
+    "duration_assumption": {
+      "first_any_candidate_iteration": null,
+      "first_matched_candidate_iteration": null,
+      "delay_iterations": null,
+      "missed": false,
+      "pseudo_candidate_decisions": 0
+    },
+    "throughput_assumption": {
+      "first_any_candidate_iteration": null,
+      "first_matched_candidate_iteration": null,
+      "delay_iterations": null,
+      "missed": false,
+      "pseudo_candidate_decisions": 0
+    }
+  }
+}

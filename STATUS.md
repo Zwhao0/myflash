@@ -1,8 +1,8 @@
 # FLASH 全新开发状态
 
-当前阶段：M4 真实多通信组迟到补充验收
-当前状态：M4 supplement PASS（采集/条件化排序）；正常临时候选与标签冲突保留；G04 OPEN；停止待审核
-当前任务：tasks/04_supplement.md已完成；独立补充PR待审核，不进入M5。
+当前阶段：M5 Iteration Reporting 与真实 Rbeast 离线检测
+当前状态：M5 已交付；Reporter/字段/前缀输入/DDP验收通过；严格重复性FAIL，科学判决AMBIGUOUS_SPEC
+当前任务：tasks/05_detection.md；等待M5审核，不进入M6。
 
 ## 权威路径、来源与改动
 
@@ -157,3 +157,12 @@ G04继续OPEN，20%规则未定义/禁用、双权重与population/sample敏感�
 下一唯一任务：审核本M4补充PR与真实结果；完成即停止，不自动进入M5。
 
 M4补充发布完成：Draft PR https://github.com/Zwhao0/myflash/pull/5 ，base main896057a，head codex/m4-controlled-delay。通过命令行Git SSH推送，exit0；GitHub接口创建PR成功，未使用浏览器文件上传/未改变扩展权限。初次22端口连接关闭/超时与443直连关闭均保留发布失败回执，使用已有代理的SSH443连接成功；主机密钥对照官方指纹严格核验。5516cc5e5fe75c14e7c3acfbc5c05c51c6930a40/tree15b03fc34478c4d734174442b267eff9af955d11完整451文件路径/模式/blob SHA远端回读一致，相对main12文件。该STATUS回执追加后的最终head/tree/CI状态见服务器runs/m4-supplement-access/publication-receipt.json。实验数据与算法没有改动，PR不代合并，本轮停止待审，不进入M5。
+
+## M5 本轮交付（2026-10-10）
+起点最新main9c66be49c33b9022573011e1dd2846721cca3833，核验PR3/4/5已合并；独立codex/m5-iteration-rbeast。用户完整批准M5内部连续执行，单独明确批准Rbeast0.1.25/NumPy2.2.6两只cp312 Linux wheel；精确官方SHA与闭包2见docs/m5/dependencies.json/requirements.lock。独立.venv-m5复用原M1Torch，M1仍无两新包；没有系统安装/升级。只新增Reporter/adapter/detection/回放/evaluator/独立opt-in小DDP/fixtures/文档，既有源码与M4算法/CV/真实结果逐字保留，GAPS/STATUS例外；baseline-preservation.json保存逐文件SHA。
+来源PAPER第三章pp25–27/33/35（PDF核对）、UPSTREAM实装Rbeast API/NumPy/PyTorch与GreyHound固定SHA只读参考、ADAPTATION严格序列/本地500/索引映射/原生隔离/安全、EXTENSION固定人工序列/独立评价。精确文件/函数/许可证和未批准模型假设见docs/m5/SOURCES.md/DESIGN.md；不导入ACF/暂停验证或另一BOCD。
+实际node-0 Linux/Python3.12.3，Rbeast0.1.25/NumPy2.2.6 CPU真实运行；26固定场景791前缀判断，560真实fit，224证据不足，7非法输入。cp为start/deltat时间坐标，cp16→index15且start101→cp116；cpPr与cpOccPr分开，均不是run-length后验。稳定序列本次0概率候选；持续变化21首次候选22/延迟1轮；20%附近两分母结果不同；候选漏检/正常伪候选及限制见RESULTS/metrics。全链保留输入/原raw/映射/阶段/跳过；无未来输入，真实全序列和prefix24的输入相同。所有final_alert=false、G01/G02/G13/G20仍OPEN。
+严格同seed20261010同进程及隔离进程返回值不一致；原完整raw重复断言与exact-prefix-output断言保持，实际exit1/FAIL。固定版本源码AVX512 union状态可能相关但未经证实；没有patch/rebuild/升级/替换。只能称真实fit与输入因果性PASS，不称严格重复或完整FLASH检测PASS。失败raw/日志均保留。
+原M1入口与独立M5 off/on三次2H800×20步，launch/verify均0，Loss/参数delta与M1相同，off/on梯度及完整参数相同，每rank20条完成记录恰好1..20，CUDA完成等待明确；实占1000MiB/末保护2048MiB，300s上限、3072MiB预检，PG destroyed/自身PGID残留0。CPU4 Reporter+8处理测试0；M2/M3 CPU前五检查0、私有fixture未挂接第六1，挂接本项目只读M3验收run后原测试0；65M4 fixtures与M3公开验收0。完整命令/退出码/原始日志只在服务器runs/m5-work/runs/m5-validation-01/02/03、m5-ddp-{baseline,off,on}-02及runs/m5-access；公开validation.json/VALIDATION.md用占位符命令和相对原日志入口。无Redis/GPU干扰/真值读取/自动Profile。
+公开导出先因绝对来源hash字典键拒绝；改相对键并保留hash/统计后通过。传输/Git bundle ref初始化失败和CPU重复性失败均不删除。当前隐私/CI/源tree核验与最终提交diff回执见docs/m5/publication-validation.json及私有publication receipt；不改main、不代合并、不重写历史。
+下一唯一任务：用户审核M5，决定真实Rbeast严格重复性上游修复与G01/G02/G13/G20科学规则；本轮停止，M6须另行批准。
