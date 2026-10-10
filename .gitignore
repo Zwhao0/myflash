@@ -1,0 +1,22 @@
+# Build and local runtime output
+build/
+*.so
+__pycache__/
+*.py[cod]
+.venv/
+runs/
+*.log
+*.tmp
+.DS_Store
+# M0 evidence logs are intentional documentation
+!docs/m0/*.log
+# Local credentials and connection notes must never be versioned
+.env
+.env.*
+!.env.example
+config.local.*
+secrets/
+credentials/
+*.pem
+*.key
+服务器.md
