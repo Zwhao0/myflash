@@ -46,10 +46,19 @@ run document revision. Redis server identity is checked; restart/missing documen
 blocks resumption. INFO and CAS are separate operations: no atomic guarantee
 against server restart in between; no HA/cluster/failover support.
 
-Temporary actual integration, if dependencies already exist: dedicated owned
-Popen server, port0, socket0600 inside dir0700, no persistence needed, existing
-redis-py client. Tests delete only exact allocated run keys and terminate only
-the owned child, preserving stdout/receipts. No FLUSHALL/FLUSHDB/system configuration,
-shared server, dependency installation or global cleanup. Integration absence
-returns exit3/BLOCKED, not a skipped PASS. Successful write is not disk durability,
-training completion or scientific detection success.
+Temporary actual integration uses a dedicated owned Popen server, port0,
+socket0600 inside dir0700, no persistence and disable-thp=no. The human user's
+supplemental authorization permits the private fixed Redis build and isolated
+redis-py venv described in dependency-lock.json/installation.json; initial
+missing-dependency BLOCKED receipts remain historical. No formal environment or
+system service change. Tests delete only exact allocated run keys and terminate
+only owned children, preserving stdout/receipts. No FLUSHALL/FLUSHDB, system
+Redis configuration, shared server or global cleanup. Missing dependencies
+still return exit3/BLOCKED, not a skipped PASS. Successful write is not disk
+durability, training completion or scientific detection success.
+
+ADAPTATION: the manual CPU harness uses rank0's fresh, confirmed iteration for
+the window formula; other ranks retain independently isolated iteration streams.
+This engineering selection is not a cross-rank training completion rule. G20
+remains OPEN; actual training/rank aggregation requires a separately approved
+contract. Actual transport coverage and cleanup limits are in VALIDATION.md.
