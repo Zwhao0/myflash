@@ -1,14 +1,14 @@
-3662661:C 10 Oct 2026 15:03:50.778 # WARNING Memory overcommit must be enabled! Without it, a background save or replication may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
-3662661:C 10 Oct 2026 15:03:50.779 * oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
-3662661:C 10 Oct 2026 15:03:50.779 * Redis version=8.10.2, bits=64, commit=762be718, modified=0, pid=3662661, just started
-3662661:C 10 Oct 2026 15:03:50.779 * Configuration loaded
-3662661:M 10 Oct 2026 15:03:50.779 * Increased maximum number of open files to 10032 (it was originally set to 1024).
-3662661:M 10 Oct 2026 15:03:50.779 * monotonic clock: POSIX clock_gettime
-3662661:M 10 Oct 2026 15:03:50.780 * Running mode=standalone, port=0.
-3662661:M 10 Oct 2026 15:03:50.780 * Server initialized
-3662661:M 10 Oct 2026 15:03:50.780 * Ready to accept connections unix
-3662661:M 10 Oct 2026 15:03:50.780 # WARNING: Redis does not require authentication. Redis will accept connections from any local client.
+<private-redis-pid-1>:C 10 Oct 2026 15:03:50.778 # WARNING Memory overcommit must be enabled! Without it, a background save or replication may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+<private-redis-pid-1>:C 10 Oct 2026 15:03:50.779 * oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+<private-redis-pid-1>:C 10 Oct 2026 15:03:50.779 * Redis version=8.10.2, bits=64, commit=762be718, modified=0, pid=<private-redis-pid-1>, just started
+<private-redis-pid-1>:C 10 Oct 2026 15:03:50.779 * Configuration loaded
+<private-redis-pid-1>:M 10 Oct 2026 15:03:50.779 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+<private-redis-pid-1>:M 10 Oct 2026 15:03:50.779 * monotonic clock: POSIX clock_gettime
+<private-redis-pid-1>:M 10 Oct 2026 15:03:50.780 * Running mode=standalone, port=0.
+<private-redis-pid-1>:M 10 Oct 2026 15:03:50.780 * Server initialized
+<private-redis-pid-1>:M 10 Oct 2026 15:03:50.780 * Ready to accept connections unix
+<private-redis-pid-1>:M 10 Oct 2026 15:03:50.780 # WARNING: Redis does not require authentication. Redis will accept connections from any local client.
 3662661:signal-handler (1791644630) Received SIGTERM scheduling shutdown...
-3662661:M 10 Oct 2026 15:03:50.882 * User requested shutdown...
-3662661:M 10 Oct 2026 15:03:50.882 * Removing the unix socket file.
-3662661:M 10 Oct 2026 15:03:50.882 # Redis is now ready to exit, bye bye...
+<private-redis-pid-1>:M 10 Oct 2026 15:03:50.882 * User requested shutdown...
+<private-redis-pid-1>:M 10 Oct 2026 15:03:50.882 * Removing the unix socket file.
+<private-redis-pid-1>:M 10 Oct 2026 15:03:50.882 # Redis is now ready to exit, bye bye...

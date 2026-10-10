@@ -10775,8 +10775,9 @@
       "original_bytes": 1397,
       "read_result": "VERIFIED",
       "sanitized_path": "docs/m6b-ready/g0-evidence/historical/m6a-remote-evidence/m6r-jdc7hweu/redis.txt",
-      "sanitized_sha256": "71f2640927e2c527990f2906f7c5572d73e8119483027656c2834a724c659bf2",
-      "mapping": "identity/path aliases only; numeric science/status/exit/failure values unchanged; hashes inside state describe ORIGINAL bytes"
+      "sanitized_sha256": "90e9773cd0b4cb25fa4167527c5a73a5f0c38e51e4b2388222fcd3eaf3c4d281",
+      "mapping": "Identity/path aliases, including Redis textual PID prefixes and pid=; original values/private hashes unchanged",
+      "prior_sanitized_sha256": "71f2640927e2c527990f2906f7c5572d73e8119483027656c2834a724c659bf2"
     },
     {
       "original_path": "runs/m6a-remote-evidence/m6r-jdc7hweu/transport.json",
@@ -10805,8 +10806,9 @@
       "original_bytes": 1397,
       "read_result": "VERIFIED",
       "sanitized_path": "docs/m6b-ready/g0-evidence/historical/m6a-remote-evidence/m6r-lr11bpwb/redis.txt",
-      "sanitized_sha256": "581f5da6fd5640b2909b3bc13e85e177a1dc8368508ae7aa529adf0fbc31036a",
-      "mapping": "identity/path aliases only; numeric science/status/exit/failure values unchanged; hashes inside state describe ORIGINAL bytes"
+      "sanitized_sha256": "a96653ef68071e7f81654730e8a6630984a827e17da6b3f1b59796d724f127ac",
+      "mapping": "Identity/path aliases, including Redis textual PID prefixes and pid=; original values/private hashes unchanged",
+      "prior_sanitized_sha256": "581f5da6fd5640b2909b3bc13e85e177a1dc8368508ae7aa529adf0fbc31036a"
     },
     {
       "original_path": "runs/m6a-remote-evidence/m6r-lr11bpwb/transport.json",
@@ -10835,8 +10837,9 @@
       "original_bytes": 1397,
       "read_result": "VERIFIED",
       "sanitized_path": "docs/m6b-ready/g0-evidence/historical/m6a-remote-evidence/m6s-_h94im07/server-0.txt",
-      "sanitized_sha256": "1febbb4b5ff89f01a0d710910213f1bb8e4c8e908eb7872dcf1cf49069072f46",
-      "mapping": "identity/path aliases only; numeric science/status/exit/failure values unchanged; hashes inside state describe ORIGINAL bytes"
+      "sanitized_sha256": "e740cb90a45fb4d26c822a98a462635ddd47069ec145ffd04fe6fb91a992e81a",
+      "mapping": "Identity/path aliases, including Redis textual PID prefixes and pid=; original values/private hashes unchanged",
+      "prior_sanitized_sha256": "1febbb4b5ff89f01a0d710910213f1bb8e4c8e908eb7872dcf1cf49069072f46"
     },
     {
       "original_path": "runs/m6a-remote-evidence/m6s-_h94im07/server-1.log",
@@ -10847,8 +10850,9 @@
       "original_bytes": 1397,
       "read_result": "VERIFIED",
       "sanitized_path": "docs/m6b-ready/g0-evidence/historical/m6a-remote-evidence/m6s-_h94im07/server-1.txt",
-      "sanitized_sha256": "9d4eb04ced64a2dbc03f94c29cbc9be91292fa0ddceaaf4f73fa06f9eb9d65b7",
-      "mapping": "identity/path aliases only; numeric science/status/exit/failure values unchanged; hashes inside state describe ORIGINAL bytes"
+      "sanitized_sha256": "bee205783696fbb73ed7542d4641d0947a9ac7878fc34b9120c004c2b55a7425",
+      "mapping": "Identity/path aliases, including Redis textual PID prefixes and pid=; original values/private hashes unchanged",
+      "prior_sanitized_sha256": "9d4eb04ced64a2dbc03f94c29cbc9be91292fa0ddceaaf4f73fa06f9eb9d65b7"
     },
     {
       "original_path": "runs/m6a-access/development-01.log",

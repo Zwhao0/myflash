@@ -383,3 +383,11 @@ M6B-G0-E full publication privacy: local-macOS Python3.9.6, collector
 1381files/findings0; driver0, no timeout, all children waited. New receipt bytes
 receive a final exact changed-text check. Effective new executable hashes still
 match node-0 validation02; required cursor remains FAIL/engineering BLOCKED.
+
+M6B-G0-E first ordinary push8540313/ceb5603 succeeded. Additional identity
+audit then found raw historical Redis PID prefixes in4 new public logs, not
+covered by the unchanged scanner. Current tree uses stable PID aliases and
+updated sanitized hashes; original evidence SHA/science/status/exits preserved.
+Earlier reachable commit retains those identifiers: history privacy FAIL /
+REQUIRES_OWNER_DECISION. No force-push/history rewriting. This failure is
+recorded in PID_REDACTION_RECEIPT and validation; current CI has limited scope.

@@ -238,6 +238,38 @@
       "exit_code": 128,
       "reason": "main object absent locally; explicit public origin fetch obtained fixed main then DAG verified",
       "raw_output": "TOOL_OUTPUT_ONLY_NOT_SAVED_AS_PRIVATE_RAW"
+    },
+    {
+      "classification": "ADAPTATION additional identity audit",
+      "operation": "Redis log textual PID prefix audit after initial ordinary push",
+      "status": "CURRENT_HEAD_CORRECTED / EARLIER_PUBLIC_COMMIT_PID_RESIDUE",
+      "first_published_head": "85403132c24360323251ff29dbdb7c7ccd8d6fa9",
+      "affected_logs": [
+        {
+          "path": "docs/m6b-ready/g0-evidence/historical/m6a-remote-evidence/m6r-jdc7hweu/redis.txt",
+          "prior_sanitized_sha256": "71f2640927e2c527990f2906f7c5572d73e8119483027656c2834a724c659bf2",
+          "corrected_sanitized_sha256": "90e9773cd0b4cb25fa4167527c5a73a5f0c38e51e4b2388222fcd3eaf3c4d281"
+        },
+        {
+          "path": "docs/m6b-ready/g0-evidence/historical/m6a-remote-evidence/m6r-lr11bpwb/redis.txt",
+          "prior_sanitized_sha256": "581f5da6fd5640b2909b3bc13e85e177a1dc8368508ae7aa529adf0fbc31036a",
+          "corrected_sanitized_sha256": "a96653ef68071e7f81654730e8a6630984a827e17da6b3f1b59796d724f127ac"
+        },
+        {
+          "path": "docs/m6b-ready/g0-evidence/historical/m6a-remote-evidence/m6s-_h94im07/server-1.txt",
+          "prior_sanitized_sha256": "9d4eb04ced64a2dbc03f94c29cbc9be91292fa0ddceaaf4f73fa06f9eb9d65b7",
+          "corrected_sanitized_sha256": "bee205783696fbb73ed7542d4641d0947a9ac7878fc34b9120c004c2b55a7425"
+        },
+        {
+          "path": "docs/m6b-ready/g0-evidence/historical/m6a-remote-evidence/m6s-_h94im07/server-0.txt",
+          "prior_sanitized_sha256": "1febbb4b5ff89f01a0d710910213f1bb8e4c8e908eb7872dcf1cf49069072f46",
+          "corrected_sanitized_sha256": "e740cb90a45fb4d26c822a98a462635ddd47069ec145ffd04fe6fb91a992e81a"
+        }
+      ],
+      "disclosed_identity": "historical Redis process identifiers; no credential found",
+      "current_fix": "exact stable PID aliases; statuses/exits/time/scientific numeric values retained",
+      "historical_cleanup": "REQUIRES_OWNER_DECISION; task forbids history rewriting/force-push",
+      "scope_of_CI": "current checkout text rules do not detect raw textual PID identities or cleanse history"
     }
   ],
   "publication_privacy": {
@@ -295,6 +327,7 @@
     "manifest": "docs/m6b-ready/g0-evidence/publication-check-01/manifest.json",
     "raw_manifest_sha256": "fb0a9f08ed43a94f52e91227732bd2561ad575b0b677d05455d009fdcd635593",
     "scope": "1381 staged full-tree files, findings0; later receipt bytes get additional exact changed-text scan",
-    "publication_head_CI": "PENDING_UNTIL_PUSH"
+    "publication_head_CI": "PENDING_UNTIL_PUSH",
+    "historical_new_commit_pid_residue": "FAIL / REQUIRES_OWNER_DECISION"
   }
 }

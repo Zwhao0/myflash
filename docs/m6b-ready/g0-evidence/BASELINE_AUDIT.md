@@ -37,3 +37,10 @@ server-validation-04 Redis setup FAIL, initial Redis BLOCKED, privacy120s timeou
 Original Redis installation authorization was found in the same project M6-A user message; see APPROVALS.json. Scope is installation for M6-A; versions/path and per-message timestamp were not explicit. Future reuse remains REQUIRES_OWNER_DECISION.
 
 Executor: evidence delivered, cursor contract FAIL, M6B-READY BLOCKED. Independent ChatGPT review PENDING. Stop after this Draft PR; no M5-S2/G20 repair/M6-B.
+
+Publication identity audit supplement: first ordinary push8540313 exposed
+textual historical process-id prefixes in4 Redis logs, outside the existing
+text scanner rules. Current tree aliases those PIDs and updates sanitized SHA.
+Original SHA/data/status/exit/time are unchanged. Earlier public commit retains
+PID identities; history/privacy closure requires owner decision. No force-push
+or history rewriting is performed; exact-head CI proves only its text scope.

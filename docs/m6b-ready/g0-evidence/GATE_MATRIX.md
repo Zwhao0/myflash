@@ -46,3 +46,9 @@ Required source dependencies at5b91977 (all existing source remains byte-identic
 
 Only next task: independent ChatGPT review of this exact Draft PR and evidence.
 No S2 installation, G20 fix, scientific approval, native or M6-B work starts here.
+
+Privacy supplement: current-tree Redis textual PID aliases corrected after
+first push8540313. That earlier reachable public commit retains4 logs with raw
+historical PID prefixes. History privacy is FAIL/REQUIRES_OWNER_DECISION; current
+head text CI cannot close it. See PID_REDACTION_RECEIPT.json. G0 admission remains
+BLOCKED independently of the required cursor FAIL.
