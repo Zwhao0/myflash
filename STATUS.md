@@ -28,9 +28,13 @@
 
 ## GitHub 同步追加请求
 
-用户明确要求用 GitHub 存放服务器目录并把地址写入本地 `服务器.md`。GitHub 已连接账号 Zwhao0；本轮当前连接无创建仓库接口，本机没有 gh 或可用 HTTPS Git credential；SSH GitHub 22端口尝试255。空目标仓库链接尚待用户提供，当前 GitHub 同步 NOT_RUN。不得把拟议地址写成已存在仓库。
+PASS：用户创建并指定 [Zwhao0/myflash](https://github.com/Zwhao0/myflash)，分支 main；GitHub 已授予读写权限，保留用户创建时的仓库可见性。服务器开发、本地仅作 bundle/文件中转；服务器未连接 GitHub。
 
-服务器无法联网，后续从服务器 Git 快照生成 bundle/归档，经本地中转发布。服务器目录是唯一开发源；本地中转不开发实现、不传连接说明或密钥。最小同步流程见 `docs/m0/SYNC.md`。确认新目标与现有写权限后只同步已授权 M0 内容，不推进 M1。
+已同步源提交 `1296efbd4feca26cb40157e8fd392ee2d9f0cec5` 到 GitHub 提交 `19ff3e183ee4cf21b7cb2d001c2b2dcfa6709ff8`。31 文件 blob SHA 逐一一致，双方 tree SHA 为 `957c46dff4979591eafe09f3e35fbf7116f77ec0`；GitHub main 已回读确认。使用 connector 生成 GitHub 提交，因此提交 SHA/历史不同；不将文件内容一致说成提交历史相同。实际操作与核验证据见 `docs/m0/04_github_sync.json`。
+
+真实仓库 URL 已写入用户本地 `服务器.md`，原凭证保留且未输出/上传；该私有文件在 ignore 中且不在 GitHub。上传前已逐文件检查未含私有说明中的真实凭证。当前同步记录/状态补充也从服务器提交后经中转同步，最终 head/tree 与工作树证据写入 `.git/m0-sync-final.log`，无需服务器联网。
+
+本项目开发源始终为 gpu-01；本地工作包保持原任务输入，临时 transport mirror 不进行 FLASH 开发。最小流程和当前状态见 `docs/m0/SYNC.md`。M0 完成后停止。
 
 ## 阶段记录
 
