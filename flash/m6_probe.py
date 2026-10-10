@@ -1,6 +1,6 @@
 """EXTENSION CPU simulator of M3 request/scope application, never CUDA timing."""
 import copy
-from flash.m6_protocol import digest, number
+from flash.m6_protocol import digest, number, StaleOwner
 
 
 class ProbeAdapter:
@@ -14,13 +14,13 @@ class ProbeAdapter:
 
     def request(self, command):
         if not self.fence(command):
-            raise ValueError('stale Probe request')
+            raise StaleOwner('STALE Probe request')
         if command['run_id'] != self.run_id or command['node_id'] != self.node_id:
             raise ValueError('Probe identity mismatch')
         if self.pending:
             old = self.pending
             if (command['generation'], command['local_generation']) < (old['generation'], old['local_generation']):
-                raise ValueError('stale generation')
+                raise StaleOwner('STALE generation')
             if command['profile_epoch'] < old['profile_epoch']:
                 raise ValueError('epoch regression')
             if command['profile_epoch'] == old['profile_epoch'] and old['requested_state'] == 0 and command['requested_state'] == 1:
@@ -35,7 +35,7 @@ class ProbeAdapter:
             return None
         command = self.pending
         if not self.fence(command):
-            raise ValueError('stale boundary fence')
+            raise StaleOwner('STALE boundary fence')
         state = self.states[rank]
         if now < state.get('last_boundary_seconds', 0) or now < command['requested_at_seconds']:
             raise ValueError('scope clock regression/before command')
@@ -55,7 +55,7 @@ class ProbeAdapter:
         if state['state'] != 1 or not self.pending or state.get('command_id') != self.pending['command_id']:
             raise ValueError('rank not applied current Profile command')
         if not self.fence(self.pending):
-            raise ValueError('stale sample fence')
+            raise StaleOwner('STALE sample fence')
         # row values come from a declared fixture; no target labels accepted.
         if now < state['last_boundary_seconds']:
             raise ValueError('sample before applied scope')

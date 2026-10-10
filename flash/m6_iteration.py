@@ -1,20 +1,21 @@
 """PAPER 500-item retention; ADAPTATION confirmed, ordered, run/rank channel."""
 import time
 from dataclasses import asdict
-from flash.iteration_reporter import IterationRecord, validate_sequence
-from flash.m6_protocol import digest, event, provisional
+from flash.iteration_reporter import IterationRecord, validate_sequence, integer
+from flash.m6_protocol import digest, event, provisional, identity, number
 from flash.m6_store import transaction, Unavailable
 
 
 class IterationPublisher:
     def __init__(self, store, run_id, rank, *, clock=time.monotonic):
+        identity(run_id); integer(rank, 0, 'rank')
         self.store, self.run_id, self.rank, self.clock = store, run_id, rank, clock
 
     def publish(self, record):
         if not isinstance(record, IterationRecord) or (record.run_id, record.global_rank) != (self.run_id, self.rank):
             raise ValueError('iteration identity mismatch')
         payload = asdict(record)
-        confirmed_at = self.clock()
+        confirmed_at = number(self.clock())
         def write(doc):
             if self.rank not in doc['expected_ranks']:
                 raise ValueError('undeclared rank')
@@ -45,6 +46,7 @@ class IterationPublisher:
 
 class IterationReader:
     def __init__(self, store, run_id, rank):
+        identity(run_id); integer(rank, 0, 'rank')
         self.store, self.run_id, self.rank = store, run_id, rank
 
     def read(self, *, now=None, timeout_seconds=None, after_iteration=None):

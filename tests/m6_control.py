@@ -166,7 +166,8 @@ class ControlTests(unittest.TestCase):
         self.s.arm();old=self.s.locals['node-0']
         new=LocalController(self.s.store,self.s.run,'node-0',old.probe)
         self.s.locals['node-0']=new;old.probe.fence=new.fence
-        with self.assertRaisesRegex(ValueError,'STALE'):old.tick(1)
+        with self.assertRaisesRegex(ValueError,'STALE') as caught:old.tick(1)
+        self.assertEqual(caught.exception.receipt['status'],'STALE')
         self.s.global_.tick(1);self.reset(1)
         self.assertEqual(self.doc()['epochs'][-1]['result']['status'],'INCOMPLETE')
         self.s.cycle(30,'second')
@@ -175,7 +176,8 @@ class ControlTests(unittest.TestCase):
         self.s.arm();old=self.s.global_
         command=copy.deepcopy(self.s.probes['node-0'].pending)
         self.s.global_=GlobalController(self.s.store,self.s.run,self.s.nodes,resume=True)
-        with self.assertRaisesRegex(ValueError,'STALE'):old.tick(1)
+        with self.assertRaisesRegex(ValueError,'STALE') as caught:old.tick(1)
+        self.assertEqual(caught.exception.receipt['status'],'STALE')
         with self.assertRaises(ValueError):self.s.probes['node-0'].request(command)
         self.s.global_.tick(1);self.reset(1)
         self.assertEqual(self.doc()['epochs'][-1]['result']['status'],'ABORTED')

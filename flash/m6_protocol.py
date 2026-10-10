@@ -52,6 +52,13 @@ def provisional(status, reason=None):
     return dict(status=status, reason=reason, final_alert=False, final_fault_ranks=[])
 
 
+class StaleOwner(ValueError):
+    """Explicit STALE outcome; old owner has no authority to mutate live evidence."""
+    def __init__(self, reason):
+        super().__init__(reason)
+        self.receipt = provisional('STALE', reason)
+
+
 def registration(run_id, nodes):
     identity(run_id)
     if len(nodes) != 2:

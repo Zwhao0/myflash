@@ -51,7 +51,8 @@ Reset requires a new Monitor command ACK and fresh actual boundary proof from
 every expected rank. Partial reset stays pending then BLOCKED. Profile result,
 failed/reset attempts, original partial evidence and reason are retained.
 A restarted owner increments its fencing generation, invalidates the active
-round, and reissues reset with new fences. Old owner writes/boundaries are rejected.
+round, and reissues reset with new fences. Old owner writes/boundaries are rejected with StaleOwner.receipt status=STALE;
+the old owner cannot write this receipt into the newer owner’s run document.
 An unrecovered BLOCKED run needs operator reconciliation of exact run/node/ranks;
 no new epoch, no automatic recovery claim. Transport loss produces an unconfirmed
 receipt locally; reconnect records ABORTED and requires verified reset. No probe

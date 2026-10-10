@@ -7,7 +7,7 @@ from dataclasses import asdict
 from flash.profile_input import validate_bundle, InputError
 from flash.localization import analyze
 from flash.m6_protocol import (registration, event, digest, number, window_seconds,
-                               provisional, identity, MAX_EPOCHS)
+                               provisional, identity, StaleOwner, MAX_EPOCHS)
 from flash.m6_store import transaction, Unavailable
 from flash.m6_iteration import IterationReader
 
@@ -66,7 +66,7 @@ class GlobalController:
 
     def _owned(self, doc):
         if doc['global_generation'] != self.generation:
-            raise ValueError('STALE global fencing token')
+            raise StaleOwner('STALE global fencing token')
 
     def start(self, trigger, manifest, now, *, request_id):
         number(now)
@@ -306,7 +306,7 @@ class LocalController:
         recovered = self.disconnected
         def accept(doc):
             if doc['nodes'][self.node_id]['generation'] != self.generation:
-                raise ValueError('STALE local fencing token')
+                raise StaleOwner('STALE local fencing token')
             a = doc['active']
             if a is None:
                 return None
@@ -331,13 +331,13 @@ class LocalController:
             self.probe.request(command)
             def observe(doc):
                 if doc['nodes'][self.node_id]['generation'] != self.generation:
-                    raise ValueError('STALE local fencing token')
+                    raise StaleOwner('STALE local fencing token')
                 a = doc['active']
                 if not a:
                     raise ValueError('closed epoch during observation')
                 nd = a['nodes'][self.node_id]
                 if nd['command'] != command:
-                    raise ValueError('STALE command during observation')
+                    raise StaleOwner('STALE command during observation')
                 matching = [e for e in self.probe.events if e['command_id'] == command['command_id'] and
                             e['generation'] == command['generation'] and e['local_generation'] == self.generation]
                 for proof in matching:
