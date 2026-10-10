@@ -1,0 +1,3967 @@
+{
+  "runs": [
+    {
+      "run_id": "m3abc-local-01",
+      "node_rank": 0,
+      "training_exit": 0,
+      "reader_exit": 0,
+      "verify_exit": 0,
+      "cleanup": {
+        "status": "PASS",
+        "removed_count": 2,
+        "already_absent_count": 0
+      },
+      "verification": {
+        "status": "PASS",
+        "ranks": [
+          {
+            "rank": 0,
+            "events": 138,
+            "profile_records": 130,
+            "valid_records": 130,
+            "unsupported": 0,
+            "timing_scopes": 130,
+            "sync_block_ns": 675588156,
+            "apis": {
+              "ncclGetUniqueId": 1,
+              "ncclGetVersion": 1,
+              "ncclCommInitRankConfig": 1,
+              "ncclAllReduce": 134,
+              "ncclCommDestroy": 1
+            }
+          },
+          {
+            "rank": 1,
+            "events": 137,
+            "profile_records": 130,
+            "valid_records": 130,
+            "unsupported": 0,
+            "timing_scopes": 130,
+            "sync_block_ns": 571676788,
+            "apis": {
+              "ncclGetVersion": 1,
+              "ncclCommInitRankConfig": 1,
+              "ncclAllReduce": 134,
+              "ncclCommDestroy": 1
+            }
+          }
+        ],
+        "total_events": 275,
+        "loss": 0
+      },
+      "probe_sha256": "583371a93b85308c2f5db4d4c7980344d9dc9fea7714988545b5054e472a9b19",
+      "source_hashes": {
+        "scripts/m3_launch.py": "c8f1f624308831803acb603b037ca349660fc56a767fa36ed0f156408b95fd99",
+        "tests/m1_baseline.py": "298c0a9994e839f017552677225939b96683c49226ca079e381398fa428c4695",
+        "native/._ring.hpp": "e39f648e4c15369d8fa1bd3ca1d9b5facc653dd177aca6f08faa84e006d90e76",
+        "native/ring.hpp": "94599dcc02fba33f275d59ec5d3b7dcaa1cf88d431b5afc973ee47f73bd8bd5d",
+        "native/ring.cpp": "2214ea8adc167f8d0fdcfcf956e4930cba15a20687cfccd05df497ea4be1c5f6",
+        "native/probe.cpp": "2ad8fb56373282bb224afc036bcba30cac220efe17a6092fa03e2309dc60b7c7",
+        "native/.gitkeep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "native/._probe.cpp": "e39f648e4c15369d8fa1bd3ca1d9b5facc653dd177aca6f08faa84e006d90e76",
+        "native/._ring.cpp": "e39f648e4c15369d8fa1bd3ca1d9b5facc653dd177aca6f08faa84e006d90e76",
+        "native/._.gitkeep": "e39f648e4c15369d8fa1bd3ca1d9b5facc653dd177aca6f08faa84e006d90e76",
+        "flash/reader.py": "ef0a0b2ac43fa3c245ce5c9dac74fb5ccde522221ddfd2ea8118c3666908eda1",
+        "flash/.___init__.py": "e39f648e4c15369d8fa1bd3ca1d9b5facc653dd177aca6f08faa84e006d90e76",
+        "flash/__init__.py": "ebd6b85348d4590ef8db6c4720c0c46f694ebc13a6b7c01cdfa4687d6d707e18",
+        "flash/._reader.py": "e39f648e4c15369d8fa1bd3ca1d9b5facc653dd177aca6f08faa84e006d90e76",
+        "tests/m2_mock_nccl.cpp": "e5ea195d415baaa93e8ffbf97f572e7371e282bdbaf21d16ac0696d24a5b74a9",
+        "tests/m2_ring.py": "f1de41cb56172f138a84763f5fa5c3334450ddb74400413ab8c0bed576ff55da",
+        "tests/m2_hook_smoke.py": "e89e4b1d2a61052b743cedaa2ccf58fd97b2cf96e11619c62c67baf2765263a4",
+        "tests/m2_lifecycle.py": "37e27630be9ccc2802b7ddeab49930b14b617490f0f4577e9d252987dbb00f18",
+        "tests/m2_lifecycle_driver.cpp": "379af1b386f00301ae0a8608cc257304368ec0c2572dc32e792e221833e83db0",
+        "tests/m3_mechanism.py": "8e846ddeee7d5c4f13cdfedec62f30445ab22af703f2ee8697d18e0f398ccb56",
+        "tests/m3_regression.py": "532d622173fdbe26ff92baf0ed21b83b5980175dab265ee92551402734131eff",
+        "tests/m3_mock_cuda.cpp": "655901d2a59c890223cc63bae98567359d14ee0d3d097f24418bfc5d6f76093a",
+        "tests/m3_hook.py": "c8f6ceef31dd0db01fd220b6bb8f373f1ac7099094c17915901635b6ca2e279b",
+        "tests/m3_reader.py": "1ec2eb301d2b50f067ed1ff9ebc42308a633b47a3b9d9a68886f18194e95e51d",
+        "scripts/m2_launch.py": "c42896efc9d5dc50b8902ded68358be1998ef0b430dddb7181f78336f94c06cb",
+        "scripts/m2_run_node.py": "57d18977a18e67b7418764c04b3e744952cf9c01b8fe3e07385bb7c74eb52036",
+        "scripts/m2_verify.py": "3714583538fd052ec8726b0b3324793fcdb9d0eda7e5b7f29d75600ba3bb6ae2",
+        "scripts/m2_cleanup.py": "1649844fc3a237136ab997eb72ff3ec7fe9ba447bcc2028bc6afe58ef19629da",
+        "scripts/m2_build.py": "d672a3056200e893b4043c69e289ba6a12e77b311f1704f8b008e64de8df2e40",
+        "scripts/m3_run_node.py": "7e1425299fae1164170b901dd09e6e3fb8ed85888b8b4774824be6a6c02c87ad",
+        "scripts/m3_verify.py": "0db71d5c230edf16dee90964fb96df1d19ac322a4465986fb14ef9fd39d46e08",
+        "scripts/m3_build.py": "161f8f383bf74c66d0bb4ce885474a48093ebc8281c7099d3d4b545a811cbc2c"
+      },
+      "rank_runtime_versions": [
+        {
+          "rank": 0,
+          "versions": [
+            {
+              "family": "cudart",
+              "encoded": 12080
+            },
+            {
+              "family": "nccl",
+              "encoded": 22703
+            }
+          ]
+        },
+        {
+          "rank": 1,
+          "versions": [
+            {
+              "family": "cudart",
+              "encoded": 12080
+            },
+            {
+              "family": "nccl",
+              "encoded": 22703
+            }
+          ]
+        }
+      ],
+      "memory_mib": [
+        {
+          "rank": 0,
+          "own_process_memory_mib": 982.0
+        },
+        {
+          "rank": 1,
+          "own_process_memory_mib": 982.0
+        }
+      ],
+      "training_checks": [
+        {
+          "rank": 0,
+          "steps": 134,
+          "status": "PASS",
+          "max_parameter_delta": null,
+          "max_final_sync_error": null,
+          "collectives_checked": null
+        },
+        {
+          "rank": 1,
+          "steps": 134,
+          "status": "PASS",
+          "max_parameter_delta": null,
+          "max_final_sync_error": null,
+          "collectives_checked": null
+        }
+      ],
+      "command": [
+        "python3",
+        "scripts/m3_launch.py",
+        "--python",
+        "<project>/.venv-m1/bin/python",
+        "--run-id",
+        "m3abc-local-01",
+        "--gpus",
+        "<approved_GPU_UUID_list_node_0>",
+        "--mode",
+        "mechanism",
+        "--nnodes",
+        "1",
+        "--node-rank",
+        "0",
+        "--master-addr",
+        "127.0.0.1",
+        "--master-port",
+        "29811",
+        "--timeout",
+        "300",
+        "--allow-shared",
+        "--probe"
+      ],
+      "roce_lines": 12
+    },
+    {
+      "run_id": "m3d-roce-01",
+      "node_rank": 0,
+      "training_exit": 0,
+      "reader_exit": 0,
+      "verify_exit": 0,
+      "cleanup": {
+        "status": "PASS",
+        "removed_count": 1,
+        "already_absent_count": 0
+      },
+      "verification": {
+        "status": "PASS",
+        "ranks": [
+          {
+            "rank": 0,
+            "events": 138,
+            "profile_records": 130,
+            "valid_records": 130,
+            "unsupported": 0,
+            "timing_scopes": 130,
+            "sync_block_ns": 680680153,
+            "apis": {
+              "ncclGetUniqueId": 1,
+              "ncclGetVersion": 1,
+              "ncclCommInitRankConfig": 1,
+              "ncclAllReduce": 134,
+              "ncclCommDestroy": 1
+            }
+          }
+        ],
+        "total_events": 138,
+        "loss": 0
+      },
+      "probe_sha256": "583371a93b85308c2f5db4d4c7980344d9dc9fea7714988545b5054e472a9b19",
+      "source_hashes": {
+        "scripts/m3_launch.py": "c8f1f624308831803acb603b037ca349660fc56a767fa36ed0f156408b95fd99",
+        "tests/m1_baseline.py": "298c0a9994e839f017552677225939b96683c49226ca079e381398fa428c4695",
+        "native/._ring.hpp": "e39f648e4c15369d8fa1bd3ca1d9b5facc653dd177aca6f08faa84e006d90e76",
+        "native/ring.hpp": "94599dcc02fba33f275d59ec5d3b7dcaa1cf88d431b5afc973ee47f73bd8bd5d",
+        "native/ring.cpp": "2214ea8adc167f8d0fdcfcf956e4930cba15a20687cfccd05df497ea4be1c5f6",
+        "native/probe.cpp": "2ad8fb56373282bb224afc036bcba30cac220efe17a6092fa03e2309dc60b7c7",
+        "native/.gitkeep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "native/._probe.cpp": "e39f648e4c15369d8fa1bd3ca1d9b5facc653dd177aca6f08faa84e006d90e76",
+        "native/._ring.cpp": "e39f648e4c15369d8fa1bd3ca1d9b5facc653dd177aca6f08faa84e006d90e76",
+        "native/._.gitkeep": "e39f648e4c15369d8fa1bd3ca1d9b5facc653dd177aca6f08faa84e006d90e76",
+        "flash/reader.py": "ef0a0b2ac43fa3c245ce5c9dac74fb5ccde522221ddfd2ea8118c3666908eda1",
+        "flash/.___init__.py": "e39f648e4c15369d8fa1bd3ca1d9b5facc653dd177aca6f08faa84e006d90e76",
+        "flash/__init__.py": "ebd6b85348d4590ef8db6c4720c0c46f694ebc13a6b7c01cdfa4687d6d707e18",
+        "flash/._reader.py": "e39f648e4c15369d8fa1bd3ca1d9b5facc653dd177aca6f08faa84e006d90e76",
+        "tests/m2_mock_nccl.cpp": "e5ea195d415baaa93e8ffbf97f572e7371e282bdbaf21d16ac0696d24a5b74a9",
+        "tests/m2_ring.py": "f1de41cb56172f138a84763f5fa5c3334450ddb74400413ab8c0bed576ff55da",
+        "tests/m2_hook_smoke.py": "e89e4b1d2a61052b743cedaa2ccf58fd97b2cf96e11619c62c67baf2765263a4",
+        "tests/m2_lifecycle.py": "37e27630be9ccc2802b7ddeab49930b14b617490f0f4577e9d252987dbb00f18",
+        "tests/m2_lifecycle_driver.cpp": "379af1b386f00301ae0a8608cc257304368ec0c2572dc32e792e221833e83db0",
+        "tests/m3_mechanism.py": "8e846ddeee7d5c4f13cdfedec62f30445ab22af703f2ee8697d18e0f398ccb56",
+        "tests/m3_regression.py": "532d622173fdbe26ff92baf0ed21b83b5980175dab265ee92551402734131eff",
+        "tests/m3_mock_cuda.cpp": "655901d2a59c890223cc63bae98567359d14ee0d3d097f24418bfc5d6f76093a",
+        "tests/m3_hook.py": "c8f6ceef31dd0db01fd220b6bb8f373f1ac7099094c17915901635b6ca2e279b",
+        "tests/m3_reader.py": "1ec2eb301d2b50f067ed1ff9ebc42308a633b47a3b9d9a68886f18194e95e51d",
+        "scripts/m2_launch.py": "c42896efc9d5dc50b8902ded68358be1998ef0b430dddb7181f78336f94c06cb",
+        "scripts/m2_run_node.py": "57d18977a18e67b7418764c04b3e744952cf9c01b8fe3e07385bb7c74eb52036",
+        "scripts/m2_verify.py": "3714583538fd052ec8726b0b3324793fcdb9d0eda7e5b7f29d75600ba3bb6ae2",
+        "scripts/m2_cleanup.py": "1649844fc3a237136ab997eb72ff3ec7fe9ba447bcc2028bc6afe58ef19629da",
+        "scripts/m2_build.py": "d672a3056200e893b4043c69e289ba6a12e77b311f1704f8b008e64de8df2e40",
+        "scripts/m3_run_node.py": "7e1425299fae1164170b901dd09e6e3fb8ed85888b8b4774824be6a6c02c87ad",
+        "scripts/m3_verify.py": "0db71d5c230edf16dee90964fb96df1d19ac322a4465986fb14ef9fd39d46e08",
+        "scripts/m3_build.py": "161f8f383bf74c66d0bb4ce885474a48093ebc8281c7099d3d4b545a811cbc2c"
+      },
+      "rank_runtime_versions": [
+        {
+          "rank": 0,
+          "versions": [
+            {
+              "family": "cudart",
+              "encoded": 12080
+            },
+            {
+              "family": "nccl",
+              "encoded": 22703
+            }
+          ]
+        }
+      ],
+      "memory_mib": [
+        {
+          "rank": 0,
+          "own_process_memory_mib": 982.0
+        }
+      ],
+      "training_checks": [
+        {
+          "rank": 0,
+          "steps": 134,
+          "status": "PASS",
+          "max_parameter_delta": null,
+          "max_final_sync_error": null,
+          "collectives_checked": null
+        }
+      ],
+      "command": [
+        "python3",
+        "scripts/m3_launch.py",
+        "--python",
+        "<project>/.venv-m1/bin/python",
+        "--run-id",
+        "m3d-roce-01",
+        "--gpus",
+        "<approved_GPU_UUID_list_node_0>",
+        "--mode",
+        "mechanism",
+        "--nnodes",
+        "2",
+        "--node-rank",
+        "0",
+        "--master-addr",
+        "<gpu01_master_address>",
+        "--master-port",
+        "29821",
+        "--timeout",
+        "300",
+        "--allow-shared",
+        "--probe"
+      ],
+      "roce_lines": 6
+    },
+    {
+      "run_id": "m3e-group-01",
+      "node_rank": 0,
+      "training_exit": 0,
+      "reader_exit": 0,
+      "verify_exit": 0,
+      "cleanup": {
+        "status": "PASS",
+        "removed_count": 2,
+        "already_absent_count": 0
+      },
+      "verification": {
+        "status": "PASS",
+        "ranks": [
+          {
+            "rank": 0,
+            "events": 128,
+            "profile_records": 56,
+            "valid_records": 40,
+            "unsupported": 16,
+            "timing_scopes": 24,
+            "sync_block_ns": 724971,
+            "apis": {
+              "ncclGetUniqueId": 1,
+              "ncclGetVersion": 1,
+              "ncclCommInitRankConfig": 1,
+              "ncclAllReduce": 60,
+              "ncclGroupStart": 32,
+              "ncclGroupEnd": 32,
+              "ncclCommDestroy": 1
+            }
+          },
+          {
+            "rank": 1,
+            "events": 127,
+            "profile_records": 56,
+            "valid_records": 40,
+            "unsupported": 16,
+            "timing_scopes": 24,
+            "sync_block_ns": 634794,
+            "apis": {
+              "ncclGetVersion": 1,
+              "ncclCommInitRankConfig": 1,
+              "ncclAllReduce": 60,
+              "ncclGroupStart": 32,
+              "ncclGroupEnd": 32,
+              "ncclCommDestroy": 1
+            }
+          }
+        ],
+        "total_events": 255,
+        "loss": 0
+      },
+      "probe_sha256": "583371a93b85308c2f5db4d4c7980344d9dc9fea7714988545b5054e472a9b19",
+      "source_hashes": {
+        "scripts/m3_launch.py": "c8f1f624308831803acb603b037ca349660fc56a767fa36ed0f156408b95fd99",
+        "tests/m1_baseline.py": "298c0a9994e839f017552677225939b96683c49226ca079e381398fa428c4695",
+        "native/._ring.hpp": "e39f648e4c15369d8fa1bd3ca1d9b5facc653dd177aca6f08faa84e006d90e76",
+        "native/ring.hpp": "94599dcc02fba33f275d59ec5d3b7dcaa1cf88d431b5afc973ee47f73bd8bd5d",
+        "native/ring.cpp": "2214ea8adc167f8d0fdcfcf956e4930cba15a20687cfccd05df497ea4be1c5f6",
+        "native/probe.cpp": "2ad8fb56373282bb224afc036bcba30cac220efe17a6092fa03e2309dc60b7c7",
+        "native/.gitkeep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "native/._probe.cpp": "e39f648e4c15369d8fa1bd3ca1d9b5facc653dd177aca6f08faa84e006d90e76",
+        "native/._ring.cpp": "e39f648e4c15369d8fa1bd3ca1d9b5facc653dd177aca6f08faa84e006d90e76",
+        "native/._.gitkeep": "e39f648e4c15369d8fa1bd3ca1d9b5facc653dd177aca6f08faa84e006d90e76",
+        "flash/reader.py": "ef0a0b2ac43fa3c245ce5c9dac74fb5ccde522221ddfd2ea8118c3666908eda1",
+        "flash/.___init__.py": "e39f648e4c15369d8fa1bd3ca1d9b5facc653dd177aca6f08faa84e006d90e76",
+        "flash/__init__.py": "ebd6b85348d4590ef8db6c4720c0c46f694ebc13a6b7c01cdfa4687d6d707e18",
+        "flash/._reader.py": "e39f648e4c15369d8fa1bd3ca1d9b5facc653dd177aca6f08faa84e006d90e76",
+        "tests/m2_mock_nccl.cpp": "e5ea195d415baaa93e8ffbf97f572e7371e282bdbaf21d16ac0696d24a5b74a9",
+        "tests/m2_ring.py": "f1de41cb56172f138a84763f5fa5c3334450ddb74400413ab8c0bed576ff55da",
+        "tests/m2_hook_smoke.py": "e89e4b1d2a61052b743cedaa2ccf58fd97b2cf96e11619c62c67baf2765263a4",
+        "tests/m2_lifecycle.py": "37e27630be9ccc2802b7ddeab49930b14b617490f0f4577e9d252987dbb00f18",
+        "tests/m2_lifecycle_driver.cpp": "379af1b386f00301ae0a8608cc257304368ec0c2572dc32e792e221833e83db0",
+        "tests/m3_mechanism.py": "8e846ddeee7d5c4f13cdfedec62f30445ab22af703f2ee8697d18e0f398ccb56",
+        "tests/m3_regression.py": "532d622173fdbe26ff92baf0ed21b83b5980175dab265ee92551402734131eff",
+        "tests/m3_mock_cuda.cpp": "655901d2a59c890223cc63bae98567359d14ee0d3d097f24418bfc5d6f76093a",
+        "tests/m3_hook.py": "c8f6ceef31dd0db01fd220b6bb8f373f1ac7099094c17915901635b6ca2e279b",
+        "tests/m3_reader.py": "1ec2eb301d2b50f067ed1ff9ebc42308a633b47a3b9d9a68886f18194e95e51d",
+        "scripts/m2_launch.py": "c42896efc9d5dc50b8902ded68358be1998ef0b430dddb7181f78336f94c06cb",
+        "scripts/m2_run_node.py": "57d18977a18e67b7418764c04b3e744952cf9c01b8fe3e07385bb7c74eb52036",
+        "scripts/m2_verify.py": "3714583538fd052ec8726b0b3324793fcdb9d0eda7e5b7f29d75600ba3bb6ae2",
+        "scripts/m2_cleanup.py": "1649844fc3a237136ab997eb72ff3ec7fe9ba447bcc2028bc6afe58ef19629da",
+        "scripts/m2_build.py": "d672a3056200e893b4043c69e289ba6a12e77b311f1704f8b008e64de8df2e40",
+        "scripts/m3_run_node.py": "7e1425299fae1164170b901dd09e6e3fb8ed85888b8b4774824be6a6c02c87ad",
+        "scripts/m3_verify.py": "0db71d5c230edf16dee90964fb96df1d19ac322a4465986fb14ef9fd39d46e08",
+        "scripts/m3_build.py": "161f8f383bf74c66d0bb4ce885474a48093ebc8281c7099d3d4b545a811cbc2c"
+      },
+      "rank_runtime_versions": [
+        {
+          "rank": 0,
+          "versions": [
+            {
+              "family": "cudart",
+              "encoded": 12080
+            },
+            {
+              "family": "nccl",
+              "encoded": 22703
+            }
+          ]
+        },
+        {
+          "rank": 1,
+          "versions": [
+            {
+              "family": "cudart",
+              "encoded": 12080
+            },
+            {
+              "family": "nccl",
+              "encoded": 22703
+            }
+          ]
+        }
+      ],
+      "memory_mib": [
+        {
+          "rank": 0,
+          "own_process_memory_mib": 1010.0
+        },
+        {
+          "rank": 1,
+          "own_process_memory_mib": 1010.0
+        }
+      ],
+      "training_checks": [
+        {
+          "rank": 0,
+          "steps": 36,
+          "status": "PASS",
+          "max_parameter_delta": null,
+          "max_final_sync_error": null,
+          "collectives_checked": null
+        },
+        {
+          "rank": 1,
+          "steps": 36,
+          "status": "PASS",
+          "max_parameter_delta": null,
+          "max_final_sync_error": null,
+          "collectives_checked": null
+        }
+      ],
+      "command": [
+        "python3",
+        "scripts/m3_launch.py",
+        "--python",
+        "<project>/.venv-m1/bin/python",
+        "--run-id",
+        "m3e-group-01",
+        "--gpus",
+        "<approved_GPU_UUID_list_node_0>",
+        "--mode",
+        "group",
+        "--nnodes",
+        "1",
+        "--node-rank",
+        "0",
+        "--master-addr",
+        "127.0.0.1",
+        "--master-port",
+        "29831",
+        "--timeout",
+        "300",
+        "--allow-shared",
+        "--probe"
+      ],
+      "roce_lines": 12
+    },
+    {
+      "run_id": "m3e-group-02",
+      "node_rank": 0,
+      "training_exit": 0,
+      "reader_exit": 0,
+      "verify_exit": 0,
+      "cleanup": {
+        "status": "PASS",
+        "removed_count": 2,
+        "already_absent_count": 0
+      },
+      "verification": {
+        "status": "PASS",
+        "ranks": [
+          {
+            "rank": 0,
+            "events": 128,
+            "profile_records": 56,
+            "valid_records": 40,
+            "unsupported": 16,
+            "timing_scopes": 24,
+            "sync_block_ns": 774812,
+            "apis": {
+              "ncclGetUniqueId": 1,
+              "ncclGetVersion": 1,
+              "ncclCommInitRankConfig": 1,
+              "ncclAllReduce": 60,
+              "ncclGroupStart": 32,
+              "ncclGroupEnd": 32,
+              "ncclCommDestroy": 1
+            }
+          },
+          {
+            "rank": 1,
+            "events": 127,
+            "profile_records": 56,
+            "valid_records": 40,
+            "unsupported": 16,
+            "timing_scopes": 24,
+            "sync_block_ns": 465474,
+            "apis": {
+              "ncclGetVersion": 1,
+              "ncclCommInitRankConfig": 1,
+              "ncclAllReduce": 60,
+              "ncclGroupStart": 32,
+              "ncclGroupEnd": 32,
+              "ncclCommDestroy": 1
+            }
+          }
+        ],
+        "total_events": 255,
+        "loss": 0
+      },
+      "probe_sha256": "c9f6987d35d2bff32aed205c2bac0741a41fe6804861b2e82450f4369c541e77",
+      "source_hashes": {
+        "scripts/m3_launch.py": "c8f1f624308831803acb603b037ca349660fc56a767fa36ed0f156408b95fd99",
+        "tests/m1_baseline.py": "298c0a9994e839f017552677225939b96683c49226ca079e381398fa428c4695",
+        "native/ring.hpp": "94599dcc02fba33f275d59ec5d3b7dcaa1cf88d431b5afc973ee47f73bd8bd5d",
+        "native/ring.cpp": "2214ea8adc167f8d0fdcfcf956e4930cba15a20687cfccd05df497ea4be1c5f6",
+        "native/probe.cpp": "7a397516cd5d4bb84d21207a3b19558846463c8c099d59d7179ad4f611882311",
+        "native/.gitkeep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "flash/reader.py": "ef0a0b2ac43fa3c245ce5c9dac74fb5ccde522221ddfd2ea8118c3666908eda1",
+        "flash/__init__.py": "ebd6b85348d4590ef8db6c4720c0c46f694ebc13a6b7c01cdfa4687d6d707e18",
+        "tests/m2_mock_nccl.cpp": "e5ea195d415baaa93e8ffbf97f572e7371e282bdbaf21d16ac0696d24a5b74a9",
+        "tests/m2_ring.py": "f1de41cb56172f138a84763f5fa5c3334450ddb74400413ab8c0bed576ff55da",
+        "tests/m2_hook_smoke.py": "e89e4b1d2a61052b743cedaa2ccf58fd97b2cf96e11619c62c67baf2765263a4",
+        "tests/m2_lifecycle.py": "37e27630be9ccc2802b7ddeab49930b14b617490f0f4577e9d252987dbb00f18",
+        "tests/m2_lifecycle_driver.cpp": "379af1b386f00301ae0a8608cc257304368ec0c2572dc32e792e221833e83db0",
+        "tests/m3_mechanism.py": "8e846ddeee7d5c4f13cdfedec62f30445ab22af703f2ee8697d18e0f398ccb56",
+        "tests/m3_validation.py": "c9d282779f3dcfd94e8630062720244fea32e1659bd7e00bfd48fe8ff0af5c8a",
+        "tests/m3_regression.py": "327e58efab176117016d3094c957335d0ddb0cb5a0c520b506fc53950c14590e",
+        "tests/m3_mock_nccl.cpp": "324b5c98f2cc771a12fe813060ff0ee37a194deea34ea46decfeb5d6deb30705",
+        "tests/m3_mock_cuda.cpp": "655901d2a59c890223cc63bae98567359d14ee0d3d097f24418bfc5d6f76093a",
+        "tests/m3_hook.py": "48c413ec00cdf133cdb258a703528d15e0f41cfd6196cb02766745ac9a525294",
+        "tests/m3_reader.py": "1ec2eb301d2b50f067ed1ff9ebc42308a633b47a3b9d9a68886f18194e95e51d",
+        "scripts/m2_launch.py": "c42896efc9d5dc50b8902ded68358be1998ef0b430dddb7181f78336f94c06cb",
+        "scripts/m2_run_node.py": "57d18977a18e67b7418764c04b3e744952cf9c01b8fe3e07385bb7c74eb52036",
+        "scripts/m2_verify.py": "3714583538fd052ec8726b0b3324793fcdb9d0eda7e5b7f29d75600ba3bb6ae2",
+        "scripts/m2_cleanup.py": "1649844fc3a237136ab997eb72ff3ec7fe9ba447bcc2028bc6afe58ef19629da",
+        "scripts/m2_build.py": "d672a3056200e893b4043c69e289ba6a12e77b311f1704f8b008e64de8df2e40",
+        "scripts/m3_run_node.py": "7e1425299fae1164170b901dd09e6e3fb8ed85888b8b4774824be6a6c02c87ad",
+        "scripts/m3_export.py": "1ffd830b1ac1f41618d3feb2be74f7b00129441a83858428b7a12680f2f8785e",
+        "scripts/m3_cpu_suite.py": "e510c58ad17c92b50d90b19d6c59e2a1b662cb21a76380ac8f2454f21ab21f2e",
+        "scripts/m3_verify.py": "e764206fd82b7f8734d08e9f767ee56021b5d848dad6b634254790c304088977",
+        "scripts/m3_build.py": "232ab8fd0838a55a37642be6368d74fa5063cc303692a882c4e085322b1ddb68"
+      },
+      "rank_runtime_versions": [
+        {
+          "rank": 0,
+          "versions": [
+            {
+              "family": "cudart",
+              "encoded": 12080
+            },
+            {
+              "family": "nccl",
+              "encoded": 22703
+            }
+          ]
+        },
+        {
+          "rank": 1,
+          "versions": [
+            {
+              "family": "cudart",
+              "encoded": 12080
+            },
+            {
+              "family": "nccl",
+              "encoded": 22703
+            }
+          ]
+        }
+      ],
+      "memory_mib": [
+        {
+          "rank": 0,
+          "own_process_memory_mib": 1010.0
+        },
+        {
+          "rank": 1,
+          "own_process_memory_mib": 1010.0
+        }
+      ],
+      "training_checks": [
+        {
+          "rank": 0,
+          "steps": 36,
+          "status": "PASS",
+          "max_parameter_delta": null,
+          "max_final_sync_error": null,
+          "collectives_checked": null
+        },
+        {
+          "rank": 1,
+          "steps": 36,
+          "status": "PASS",
+          "max_parameter_delta": null,
+          "max_final_sync_error": null,
+          "collectives_checked": null
+        }
+      ],
+      "command": [
+        "python3",
+        "scripts/m3_launch.py",
+        "--python",
+        "<project>/.venv-m1/bin/python",
+        "--run-id",
+        "m3e-group-02",
+        "--gpus",
+        "<approved_GPU_UUID_list_node_0>",
+        "--mode",
+        "group",
+        "--nnodes",
+        "1",
+        "--node-rank",
+        "0",
+        "--master-addr",
+        "127.0.0.1",
+        "--master-port",
+        "29832",
+        "--timeout",
+        "300",
+        "--allow-shared",
+        "--probe"
+      ],
+      "roce_lines": 12
+    },
+    {
+      "run_id": "m3f-allreduce-01",
+      "node_rank": 0,
+      "training_exit": 0,
+      "reader_exit": 0,
+      "verify_exit": 0,
+      "cleanup": {
+        "status": "PASS",
+        "removed_count": 8,
+        "already_absent_count": 0
+      },
+      "verification": {
+        "status": "PASS",
+        "ranks": [
+          {
+            "rank": 0,
+            "events": 118,
+            "profile_records": 12,
+            "valid_records": 12,
+            "unsupported": 0,
+            "timing_scopes": 12,
+            "sync_block_ns": 2476872,
+            "apis": {
+              "ncclGetVersion": 2,
+              "ncclGetUniqueId": 1,
+              "ncclCommInitRankConfig": 1,
+              "ncclAllReduce": 28,
+              "ncclCommGetAsyncError": 84,
+              "ncclCommFinalize": 1,
+              "ncclCommDestroy": 1
+            }
+          },
+          {
+            "rank": 1,
+            "events": 123,
+            "profile_records": 12,
+            "valid_records": 12,
+            "unsupported": 0,
+            "timing_scopes": 12,
+            "sync_block_ns": 2142867,
+            "apis": {
+              "ncclGetVersion": 2,
+              "ncclCommInitRankConfig": 1,
+              "ncclAllReduce": 28,
+              "ncclCommGetAsyncError": 90,
+              "ncclCommFinalize": 1,
+              "ncclCommDestroy": 1
+            }
+          },
+          {
+            "rank": 2,
+            "events": 120,
+            "profile_records": 12,
+            "valid_records": 12,
+            "unsupported": 0,
+            "timing_scopes": 12,
+            "sync_block_ns": 2143276,
+            "apis": {
+              "ncclGetVersion": 2,
+              "ncclCommInitRankConfig": 1,
+              "ncclAllReduce": 28,
+              "ncclCommGetAsyncError": 87,
+              "ncclCommFinalize": 1,
+              "ncclCommDestroy": 1
+            }
+          },
+          {
+            "rank": 3,
+            "events": 117,
+            "profile_records": 12,
+            "valid_records": 12,
+            "unsupported": 0,
+            "timing_scopes": 12,
+            "sync_block_ns": 2219579,
+            "apis": {
+              "ncclGetVersion": 2,
+              "ncclCommInitRankConfig": 1,
+              "ncclAllReduce": 28,
+              "ncclCommGetAsyncError": 84,
+              "ncclCommFinalize": 1,
+              "ncclCommDestroy": 1
+            }
+          },
+          {
+            "rank": 4,
+            "events": 120,
+            "profile_records": 12,
+            "valid_records": 12,
+            "unsupported": 0,
+            "timing_scopes": 12,
+            "sync_block_ns": 2148078,
+            "apis": {
+              "ncclGetVersion": 2,
+              "ncclCommInitRankConfig": 1,
+              "ncclAllReduce": 28,
+              "ncclCommGetAsyncError": 87,
+              "ncclCommFinalize": 1,
+              "ncclCommDestroy": 1
+            }
+          },
+          {
+            "rank": 5,
+            "events": 117,
+            "profile_records": 12,
+            "valid_records": 12,
+            "unsupported": 0,
+            "timing_scopes": 12,
+            "sync_block_ns": 2262602,
+            "apis": {
+              "ncclGetVersion": 2,
+              "ncclCommInitRankConfig": 1,
+              "ncclAllReduce": 28,
+              "ncclCommGetAsyncError": 84,
+              "ncclCommFinalize": 1,
+              "ncclCommDestroy": 1
+            }
+          },
+          {
+            "rank": 6,
+            "events": 120,
+            "profile_records": 12,
+            "valid_records": 12,
+            "unsupported": 0,
+            "timing_scopes": 12,
+            "sync_block_ns": 2423172,
+            "apis": {
+              "ncclGetVersion": 2,
+              "ncclCommInitRankConfig": 1,
+              "ncclAllReduce": 28,
+              "ncclCommGetAsyncError": 87,
+              "ncclCommFinalize": 1,
+              "ncclCommDestroy": 1
+            }
+          },
+          {
+            "rank": 7,
+            "events": 120,
+            "profile_records": 12,
+            "valid_records": 12,
+            "unsupported": 0,
+            "timing_scopes": 12,
+            "sync_block_ns": 2502110,
+            "apis": {
+              "ncclGetVersion": 2,
+              "ncclCommInitRankConfig": 1,
+              "ncclAllReduce": 28,
+              "ncclCommGetAsyncError": 87,
+              "ncclCommFinalize": 1,
+              "ncclCommDestroy": 1
+            }
+          }
+        ],
+        "total_events": 955,
+        "loss": 0
+      },
+      "probe_sha256": "583371a93b85308c2f5db4d4c7980344d9dc9fea7714988545b5054e472a9b19",
+      "source_hashes": {
+        "scripts/m3_launch.py": "c8f1f624308831803acb603b037ca349660fc56a767fa36ed0f156408b95fd99",
+        "tests/m1_baseline.py": "298c0a9994e839f017552677225939b96683c49226ca079e381398fa428c4695",
+        "native/._ring.hpp": "e39f648e4c15369d8fa1bd3ca1d9b5facc653dd177aca6f08faa84e006d90e76",
+        "native/ring.hpp": "94599dcc02fba33f275d59ec5d3b7dcaa1cf88d431b5afc973ee47f73bd8bd5d",
+        "native/ring.cpp": "2214ea8adc167f8d0fdcfcf956e4930cba15a20687cfccd05df497ea4be1c5f6",
+        "native/probe.cpp": "2ad8fb56373282bb224afc036bcba30cac220efe17a6092fa03e2309dc60b7c7",
+        "native/.gitkeep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "native/._probe.cpp": "e39f648e4c15369d8fa1bd3ca1d9b5facc653dd177aca6f08faa84e006d90e76",
+        "native/._ring.cpp": "e39f648e4c15369d8fa1bd3ca1d9b5facc653dd177aca6f08faa84e006d90e76",
+        "native/._.gitkeep": "e39f648e4c15369d8fa1bd3ca1d9b5facc653dd177aca6f08faa84e006d90e76",
+        "flash/reader.py": "ef0a0b2ac43fa3c245ce5c9dac74fb5ccde522221ddfd2ea8118c3666908eda1",
+        "flash/.___init__.py": "e39f648e4c15369d8fa1bd3ca1d9b5facc653dd177aca6f08faa84e006d90e76",
+        "flash/__init__.py": "ebd6b85348d4590ef8db6c4720c0c46f694ebc13a6b7c01cdfa4687d6d707e18",
+        "flash/._reader.py": "e39f648e4c15369d8fa1bd3ca1d9b5facc653dd177aca6f08faa84e006d90e76",
+        "tests/m2_mock_nccl.cpp": "e5ea195d415baaa93e8ffbf97f572e7371e282bdbaf21d16ac0696d24a5b74a9",
+        "tests/m2_ring.py": "f1de41cb56172f138a84763f5fa5c3334450ddb74400413ab8c0bed576ff55da",
+        "tests/m2_hook_smoke.py": "e89e4b1d2a61052b743cedaa2ccf58fd97b2cf96e11619c62c67baf2765263a4",
+        "tests/m2_lifecycle.py": "37e27630be9ccc2802b7ddeab49930b14b617490f0f4577e9d252987dbb00f18",
+        "tests/m2_lifecycle_driver.cpp": "379af1b386f00301ae0a8608cc257304368ec0c2572dc32e792e221833e83db0",
+        "tests/m3_mechanism.py": "8e846ddeee7d5c4f13cdfedec62f30445ab22af703f2ee8697d18e0f398ccb56",
+        "tests/m3_validation.py": "51943b117a7ae5ee32b74deeb4e57ec007dc8b410a789e5c272833411d58c275",
+        "tests/m3_regression.py": "327e58efab176117016d3094c957335d0ddb0cb5a0c520b506fc53950c14590e",
+        "tests/m3_mock_nccl.cpp": "f6a2ab8f615e46b3b9d1d1bb115d828211d6d5bff2c36dcf7c0291ac34ae17d5",
+        "tests/m3_mock_cuda.cpp": "655901d2a59c890223cc63bae98567359d14ee0d3d097f24418bfc5d6f76093a",
+        "tests/m3_hook.py": "3a24c928a813c9543bc672e833fb2b402ec21f86cac51ff23222f47e339cb262",
+        "tests/m3_reader.py": "1ec2eb301d2b50f067ed1ff9ebc42308a633b47a3b9d9a68886f18194e95e51d",
+        "scripts/m2_launch.py": "c42896efc9d5dc50b8902ded68358be1998ef0b430dddb7181f78336f94c06cb",
+        "scripts/m2_run_node.py": "57d18977a18e67b7418764c04b3e744952cf9c01b8fe3e07385bb7c74eb52036",
+        "scripts/m2_verify.py": "3714583538fd052ec8726b0b3324793fcdb9d0eda7e5b7f29d75600ba3bb6ae2",
+        "scripts/m2_cleanup.py": "1649844fc3a237136ab997eb72ff3ec7fe9ba447bcc2028bc6afe58ef19629da",
+        "scripts/m2_build.py": "d672a3056200e893b4043c69e289ba6a12e77b311f1704f8b008e64de8df2e40",
+        "scripts/m3_run_node.py": "7e1425299fae1164170b901dd09e6e3fb8ed85888b8b4774824be6a6c02c87ad",
+        "scripts/m3_cpu_suite.py": "e510c58ad17c92b50d90b19d6c59e2a1b662cb21a76380ac8f2454f21ab21f2e",
+        "scripts/m3_verify.py": "e764206fd82b7f8734d08e9f767ee56021b5d848dad6b634254790c304088977",
+        "scripts/m3_build.py": "232ab8fd0838a55a37642be6368d74fa5063cc303692a882c4e085322b1ddb68"
+      },
+      "rank_runtime_versions": [
+        {
+          "rank": 0,
+          "versions": [
+            {
+              "family": "cudart",
+              "encoded": 12080
+            },
+            {
+              "family": "nccl",
+              "encoded": 22703
+            }
+          ]
+        },
+        {
+          "rank": 1,
+          "versions": [
+            {
+              "family": "cudart",
+              "encoded": 12080
+            },
+            {
+              "family": "nccl",
+              "encoded": 22703
+            }
+          ]
+        },
+        {
+          "rank": 2,
+          "versions": [
+            {
+              "family": "cudart",
+              "encoded": 12080
+            },
+            {
+              "family": "nccl",
+              "encoded": 22703
+            }
+          ]
+        },
+        {
+          "rank": 3,
+          "versions": [
+            {
+              "family": "cudart",
+              "encoded": 12080
+            },
+            {
+              "family": "nccl",
+              "encoded": 22703
+            }
+          ]
+        },
+        {
+          "rank": 4,
+          "versions": [
+            {
+              "family": "cudart",
+              "encoded": 12080
+            },
+            {
+              "family": "nccl",
+              "encoded": 22703
+            }
+          ]
+        },
+        {
+          "rank": 5,
+          "versions": [
+            {
+              "family": "cudart",
+              "encoded": 12080
+            },
+            {
+              "family": "nccl",
+              "encoded": 22703
+            }
+          ]
+        },
+        {
+          "rank": 6,
+          "versions": [
+            {
+              "family": "cudart",
+              "encoded": 12080
+            },
+            {
+              "family": "nccl",
+              "encoded": 22703
+            }
+          ]
+        },
+        {
+          "rank": 7,
+          "versions": [
+            {
+              "family": "cudart",
+              "encoded": 12080
+            },
+            {
+              "family": "nccl",
+              "encoded": 22703
+            }
+          ]
+        }
+      ],
+      "memory_mib": [
+        {
+          "rank": 0,
+          "own_process_memory_mib": 1026.0
+        },
+        {
+          "rank": 1,
+          "own_process_memory_mib": 1036.0
+        },
+        {
+          "rank": 2,
+          "own_process_memory_mib": 1040.0
+        },
+        {
+          "rank": 3,
+          "own_process_memory_mib": 1036.0
+        },
+        {
+          "rank": 4,
+          "own_process_memory_mib": 1036.0
+        },
+        {
+          "rank": 5,
+          "own_process_memory_mib": 1036.0
+        },
+        {
+          "rank": 6,
+          "own_process_memory_mib": 1036.0
+        },
+        {
+          "rank": 7,
+          "own_process_memory_mib": 1036.0
+        }
+      ],
+      "training_checks": [
+        {
+          "rank": 0,
+          "steps": 25,
+          "status": "PASS",
+          "max_parameter_delta": null,
+          "max_final_sync_error": null,
+          "collectives_checked": 25
+        },
+        {
+          "rank": 1,
+          "steps": 25,
+          "status": "PASS",
+          "max_parameter_delta": null,
+          "max_final_sync_error": null,
+          "collectives_checked": 25
+        },
+        {
+          "rank": 2,
+          "steps": 25,
+          "status": "PASS",
+          "max_parameter_delta": null,
+          "max_final_sync_error": null,
+          "collectives_checked": 25
+        },
+        {
+          "rank": 3,
+          "steps": 25,
+          "status": "PASS",
+          "max_parameter_delta": null,
+          "max_final_sync_error": null,
+          "collectives_checked": 25
+        },
+        {
+          "rank": 4,
+          "steps": 25,
+          "status": "PASS",
+          "max_parameter_delta": null,
+          "max_final_sync_error": null,
+          "collectives_checked": 25
+        },
+        {
+          "rank": 5,
+          "steps": 25,
+          "status": "PASS",
+          "max_parameter_delta": null,
+          "max_final_sync_error": null,
+          "collectives_checked": 25
+        },
+        {
+          "rank": 6,
+          "steps": 25,
+          "status": "PASS",
+          "max_parameter_delta": null,
+          "max_final_sync_error": null,
+          "collectives_checked": 25
+        },
+        {
+          "rank": 7,
+          "steps": 25,
+          "status": "PASS",
+          "max_parameter_delta": null,
+          "max_final_sync_error": null,
+          "collectives_checked": 25
+        }
+      ],
+      "command": [
+        "python3",
+        "scripts/m3_launch.py",
+        "--python",
+        "<project>/.venv-m1/bin/python",
+        "--run-id",
+        "m3f-allreduce-01",
+        "--gpus",
+        "<approved_GPU_UUID_list_node_0>",
+        "--mode",
+        "allreduce",
+        "--nnodes",
+        "2",
+        "--node-rank",
+        "0",
+        "--master-addr",
+        "<gpu01_master_address>",
+        "--master-port",
+        "29841",
+        "--timeout",
+        "300",
+        "--allow-shared",
+        "--probe",
+        "--profile"
+      ],
+      "roce_lines": 48
+    },
+    {
+      "run_id": "m3f-ddp-01",
+      "node_rank": 0,
+      "training_exit": 0,
+      "reader_exit": 0,
+      "verify_exit": 0,
+      "cleanup": {
+        "status": "PASS",
+        "removed_count": 8,
+        "already_absent_count": 0
+      },
+      "verification": {
+        "status": "PASS",
+        "ranks": [
+          {
+            "rank": 0,
+            "events": 209,
+            "profile_records": 20,
+            "valid_records": 20,
+            "unsupported": 0,
+            "timing_scopes": 20,
+            "sync_block_ns": 7994232,
+            "apis": {
+              "ncclGetVersion": 2,
+              "ncclGetUniqueId": 1,
+              "ncclCommInitRankConfig": 1,
+              "ncclAllReduce": 23,
+              "ncclCommGetAsyncError": 153,
+              "ncclAllGather": 1,
+              "ncclBcast": 26,
+              "ncclCommFinalize": 1,
+              "ncclCommDestroy": 1
+            }
+          },
+          {
+            "rank": 1,
+            "events": 208,
+            "profile_records": 20,
+            "valid_records": 20,
+            "unsupported": 0,
+            "timing_scopes": 20,
+            "sync_block_ns": 7426648,
+            "apis": {
+              "ncclGetVersion": 2,
+              "ncclCommInitRankConfig": 1,
+              "ncclAllReduce": 23,
+              "ncclCommGetAsyncError": 153,
+              "ncclAllGather": 1,
+              "ncclBcast": 26,
+              "ncclCommFinalize": 1,
+              "ncclCommDestroy": 1
+            }
+          },
+          {
+            "rank": 2,
+            "events": 208,
+            "profile_records": 20,
+            "valid_records": 20,
+            "unsupported": 0,
+            "timing_scopes": 20,
+            "sync_block_ns": 8597062,
+            "apis": {
+              "ncclGetVersion": 2,
+              "ncclCommInitRankConfig": 1,
+              "ncclAllReduce": 23,
+              "ncclCommGetAsyncError": 153,
+              "ncclAllGather": 1,
+              "ncclBcast": 26,
+              "ncclCommFinalize": 1,
+              "ncclCommDestroy": 1
+            }
+          },
+          {
+            "rank": 3,
+            "events": 208,
+            "profile_records": 20,
+            "valid_records": 20,
+            "unsupported": 0,
+            "timing_scopes": 20,
+            "sync_block_ns": 7442393,
+            "apis": {
+              "ncclGetVersion": 2,
+              "ncclCommInitRankConfig": 1,
+              "ncclAllReduce": 23,
+              "ncclCommGetAsyncError": 153,
+              "ncclAllGather": 1,
+              "ncclBcast": 26,
+              "ncclCommFinalize": 1,
+              "ncclCommDestroy": 1
+            }
+          },
+          {
+            "rank": 4,
+            "events": 205,
+            "profile_records": 20,
+            "valid_records": 20,
+            "unsupported": 0,
+            "timing_scopes": 20,
+            "sync_block_ns": 9594137,
+            "apis": {
+              "ncclGetVersion": 2,
+              "ncclCommInitRankConfig": 1,
+              "ncclAllReduce": 23,
+              "ncclCommGetAsyncError": 150,
+              "ncclAllGather": 1,
+              "ncclBcast": 26,
+              "ncclCommFinalize": 1,
+              "ncclCommDestroy": 1
+            }
+          },
+          {
+            "rank": 5,
+            "events": 205,
+            "profile_records": 20,
+            "valid_records": 20,
+            "unsupported": 0,
+            "timing_scopes": 20,
+            "sync_block_ns": 6508834,
+            "apis": {
+              "ncclGetVersion": 2,
+              "ncclCommInitRankConfig": 1,
+              "ncclAllReduce": 23,
+              "ncclCommGetAsyncError": 150,
+              "ncclAllGather": 1,
+              "ncclBcast": 26,
+              "ncclCommFinalize": 1,
+              "ncclCommDestroy": 1
+            }
+          },
+          {
+            "rank": 6,
+            "events": 205,
+            "profile_records": 20,
+            "valid_records": 20,
+            "unsupported": 0,
+            "timing_scopes": 20,
+            "sync_block_ns": 7402248,
+            "apis": {
+              "ncclGetVersion": 2,
+              "ncclCommInitRankConfig": 1,
+              "ncclAllReduce": 23,
+              "ncclCommGetAsyncError": 150,
+              "ncclAllGather": 1,
+              "ncclBcast": 26,
+              "ncclCommFinalize": 1,
+              "ncclCommDestroy": 1
+            }
+          },
+          {
+            "rank": 7,
+            "events": 208,
+            "profile_records": 20,
+            "valid_records": 20,
+            "unsupported": 0,
+            "timing_scopes": 20,
+            "sync_block_ns": 7757743,
+            "apis": {
+              "ncclGetVersion": 2,
+              "ncclCommInitRankConfig": 1,
+              "ncclAllReduce": 23,
+              "ncclCommGetAsyncError": 153,
+              "ncclAllGather": 1,
+              "ncclBcast": 26,
+              "ncclCommFinalize": 1,
+              "ncclCommDestroy": 1
+            }
+          }
+        ],
+        "total_events": 1656,
+        "loss": 0
+      },
+      "probe_sha256": "583371a93b85308c2f5db4d4c7980344d9dc9fea7714988545b5054e472a9b19",
+      "source_hashes": {
+        "scripts/m3_launch.py": "c8f1f624308831803acb603b037ca349660fc56a767fa36ed0f156408b95fd99",
+        "tests/m1_baseline.py": "298c0a9994e839f017552677225939b96683c49226ca079e381398fa428c4695",
+        "native/._ring.hpp": "e39f648e4c15369d8fa1bd3ca1d9b5facc653dd177aca6f08faa84e006d90e76",
+        "native/ring.hpp": "94599dcc02fba33f275d59ec5d3b7dcaa1cf88d431b5afc973ee47f73bd8bd5d",
+        "native/ring.cpp": "2214ea8adc167f8d0fdcfcf956e4930cba15a20687cfccd05df497ea4be1c5f6",
+        "native/probe.cpp": "2ad8fb56373282bb224afc036bcba30cac220efe17a6092fa03e2309dc60b7c7",
+        "native/.gitkeep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "native/._probe.cpp": "e39f648e4c15369d8fa1bd3ca1d9b5facc653dd177aca6f08faa84e006d90e76",
+        "native/._ring.cpp": "e39f648e4c15369d8fa1bd3ca1d9b5facc653dd177aca6f08faa84e006d90e76",
+        "native/._.gitkeep": "e39f648e4c15369d8fa1bd3ca1d9b5facc653dd177aca6f08faa84e006d90e76",
+        "flash/reader.py": "ef0a0b2ac43fa3c245ce5c9dac74fb5ccde522221ddfd2ea8118c3666908eda1",
+        "flash/.___init__.py": "e39f648e4c15369d8fa1bd3ca1d9b5facc653dd177aca6f08faa84e006d90e76",
+        "flash/__init__.py": "ebd6b85348d4590ef8db6c4720c0c46f694ebc13a6b7c01cdfa4687d6d707e18",
+        "flash/._reader.py": "e39f648e4c15369d8fa1bd3ca1d9b5facc653dd177aca6f08faa84e006d90e76",
+        "tests/m2_mock_nccl.cpp": "e5ea195d415baaa93e8ffbf97f572e7371e282bdbaf21d16ac0696d24a5b74a9",
+        "tests/m2_ring.py": "f1de41cb56172f138a84763f5fa5c3334450ddb74400413ab8c0bed576ff55da",
+        "tests/m2_hook_smoke.py": "e89e4b1d2a61052b743cedaa2ccf58fd97b2cf96e11619c62c67baf2765263a4",
+        "tests/m2_lifecycle.py": "37e27630be9ccc2802b7ddeab49930b14b617490f0f4577e9d252987dbb00f18",
+        "tests/m2_lifecycle_driver.cpp": "379af1b386f00301ae0a8608cc257304368ec0c2572dc32e792e221833e83db0",
+        "tests/m3_mechanism.py": "8e846ddeee7d5c4f13cdfedec62f30445ab22af703f2ee8697d18e0f398ccb56",
+        "tests/m3_validation.py": "51943b117a7ae5ee32b74deeb4e57ec007dc8b410a789e5c272833411d58c275",
+        "tests/m3_regression.py": "327e58efab176117016d3094c957335d0ddb0cb5a0c520b506fc53950c14590e",
+        "tests/m3_mock_nccl.cpp": "f6a2ab8f615e46b3b9d1d1bb115d828211d6d5bff2c36dcf7c0291ac34ae17d5",
+        "tests/m3_mock_cuda.cpp": "655901d2a59c890223cc63bae98567359d14ee0d3d097f24418bfc5d6f76093a",
+        "tests/m3_hook.py": "3a24c928a813c9543bc672e833fb2b402ec21f86cac51ff23222f47e339cb262",
+        "tests/m3_reader.py": "1ec2eb301d2b50f067ed1ff9ebc42308a633b47a3b9d9a68886f18194e95e51d",
+        "scripts/m2_launch.py": "c42896efc9d5dc50b8902ded68358be1998ef0b430dddb7181f78336f94c06cb",
+        "scripts/m2_run_node.py": "57d18977a18e67b7418764c04b3e744952cf9c01b8fe3e07385bb7c74eb52036",
+        "scripts/m2_verify.py": "3714583538fd052ec8726b0b3324793fcdb9d0eda7e5b7f29d75600ba3bb6ae2",
+        "scripts/m2_cleanup.py": "1649844fc3a237136ab997eb72ff3ec7fe9ba447bcc2028bc6afe58ef19629da",
+        "scripts/m2_build.py": "d672a3056200e893b4043c69e289ba6a12e77b311f1704f8b008e64de8df2e40",
+        "scripts/m3_run_node.py": "7e1425299fae1164170b901dd09e6e3fb8ed85888b8b4774824be6a6c02c87ad",
+        "scripts/m3_cpu_suite.py": "e510c58ad17c92b50d90b19d6c59e2a1b662cb21a76380ac8f2454f21ab21f2e",
+        "scripts/m3_verify.py": "e764206fd82b7f8734d08e9f767ee56021b5d848dad6b634254790c304088977",
+        "scripts/m3_build.py": "232ab8fd0838a55a37642be6368d74fa5063cc303692a882c4e085322b1ddb68"
+      },
+      "rank_runtime_versions": [
+        {
+          "rank": 0,
+          "versions": [
+            {
+              "family": "cudart",
+              "encoded": 12080
+            },
+            {
+              "family": "nccl",
+              "encoded": 22703
+            }
+          ]
+        },
+        {
+          "rank": 1,
+          "versions": [
+            {
+              "family": "cudart",
+              "encoded": 12080
+            },
+            {
+              "family": "nccl",
+              "encoded": 22703
+            }
+          ]
+        },
+        {
+          "rank": 2,
+          "versions": [
+            {
+              "family": "cudart",
+              "encoded": 12080
+            },
+            {
+              "family": "nccl",
+              "encoded": 22703
+            }
+          ]
+        },
+        {
+          "rank": 3,
+          "versions": [
+            {
+              "family": "cudart",
+              "encoded": 12080
+            },
+            {
+              "family": "nccl",
+              "encoded": 22703
+            }
+          ]
+        },
+        {
+          "rank": 4,
+          "versions": [
+            {
+              "family": "cudart",
+              "encoded": 12080
+            },
+            {
+              "family": "nccl",
+              "encoded": 22703
+            }
+          ]
+        },
+        {
+          "rank": 5,
+          "versions": [
+            {
+              "family": "cudart",
+              "encoded": 12080
+            },
+            {
+              "family": "nccl",
+              "encoded": 22703
+            }
+          ]
+        },
+        {
+          "rank": 6,
+          "versions": [
+            {
+              "family": "cudart",
+              "encoded": 12080
+            },
+            {
+              "family": "nccl",
+              "encoded": 22703
+            }
+          ]
+        },
+        {
+          "rank": 7,
+          "versions": [
+            {
+              "family": "cudart",
+              "encoded": 12080
+            },
+            {
+              "family": "nccl",
+              "encoded": 22703
+            }
+          ]
+        }
+      ],
+      "memory_mib": [
+        {
+          "rank": 0,
+          "own_process_memory_mib": 1036.0
+        },
+        {
+          "rank": 1,
+          "own_process_memory_mib": 1038.0
+        },
+        {
+          "rank": 2,
+          "own_process_memory_mib": 1058.0
+        },
+        {
+          "rank": 3,
+          "own_process_memory_mib": 1038.0
+        },
+        {
+          "rank": 4,
+          "own_process_memory_mib": 1038.0
+        },
+        {
+          "rank": 5,
+          "own_process_memory_mib": 1038.0
+        },
+        {
+          "rank": 6,
+          "own_process_memory_mib": 1038.0
+        },
+        {
+          "rank": 7,
+          "own_process_memory_mib": 1038.0
+        }
+      ],
+      "training_checks": [
+        {
+          "rank": 0,
+          "steps": 20,
+          "status": "PASS",
+          "max_parameter_delta": 0.020800277590751648,
+          "max_final_sync_error": 0.0,
+          "collectives_checked": null
+        },
+        {
+          "rank": 1,
+          "steps": 20,
+          "status": "PASS",
+          "max_parameter_delta": 0.020800277590751648,
+          "max_final_sync_error": 0.0,
+          "collectives_checked": null
+        },
+        {
+          "rank": 2,
+          "steps": 20,
+          "status": "PASS",
+          "max_parameter_delta": 0.020800277590751648,
+          "max_final_sync_error": 0.0,
+          "collectives_checked": null
+        },
+        {
+          "rank": 3,
+          "steps": 20,
+          "status": "PASS",
+          "max_parameter_delta": 0.020800277590751648,
+          "max_final_sync_error": 0.0,
+          "collectives_checked": null
+        },
+        {
+          "rank": 4,
+          "steps": 20,
+          "status": "PASS",
+          "max_parameter_delta": 0.020800277590751648,
+          "max_final_sync_error": 0.0,
+          "collectives_checked": null
+        },
+        {
+          "rank": 5,
+          "steps": 20,
+          "status": "PASS",
+          "max_parameter_delta": 0.020800277590751648,
+          "max_final_sync_error": 0.0,
+          "collectives_checked": null
+        },
+        {
+          "rank": 6,
+          "steps": 20,
+          "status": "PASS",
+          "max_parameter_delta": 0.020800277590751648,
+          "max_final_sync_error": 0.0,
+          "collectives_checked": null
+        },
+        {
+          "rank": 7,
+          "steps": 20,
+          "status": "PASS",
+          "max_parameter_delta": 0.020800277590751648,
+          "max_final_sync_error": 0.0,
+          "collectives_checked": null
+        }
+      ],
+      "command": [
+        "python3",
+        "scripts/m3_launch.py",
+        "--python",
+        "<project>/.venv-m1/bin/python",
+        "--run-id",
+        "m3f-ddp-01",
+        "--gpus",
+        "<approved_GPU_UUID_list_node_0>",
+        "--mode",
+        "ddp",
+        "--nnodes",
+        "2",
+        "--node-rank",
+        "0",
+        "--master-addr",
+        "<gpu01_master_address>",
+        "--master-port",
+        "29851",
+        "--timeout",
+        "300",
+        "--allow-shared",
+        "--probe",
+        "--profile"
+      ],
+      "roce_lines": 48
+    },
+    {
+      "run_id": "m3f-allreduce-02",
+      "node_rank": 0,
+      "training_exit": 0,
+      "reader_exit": 0,
+      "verify_exit": 0,
+      "cleanup": {
+        "status": "PASS",
+        "removed_count": 8,
+        "already_absent_count": 0
+      },
+      "verification": {
+        "status": "PASS",
+        "ranks": [
+          {
+            "rank": 0,
+            "events": 124,
+            "profile_records": 12,
+            "valid_records": 12,
+            "unsupported": 0,
+            "timing_scopes": 12,
+            "sync_block_ns": 2926966,
+            "apis": {
+              "ncclGetVersion": 2,
+              "ncclGetUniqueId": 1,
+              "ncclCommInitRankConfig": 1,
+              "ncclAllReduce": 28,
+              "ncclCommGetAsyncError": 90,
+              "ncclCommFinalize": 1,
+              "ncclCommDestroy": 1
+            }
+          },
+          {
+            "rank": 1,
+            "events": 117,
+            "profile_records": 12,
+            "valid_records": 12,
+            "unsupported": 0,
+            "timing_scopes": 12,
+            "sync_block_ns": 2320055,
+            "apis": {
+              "ncclGetVersion": 2,
+              "ncclCommInitRankConfig": 1,
+              "ncclAllReduce": 28,
+              "ncclCommGetAsyncError": 84,
+              "ncclCommFinalize": 1,
+              "ncclCommDestroy": 1
+            }
+          },
+          {
+            "rank": 2,
+            "events": 120,
+            "profile_records": 12,
+            "valid_records": 12,
+            "unsupported": 0,
+            "timing_scopes": 12,
+            "sync_block_ns": 2466888,
+            "apis": {
+              "ncclGetVersion": 2,
+              "ncclCommInitRankConfig": 1,
+              "ncclAllReduce": 28,
+              "ncclCommGetAsyncError": 87,
+              "ncclCommFinalize": 1,
+              "ncclCommDestroy": 1
+            }
+          },
+          {
+            "rank": 3,
+            "events": 117,
+            "profile_records": 12,
+            "valid_records": 12,
+            "unsupported": 0,
+            "timing_scopes": 12,
+            "sync_block_ns": 2939511,
+            "apis": {
+              "ncclGetVersion": 2,
+              "ncclCommInitRankConfig": 1,
+              "ncclAllReduce": 28,
+              "ncclCommGetAsyncError": 84,
+              "ncclCommFinalize": 1,
+              "ncclCommDestroy": 1
+            }
+          },
+          {
+            "rank": 4,
+            "events": 120,
+            "profile_records": 12,
+            "valid_records": 12,
+            "unsupported": 0,
+            "timing_scopes": 12,
+            "sync_block_ns": 2585910,
+            "apis": {
+              "ncclGetVersion": 2,
+              "ncclCommInitRankConfig": 1,
+              "ncclAllReduce": 28,
+              "ncclCommGetAsyncError": 87,
+              "ncclCommFinalize": 1,
+              "ncclCommDestroy": 1
+            }
+          },
+          {
+            "rank": 5,
+            "events": 117,
+            "profile_records": 12,
+            "valid_records": 12,
+            "unsupported": 0,
+            "timing_scopes": 12,
+            "sync_block_ns": 1711286,
+            "apis": {
+              "ncclGetVersion": 2,
+              "ncclCommInitRankConfig": 1,
+              "ncclAllReduce": 28,
+              "ncclCommGetAsyncError": 84,
+              "ncclCommFinalize": 1,
+              "ncclCommDestroy": 1
+            }
+          },
+          {
+            "rank": 6,
+            "events": 120,
+            "profile_records": 12,
+            "valid_records": 12,
+            "unsupported": 0,
+            "timing_scopes": 12,
+            "sync_block_ns": 1711124,
+            "apis": {
+              "ncclGetVersion": 2,
+              "ncclCommInitRankConfig": 1,
+              "ncclAllReduce": 28,
+              "ncclCommGetAsyncError": 87,
+              "ncclCommFinalize": 1,
+              "ncclCommDestroy": 1
+            }
+          },
+          {
+            "rank": 7,
+            "events": 117,
+            "profile_records": 12,
+            "valid_records": 12,
+            "unsupported": 0,
+            "timing_scopes": 12,
+            "sync_block_ns": 2675057,
+            "apis": {
+              "ncclGetVersion": 2,
+              "ncclCommInitRankConfig": 1,
+              "ncclAllReduce": 28,
+              "ncclCommGetAsyncError": 84,
+              "ncclCommFinalize": 1,
+              "ncclCommDestroy": 1
+            }
+          }
+        ],
+        "total_events": 952,
+        "loss": 0
+      },
+      "probe_sha256": "c9f6987d35d2bff32aed205c2bac0741a41fe6804861b2e82450f4369c541e77",
+      "source_hashes": {
+        "scripts/m3_launch.py": "c8f1f624308831803acb603b037ca349660fc56a767fa36ed0f156408b95fd99",
+        "tests/m1_baseline.py": "298c0a9994e839f017552677225939b96683c49226ca079e381398fa428c4695",
+        "native/ring.hpp": "94599dcc02fba33f275d59ec5d3b7dcaa1cf88d431b5afc973ee47f73bd8bd5d",
+        "native/ring.cpp": "2214ea8adc167f8d0fdcfcf956e4930cba15a20687cfccd05df497ea4be1c5f6",
+        "native/probe.cpp": "7a397516cd5d4bb84d21207a3b19558846463c8c099d59d7179ad4f611882311",
+        "native/.gitkeep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "flash/reader.py": "ef0a0b2ac43fa3c245ce5c9dac74fb5ccde522221ddfd2ea8118c3666908eda1",
+        "flash/__init__.py": "ebd6b85348d4590ef8db6c4720c0c46f694ebc13a6b7c01cdfa4687d6d707e18",
+        "tests/m2_mock_nccl.cpp": "e5ea195d415baaa93e8ffbf97f572e7371e282bdbaf21d16ac0696d24a5b74a9",
+        "tests/m2_ring.py": "f1de41cb56172f138a84763f5fa5c3334450ddb74400413ab8c0bed576ff55da",
+        "tests/m2_hook_smoke.py": "e89e4b1d2a61052b743cedaa2ccf58fd97b2cf96e11619c62c67baf2765263a4",
+        "tests/m2_lifecycle.py": "37e27630be9ccc2802b7ddeab49930b14b617490f0f4577e9d252987dbb00f18",
+        "tests/m2_lifecycle_driver.cpp": "379af1b386f00301ae0a8608cc257304368ec0c2572dc32e792e221833e83db0",
+        "tests/m3_mechanism.py": "8e846ddeee7d5c4f13cdfedec62f30445ab22af703f2ee8697d18e0f398ccb56",
+        "tests/m3_validation.py": "c9d282779f3dcfd94e8630062720244fea32e1659bd7e00bfd48fe8ff0af5c8a",
+        "tests/m3_regression.py": "327e58efab176117016d3094c957335d0ddb0cb5a0c520b506fc53950c14590e",
+        "tests/m3_mock_nccl.cpp": "324b5c98f2cc771a12fe813060ff0ee37a194deea34ea46decfeb5d6deb30705",
+        "tests/m3_mock_cuda.cpp": "655901d2a59c890223cc63bae98567359d14ee0d3d097f24418bfc5d6f76093a",
+        "tests/m3_hook.py": "48c413ec00cdf133cdb258a703528d15e0f41cfd6196cb02766745ac9a525294",
+        "tests/m3_reader.py": "1ec2eb301d2b50f067ed1ff9ebc42308a633b47a3b9d9a68886f18194e95e51d",
+        "scripts/m2_launch.py": "c42896efc9d5dc50b8902ded68358be1998ef0b430dddb7181f78336f94c06cb",
+        "scripts/m2_run_node.py": "57d18977a18e67b7418764c04b3e744952cf9c01b8fe3e07385bb7c74eb52036",
+        "scripts/m2_verify.py": "3714583538fd052ec8726b0b3324793fcdb9d0eda7e5b7f29d75600ba3bb6ae2",
+        "scripts/m2_cleanup.py": "1649844fc3a237136ab997eb72ff3ec7fe9ba447bcc2028bc6afe58ef19629da",
+        "scripts/m2_build.py": "d672a3056200e893b4043c69e289ba6a12e77b311f1704f8b008e64de8df2e40",
+        "scripts/m3_run_node.py": "7e1425299fae1164170b901dd09e6e3fb8ed85888b8b4774824be6a6c02c87ad",
+        "scripts/m3_export.py": "1ffd830b1ac1f41618d3feb2be74f7b00129441a83858428b7a12680f2f8785e",
+        "scripts/m3_cpu_suite.py": "e510c58ad17c92b50d90b19d6c59e2a1b662cb21a76380ac8f2454f21ab21f2e",
+        "scripts/m3_verify.py": "e764206fd82b7f8734d08e9f767ee56021b5d848dad6b634254790c304088977",
+        "scripts/m3_build.py": "232ab8fd0838a55a37642be6368d74fa5063cc303692a882c4e085322b1ddb68"
+      },
+      "rank_runtime_versions": [
+        {
+          "rank": 0,
+          "versions": [
+            {
+              "family": "cudart",
+              "encoded": 12080
+            },
+            {
+              "family": "nccl",
+              "encoded": 22703
+            }
+          ]
+        },
+        {
+          "rank": 1,
+          "versions": [
+            {
+              "family": "cudart",
+              "encoded": 12080
+            },
+            {
+              "family": "nccl",
+              "encoded": 22703
+            }
+          ]
+        },
+        {
+          "rank": 2,
+          "versions": [
+            {
+              "family": "cudart",
+              "encoded": 12080
+            },
+            {
+              "family": "nccl",
+              "encoded": 22703
+            }
+          ]
+        },
+        {
+          "rank": 3,
+          "versions": [
+            {
+              "family": "cudart",
+              "encoded": 12080
+            },
+            {
+              "family": "nccl",
+              "encoded": 22703
+            }
+          ]
+        },
+        {
+          "rank": 4,
+          "versions": [
+            {
+              "family": "cudart",
+              "encoded": 12080
+            },
+            {
+              "family": "nccl",
+              "encoded": 22703
+            }
+          ]
+        },
+        {
+          "rank": 5,
+          "versions": [
+            {
+              "family": "cudart",
+              "encoded": 12080
+            },
+            {
+              "family": "nccl",
+              "encoded": 22703
+            }
+          ]
+        },
+        {
+          "rank": 6,
+          "versions": [
+            {
+              "family": "cudart",
+              "encoded": 12080
+            },
+            {
+              "family": "nccl",
+              "encoded": 22703
+            }
+          ]
+        },
+        {
+          "rank": 7,
+          "versions": [
+            {
+              "family": "cudart",
+              "encoded": 12080
+            },
+            {
+              "family": "nccl",
+              "encoded": 22703
+            }
+          ]
+        }
+      ],
+      "memory_mib": [
+        {
+          "rank": 0,
+          "own_process_memory_mib": 1026.0
+        },
+        {
+          "rank": 1,
+          "own_process_memory_mib": 1036.0
+        },
+        {
+          "rank": 2,
+          "own_process_memory_mib": 1040.0
+        },
+        {
+          "rank": 3,
+          "own_process_memory_mib": 1036.0
+        },
+        {
+          "rank": 4,
+          "own_process_memory_mib": 1036.0
+        },
+        {
+          "rank": 5,
+          "own_process_memory_mib": 1036.0
+        },
+        {
+          "rank": 6,
+          "own_process_memory_mib": 1036.0
+        },
+        {
+          "rank": 7,
+          "own_process_memory_mib": 1036.0
+        }
+      ],
+      "training_checks": [
+        {
+          "rank": 0,
+          "steps": 25,
+          "status": "PASS",
+          "max_parameter_delta": null,
+          "max_final_sync_error": null,
+          "collectives_checked": 25
+        },
+        {
+          "rank": 1,
+          "steps": 25,
+          "status": "PASS",
+          "max_parameter_delta": null,
+          "max_final_sync_error": null,
+          "collectives_checked": 25
+        },
+        {
+          "rank": 2,
+          "steps": 25,
+          "status": "PASS",
+          "max_parameter_delta": null,
+          "max_final_sync_error": null,
+          "collectives_checked": 25
+        },
+        {
+          "rank": 3,
+          "steps": 25,
+          "status": "PASS",
+          "max_parameter_delta": null,
+          "max_final_sync_error": null,
+          "collectives_checked": 25
+        },
+        {
+          "rank": 4,
+          "steps": 25,
+          "status": "PASS",
+          "max_parameter_delta": null,
+          "max_final_sync_error": null,
+          "collectives_checked": 25
+        },
+        {
+          "rank": 5,
+          "steps": 25,
+          "status": "PASS",
+          "max_parameter_delta": null,
+          "max_final_sync_error": null,
+          "collectives_checked": 25
+        },
+        {
+          "rank": 6,
+          "steps": 25,
+          "status": "PASS",
+          "max_parameter_delta": null,
+          "max_final_sync_error": null,
+          "collectives_checked": 25
+        },
+        {
+          "rank": 7,
+          "steps": 25,
+          "status": "PASS",
+          "max_parameter_delta": null,
+          "max_final_sync_error": null,
+          "collectives_checked": 25
+        }
+      ],
+      "command": [
+        "python3",
+        "scripts/m3_launch.py",
+        "--python",
+        "<project>/.venv-m1/bin/python",
+        "--run-id",
+        "m3f-allreduce-02",
+        "--gpus",
+        "<approved_GPU_UUID_list_node_0>",
+        "--mode",
+        "allreduce",
+        "--nnodes",
+        "2",
+        "--node-rank",
+        "0",
+        "--master-addr",
+        "<gpu01_master_address>",
+        "--master-port",
+        "29842",
+        "--timeout",
+        "300",
+        "--allow-shared",
+        "--probe",
+        "--profile"
+      ],
+      "roce_lines": 48
+    },
+    {
+      "run_id": "m3f-ddp-02",
+      "node_rank": 0,
+      "training_exit": 0,
+      "reader_exit": 0,
+      "verify_exit": 0,
+      "cleanup": {
+        "status": "PASS",
+        "removed_count": 8,
+        "already_absent_count": 0
+      },
+      "verification": {
+        "status": "PASS",
+        "ranks": [
+          {
+            "rank": 0,
+            "events": 206,
+            "profile_records": 20,
+            "valid_records": 20,
+            "unsupported": 0,
+            "timing_scopes": 20,
+            "sync_block_ns": 7778408,
+            "apis": {
+              "ncclGetVersion": 2,
+              "ncclGetUniqueId": 1,
+              "ncclCommInitRankConfig": 1,
+              "ncclAllReduce": 23,
+              "ncclCommGetAsyncError": 150,
+              "ncclAllGather": 1,
+              "ncclBcast": 26,
+              "ncclCommFinalize": 1,
+              "ncclCommDestroy": 1
+            }
+          },
+          {
+            "rank": 1,
+            "events": 205,
+            "profile_records": 20,
+            "valid_records": 20,
+            "unsupported": 0,
+            "timing_scopes": 20,
+            "sync_block_ns": 8770673,
+            "apis": {
+              "ncclGetVersion": 2,
+              "ncclCommInitRankConfig": 1,
+              "ncclAllReduce": 23,
+              "ncclCommGetAsyncError": 150,
+              "ncclAllGather": 1,
+              "ncclBcast": 26,
+              "ncclCommFinalize": 1,
+              "ncclCommDestroy": 1
+            }
+          },
+          {
+            "rank": 2,
+            "events": 208,
+            "profile_records": 20,
+            "valid_records": 20,
+            "unsupported": 0,
+            "timing_scopes": 20,
+            "sync_block_ns": 8111312,
+            "apis": {
+              "ncclGetVersion": 2,
+              "ncclCommInitRankConfig": 1,
+              "ncclAllReduce": 23,
+              "ncclCommGetAsyncError": 153,
+              "ncclAllGather": 1,
+              "ncclBcast": 26,
+              "ncclCommFinalize": 1,
+              "ncclCommDestroy": 1
+            }
+          },
+          {
+            "rank": 3,
+            "events": 205,
+            "profile_records": 20,
+            "valid_records": 20,
+            "unsupported": 0,
+            "timing_scopes": 20,
+            "sync_block_ns": 9192756,
+            "apis": {
+              "ncclGetVersion": 2,
+              "ncclCommInitRankConfig": 1,
+              "ncclAllReduce": 23,
+              "ncclCommGetAsyncError": 150,
+              "ncclAllGather": 1,
+              "ncclBcast": 26,
+              "ncclCommFinalize": 1,
+              "ncclCommDestroy": 1
+            }
+          },
+          {
+            "rank": 4,
+            "events": 205,
+            "profile_records": 20,
+            "valid_records": 20,
+            "unsupported": 0,
+            "timing_scopes": 20,
+            "sync_block_ns": 5188721,
+            "apis": {
+              "ncclGetVersion": 2,
+              "ncclCommInitRankConfig": 1,
+              "ncclAllReduce": 23,
+              "ncclCommGetAsyncError": 150,
+              "ncclAllGather": 1,
+              "ncclBcast": 26,
+              "ncclCommFinalize": 1,
+              "ncclCommDestroy": 1
+            }
+          },
+          {
+            "rank": 5,
+            "events": 208,
+            "profile_records": 20,
+            "valid_records": 20,
+            "unsupported": 0,
+            "timing_scopes": 20,
+            "sync_block_ns": 6249014,
+            "apis": {
+              "ncclGetVersion": 2,
+              "ncclCommInitRankConfig": 1,
+              "ncclAllReduce": 23,
+              "ncclCommGetAsyncError": 153,
+              "ncclAllGather": 1,
+              "ncclBcast": 26,
+              "ncclCommFinalize": 1,
+              "ncclCommDestroy": 1
+            }
+          },
+          {
+            "rank": 6,
+            "events": 205,
+            "profile_records": 20,
+            "valid_records": 20,
+            "unsupported": 0,
+            "timing_scopes": 20,
+            "sync_block_ns": 8650633,
+            "apis": {
+              "ncclGetVersion": 2,
+              "ncclCommInitRankConfig": 1,
+              "ncclAllReduce": 23,
+              "ncclCommGetAsyncError": 150,
+              "ncclAllGather": 1,
+              "ncclBcast": 26,
+              "ncclCommFinalize": 1,
+              "ncclCommDestroy": 1
+            }
+          },
+          {
+            "rank": 7,
+            "events": 205,
+            "profile_records": 20,
+            "valid_records": 20,
+            "unsupported": 0,
+            "timing_scopes": 20,
+            "sync_block_ns": 9400478,
+            "apis": {
+              "ncclGetVersion": 2,
+              "ncclCommInitRankConfig": 1,
+              "ncclAllReduce": 23,
+              "ncclCommGetAsyncError": 150,
+              "ncclAllGather": 1,
+              "ncclBcast": 26,
+              "ncclCommFinalize": 1,
+              "ncclCommDestroy": 1
+            }
+          }
+        ],
+        "total_events": 1647,
+        "loss": 0
+      },
+      "probe_sha256": "c9f6987d35d2bff32aed205c2bac0741a41fe6804861b2e82450f4369c541e77",
+      "source_hashes": {
+        "scripts/m3_launch.py": "c8f1f624308831803acb603b037ca349660fc56a767fa36ed0f156408b95fd99",
+        "tests/m1_baseline.py": "298c0a9994e839f017552677225939b96683c49226ca079e381398fa428c4695",
+        "native/ring.hpp": "94599dcc02fba33f275d59ec5d3b7dcaa1cf88d431b5afc973ee47f73bd8bd5d",
+        "native/ring.cpp": "2214ea8adc167f8d0fdcfcf956e4930cba15a20687cfccd05df497ea4be1c5f6",
+        "native/probe.cpp": "7a397516cd5d4bb84d21207a3b19558846463c8c099d59d7179ad4f611882311",
+        "native/.gitkeep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "flash/reader.py": "ef0a0b2ac43fa3c245ce5c9dac74fb5ccde522221ddfd2ea8118c3666908eda1",
+        "flash/__init__.py": "ebd6b85348d4590ef8db6c4720c0c46f694ebc13a6b7c01cdfa4687d6d707e18",
+        "tests/m2_mock_nccl.cpp": "e5ea195d415baaa93e8ffbf97f572e7371e282bdbaf21d16ac0696d24a5b74a9",
+        "tests/m2_ring.py": "f1de41cb56172f138a84763f5fa5c3334450ddb74400413ab8c0bed576ff55da",
+        "tests/m2_hook_smoke.py": "e89e4b1d2a61052b743cedaa2ccf58fd97b2cf96e11619c62c67baf2765263a4",
+        "tests/m2_lifecycle.py": "37e27630be9ccc2802b7ddeab49930b14b617490f0f4577e9d252987dbb00f18",
+        "tests/m2_lifecycle_driver.cpp": "379af1b386f00301ae0a8608cc257304368ec0c2572dc32e792e221833e83db0",
+        "tests/m3_mechanism.py": "8e846ddeee7d5c4f13cdfedec62f30445ab22af703f2ee8697d18e0f398ccb56",
+        "tests/m3_validation.py": "c9d282779f3dcfd94e8630062720244fea32e1659bd7e00bfd48fe8ff0af5c8a",
+        "tests/m3_regression.py": "327e58efab176117016d3094c957335d0ddb0cb5a0c520b506fc53950c14590e",
+        "tests/m3_mock_nccl.cpp": "324b5c98f2cc771a12fe813060ff0ee37a194deea34ea46decfeb5d6deb30705",
+        "tests/m3_mock_cuda.cpp": "655901d2a59c890223cc63bae98567359d14ee0d3d097f24418bfc5d6f76093a",
+        "tests/m3_hook.py": "48c413ec00cdf133cdb258a703528d15e0f41cfd6196cb02766745ac9a525294",
+        "tests/m3_reader.py": "1ec2eb301d2b50f067ed1ff9ebc42308a633b47a3b9d9a68886f18194e95e51d",
+        "scripts/m2_launch.py": "c42896efc9d5dc50b8902ded68358be1998ef0b430dddb7181f78336f94c06cb",
+        "scripts/m2_run_node.py": "57d18977a18e67b7418764c04b3e744952cf9c01b8fe3e07385bb7c74eb52036",
+        "scripts/m2_verify.py": "3714583538fd052ec8726b0b3324793fcdb9d0eda7e5b7f29d75600ba3bb6ae2",
+        "scripts/m2_cleanup.py": "1649844fc3a237136ab997eb72ff3ec7fe9ba447bcc2028bc6afe58ef19629da",
+        "scripts/m2_build.py": "d672a3056200e893b4043c69e289ba6a12e77b311f1704f8b008e64de8df2e40",
+        "scripts/m3_run_node.py": "7e1425299fae1164170b901dd09e6e3fb8ed85888b8b4774824be6a6c02c87ad",
+        "scripts/m3_export.py": "1ffd830b1ac1f41618d3feb2be74f7b00129441a83858428b7a12680f2f8785e",
+        "scripts/m3_cpu_suite.py": "e510c58ad17c92b50d90b19d6c59e2a1b662cb21a76380ac8f2454f21ab21f2e",
+        "scripts/m3_verify.py": "e764206fd82b7f8734d08e9f767ee56021b5d848dad6b634254790c304088977",
+        "scripts/m3_build.py": "232ab8fd0838a55a37642be6368d74fa5063cc303692a882c4e085322b1ddb68"
+      },
+      "rank_runtime_versions": [
+        {
+          "rank": 0,
+          "versions": [
+            {
+              "family": "cudart",
+              "encoded": 12080
+            },
+            {
+              "family": "nccl",
+              "encoded": 22703
+            }
+          ]
+        },
+        {
+          "rank": 1,
+          "versions": [
+            {
+              "family": "cudart",
+              "encoded": 12080
+            },
+            {
+              "family": "nccl",
+              "encoded": 22703
+            }
+          ]
+        },
+        {
+          "rank": 2,
+          "versions": [
+            {
+              "family": "cudart",
+              "encoded": 12080
+            },
+            {
+              "family": "nccl",
+              "encoded": 22703
+            }
+          ]
+        },
+        {
+          "rank": 3,
+          "versions": [
+            {
+              "family": "cudart",
+              "encoded": 12080
+            },
+            {
+              "family": "nccl",
+              "encoded": 22703
+            }
+          ]
+        },
+        {
+          "rank": 4,
+          "versions": [
+            {
+              "family": "cudart",
+              "encoded": 12080
+            },
+            {
+              "family": "nccl",
+              "encoded": 22703
+            }
+          ]
+        },
+        {
+          "rank": 5,
+          "versions": [
+            {
+              "family": "cudart",
+              "encoded": 12080
+            },
+            {
+              "family": "nccl",
+              "encoded": 22703
+            }
+          ]
+        },
+        {
+          "rank": 6,
+          "versions": [
+            {
+              "family": "cudart",
+              "encoded": 12080
+            },
+            {
+              "family": "nccl",
+              "encoded": 22703
+            }
+          ]
+        },
+        {
+          "rank": 7,
+          "versions": [
+            {
+              "family": "cudart",
+              "encoded": 12080
+            },
+            {
+              "family": "nccl",
+              "encoded": 22703
+            }
+          ]
+        }
+      ],
+      "memory_mib": [
+        {
+          "rank": 0,
+          "own_process_memory_mib": 1036.0
+        },
+        {
+          "rank": 1,
+          "own_process_memory_mib": 1038.0
+        },
+        {
+          "rank": 2,
+          "own_process_memory_mib": 1058.0
+        },
+        {
+          "rank": 3,
+          "own_process_memory_mib": 1038.0
+        },
+        {
+          "rank": 4,
+          "own_process_memory_mib": 1038.0
+        },
+        {
+          "rank": 5,
+          "own_process_memory_mib": 1038.0
+        },
+        {
+          "rank": 6,
+          "own_process_memory_mib": 1038.0
+        },
+        {
+          "rank": 7,
+          "own_process_memory_mib": 1038.0
+        }
+      ],
+      "training_checks": [
+        {
+          "rank": 0,
+          "steps": 20,
+          "status": "PASS",
+          "max_parameter_delta": 0.020800277590751648,
+          "max_final_sync_error": 0.0,
+          "collectives_checked": null
+        },
+        {
+          "rank": 1,
+          "steps": 20,
+          "status": "PASS",
+          "max_parameter_delta": 0.020800277590751648,
+          "max_final_sync_error": 0.0,
+          "collectives_checked": null
+        },
+        {
+          "rank": 2,
+          "steps": 20,
+          "status": "PASS",
+          "max_parameter_delta": 0.020800277590751648,
+          "max_final_sync_error": 0.0,
+          "collectives_checked": null
+        },
+        {
+          "rank": 3,
+          "steps": 20,
+          "status": "PASS",
+          "max_parameter_delta": 0.020800277590751648,
+          "max_final_sync_error": 0.0,
+          "collectives_checked": null
+        },
+        {
+          "rank": 4,
+          "steps": 20,
+          "status": "PASS",
+          "max_parameter_delta": 0.020800277590751648,
+          "max_final_sync_error": 0.0,
+          "collectives_checked": null
+        },
+        {
+          "rank": 5,
+          "steps": 20,
+          "status": "PASS",
+          "max_parameter_delta": 0.020800277590751648,
+          "max_final_sync_error": 0.0,
+          "collectives_checked": null
+        },
+        {
+          "rank": 6,
+          "steps": 20,
+          "status": "PASS",
+          "max_parameter_delta": 0.020800277590751648,
+          "max_final_sync_error": 0.0,
+          "collectives_checked": null
+        },
+        {
+          "rank": 7,
+          "steps": 20,
+          "status": "PASS",
+          "max_parameter_delta": 0.020800277590751648,
+          "max_final_sync_error": 0.0,
+          "collectives_checked": null
+        }
+      ],
+      "command": [
+        "python3",
+        "scripts/m3_launch.py",
+        "--python",
+        "<project>/.venv-m1/bin/python",
+        "--run-id",
+        "m3f-ddp-02",
+        "--gpus",
+        "<approved_GPU_UUID_list_node_0>",
+        "--mode",
+        "ddp",
+        "--nnodes",
+        "2",
+        "--node-rank",
+        "0",
+        "--master-addr",
+        "<gpu01_master_address>",
+        "--master-port",
+        "29852",
+        "--timeout",
+        "300",
+        "--allow-shared",
+        "--probe",
+        "--profile"
+      ],
+      "roce_lines": 48
+    },
+    {
+      "run_id": "m3d-monitor-local-01",
+      "node_rank": 0,
+      "training_exit": 0,
+      "reader_exit": 0,
+      "verify_exit": 0,
+      "cleanup": {
+        "status": "PASS",
+        "removed_count": 2,
+        "already_absent_count": 0
+      },
+      "verification": {
+        "status": "PASS",
+        "node_rank": 0,
+        "mode": "allreduce",
+        "ranks": [
+          0,
+          1
+        ],
+        "training_exit": 0,
+        "probe": true,
+        "elapsed_s": 7.415090030990541,
+        "source_hashes": {
+          "scripts/m2_launch.py": "c42896efc9d5dc50b8902ded68358be1998ef0b430dddb7181f78336f94c06cb",
+          "tests/m1_baseline.py": "298c0a9994e839f017552677225939b96683c49226ca079e381398fa428c4695",
+          "native/ring.hpp": "94599dcc02fba33f275d59ec5d3b7dcaa1cf88d431b5afc973ee47f73bd8bd5d",
+          "native/ring.cpp": "2214ea8adc167f8d0fdcfcf956e4930cba15a20687cfccd05df497ea4be1c5f6",
+          "native/probe.cpp": "2ad8fb56373282bb224afc036bcba30cac220efe17a6092fa03e2309dc60b7c7",
+          "native/.gitkeep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "flash/reader.py": "ef0a0b2ac43fa3c245ce5c9dac74fb5ccde522221ddfd2ea8118c3666908eda1",
+          "flash/__init__.py": "ebd6b85348d4590ef8db6c4720c0c46f694ebc13a6b7c01cdfa4687d6d707e18",
+          "tests/m2_mock_nccl.cpp": "e5ea195d415baaa93e8ffbf97f572e7371e282bdbaf21d16ac0696d24a5b74a9",
+          "tests/m2_ring.py": "f1de41cb56172f138a84763f5fa5c3334450ddb74400413ab8c0bed576ff55da",
+          "tests/m2_hook_smoke.py": "e89e4b1d2a61052b743cedaa2ccf58fd97b2cf96e11619c62c67baf2765263a4",
+          "tests/m2_lifecycle.py": "37e27630be9ccc2802b7ddeab49930b14b617490f0f4577e9d252987dbb00f18",
+          "tests/m2_lifecycle_driver.cpp": "379af1b386f00301ae0a8608cc257304368ec0c2572dc32e792e221833e83db0",
+          "scripts/m2_run_node.py": "57d18977a18e67b7418764c04b3e744952cf9c01b8fe3e07385bb7c74eb52036",
+          "scripts/m2_verify.py": "3714583538fd052ec8726b0b3324793fcdb9d0eda7e5b7f29d75600ba3bb6ae2",
+          "scripts/m2_cleanup.py": "1649844fc3a237136ab997eb72ff3ec7fe9ba447bcc2028bc6afe58ef19629da",
+          "scripts/m2_build.py": "d672a3056200e893b4043c69e289ba6a12e77b311f1704f8b008e64de8df2e40"
+        },
+        "reader_exit": 0,
+        "rank_summaries": [
+          {
+            "rank": 0,
+            "events": 118,
+            "apis": {
+              "ncclGetVersion": 2,
+              "ncclGetUniqueId": 1,
+              "ncclCommInitRankConfig": 1,
+              "ncclAllReduce": 28,
+              "ncclCommGetAsyncError": 84,
+              "ncclCommFinalize": 1,
+              "ncclCommDestroy": 1
+            },
+            "identities": [
+              "UNIQUE_ID_SHA256"
+            ],
+            "id_hashes": [
+              "c0dc857e446ed2238dfdcc7e167de85cdd6e0c986dbad09bc24c8222284d65d0"
+            ],
+            "comm_sizes": [
+              2
+            ],
+            "group_inside": 0,
+            "group_outside": 28
+          },
+          {
+            "rank": 1,
+            "events": 117,
+            "apis": {
+              "ncclGetVersion": 2,
+              "ncclCommInitRankConfig": 1,
+              "ncclAllReduce": 28,
+              "ncclCommGetAsyncError": 84,
+              "ncclCommFinalize": 1,
+              "ncclCommDestroy": 1
+            },
+            "identities": [
+              "UNIQUE_ID_SHA256"
+            ],
+            "id_hashes": [
+              "c0dc857e446ed2238dfdcc7e167de85cdd6e0c986dbad09bc24c8222284d65d0"
+            ],
+            "comm_sizes": [
+              2
+            ],
+            "group_inside": 0,
+            "group_outside": 28
+          }
+        ],
+        "total_events": 235,
+        "loss": 0
+      },
+      "probe_sha256": "583371a93b85308c2f5db4d4c7980344d9dc9fea7714988545b5054e472a9b19",
+      "source_hashes": {
+        "scripts/m2_launch.py": "c42896efc9d5dc50b8902ded68358be1998ef0b430dddb7181f78336f94c06cb",
+        "tests/m1_baseline.py": "298c0a9994e839f017552677225939b96683c49226ca079e381398fa428c4695",
+        "native/ring.hpp": "94599dcc02fba33f275d59ec5d3b7dcaa1cf88d431b5afc973ee47f73bd8bd5d",
+        "native/ring.cpp": "2214ea8adc167f8d0fdcfcf956e4930cba15a20687cfccd05df497ea4be1c5f6",
+        "native/probe.cpp": "2ad8fb56373282bb224afc036bcba30cac220efe17a6092fa03e2309dc60b7c7",
+        "native/.gitkeep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "flash/reader.py": "ef0a0b2ac43fa3c245ce5c9dac74fb5ccde522221ddfd2ea8118c3666908eda1",
+        "flash/__init__.py": "ebd6b85348d4590ef8db6c4720c0c46f694ebc13a6b7c01cdfa4687d6d707e18",
+        "tests/m2_mock_nccl.cpp": "e5ea195d415baaa93e8ffbf97f572e7371e282bdbaf21d16ac0696d24a5b74a9",
+        "tests/m2_ring.py": "f1de41cb56172f138a84763f5fa5c3334450ddb74400413ab8c0bed576ff55da",
+        "tests/m2_hook_smoke.py": "e89e4b1d2a61052b743cedaa2ccf58fd97b2cf96e11619c62c67baf2765263a4",
+        "tests/m2_lifecycle.py": "37e27630be9ccc2802b7ddeab49930b14b617490f0f4577e9d252987dbb00f18",
+        "tests/m2_lifecycle_driver.cpp": "379af1b386f00301ae0a8608cc257304368ec0c2572dc32e792e221833e83db0",
+        "scripts/m2_run_node.py": "57d18977a18e67b7418764c04b3e744952cf9c01b8fe3e07385bb7c74eb52036",
+        "scripts/m2_verify.py": "3714583538fd052ec8726b0b3324793fcdb9d0eda7e5b7f29d75600ba3bb6ae2",
+        "scripts/m2_cleanup.py": "1649844fc3a237136ab997eb72ff3ec7fe9ba447bcc2028bc6afe58ef19629da",
+        "scripts/m2_build.py": "d672a3056200e893b4043c69e289ba6a12e77b311f1704f8b008e64de8df2e40"
+      },
+      "rank_runtime_versions": [
+        {
+          "rank": 0,
+          "versions": [
+            {
+              "family": "cudart",
+              "encoded": 12080
+            },
+            {
+              "family": "nccl",
+              "encoded": 22703
+            }
+          ]
+        },
+        {
+          "rank": 1,
+          "versions": [
+            {
+              "family": "cudart",
+              "encoded": 12080
+            },
+            {
+              "family": "nccl",
+              "encoded": 22703
+            }
+          ]
+        }
+      ],
+      "memory_mib": [
+        {
+          "rank": 0,
+          "own_process_memory_mib": 994.0
+        },
+        {
+          "rank": 1,
+          "own_process_memory_mib": 994.0
+        }
+      ],
+      "training_checks": [
+        {
+          "rank": 0,
+          "steps": 25,
+          "status": "PASS",
+          "max_parameter_delta": null,
+          "max_final_sync_error": null,
+          "collectives_checked": 25
+        },
+        {
+          "rank": 1,
+          "steps": 25,
+          "status": "PASS",
+          "max_parameter_delta": null,
+          "max_final_sync_error": null,
+          "collectives_checked": 25
+        }
+      ],
+      "command": [
+        "python3",
+        "scripts/m2_launch.py",
+        "--python",
+        "<project>/.venv-m1/bin/python",
+        "--run-id",
+        "m3d-monitor-local-01",
+        "--gpus",
+        "<approved_GPU_UUID_list_node_0>",
+        "--mode",
+        "allreduce",
+        "--nnodes",
+        "1",
+        "--node-rank",
+        "0",
+        "--master-addr",
+        "127.0.0.1",
+        "--master-port",
+        "29861",
+        "--timeout",
+        "300",
+        "--allow-shared",
+        "--probe"
+      ],
+      "roce_lines": 12
+    },
+    {
+      "run_id": "m3d-monitor-cross-01",
+      "node_rank": 0,
+      "training_exit": 0,
+      "reader_exit": 0,
+      "verify_exit": 0,
+      "cleanup": {
+        "status": "PASS",
+        "removed_count": 1,
+        "already_absent_count": 0
+      },
+      "verification": {
+        "status": "PASS",
+        "node_rank": 0,
+        "mode": "allreduce",
+        "ranks": [
+          0
+        ],
+        "training_exit": 0,
+        "probe": true,
+        "elapsed_s": 6.850230874959379,
+        "source_hashes": {
+          "scripts/m2_launch.py": "c42896efc9d5dc50b8902ded68358be1998ef0b430dddb7181f78336f94c06cb",
+          "tests/m1_baseline.py": "298c0a9994e839f017552677225939b96683c49226ca079e381398fa428c4695",
+          "native/ring.hpp": "94599dcc02fba33f275d59ec5d3b7dcaa1cf88d431b5afc973ee47f73bd8bd5d",
+          "native/ring.cpp": "2214ea8adc167f8d0fdcfcf956e4930cba15a20687cfccd05df497ea4be1c5f6",
+          "native/probe.cpp": "2ad8fb56373282bb224afc036bcba30cac220efe17a6092fa03e2309dc60b7c7",
+          "native/.gitkeep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "flash/reader.py": "ef0a0b2ac43fa3c245ce5c9dac74fb5ccde522221ddfd2ea8118c3666908eda1",
+          "flash/__init__.py": "ebd6b85348d4590ef8db6c4720c0c46f694ebc13a6b7c01cdfa4687d6d707e18",
+          "tests/m2_mock_nccl.cpp": "e5ea195d415baaa93e8ffbf97f572e7371e282bdbaf21d16ac0696d24a5b74a9",
+          "tests/m2_ring.py": "f1de41cb56172f138a84763f5fa5c3334450ddb74400413ab8c0bed576ff55da",
+          "tests/m2_hook_smoke.py": "e89e4b1d2a61052b743cedaa2ccf58fd97b2cf96e11619c62c67baf2765263a4",
+          "tests/m2_lifecycle.py": "37e27630be9ccc2802b7ddeab49930b14b617490f0f4577e9d252987dbb00f18",
+          "tests/m2_lifecycle_driver.cpp": "379af1b386f00301ae0a8608cc257304368ec0c2572dc32e792e221833e83db0",
+          "scripts/m2_run_node.py": "57d18977a18e67b7418764c04b3e744952cf9c01b8fe3e07385bb7c74eb52036",
+          "scripts/m2_verify.py": "3714583538fd052ec8726b0b3324793fcdb9d0eda7e5b7f29d75600ba3bb6ae2",
+          "scripts/m2_cleanup.py": "1649844fc3a237136ab997eb72ff3ec7fe9ba447bcc2028bc6afe58ef19629da",
+          "scripts/m2_build.py": "d672a3056200e893b4043c69e289ba6a12e77b311f1704f8b008e64de8df2e40"
+        },
+        "reader_exit": 0,
+        "rank_summaries": [
+          {
+            "rank": 0,
+            "events": 121,
+            "apis": {
+              "ncclGetVersion": 2,
+              "ncclGetUniqueId": 1,
+              "ncclCommInitRankConfig": 1,
+              "ncclAllReduce": 28,
+              "ncclCommGetAsyncError": 87,
+              "ncclCommFinalize": 1,
+              "ncclCommDestroy": 1
+            },
+            "identities": [
+              "UNIQUE_ID_SHA256"
+            ],
+            "id_hashes": [
+              "f4f162b27a0afa33a6f3331820679258e0d29804086214151f1ce5271c47e676"
+            ],
+            "comm_sizes": [
+              2
+            ],
+            "group_inside": 0,
+            "group_outside": 28
+          }
+        ],
+        "total_events": 121,
+        "loss": 0
+      },
+      "probe_sha256": "583371a93b85308c2f5db4d4c7980344d9dc9fea7714988545b5054e472a9b19",
+      "source_hashes": {
+        "scripts/m2_launch.py": "c42896efc9d5dc50b8902ded68358be1998ef0b430dddb7181f78336f94c06cb",
+        "tests/m1_baseline.py": "298c0a9994e839f017552677225939b96683c49226ca079e381398fa428c4695",
+        "native/ring.hpp": "94599dcc02fba33f275d59ec5d3b7dcaa1cf88d431b5afc973ee47f73bd8bd5d",
+        "native/ring.cpp": "2214ea8adc167f8d0fdcfcf956e4930cba15a20687cfccd05df497ea4be1c5f6",
+        "native/probe.cpp": "2ad8fb56373282bb224afc036bcba30cac220efe17a6092fa03e2309dc60b7c7",
+        "native/.gitkeep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "flash/reader.py": "ef0a0b2ac43fa3c245ce5c9dac74fb5ccde522221ddfd2ea8118c3666908eda1",
+        "flash/__init__.py": "ebd6b85348d4590ef8db6c4720c0c46f694ebc13a6b7c01cdfa4687d6d707e18",
+        "tests/m2_mock_nccl.cpp": "e5ea195d415baaa93e8ffbf97f572e7371e282bdbaf21d16ac0696d24a5b74a9",
+        "tests/m2_ring.py": "f1de41cb56172f138a84763f5fa5c3334450ddb74400413ab8c0bed576ff55da",
+        "tests/m2_hook_smoke.py": "e89e4b1d2a61052b743cedaa2ccf58fd97b2cf96e11619c62c67baf2765263a4",
+        "tests/m2_lifecycle.py": "37e27630be9ccc2802b7ddeab49930b14b617490f0f4577e9d252987dbb00f18",
+        "tests/m2_lifecycle_driver.cpp": "379af1b386f00301ae0a8608cc257304368ec0c2572dc32e792e221833e83db0",
+        "scripts/m2_run_node.py": "57d18977a18e67b7418764c04b3e744952cf9c01b8fe3e07385bb7c74eb52036",
+        "scripts/m2_verify.py": "3714583538fd052ec8726b0b3324793fcdb9d0eda7e5b7f29d75600ba3bb6ae2",
+        "scripts/m2_cleanup.py": "1649844fc3a237136ab997eb72ff3ec7fe9ba447bcc2028bc6afe58ef19629da",
+        "scripts/m2_build.py": "d672a3056200e893b4043c69e289ba6a12e77b311f1704f8b008e64de8df2e40"
+      },
+      "rank_runtime_versions": [
+        {
+          "rank": 0,
+          "versions": [
+            {
+              "family": "cudart",
+              "encoded": 12080
+            },
+            {
+              "family": "nccl",
+              "encoded": 22703
+            }
+          ]
+        }
+      ],
+      "memory_mib": [
+        {
+          "rank": 0,
+          "own_process_memory_mib": 984.0
+        }
+      ],
+      "training_checks": [
+        {
+          "rank": 0,
+          "steps": 25,
+          "status": "PASS",
+          "max_parameter_delta": null,
+          "max_final_sync_error": null,
+          "collectives_checked": 25
+        }
+      ],
+      "command": [
+        "python3",
+        "scripts/m2_launch.py",
+        "--python",
+        "<project>/.venv-m1/bin/python",
+        "--run-id",
+        "m3d-monitor-cross-01",
+        "--gpus",
+        "<approved_GPU_UUID_list_node_0>",
+        "--mode",
+        "allreduce",
+        "--nnodes",
+        "2",
+        "--node-rank",
+        "0",
+        "--master-addr",
+        "<gpu01_master_address>",
+        "--master-port",
+        "29871",
+        "--timeout",
+        "300",
+        "--allow-shared",
+        "--probe"
+      ],
+      "roce_lines": 6
+    },
+    {
+      "run_id": "m3d-monitor-allreduce-01",
+      "node_rank": 0,
+      "training_exit": 0,
+      "reader_exit": 0,
+      "verify_exit": 0,
+      "cleanup": {
+        "status": "PASS",
+        "removed_count": 8,
+        "already_absent_count": 0
+      },
+      "verification": {
+        "status": "PASS",
+        "node_rank": 0,
+        "mode": "allreduce",
+        "ranks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "training_exit": 0,
+        "probe": true,
+        "elapsed_s": 14.770012209075503,
+        "source_hashes": {
+          "scripts/m2_launch.py": "c42896efc9d5dc50b8902ded68358be1998ef0b430dddb7181f78336f94c06cb",
+          "tests/m1_baseline.py": "298c0a9994e839f017552677225939b96683c49226ca079e381398fa428c4695",
+          "native/ring.hpp": "94599dcc02fba33f275d59ec5d3b7dcaa1cf88d431b5afc973ee47f73bd8bd5d",
+          "native/ring.cpp": "2214ea8adc167f8d0fdcfcf956e4930cba15a20687cfccd05df497ea4be1c5f6",
+          "native/probe.cpp": "7a397516cd5d4bb84d21207a3b19558846463c8c099d59d7179ad4f611882311",
+          "native/.gitkeep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "flash/reader.py": "ef0a0b2ac43fa3c245ce5c9dac74fb5ccde522221ddfd2ea8118c3666908eda1",
+          "flash/__init__.py": "ebd6b85348d4590ef8db6c4720c0c46f694ebc13a6b7c01cdfa4687d6d707e18",
+          "tests/m2_mock_nccl.cpp": "e5ea195d415baaa93e8ffbf97f572e7371e282bdbaf21d16ac0696d24a5b74a9",
+          "tests/m2_ring.py": "f1de41cb56172f138a84763f5fa5c3334450ddb74400413ab8c0bed576ff55da",
+          "tests/m2_hook_smoke.py": "e89e4b1d2a61052b743cedaa2ccf58fd97b2cf96e11619c62c67baf2765263a4",
+          "tests/m2_lifecycle.py": "37e27630be9ccc2802b7ddeab49930b14b617490f0f4577e9d252987dbb00f18",
+          "tests/m2_lifecycle_driver.cpp": "379af1b386f00301ae0a8608cc257304368ec0c2572dc32e792e221833e83db0",
+          "scripts/m2_run_node.py": "57d18977a18e67b7418764c04b3e744952cf9c01b8fe3e07385bb7c74eb52036",
+          "scripts/m2_verify.py": "3714583538fd052ec8726b0b3324793fcdb9d0eda7e5b7f29d75600ba3bb6ae2",
+          "scripts/m2_cleanup.py": "1649844fc3a237136ab997eb72ff3ec7fe9ba447bcc2028bc6afe58ef19629da",
+          "scripts/m2_build.py": "d672a3056200e893b4043c69e289ba6a12e77b311f1704f8b008e64de8df2e40"
+        },
+        "reader_exit": 0,
+        "rank_summaries": [
+          {
+            "rank": 0,
+            "events": 121,
+            "apis": {
+              "ncclGetVersion": 2,
+              "ncclGetUniqueId": 1,
+              "ncclCommInitRankConfig": 1,
+              "ncclAllReduce": 28,
+              "ncclCommGetAsyncError": 87,
+              "ncclCommFinalize": 1,
+              "ncclCommDestroy": 1
+            },
+            "identities": [
+              "UNIQUE_ID_SHA256"
+            ],
+            "id_hashes": [
+              "9790e7f790987e50b3409c16101059cd9c754542323080d57b0e1acc9500f167"
+            ],
+            "comm_sizes": [
+              16
+            ],
+            "group_inside": 0,
+            "group_outside": 28
+          },
+          {
+            "rank": 1,
+            "events": 120,
+            "apis": {
+              "ncclGetVersion": 2,
+              "ncclCommInitRankConfig": 1,
+              "ncclAllReduce": 28,
+              "ncclCommGetAsyncError": 87,
+              "ncclCommFinalize": 1,
+              "ncclCommDestroy": 1
+            },
+            "identities": [
+              "UNIQUE_ID_SHA256"
+            ],
+            "id_hashes": [
+              "9790e7f790987e50b3409c16101059cd9c754542323080d57b0e1acc9500f167"
+            ],
+            "comm_sizes": [
+              16
+            ],
+            "group_inside": 0,
+            "group_outside": 28
+          },
+          {
+            "rank": 2,
+            "events": 117,
+            "apis": {
+              "ncclGetVersion": 2,
+              "ncclCommInitRankConfig": 1,
+              "ncclAllReduce": 28,
+              "ncclCommGetAsyncError": 84,
+              "ncclCommFinalize": 1,
+              "ncclCommDestroy": 1
+            },
+            "identities": [
+              "UNIQUE_ID_SHA256"
+            ],
+            "id_hashes": [
+              "9790e7f790987e50b3409c16101059cd9c754542323080d57b0e1acc9500f167"
+            ],
+            "comm_sizes": [
+              16
+            ],
+            "group_inside": 0,
+            "group_outside": 28
+          },
+          {
+            "rank": 3,
+            "events": 117,
+            "apis": {
+              "ncclGetVersion": 2,
+              "ncclCommInitRankConfig": 1,
+              "ncclAllReduce": 28,
+              "ncclCommGetAsyncError": 84,
+              "ncclCommFinalize": 1,
+              "ncclCommDestroy": 1
+            },
+            "identities": [
+              "UNIQUE_ID_SHA256"
+            ],
+            "id_hashes": [
+              "9790e7f790987e50b3409c16101059cd9c754542323080d57b0e1acc9500f167"
+            ],
+            "comm_sizes": [
+              16
+            ],
+            "group_inside": 0,
+            "group_outside": 28
+          },
+          {
+            "rank": 4,
+            "events": 117,
+            "apis": {
+              "ncclGetVersion": 2,
+              "ncclCommInitRankConfig": 1,
+              "ncclAllReduce": 28,
+              "ncclCommGetAsyncError": 84,
+              "ncclCommFinalize": 1,
+              "ncclCommDestroy": 1
+            },
+            "identities": [
+              "UNIQUE_ID_SHA256"
+            ],
+            "id_hashes": [
+              "9790e7f790987e50b3409c16101059cd9c754542323080d57b0e1acc9500f167"
+            ],
+            "comm_sizes": [
+              16
+            ],
+            "group_inside": 0,
+            "group_outside": 28
+          },
+          {
+            "rank": 5,
+            "events": 120,
+            "apis": {
+              "ncclGetVersion": 2,
+              "ncclCommInitRankConfig": 1,
+              "ncclAllReduce": 28,
+              "ncclCommGetAsyncError": 87,
+              "ncclCommFinalize": 1,
+              "ncclCommDestroy": 1
+            },
+            "identities": [
+              "UNIQUE_ID_SHA256"
+            ],
+            "id_hashes": [
+              "9790e7f790987e50b3409c16101059cd9c754542323080d57b0e1acc9500f167"
+            ],
+            "comm_sizes": [
+              16
+            ],
+            "group_inside": 0,
+            "group_outside": 28
+          },
+          {
+            "rank": 6,
+            "events": 117,
+            "apis": {
+              "ncclGetVersion": 2,
+              "ncclCommInitRankConfig": 1,
+              "ncclAllReduce": 28,
+              "ncclCommGetAsyncError": 84,
+              "ncclCommFinalize": 1,
+              "ncclCommDestroy": 1
+            },
+            "identities": [
+              "UNIQUE_ID_SHA256"
+            ],
+            "id_hashes": [
+              "9790e7f790987e50b3409c16101059cd9c754542323080d57b0e1acc9500f167"
+            ],
+            "comm_sizes": [
+              16
+            ],
+            "group_inside": 0,
+            "group_outside": 28
+          },
+          {
+            "rank": 7,
+            "events": 120,
+            "apis": {
+              "ncclGetVersion": 2,
+              "ncclCommInitRankConfig": 1,
+              "ncclAllReduce": 28,
+              "ncclCommGetAsyncError": 87,
+              "ncclCommFinalize": 1,
+              "ncclCommDestroy": 1
+            },
+            "identities": [
+              "UNIQUE_ID_SHA256"
+            ],
+            "id_hashes": [
+              "9790e7f790987e50b3409c16101059cd9c754542323080d57b0e1acc9500f167"
+            ],
+            "comm_sizes": [
+              16
+            ],
+            "group_inside": 0,
+            "group_outside": 28
+          }
+        ],
+        "total_events": 949,
+        "loss": 0
+      },
+      "probe_sha256": "c9f6987d35d2bff32aed205c2bac0741a41fe6804861b2e82450f4369c541e77",
+      "source_hashes": {
+        "scripts/m2_launch.py": "c42896efc9d5dc50b8902ded68358be1998ef0b430dddb7181f78336f94c06cb",
+        "tests/m1_baseline.py": "298c0a9994e839f017552677225939b96683c49226ca079e381398fa428c4695",
+        "native/ring.hpp": "94599dcc02fba33f275d59ec5d3b7dcaa1cf88d431b5afc973ee47f73bd8bd5d",
+        "native/ring.cpp": "2214ea8adc167f8d0fdcfcf956e4930cba15a20687cfccd05df497ea4be1c5f6",
+        "native/probe.cpp": "7a397516cd5d4bb84d21207a3b19558846463c8c099d59d7179ad4f611882311",
+        "native/.gitkeep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "flash/reader.py": "ef0a0b2ac43fa3c245ce5c9dac74fb5ccde522221ddfd2ea8118c3666908eda1",
+        "flash/__init__.py": "ebd6b85348d4590ef8db6c4720c0c46f694ebc13a6b7c01cdfa4687d6d707e18",
+        "tests/m2_mock_nccl.cpp": "e5ea195d415baaa93e8ffbf97f572e7371e282bdbaf21d16ac0696d24a5b74a9",
+        "tests/m2_ring.py": "f1de41cb56172f138a84763f5fa5c3334450ddb74400413ab8c0bed576ff55da",
+        "tests/m2_hook_smoke.py": "e89e4b1d2a61052b743cedaa2ccf58fd97b2cf96e11619c62c67baf2765263a4",
+        "tests/m2_lifecycle.py": "37e27630be9ccc2802b7ddeab49930b14b617490f0f4577e9d252987dbb00f18",
+        "tests/m2_lifecycle_driver.cpp": "379af1b386f00301ae0a8608cc257304368ec0c2572dc32e792e221833e83db0",
+        "scripts/m2_run_node.py": "57d18977a18e67b7418764c04b3e744952cf9c01b8fe3e07385bb7c74eb52036",
+        "scripts/m2_verify.py": "3714583538fd052ec8726b0b3324793fcdb9d0eda7e5b7f29d75600ba3bb6ae2",
+        "scripts/m2_cleanup.py": "1649844fc3a237136ab997eb72ff3ec7fe9ba447bcc2028bc6afe58ef19629da",
+        "scripts/m2_build.py": "d672a3056200e893b4043c69e289ba6a12e77b311f1704f8b008e64de8df2e40"
+      },
+      "rank_runtime_versions": [
+        {
+          "rank": 0,
+          "versions": [
+            {
+              "family": "cudart",
+              "encoded": 12080
+            },
+            {
+              "family": "nccl",
+              "encoded": 22703
+            }
+          ]
+        },
+        {
+          "rank": 1,
+          "versions": [
+            {
+              "family": "cudart",
+              "encoded": 12080
+            },
+            {
+              "family": "nccl",
+              "encoded": 22703
+            }
+          ]
+        },
+        {
+          "rank": 2,
+          "versions": [
+            {
+              "family": "cudart",
+              "encoded": 12080
+            },
+            {
+              "family": "nccl",
+              "encoded": 22703
+            }
+          ]
+        },
+        {
+          "rank": 3,
+          "versions": [
+            {
+              "family": "cudart",
+              "encoded": 12080
+            },
+            {
+              "family": "nccl",
+              "encoded": 22703
+            }
+          ]
+        },
+        {
+          "rank": 4,
+          "versions": [
+            {
+              "family": "cudart",
+              "encoded": 12080
+            },
+            {
+              "family": "nccl",
+              "encoded": 22703
+            }
+          ]
+        },
+        {
+          "rank": 5,
+          "versions": [
+            {
+              "family": "cudart",
+              "encoded": 12080
+            },
+            {
+              "family": "nccl",
+              "encoded": 22703
+            }
+          ]
+        },
+        {
+          "rank": 6,
+          "versions": [
+            {
+              "family": "cudart",
+              "encoded": 12080
+            },
+            {
+              "family": "nccl",
+              "encoded": 22703
+            }
+          ]
+        },
+        {
+          "rank": 7,
+          "versions": [
+            {
+              "family": "cudart",
+              "encoded": 12080
+            },
+            {
+              "family": "nccl",
+              "encoded": 22703
+            }
+          ]
+        }
+      ],
+      "memory_mib": [
+        {
+          "rank": 0,
+          "own_process_memory_mib": 1026.0
+        },
+        {
+          "rank": 1,
+          "own_process_memory_mib": 1036.0
+        },
+        {
+          "rank": 2,
+          "own_process_memory_mib": 1040.0
+        },
+        {
+          "rank": 3,
+          "own_process_memory_mib": 1036.0
+        },
+        {
+          "rank": 4,
+          "own_process_memory_mib": 1036.0
+        },
+        {
+          "rank": 5,
+          "own_process_memory_mib": 1036.0
+        },
+        {
+          "rank": 6,
+          "own_process_memory_mib": 1036.0
+        },
+        {
+          "rank": 7,
+          "own_process_memory_mib": 1036.0
+        }
+      ],
+      "training_checks": [
+        {
+          "rank": 0,
+          "steps": 25,
+          "status": "PASS",
+          "max_parameter_delta": null,
+          "max_final_sync_error": null,
+          "collectives_checked": 25
+        },
+        {
+          "rank": 1,
+          "steps": 25,
+          "status": "PASS",
+          "max_parameter_delta": null,
+          "max_final_sync_error": null,
+          "collectives_checked": 25
+        },
+        {
+          "rank": 2,
+          "steps": 25,
+          "status": "PASS",
+          "max_parameter_delta": null,
+          "max_final_sync_error": null,
+          "collectives_checked": 25
+        },
+        {
+          "rank": 3,
+          "steps": 25,
+          "status": "PASS",
+          "max_parameter_delta": null,
+          "max_final_sync_error": null,
+          "collectives_checked": 25
+        },
+        {
+          "rank": 4,
+          "steps": 25,
+          "status": "PASS",
+          "max_parameter_delta": null,
+          "max_final_sync_error": null,
+          "collectives_checked": 25
+        },
+        {
+          "rank": 5,
+          "steps": 25,
+          "status": "PASS",
+          "max_parameter_delta": null,
+          "max_final_sync_error": null,
+          "collectives_checked": 25
+        },
+        {
+          "rank": 6,
+          "steps": 25,
+          "status": "PASS",
+          "max_parameter_delta": null,
+          "max_final_sync_error": null,
+          "collectives_checked": 25
+        },
+        {
+          "rank": 7,
+          "steps": 25,
+          "status": "PASS",
+          "max_parameter_delta": null,
+          "max_final_sync_error": null,
+          "collectives_checked": 25
+        }
+      ],
+      "command": [
+        "python3",
+        "scripts/m2_launch.py",
+        "--python",
+        "<project>/.venv-m1/bin/python",
+        "--run-id",
+        "m3d-monitor-allreduce-01",
+        "--gpus",
+        "<approved_GPU_UUID_list_node_0>",
+        "--mode",
+        "allreduce",
+        "--nnodes",
+        "2",
+        "--node-rank",
+        "0",
+        "--master-addr",
+        "<gpu01_master_address>",
+        "--master-port",
+        "29881",
+        "--timeout",
+        "300",
+        "--allow-shared",
+        "--probe"
+      ],
+      "roce_lines": 48
+    },
+    {
+      "run_id": "m3d-monitor-ddp-01",
+      "node_rank": 0,
+      "training_exit": 0,
+      "reader_exit": 0,
+      "verify_exit": 0,
+      "cleanup": {
+        "status": "PASS",
+        "removed_count": 8,
+        "already_absent_count": 0
+      },
+      "verification": {
+        "status": "PASS",
+        "node_rank": 0,
+        "mode": "ddp",
+        "ranks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "training_exit": 0,
+        "probe": true,
+        "elapsed_s": 15.612622004002333,
+        "source_hashes": {
+          "scripts/m2_launch.py": "c42896efc9d5dc50b8902ded68358be1998ef0b430dddb7181f78336f94c06cb",
+          "tests/m1_baseline.py": "298c0a9994e839f017552677225939b96683c49226ca079e381398fa428c4695",
+          "native/ring.hpp": "94599dcc02fba33f275d59ec5d3b7dcaa1cf88d431b5afc973ee47f73bd8bd5d",
+          "native/ring.cpp": "2214ea8adc167f8d0fdcfcf956e4930cba15a20687cfccd05df497ea4be1c5f6",
+          "native/probe.cpp": "7a397516cd5d4bb84d21207a3b19558846463c8c099d59d7179ad4f611882311",
+          "native/.gitkeep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "flash/reader.py": "ef0a0b2ac43fa3c245ce5c9dac74fb5ccde522221ddfd2ea8118c3666908eda1",
+          "flash/__init__.py": "ebd6b85348d4590ef8db6c4720c0c46f694ebc13a6b7c01cdfa4687d6d707e18",
+          "tests/m2_mock_nccl.cpp": "e5ea195d415baaa93e8ffbf97f572e7371e282bdbaf21d16ac0696d24a5b74a9",
+          "tests/m2_ring.py": "f1de41cb56172f138a84763f5fa5c3334450ddb74400413ab8c0bed576ff55da",
+          "tests/m2_hook_smoke.py": "e89e4b1d2a61052b743cedaa2ccf58fd97b2cf96e11619c62c67baf2765263a4",
+          "tests/m2_lifecycle.py": "37e27630be9ccc2802b7ddeab49930b14b617490f0f4577e9d252987dbb00f18",
+          "tests/m2_lifecycle_driver.cpp": "379af1b386f00301ae0a8608cc257304368ec0c2572dc32e792e221833e83db0",
+          "scripts/m2_run_node.py": "57d18977a18e67b7418764c04b3e744952cf9c01b8fe3e07385bb7c74eb52036",
+          "scripts/m2_verify.py": "3714583538fd052ec8726b0b3324793fcdb9d0eda7e5b7f29d75600ba3bb6ae2",
+          "scripts/m2_cleanup.py": "1649844fc3a237136ab997eb72ff3ec7fe9ba447bcc2028bc6afe58ef19629da",
+          "scripts/m2_build.py": "d672a3056200e893b4043c69e289ba6a12e77b311f1704f8b008e64de8df2e40"
+        },
+        "reader_exit": 0,
+        "rank_summaries": [
+          {
+            "rank": 0,
+            "events": 206,
+            "apis": {
+              "ncclGetVersion": 2,
+              "ncclGetUniqueId": 1,
+              "ncclCommInitRankConfig": 1,
+              "ncclAllReduce": 23,
+              "ncclCommGetAsyncError": 150,
+              "ncclAllGather": 1,
+              "ncclBcast": 26,
+              "ncclCommFinalize": 1,
+              "ncclCommDestroy": 1
+            },
+            "identities": [
+              "UNIQUE_ID_SHA256"
+            ],
+            "id_hashes": [
+              "b0be19921364edaadcd3e4db5cf3ef4e481c799cab36e58589165bcb6777ab33"
+            ],
+            "comm_sizes": [
+              16
+            ],
+            "group_inside": 0,
+            "group_outside": 50
+          },
+          {
+            "rank": 1,
+            "events": 205,
+            "apis": {
+              "ncclGetVersion": 2,
+              "ncclCommInitRankConfig": 1,
+              "ncclAllReduce": 23,
+              "ncclCommGetAsyncError": 150,
+              "ncclAllGather": 1,
+              "ncclBcast": 26,
+              "ncclCommFinalize": 1,
+              "ncclCommDestroy": 1
+            },
+            "identities": [
+              "UNIQUE_ID_SHA256"
+            ],
+            "id_hashes": [
+              "b0be19921364edaadcd3e4db5cf3ef4e481c799cab36e58589165bcb6777ab33"
+            ],
+            "comm_sizes": [
+              16
+            ],
+            "group_inside": 0,
+            "group_outside": 50
+          },
+          {
+            "rank": 2,
+            "events": 208,
+            "apis": {
+              "ncclGetVersion": 2,
+              "ncclCommInitRankConfig": 1,
+              "ncclAllReduce": 23,
+              "ncclCommGetAsyncError": 153,
+              "ncclAllGather": 1,
+              "ncclBcast": 26,
+              "ncclCommFinalize": 1,
+              "ncclCommDestroy": 1
+            },
+            "identities": [
+              "UNIQUE_ID_SHA256"
+            ],
+            "id_hashes": [
+              "b0be19921364edaadcd3e4db5cf3ef4e481c799cab36e58589165bcb6777ab33"
+            ],
+            "comm_sizes": [
+              16
+            ],
+            "group_inside": 0,
+            "group_outside": 50
+          },
+          {
+            "rank": 3,
+            "events": 205,
+            "apis": {
+              "ncclGetVersion": 2,
+              "ncclCommInitRankConfig": 1,
+              "ncclAllReduce": 23,
+              "ncclCommGetAsyncError": 150,
+              "ncclAllGather": 1,
+              "ncclBcast": 26,
+              "ncclCommFinalize": 1,
+              "ncclCommDestroy": 1
+            },
+            "identities": [
+              "UNIQUE_ID_SHA256"
+            ],
+            "id_hashes": [
+              "b0be19921364edaadcd3e4db5cf3ef4e481c799cab36e58589165bcb6777ab33"
+            ],
+            "comm_sizes": [
+              16
+            ],
+            "group_inside": 0,
+            "group_outside": 50
+          },
+          {
+            "rank": 4,
+            "events": 205,
+            "apis": {
+              "ncclGetVersion": 2,
+              "ncclCommInitRankConfig": 1,
+              "ncclAllReduce": 23,
+              "ncclCommGetAsyncError": 150,
+              "ncclAllGather": 1,
+              "ncclBcast": 26,
+              "ncclCommFinalize": 1,
+              "ncclCommDestroy": 1
+            },
+            "identities": [
+              "UNIQUE_ID_SHA256"
+            ],
+            "id_hashes": [
+              "b0be19921364edaadcd3e4db5cf3ef4e481c799cab36e58589165bcb6777ab33"
+            ],
+            "comm_sizes": [
+              16
+            ],
+            "group_inside": 0,
+            "group_outside": 50
+          },
+          {
+            "rank": 5,
+            "events": 208,
+            "apis": {
+              "ncclGetVersion": 2,
+              "ncclCommInitRankConfig": 1,
+              "ncclAllReduce": 23,
+              "ncclCommGetAsyncError": 153,
+              "ncclAllGather": 1,
+              "ncclBcast": 26,
+              "ncclCommFinalize": 1,
+              "ncclCommDestroy": 1
+            },
+            "identities": [
+              "UNIQUE_ID_SHA256"
+            ],
+            "id_hashes": [
+              "b0be19921364edaadcd3e4db5cf3ef4e481c799cab36e58589165bcb6777ab33"
+            ],
+            "comm_sizes": [
+              16
+            ],
+            "group_inside": 0,
+            "group_outside": 50
+          },
+          {
+            "rank": 6,
+            "events": 205,
+            "apis": {
+              "ncclGetVersion": 2,
+              "ncclCommInitRankConfig": 1,
+              "ncclAllReduce": 23,
+              "ncclCommGetAsyncError": 150,
+              "ncclAllGather": 1,
+              "ncclBcast": 26,
+              "ncclCommFinalize": 1,
+              "ncclCommDestroy": 1
+            },
+            "identities": [
+              "UNIQUE_ID_SHA256"
+            ],
+            "id_hashes": [
+              "b0be19921364edaadcd3e4db5cf3ef4e481c799cab36e58589165bcb6777ab33"
+            ],
+            "comm_sizes": [
+              16
+            ],
+            "group_inside": 0,
+            "group_outside": 50
+          },
+          {
+            "rank": 7,
+            "events": 205,
+            "apis": {
+              "ncclGetVersion": 2,
+              "ncclCommInitRankConfig": 1,
+              "ncclAllReduce": 23,
+              "ncclCommGetAsyncError": 150,
+              "ncclAllGather": 1,
+              "ncclBcast": 26,
+              "ncclCommFinalize": 1,
+              "ncclCommDestroy": 1
+            },
+            "identities": [
+              "UNIQUE_ID_SHA256"
+            ],
+            "id_hashes": [
+              "b0be19921364edaadcd3e4db5cf3ef4e481c799cab36e58589165bcb6777ab33"
+            ],
+            "comm_sizes": [
+              16
+            ],
+            "group_inside": 0,
+            "group_outside": 50
+          }
+        ],
+        "total_events": 1647,
+        "loss": 0
+      },
+      "probe_sha256": "c9f6987d35d2bff32aed205c2bac0741a41fe6804861b2e82450f4369c541e77",
+      "source_hashes": {
+        "scripts/m2_launch.py": "c42896efc9d5dc50b8902ded68358be1998ef0b430dddb7181f78336f94c06cb",
+        "tests/m1_baseline.py": "298c0a9994e839f017552677225939b96683c49226ca079e381398fa428c4695",
+        "native/ring.hpp": "94599dcc02fba33f275d59ec5d3b7dcaa1cf88d431b5afc973ee47f73bd8bd5d",
+        "native/ring.cpp": "2214ea8adc167f8d0fdcfcf956e4930cba15a20687cfccd05df497ea4be1c5f6",
+        "native/probe.cpp": "7a397516cd5d4bb84d21207a3b19558846463c8c099d59d7179ad4f611882311",
+        "native/.gitkeep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "flash/reader.py": "ef0a0b2ac43fa3c245ce5c9dac74fb5ccde522221ddfd2ea8118c3666908eda1",
+        "flash/__init__.py": "ebd6b85348d4590ef8db6c4720c0c46f694ebc13a6b7c01cdfa4687d6d707e18",
+        "tests/m2_mock_nccl.cpp": "e5ea195d415baaa93e8ffbf97f572e7371e282bdbaf21d16ac0696d24a5b74a9",
+        "tests/m2_ring.py": "f1de41cb56172f138a84763f5fa5c3334450ddb74400413ab8c0bed576ff55da",
+        "tests/m2_hook_smoke.py": "e89e4b1d2a61052b743cedaa2ccf58fd97b2cf96e11619c62c67baf2765263a4",
+        "tests/m2_lifecycle.py": "37e27630be9ccc2802b7ddeab49930b14b617490f0f4577e9d252987dbb00f18",
+        "tests/m2_lifecycle_driver.cpp": "379af1b386f00301ae0a8608cc257304368ec0c2572dc32e792e221833e83db0",
+        "scripts/m2_run_node.py": "57d18977a18e67b7418764c04b3e744952cf9c01b8fe3e07385bb7c74eb52036",
+        "scripts/m2_verify.py": "3714583538fd052ec8726b0b3324793fcdb9d0eda7e5b7f29d75600ba3bb6ae2",
+        "scripts/m2_cleanup.py": "1649844fc3a237136ab997eb72ff3ec7fe9ba447bcc2028bc6afe58ef19629da",
+        "scripts/m2_build.py": "d672a3056200e893b4043c69e289ba6a12e77b311f1704f8b008e64de8df2e40"
+      },
+      "rank_runtime_versions": [
+        {
+          "rank": 0,
+          "versions": [
+            {
+              "family": "cudart",
+              "encoded": 12080
+            },
+            {
+              "family": "nccl",
+              "encoded": 22703
+            }
+          ]
+        },
+        {
+          "rank": 1,
+          "versions": [
+            {
+              "family": "cudart",
+              "encoded": 12080
+            },
+            {
+              "family": "nccl",
+              "encoded": 22703
+            }
+          ]
+        },
+        {
+          "rank": 2,
+          "versions": [
+            {
+              "family": "cudart",
+              "encoded": 12080
+            },
+            {
+              "family": "nccl",
+              "encoded": 22703
+            }
+          ]
+        },
+        {
+          "rank": 3,
+          "versions": [
+            {
+              "family": "cudart",
+              "encoded": 12080
+            },
+            {
+              "family": "nccl",
+              "encoded": 22703
+            }
+          ]
+        },
+        {
+          "rank": 4,
+          "versions": [
+            {
+              "family": "cudart",
+              "encoded": 12080
+            },
+            {
+              "family": "nccl",
+              "encoded": 22703
+            }
+          ]
+        },
+        {
+          "rank": 5,
+          "versions": [
+            {
+              "family": "cudart",
+              "encoded": 12080
+            },
+            {
+              "family": "nccl",
+              "encoded": 22703
+            }
+          ]
+        },
+        {
+          "rank": 6,
+          "versions": [
+            {
+              "family": "cudart",
+              "encoded": 12080
+            },
+            {
+              "family": "nccl",
+              "encoded": 22703
+            }
+          ]
+        },
+        {
+          "rank": 7,
+          "versions": [
+            {
+              "family": "cudart",
+              "encoded": 12080
+            },
+            {
+              "family": "nccl",
+              "encoded": 22703
+            }
+          ]
+        }
+      ],
+      "memory_mib": [
+        {
+          "rank": 0,
+          "own_process_memory_mib": 1036.0
+        },
+        {
+          "rank": 1,
+          "own_process_memory_mib": 1038.0
+        },
+        {
+          "rank": 2,
+          "own_process_memory_mib": 1058.0
+        },
+        {
+          "rank": 3,
+          "own_process_memory_mib": 1038.0
+        },
+        {
+          "rank": 4,
+          "own_process_memory_mib": 1038.0
+        },
+        {
+          "rank": 5,
+          "own_process_memory_mib": 1038.0
+        },
+        {
+          "rank": 6,
+          "own_process_memory_mib": 1038.0
+        },
+        {
+          "rank": 7,
+          "own_process_memory_mib": 1038.0
+        }
+      ],
+      "training_checks": [
+        {
+          "rank": 0,
+          "steps": 20,
+          "status": "PASS",
+          "max_parameter_delta": 0.020800277590751648,
+          "max_final_sync_error": 0.0,
+          "collectives_checked": null
+        },
+        {
+          "rank": 1,
+          "steps": 20,
+          "status": "PASS",
+          "max_parameter_delta": 0.020800277590751648,
+          "max_final_sync_error": 0.0,
+          "collectives_checked": null
+        },
+        {
+          "rank": 2,
+          "steps": 20,
+          "status": "PASS",
+          "max_parameter_delta": 0.020800277590751648,
+          "max_final_sync_error": 0.0,
+          "collectives_checked": null
+        },
+        {
+          "rank": 3,
+          "steps": 20,
+          "status": "PASS",
+          "max_parameter_delta": 0.020800277590751648,
+          "max_final_sync_error": 0.0,
+          "collectives_checked": null
+        },
+        {
+          "rank": 4,
+          "steps": 20,
+          "status": "PASS",
+          "max_parameter_delta": 0.020800277590751648,
+          "max_final_sync_error": 0.0,
+          "collectives_checked": null
+        },
+        {
+          "rank": 5,
+          "steps": 20,
+          "status": "PASS",
+          "max_parameter_delta": 0.020800277590751648,
+          "max_final_sync_error": 0.0,
+          "collectives_checked": null
+        },
+        {
+          "rank": 6,
+          "steps": 20,
+          "status": "PASS",
+          "max_parameter_delta": 0.020800277590751648,
+          "max_final_sync_error": 0.0,
+          "collectives_checked": null
+        },
+        {
+          "rank": 7,
+          "steps": 20,
+          "status": "PASS",
+          "max_parameter_delta": 0.020800277590751648,
+          "max_final_sync_error": 0.0,
+          "collectives_checked": null
+        }
+      ],
+      "command": [
+        "python3",
+        "scripts/m2_launch.py",
+        "--python",
+        "<project>/.venv-m1/bin/python",
+        "--run-id",
+        "m3d-monitor-ddp-01",
+        "--gpus",
+        "<approved_GPU_UUID_list_node_0>",
+        "--mode",
+        "ddp",
+        "--nnodes",
+        "2",
+        "--node-rank",
+        "0",
+        "--master-addr",
+        "<gpu01_master_address>",
+        "--master-port",
+        "29891",
+        "--timeout",
+        "300",
+        "--allow-shared",
+        "--probe"
+      ],
+      "roce_lines": 48
+    },
+    {
+      "run_id": "m3d-monitor-lifecycle-01",
+      "node_rank": 0,
+      "training_exit": 0,
+      "reader_exit": 0,
+      "verify_exit": 0,
+      "cleanup": {
+        "status": "PASS",
+        "removed_count": 2,
+        "already_absent_count": 0
+      },
+      "verification": {
+        "status": "PASS",
+        "node_rank": 0,
+        "mode": "lifecycle",
+        "ranks": [
+          0,
+          1
+        ],
+        "training_exit": 0,
+        "probe": true,
+        "elapsed_s": 8.70051361899823,
+        "source_hashes": {
+          "scripts/m2_launch.py": "c42896efc9d5dc50b8902ded68358be1998ef0b430dddb7181f78336f94c06cb",
+          "tests/m1_baseline.py": "298c0a9994e839f017552677225939b96683c49226ca079e381398fa428c4695",
+          "native/ring.hpp": "94599dcc02fba33f275d59ec5d3b7dcaa1cf88d431b5afc973ee47f73bd8bd5d",
+          "native/ring.cpp": "2214ea8adc167f8d0fdcfcf956e4930cba15a20687cfccd05df497ea4be1c5f6",
+          "native/probe.cpp": "2ad8fb56373282bb224afc036bcba30cac220efe17a6092fa03e2309dc60b7c7",
+          "native/.gitkeep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "flash/reader.py": "ef0a0b2ac43fa3c245ce5c9dac74fb5ccde522221ddfd2ea8118c3666908eda1",
+          "flash/__init__.py": "ebd6b85348d4590ef8db6c4720c0c46f694ebc13a6b7c01cdfa4687d6d707e18",
+          "tests/m2_mock_nccl.cpp": "e5ea195d415baaa93e8ffbf97f572e7371e282bdbaf21d16ac0696d24a5b74a9",
+          "tests/m2_ring.py": "f1de41cb56172f138a84763f5fa5c3334450ddb74400413ab8c0bed576ff55da",
+          "tests/m2_hook_smoke.py": "e89e4b1d2a61052b743cedaa2ccf58fd97b2cf96e11619c62c67baf2765263a4",
+          "tests/m2_lifecycle.py": "37e27630be9ccc2802b7ddeab49930b14b617490f0f4577e9d252987dbb00f18",
+          "tests/m2_lifecycle_driver.cpp": "379af1b386f00301ae0a8608cc257304368ec0c2572dc32e792e221833e83db0",
+          "scripts/m2_run_node.py": "57d18977a18e67b7418764c04b3e744952cf9c01b8fe3e07385bb7c74eb52036",
+          "scripts/m2_verify.py": "3714583538fd052ec8726b0b3324793fcdb9d0eda7e5b7f29d75600ba3bb6ae2",
+          "scripts/m2_cleanup.py": "1649844fc3a237136ab997eb72ff3ec7fe9ba447bcc2028bc6afe58ef19629da",
+          "scripts/m2_build.py": "d672a3056200e893b4043c69e289ba6a12e77b311f1704f8b008e64de8df2e40"
+        },
+        "reader_exit": 0,
+        "rank_summaries": [
+          {
+            "rank": 0,
+            "events": 37,
+            "apis": {
+              "ncclGetUniqueId": 2,
+              "ncclGetVersion": 3,
+              "ncclCommInitRankConfig": 1,
+              "ncclCommCount": 1,
+              "ncclCommUserRank": 2,
+              "ncclCommGetAsyncError": 1,
+              "ncclAllReduce": 5,
+              "ncclGroupStart": 4,
+              "ncclGroupEnd": 4,
+              "ncclAllGather": 1,
+              "ncclBroadcast": 1,
+              "ncclReduceScatter": 1,
+              "ncclReduce": 1,
+              "ncclSend": 1,
+              "ncclCommSplit": 1,
+              "ncclCommInitRank": 1,
+              "COMM_MAPPING": 1,
+              "ncclCommFinalize": 3,
+              "ncclCommDestroy": 3
+            },
+            "identities": [
+              "UNIQUE_ID_SHA256",
+              "UNRESOLVED_SPLIT"
+            ],
+            "id_hashes": [
+              "8f7f9ac6164a1a9ff42b32f40a9b89835dbb4acc8d6da6148b06ade110f65932",
+              "ed61dd0c942d4e4d76cc89db0b158f6ec42b779cb0ddb916163d0ba1498ca038"
+            ],
+            "comm_sizes": [
+              2
+            ],
+            "group_inside": 3,
+            "group_outside": 7
+          },
+          {
+            "rank": 1,
+            "events": 35,
+            "apis": {
+              "ncclGetVersion": 3,
+              "ncclCommInitRankConfig": 1,
+              "ncclCommCount": 1,
+              "ncclCommUserRank": 2,
+              "ncclCommGetAsyncError": 1,
+              "ncclAllReduce": 5,
+              "ncclGroupStart": 4,
+              "ncclGroupEnd": 4,
+              "ncclAllGather": 1,
+              "ncclBroadcast": 1,
+              "ncclReduceScatter": 1,
+              "ncclReduce": 1,
+              "ncclRecv": 1,
+              "ncclCommSplit": 1,
+              "ncclCommInitRank": 1,
+              "COMM_MAPPING": 1,
+              "ncclCommFinalize": 3,
+              "ncclCommDestroy": 3
+            },
+            "identities": [
+              "UNIQUE_ID_SHA256",
+              "UNRESOLVED_SPLIT"
+            ],
+            "id_hashes": [
+              "8f7f9ac6164a1a9ff42b32f40a9b89835dbb4acc8d6da6148b06ade110f65932",
+              "ed61dd0c942d4e4d76cc89db0b158f6ec42b779cb0ddb916163d0ba1498ca038"
+            ],
+            "comm_sizes": [
+              2
+            ],
+            "group_inside": 3,
+            "group_outside": 7
+          }
+        ],
+        "total_events": 72,
+        "loss": 0
+      },
+      "probe_sha256": "583371a93b85308c2f5db4d4c7980344d9dc9fea7714988545b5054e472a9b19",
+      "source_hashes": {
+        "scripts/m2_launch.py": "c42896efc9d5dc50b8902ded68358be1998ef0b430dddb7181f78336f94c06cb",
+        "tests/m1_baseline.py": "298c0a9994e839f017552677225939b96683c49226ca079e381398fa428c4695",
+        "native/ring.hpp": "94599dcc02fba33f275d59ec5d3b7dcaa1cf88d431b5afc973ee47f73bd8bd5d",
+        "native/ring.cpp": "2214ea8adc167f8d0fdcfcf956e4930cba15a20687cfccd05df497ea4be1c5f6",
+        "native/probe.cpp": "2ad8fb56373282bb224afc036bcba30cac220efe17a6092fa03e2309dc60b7c7",
+        "native/.gitkeep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "flash/reader.py": "ef0a0b2ac43fa3c245ce5c9dac74fb5ccde522221ddfd2ea8118c3666908eda1",
+        "flash/__init__.py": "ebd6b85348d4590ef8db6c4720c0c46f694ebc13a6b7c01cdfa4687d6d707e18",
+        "tests/m2_mock_nccl.cpp": "e5ea195d415baaa93e8ffbf97f572e7371e282bdbaf21d16ac0696d24a5b74a9",
+        "tests/m2_ring.py": "f1de41cb56172f138a84763f5fa5c3334450ddb74400413ab8c0bed576ff55da",
+        "tests/m2_hook_smoke.py": "e89e4b1d2a61052b743cedaa2ccf58fd97b2cf96e11619c62c67baf2765263a4",
+        "tests/m2_lifecycle.py": "37e27630be9ccc2802b7ddeab49930b14b617490f0f4577e9d252987dbb00f18",
+        "tests/m2_lifecycle_driver.cpp": "379af1b386f00301ae0a8608cc257304368ec0c2572dc32e792e221833e83db0",
+        "scripts/m2_run_node.py": "57d18977a18e67b7418764c04b3e744952cf9c01b8fe3e07385bb7c74eb52036",
+        "scripts/m2_verify.py": "3714583538fd052ec8726b0b3324793fcdb9d0eda7e5b7f29d75600ba3bb6ae2",
+        "scripts/m2_cleanup.py": "1649844fc3a237136ab997eb72ff3ec7fe9ba447bcc2028bc6afe58ef19629da",
+        "scripts/m2_build.py": "d672a3056200e893b4043c69e289ba6a12e77b311f1704f8b008e64de8df2e40"
+      },
+      "rank_runtime_versions": [
+        {
+          "rank": 0,
+          "versions": [
+            {
+              "family": "cudart",
+              "encoded": 12080
+            },
+            {
+              "family": "nccl",
+              "encoded": 22703
+            }
+          ]
+        },
+        {
+          "rank": 1,
+          "versions": [
+            {
+              "family": "cudart",
+              "encoded": 12080
+            },
+            {
+              "family": "nccl",
+              "encoded": 22703
+            }
+          ]
+        }
+      ],
+      "memory_mib": [
+        {
+          "rank": 0,
+          "own_process_memory_mib": 968.0
+        },
+        {
+          "rank": 1,
+          "own_process_memory_mib": 968.0
+        }
+      ],
+      "training_checks": [
+        {
+          "rank": 0,
+          "steps": 33,
+          "status": "PASS",
+          "max_parameter_delta": null,
+          "max_final_sync_error": null,
+          "collectives_checked": null
+        },
+        {
+          "rank": 1,
+          "steps": 31,
+          "status": "PASS",
+          "max_parameter_delta": null,
+          "max_final_sync_error": null,
+          "collectives_checked": null
+        }
+      ],
+      "command": [
+        "python3",
+        "scripts/m2_launch.py",
+        "--python",
+        "<project>/.venv-m1/bin/python",
+        "--run-id",
+        "m3d-monitor-lifecycle-01",
+        "--gpus",
+        "<approved_GPU_UUID_list_node_0>",
+        "--mode",
+        "lifecycle",
+        "--nnodes",
+        "1",
+        "--node-rank",
+        "0",
+        "--master-addr",
+        "127.0.0.1",
+        "--master-port",
+        "29862",
+        "--timeout",
+        "300",
+        "--allow-shared",
+        "--probe"
+      ],
+      "roce_lines": 12
+    },
+    {
+      "run_id": "m3d-native-01",
+      "node_rank": 0,
+      "training_exit": 0,
+      "verify_exit": 0,
+      "probe": false,
+      "command": [
+        "python3",
+        "scripts/m2_launch.py",
+        "--python",
+        "<project>/.venv-m1/bin/python",
+        "--run-id",
+        "m3d-native-01",
+        "--gpus",
+        "<approved_GPU_UUID_list_node_0>",
+        "--mode",
+        "allreduce",
+        "--nnodes",
+        "1",
+        "--node-rank",
+        "0",
+        "--master-addr",
+        "127.0.0.1",
+        "--master-port",
+        "29863",
+        "--timeout",
+        "300",
+        "--allow-shared"
+      ],
+      "numerics": [
+        {
+          "rank": 0,
+          "status": "PASS",
+          "collectives_checked": 25,
+          "initial_expected_sum": 3
+        },
+        {
+          "rank": 1,
+          "status": "PASS",
+          "collectives_checked": 25,
+          "initial_expected_sum": 3
+        }
+      ]
+    }
+  ]
+}

@@ -14,6 +14,7 @@
 #include <string>
 #include <sstream>
 #include <new>
+#include <iomanip>
 namespace flash {
 uint64_t now_ns() { timespec t{}; clock_gettime(CLOCK_MONOTONIC,&t); return uint64_t(t.tv_sec)*1000000000ULL+t.tv_nsec; }
 uint64_t checksum(const Event& value) {
@@ -85,12 +86,26 @@ Handle* open_reader(const char* name,const char* run,const char* node) {
   if(!good){munmap(p,bytes);::close(fd);errno=ready?EPROTO:EAGAIN;return nullptr;}
   return new Handle{h,reinterpret_cast<Event*>(static_cast<char*>(p)+sizeof(Header)),bytes,fd,true};
 }
+int request(Handle* handle,uint32_t state,uint64_t epoch) {
+  if(!handle||state>1||epoch> (UINT64_MAX>>1)|| (state==1&&epoch==0))return -EINVAL;
+  auto h=handle->h;int rc=lock(h);if(rc)return rc;
+  uint64_t old=h->requested_control;
+  if(h->closed||epoch<(old>>1)||(state==1&&epoch==(old>>1)&&(old&1)==0))rc=-EINVAL;
+  else h->requested_control=(epoch<<1)|state;
+  pthread_mutex_unlock(&h->mutex);return rc;
+}
+uint64_t boundary(Handle* handle) {
+  if(!handle)return 0;auto h=handle->h;int rc=lock(h);
+  if(rc)return UINT64_MAX;
+  uint64_t value=h->requested_control;h->applied_control=value;h->state=value&1;
+  pthread_mutex_unlock(&h->mutex);return value;
+}
 int emit(Handle* handle,Event e) {
   if(!handle||handle->reader)return -EINVAL;
   auto h=handle->h;__atomic_fetch_add(&h->attempts,1ULL,__ATOMIC_RELAXED);
   int rc=lock(h);
   if(rc){__atomic_fetch_add(&h->dropped_lock,1ULL,__ATOMIC_RELAXED);return rc;}
-  if(h->closed || h->state!=0 || h->write_pos<h->read_pos || h->write_pos-h->read_pos>h->capacity) {
+  if(h->closed || h->state>1 || h->write_pos<h->read_pos || h->write_pos-h->read_pos>h->capacity) {
     __atomic_fetch_add(&h->errors,1ULL,__ATOMIC_RELAXED);pthread_mutex_unlock(&h->mutex);return -EIO;
   }
   if(h->write_pos-h->read_pos==h->capacity) {
@@ -104,7 +119,7 @@ int emit(Handle* handle,Event e) {
 int read(Handle* handle,Event& e) {
   if(!handle||!handle->reader)return -EINVAL;
   auto h=handle->h;int rc=lock(h);if(rc)return rc;
-  if(h->state!=0||h->write_pos<h->read_pos||h->write_pos-h->read_pos>h->capacity) {
+  if(h->state>1||h->write_pos<h->read_pos||h->write_pos-h->read_pos>h->capacity) {
     __atomic_fetch_add(&h->errors,1ULL,__ATOMIC_RELAXED);pthread_mutex_unlock(&h->mutex);return -EPROTO;
   }
   if(h->read_pos==h->write_pos){pthread_mutex_unlock(&h->mutex);return 0;}
@@ -130,7 +145,7 @@ int snapshot(Handle* handle,char* out,size_t n) {
   int rc=lock(h);if(rc)return rc;
   std::ostringstream s;
   s<<"{\"abi\":"<<h->abi<<",\"capacity\":"<<h->capacity<<",\"event_bytes\":"<<h->event_bytes
-   <<",\"state\":"<<h->state<<",\"pid\":"<<h->writer_pid<<",\"global_rank\":"<<h->global_rank
+   <<",\"requested_control\":"<<h->requested_control<<",\"applied_control\":"<<h->applied_control<<",\"state\":"<<h->state<<",\"pid\":"<<h->writer_pid<<",\"global_rank\":"<<h->global_rank
    <<",\"run_id\":\""<<h->run_id<<"\",\"node_id\":\""<<h->node_id<<"\",\"created_ns\":"<<h->created_ns
    <<",\"write_pos\":"<<h->write_pos<<",\"read_pos\":"<<h->read_pos<<",\"attempts\":"<<__atomic_load_n(&h->attempts,__ATOMIC_RELAXED)
    <<",\"dropped_full\":"<<__atomic_load_n(&h->dropped_full,__ATOMIC_RELAXED)<<",\"dropped_lock\":"<<__atomic_load_n(&h->dropped_lock,__ATOMIC_RELAXED)
@@ -162,6 +177,7 @@ int unlink_run(const char* name,const char* run,const char* node) {
 extern "C" {
 void* flash_ring_create(const char* n,const char* r,const char* d,int rank,uint32_t cap){return flash::create(n,r,d,rank,cap);}
 void* flash_ring_open(const char* n,const char* r,const char* d){return flash::open_reader(n,r,d);}
+int flash_ring_request(void* h,uint32_t state,uint64_t epoch){return flash::request(static_cast<flash::Handle*>(h),state,epoch);}
 int flash_ring_ack(void* h,uint64_t seq){return flash::acknowledge(static_cast<flash::Handle*>(h),seq);}
 int flash_ring_snapshot(void* h,char* b,size_t n){return flash::snapshot(static_cast<flash::Handle*>(h),b,n);}
 void flash_ring_close(void* h){flash::close_handle(static_cast<flash::Handle*>(h));}
@@ -178,6 +194,15 @@ int flash_ring_read(void* handle,char* out,size_t n) {
    <<",\"comm_rank\":"<<e.comm_rank<<",\"comm_size\":"<<e.comm_size<<",\"datatype\":"<<e.datatype
    <<",\"op\":"<<e.op<<",\"peer\":"<<e.peer<<",\"group_depth\":"<<e.group_depth
    <<",\"identity\":"<<e.identity<<",\"id_hash\":\""<<e.id_hash<<"\"}";
+  s.seekp(-1,std::ios_base::end);
+  s<<",\"state\":"<<e.state<<",\"profile_epoch\":"<<e.profile_epoch;
+  if(e.state==1) {
+    s<<",\"timing_scope\":"<<e.timing_scope<<",\"timing_status\":"<<e.timing_status<<",\"device\":"<<e.device
+     <<",\"sync_block_ns\":"<<e.sync_block_ns<<",\"duration_us\":";
+    if(e.timing_status==1)s<<std::setprecision(17)<<e.duration_us;else s<<"null";
+    s<<",\"cuda_results\":[";for(int i=0;i<11;++i){if(i)s<<",";s<<e.cuda_rc[i];}s<<"]";
+  }
+  s<<"}";
   auto value=s.str();if(value.size()+1>n)return -ENOBUFS;
   memcpy(out,value.c_str(),value.size()+1);return 1;
 }

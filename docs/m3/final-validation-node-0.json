@@ -1,0 +1,776 @@
+{
+  "status": "PASS",
+  "node_rank": 0,
+  "results": [
+    {
+      "run_id": "m3abc-local-01",
+      "status": "PASS",
+      "complete_profile": true,
+      "ranks": [
+        {
+          "rank": 0,
+          "events": 138,
+          "profile_records": 130,
+          "valid_records": 130,
+          "unsupported": 0,
+          "timing_scopes": 130,
+          "sync_block_ns": 675588156,
+          "apis": {
+            "ncclGetUniqueId": 1,
+            "ncclGetVersion": 1,
+            "ncclCommInitRankConfig": 1,
+            "ncclAllReduce": 134,
+            "ncclCommDestroy": 1
+          }
+        },
+        {
+          "rank": 1,
+          "events": 137,
+          "profile_records": 130,
+          "valid_records": 130,
+          "unsupported": 0,
+          "timing_scopes": 130,
+          "sync_block_ns": 571676788,
+          "apis": {
+            "ncclGetVersion": 1,
+            "ncclCommInitRankConfig": 1,
+            "ncclAllReduce": 134,
+            "ncclCommDestroy": 1
+          }
+        }
+      ],
+      "total_events": 275,
+      "loss": 0
+    },
+    {
+      "run_id": "m3d-roce-01",
+      "status": "PASS",
+      "complete_profile": true,
+      "ranks": [
+        {
+          "rank": 0,
+          "events": 138,
+          "profile_records": 130,
+          "valid_records": 130,
+          "unsupported": 0,
+          "timing_scopes": 130,
+          "sync_block_ns": 680680153,
+          "apis": {
+            "ncclGetUniqueId": 1,
+            "ncclGetVersion": 1,
+            "ncclCommInitRankConfig": 1,
+            "ncclAllReduce": 134,
+            "ncclCommDestroy": 1
+          }
+        }
+      ],
+      "total_events": 138,
+      "loss": 0
+    },
+    {
+      "run_id": "m3e-group-01",
+      "status": "PASS",
+      "complete_profile": false,
+      "ranks": [
+        {
+          "rank": 0,
+          "events": 128,
+          "profile_records": 56,
+          "valid_records": 40,
+          "unsupported": 16,
+          "timing_scopes": 24,
+          "sync_block_ns": 724971,
+          "apis": {
+            "ncclGetUniqueId": 1,
+            "ncclGetVersion": 1,
+            "ncclCommInitRankConfig": 1,
+            "ncclAllReduce": 60,
+            "ncclGroupStart": 32,
+            "ncclGroupEnd": 32,
+            "ncclCommDestroy": 1
+          }
+        },
+        {
+          "rank": 1,
+          "events": 127,
+          "profile_records": 56,
+          "valid_records": 40,
+          "unsupported": 16,
+          "timing_scopes": 24,
+          "sync_block_ns": 634794,
+          "apis": {
+            "ncclGetVersion": 1,
+            "ncclCommInitRankConfig": 1,
+            "ncclAllReduce": 60,
+            "ncclGroupStart": 32,
+            "ncclGroupEnd": 32,
+            "ncclCommDestroy": 1
+          }
+        }
+      ],
+      "total_events": 255,
+      "loss": 0
+    },
+    {
+      "run_id": "m3e-group-02",
+      "status": "PASS",
+      "complete_profile": false,
+      "ranks": [
+        {
+          "rank": 0,
+          "events": 128,
+          "profile_records": 56,
+          "valid_records": 40,
+          "unsupported": 16,
+          "timing_scopes": 24,
+          "sync_block_ns": 774812,
+          "apis": {
+            "ncclGetUniqueId": 1,
+            "ncclGetVersion": 1,
+            "ncclCommInitRankConfig": 1,
+            "ncclAllReduce": 60,
+            "ncclGroupStart": 32,
+            "ncclGroupEnd": 32,
+            "ncclCommDestroy": 1
+          }
+        },
+        {
+          "rank": 1,
+          "events": 127,
+          "profile_records": 56,
+          "valid_records": 40,
+          "unsupported": 16,
+          "timing_scopes": 24,
+          "sync_block_ns": 465474,
+          "apis": {
+            "ncclGetVersion": 1,
+            "ncclCommInitRankConfig": 1,
+            "ncclAllReduce": 60,
+            "ncclGroupStart": 32,
+            "ncclGroupEnd": 32,
+            "ncclCommDestroy": 1
+          }
+        }
+      ],
+      "total_events": 255,
+      "loss": 0
+    },
+    {
+      "run_id": "m3f-allreduce-01",
+      "status": "PASS",
+      "complete_profile": true,
+      "ranks": [
+        {
+          "rank": 0,
+          "events": 118,
+          "profile_records": 12,
+          "valid_records": 12,
+          "unsupported": 0,
+          "timing_scopes": 12,
+          "sync_block_ns": 2476872,
+          "apis": {
+            "ncclGetVersion": 2,
+            "ncclGetUniqueId": 1,
+            "ncclCommInitRankConfig": 1,
+            "ncclAllReduce": 28,
+            "ncclCommGetAsyncError": 84,
+            "ncclCommFinalize": 1,
+            "ncclCommDestroy": 1
+          }
+        },
+        {
+          "rank": 1,
+          "events": 123,
+          "profile_records": 12,
+          "valid_records": 12,
+          "unsupported": 0,
+          "timing_scopes": 12,
+          "sync_block_ns": 2142867,
+          "apis": {
+            "ncclGetVersion": 2,
+            "ncclCommInitRankConfig": 1,
+            "ncclAllReduce": 28,
+            "ncclCommGetAsyncError": 90,
+            "ncclCommFinalize": 1,
+            "ncclCommDestroy": 1
+          }
+        },
+        {
+          "rank": 2,
+          "events": 120,
+          "profile_records": 12,
+          "valid_records": 12,
+          "unsupported": 0,
+          "timing_scopes": 12,
+          "sync_block_ns": 2143276,
+          "apis": {
+            "ncclGetVersion": 2,
+            "ncclCommInitRankConfig": 1,
+            "ncclAllReduce": 28,
+            "ncclCommGetAsyncError": 87,
+            "ncclCommFinalize": 1,
+            "ncclCommDestroy": 1
+          }
+        },
+        {
+          "rank": 3,
+          "events": 117,
+          "profile_records": 12,
+          "valid_records": 12,
+          "unsupported": 0,
+          "timing_scopes": 12,
+          "sync_block_ns": 2219579,
+          "apis": {
+            "ncclGetVersion": 2,
+            "ncclCommInitRankConfig": 1,
+            "ncclAllReduce": 28,
+            "ncclCommGetAsyncError": 84,
+            "ncclCommFinalize": 1,
+            "ncclCommDestroy": 1
+          }
+        },
+        {
+          "rank": 4,
+          "events": 120,
+          "profile_records": 12,
+          "valid_records": 12,
+          "unsupported": 0,
+          "timing_scopes": 12,
+          "sync_block_ns": 2148078,
+          "apis": {
+            "ncclGetVersion": 2,
+            "ncclCommInitRankConfig": 1,
+            "ncclAllReduce": 28,
+            "ncclCommGetAsyncError": 87,
+            "ncclCommFinalize": 1,
+            "ncclCommDestroy": 1
+          }
+        },
+        {
+          "rank": 5,
+          "events": 117,
+          "profile_records": 12,
+          "valid_records": 12,
+          "unsupported": 0,
+          "timing_scopes": 12,
+          "sync_block_ns": 2262602,
+          "apis": {
+            "ncclGetVersion": 2,
+            "ncclCommInitRankConfig": 1,
+            "ncclAllReduce": 28,
+            "ncclCommGetAsyncError": 84,
+            "ncclCommFinalize": 1,
+            "ncclCommDestroy": 1
+          }
+        },
+        {
+          "rank": 6,
+          "events": 120,
+          "profile_records": 12,
+          "valid_records": 12,
+          "unsupported": 0,
+          "timing_scopes": 12,
+          "sync_block_ns": 2423172,
+          "apis": {
+            "ncclGetVersion": 2,
+            "ncclCommInitRankConfig": 1,
+            "ncclAllReduce": 28,
+            "ncclCommGetAsyncError": 87,
+            "ncclCommFinalize": 1,
+            "ncclCommDestroy": 1
+          }
+        },
+        {
+          "rank": 7,
+          "events": 120,
+          "profile_records": 12,
+          "valid_records": 12,
+          "unsupported": 0,
+          "timing_scopes": 12,
+          "sync_block_ns": 2502110,
+          "apis": {
+            "ncclGetVersion": 2,
+            "ncclCommInitRankConfig": 1,
+            "ncclAllReduce": 28,
+            "ncclCommGetAsyncError": 87,
+            "ncclCommFinalize": 1,
+            "ncclCommDestroy": 1
+          }
+        }
+      ],
+      "total_events": 955,
+      "loss": 0
+    },
+    {
+      "run_id": "m3f-ddp-01",
+      "status": "PASS",
+      "complete_profile": true,
+      "ranks": [
+        {
+          "rank": 0,
+          "events": 209,
+          "profile_records": 20,
+          "valid_records": 20,
+          "unsupported": 0,
+          "timing_scopes": 20,
+          "sync_block_ns": 7994232,
+          "apis": {
+            "ncclGetVersion": 2,
+            "ncclGetUniqueId": 1,
+            "ncclCommInitRankConfig": 1,
+            "ncclAllReduce": 23,
+            "ncclCommGetAsyncError": 153,
+            "ncclAllGather": 1,
+            "ncclBcast": 26,
+            "ncclCommFinalize": 1,
+            "ncclCommDestroy": 1
+          }
+        },
+        {
+          "rank": 1,
+          "events": 208,
+          "profile_records": 20,
+          "valid_records": 20,
+          "unsupported": 0,
+          "timing_scopes": 20,
+          "sync_block_ns": 7426648,
+          "apis": {
+            "ncclGetVersion": 2,
+            "ncclCommInitRankConfig": 1,
+            "ncclAllReduce": 23,
+            "ncclCommGetAsyncError": 153,
+            "ncclAllGather": 1,
+            "ncclBcast": 26,
+            "ncclCommFinalize": 1,
+            "ncclCommDestroy": 1
+          }
+        },
+        {
+          "rank": 2,
+          "events": 208,
+          "profile_records": 20,
+          "valid_records": 20,
+          "unsupported": 0,
+          "timing_scopes": 20,
+          "sync_block_ns": 8597062,
+          "apis": {
+            "ncclGetVersion": 2,
+            "ncclCommInitRankConfig": 1,
+            "ncclAllReduce": 23,
+            "ncclCommGetAsyncError": 153,
+            "ncclAllGather": 1,
+            "ncclBcast": 26,
+            "ncclCommFinalize": 1,
+            "ncclCommDestroy": 1
+          }
+        },
+        {
+          "rank": 3,
+          "events": 208,
+          "profile_records": 20,
+          "valid_records": 20,
+          "unsupported": 0,
+          "timing_scopes": 20,
+          "sync_block_ns": 7442393,
+          "apis": {
+            "ncclGetVersion": 2,
+            "ncclCommInitRankConfig": 1,
+            "ncclAllReduce": 23,
+            "ncclCommGetAsyncError": 153,
+            "ncclAllGather": 1,
+            "ncclBcast": 26,
+            "ncclCommFinalize": 1,
+            "ncclCommDestroy": 1
+          }
+        },
+        {
+          "rank": 4,
+          "events": 205,
+          "profile_records": 20,
+          "valid_records": 20,
+          "unsupported": 0,
+          "timing_scopes": 20,
+          "sync_block_ns": 9594137,
+          "apis": {
+            "ncclGetVersion": 2,
+            "ncclCommInitRankConfig": 1,
+            "ncclAllReduce": 23,
+            "ncclCommGetAsyncError": 150,
+            "ncclAllGather": 1,
+            "ncclBcast": 26,
+            "ncclCommFinalize": 1,
+            "ncclCommDestroy": 1
+          }
+        },
+        {
+          "rank": 5,
+          "events": 205,
+          "profile_records": 20,
+          "valid_records": 20,
+          "unsupported": 0,
+          "timing_scopes": 20,
+          "sync_block_ns": 6508834,
+          "apis": {
+            "ncclGetVersion": 2,
+            "ncclCommInitRankConfig": 1,
+            "ncclAllReduce": 23,
+            "ncclCommGetAsyncError": 150,
+            "ncclAllGather": 1,
+            "ncclBcast": 26,
+            "ncclCommFinalize": 1,
+            "ncclCommDestroy": 1
+          }
+        },
+        {
+          "rank": 6,
+          "events": 205,
+          "profile_records": 20,
+          "valid_records": 20,
+          "unsupported": 0,
+          "timing_scopes": 20,
+          "sync_block_ns": 7402248,
+          "apis": {
+            "ncclGetVersion": 2,
+            "ncclCommInitRankConfig": 1,
+            "ncclAllReduce": 23,
+            "ncclCommGetAsyncError": 150,
+            "ncclAllGather": 1,
+            "ncclBcast": 26,
+            "ncclCommFinalize": 1,
+            "ncclCommDestroy": 1
+          }
+        },
+        {
+          "rank": 7,
+          "events": 208,
+          "profile_records": 20,
+          "valid_records": 20,
+          "unsupported": 0,
+          "timing_scopes": 20,
+          "sync_block_ns": 7757743,
+          "apis": {
+            "ncclGetVersion": 2,
+            "ncclCommInitRankConfig": 1,
+            "ncclAllReduce": 23,
+            "ncclCommGetAsyncError": 153,
+            "ncclAllGather": 1,
+            "ncclBcast": 26,
+            "ncclCommFinalize": 1,
+            "ncclCommDestroy": 1
+          }
+        }
+      ],
+      "total_events": 1656,
+      "loss": 0
+    },
+    {
+      "run_id": "m3f-allreduce-02",
+      "status": "PASS",
+      "complete_profile": true,
+      "ranks": [
+        {
+          "rank": 0,
+          "events": 124,
+          "profile_records": 12,
+          "valid_records": 12,
+          "unsupported": 0,
+          "timing_scopes": 12,
+          "sync_block_ns": 2926966,
+          "apis": {
+            "ncclGetVersion": 2,
+            "ncclGetUniqueId": 1,
+            "ncclCommInitRankConfig": 1,
+            "ncclAllReduce": 28,
+            "ncclCommGetAsyncError": 90,
+            "ncclCommFinalize": 1,
+            "ncclCommDestroy": 1
+          }
+        },
+        {
+          "rank": 1,
+          "events": 117,
+          "profile_records": 12,
+          "valid_records": 12,
+          "unsupported": 0,
+          "timing_scopes": 12,
+          "sync_block_ns": 2320055,
+          "apis": {
+            "ncclGetVersion": 2,
+            "ncclCommInitRankConfig": 1,
+            "ncclAllReduce": 28,
+            "ncclCommGetAsyncError": 84,
+            "ncclCommFinalize": 1,
+            "ncclCommDestroy": 1
+          }
+        },
+        {
+          "rank": 2,
+          "events": 120,
+          "profile_records": 12,
+          "valid_records": 12,
+          "unsupported": 0,
+          "timing_scopes": 12,
+          "sync_block_ns": 2466888,
+          "apis": {
+            "ncclGetVersion": 2,
+            "ncclCommInitRankConfig": 1,
+            "ncclAllReduce": 28,
+            "ncclCommGetAsyncError": 87,
+            "ncclCommFinalize": 1,
+            "ncclCommDestroy": 1
+          }
+        },
+        {
+          "rank": 3,
+          "events": 117,
+          "profile_records": 12,
+          "valid_records": 12,
+          "unsupported": 0,
+          "timing_scopes": 12,
+          "sync_block_ns": 2939511,
+          "apis": {
+            "ncclGetVersion": 2,
+            "ncclCommInitRankConfig": 1,
+            "ncclAllReduce": 28,
+            "ncclCommGetAsyncError": 84,
+            "ncclCommFinalize": 1,
+            "ncclCommDestroy": 1
+          }
+        },
+        {
+          "rank": 4,
+          "events": 120,
+          "profile_records": 12,
+          "valid_records": 12,
+          "unsupported": 0,
+          "timing_scopes": 12,
+          "sync_block_ns": 2585910,
+          "apis": {
+            "ncclGetVersion": 2,
+            "ncclCommInitRankConfig": 1,
+            "ncclAllReduce": 28,
+            "ncclCommGetAsyncError": 87,
+            "ncclCommFinalize": 1,
+            "ncclCommDestroy": 1
+          }
+        },
+        {
+          "rank": 5,
+          "events": 117,
+          "profile_records": 12,
+          "valid_records": 12,
+          "unsupported": 0,
+          "timing_scopes": 12,
+          "sync_block_ns": 1711286,
+          "apis": {
+            "ncclGetVersion": 2,
+            "ncclCommInitRankConfig": 1,
+            "ncclAllReduce": 28,
+            "ncclCommGetAsyncError": 84,
+            "ncclCommFinalize": 1,
+            "ncclCommDestroy": 1
+          }
+        },
+        {
+          "rank": 6,
+          "events": 120,
+          "profile_records": 12,
+          "valid_records": 12,
+          "unsupported": 0,
+          "timing_scopes": 12,
+          "sync_block_ns": 1711124,
+          "apis": {
+            "ncclGetVersion": 2,
+            "ncclCommInitRankConfig": 1,
+            "ncclAllReduce": 28,
+            "ncclCommGetAsyncError": 87,
+            "ncclCommFinalize": 1,
+            "ncclCommDestroy": 1
+          }
+        },
+        {
+          "rank": 7,
+          "events": 117,
+          "profile_records": 12,
+          "valid_records": 12,
+          "unsupported": 0,
+          "timing_scopes": 12,
+          "sync_block_ns": 2675057,
+          "apis": {
+            "ncclGetVersion": 2,
+            "ncclCommInitRankConfig": 1,
+            "ncclAllReduce": 28,
+            "ncclCommGetAsyncError": 84,
+            "ncclCommFinalize": 1,
+            "ncclCommDestroy": 1
+          }
+        }
+      ],
+      "total_events": 952,
+      "loss": 0
+    },
+    {
+      "run_id": "m3f-ddp-02",
+      "status": "PASS",
+      "complete_profile": true,
+      "ranks": [
+        {
+          "rank": 0,
+          "events": 206,
+          "profile_records": 20,
+          "valid_records": 20,
+          "unsupported": 0,
+          "timing_scopes": 20,
+          "sync_block_ns": 7778408,
+          "apis": {
+            "ncclGetVersion": 2,
+            "ncclGetUniqueId": 1,
+            "ncclCommInitRankConfig": 1,
+            "ncclAllReduce": 23,
+            "ncclCommGetAsyncError": 150,
+            "ncclAllGather": 1,
+            "ncclBcast": 26,
+            "ncclCommFinalize": 1,
+            "ncclCommDestroy": 1
+          }
+        },
+        {
+          "rank": 1,
+          "events": 205,
+          "profile_records": 20,
+          "valid_records": 20,
+          "unsupported": 0,
+          "timing_scopes": 20,
+          "sync_block_ns": 8770673,
+          "apis": {
+            "ncclGetVersion": 2,
+            "ncclCommInitRankConfig": 1,
+            "ncclAllReduce": 23,
+            "ncclCommGetAsyncError": 150,
+            "ncclAllGather": 1,
+            "ncclBcast": 26,
+            "ncclCommFinalize": 1,
+            "ncclCommDestroy": 1
+          }
+        },
+        {
+          "rank": 2,
+          "events": 208,
+          "profile_records": 20,
+          "valid_records": 20,
+          "unsupported": 0,
+          "timing_scopes": 20,
+          "sync_block_ns": 8111312,
+          "apis": {
+            "ncclGetVersion": 2,
+            "ncclCommInitRankConfig": 1,
+            "ncclAllReduce": 23,
+            "ncclCommGetAsyncError": 153,
+            "ncclAllGather": 1,
+            "ncclBcast": 26,
+            "ncclCommFinalize": 1,
+            "ncclCommDestroy": 1
+          }
+        },
+        {
+          "rank": 3,
+          "events": 205,
+          "profile_records": 20,
+          "valid_records": 20,
+          "unsupported": 0,
+          "timing_scopes": 20,
+          "sync_block_ns": 9192756,
+          "apis": {
+            "ncclGetVersion": 2,
+            "ncclCommInitRankConfig": 1,
+            "ncclAllReduce": 23,
+            "ncclCommGetAsyncError": 150,
+            "ncclAllGather": 1,
+            "ncclBcast": 26,
+            "ncclCommFinalize": 1,
+            "ncclCommDestroy": 1
+          }
+        },
+        {
+          "rank": 4,
+          "events": 205,
+          "profile_records": 20,
+          "valid_records": 20,
+          "unsupported": 0,
+          "timing_scopes": 20,
+          "sync_block_ns": 5188721,
+          "apis": {
+            "ncclGetVersion": 2,
+            "ncclCommInitRankConfig": 1,
+            "ncclAllReduce": 23,
+            "ncclCommGetAsyncError": 150,
+            "ncclAllGather": 1,
+            "ncclBcast": 26,
+            "ncclCommFinalize": 1,
+            "ncclCommDestroy": 1
+          }
+        },
+        {
+          "rank": 5,
+          "events": 208,
+          "profile_records": 20,
+          "valid_records": 20,
+          "unsupported": 0,
+          "timing_scopes": 20,
+          "sync_block_ns": 6249014,
+          "apis": {
+            "ncclGetVersion": 2,
+            "ncclCommInitRankConfig": 1,
+            "ncclAllReduce": 23,
+            "ncclCommGetAsyncError": 153,
+            "ncclAllGather": 1,
+            "ncclBcast": 26,
+            "ncclCommFinalize": 1,
+            "ncclCommDestroy": 1
+          }
+        },
+        {
+          "rank": 6,
+          "events": 205,
+          "profile_records": 20,
+          "valid_records": 20,
+          "unsupported": 0,
+          "timing_scopes": 20,
+          "sync_block_ns": 8650633,
+          "apis": {
+            "ncclGetVersion": 2,
+            "ncclCommInitRankConfig": 1,
+            "ncclAllReduce": 23,
+            "ncclCommGetAsyncError": 150,
+            "ncclAllGather": 1,
+            "ncclBcast": 26,
+            "ncclCommFinalize": 1,
+            "ncclCommDestroy": 1
+          }
+        },
+        {
+          "rank": 7,
+          "events": 205,
+          "profile_records": 20,
+          "valid_records": 20,
+          "unsupported": 0,
+          "timing_scopes": 20,
+          "sync_block_ns": 9400478,
+          "apis": {
+            "ncclGetVersion": 2,
+            "ncclCommInitRankConfig": 1,
+            "ncclAllReduce": 23,
+            "ncclCommGetAsyncError": 150,
+            "ncclAllGather": 1,
+            "ncclBcast": 26,
+            "ncclCommFinalize": 1,
+            "ncclCommDestroy": 1
+          }
+        }
+      ],
+      "total_events": 1647,
+      "loss": 0
+    }
+  ],
+  "raw_evidence_dir": "runs/m3-validation-node-0-20261010T055544698355Z"
+}

@@ -1,5 +1,5 @@
 # ADAPTATION: C++ bridge owns all shared-memory access and memory ordering.
-import argparse,ctypes,errno,json,os,re,time
+import argparse,ctypes,errno,json,os,re,time,hashlib
 from pathlib import Path
 API={1:"ncclAllReduce",2:"ncclAllGather",3:"ncclBroadcast",4:"ncclBcast",5:"ncclReduce",6:"ncclReduceScatter",7:"ncclSend",8:"ncclRecv",10:"ncclCommInitRank",11:"ncclCommInitRankConfig",12:"ncclCommSplit",13:"ncclCommInitAll",14:"ncclCommInitRankScalable",20:"ncclGroupStart",21:"ncclGroupEnd",22:"ncclGroupSimulateEnd",30:"ncclCommFinalize",31:"ncclCommDestroy",32:"ncclCommAbort",40:"ncclCommGetAsyncError",41:"ncclCommCount",42:"ncclCommUserRank",43:"ncclGetUniqueId",44:"ncclGetVersion",45:"ncclCommRegister",46:"ncclCommDeregister",47:"ncclMemAlloc",48:"ncclMemFree",49:"ncclRedOpCreatePreMulSum",50:"ncclRedOpDestroy",100:"COMM_MAPPING"}
 IDENTITY={0:"UNKNOWN",1:"UNIQUE_ID_SHA256",2:"UNRESOLVED_SPLIT",3:"PENDING_GROUP",4:"UNSUPPORTED_INIT"}
@@ -14,6 +14,7 @@ class Reader:
         self.lib.flash_ring_ack.argtypes=[ctypes.c_void_p,ctypes.c_uint64];self.lib.flash_ring_ack.restype=ctypes.c_int
         self.lib.flash_ring_close.argtypes=[ctypes.c_void_p];self.lib.flash_ring_close.restype=None
         self.lib.flash_ring_unlink.argtypes=[ctypes.c_char_p]*3;self.lib.flash_ring_unlink.restype=ctypes.c_int
+        self.lib.flash_ring_request.argtypes=[ctypes.c_void_p,ctypes.c_uint32,ctypes.c_uint64];self.lib.flash_ring_request.restype=ctypes.c_int
         self.handle=self.lib.flash_ring_open(name.encode(),run_id.encode(),node_id.encode())
         if not self.handle:raise OSError(ctypes.get_errno(),"bridge open failed",name)
         try:self.context=self.snapshot()
@@ -27,8 +28,10 @@ class Reader:
         buffer=ctypes.create_string_buffer(4096)
         self._check(self.lib.flash_ring_snapshot(self.handle,buffer,len(buffer)))
         value=json.loads(buffer.value)
-        if value["abi"]!=1 or value["state"]!=0 or value["run_id"]!=self.run_id or value["node_id"]!=self.node_id:raise ValueError("ABI/state/run identity mismatch")
+        if value["abi"]!=2 or value["state"] not in (0,1) or value["run_id"]!=self.run_id or value["node_id"]!=self.node_id:raise ValueError("ABI/state/run identity mismatch")
         return value
+    def request(self,state,epoch):
+        self._check(self.lib.flash_ring_request(self.handle,state,epoch))
     def acknowledge(self,sequence):
         self._check(self.lib.flash_ring_ack(self.handle,sequence));self.last_seq=sequence
     def read(self,acknowledge=True):
@@ -43,6 +46,7 @@ class Reader:
         if value["identity"] in (1,3) and not re.fullmatch("[0-9a-f]{64}",value["id_hash"]):raise ValueError("invalid unique-id SHA256")
         if value["identity"] in (0,2,4) and value["id_hash"]:raise ValueError("unresolved identity carries hash")
         value.update(run_id=self.run_id,node_id=self.node_id,pid=self.context["pid"],api_name=API[value["api"]],identity_source=IDENTITY[value["identity"]],count_unit="bytes" if value["api"] in (45,47) else "elements" if value["api"] in range(1,9) else "not_applicable")
+        value["record_digest"]=hashlib.sha256(json.dumps(value,sort_keys=True,separators=(",",":")).encode()).hexdigest()
         if acknowledge:self.acknowledge(value["publish_seq"])
         return value
     def close(self):
@@ -51,6 +55,26 @@ class Reader:
         self.close();self._check(self.lib.flash_ring_unlink(self.name.encode(),self.run_id.encode(),self.node_id.encode()))
     def __enter__(self):return self
     def __exit__(self,*args):self.close()
+def recover_tail(path,context):
+    """Only an incomplete unacknowledged last line may be truncated. Fail closed otherwise."""
+    if not path.exists():
+        if context["read_pos"]:raise ValueError("acknowledged output missing")
+        return []
+    data=path.read_bytes();lines=data.splitlines(keepends=True);rows=[];offset=0
+    for index,line in enumerate(lines):
+        if not line.endswith(b"\n"):
+            if index!=len(lines)-1:raise ValueError("interior incomplete line")
+            if len(rows)<context["read_pos"]:raise ValueError("acknowledged data truncated")
+            with path.open("r+b") as f:f.truncate(offset);f.flush();os.fsync(f.fileno())
+            break
+        row=json.loads(line)
+        content={k:v for k,v in row.items() if k!="record_digest"}
+        if row.get("record_digest")!=hashlib.sha256(json.dumps(content,sort_keys=True,separators=(",",":")).encode()).hexdigest():raise ValueError("durable record checksum mismatch")
+        if row["publish_seq"]!=len(rows)+1 or any(row[k]!=context[k] for k in ("pid","global_rank","run_id","node_id")):
+            raise ValueError("durable sequence/context mismatch")
+        rows.append(row);offset+=len(line)
+    if len(rows)<context["read_pos"] or len(rows)>context["write_pos"]:raise ValueError("acknowledged data absent or output ahead of ring")
+    return rows
 def main():
     p=argparse.ArgumentParser();p.add_argument("--run-id",required=True);p.add_argument("--node-id",required=True)
     p.add_argument("--output",type=Path,required=True);p.add_argument("--stop-file",type=Path,required=True)
@@ -65,11 +89,11 @@ def main():
                 try:
                     reader=Reader(name,a.run_id,a.node_id);readers[name]=reader
                     event_path=a.output/f"events-{reader.context['pid']}-{reader.context['created_ns']}.ndjson"
-                    existing=[json.loads(line) for line in event_path.read_text().splitlines()] if event_path.exists() else []
+                    existing=recover_tail(event_path,reader.context)
                     persisted[name]={e["publish_seq"] for e in existing}
                     streams[name]=event_path.open("a")
-                except OSError as error:
-                    if error.errno!=errno.EAGAIN:errors.append(dict(name=name,error=str(error)));readers[name]=None
+                except (OSError,ValueError) as error:
+                    if getattr(error,"errno",None)!=errno.EAGAIN:errors.append(dict(name=name,error=str(error)));readers[name]=None
             for name,reader in readers.items():
                 if reader is None:continue
                 try:

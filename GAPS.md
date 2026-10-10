@@ -63,3 +63,11 @@ G07：选择ABI1、每进程ring、进程共享ROBUST mutex、10ms有限锁等�
 G21：项目runtime wheel缺完整开发头文件；M2不写kernel无需nvcc，现有g++13.3+M1 Triton3.4的CUDA12.8 crt+项目隔离CCCL12.8.90头文件可编译。用户续令解决本问题；没有系统安装或运行库替换。原失败与成功命令/退出码在runs/m2a-compile-20261010，CCCL发布SHA256和许可见docs/m2/SOURCES.md（收尾补齐）。本决定只涉及构建，不改变科学机制。
 
 M2最终证据：G06支持范围验收PASS（InitRank/Config，Group中输出仅成功外层GroupEnd后映射）；Split仍UNRESOLVED、异步/InitAll/Scalable仍UNSUPPORTED，不关闭复杂初始化问题。G07采用已记载ROBUST锁/单调截止/完整发布/ACK，CPU11项、4线程mock及真实1/2/16rank/DDP均通过；不把差异协议称论文原实现，跨ABI/任意毒化恢复仍不支持。G21编译问题已由获准项目headers解决，无系统升级；对应SOURCE/RESULTS日志。追加生命周期观察：早期SSH结束后命名对象消失，原因未确认；当前入口在同一会话真实精确unlink并保存NDJSON，不保证跨最后登录会话的IPC存续。参见docs/m2与runs/m2-final-validation2-20261010。
+
+
+## M3决定与证据（2026-10-10）
+G05 / ADAPTATION / 已验证范围接受：非Group入口补充是M2实际PyTorch路径所需，外层GroupStart固定state/epoch，成功外层End后stop/sync。单stream单设备阻塞comm和嵌套共享范围通过；多stream成员显式UNSUPPORTED/null。科学Group公平聚合、复杂API/stream范围仍OPEN。依据官方NCCL2.27.3 Group与CUDA12.8 Event文档，位置native/probe.cpp，m3abc-local-01/m3d-roce-01/m3e-group-02与CPU错误mock。
+G07 / ADAPTATION / ABI2与已验证恢复范围：Event280bytes、请求/应用word与逐scope状态；拒读ABI1，旧run结束后升级，不支持滚动升级。NDJSON摘要、连续序号、仅未ACK尾片截断、完整记录保留/重放；中部损坏或已ACK数据缺失拒绝。并发/锁/损失M2测试重跑，任意破坏/持锁死亡仍不猜测恢复。位置native/ring.*、flash/reader.py；suite20261010T053356468174Z。
+G09 / PAPER机制假设 / 仅观察到适用边界，仍OPEN：单机及RoCE的CPU0/1、GPU0/1迟到，两轮各13次（每轮预先固定3warmup），有效分布每case/rank20点；目标rank的通信Event区间较短。GPU计算经compute→Event→comm wait→Probe start，目标自身前置工作在区间外；Event也可包含主机提交间隙、GPU排队/peer等待，不是纯内核本体。尚未分解组成，未检验降频/拥塞/其它消息/算法/真实MoE/并发故障，禁止推广或翻转min/max。原始值/标签未改，见docs/m3 samples/distributions与RESULTS。
+G16 / ADAPTATION / 手动协议已验证：控制本地请求和逐事件实际epoch；Header应用值只是最近调用线程边界，不代表全rank ACK；验证器要求所有rank/epoch/计数/状态完整，缺rank/部分生效/timeout/异常不能完整Profile。Group预期Unsupported的测试PASS与complete_profile=false分开。自动分布式控制/20s公式/Redis/控制失联闭环仍未实现，留M6审核。
+G04/G01/G02/G03/G06/G10–G15/G17–G20等科学/复杂范围不因M3功能通过自动关闭。Group共享字段聚合必须按scope解释，不将成员重复当独立测量；M4权重尚待批准。
