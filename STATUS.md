@@ -99,3 +99,5 @@ CPU9项PASS（包括未ACK重启与持锁进程死亡poison），单机native与
 支持范围：阻塞InitRank/Config（含Group后延迟mapping）、常用collectives、Group/lifecycle；Split新组跨进程身份UNRESOLVED，异步/其他init身份UNSUPPORTED，未测/未包装API见RESULTS。G06/G07只在已验证范围采用明确ADAPTATION，复杂路径仍OPEN。不把comm_ptr/Group/训练组混用。没有Probe CUDAEvent/额外GPU同步、Redis、BOCD、异常检测/定位或恢复。
 保留编译两次exit1、Group/Bcast验证器历史exit1、早期清理失败与DDP03 SSH255/NOT_RUN；未追改失败、缩减M1数值/训练断言或改阈值。两处验证器错误按真实API路径更正，并由更严格/独立测试验收；全部新run证据保留服务器runs，GitHub仅脱敏源码/文档。报告为功能验收，不是论文正式性能结果。
 M2完成即停。下一唯一任务：用户审核M2；M3及以后未开始。GitHub审核分支与最终tree回执在.git/m2-final-sync.json记录，完成发布后追加链接。
+
+GitHub审核分支已发布：codex/m2-monitor；Draft PR https://github.com/Zwhao0/myflash/pull/1 。首份脱敏交付source 4f6ed9610b78e0b1aa627536f80bcb6fae7d2ec9 → GitHub 4eb3cd71957298877dcdd0109c90ab129745caaf，25个变化blob及完整tree 3ea4153194c63cd1248f0ebd279e8eba95185890 完全匹配、分支回读成功，main未改动。公开首轮回执docs/m2/SYNC.json；本次状态/回执追加的最终双方SHA/tree在.git/m2-final-sync.json记录。M2结束，不进入M3。
