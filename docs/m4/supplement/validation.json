@@ -1,0 +1,1083 @@
+{
+  "status": "PASS",
+  "base_main": "01c96abeab2be25ff38176357a19fb53f18356f8",
+  "publication_main": "896057a07fee5afeb66801ac98ff4ab9d643e2fd",
+  "protected_files": 243,
+  "protected_sha_equal": true,
+  "windows": 30,
+  "profile_records": 1800,
+  "unique_communicators": 45,
+  "conditional_core_windows": 16,
+  "stage1_matches": 16,
+  "stage2_matches": 16,
+  "normal_core_windows": 4,
+  "normal_core_candidates": 4,
+  "aliases_preserve_all_statistics": true,
+  "real_cross_context_rejections": [
+    {
+      "kind": "other_epoch",
+      "rejected": true,
+      "reason": "run/epoch pollution"
+    },
+    {
+      "kind": "other_run",
+      "rejected": true,
+      "reason": "run/epoch pollution"
+    }
+  ],
+  "raw_audit": [
+    {
+      "run_id": "m4-late-core-01-w01",
+      "epoch": 1,
+      "sha256": "07511af29442b69d3a8aebd03d25961efe42a998a9683a4fb215b7befdf9d764",
+      "source_records": 32,
+      "selected_records": 10
+    },
+    {
+      "run_id": "m4-late-core-01-w01",
+      "epoch": 1,
+      "sha256": "b0ef751b27a9bf0e87500354f8fdf5804192baaef6524e480a0081f9d3b1841a",
+      "source_records": 31,
+      "selected_records": 10
+    },
+    {
+      "run_id": "m4-late-core-01-w01",
+      "epoch": 1,
+      "sha256": "235196ec8fb0405f9c9222f95ffe435ed209c51ef52d582b5b85894902cb4e35",
+      "source_records": 32,
+      "selected_records": 10
+    },
+    {
+      "run_id": "m4-late-core-01-w01",
+      "epoch": 1,
+      "sha256": "712652106997457a23719f3edf1eb2032f2cb6bf18ea9cf04e3886427da61915",
+      "source_records": 31,
+      "selected_records": 10
+    },
+    {
+      "run_id": "m4-late-core-01-w01",
+      "epoch": 2,
+      "sha256": "07511af29442b69d3a8aebd03d25961efe42a998a9683a4fb215b7befdf9d764",
+      "source_records": 32,
+      "selected_records": 10
+    },
+    {
+      "run_id": "m4-late-core-01-w01",
+      "epoch": 2,
+      "sha256": "b0ef751b27a9bf0e87500354f8fdf5804192baaef6524e480a0081f9d3b1841a",
+      "source_records": 31,
+      "selected_records": 10
+    },
+    {
+      "run_id": "m4-late-core-01-w01",
+      "epoch": 2,
+      "sha256": "235196ec8fb0405f9c9222f95ffe435ed209c51ef52d582b5b85894902cb4e35",
+      "source_records": 32,
+      "selected_records": 10
+    },
+    {
+      "run_id": "m4-late-core-01-w01",
+      "epoch": 2,
+      "sha256": "712652106997457a23719f3edf1eb2032f2cb6bf18ea9cf04e3886427da61915",
+      "source_records": 31,
+      "selected_records": 10
+    },
+    {
+      "run_id": "m4-late-core-01-w02",
+      "epoch": 1,
+      "sha256": "787c2ad3309b7395d20ac6a740424698a91e35a0d0263e0997fcd803df604b3a",
+      "source_records": 32,
+      "selected_records": 10
+    },
+    {
+      "run_id": "m4-late-core-01-w02",
+      "epoch": 1,
+      "sha256": "705422d649731864a473976e836ec09e57b4db63d3f0b582da4b4eaffd3e02a6",
+      "source_records": 31,
+      "selected_records": 10
+    },
+    {
+      "run_id": "m4-late-core-01-w02",
+      "epoch": 1,
+      "sha256": "5a26d2ec1da30faeef079aa934abd3979664d901c7d3759262896b3d91c0a033",
+      "source_records": 32,
+      "selected_records": 10
+    },
+    {
+      "run_id": "m4-late-core-01-w02",
+      "epoch": 1,
+      "sha256": "eefc3d10996a87fd991fcbfcbf479ec984ce8c559249d6eff0e982ef0679544b",
+      "source_records": 31,
+      "selected_records": 10
+    },
+    {
+      "run_id": "m4-late-core-01-w02",
+      "epoch": 2,
+      "sha256": "787c2ad3309b7395d20ac6a740424698a91e35a0d0263e0997fcd803df604b3a",
+      "source_records": 32,
+      "selected_records": 10
+    },
+    {
+      "run_id": "m4-late-core-01-w02",
+      "epoch": 2,
+      "sha256": "705422d649731864a473976e836ec09e57b4db63d3f0b582da4b4eaffd3e02a6",
+      "source_records": 31,
+      "selected_records": 10
+    },
+    {
+      "run_id": "m4-late-core-01-w02",
+      "epoch": 2,
+      "sha256": "5a26d2ec1da30faeef079aa934abd3979664d901c7d3759262896b3d91c0a033",
+      "source_records": 32,
+      "selected_records": 10
+    },
+    {
+      "run_id": "m4-late-core-01-w02",
+      "epoch": 2,
+      "sha256": "eefc3d10996a87fd991fcbfcbf479ec984ce8c559249d6eff0e982ef0679544b",
+      "source_records": 31,
+      "selected_records": 10
+    },
+    {
+      "run_id": "m4-late-core-01-w03",
+      "epoch": 1,
+      "sha256": "eb8f31cc05dad4c47d949f8c51e8c923612185f9998061d39185d01ef2bd6f71",
+      "source_records": 32,
+      "selected_records": 10
+    },
+    {
+      "run_id": "m4-late-core-01-w03",
+      "epoch": 1,
+      "sha256": "b5fb9a8f2e99273f0bb552a49e73d965ead61a711e22d88257b7f8e31c168bd4",
+      "source_records": 31,
+      "selected_records": 10
+    },
+    {
+      "run_id": "m4-late-core-01-w03",
+      "epoch": 1,
+      "sha256": "6b692103521f06ebba6c4fb86cc3dd4a4c7668073e21ae0756a430682776ca81",
+      "source_records": 32,
+      "selected_records": 10
+    },
+    {
+      "run_id": "m4-late-core-01-w03",
+      "epoch": 1,
+      "sha256": "f47f6aa3ebd07955c055f8da4379e68b3afc90d93a208bd715d728809d53a15e",
+      "source_records": 31,
+      "selected_records": 10
+    },
+    {
+      "run_id": "m4-late-core-01-w03",
+      "epoch": 2,
+      "sha256": "eb8f31cc05dad4c47d949f8c51e8c923612185f9998061d39185d01ef2bd6f71",
+      "source_records": 32,
+      "selected_records": 10
+    },
+    {
+      "run_id": "m4-late-core-01-w03",
+      "epoch": 2,
+      "sha256": "b5fb9a8f2e99273f0bb552a49e73d965ead61a711e22d88257b7f8e31c168bd4",
+      "source_records": 31,
+      "selected_records": 10
+    },
+    {
+      "run_id": "m4-late-core-01-w03",
+      "epoch": 2,
+      "sha256": "6b692103521f06ebba6c4fb86cc3dd4a4c7668073e21ae0756a430682776ca81",
+      "source_records": 32,
+      "selected_records": 10
+    },
+    {
+      "run_id": "m4-late-core-01-w03",
+      "epoch": 2,
+      "sha256": "f47f6aa3ebd07955c055f8da4379e68b3afc90d93a208bd715d728809d53a15e",
+      "source_records": 31,
+      "selected_records": 10
+    },
+    {
+      "run_id": "m4-late-core-01-w04",
+      "epoch": 1,
+      "sha256": "682001e049933d85efc3eb9d19b00bb7ecb07e50be6e2803489529e09df2f22c",
+      "source_records": 32,
+      "selected_records": 10
+    },
+    {
+      "run_id": "m4-late-core-01-w04",
+      "epoch": 1,
+      "sha256": "55810adc390f7a7e674b4c57638b2cc89a260520b48435d004a10538c7fd297b",
+      "source_records": 31,
+      "selected_records": 10
+    },
+    {
+      "run_id": "m4-late-core-01-w04",
+      "epoch": 1,
+      "sha256": "bedd124146a931739b78879c7281eec8c8ceab52547d3465dbcf6fa85f120089",
+      "source_records": 32,
+      "selected_records": 10
+    },
+    {
+      "run_id": "m4-late-core-01-w04",
+      "epoch": 1,
+      "sha256": "5caa1236da7bcda6010db4e30dd3fab4c134c3418cc64be4036da73797863371",
+      "source_records": 31,
+      "selected_records": 10
+    },
+    {
+      "run_id": "m4-late-core-01-w04",
+      "epoch": 2,
+      "sha256": "682001e049933d85efc3eb9d19b00bb7ecb07e50be6e2803489529e09df2f22c",
+      "source_records": 32,
+      "selected_records": 10
+    },
+    {
+      "run_id": "m4-late-core-01-w04",
+      "epoch": 2,
+      "sha256": "55810adc390f7a7e674b4c57638b2cc89a260520b48435d004a10538c7fd297b",
+      "source_records": 31,
+      "selected_records": 10
+    },
+    {
+      "run_id": "m4-late-core-01-w04",
+      "epoch": 2,
+      "sha256": "bedd124146a931739b78879c7281eec8c8ceab52547d3465dbcf6fa85f120089",
+      "source_records": 32,
+      "selected_records": 10
+    },
+    {
+      "run_id": "m4-late-core-01-w04",
+      "epoch": 2,
+      "sha256": "5caa1236da7bcda6010db4e30dd3fab4c134c3418cc64be4036da73797863371",
+      "source_records": 31,
+      "selected_records": 10
+    },
+    {
+      "run_id": "m4-late-core-01-w05",
+      "epoch": 1,
+      "sha256": "be83cdf7e5e1df5689ee47640899751923b717a5ea6f1935bfcaeaa2b7ee0052",
+      "source_records": 32,
+      "selected_records": 10
+    },
+    {
+      "run_id": "m4-late-core-01-w05",
+      "epoch": 1,
+      "sha256": "0953a8e82ce97c531766637614cba9281a315ab3733ca70f6d6b314971ac651a",
+      "source_records": 31,
+      "selected_records": 10
+    },
+    {
+      "run_id": "m4-late-core-01-w05",
+      "epoch": 1,
+      "sha256": "05d99bc95980f6e8a2e644959e47c1dbd470578d76bf8f0d2b9bb802f31dbf34",
+      "source_records": 32,
+      "selected_records": 10
+    },
+    {
+      "run_id": "m4-late-core-01-w05",
+      "epoch": 1,
+      "sha256": "1b25d2a946820fb4386afc05ef59d6b0888510141e8bf06781bc30047a252048",
+      "source_records": 31,
+      "selected_records": 10
+    },
+    {
+      "run_id": "m4-late-core-01-w05",
+      "epoch": 2,
+      "sha256": "be83cdf7e5e1df5689ee47640899751923b717a5ea6f1935bfcaeaa2b7ee0052",
+      "source_records": 32,
+      "selected_records": 10
+    },
+    {
+      "run_id": "m4-late-core-01-w05",
+      "epoch": 2,
+      "sha256": "0953a8e82ce97c531766637614cba9281a315ab3733ca70f6d6b314971ac651a",
+      "source_records": 31,
+      "selected_records": 10
+    },
+    {
+      "run_id": "m4-late-core-01-w05",
+      "epoch": 2,
+      "sha256": "05d99bc95980f6e8a2e644959e47c1dbd470578d76bf8f0d2b9bb802f31dbf34",
+      "source_records": 32,
+      "selected_records": 10
+    },
+    {
+      "run_id": "m4-late-core-01-w05",
+      "epoch": 2,
+      "sha256": "1b25d2a946820fb4386afc05ef59d6b0888510141e8bf06781bc30047a252048",
+      "source_records": 31,
+      "selected_records": 10
+    },
+    {
+      "run_id": "m4-late-core-01-w06",
+      "epoch": 1,
+      "sha256": "853cbb50879fb51e334b597b5ec9f0625f1220abf2f55c07be0abb0094821821",
+      "source_records": 32,
+      "selected_records": 10
+    },
+    {
+      "run_id": "m4-late-core-01-w06",
+      "epoch": 1,
+      "sha256": "def660e508543e9d182a462993793d2e4a4af9470e578e77bdbf7b567a26d590",
+      "source_records": 31,
+      "selected_records": 10
+    },
+    {
+      "run_id": "m4-late-core-01-w06",
+      "epoch": 1,
+      "sha256": "b1d353351e6ef5d516ea85f8ec23f504615e5c35a3dc4c84693e55934614bf98",
+      "source_records": 32,
+      "selected_records": 10
+    },
+    {
+      "run_id": "m4-late-core-01-w06",
+      "epoch": 1,
+      "sha256": "5d4c499c0d3446421605a5492ade175c5f760eccd4416aa159db0155e7dc5a35",
+      "source_records": 31,
+      "selected_records": 10
+    },
+    {
+      "run_id": "m4-late-core-01-w06",
+      "epoch": 2,
+      "sha256": "853cbb50879fb51e334b597b5ec9f0625f1220abf2f55c07be0abb0094821821",
+      "source_records": 32,
+      "selected_records": 10
+    },
+    {
+      "run_id": "m4-late-core-01-w06",
+      "epoch": 2,
+      "sha256": "def660e508543e9d182a462993793d2e4a4af9470e578e77bdbf7b567a26d590",
+      "source_records": 31,
+      "selected_records": 10
+    },
+    {
+      "run_id": "m4-late-core-01-w06",
+      "epoch": 2,
+      "sha256": "b1d353351e6ef5d516ea85f8ec23f504615e5c35a3dc4c84693e55934614bf98",
+      "source_records": 32,
+      "selected_records": 10
+    },
+    {
+      "run_id": "m4-late-core-01-w06",
+      "epoch": 2,
+      "sha256": "5d4c499c0d3446421605a5492ade175c5f760eccd4416aa159db0155e7dc5a35",
+      "source_records": 31,
+      "selected_records": 10
+    },
+    {
+      "run_id": "m4-late-core-01-w07",
+      "epoch": 1,
+      "sha256": "9136678745d324a4d259dabb2febdf06a1dac21562048824dbce9c59cb771939",
+      "source_records": 32,
+      "selected_records": 10
+    },
+    {
+      "run_id": "m4-late-core-01-w07",
+      "epoch": 1,
+      "sha256": "0213a58ba3c9719c6f22952c768534df760885a2ae5ed9d0e4bd01a42b194d33",
+      "source_records": 31,
+      "selected_records": 10
+    },
+    {
+      "run_id": "m4-late-core-01-w07",
+      "epoch": 1,
+      "sha256": "a820db75b1af1365059d681f847d8d2d3bb8a9ac43d78ee2b66fd0b9225482c7",
+      "source_records": 32,
+      "selected_records": 10
+    },
+    {
+      "run_id": "m4-late-core-01-w07",
+      "epoch": 1,
+      "sha256": "c0f9be8d5b3582538d7e0f106bebcf282c235c43e6166b5e584f4275703d6a9d",
+      "source_records": 31,
+      "selected_records": 10
+    },
+    {
+      "run_id": "m4-late-core-01-w07",
+      "epoch": 2,
+      "sha256": "9136678745d324a4d259dabb2febdf06a1dac21562048824dbce9c59cb771939",
+      "source_records": 32,
+      "selected_records": 10
+    },
+    {
+      "run_id": "m4-late-core-01-w07",
+      "epoch": 2,
+      "sha256": "0213a58ba3c9719c6f22952c768534df760885a2ae5ed9d0e4bd01a42b194d33",
+      "source_records": 31,
+      "selected_records": 10
+    },
+    {
+      "run_id": "m4-late-core-01-w07",
+      "epoch": 2,
+      "sha256": "a820db75b1af1365059d681f847d8d2d3bb8a9ac43d78ee2b66fd0b9225482c7",
+      "source_records": 32,
+      "selected_records": 10
+    },
+    {
+      "run_id": "m4-late-core-01-w07",
+      "epoch": 2,
+      "sha256": "c0f9be8d5b3582538d7e0f106bebcf282c235c43e6166b5e584f4275703d6a9d",
+      "source_records": 31,
+      "selected_records": 10
+    },
+    {
+      "run_id": "m4-late-core-01-w08",
+      "epoch": 1,
+      "sha256": "d102ae53a880c926aa3658c28385f341b41f43e0ccbc83111002881f62e1d8f2",
+      "source_records": 32,
+      "selected_records": 10
+    },
+    {
+      "run_id": "m4-late-core-01-w08",
+      "epoch": 1,
+      "sha256": "7ba2561aef598ef0e98e38b70c572457a5f802b23188664d4344fe0545dc8d42",
+      "source_records": 31,
+      "selected_records": 10
+    },
+    {
+      "run_id": "m4-late-core-01-w08",
+      "epoch": 1,
+      "sha256": "43bf759f3e3e9f3c04c43d555a6782c1bae9cacca4166f30214f73cabc58eb69",
+      "source_records": 32,
+      "selected_records": 10
+    },
+    {
+      "run_id": "m4-late-core-01-w08",
+      "epoch": 1,
+      "sha256": "c4d71133231da1ab3d58e52d6a48f0d968ff276590140c482571548616c215bf",
+      "source_records": 31,
+      "selected_records": 10
+    },
+    {
+      "run_id": "m4-late-core-01-w08",
+      "epoch": 2,
+      "sha256": "d102ae53a880c926aa3658c28385f341b41f43e0ccbc83111002881f62e1d8f2",
+      "source_records": 32,
+      "selected_records": 10
+    },
+    {
+      "run_id": "m4-late-core-01-w08",
+      "epoch": 2,
+      "sha256": "7ba2561aef598ef0e98e38b70c572457a5f802b23188664d4344fe0545dc8d42",
+      "source_records": 31,
+      "selected_records": 10
+    },
+    {
+      "run_id": "m4-late-core-01-w08",
+      "epoch": 2,
+      "sha256": "43bf759f3e3e9f3c04c43d555a6782c1bae9cacca4166f30214f73cabc58eb69",
+      "source_records": 32,
+      "selected_records": 10
+    },
+    {
+      "run_id": "m4-late-core-01-w08",
+      "epoch": 2,
+      "sha256": "c4d71133231da1ab3d58e52d6a48f0d968ff276590140c482571548616c215bf",
+      "source_records": 31,
+      "selected_records": 10
+    },
+    {
+      "run_id": "m4-late-core-01-w09",
+      "epoch": 1,
+      "sha256": "2e98b944a8637391f33675a8df5de85c4b21a7124a68d43fa68078912c6b3f12",
+      "source_records": 32,
+      "selected_records": 10
+    },
+    {
+      "run_id": "m4-late-core-01-w09",
+      "epoch": 1,
+      "sha256": "f4da8b94dc2af89c701a23771d2a46e2e77352b7011005607c683b818a2555df",
+      "source_records": 31,
+      "selected_records": 10
+    },
+    {
+      "run_id": "m4-late-core-01-w09",
+      "epoch": 1,
+      "sha256": "678954c9948c5f803fb4c80a345db00423ad8b8e3785bfd6c10e561f672d615d",
+      "source_records": 32,
+      "selected_records": 10
+    },
+    {
+      "run_id": "m4-late-core-01-w09",
+      "epoch": 1,
+      "sha256": "cf289cdb9f0d4649c1bf50dfca6036ff03aa465da84dcc22541ad121f3090262",
+      "source_records": 31,
+      "selected_records": 10
+    },
+    {
+      "run_id": "m4-late-core-01-w09",
+      "epoch": 2,
+      "sha256": "2e98b944a8637391f33675a8df5de85c4b21a7124a68d43fa68078912c6b3f12",
+      "source_records": 32,
+      "selected_records": 10
+    },
+    {
+      "run_id": "m4-late-core-01-w09",
+      "epoch": 2,
+      "sha256": "f4da8b94dc2af89c701a23771d2a46e2e77352b7011005607c683b818a2555df",
+      "source_records": 31,
+      "selected_records": 10
+    },
+    {
+      "run_id": "m4-late-core-01-w09",
+      "epoch": 2,
+      "sha256": "678954c9948c5f803fb4c80a345db00423ad8b8e3785bfd6c10e561f672d615d",
+      "source_records": 32,
+      "selected_records": 10
+    },
+    {
+      "run_id": "m4-late-core-01-w09",
+      "epoch": 2,
+      "sha256": "cf289cdb9f0d4649c1bf50dfca6036ff03aa465da84dcc22541ad121f3090262",
+      "source_records": 31,
+      "selected_records": 10
+    },
+    {
+      "run_id": "m4-late-core-01-w10",
+      "epoch": 1,
+      "sha256": "f54820024460940664ad5903aabbd3a8278b0cf3a2a929cb89f9772fbc4f44e0",
+      "source_records": 32,
+      "selected_records": 10
+    },
+    {
+      "run_id": "m4-late-core-01-w10",
+      "epoch": 1,
+      "sha256": "7bcceda5e447fab49b93afe729a0507ce4555c1e49dc8940a7abf47312b0e71b",
+      "source_records": 31,
+      "selected_records": 10
+    },
+    {
+      "run_id": "m4-late-core-01-w10",
+      "epoch": 1,
+      "sha256": "3e413edbb909801d623646cf6b110f4c02f7e75f8b90ef846a1d4a06dc45a94b",
+      "source_records": 32,
+      "selected_records": 10
+    },
+    {
+      "run_id": "m4-late-core-01-w10",
+      "epoch": 1,
+      "sha256": "35dbefdfb3ec401fa0ae925bb82a81e00118504f79bb76166b3943b3baa8a124",
+      "source_records": 31,
+      "selected_records": 10
+    },
+    {
+      "run_id": "m4-late-core-01-w10",
+      "epoch": 2,
+      "sha256": "f54820024460940664ad5903aabbd3a8278b0cf3a2a929cb89f9772fbc4f44e0",
+      "source_records": 32,
+      "selected_records": 10
+    },
+    {
+      "run_id": "m4-late-core-01-w10",
+      "epoch": 2,
+      "sha256": "7bcceda5e447fab49b93afe729a0507ce4555c1e49dc8940a7abf47312b0e71b",
+      "source_records": 31,
+      "selected_records": 10
+    },
+    {
+      "run_id": "m4-late-core-01-w10",
+      "epoch": 2,
+      "sha256": "3e413edbb909801d623646cf6b110f4c02f7e75f8b90ef846a1d4a06dc45a94b",
+      "source_records": 32,
+      "selected_records": 10
+    },
+    {
+      "run_id": "m4-late-core-01-w10",
+      "epoch": 2,
+      "sha256": "35dbefdfb3ec401fa0ae925bb82a81e00118504f79bb76166b3943b3baa8a124",
+      "source_records": 31,
+      "selected_records": 10
+    },
+    {
+      "run_id": "m4-late-five-01-w01",
+      "epoch": 1,
+      "sha256": "848a89add5f80f1c5fe242cc54c99d4726046b375e7e27522037e2dfcc4776d4",
+      "source_records": 96,
+      "selected_records": 30
+    },
+    {
+      "run_id": "m4-late-five-01-w01",
+      "epoch": 1,
+      "sha256": "30ee7e2e658b0d355a245ca2f4a3337e6df4a68bc32cf8bc6687ff1136323dc4",
+      "source_records": 94,
+      "selected_records": 30
+    },
+    {
+      "run_id": "m4-late-five-01-w01",
+      "epoch": 1,
+      "sha256": "ad90cd8fbd61f06513e3bc81bfb27721ff539dedb93abb48a9a443a889c0d5cb",
+      "source_records": 63,
+      "selected_records": 20
+    },
+    {
+      "run_id": "m4-late-five-01-w01",
+      "epoch": 1,
+      "sha256": "4e41ea2b3dffa3ebb885bf4edca2419b563c2022ba6f609c73944b172c4e4e8b",
+      "source_records": 62,
+      "selected_records": 20
+    },
+    {
+      "run_id": "m4-late-five-01-w01",
+      "epoch": 2,
+      "sha256": "848a89add5f80f1c5fe242cc54c99d4726046b375e7e27522037e2dfcc4776d4",
+      "source_records": 96,
+      "selected_records": 30
+    },
+    {
+      "run_id": "m4-late-five-01-w01",
+      "epoch": 2,
+      "sha256": "30ee7e2e658b0d355a245ca2f4a3337e6df4a68bc32cf8bc6687ff1136323dc4",
+      "source_records": 94,
+      "selected_records": 30
+    },
+    {
+      "run_id": "m4-late-five-01-w01",
+      "epoch": 2,
+      "sha256": "ad90cd8fbd61f06513e3bc81bfb27721ff539dedb93abb48a9a443a889c0d5cb",
+      "source_records": 63,
+      "selected_records": 20
+    },
+    {
+      "run_id": "m4-late-five-01-w01",
+      "epoch": 2,
+      "sha256": "4e41ea2b3dffa3ebb885bf4edca2419b563c2022ba6f609c73944b172c4e4e8b",
+      "source_records": 62,
+      "selected_records": 20
+    },
+    {
+      "run_id": "m4-late-five-01-w02",
+      "epoch": 1,
+      "sha256": "e8e88deadf4e6a96ef2db4489a0210a72d2edba703fd00bf92d3790321847c95",
+      "source_records": 96,
+      "selected_records": 30
+    },
+    {
+      "run_id": "m4-late-five-01-w02",
+      "epoch": 1,
+      "sha256": "51f611b9131621fef351bd6d31cd87bd23e4f0aeccfc18f2108ec837897056f5",
+      "source_records": 94,
+      "selected_records": 30
+    },
+    {
+      "run_id": "m4-late-five-01-w02",
+      "epoch": 1,
+      "sha256": "9c454311509ca1493d704d1f79e87af4c1e8d2e9ddc9e21b46763e982b814719",
+      "source_records": 63,
+      "selected_records": 20
+    },
+    {
+      "run_id": "m4-late-five-01-w02",
+      "epoch": 1,
+      "sha256": "1490df2276bf5db9fa645674602c059f0ea94d7f4feba79b407727963136579b",
+      "source_records": 62,
+      "selected_records": 20
+    },
+    {
+      "run_id": "m4-late-five-01-w02",
+      "epoch": 2,
+      "sha256": "e8e88deadf4e6a96ef2db4489a0210a72d2edba703fd00bf92d3790321847c95",
+      "source_records": 96,
+      "selected_records": 30
+    },
+    {
+      "run_id": "m4-late-five-01-w02",
+      "epoch": 2,
+      "sha256": "51f611b9131621fef351bd6d31cd87bd23e4f0aeccfc18f2108ec837897056f5",
+      "source_records": 94,
+      "selected_records": 30
+    },
+    {
+      "run_id": "m4-late-five-01-w02",
+      "epoch": 2,
+      "sha256": "9c454311509ca1493d704d1f79e87af4c1e8d2e9ddc9e21b46763e982b814719",
+      "source_records": 63,
+      "selected_records": 20
+    },
+    {
+      "run_id": "m4-late-five-01-w02",
+      "epoch": 2,
+      "sha256": "1490df2276bf5db9fa645674602c059f0ea94d7f4feba79b407727963136579b",
+      "source_records": 62,
+      "selected_records": 20
+    },
+    {
+      "run_id": "m4-late-five-01-w03",
+      "epoch": 1,
+      "sha256": "3a4543cd700f4608abe71314341eea937e41cf35603aea02535df52779542ada",
+      "source_records": 96,
+      "selected_records": 30
+    },
+    {
+      "run_id": "m4-late-five-01-w03",
+      "epoch": 1,
+      "sha256": "77681fde1475d841b54cb04e509a2e143f4253b5c3c8f3ef3bea9a6d1d6ef2fa",
+      "source_records": 94,
+      "selected_records": 30
+    },
+    {
+      "run_id": "m4-late-five-01-w03",
+      "epoch": 1,
+      "sha256": "d47f927727d658a59ca3166c1272c44cbe24d73b740b5f0b1abc87041465e615",
+      "source_records": 63,
+      "selected_records": 20
+    },
+    {
+      "run_id": "m4-late-five-01-w03",
+      "epoch": 1,
+      "sha256": "e7f95dd92978c1f7c15141f10bb678883397271e271bcba49659b96cdd9f6a2d",
+      "source_records": 62,
+      "selected_records": 20
+    },
+    {
+      "run_id": "m4-late-five-01-w03",
+      "epoch": 2,
+      "sha256": "3a4543cd700f4608abe71314341eea937e41cf35603aea02535df52779542ada",
+      "source_records": 96,
+      "selected_records": 30
+    },
+    {
+      "run_id": "m4-late-five-01-w03",
+      "epoch": 2,
+      "sha256": "77681fde1475d841b54cb04e509a2e143f4253b5c3c8f3ef3bea9a6d1d6ef2fa",
+      "source_records": 94,
+      "selected_records": 30
+    },
+    {
+      "run_id": "m4-late-five-01-w03",
+      "epoch": 2,
+      "sha256": "d47f927727d658a59ca3166c1272c44cbe24d73b740b5f0b1abc87041465e615",
+      "source_records": 63,
+      "selected_records": 20
+    },
+    {
+      "run_id": "m4-late-five-01-w03",
+      "epoch": 2,
+      "sha256": "e7f95dd92978c1f7c15141f10bb678883397271e271bcba49659b96cdd9f6a2d",
+      "source_records": 62,
+      "selected_records": 20
+    },
+    {
+      "run_id": "m4-late-five-01-w04",
+      "epoch": 1,
+      "sha256": "69459b9aa08eea77905b17aee328485f97f8283ddf706b397f94e4ddae00a8f9",
+      "source_records": 96,
+      "selected_records": 30
+    },
+    {
+      "run_id": "m4-late-five-01-w04",
+      "epoch": 1,
+      "sha256": "f00a42ec502720242b3c6079c580e5f7724167082bd4db2f07895092f3c1750a",
+      "source_records": 94,
+      "selected_records": 30
+    },
+    {
+      "run_id": "m4-late-five-01-w04",
+      "epoch": 1,
+      "sha256": "bf99bd107fe57b92d45b3e38f6304274fb91cfbbf1e8678c916b62bdb208e174",
+      "source_records": 63,
+      "selected_records": 20
+    },
+    {
+      "run_id": "m4-late-five-01-w04",
+      "epoch": 1,
+      "sha256": "5e8ed19ba3da268195b109d22c78bcd6035a68f1706da3cd9dad8b58c5a7f259",
+      "source_records": 62,
+      "selected_records": 20
+    },
+    {
+      "run_id": "m4-late-five-01-w04",
+      "epoch": 2,
+      "sha256": "69459b9aa08eea77905b17aee328485f97f8283ddf706b397f94e4ddae00a8f9",
+      "source_records": 96,
+      "selected_records": 30
+    },
+    {
+      "run_id": "m4-late-five-01-w04",
+      "epoch": 2,
+      "sha256": "f00a42ec502720242b3c6079c580e5f7724167082bd4db2f07895092f3c1750a",
+      "source_records": 94,
+      "selected_records": 30
+    },
+    {
+      "run_id": "m4-late-five-01-w04",
+      "epoch": 2,
+      "sha256": "bf99bd107fe57b92d45b3e38f6304274fb91cfbbf1e8678c916b62bdb208e174",
+      "source_records": 63,
+      "selected_records": 20
+    },
+    {
+      "run_id": "m4-late-five-01-w04",
+      "epoch": 2,
+      "sha256": "5e8ed19ba3da268195b109d22c78bcd6035a68f1706da3cd9dad8b58c5a7f259",
+      "source_records": 62,
+      "selected_records": 20
+    },
+    {
+      "run_id": "m4-late-five-01-w05",
+      "epoch": 1,
+      "sha256": "e9e245c99385dd75685dc165053096c7898db7e6be550e47cc4751e344ce7851",
+      "source_records": 96,
+      "selected_records": 30
+    },
+    {
+      "run_id": "m4-late-five-01-w05",
+      "epoch": 1,
+      "sha256": "c0b1405e16d9983e4bfc27b5b135621afd719458cf323a8dc0ab11f6b7a3022f",
+      "source_records": 94,
+      "selected_records": 30
+    },
+    {
+      "run_id": "m4-late-five-01-w05",
+      "epoch": 1,
+      "sha256": "4fefc3c7d6e2d2375909dd48bc52c2e2e5439b4c68afd056be6b433532b10439",
+      "source_records": 63,
+      "selected_records": 20
+    },
+    {
+      "run_id": "m4-late-five-01-w05",
+      "epoch": 1,
+      "sha256": "1f30799cf059fadc3aea60f29b798c0ce61e689dd5865fbb907e49364311a513",
+      "source_records": 62,
+      "selected_records": 20
+    },
+    {
+      "run_id": "m4-late-five-01-w05",
+      "epoch": 2,
+      "sha256": "e9e245c99385dd75685dc165053096c7898db7e6be550e47cc4751e344ce7851",
+      "source_records": 96,
+      "selected_records": 30
+    },
+    {
+      "run_id": "m4-late-five-01-w05",
+      "epoch": 2,
+      "sha256": "c0b1405e16d9983e4bfc27b5b135621afd719458cf323a8dc0ab11f6b7a3022f",
+      "source_records": 94,
+      "selected_records": 30
+    },
+    {
+      "run_id": "m4-late-five-01-w05",
+      "epoch": 2,
+      "sha256": "4fefc3c7d6e2d2375909dd48bc52c2e2e5439b4c68afd056be6b433532b10439",
+      "source_records": 63,
+      "selected_records": 20
+    },
+    {
+      "run_id": "m4-late-five-01-w05",
+      "epoch": 2,
+      "sha256": "1f30799cf059fadc3aea60f29b798c0ce61e689dd5865fbb907e49364311a513",
+      "source_records": 62,
+      "selected_records": 20
+    }
+  ],
+  "receipts": [
+    {
+      "run_id": "m4-late-core-01-w01",
+      "exit_codes": [
+        0,
+        0,
+        0
+      ],
+      "postflight": "PASS",
+      "removed_shm": 4,
+      "already_absent": 0
+    },
+    {
+      "run_id": "m4-late-core-01-w02",
+      "exit_codes": [
+        0,
+        0,
+        0
+      ],
+      "postflight": "PASS",
+      "removed_shm": 4,
+      "already_absent": 0
+    },
+    {
+      "run_id": "m4-late-core-01-w03",
+      "exit_codes": [
+        0,
+        0,
+        0
+      ],
+      "postflight": "PASS",
+      "removed_shm": 4,
+      "already_absent": 0
+    },
+    {
+      "run_id": "m4-late-core-01-w04",
+      "exit_codes": [
+        0,
+        0,
+        0
+      ],
+      "postflight": "PASS",
+      "removed_shm": 4,
+      "already_absent": 0
+    },
+    {
+      "run_id": "m4-late-core-01-w05",
+      "exit_codes": [
+        0,
+        0,
+        0
+      ],
+      "postflight": "PASS",
+      "removed_shm": 4,
+      "already_absent": 0
+    },
+    {
+      "run_id": "m4-late-core-01-w06",
+      "exit_codes": [
+        0,
+        0,
+        0
+      ],
+      "postflight": "PASS",
+      "removed_shm": 4,
+      "already_absent": 0
+    },
+    {
+      "run_id": "m4-late-core-01-w07",
+      "exit_codes": [
+        0,
+        0,
+        0
+      ],
+      "postflight": "PASS",
+      "removed_shm": 4,
+      "already_absent": 0
+    },
+    {
+      "run_id": "m4-late-core-01-w08",
+      "exit_codes": [
+        0,
+        0,
+        0
+      ],
+      "postflight": "PASS",
+      "removed_shm": 4,
+      "already_absent": 0
+    },
+    {
+      "run_id": "m4-late-core-01-w09",
+      "exit_codes": [
+        0,
+        0,
+        0
+      ],
+      "postflight": "PASS",
+      "removed_shm": 4,
+      "already_absent": 0
+    },
+    {
+      "run_id": "m4-late-core-01-w10",
+      "exit_codes": [
+        0,
+        0,
+        0
+      ],
+      "postflight": "PASS",
+      "removed_shm": 4,
+      "already_absent": 0
+    },
+    {
+      "run_id": "m4-late-five-01-w01",
+      "exit_codes": [
+        0,
+        0,
+        0
+      ],
+      "postflight": "PASS",
+      "removed_shm": 4,
+      "already_absent": 0
+    },
+    {
+      "run_id": "m4-late-five-01-w02",
+      "exit_codes": [
+        0,
+        0,
+        0
+      ],
+      "postflight": "PASS",
+      "removed_shm": 4,
+      "already_absent": 0
+    },
+    {
+      "run_id": "m4-late-five-01-w03",
+      "exit_codes": [
+        0,
+        0,
+        0
+      ],
+      "postflight": "PASS",
+      "removed_shm": 4,
+      "already_absent": 0
+    },
+    {
+      "run_id": "m4-late-five-01-w04",
+      "exit_codes": [
+        0,
+        0,
+        0
+      ],
+      "postflight": "PASS",
+      "removed_shm": 4,
+      "already_absent": 0
+    },
+    {
+      "run_id": "m4-late-five-01-w05",
+      "exit_codes": [
+        0,
+        0,
+        0
+      ],
+      "postflight": "PASS",
+      "removed_shm": 4,
+      "already_absent": 0
+    }
+  ],
+  "precheck": {
+    "command": [
+      "python3",
+      "tests/m4_offline.py",
+      "--output",
+      "runs/m4-supplement-fixtures-01"
+    ],
+    "exit_code": 0,
+    "protected_files": 243,
+    "source_hashes": {
+      "tests/m4_late.py": "d3c3ba93effd81fb8cc99dc2c5c54a65bf7f75a9c7c87f19041e5e80628f462a",
+      "scripts/m4_late_launch.py": "7b05b8eb85ae09628d6d10d7048fa4b5a935d34c9ad3177425c6d98e9c301cad",
+      "scripts/m4_late_run.py": "f539e7d908ecc5c7752031d0d9f74c1c0ca78f48e9a856154d981da25ada5e49",
+      "scripts/m4_late_verify.py": "6453a62f3f8fcbf3537111ba7b9f03c7cd74f63cd6205fc6ecf23f68afa1de84"
+    }
+  },
+  "probe_sha256": "c9f6987d35d2bff32aed205c2bac0741a41fe6804861b2e82450f4369c541e77",
+  "G04": "OPEN",
+  "final_fault_ranks": [],
+  "interpretation": "conditional ordering evidence; not full FLASH automatic precision/recall; 20% filter remains unresolved/disabled, dual weights/std unchanged",
+  "privacy": {
+    "status": "PASS",
+    "scanned_changed_files": 12,
+    "findings": 0,
+    "current_tracked_exit_code": 0,
+    "heuristic": true,
+    "raw_private_artifacts_not_exported": true
+  },
+  "publication_baseline": {
+    "initial_main": "01c96abeab2be25ff38176357a19fb53f18356f8",
+    "publication_main": "896057a07fee5afeb66801ac98ff4ab9d643e2fd",
+    "experiment_source": "ba968bc2dde153d7cdde24cb422e5164435958f2",
+    "accepted_upstream_changed_paths": [
+      "docs/m1/ENVIRONMENT.md",
+      "docs/m1/RESULTS.md",
+      "docs/m1/SOURCES.md",
+      "docs/m1/VALIDATION.md",
+      "docs/m2/RESULTS.md",
+      "docs/m2/VALIDATION.md",
+      "docs/m3/RESULTS.md",
+      "docs/m3/SYNC.json",
+      "docs/m3/VALIDATION.md",
+      "scripts/m1_inventory.py"
+    ],
+    "policy": "merged P1 privacy changes only; our baseline diff remains empty"
+  }
+}
