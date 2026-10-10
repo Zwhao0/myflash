@@ -81,3 +81,5 @@ GPU最终实测源快照ed36c024a31f6343277f5330e114f0d6439d86f8；双机launche
 本轮M1完成即停，M2–M8均NOT_RUN。
 
 收尾校验PASS：runs/m1-final-validation-20261010T040704Z，5项退出0及证据断言通过；040640Z检查器路径错误的exit128已保留并更正聚合状态，未追改GPU结果。M0两份旧文档的服务器地址已从当前文件移除，备份只留服务器；既有公开Git历史未重写，历史隐私边界需另行处理。
+
+GitHub同步PASS：服务器源c50e53a8e8e70ae83c54b14841b69b397b18e001 → GitHub 5899c098345a4b96c75970db8a18a6ff7ce86930，全部文件tree 734ba0c4244064c4fad632c0d21eb06d5784fde1完全匹配，17个变化blob逐一核验、main回读成功。公开回执docs/m1/SYNC.json；回执与STATUS这次追加亦从服务器提交后同步，最终双方commit/tree及工作树检查保存在.git/m1-sync-final.json。没有force/历史重写，无原始日志/完整机器数据/凭证上传。M1停止，M2未运行。

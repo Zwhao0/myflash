@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "source_commit": "c50e53a8e8e70ae83c54b14841b69b397b18e001",
+  "github_commit": "5899c098345a4b96c75970db8a18a6ff7ce86930",
+  "identical_tree": "734ba0c4244064c4fad632c0d21eb06d5784fde1",
+  "changed_blob_matches": 17,
+  "tracked_file_count": 43,
+  "readback_match": true,
+  "expected_previous_main": "5f1897cc45be3330a694ded669722be4b415a810",
+  "force": false,
+  "privacy_scan": "PASS",
+  "raw_logs_uploaded": false,
+  "history_rewritten": false
+}
