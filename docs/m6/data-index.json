@@ -1448,6 +1448,72 @@
       "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
     },
     {
+      "path": "runs/m6a-remote-evidence/driver/postflight-actual.json",
+      "sha256": "b7dfe6d937df84fc343d77326b399fb163770020f1d58c5c7ed93d94ec77c84f",
+      "bytes": 1440,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/driver/validation-04-driver.json",
+      "sha256": "041563ca1853cfa692b0fe2e471b0e24b09ba82d89d4d09c36b3343c8af93bce",
+      "bytes": 568,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/driver/validation-04-driver.log",
+      "sha256": "c2a13609c118589da6838e0fd9e03b603760f0b59140a71b0ea8c412f96ad67d",
+      "bytes": 171,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/installation/command-1.log",
+      "sha256": "e4187b14964106b9a04c82f6bd927ca7532989e3b395ef2838929a8d80335ab5",
+      "bytes": 22030,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/installation/command-2.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/installation/command-3.log",
+      "sha256": "677bce46a8fbe56fbf482e30662a8bd87da5590faaa5321b27344169c747d9a5",
+      "bytes": 114,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/installation/command-4.log",
+      "sha256": "3d9e9522d6283a7d01dc78522d19b245626a16f78b9c2dcbe989df8278a1859e",
+      "bytes": 80,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/installation/command-5.log",
+      "sha256": "14e6eb17bfb2bed74871b7ae972ad0ef1a6fdf08966bf35ec7ef279ad87dff57",
+      "bytes": 6,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/installation/dependency-lock.json",
+      "sha256": "86392dd71936cddbac6483de180179e1e2841d4b46e79df53de0ee786be75d57",
+      "bytes": 745,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/installation/install-private.py",
+      "sha256": "0c2384f2004a8965e917d19ed320f9b878fb8dcb02f313dd40149a8c2c36aace",
+      "bytes": 2738,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/installation/installation.json",
+      "sha256": "e39e457f2142495bd26fc753b7e83e66bf50d703ec0d4cbe05099fdf4871322a",
+      "bytes": 399251,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
       "path": "runs/m6a-remote-evidence/m6a-server-relevant-03/control-states/test_ambiguous_and_no_candidate_preserved.json",
       "sha256": "11b330e8a29317217c5336eb4bcbe13f43ca1d5badf3b91b7dd106cd7e70573f",
       "bytes": 1819,
@@ -1667,6 +1733,270 @@
       "path": "runs/m6a-remote-evidence/m6a-server-relevant-03/redis.log",
       "sha256": "0c7f779040dd2d60ff89df4ed605a195c5cd91c24b34411d1d6b55ea73ff240c",
       "bytes": 149,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-relevant-05/control-states/test_ambiguous_and_no_candidate_preserved.json",
+      "sha256": "11b330e8a29317217c5336eb4bcbe13f43ca1d5badf3b91b7dd106cd7e70573f",
+      "bytes": 1819,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-relevant-05/control-states/test_cas_concurrent_publication_and_fenced_registration.json",
+      "sha256": "ec58ed2ab328daa103967fe0ff312d558484360c9c512b1c2c224b1da5dbce59",
+      "bytes": 3016,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-relevant-05/control-states/test_command_ack_without_application_and_missing_scope.json",
+      "sha256": "3116783a1584c54009ee5e70331ec26f40c364f52ad1677671416cb1e2145da6",
+      "bytes": 24422,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-relevant-05/control-states/test_data_timeout_not_no_candidate.json",
+      "sha256": "bc4c0f0bfff72543fb2a744342c7024a755e28f61a8ad5a2392f0c92df0632e7",
+      "bytes": 36043,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-relevant-05/control-states/test_delayed_transport_bounded_error.json",
+      "sha256": "446a642420f2c5149c647ca5e9988fa196925f54cd23645078909cd8576146a5",
+      "bytes": 25326,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-relevant-05/control-states/test_disconnect_then_reconcile_not_no_candidate.json",
+      "sha256": "eec99c4e3d6dadf1870ab5cb314f8591eaab4bbe6ebbd9d68a3ff8eb433fe81c",
+      "bytes": 25347,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-relevant-05/control-states/test_duplicate_ack_is_exact_idempotent.json",
+      "sha256": "e62d596a55affb2229cc2f02cbdef9dcef31c9fe9769cce70c86cb0b3cf4bb69",
+      "bytes": 9112,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-relevant-05/control-states/test_finished_manual_request_stays_idempotent_and_clock_monotone.json",
+      "sha256": "1c988b596538e989e2cd3cbb01364cfb004c34f849a7a4cfd5accc9451fe55fa",
+      "bytes": 68895,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-relevant-05/control-states/test_future_applied_boundary_cannot_arm_earlier_window.json",
+      "sha256": "19c7c6f23b74f74bdb14549fe6ba3367f60b01b03915a56eeb4c7c6e81b8d287",
+      "bytes": 12568,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-relevant-05/control-states/test_global_restart_aborts_and_fences_old_commands.json",
+      "sha256": "e212e919dc479b1b43674ee236b3e6de022216c6a37c710ce1c2c58d55902874",
+      "bytes": 25438,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-relevant-05/control-states/test_group_shared_counts_not_records.json",
+      "sha256": "11b330e8a29317217c5336eb4bcbe13f43ca1d5badf3b91b7dd106cd7e70573f",
+      "bytes": 1819,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-relevant-05/control-states/test_iteration_duplicate_conflict_gap_retention_restart.json",
+      "sha256": "027b7cbc0656e21855cfb852507c973a674c2cbda9b4c9fc39a3aac479a0e487",
+      "bytes": 363381,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-relevant-05/control-states/test_iteration_rank_isolation_and_missing_boundary.json",
+      "sha256": "43505b061f857b5cc67db4fc1e3dddfb1d444a4bd65ff1bec4ad3671d97df2f6",
+      "bytes": 3289,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-relevant-05/control-states/test_iteration_timeout_and_cursor_gap_visible.json",
+      "sha256": "11b330e8a29317217c5336eb4bcbe13f43ca1d5badf3b91b7dd106cd7e70573f",
+      "bytes": 1819,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-relevant-05/control-states/test_iteration_unconfirmed_reply_retry_and_corruption.json",
+      "sha256": "0e63e6531d22668e5e9511e4bcda9aa0306204bb1c970a3e74346140726093e8",
+      "bytes": 2635,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-relevant-05/control-states/test_local_restart_invalidates_epoch_and_fences_old_owner.json",
+      "sha256": "7c355932caf5455eabc7e888b6ef361556643b2470ddde187766619d950fa416",
+      "bytes": 81639,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-relevant-05/control-states/test_lost_registration_restart_blocked.json",
+      "sha256": "18bd149d9224d50af331c7fdea3f59db808cc46380e01398b96b14f52ac68e6b",
+      "bytes": 11,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-relevant-05/control-states/test_manifest_coverage_and_hash_integrity.json",
+      "sha256": "f332a1fe310753773a4f285611a17fc02778b862bf050d84fd60de838403ed23",
+      "bytes": 36923,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-relevant-05/control-states/test_manual_request_idempotence_and_conflict.json",
+      "sha256": "4265a1c73b22e2981b9d44215a426e85d8d8f5858e4d6afad3d2c86ef192ba1c",
+      "bytes": 8203,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-relevant-05/control-states/test_manual_trigger_lost_store_returns_blocked.json",
+      "sha256": "18bd149d9224d50af331c7fdea3f59db808cc46380e01398b96b14f52ac68e6b",
+      "bytes": 11,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-relevant-05/control-states/test_missing_data_fails_closed.json",
+      "sha256": "86d9e22b89bf34f0660baccbbdba33010c4ac853b9cad2ec1543ca72c01a987c",
+      "bytes": 35240,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-relevant-05/control-states/test_missing_iteration_not_zero_filled.json",
+      "sha256": "2b8df2f1aef24113ef5ee738e456867c70a2dfaed5e9d86e1f9a240b85a5011e",
+      "bytes": 1198,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-relevant-05/control-states/test_missing_node_timeout.json",
+      "sha256": "0df35e19082122f580e3793abc2e0231bd46bcd7f51da395b520503801b8dcbb",
+      "bytes": 21161,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-relevant-05/control-states/test_no_previous_epoch_data_reuse.json",
+      "sha256": "92b9449bf7ae8f0bd632de87c20e01f9dfe62a6f402b1a041f1c686d92038a88",
+      "bytes": 82752,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-relevant-05/control-states/test_partial_reset_blocks_next_epoch.json",
+      "sha256": "0d496bcd75a544be6fa298aa37d3d73ab1789f19afa2fd64a8312f460a10a5a5",
+      "bytes": 39879,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-relevant-05/control-states/test_profile_corruption_old_run_old_epoch_unsupported.json",
+      "sha256": "e1d0bd068cb9b9c8c4274b587db9fb6b01e78c8bf77c131ae67211fe66076c8b",
+      "bytes": 223573,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-relevant-05/control-states/test_profile_duplicate_origin_rejected.json",
+      "sha256": "a94b9250e2afa1934a610e49a1e4c2b28089a63950596857dc3acaa681bfff81",
+      "bytes": 38646,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-relevant-05/control-states/test_redis_timeout_validation_before_any_network.json",
+      "sha256": "11b330e8a29317217c5336eb4bcbe13f43ca1d5badf3b91b7dd106cd7e70573f",
+      "bytes": 1819,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-relevant-05/control-states/test_restart_during_partial_reset_requires_new_boundaries.json",
+      "sha256": "130b359ea55019b88bcab7effdee933a5fafacb86a6966ab4036c852cb575eab",
+      "bytes": 54013,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-relevant-05/control-states/test_sample_window_boundary_not_cpu_wall_duration.json",
+      "sha256": "85da4e4318b32fadd64b2556d1c2443a86042cf96c49291fe3c77506381b1963",
+      "bytes": 26468,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-relevant-05/control-states/test_two_epochs_m4_equivalence_and_traces.json",
+      "sha256": "3ad6186e932cf8c6859f6fdd3f14a5c44096dc232fc21acb5025d8df71c9dd09",
+      "bytes": 114269,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-relevant-05/control-states/test_window_ms_floor_and_long_iteration.json",
+      "sha256": "e1c91c1c9b811c3510f28221dfbad80701c7be88a35248aa98dbb7816fc4f297",
+      "bytes": 12781,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-relevant-05/control.log",
+      "sha256": "f82e0203b0e192ca9b76662880cc066b9c57c17077c16c2c074e279841f6a022",
+      "bytes": 4005,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-relevant-05/demo/receipt.json",
+      "sha256": "ad4ca4b9604b056de83ab4a33da9acad7cb1dcc4b40a33d928d9481068efbf31",
+      "bytes": 217372,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-relevant-05/demo.log",
+      "sha256": "e6d9e29c2caa18023664d9049b2b2490c26aa7024509186780dd55dc4b400961",
+      "bytes": 215,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-relevant-05/manifest.json",
+      "sha256": "7d9c1c5318463af1796d359aebd2a13c008139950244d99cfeb3022e11a8b326",
+      "bytes": 277798,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-relevant-05/redis-states/actual-server-restart.json",
+      "sha256": "10d52444574f79879517464c848c8e7f0faf90755adbac5bb9a55d5daf3c1bdc",
+      "bytes": 72992,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-relevant-05/redis-states/test_acceptance_timeout_partial_monitor.json",
+      "sha256": "a9316b1b0a68cfc5813459e79605368d1ddbfad301e2c362ac482e0cd6466771",
+      "bytes": 14320,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-relevant-05/redis-states/test_actual_server_stop_restart_and_lost_document.json",
+      "sha256": "b3c7199715b661ddbe5277bb20ec575b0835e34330b1b48c47b7d98d01e8201e",
+      "bytes": 1695,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-relevant-05/redis-states/test_client_reconnect_and_namespace_isolation.json",
+      "sha256": "08fcc1d0fb05df9d02e320bdf9dc469cfa97e14c95e2c565db3fd682f305fdef",
+      "bytes": 7749,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-relevant-05/redis-states/test_concurrent_idempotence_conflict_and_500.json",
+      "sha256": "9bea1797f41b04f1bd86475ad9710f32180dbbed752a92bc6e314e4cf22f171e",
+      "bytes": 356530,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-relevant-05/redis-states/test_restart_fencing_and_previous_epoch_not_pooled.json",
+      "sha256": "02ddaa7484f9a9422028cb7be4e723c85284c7ef15bbb154d758bb120e1b7350",
+      "bytes": 48537,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-relevant-05/redis-states/test_two_epochs_actual_lua_and_private_socket.json",
+      "sha256": "718b39bd93811b6e1607bdc9c05c5f9b73517a7badc1c11e6e2dd891b0ee14d5",
+      "bytes": 109778,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-relevant-05/redis.log",
+      "sha256": "2351619e1ac326e13043f7b8f8a2fd2f8b9ab986d78d91e4153970af59b7218d",
+      "bytes": 1024,
       "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
     },
     {
@@ -4604,6 +4934,1542 @@
       "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
     },
     {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/contract.json",
+      "sha256": "bc810bea980ffd5db975d8fbca5ba4651ae732916bc871912fb07329bdcc309c",
+      "bytes": 20522,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/contract.log",
+      "sha256": "a5cf8743802ffd090677978eda15a8c60f51488c16457560567253d03796bcf0",
+      "bytes": 70,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/control-states/test_ambiguous_and_no_candidate_preserved.json",
+      "sha256": "11b330e8a29317217c5336eb4bcbe13f43ca1d5badf3b91b7dd106cd7e70573f",
+      "bytes": 1819,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/control-states/test_cas_concurrent_publication_and_fenced_registration.json",
+      "sha256": "7d8996385fc8faad56af5f6011da31f9165f8880a8c5a73147734a66c59ee99d",
+      "bytes": 3016,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/control-states/test_command_ack_without_application_and_missing_scope.json",
+      "sha256": "3116783a1584c54009ee5e70331ec26f40c364f52ad1677671416cb1e2145da6",
+      "bytes": 24422,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/control-states/test_data_timeout_not_no_candidate.json",
+      "sha256": "bc4c0f0bfff72543fb2a744342c7024a755e28f61a8ad5a2392f0c92df0632e7",
+      "bytes": 36043,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/control-states/test_delayed_transport_bounded_error.json",
+      "sha256": "446a642420f2c5149c647ca5e9988fa196925f54cd23645078909cd8576146a5",
+      "bytes": 25326,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/control-states/test_disconnect_then_reconcile_not_no_candidate.json",
+      "sha256": "eec99c4e3d6dadf1870ab5cb314f8591eaab4bbe6ebbd9d68a3ff8eb433fe81c",
+      "bytes": 25347,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/control-states/test_duplicate_ack_is_exact_idempotent.json",
+      "sha256": "e62d596a55affb2229cc2f02cbdef9dcef31c9fe9769cce70c86cb0b3cf4bb69",
+      "bytes": 9112,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/control-states/test_finished_manual_request_stays_idempotent_and_clock_monotone.json",
+      "sha256": "1c988b596538e989e2cd3cbb01364cfb004c34f849a7a4cfd5accc9451fe55fa",
+      "bytes": 68895,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/control-states/test_future_applied_boundary_cannot_arm_earlier_window.json",
+      "sha256": "19c7c6f23b74f74bdb14549fe6ba3367f60b01b03915a56eeb4c7c6e81b8d287",
+      "bytes": 12568,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/control-states/test_global_restart_aborts_and_fences_old_commands.json",
+      "sha256": "e212e919dc479b1b43674ee236b3e6de022216c6a37c710ce1c2c58d55902874",
+      "bytes": 25438,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/control-states/test_group_shared_counts_not_records.json",
+      "sha256": "11b330e8a29317217c5336eb4bcbe13f43ca1d5badf3b91b7dd106cd7e70573f",
+      "bytes": 1819,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/control-states/test_iteration_duplicate_conflict_gap_retention_restart.json",
+      "sha256": "f4eae1630cc889e6652187c50aaad409dc45523fef8f1757f876c7a17b2091ed",
+      "bytes": 363392,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/control-states/test_iteration_rank_isolation_and_missing_boundary.json",
+      "sha256": "3942c5a288da0e58abc66063ad00b93d731d37cac3ec11c990dd62d8d121e8dd",
+      "bytes": 3289,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/control-states/test_iteration_timeout_and_cursor_gap_visible.json",
+      "sha256": "11b330e8a29317217c5336eb4bcbe13f43ca1d5badf3b91b7dd106cd7e70573f",
+      "bytes": 1819,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/control-states/test_iteration_unconfirmed_reply_retry_and_corruption.json",
+      "sha256": "540b016b921156533e6b9a3cd412f23c1dba88a479484f0d2f74df2606630d0b",
+      "bytes": 2635,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/control-states/test_local_restart_invalidates_epoch_and_fences_old_owner.json",
+      "sha256": "7c355932caf5455eabc7e888b6ef361556643b2470ddde187766619d950fa416",
+      "bytes": 81639,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/control-states/test_lost_registration_restart_blocked.json",
+      "sha256": "18bd149d9224d50af331c7fdea3f59db808cc46380e01398b96b14f52ac68e6b",
+      "bytes": 11,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/control-states/test_manifest_coverage_and_hash_integrity.json",
+      "sha256": "f332a1fe310753773a4f285611a17fc02778b862bf050d84fd60de838403ed23",
+      "bytes": 36923,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/control-states/test_manual_request_idempotence_and_conflict.json",
+      "sha256": "4265a1c73b22e2981b9d44215a426e85d8d8f5858e4d6afad3d2c86ef192ba1c",
+      "bytes": 8203,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/control-states/test_manual_trigger_lost_store_returns_blocked.json",
+      "sha256": "18bd149d9224d50af331c7fdea3f59db808cc46380e01398b96b14f52ac68e6b",
+      "bytes": 11,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/control-states/test_missing_data_fails_closed.json",
+      "sha256": "86d9e22b89bf34f0660baccbbdba33010c4ac853b9cad2ec1543ca72c01a987c",
+      "bytes": 35240,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/control-states/test_missing_iteration_not_zero_filled.json",
+      "sha256": "2b8df2f1aef24113ef5ee738e456867c70a2dfaed5e9d86e1f9a240b85a5011e",
+      "bytes": 1198,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/control-states/test_missing_node_timeout.json",
+      "sha256": "0df35e19082122f580e3793abc2e0231bd46bcd7f51da395b520503801b8dcbb",
+      "bytes": 21161,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/control-states/test_no_previous_epoch_data_reuse.json",
+      "sha256": "92b9449bf7ae8f0bd632de87c20e01f9dfe62a6f402b1a041f1c686d92038a88",
+      "bytes": 82752,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/control-states/test_partial_reset_blocks_next_epoch.json",
+      "sha256": "0d496bcd75a544be6fa298aa37d3d73ab1789f19afa2fd64a8312f460a10a5a5",
+      "bytes": 39879,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/control-states/test_profile_corruption_old_run_old_epoch_unsupported.json",
+      "sha256": "e1d0bd068cb9b9c8c4274b587db9fb6b01e78c8bf77c131ae67211fe66076c8b",
+      "bytes": 223573,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/control-states/test_profile_duplicate_origin_rejected.json",
+      "sha256": "a94b9250e2afa1934a610e49a1e4c2b28089a63950596857dc3acaa681bfff81",
+      "bytes": 38646,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/control-states/test_redis_timeout_validation_before_any_network.json",
+      "sha256": "11b330e8a29317217c5336eb4bcbe13f43ca1d5badf3b91b7dd106cd7e70573f",
+      "bytes": 1819,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/control-states/test_restart_during_partial_reset_requires_new_boundaries.json",
+      "sha256": "130b359ea55019b88bcab7effdee933a5fafacb86a6966ab4036c852cb575eab",
+      "bytes": 54013,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/control-states/test_sample_window_boundary_not_cpu_wall_duration.json",
+      "sha256": "85da4e4318b32fadd64b2556d1c2443a86042cf96c49291fe3c77506381b1963",
+      "bytes": 26468,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/control-states/test_two_epochs_m4_equivalence_and_traces.json",
+      "sha256": "3ad6186e932cf8c6859f6fdd3f14a5c44096dc232fc21acb5025d8df71c9dd09",
+      "bytes": 114269,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/control-states/test_window_ms_floor_and_long_iteration.json",
+      "sha256": "e1c91c1c9b811c3510f28221dfbad80701c7be88a35248aa98dbb7816fc4f297",
+      "bytes": 12781,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/control.log",
+      "sha256": "ec37ad39bc8aceb482fa404de2c245c4aa5468db3f7f53b0079812762ed449b4",
+      "bytes": 4005,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/demo/receipt.json",
+      "sha256": "ad4ca4b9604b056de83ab4a33da9acad7cb1dcc4b40a33d928d9481068efbf31",
+      "bytes": 217372,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/demo.log",
+      "sha256": "e6d9e29c2caa18023664d9049b2b2490c26aa7024509186780dd55dc4b400961",
+      "bytes": 215,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/detection.log",
+      "sha256": "fc23540c8545d4075fe2f0420accd022e74e5566176c3bd4c597964ff02c2e14",
+      "bytes": 106,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m2_hook_smoke.log",
+      "sha256": "6ce49d99a5864667701d171a86678be79371d3a8b6ea6dd178440ee2ad00be1d",
+      "bytes": 253,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m2_ring.log",
+      "sha256": "0a44a42a714980cfb039ce4ba3a22738963cdb1c4912248b0e0e9711ee5f62d3",
+      "bytes": 1073,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m3_hook.log",
+      "sha256": "f46bfe4e89cb34d7ca821798145b66de6b669eec86d4325b6e4f410ab8096f57",
+      "bytes": 214,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m3_reader.log",
+      "sha256": "eefda34fc0498a3cda9acc6c82a8a7a929fc23da5f8db88f47eaf58bec46f5e6",
+      "bytes": 2346,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m3_validation.log",
+      "sha256": "1dfe30e16aacd62c0fcca5f3547c8efe395d271fd062ad904361bab0181e936a",
+      "bytes": 247,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/aggregation_weights_disagree/actual.json",
+      "sha256": "7e17a8c62c749bedeaab2f2930416191773ef56547bcaaff1e537651042749a2",
+      "bytes": 6617,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/aggregation_weights_disagree/exit_code.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "bytes": 2,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/aggregation_weights_disagree/stdout.log",
+      "sha256": "cbac831c261fb9499422724ca2babfb224a1f939880d91972ead91ee7ae98795",
+      "bytes": 72,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/bad_cuda_evidence/actual.json",
+      "sha256": "c5b2ddca3b7c3223bd4ea8ee7927c368b66dfef7dc42c794816d320024c4ddf7",
+      "bytes": 261,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/bad_cuda_evidence/exit_code.txt",
+      "sha256": "53c234e5e8472b6ac51c1ae1cab3fe06fad053beb8ebfd8977b010655bfdd3c3",
+      "bytes": 2,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/bad_cuda_evidence/stdout.log",
+      "sha256": "053ff3f595a17da6d9e4a1d467ca9a9668d434a32e387bc6fededcc5383c3a80",
+      "bytes": 68,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/bad_duration/actual.json",
+      "sha256": "c8cab823cdb65aa4565ec4348fac34441b5425b1e17a0888d2d9833d29c65b1d",
+      "bytes": 240,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/bad_duration/exit_code.txt",
+      "sha256": "53c234e5e8472b6ac51c1ae1cab3fe06fad053beb8ebfd8977b010655bfdd3c3",
+      "bytes": 2,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/bad_duration/stdout.log",
+      "sha256": "053ff3f595a17da6d9e4a1d467ca9a9668d434a32e387bc6fededcc5383c3a80",
+      "bytes": 68,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/bad_hash/actual.json",
+      "sha256": "61aeaf18f0a96209b6ec780c39b62b23570ed90baf9271e92673462001f4c37c",
+      "bytes": 247,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/bad_hash/exit_code.txt",
+      "sha256": "53c234e5e8472b6ac51c1ae1cab3fe06fad053beb8ebfd8977b010655bfdd3c3",
+      "bytes": 2,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/bad_hash/stdout.log",
+      "sha256": "053ff3f595a17da6d9e4a1d467ca9a9668d434a32e387bc6fededcc5383c3a80",
+      "bytes": 68,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/boolean_duration/actual.json",
+      "sha256": "00e579fffaf7ba7f9461451b55ed566a4c796940c02c436b438b9a7c3b54478d",
+      "bytes": 248,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/boolean_duration/exit_code.txt",
+      "sha256": "53c234e5e8472b6ac51c1ae1cab3fe06fad053beb8ebfd8977b010655bfdd3c3",
+      "bytes": 2,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/boolean_duration/stdout.log",
+      "sha256": "053ff3f595a17da6d9e4a1d467ca9a9668d434a32e387bc6fededcc5383c3a80",
+      "bytes": 68,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/cross_comm_group_correlated/actual.json",
+      "sha256": "633453fc5e3b010d204de27258664e111f1415f481481d5c1799c3309783973d",
+      "bytes": 3654,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/cross_comm_group_correlated/exit_code.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "bytes": 2,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/cross_comm_group_correlated/stdout.log",
+      "sha256": "4aae4220573ca96f0353c1a55cc425e34b151bac70c325380301c22e3c8cebf8",
+      "bytes": 66,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/csv_evidence_valid/actual.json",
+      "sha256": "f99ec37db1c21842fbf56d2e1f0a9e025ae66b7d53040e846c8b9b66b9946e70",
+      "bytes": 6505,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/csv_evidence_valid/exit_code.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "bytes": 2,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/csv_evidence_valid/stdout.log",
+      "sha256": "dda7dd81d6f760edb5a8a9f41bac717c426e712fb661b0ff5c83d7c57885fb9e",
+      "bytes": 76,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/csv_measurement_override_rejected/actual.json",
+      "sha256": "6e10284cae17ab279a124009630729b3467a23ab0de1077706b7c7f5c45226f5",
+      "bytes": 268,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/csv_measurement_override_rejected/exit_code.txt",
+      "sha256": "53c234e5e8472b6ac51c1ae1cab3fe06fad053beb8ebfd8977b010655bfdd3c3",
+      "bytes": 2,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/csv_measurement_override_rejected/stdout.log",
+      "sha256": "053ff3f595a17da6d9e4a1d467ca9a9668d434a32e387bc6fededcc5383c3a80",
+      "bytes": 68,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/csv_missing_evidence/actual.json",
+      "sha256": "24d2e3d5508772425a620c0e278c9e4374dca62bbeb67cf3e19e68044f6cb034",
+      "bytes": 253,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/csv_missing_evidence/exit_code.txt",
+      "sha256": "53c234e5e8472b6ac51c1ae1cab3fe06fad053beb8ebfd8977b010655bfdd3c3",
+      "bytes": 2,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/csv_missing_evidence/stdout.log",
+      "sha256": "053ff3f595a17da6d9e4a1d467ca9a9668d434a32e387bc6fededcc5383c3a80",
+      "bytes": 68,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/csv_missing_supplement/actual.json",
+      "sha256": "b2e83dbe010cfb02c934a550d3aadfc0dba7d9d14a1aaf7e7ad09b205598e404",
+      "bytes": 251,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/csv_missing_supplement/exit_code.txt",
+      "sha256": "53c234e5e8472b6ac51c1ae1cab3fe06fad053beb8ebfd8977b010655bfdd3c3",
+      "bytes": 2,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/csv_missing_supplement/stdout.log",
+      "sha256": "053ff3f595a17da6d9e4a1d467ca9a9668d434a32e387bc6fededcc5383c3a80",
+      "bytes": 68,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/csv_wrong_proof_hash/actual.json",
+      "sha256": "a9fec18312f27896edd559e2d778603522cc3b5fa59977d973d85ba9a5afd84b",
+      "bytes": 251,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/csv_wrong_proof_hash/exit_code.txt",
+      "sha256": "53c234e5e8472b6ac51c1ae1cab3fe06fad053beb8ebfd8977b010655bfdd3c3",
+      "bytes": 2,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/csv_wrong_proof_hash/stdout.log",
+      "sha256": "053ff3f595a17da6d9e4a1d467ca9a9668d434a32e387bc6fededcc5383c3a80",
+      "bytes": 68,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/cv_boundary_exact/actual.json",
+      "sha256": "7a368c569e684fa0919a36c6d19331fbbd8f7df0188b58def8a8f37f08463796",
+      "bytes": 5905,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/cv_boundary_exact/exit_code.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "bytes": 2,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/cv_boundary_exact/stdout.log",
+      "sha256": "dda7dd81d6f760edb5a8a9f41bac717c426e712fb661b0ff5c83d7c57885fb9e",
+      "bytes": 76,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/declared_communicator_absent/actual.json",
+      "sha256": "a295508154a2b13bdf8d78ac15164116070f75199234b2154f6b2544c51cfadb",
+      "bytes": 263,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/declared_communicator_absent/exit_code.txt",
+      "sha256": "53c234e5e8472b6ac51c1ae1cab3fe06fad053beb8ebfd8977b010655bfdd3c3",
+      "bytes": 2,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/declared_communicator_absent/stdout.log",
+      "sha256": "053ff3f595a17da6d9e4a1d467ca9a9668d434a32e387bc6fededcc5383c3a80",
+      "bytes": 68,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/duplicate_sample/actual.json",
+      "sha256": "b9033e9d4bb63915c352ea9bf845fc3db7093711921c522b562a17b4328014d8",
+      "bytes": 240,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/duplicate_sample/exit_code.txt",
+      "sha256": "53c234e5e8472b6ac51c1ae1cab3fe06fad053beb8ebfd8977b010655bfdd3c3",
+      "bytes": 2,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/duplicate_sample/stdout.log",
+      "sha256": "053ff3f595a17da6d9e4a1d467ca9a9668d434a32e387bc6fededcc5383c3a80",
+      "bytes": 68,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/empty_input/actual.json",
+      "sha256": "17cec3a2f51f7ba4c8e7b153bb969e9ff24d1838b80ec4c1c4c2d27c1bbf50e4",
+      "bytes": 243,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/empty_input/exit_code.txt",
+      "sha256": "53c234e5e8472b6ac51c1ae1cab3fe06fad053beb8ebfd8977b010655bfdd3c3",
+      "bytes": 2,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/empty_input/stdout.log",
+      "sha256": "053ff3f595a17da6d9e4a1d467ca9a9668d434a32e387bc6fededcc5383c3a80",
+      "bytes": 68,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/epoch_pollution/actual.json",
+      "sha256": "508896a196fc575aa8bc548945ed3b0972478929deeace33c937ba812d9d067d",
+      "bytes": 243,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/epoch_pollution/exit_code.txt",
+      "sha256": "53c234e5e8472b6ac51c1ae1cab3fe06fad053beb8ebfd8977b010655bfdd3c3",
+      "bytes": 2,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/epoch_pollution/stdout.log",
+      "sha256": "053ff3f595a17da6d9e4a1d467ca9a9668d434a32e387bc6fededcc5383c3a80",
+      "bytes": 68,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/failed_nccl_result/actual.json",
+      "sha256": "c5b2ddca3b7c3223bd4ea8ee7927c368b66dfef7dc42c794816d320024c4ddf7",
+      "bytes": 261,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/failed_nccl_result/exit_code.txt",
+      "sha256": "53c234e5e8472b6ac51c1ae1cab3fe06fad053beb8ebfd8977b010655bfdd3c3",
+      "bytes": 2,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/failed_nccl_result/stdout.log",
+      "sha256": "053ff3f595a17da6d9e4a1d467ca9a9668d434a32e387bc6fededcc5383c3a80",
+      "bytes": 68,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/group_duration_mismatch/actual.json",
+      "sha256": "0a50e7ddc96a4b4289424546e0a9d1bdf740b7f830f68696fe1ebafec420efdd",
+      "bytes": 252,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/group_duration_mismatch/exit_code.txt",
+      "sha256": "53c234e5e8472b6ac51c1ae1cab3fe06fad053beb8ebfd8977b010655bfdd3c3",
+      "bytes": 2,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/group_duration_mismatch/stdout.log",
+      "sha256": "053ff3f595a17da6d9e4a1d467ca9a9668d434a32e387bc6fededcc5383c3a80",
+      "bytes": 68,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/heterogeneous_duration_baseline/actual.json",
+      "sha256": "27299b56c054d11c16be3b1daaa351730bc17aac825edf1792f193edbf958b04",
+      "bytes": 6003,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/heterogeneous_duration_baseline/exit_code.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "bytes": 2,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/heterogeneous_duration_baseline/stdout.log",
+      "sha256": "dda7dd81d6f760edb5a8a9f41bac717c426e712fb661b0ff5c83d7c57885fb9e",
+      "bytes": 76,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/infinite_duration/actual.json",
+      "sha256": "ace20d64bf8a042816e0c1bc14f519cdc8df65b6ab83a399197a6f64932bba4d",
+      "bytes": 251,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/infinite_duration/exit_code.txt",
+      "sha256": "53c234e5e8472b6ac51c1ae1cab3fe06fad053beb8ebfd8977b010655bfdd3c3",
+      "bytes": 2,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/infinite_duration/stdout.log",
+      "sha256": "053ff3f595a17da6d9e4a1d467ca9a9668d434a32e387bc6fededcc5383c3a80",
+      "bytes": 68,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/installed_nccl_float8_metadata/actual.json",
+      "sha256": "e5bb92e6f51d9de8949bdda2910a5e0528080ed50b710912484af7ee3645ea97",
+      "bytes": 6004,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/installed_nccl_float8_metadata/exit_code.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "bytes": 2,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/installed_nccl_float8_metadata/stdout.log",
+      "sha256": "dda7dd81d6f760edb5a8a9f41bac717c426e712fb661b0ff5c83d7c57885fb9e",
+      "bytes": 76,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/invalid_duration_status/actual.json",
+      "sha256": "931108b6eabef6da09bc4090fc072e22b3f42e310f302abb89ca72774332f342",
+      "bytes": 258,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/invalid_duration_status/exit_code.txt",
+      "sha256": "53c234e5e8472b6ac51c1ae1cab3fe06fad053beb8ebfd8977b010655bfdd3c3",
+      "bytes": 2,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/invalid_duration_status/stdout.log",
+      "sha256": "053ff3f595a17da6d9e4a1d467ca9a9668d434a32e387bc6fededcc5383c3a80",
+      "bytes": 68,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/large_finite_no_overflow/actual.json",
+      "sha256": "ebf117c09c7e9f92504ed03de5c64fd3509bfc82a41c0e626734508e15a47029",
+      "bytes": 4182,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/large_finite_no_overflow/exit_code.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "bytes": 2,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/large_finite_no_overflow/stdout.log",
+      "sha256": "4aae4220573ca96f0353c1a55cc425e34b151bac70c325380301c22e3c8cebf8",
+      "bytes": 66,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/m3_zero_duration/actual.json",
+      "sha256": "5ab0b5317c5092d20d81b320d78f248419eb9fa903ea0fd0878b373e26d0a60f",
+      "bytes": 256,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/m3_zero_duration/exit_code.txt",
+      "sha256": "53c234e5e8472b6ac51c1ae1cab3fe06fad053beb8ebfd8977b010655bfdd3c3",
+      "bytes": 2,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/m3_zero_duration/stdout.log",
+      "sha256": "053ff3f595a17da6d9e4a1d467ca9a9668d434a32e387bc6fededcc5383c3a80",
+      "bytes": 68,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/manifest.json",
+      "sha256": "d05f5de18ca1da573a207f731339c2f3549ddfb717b2a23d596ef3953dc5e59f",
+      "bytes": 70096,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/max_is_not_clique_score/actual.json",
+      "sha256": "d5f918cc1c0f450f1037aea585b7596fe5f9d18ceaa1cdf7daa6f31c2d495dfd",
+      "bytes": 7136,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/max_is_not_clique_score/exit_code.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "bytes": 2,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/max_is_not_clique_score/stdout.log",
+      "sha256": "dda7dd81d6f760edb5a8a9f41bac717c426e712fb661b0ff5c83d7c57885fb9e",
+      "bytes": 76,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/minimum_tie/actual.json",
+      "sha256": "80eb7b6b8a6fe1dc730d7ca0c1c4f7ba0691c69050b6d0ce7377b4bd43daf138",
+      "bytes": 8028,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/minimum_tie/exit_code.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "bytes": 2,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/minimum_tie/stdout.log",
+      "sha256": "cbac831c261fb9499422724ca2babfb224a1f939880d91972ead91ee7ae98795",
+      "bytes": 72,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/missing_communicator/actual.json",
+      "sha256": "c8a4d7f619e326517acd741045ffec7033bb0c2fb9ed9c013d611c0d70b3726f",
+      "bytes": 253,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/missing_communicator/exit_code.txt",
+      "sha256": "53c234e5e8472b6ac51c1ae1cab3fe06fad053beb8ebfd8977b010655bfdd3c3",
+      "bytes": 2,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/missing_communicator/stdout.log",
+      "sha256": "053ff3f595a17da6d9e4a1d467ca9a9668d434a32e387bc6fededcc5383c3a80",
+      "bytes": 68,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/missing_duration/actual.json",
+      "sha256": "00e579fffaf7ba7f9461451b55ed566a4c796940c02c436b438b9a7c3b54478d",
+      "bytes": 248,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/missing_duration/exit_code.txt",
+      "sha256": "53c234e5e8472b6ac51c1ae1cab3fe06fad053beb8ebfd8977b010655bfdd3c3",
+      "bytes": 2,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/missing_duration/stdout.log",
+      "sha256": "053ff3f595a17da6d9e4a1d467ca9a9668d434a32e387bc6fededcc5383c3a80",
+      "bytes": 68,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/missing_parallel_states/actual.json",
+      "sha256": "85cc0214d91ed807229c7af85bac0d2fc5cfea5b1e06b4788f51c6967ea6b53e",
+      "bytes": 256,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/missing_parallel_states/exit_code.txt",
+      "sha256": "53c234e5e8472b6ac51c1ae1cab3fe06fad053beb8ebfd8977b010655bfdd3c3",
+      "bytes": 2,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/missing_parallel_states/stdout.log",
+      "sha256": "053ff3f595a17da6d9e4a1d467ca9a9668d434a32e387bc6fededcc5383c3a80",
+      "bytes": 68,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/missing_rank/actual.json",
+      "sha256": "a295508154a2b13bdf8d78ac15164116070f75199234b2154f6b2544c51cfadb",
+      "bytes": 263,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/missing_rank/exit_code.txt",
+      "sha256": "53c234e5e8472b6ac51c1ae1cab3fe06fad053beb8ebfd8977b010655bfdd3c3",
+      "bytes": 2,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/missing_rank/stdout.log",
+      "sha256": "053ff3f595a17da6d9e4a1d467ca9a9668d434a32e387bc6fededcc5383c3a80",
+      "bytes": 68,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/missing_sample/actual.json",
+      "sha256": "a295508154a2b13bdf8d78ac15164116070f75199234b2154f6b2544c51cfadb",
+      "bytes": 263,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/missing_sample/exit_code.txt",
+      "sha256": "53c234e5e8472b6ac51c1ae1cab3fe06fad053beb8ebfd8977b010655bfdd3c3",
+      "bytes": 2,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/missing_sample/stdout.log",
+      "sha256": "053ff3f595a17da6d9e4a1d467ca9a9668d434a32e387bc6fededcc5383c3a80",
+      "bytes": 68,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/missing_scope/actual.json",
+      "sha256": "0da2e03a20dd31d040ee6b5f8ad8fd8fb1affb307c993d2e213bcb1930737019",
+      "bytes": 244,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/missing_scope/exit_code.txt",
+      "sha256": "53c234e5e8472b6ac51c1ae1cab3fe06fad053beb8ebfd8977b010655bfdd3c3",
+      "bytes": 2,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/missing_scope/stdout.log",
+      "sha256": "053ff3f595a17da6d9e4a1d467ca9a9668d434a32e387bc6fededcc5383c3a80",
+      "bytes": 68,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/monitor_record/actual.json",
+      "sha256": "70ebb79ecfb765de41ee833a20b562594a60f1d8d932e44213bf1ded0b8ff0f1",
+      "bytes": 242,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/monitor_record/exit_code.txt",
+      "sha256": "53c234e5e8472b6ac51c1ae1cab3fe06fad053beb8ebfd8977b010655bfdd3c3",
+      "bytes": 2,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/monitor_record/stdout.log",
+      "sha256": "053ff3f595a17da6d9e4a1d467ca9a9668d434a32e387bc6fededcc5383c3a80",
+      "bytes": 68,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/multitag_agree/actual.json",
+      "sha256": "f7e9752b62e98a7ff1b600121e2d3f2a3cbb4d614ef5ba3d1d240bee32d45e8c",
+      "bytes": 9663,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/multitag_agree/exit_code.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "bytes": 2,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/multitag_agree/stdout.log",
+      "sha256": "dda7dd81d6f760edb5a8a9f41bac717c426e712fb661b0ff5c83d7c57885fb9e",
+      "bytes": 76,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/multitag_conflict/actual.json",
+      "sha256": "879ef98dee48d25a01222751fdae4c6290a31e4c7378f98bfad4199da18117ad",
+      "bytes": 10547,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/multitag_conflict/exit_code.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "bytes": 2,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/multitag_conflict/stdout.log",
+      "sha256": "cbac831c261fb9499422724ca2babfb224a1f939880d91972ead91ee7ae98795",
+      "bytes": 72,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/nan_duration/actual.json",
+      "sha256": "ace20d64bf8a042816e0c1bc14f519cdc8df65b6ab83a399197a6f64932bba4d",
+      "bytes": 251,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/nan_duration/exit_code.txt",
+      "sha256": "53c234e5e8472b6ac51c1ae1cab3fe06fad053beb8ebfd8977b010655bfdd3c3",
+      "bytes": 2,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/nan_duration/stdout.log",
+      "sha256": "053ff3f595a17da6d9e4a1d467ca9a9668d434a32e387bc6fededcc5383c3a80",
+      "bytes": 68,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/negative_duration/actual.json",
+      "sha256": "ace20d64bf8a042816e0c1bc14f519cdc8df65b6ab83a399197a6f64932bba4d",
+      "bytes": 251,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/negative_duration/exit_code.txt",
+      "sha256": "53c234e5e8472b6ac51c1ae1cab3fe06fad053beb8ebfd8977b010655bfdd3c3",
+      "bytes": 2,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/negative_duration/stdout.log",
+      "sha256": "053ff3f595a17da6d9e4a1d467ca9a9668d434a32e387bc6fededcc5383c3a80",
+      "bytes": 68,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/nested_group_shared_members/actual.json",
+      "sha256": "312c0cce85748e8931640baaa6ecf87accc8d3122bec1361dfb785e664179771",
+      "bytes": 5848,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/nested_group_shared_members/exit_code.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "bytes": 2,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/nested_group_shared_members/stdout.log",
+      "sha256": "dda7dd81d6f760edb5a8a9f41bac717c426e712fb661b0ff5c83d7c57885fb9e",
+      "bytes": 76,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/normal_equal/actual.json",
+      "sha256": "7d7248ff96d3f62911075bbecf24629bb62bbdd8bedeaae804fcf7b952c9db5a",
+      "bytes": 4146,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/normal_equal/exit_code.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "bytes": 2,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/normal_equal/stdout.log",
+      "sha256": "4aae4220573ca96f0353c1a55cc425e34b151bac70c325380301c22e3c8cebf8",
+      "bytes": 66,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/parallel_member_mismatch/actual.json",
+      "sha256": "2fd748c3b9f8b263ad0e2dc4f29e65cfb08108af5311ada500d50241793d7a25",
+      "bytes": 254,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/parallel_member_mismatch/exit_code.txt",
+      "sha256": "53c234e5e8472b6ac51c1ae1cab3fe06fad053beb8ebfd8977b010655bfdd3c3",
+      "bytes": 2,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/parallel_member_mismatch/stdout.log",
+      "sha256": "053ff3f595a17da6d9e4a1d467ca9a9668d434a32e387bc6fededcc5383c3a80",
+      "bytes": 68,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/raw_checksum_bad/actual.json",
+      "sha256": "f79e1ac698514cd3379af0c1216728aa4db8d8fd6ac5b006ed9696953eaa47be",
+      "bytes": 243,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/raw_checksum_bad/exit_code.txt",
+      "sha256": "53c234e5e8472b6ac51c1ae1cab3fe06fad053beb8ebfd8977b010655bfdd3c3",
+      "bytes": 2,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/raw_checksum_bad/stdout.log",
+      "sha256": "053ff3f595a17da6d9e4a1d467ca9a9668d434a32e387bc6fededcc5383c3a80",
+      "bytes": 68,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/raw_context_change/actual.json",
+      "sha256": "10054acaa87c8f764f75c6f4d2f28ad2f2599d181d984f81b64d1dfd25dec7ee",
+      "bytes": 243,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/raw_context_change/exit_code.txt",
+      "sha256": "53c234e5e8472b6ac51c1ae1cab3fe06fad053beb8ebfd8977b010655bfdd3c3",
+      "bytes": 2,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/raw_context_change/stdout.log",
+      "sha256": "053ff3f595a17da6d9e4a1d467ca9a9668d434a32e387bc6fededcc5383c3a80",
+      "bytes": 68,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/raw_ndjson_valid/actual.json",
+      "sha256": "6ff1ddc7dbe865f235e1b334bc8e02a7e1d9964108019af9174deff0149230d2",
+      "bytes": 6507,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/raw_ndjson_valid/exit_code.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "bytes": 2,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/raw_ndjson_valid/stdout.log",
+      "sha256": "dda7dd81d6f760edb5a8a9f41bac717c426e712fb661b0ff5c83d7c57885fb9e",
+      "bytes": 76,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/raw_sequence_gap/actual.json",
+      "sha256": "226ed43a022c196dd30d0211a962e1afa34aa7185b059ac45138831563ebfb45",
+      "bytes": 253,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/raw_sequence_gap/exit_code.txt",
+      "sha256": "53c234e5e8472b6ac51c1ae1cab3fe06fad053beb8ebfd8977b010655bfdd3c3",
+      "bytes": 2,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/raw_sequence_gap/stdout.log",
+      "sha256": "053ff3f595a17da6d9e4a1d467ca9a9668d434a32e387bc6fededcc5383c3a80",
+      "bytes": 68,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/raw_truncated_tail/actual.json",
+      "sha256": "543764e9df05eb1f7e359535d71eceedfb6e3a8d2ea29ce100723f07eb2288c7",
+      "bytes": 246,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/raw_truncated_tail/exit_code.txt",
+      "sha256": "53c234e5e8472b6ac51c1ae1cab3fe06fad053beb8ebfd8977b010655bfdd3c3",
+      "bytes": 2,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/raw_truncated_tail/stdout.log",
+      "sha256": "053ff3f595a17da6d9e4a1d467ca9a9668d434a32e387bc6fededcc5383c3a80",
+      "bytes": 68,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/run_pollution/actual.json",
+      "sha256": "508896a196fc575aa8bc548945ed3b0972478929deeace33c937ba812d9d067d",
+      "bytes": 243,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/run_pollution/exit_code.txt",
+      "sha256": "53c234e5e8472b6ac51c1ae1cab3fe06fad053beb8ebfd8977b010655bfdd3c3",
+      "bytes": 2,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/run_pollution/stdout.log",
+      "sha256": "053ff3f595a17da6d9e4a1d467ca9a9668d434a32e387bc6fededcc5383c3a80",
+      "bytes": 68,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/same_members_distinct_hash/actual.json",
+      "sha256": "bf541998d7fe85b8f14e0de851ce08a958445811df5477da60cb1744efc545b5",
+      "bytes": 7130,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/same_members_distinct_hash/exit_code.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "bytes": 2,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/same_members_distinct_hash/stdout.log",
+      "sha256": "dda7dd81d6f760edb5a8a9f41bac717c426e712fb661b0ff5c83d7c57885fb9e",
+      "bytes": 76,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/single_group_min_rank/actual.json",
+      "sha256": "ea6d2a15bda33287b8fc3547652d60ca8e8ec75715dec12889e8bb2c7d9e80d6",
+      "bytes": 5769,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/single_group_min_rank/exit_code.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "bytes": 2,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/single_group_min_rank/stdout.log",
+      "sha256": "dda7dd81d6f760edb5a8a9f41bac717c426e712fb661b0ff5c83d7c57885fb9e",
+      "bytes": 76,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/singleton_excluded/actual.json",
+      "sha256": "4e19de08cb672ad7d5f871a6692b36c9be9b47c7073666236a3fbca8cbb1cb7b",
+      "bytes": 1780,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/singleton_excluded/exit_code.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "bytes": 2,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/singleton_excluded/stdout.log",
+      "sha256": "4aae4220573ca96f0353c1a55cc425e34b151bac70c325380301c22e3c8cebf8",
+      "bytes": 66,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/stage1_cv_below/actual.json",
+      "sha256": "56d9f604dda1e181ee93678d0464351609ed5488cd4e0a48410c4adb62052c0b",
+      "bytes": 3577,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/stage1_cv_below/exit_code.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "bytes": 2,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/stage1_cv_below/stdout.log",
+      "sha256": "4aae4220573ca96f0353c1a55cc425e34b151bac70c325380301c22e3c8cebf8",
+      "bytes": 66,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/stage1_maximum_tie/actual.json",
+      "sha256": "3416fafe7d663050971dbde02a47d363fd485dc20e1013877357354a853d0bbc",
+      "bytes": 3497,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/stage1_maximum_tie/exit_code.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "bytes": 2,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/stage1_maximum_tie/stdout.log",
+      "sha256": "4aae4220573ca96f0353c1a55cc425e34b151bac70c325380301c22e3c8cebf8",
+      "bytes": 66,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/stage2_cv_below/actual.json",
+      "sha256": "cbb6479a26a278527ac4fcf167475155eca33c3a99badb21696fe9e3e5612653",
+      "bytes": 4297,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/stage2_cv_below/exit_code.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "bytes": 2,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/stage2_cv_below/stdout.log",
+      "sha256": "4aae4220573ca96f0353c1a55cc425e34b151bac70c325380301c22e3c8cebf8",
+      "bytes": 66,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/std_convention_disagreement/actual.json",
+      "sha256": "da1b32006674edc1ffbb33e1a29f1ee89a359e4314c9110372f2c42cd51c5a66",
+      "bytes": 4293,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/std_convention_disagreement/exit_code.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "bytes": 2,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/std_convention_disagreement/stdout.log",
+      "sha256": "b54ae523e45ccad2bb1c40ecc6666a4af5227a8a45e00c0285b682813949103a",
+      "bytes": 68,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/subnormal_finite_equal/actual.json",
+      "sha256": "2fa8a2925cc054dcee89226ef3d2b47feb6e7d64e8ba29d47b9824fbccd42656",
+      "bytes": 4182,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/subnormal_finite_equal/exit_code.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "bytes": 2,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/subnormal_finite_equal/stdout.log",
+      "sha256": "4aae4220573ca96f0353c1a55cc425e34b151bac70c325380301c22e3c8cebf8",
+      "bytes": 66,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/three_groups_max_then_min/actual.json",
+      "sha256": "4bd69cffdd518110485590b4a6100cac684c0f6580bdac27555bad9609ad0b21",
+      "bytes": 8069,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/three_groups_max_then_min/exit_code.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "bytes": 2,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/three_groups_max_then_min/stdout.log",
+      "sha256": "cdc7e7679faddd8164b3b6baf2efc817b5bddd86d35fa53039e4980a39b5f4bf",
+      "bytes": 76,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/truncated_cuda_evidence/actual.json",
+      "sha256": "c5b2ddca3b7c3223bd4ea8ee7927c368b66dfef7dc42c794816d320024c4ddf7",
+      "bytes": 261,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/truncated_cuda_evidence/exit_code.txt",
+      "sha256": "53c234e5e8472b6ac51c1ae1cab3fe06fad053beb8ebfd8977b010655bfdd3c3",
+      "bytes": 2,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/truncated_cuda_evidence/stdout.log",
+      "sha256": "053ff3f595a17da6d9e4a1d467ca9a9668d434a32e387bc6fededcc5383c3a80",
+      "bytes": 68,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/undeclared_generation/actual.json",
+      "sha256": "80d0abdfabeffc14fb09e190a6b21ffb9824afe7768e335f69d7f482114158b7",
+      "bytes": 249,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/undeclared_generation/exit_code.txt",
+      "sha256": "53c234e5e8472b6ac51c1ae1cab3fe06fad053beb8ebfd8977b010655bfdd3c3",
+      "bytes": 2,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/undeclared_generation/stdout.log",
+      "sha256": "053ff3f595a17da6d9e4a1d467ca9a9668d434a32e387bc6fededcc5383c3a80",
+      "bytes": 68,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/unresolved_split/actual.json",
+      "sha256": "6fdb13228334dc6e297257708f49d88061e2152ef78134acbe18650954486755",
+      "bytes": 256,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/unresolved_split/exit_code.txt",
+      "sha256": "53c234e5e8472b6ac51c1ae1cab3fe06fad053beb8ebfd8977b010655bfdd3c3",
+      "bytes": 2,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/unresolved_split/stdout.log",
+      "sha256": "053ff3f595a17da6d9e4a1d467ca9a9668d434a32e387bc6fededcc5383c3a80",
+      "bytes": 68,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/unsupported_timing/actual.json",
+      "sha256": "afdc7637bbd5acf904b45655a6f567373cbc34aa64c61be0bc7c1c49bac2ce60",
+      "bytes": 253,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/unsupported_timing/exit_code.txt",
+      "sha256": "53c234e5e8472b6ac51c1ae1cab3fe06fad053beb8ebfd8977b010655bfdd3c3",
+      "bytes": 2,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/unsupported_timing/stdout.log",
+      "sha256": "053ff3f595a17da6d9e4a1d467ca9a9668d434a32e387bc6fededcc5383c3a80",
+      "bytes": 68,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/wrong_comm_rank/actual.json",
+      "sha256": "5b633886d58738c49598379e38152de48f48433ff55d2b5d70cdb7fbfac5a1bc",
+      "bytes": 251,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/wrong_comm_rank/exit_code.txt",
+      "sha256": "53c234e5e8472b6ac51c1ae1cab3fe06fad053beb8ebfd8977b010655bfdd3c3",
+      "bytes": 2,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/wrong_comm_rank/stdout.log",
+      "sha256": "053ff3f595a17da6d9e4a1d467ca9a9668d434a32e387bc6fededcc5383c3a80",
+      "bytes": 68,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/wrong_comm_size/actual.json",
+      "sha256": "e7f183b0488221213fa43f65511856f7e3bc91a2611261a451346fb477fa7c7b",
+      "bytes": 255,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/wrong_comm_size/exit_code.txt",
+      "sha256": "53c234e5e8472b6ac51c1ae1cab3fe06fad053beb8ebfd8977b010655bfdd3c3",
+      "bytes": 2,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/wrong_comm_size/stdout.log",
+      "sha256": "053ff3f595a17da6d9e4a1d467ca9a9668d434a32e387bc6fededcc5383c3a80",
+      "bytes": 68,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/wrong_count_unit/actual.json",
+      "sha256": "6e5cbad5ec354454f7ffa3a9371a6c31175f50c2523718e1c5be5b3df92ad008",
+      "bytes": 237,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/wrong_count_unit/exit_code.txt",
+      "sha256": "53c234e5e8472b6ac51c1ae1cab3fe06fad053beb8ebfd8977b010655bfdd3c3",
+      "bytes": 2,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/wrong_count_unit/stdout.log",
+      "sha256": "053ff3f595a17da6d9e4a1d467ca9a9668d434a32e387bc6fededcc5383c3a80",
+      "bytes": 68,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/wrong_duration_unit/actual.json",
+      "sha256": "6e5cbad5ec354454f7ffa3a9371a6c31175f50c2523718e1c5be5b3df92ad008",
+      "bytes": 237,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/wrong_duration_unit/exit_code.txt",
+      "sha256": "53c234e5e8472b6ac51c1ae1cab3fe06fad053beb8ebfd8977b010655bfdd3c3",
+      "bytes": 2,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/wrong_duration_unit/stdout.log",
+      "sha256": "053ff3f595a17da6d9e4a1d467ca9a9668d434a32e387bc6fededcc5383c3a80",
+      "bytes": 68,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/zero_mean/actual.json",
+      "sha256": "7812155e46db941dc18cf8b089451ccfc5a1b5511a9bbb13868ed68b9c4dba24",
+      "bytes": 4106,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/zero_mean/exit_code.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "bytes": 2,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/zero_mean/stdout.log",
+      "sha256": "b54ae523e45ccad2bb1c40ecc6666a4af5227a8a45e00c0285b682813949103a",
+      "bytes": 68,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/zero_sample_sequence/actual.json",
+      "sha256": "ea4b92d34ffa609aaca4d9cf7ab6aa5f71934508f772879013abcc1077de3a25",
+      "bytes": 242,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/zero_sample_sequence/exit_code.txt",
+      "sha256": "53c234e5e8472b6ac51c1ae1cab3fe06fad053beb8ebfd8977b010655bfdd3c3",
+      "bytes": 2,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4-fixtures/zero_sample_sequence/stdout.log",
+      "sha256": "053ff3f595a17da6d9e4a1d467ca9a9668d434a32e387bc6fededcc5383c3a80",
+      "bytes": 68,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/m4.log",
+      "sha256": "187ce2c0b2fa62c6314c49834a4e9ed1bd6c14332fe80ad0b498b62170cb6a60",
+      "bytes": 51,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/manifest.json",
+      "sha256": "00233ada696716513e7a16e8c7c215014c2fa33ad0b858f84f3f32baae9a0d1a",
+      "bytes": 285445,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/p1-units.log",
+      "sha256": "76b5623147da5db476a09e4c17c85b59a081a95ed4f3c9392deed7ccf9a943cb",
+      "bytes": 93,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/privacy-units.log",
+      "sha256": "c6b9b1f09add0403cc07e90bfdf272129b1ddfa2f8f7675ea8218862f2516371",
+      "bytes": 104,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/privacy.log",
+      "sha256": "e69a1f569f0ca5f0cc1cab6e339435d298317fc6367fdb9ec5d1e8380a9c7d5a",
+      "bytes": 123,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/redis.log",
+      "sha256": "9f4fb1832efb7d6092cfb21777d13c39a2cde5e22abd0a0b0e22b12db1f006d4",
+      "bytes": 5735,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/reporter.log",
+      "sha256": "632cce9d6f5b957c550e515fe1f9cd48d036f41040bfa8b01e20557bbec58edf",
+      "bytes": 102,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6a-server-validation-04/s1-units.log",
+      "sha256": "3019460ea7c7a1d52a32dea83574fe905016434eb51a4d886203dd2462578aac",
+      "bytes": 115,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6r-jdc7hweu/cleanup.json",
+      "sha256": "30758301b10286969c5a2e2200dd5a0456d8a6b08949d2bab031e9d5482c9ecc",
+      "bytes": 129,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6r-jdc7hweu/redis.log",
+      "sha256": "71f2640927e2c527990f2906f7c5572d73e8119483027656c2834a724c659bf2",
+      "bytes": 1397,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6r-jdc7hweu/transport.json",
+      "sha256": "e994cf3f304933bb74a3f06e35b7702fd0ef48876f2c92afe2e3d96e49790b16",
+      "bytes": 601,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6r-lr11bpwb/cleanup.json",
+      "sha256": "30758301b10286969c5a2e2200dd5a0456d8a6b08949d2bab031e9d5482c9ecc",
+      "bytes": 129,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6r-lr11bpwb/redis.log",
+      "sha256": "581f5da6fd5640b2909b3bc13e85e177a1dc8368508ae7aa529adf0fbc31036a",
+      "bytes": 1397,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6r-lr11bpwb/transport.json",
+      "sha256": "87433850540ac4b11ba9976be87d4758aad0575f1cf498ec2ffd9e76220cf5f3",
+      "bytes": 600,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6s-_h94im07/restart.json",
+      "sha256": "10d52444574f79879517464c848c8e7f0faf90755adbac5bb9a55d5daf3c1bdc",
+      "bytes": 72992,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6s-_h94im07/server-0.log",
+      "sha256": "1febbb4b5ff89f01a0d710910213f1bb8e4c8e908eb7872dcf1cf49069072f46",
+      "bytes": 1397,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-remote-evidence/m6s-_h94im07/server-1.log",
+      "sha256": "9d4eb04ced64a2dbc03f94c29cbc9be91292fa0ddceaaf4f73fa06f9eb9d65b7",
+      "bytes": 1397,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
       "path": "runs/m6a-access/development-01.log",
       "sha256": "9c37cb323f640c4c171b5ddd7165f497d0f437f8f211130daf97d5fad0fea1eb",
       "bytes": 2138,
@@ -4628,6 +6494,12 @@
       "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
     },
     {
+      "path": "runs/m6a-access/final-preservation.json",
+      "sha256": "669feb16b4dbeaeaf0e2ce9009fc8dbee0400c4138eac48fd11e81397f1e0355",
+      "bytes": 275790,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
       "path": "runs/m6a-access/increment-01.bundle",
       "sha256": "4ed068c51525c863e590d86bf964e29f0d45430908469b1eff9d61aafdef57e0",
       "bytes": 33247,
@@ -4647,14 +6519,92 @@
     },
     {
       "path": "runs/m6a-access/increment-04.bundle",
-      "sha256": "a775d9c582fa6b7d1f8d33b2cf21ce30072b20018e7e0b1ba1429e1161b47fd7",
-      "bytes": 1475,
+      "sha256": "24a59f905ddb1adf2d09ffcd7b57edb9ed706678bfcf38332620be142042c545",
+      "bytes": 81244,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-access/increment-05.bundle",
+      "sha256": "4e778b68992f3f918f174bbbbdf7c6a0863cb1d6f2787a439d90d6a3d9508049",
+      "bytes": 619,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-access/increment-06.bundle",
+      "sha256": "a166374f8ecb7cdcbcc01160641d43cbc5bee3a155efc75141fde2751022e45c",
+      "bytes": 1092,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-access/installation-controller/client.json",
+      "sha256": "f9188349125d073a4c0311af21275143ab07c432edceb69f23d78e2d9c735215",
+      "bytes": 315862,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-access/installation-controller/dependency-transfer.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-access/installation-controller/installation-build.log",
+      "sha256": "740e5cabb8d067a735d6e3e625b87516e64a708e1c43b36976f05ed1e2eddedb",
+      "bytes": 97,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-access/installation-controller/postflight-actual-retry.log",
+      "sha256": "20f5acefb080f2f4bcfa0bf46b5dc06007b3f51eec109a5588d014ccc7f76363",
+      "bytes": 136,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-access/installation-controller/postflight-actual.log",
+      "sha256": "01c381d535e114444169b726b09f9eebf69f600bee1d08c13dd4f3c0fced4883",
+      "bytes": 327,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-access/installation-controller/redis-release.json",
+      "sha256": "dcb8d954171ef90c3d6eb15470ef1f2d654ab8fa22c8abc2f643b595e5aeaa00",
+      "bytes": 5092,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-access/installation-controller/relevant-05.log",
+      "sha256": "dd423f95a6a3276156ac4ed79289278b4879aa45728da9ee754f70c21c014aec",
+      "bytes": 91,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-access/installation-controller/source-LICENSE.txt",
+      "sha256": "4a0e416b9537688f30dfe69ddaceb2ca64d96b7df02a0a6760d376890ddc4e40",
+      "bytes": 72266,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-access/installation-controller/source-README.md",
+      "sha256": "0395cc5eea326a5e51ee144fdc754a538d082918877804b10653a08c0d458b49",
+      "bytes": 29193,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-access/installation-controller/validation-04.log",
+      "sha256": "1caa31282623c84df10be14046fafda011dfab13ba25b091f55b97cbce6d52da",
+      "bytes": 254,
       "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
     },
     {
       "path": "runs/m6a-access/local-validation-01.log",
       "sha256": "3e8998b71edda92773bdd46cabe8c4f126823d6b96b520777bd86c7765c14935",
       "bytes": 161,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-access/postflight-raw.json",
+      "sha256": "3475d7c5754600877c4992d47a38684cd4463b1482aeea85d2e8309136d28fed",
+      "bytes": 500,
       "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
     },
     {
@@ -5039,6 +6989,42 @@
       "path": "runs/m6a-access/relevant-06.log",
       "sha256": "71d9f00778904647175cea8f454660d50ac44c721c3ecef0c4dea39f3a4d632e",
       "bytes": 2548,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-access/final-preservation-actual.json",
+      "sha256": "099944dbd0b0ff46d5b0489992203a42a95fdb56481622f3b038b17ded9b44ad",
+      "bytes": 276024,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-final-publication-check/diff-scan.json",
+      "sha256": "a4a1fcc0ac2bdf48afb63c816ae9501924d23a737e829df6a789dabcaf16d701",
+      "bytes": 2870,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-final-publication-check/failed-wrapper.json",
+      "sha256": "96a404c9b0ab4bee3e6dcf6063e4c285da9117f56d0db71388f24e61696ddf04",
+      "bytes": 564,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-final-publication-check/privacy.log",
+      "sha256": "116097fcd38a8359442f2b220bfb2b0831589f634ea21ae44a9fd0b2e18fff60",
+      "bytes": 123,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-final-publication-check-02/privacy.log",
+      "sha256": "116097fcd38a8359442f2b220bfb2b0831589f634ea21ae44a9fd0b2e18fff60",
+      "bytes": 123,
+      "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
+    },
+    {
+      "path": "runs/m6a-final-publication-check-02/receipt.json",
+      "sha256": "24f7f62df57361846ada05c06c1018bc50b22c78d0317d3d4c4df5549059765a",
+      "bytes": 348,
       "privacy": "PRIVATE_RAW_NOT_PUBLISHED"
     }
   ]

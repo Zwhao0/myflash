@@ -275,3 +275,54 @@ rights/history limitations stay unchanged. Detailed results, source boundaries,
 protocol/state/schema, raw evidence hashes and postflight in docs/m6. G01/G02/G04/
 G09/G13/G20 remain OPEN. Next unique task: independent ChatGPT GitHub technical
 review of M6-A Draft PR. Stop after publication; no automatic follow-up work.
+
+## M6-A actual Redis authorized rerun and final delivery (2026-10-10)
+Supersedes the earlier M6-A overall BLOCKED conclusion; prior BLOCKED/FAIL
+records and raw logs remain intact. User explicitly authorizes real Redis
+installation for M6-A. Private node-0 Redis8.10.2 core build (upstream commit
+498ecd0d6d007db11ddb3aea9428552598a78622, AGPLv3 option) and redis-py8.1.0
+(MIT) use existing tools and new private .venv-m6; no system installation/service,
+formal .venv-m5 replacement, native FLASH rebuild or GPU workload. Sources,
+archive/wheel SHA and actual installation argv/exits/log hashes in
+docs/m6/dependency-lock.json and installation.json. All five install commands0.
+
+M6-A ENGINEERING PASS: final executed codee3f6b4225db83ec97e0b59161fa4f46a14ab9f68
+with exact executable file hashes in docs/m6/validation.json. Final node-0
+commands: existing-formal-python tests/m6_control.py (32tests,0);
+existing-formal-python scripts/m6_demo.py --output <private-new-dir> (0);
+private-client-python tests/m6_redis.py (6actual tests,0); waited driver0.
+Actual loaded server8.10.2/client8.1.0. Two logical nodes/six ranks, two independent
+epochs,20s virtual windows, unchanged M4 provisional evidence and all-rank
+Monitor reset verified. Real GET/EVAL/socket traffic verifies concurrent dedup/
+conflict/500 retention, ACK-only/partial reset, controller fencing/old epoch,
+socket reconnect and owned server stop/restart/lost document. Old active run
+cannot resume after server data loss; fresh run required. Delay/lost-response
+coverage remains deterministic mock, with no claim of network impairment.
+
+Retained actual first-run FAIL: server-validation-04 driver1/Redis1, six setups
+rejected before registration because redis-py8's shortcut did not pass explicit
+Unix connect timeout. Strict deadline validation retained; fix only new M6 client
+ConnectionPool with both finite deadlines/no hidden retry. Ten other CPU command
+exits0; five original native M2/M3 tests0; M4 65fixtures0; M5 CPU regression0.
+Original algorithm/assertions/thresholds/fixtures and M5-R/P1/S1 evidence unchanged.
+Full privacy04 exit0; final publication text privacy/CI is bound to exact delivered
+head/tree in Draft PR/private publication receipt. CPU test command/log/exit/hash
+receipts: runs/m6a-server-validation-04, runs/m6a-server-relevant-05 on node-0;
+unaltered local archive in runs/m6a-remote-evidence. Public sanitized commands and
+private file index in docs/m6; exact machine/absolute argv remain private.
+
+Actual postflight0: four owned Redis process starts all exit0, zero owned PIDs/
+sockets, exact namespace keys released, approved read-only symlinks released;
+private dependencies/raw logs retained. Formal1424 non-cache file hashes equal
+before install and after tests; original Rbeast native SHAa7432000… unchanged;
+original native artifacts unchanged. Postflight helper TypeError exit1 retained;
+corrected helper0 verifies cleanup. No system/host THP/service/other job changes.
+Final baseline851 byte-preservation audit includes append-only STATUS/GAPS.
+
+Only approved m6 modules/scripts/tests/task/docs and STATUS/GAPS additions differ.
+PAPER/UPSTREAM/ADAPTATION/EXTENSION boundaries unchanged. final_alert=false,
+final_fault_ranks=[] always; G01/G02/G04/G09/G13/G20 OPEN. This engineering PASS
+does not approve scientific validity, M6 overall, automatic detector, real GPU/
+cross-host loop, precision/recall, HA or formal runtime migration. No merge or
+M6-B. Final publication head/tree/CI are recorded in Draft PR and private receipt.
+Next unique task: wait for independent ChatGPT GitHub technical review of M6-A.

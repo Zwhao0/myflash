@@ -1,0 +1,29 @@
+{
+  "server": {
+    "version": "8.10.2",
+    "url": "https://codeload.github.com/redis/redis/tar.gz/refs/tags/8.10.2",
+    "sha256": "541a374b753a8405683dd88560465791acc98cf09445ef10ec1bd286904273e8",
+    "license": "AGPL-3.0 selected from upstream tri-license",
+    "upstream_release": "https://github.com/redis/redis/releases/tag/8.10.2",
+    "commit": "498ecd0d6d007db11ddb3aea9428552598a78622",
+    "source_functions": [
+      "src/server.c/main",
+      "src/eval.c/evalGenericCommand",
+      "src/Makefile redis-server/redis-cli targets"
+    ]
+  },
+  "client": {
+    "version": "8.1.0",
+    "url": "https://files.pythonhosted.org/packages/66/9d/c5731f6e3608663d4d3656fd8d3aecee8b509c3082818f5a13eae925baea/redis-8.1.0-py3-none-any.whl",
+    "sha256": "a4fe1aac3d3b3cc791d4b3d5931c5a956045dc951ee74d1c913ee3ac4d2ee9fb",
+    "wheel": "redis-8.1.0-py3-none-any.whl",
+    "license": "MIT",
+    "metadata": "https://pypi.org/pypi/redis/8.1.0/json",
+    "source_functions": [
+      "redis/client.py:Redis.__init__",
+      "redis/connection.py:UnixDomainSocketConnection._connect",
+      "redis/connection.py:ConnectionPool"
+    ]
+  },
+  "classification": "UPSTREAM Redis/client; ADAPTATION private core build and isolated client venv"
+}

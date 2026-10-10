@@ -1,8 +1,8 @@
 {
   "task": "M6-A",
-  "overall": "BLOCKED",
+  "overall": "M6-A ENGINEERING PASS",
   "cpu_mock": "PASS",
-  "redis_actual": "BLOCKED",
+  "redis_actual": "PASS",
   "gpu": "NOT_RUN",
   "cross_physical_nodes": "NOT_RUN",
   "automatic_detection": "NOT_APPROVED",
@@ -769,19 +769,346 @@
       "raw_machine_identity": "private manifest",
       "argv_policy": "redacted executable/checkout/project aliases; exact argv in private raw receipt",
       "driver_exit_code": 3
+    },
+    {
+      "os": "Linux-6.8.0-142-generic-x86_64-with-glibc2.39",
+      "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+      "code_sha": "083e208d48b72f695959889a9c239662f4e19938",
+      "code_hashes": {
+        "flash/m6_controller.py": "12cf7cf7a96a4d3e83f78ae59a305738878f7e53e39c1b7d68e3a2b4facfdc37",
+        "flash/m6_iteration.py": "57dd7ce9cf80287ee0b73782c6ca0bab9be406c303bfa30e6d5f4b60ef835ba9",
+        "flash/m6_probe.py": "b206ace6d7603a4d1f2762de37346acca19e219b0c8a9194fa5df9dc160ca7aa",
+        "flash/m6_protocol.py": "02428d0c45c00843b4c66f9298c1f751fbca6a67eb82cf786c5621128b14454e",
+        "flash/m6_store.py": "54b3e3d613353e7719b7dcf0ab4d824ad0f606ae23cfc693a7cefebe4ab36c1e",
+        "scripts/m6_demo.py": "a96bb73ff3b87f6e5605d8926498c5f4846722d6b4668f2ee88d1c28f5c63a84",
+        "scripts/m6_validate.py": "8fa086fc3823f29a0e8a40171dc7d61c97929c6d20fe36d5657264b9be9e7bc4",
+        "tests/m6_control.py": "218a8ff5088dce3339c94fd0c9d84b78f3ce7d3fb3d6e2e53a16ddadb0becd47",
+        "tests/m6_redis.py": "e1610c587b6300a1e1bb0f7d929d69fb4ffc70ebbdba6781dc0594e9ed8ffbe4"
+      },
+      "commands": [
+        {
+          "command": [
+            "<existing-formal-python>",
+            "tests/m6_control.py"
+          ],
+          "exit_code": 0,
+          "timeout": false,
+          "log": "runs/m6a-server-validation-04/control.log",
+          "log_sha256": "ec37ad39bc8aceb482fa404de2c245c4aa5468db3f7f53b0079812762ed449b4",
+          "elapsed_test_wall_seconds": 3.3689925100188702,
+          "status": "PASS",
+          "child_finished": true
+        },
+        {
+          "command": [
+            "<existing-formal-python>",
+            "scripts/m6_demo.py",
+            "--output",
+            "<checkout>/runs/m6a-server-validation-04/demo"
+          ],
+          "exit_code": 0,
+          "timeout": false,
+          "log": "runs/m6a-server-validation-04/demo.log",
+          "log_sha256": "e6d9e29c2caa18023664d9049b2b2490c26aa7024509186780dd55dc4b400961",
+          "elapsed_test_wall_seconds": 0.2148349010385573,
+          "status": "PASS",
+          "child_finished": true
+        },
+        {
+          "command": [
+            "<approved-project>/runs/m6a-deps/.venv-m6/bin/python",
+            "tests/m6_redis.py"
+          ],
+          "exit_code": 1,
+          "timeout": false,
+          "log": "runs/m6a-server-validation-04/redis.log",
+          "log_sha256": "9f4fb1832efb7d6092cfb21777d13c39a2cde5e22abd0a0b0e22b12db1f006d4",
+          "elapsed_test_wall_seconds": 0.3148877280764282,
+          "status": "FAIL",
+          "child_finished": true
+        },
+        {
+          "command": [
+            "<existing-formal-python>",
+            "tests/m4_offline.py",
+            "--output",
+            "<checkout>/runs/m6a-server-validation-04/m4-fixtures"
+          ],
+          "exit_code": 0,
+          "timeout": false,
+          "log": "runs/m6a-server-validation-04/m4.log",
+          "log_sha256": "187ce2c0b2fa62c6314c49834a4e9ed1bd6c14332fe80ad0b498b62170cb6a60",
+          "elapsed_test_wall_seconds": 2.718153081019409,
+          "status": "PASS",
+          "child_finished": true
+        },
+        {
+          "command": [
+            "<existing-formal-python>",
+            "tests/m5_reporter.py"
+          ],
+          "exit_code": 0,
+          "timeout": false,
+          "log": "runs/m6a-server-validation-04/reporter.log",
+          "log_sha256": "632cce9d6f5b957c550e515fe1f9cd48d036f41040bfa8b01e20557bbec58edf",
+          "elapsed_test_wall_seconds": 1.1663422250421718,
+          "status": "PASS",
+          "child_finished": true
+        },
+        {
+          "command": [
+            "<existing-formal-python>",
+            "tests/m5_detection.py"
+          ],
+          "exit_code": 0,
+          "timeout": false,
+          "log": "runs/m6a-server-validation-04/detection.log",
+          "log_sha256": "fc23540c8545d4075fe2f0420accd022e74e5566176c3bd4c597964ff02c2e14",
+          "elapsed_test_wall_seconds": 0.11487266106996685,
+          "status": "PASS",
+          "child_finished": true
+        },
+        {
+          "command": [
+            "<existing-formal-python>",
+            "tests/m5_contract_evidence.py",
+            "<checkout>/runs/m6a-server-validation-04/contract.json"
+          ],
+          "exit_code": 0,
+          "timeout": false,
+          "log": "runs/m6a-server-validation-04/contract.log",
+          "log_sha256": "a5cf8743802ffd090677978eda15a8c60f51488c16457560567253d03796bcf0",
+          "elapsed_test_wall_seconds": 0.11473148490767926,
+          "status": "PASS",
+          "child_finished": true
+        },
+        {
+          "command": [
+            "<existing-formal-python>",
+            "tests/m5_p1_compare.py"
+          ],
+          "exit_code": 0,
+          "timeout": false,
+          "log": "runs/m6a-server-validation-04/p1-units.log",
+          "log_sha256": "76b5623147da5db476a09e4c17c85b59a081a95ed4f3c9392deed7ccf9a943cb",
+          "elapsed_test_wall_seconds": 0.1647920940304175,
+          "status": "PASS",
+          "child_finished": true
+        },
+        {
+          "command": [
+            "<existing-formal-python>",
+            "tests/m5_s1_offline.py"
+          ],
+          "exit_code": 0,
+          "timeout": false,
+          "log": "runs/m6a-server-validation-04/s1-units.log",
+          "log_sha256": "3019460ea7c7a1d52a32dea83574fe905016434eb51a4d886203dd2462578aac",
+          "elapsed_test_wall_seconds": 8.976439676014706,
+          "status": "PASS",
+          "child_finished": true
+        },
+        {
+          "command": [
+            "<existing-formal-python>",
+            "tests/privacy_check_test.py"
+          ],
+          "exit_code": 0,
+          "timeout": false,
+          "log": "runs/m6a-server-validation-04/privacy-units.log",
+          "log_sha256": "c6b9b1f09add0403cc07e90bfdf272129b1ddfa2f8f7675ea8218862f2516371",
+          "elapsed_test_wall_seconds": 0.06507115892600268,
+          "status": "PASS",
+          "child_finished": true
+        },
+        {
+          "command": [
+            "<existing-formal-python>",
+            "scripts/privacy_check.py"
+          ],
+          "exit_code": 0,
+          "timeout": false,
+          "log": "runs/m6a-server-validation-04/privacy.log",
+          "log_sha256": "e69a1f569f0ca5f0cc1cab6e339435d298317fc6367fdb9ec5d1e8380a9c7d5a",
+          "elapsed_test_wall_seconds": 133.54364141798578,
+          "status": "PASS",
+          "child_finished": true
+        }
+      ],
+      "attempt": "server-validation-04",
+      "execution_machine_alias": "node-0",
+      "raw_manifest_path": "runs/m6a-remote-evidence/m6a-server-validation-04/manifest.json",
+      "raw_manifest_sha256": "00233ada696716513e7a16e8c7c215014c2fa33ad0b858f84f3f32baae9a0d1a",
+      "raw_machine_identity": "private manifest",
+      "argv_policy": "redacted executable/checkout/project aliases; exact argv in private raw receipt",
+      "status": "FAIL",
+      "versions": {
+        "Rbeast": "0.1.25",
+        "numpy": "2.2.6",
+        "redis": "NOT_INSTALLED"
+      },
+      "baseline": "7746fccb88718a5567da0d042d2679672d4226fc",
+      "baseline_files": 851,
+      "formal_file_count": 1424,
+      "formal_unchanged": true,
+      "native_unchanged": true,
+      "native_commands": [
+        {
+          "command": [
+            "<existing-formal-python>",
+            "tests/m2_ring.py"
+          ],
+          "exit_code": 0,
+          "timeout": false,
+          "log": "runs/m6a-server-validation-04/m2_ring.log",
+          "log_sha256": "0a44a42a714980cfb039ce4ba3a22738963cdb1c4912248b0e0e9711ee5f62d3",
+          "elapsed_test_wall_seconds": 0.7161650119815022,
+          "status": "PASS",
+          "child_finished": true
+        },
+        {
+          "command": [
+            "<existing-formal-python>",
+            "tests/m2_hook_smoke.py"
+          ],
+          "exit_code": 0,
+          "timeout": false,
+          "log": "runs/m6a-server-validation-04/m2_hook_smoke.log",
+          "log_sha256": "6ce49d99a5864667701d171a86678be79371d3a8b6ea6dd178440ee2ad00be1d",
+          "elapsed_test_wall_seconds": 0.1651184461079538,
+          "status": "PASS",
+          "child_finished": true
+        },
+        {
+          "command": [
+            "<existing-formal-python>",
+            "tests/m3_reader.py"
+          ],
+          "exit_code": 0,
+          "timeout": false,
+          "log": "runs/m6a-server-validation-04/m3_reader.log",
+          "log_sha256": "eefda34fc0498a3cda9acc6c82a8a7a929fc23da5f8db88f47eaf58bec46f5e6",
+          "elapsed_test_wall_seconds": 1.417076091049239,
+          "status": "PASS",
+          "child_finished": true
+        },
+        {
+          "command": [
+            "<existing-formal-python>",
+            "tests/m3_hook.py"
+          ],
+          "exit_code": 0,
+          "timeout": false,
+          "log": "runs/m6a-server-validation-04/m3_hook.log",
+          "log_sha256": "f46bfe4e89cb34d7ca821798145b66de6b669eec86d4325b6e4f410ab8096f57",
+          "elapsed_test_wall_seconds": 0.11462593800388277,
+          "status": "PASS",
+          "child_finished": true
+        },
+        {
+          "command": [
+            "<existing-formal-python>",
+            "tests/m3_validation.py"
+          ],
+          "exit_code": 0,
+          "timeout": false,
+          "log": "runs/m6a-server-validation-04/m3_validation.log",
+          "log_sha256": "1dfe30e16aacd62c0fcca5f3547c8efe395d271fd062ad904361bab0181e936a",
+          "elapsed_test_wall_seconds": 0.11463574494700879,
+          "status": "PASS",
+          "child_finished": true
+        }
+      ],
+      "native_status": "PASS",
+      "excluded_tests": {
+        "m2_lifecycle": "NOT_RUN GPU workload, outside authorization",
+        "m5_api_fields": "NOT_RUN real Rbeast fit, no detector change",
+        "m5_real_api_and_replay": "NOT_RUN historical scientific/native assertions retained unchanged"
+      },
+      "driver_exit_code": 1
+    },
+    {
+      "os": "Linux-6.8.0-142-generic-x86_64-with-glibc2.39",
+      "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+      "code_sha": "e3f6b4225db83ec97e0b59161fa4f46a14ab9f68",
+      "code_hashes": {
+        "flash/m6_controller.py": "12cf7cf7a96a4d3e83f78ae59a305738878f7e53e39c1b7d68e3a2b4facfdc37",
+        "flash/m6_iteration.py": "57dd7ce9cf80287ee0b73782c6ca0bab9be406c303bfa30e6d5f4b60ef835ba9",
+        "flash/m6_probe.py": "b206ace6d7603a4d1f2762de37346acca19e219b0c8a9194fa5df9dc160ca7aa",
+        "flash/m6_protocol.py": "02428d0c45c00843b4c66f9298c1f751fbca6a67eb82cf786c5621128b14454e",
+        "flash/m6_store.py": "54b3e3d613353e7719b7dcf0ab4d824ad0f606ae23cfc693a7cefebe4ab36c1e",
+        "scripts/m6_demo.py": "a96bb73ff3b87f6e5605d8926498c5f4846722d6b4668f2ee88d1c28f5c63a84",
+        "scripts/m6_validate.py": "8fa086fc3823f29a0e8a40171dc7d61c97929c6d20fe36d5657264b9be9e7bc4",
+        "tests/m6_control.py": "b324716ce57ba3f357e55cf57e65c873715ffd065fe61e866183ba516eca0079",
+        "tests/m6_redis.py": "1d6d1f4a56d19d0ac102462a55494834ff0bbf45172432de89388f2e1b5b74ec"
+      },
+      "commands": [
+        {
+          "command": [
+            "<existing-formal-python>",
+            "tests/m6_control.py"
+          ],
+          "exit_code": 0,
+          "timeout": false,
+          "log": "runs/m6a-server-relevant-05/control.log",
+          "log_sha256": "f82e0203b0e192ca9b76662880cc066b9c57c17077c16c2c074e279841f6a022",
+          "elapsed_test_wall_seconds": 3.4191612700233236,
+          "status": "PASS",
+          "child_finished": true
+        },
+        {
+          "command": [
+            "<existing-formal-python>",
+            "scripts/m6_demo.py",
+            "--output",
+            "<checkout>/runs/m6a-server-relevant-05/demo"
+          ],
+          "exit_code": 0,
+          "timeout": false,
+          "log": "runs/m6a-server-relevant-05/demo.log",
+          "log_sha256": "e6d9e29c2caa18023664d9049b2b2490c26aa7024509186780dd55dc4b400961",
+          "elapsed_test_wall_seconds": 0.21523658698424697,
+          "status": "PASS",
+          "child_finished": true
+        },
+        {
+          "command": [
+            "<approved-project>/runs/m6a-deps/.venv-m6/bin/python",
+            "tests/m6_redis.py"
+          ],
+          "exit_code": 0,
+          "timeout": false,
+          "log": "runs/m6a-server-relevant-05/redis.log",
+          "log_sha256": "2351619e1ac326e13043f7b8f8a2fd2f8b9ab986d78d91e4153970af59b7218d",
+          "elapsed_test_wall_seconds": 7.724996638018638,
+          "status": "PASS",
+          "child_finished": true
+        }
+      ],
+      "attempt": "server-relevant-05",
+      "execution_machine_alias": "node-0",
+      "raw_manifest_path": "runs/m6a-remote-evidence/m6a-server-relevant-05/manifest.json",
+      "raw_manifest_sha256": "7d9c1c5318463af1796d359aebd2a13c008139950244d99cfeb3022e11a8b326",
+      "raw_machine_identity": "private manifest",
+      "argv_policy": "redacted executable/checkout/project aliases; exact argv in private raw receipt",
+      "status": "PASS",
+      "formal_file_count": 1424,
+      "formal_unchanged": true,
+      "native_unchanged": true,
+      "driver_exit_code": 0
     }
   ],
-  "latest_controller_execution_sha": "3cc3e9bfd82ffd91621572d1846cbb5754fc19e8",
+  "latest_controller_execution_sha": "e3f6b4225db83ec97e0b59161fa4f46a14ab9f68",
   "latest_code_hashes": {
-    "flash/m6_protocol.py": "02428d0c45c00843b4c66f9298c1f751fbca6a67eb82cf786c5621128b14454e",
     "flash/m6_controller.py": "12cf7cf7a96a4d3e83f78ae59a305738878f7e53e39c1b7d68e3a2b4facfdc37",
-    "flash/m6_probe.py": "b206ace6d7603a4d1f2762de37346acca19e219b0c8a9194fa5df9dc160ca7aa",
-    "flash/m6_store.py": "54b3e3d613353e7719b7dcf0ab4d824ad0f606ae23cfc693a7cefebe4ab36c1e",
     "flash/m6_iteration.py": "57dd7ce9cf80287ee0b73782c6ca0bab9be406c303bfa30e6d5f4b60ef835ba9",
+    "flash/m6_probe.py": "b206ace6d7603a4d1f2762de37346acca19e219b0c8a9194fa5df9dc160ca7aa",
+    "flash/m6_protocol.py": "02428d0c45c00843b4c66f9298c1f751fbca6a67eb82cf786c5621128b14454e",
+    "flash/m6_store.py": "54b3e3d613353e7719b7dcf0ab4d824ad0f606ae23cfc693a7cefebe4ab36c1e",
     "scripts/m6_demo.py": "a96bb73ff3b87f6e5605d8926498c5f4846722d6b4668f2ee88d1c28f5c63a84",
-    "scripts/m6_validate.py": "42414984077216eb39d7808de565ebe6e174916e810138074ca6b3fbedfbf3db",
-    "tests/m6_control.py": "218a8ff5088dce3339c94fd0c9d84b78f3ce7d3fb3d6e2e53a16ddadb0becd47",
-    "tests/m6_redis.py": "cc6b984e5e379e7526e560dda23e9bb9501da4e68908ed25a2c87062a2e44a06"
+    "scripts/m6_validate.py": "8fa086fc3823f29a0e8a40171dc7d61c97929c6d20fe36d5657264b9be9e7bc4",
+    "tests/m6_control.py": "b324716ce57ba3f357e55cf57e65c873715ffd065fe61e866183ba516eca0079",
+    "tests/m6_redis.py": "1d6d1f4a56d19d0ac102462a55494834ff0bbf45172432de89388f2e1b5b74ec"
   },
   "original_scientific_gaps": [
     "G01",
@@ -791,5 +1118,37 @@
     "G13",
     "G20"
   ],
-  "next_unique_task": "independent ChatGPT GitHub technical review"
+  "next_unique_task": "independent ChatGPT GitHub technical review",
+  "publication_text_checks": [
+    {
+      "command": [
+        "python3",
+        "scripts/privacy_check.py"
+      ],
+      "execution_machine_alias": "local-macOS",
+      "wrapper_exit_code": 1,
+      "child_exit_code": "NOT_CAPTURED_WRAPPER_PATH_ERROR",
+      "log": "runs/m6a-final-publication-check/privacy.log",
+      "log_sha256": "116097fcd38a8359442f2b220bfb2b0831589f634ea21ae44a9fd0b2e18fff60",
+      "acceptance": false,
+      "reason": "execute returned after wait but private caller gave relative output dir; relative_to failed before persisting child result; TEXT_CHECK PASS log retained, excluded from exit-based acceptance"
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/privacy_check.py"
+      ],
+      "exit_code": 0,
+      "timeout": false,
+      "log": "runs/m6a-final-publication-check-02/privacy.log",
+      "log_sha256": "116097fcd38a8359442f2b220bfb2b0831589f634ea21ae44a9fd0b2e18fff60",
+      "elapsed_test_wall_seconds": 164.67542116700002,
+      "status": "PASS",
+      "child_finished": true,
+      "execution_machine_alias": "local-macOS",
+      "wrapper_exit_code": 0,
+      "acceptance": true
+    }
+  ],
+  "final_diff_text_check": "all allowed changed/new staged bytes checked again before doc commit; raw receipt private, CI bound to exact publication head"
 }

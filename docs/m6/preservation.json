@@ -39,7 +39,7 @@
     {
       "path": "GAPS.md",
       "baseline_sha256": "64e597c6d797574d99149f30f992db00b8bcf3f571449a17de1e5fd6b8f1429e",
-      "current_sha256": "64e597c6d797574d99149f30f992db00b8bcf3f571449a17de1e5fd6b8f1429e",
+      "current_sha256": "1eedcd05a204fc86fae8d9a6555b3edcd8e820c120adab74d43f3516251a4b97",
       "append_only": true,
       "unchanged_or_append": true
     },
@@ -81,7 +81,7 @@
     {
       "path": "STATUS.md",
       "baseline_sha256": "7ed5f4ebdad659892d9f27e7c6840bd9035b6fa67c954aaf92dc1e9fe1cdf912",
-      "current_sha256": "7ed5f4ebdad659892d9f27e7c6840bd9035b6fa67c954aaf92dc1e9fe1cdf912",
+      "current_sha256": "c9166ed8a1da72807e28cb3c0928f338c51d11baf33229bdd307ab09528d39a2",
       "append_only": true,
       "unchanged_or_append": true
     },
@@ -5988,5 +5988,7 @@
   },
   "native_unchanged": true,
   "formal_file_count": 1424,
-  "formal_unchanged": true
+  "formal_unchanged": true,
+  "latest_audit_log": "runs/m6a-access/final-preservation-actual.json",
+  "latest_audit_sha256": "099944dbd0b0ff46d5b0489992203a42a95fdb56481622f3b038b17ded9b44ad"
 }

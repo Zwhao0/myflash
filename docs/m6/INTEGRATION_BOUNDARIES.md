@@ -46,3 +46,20 @@ private temporary copy. Formal environment identity is hashed before/after.
 Not authorized: Rbeast auto trigger, library migration, GPU/NCCL training or faults,
 M6-B, two-machine automatic loop, final fault alert, paper precision/recall.
 G01/G02/G04/G09/G13/G20 remain OPEN regardless of engineering checks.
+
+Superseding authorization: after initial missing-dependency BLOCKED results,
+the user explicitly permitted real Redis installation for M6-A. UPSTREAM fixed
+Redis8.10.2 commit498ecd0d6d007db11ddb3aea9428552598a78622 and redis-py8.1.0
+source/function/URL/SHA/license are in dependency-lock.json. Redis core is built
+unmodified with existing tools, make -C src -j2 redis-server redis-cli
+MALLOC=libc BUILD_TLS=no OPTIMIZATION=-O2 (ADAPTATION private CPU build).
+Choose upstream AGPLv3 option; redis-py MIT. No upstream binary/source is committed.
+Python client lives in a new private .venv-m6; formal .venv-m5 remains unchanged.
+Redis processes are owned temporary children with port0, socket0600, directory0700,
+persistence disabled and disable-thp=no (no host THP adjustment). No system service.
+redis-py8 Redis.__init__ omits socket_connect_timeout on Unix socket shortcut;
+explicit ConnectionPool passes both finite deadlines to UnixDomainSocketConnection
+and disables hidden retries. Strict RedisStore deadline validation is retained.
+Only installation/replay dependencies were authorized; real GPU/scientific gates
+and runtime migration remain unchanged. Installed dependencies are retained
+privately for replay; temporary servers/sockets are released after every test.

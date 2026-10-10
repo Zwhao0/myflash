@@ -1,0 +1,100 @@
+{
+  "status": "PASS",
+  "commands": [
+    {
+      "command": [
+        "make",
+        "-C",
+        "<approved-project>/runs/m6a-deps/redis-8.10.2/src",
+        "-j2",
+        "redis-server",
+        "redis-cli",
+        "MALLOC=libc",
+        "BUILD_TLS=no",
+        "OPTIMIZATION=-O2"
+      ],
+      "exit_code": 0,
+      "log": "<approved-project>/runs/m6a-deps/command-1.log",
+      "log_sha256": "e4187b14964106b9a04c82f6bd927ca7532989e3b395ef2838929a8d80335ab5",
+      "elapsed_seconds": 33.35829283692874,
+      "child_finished": true
+    },
+    {
+      "command": [
+        "/usr/bin/python3",
+        "-m",
+        "venv",
+        "<approved-project>/runs/m6a-deps/.venv-m6"
+      ],
+      "exit_code": 0,
+      "log": "<approved-project>/runs/m6a-deps/command-2.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "elapsed_seconds": 2.467659001937136,
+      "child_finished": true
+    },
+    {
+      "command": [
+        "<approved-project>/runs/m6a-deps/.venv-m6/bin/python",
+        "-m",
+        "pip",
+        "install",
+        "--no-index",
+        "--no-deps",
+        "<approved-project>/runs/m6a-deps/redis-8.1.0-py3-none-any.whl"
+      ],
+      "exit_code": 0,
+      "log": "<approved-project>/runs/m6a-deps/command-3.log",
+      "log_sha256": "677bce46a8fbe56fbf482e30662a8bd87da5590faaa5321b27344169c747d9a5",
+      "elapsed_seconds": 0.6652398250298575,
+      "child_finished": true
+    },
+    {
+      "command": [
+        "<approved-project>/runs/m6a-deps/redis-8.10.2/src/redis-server",
+        "--version"
+      ],
+      "exit_code": 0,
+      "log": "<approved-project>/runs/m6a-deps/command-4.log",
+      "log_sha256": "3d9e9522d6283a7d01dc78522d19b245626a16f78b9c2dcbe989df8278a1859e",
+      "elapsed_seconds": 0.003861463046632707,
+      "child_finished": true
+    },
+    {
+      "command": [
+        "<approved-project>/runs/m6a-deps/.venv-m6/bin/python",
+        "-c",
+        "import redis; print(redis.__version__)"
+      ],
+      "exit_code": 0,
+      "log": "<approved-project>/runs/m6a-deps/command-5.log",
+      "log_sha256": "14e6eb17bfb2bed74871b7ae972ad0ef1a6fdf08966bf35ec7ef279ad87dff57",
+      "elapsed_seconds": 0.1641829499276355,
+      "child_finished": true
+    }
+  ],
+  "formal_unchanged": true,
+  "formal_file_count": 1424,
+  "dependency_lock": {
+    "server": {
+      "version": "8.10.2",
+      "url": "https://codeload.github.com/redis/redis/tar.gz/refs/tags/8.10.2",
+      "sha256": "541a374b753a8405683dd88560465791acc98cf09445ef10ec1bd286904273e8",
+      "license": "AGPL-3.0 selected from upstream tri-license",
+      "upstream_release": "https://github.com/redis/redis/releases/tag/8.10.2"
+    },
+    "client": {
+      "version": "8.1.0",
+      "url": "https://files.pythonhosted.org/packages/66/9d/c5731f6e3608663d4d3656fd8d3aecee8b509c3082818f5a13eae925baea/redis-8.1.0-py3-none-any.whl",
+      "sha256": "a4fe1aac3d3b3cc791d4b3d5931c5a956045dc951ee74d1c913ee3ac4d2ee9fb",
+      "wheel": "redis-8.1.0-py3-none-any.whl",
+      "license": "MIT",
+      "metadata": "https://pypi.org/pypi/redis/8.1.0/json"
+    }
+  },
+  "system_install": false,
+  "binary_sha256": "99fbe5aff7ed5772e406dff75b22f1ab1e49381523bd33b88253057b0e7a56ce",
+  "machine_alias": "node-0",
+  "raw_manifest": "runs/m6a-remote-evidence/installation/installation.json",
+  "raw_manifest_sha256": "e39e457f2142495bd26fc753b7e83e66bf50d703ec0d4cbe05099fdf4871322a",
+  "classification": "UPSTREAM fixed Redis/client, ADAPTATION private build/venv, human-authorized installation"
+}

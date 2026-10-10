@@ -77,3 +77,12 @@ in docs/m6/dependency-lock.json; retain private build/install commands/exits/log
 Existing allowed tests/m6_redis.py may add actual owned Redis restart/data-loss
 proof, with PID-scoped termination and socket0600/no TCP/no system config.
 Verify formal/native bytes unchanged after installation and integration.
+
+Actual transport compatibility finding: initial actual Redis run failed all6
+cases before registration because redis-py8 Unix socket shortcut omitted explicit
+connect timeout. Preserve FAIL receipt; fix only new M6 test client configuration
+using explicit ConnectionPool with both deadlines and no implicit retry. RedisStore
+validation and original scientific assertions remain strict. Redis server args
+disable-thp=no avoid host THP adjustment. Separate --redis-python in allowed
+scripts/m6_validate.py selects private client only for actual Redis test; original
+M2–M5 CPU regressions continue on unchanged formal interpreter.
