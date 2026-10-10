@@ -1,0 +1,155 @@
+{
+  "schema": 1,
+  "records": [
+    {
+      "run_id": "fixture",
+      "global_rank": 0,
+      "iteration": 1,
+      "iteration_time_ms": 1,
+      "timestamp": "2026-10-10T00:00:00+00:00",
+      "source": "synthetic-fixed",
+      "timing_boundary": "synthetic-duration",
+      "cuda_completion_wait": false
+    },
+    {
+      "run_id": "fixture",
+      "global_rank": 0,
+      "iteration": 2,
+      "iteration_time_ms": 1,
+      "timestamp": "2026-10-10T00:00:00+00:00",
+      "source": "synthetic-fixed",
+      "timing_boundary": "synthetic-duration",
+      "cuda_completion_wait": false
+    },
+    {
+      "run_id": "fixture",
+      "global_rank": 0,
+      "iteration": 3,
+      "iteration_time_ms": 1,
+      "timestamp": "2026-10-10T00:00:00+00:00",
+      "source": "synthetic-fixed",
+      "timing_boundary": "synthetic-duration",
+      "cuda_completion_wait": false
+    },
+    {
+      "run_id": "fixture",
+      "global_rank": 0,
+      "iteration": 4,
+      "iteration_time_ms": 1,
+      "timestamp": "2026-10-10T00:00:00+00:00",
+      "source": "synthetic-fixed",
+      "timing_boundary": "synthetic-duration",
+      "cuda_completion_wait": false
+    },
+    {
+      "run_id": "fixture",
+      "global_rank": 0,
+      "iteration": 5,
+      "iteration_time_ms": 1,
+      "timestamp": "2026-10-10T00:00:00+00:00",
+      "source": "synthetic-fixed",
+      "timing_boundary": "synthetic-duration",
+      "cuda_completion_wait": false
+    },
+    {
+      "run_id": "fixture",
+      "global_rank": 0,
+      "iteration": 6,
+      "iteration_time_ms": 1,
+      "timestamp": "2026-10-10T00:00:00+00:00",
+      "source": "synthetic-fixed",
+      "timing_boundary": "synthetic-duration",
+      "cuda_completion_wait": false
+    },
+    {
+      "run_id": "fixture",
+      "global_rank": 0,
+      "iteration": 7,
+      "iteration_time_ms": 1,
+      "timestamp": "2026-10-10T00:00:00+00:00",
+      "source": "synthetic-fixed",
+      "timing_boundary": "synthetic-duration",
+      "cuda_completion_wait": false
+    },
+    {
+      "run_id": "fixture",
+      "global_rank": 0,
+      "iteration": 8,
+      "iteration_time_ms": 1,
+      "timestamp": "2026-10-10T00:00:00+00:00",
+      "source": "synthetic-fixed",
+      "timing_boundary": "synthetic-duration",
+      "cuda_completion_wait": false
+    },
+    {
+      "run_id": "fixture",
+      "global_rank": 0,
+      "iteration": 9,
+      "iteration_time_ms": 1,
+      "timestamp": "2026-10-10T00:00:00+00:00",
+      "source": "synthetic-fixed",
+      "timing_boundary": "synthetic-duration",
+      "cuda_completion_wait": false
+    },
+    {
+      "run_id": "fixture",
+      "global_rank": 0,
+      "iteration": 10,
+      "iteration_time_ms": 1,
+      "timestamp": "2026-10-10T00:00:00+00:00",
+      "source": "synthetic-fixed",
+      "timing_boundary": "synthetic-duration",
+      "cuda_completion_wait": false
+    },
+    {
+      "run_id": "fixture",
+      "global_rank": 0,
+      "iteration": 11,
+      "iteration_time_ms": 1,
+      "timestamp": "2026-10-10T00:00:00+00:00",
+      "source": "synthetic-fixed",
+      "timing_boundary": "synthetic-duration",
+      "cuda_completion_wait": false
+    },
+    {
+      "run_id": "fixture",
+      "global_rank": 0,
+      "iteration": 12,
+      "iteration_time_ms": 1,
+      "timestamp": "2026-10-10T00:00:00+00:00",
+      "source": "synthetic-fixed",
+      "timing_boundary": "synthetic-duration",
+      "cuda_completion_wait": false
+    },
+    {
+      "run_id": "fixture",
+      "global_rank": 0,
+      "iteration": 13,
+      "iteration_time_ms": 1,
+      "timestamp": "2026-10-10T00:00:00+00:00",
+      "source": "synthetic-fixed",
+      "timing_boundary": "synthetic-duration",
+      "cuda_completion_wait": false
+    },
+    {
+      "run_id": "fixture",
+      "global_rank": 0,
+      "iteration": 14,
+      "iteration_time_ms": 1,
+      "timestamp": "2026-10-10T00:00:00+00:00",
+      "source": "synthetic-fixed",
+      "timing_boundary": "synthetic-duration",
+      "cuda_completion_wait": false
+    },
+    {
+      "run_id": "fixture",
+      "global_rank": 0,
+      "iteration": 15,
+      "iteration_time_ms": 1,
+      "timestamp": "2026-10-10T00:00:00+00:00",
+      "source": "synthetic-fixed",
+      "timing_boundary": "synthetic-duration",
+      "cuda_completion_wait": false
+    }
+  ]
+}

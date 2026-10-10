@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "native_calls_full": 35,
+  "native_calls_prefix": 14,
+  "input_prefix_identical": true,
+  "output_repeatability": "FAIL separate test; not assumed"
+}

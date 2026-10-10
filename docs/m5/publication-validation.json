@@ -1,0 +1,122 @@
+{
+  "machine": "local macOS arm64",
+  "python": "3.9.6",
+  "utc": "2026-10-10T08:27:10.736137+00:00",
+  "commands": [
+    {
+      "command": [
+        "python3",
+        "tests/m5_reporter.py"
+      ],
+      "exit_code": 0,
+      "log": "runs/m5-publication-01/00.log"
+    },
+    {
+      "command": [
+        "python3",
+        "tests/m5_detection.py"
+      ],
+      "exit_code": 0,
+      "log": "runs/m5-publication-01/01.log"
+    },
+    {
+      "command": [
+        "python3",
+        "tests/m5_contract_evidence.py",
+        "<m5-checkout>/runs/m5-publication-01/unit-evidence.json"
+      ],
+      "exit_code": 0,
+      "log": "runs/m5-publication-01/02.log"
+    },
+    {
+      "command": [
+        "python3",
+        "tests/privacy_check_test.py"
+      ],
+      "exit_code": 0,
+      "log": "runs/m5-publication-01/03.log"
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/privacy_check.py"
+      ],
+      "exit_code": 0,
+      "log": "runs/m5-publication-01/04.log"
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/m3_validate_public.py"
+      ],
+      "exit_code": 0,
+      "log": "runs/m5-publication-01/05.log"
+    },
+    {
+      "command": [
+        "python3",
+        "tests/m4_offline.py",
+        "--output",
+        "<m5-checkout>/runs/m5-publication-01/m4"
+      ],
+      "exit_code": 0,
+      "log": "runs/m5-publication-01/06.log"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--cached",
+        "--check"
+      ],
+      "exit_code": 0,
+      "log": "runs/m5-publication-01/07.log"
+    }
+  ],
+  "checked_status": "PASS",
+  "known_native_repeatability": "FAIL retained; no scientific detection PASS",
+  "server_additional_checks": [
+    {
+      "command": "python3 runs/m5-access/postflight.py",
+      "exit_code": 0,
+      "log": "runs/m5-access/postflight.log"
+    },
+    {
+      "command": "<project>/.venv-m5/bin/python tests/m5_contract_evidence.py docs/m5/unit-evidence.json",
+      "exit_code": 0,
+      "log": "runs/m5-access/unit-evidence.log"
+    },
+    {
+      "check": "bounded native timeout .001s",
+      "exit_code": 0,
+      "log": "runs/m5-access/native-timeout.log"
+    }
+  ],
+  "ci": {
+    "snapshot_head": "d639f66e00fb975a561478e3ed3ead6f1401d6db",
+    "run_id": 38038070584,
+    "status": "completed",
+    "conclusion": "success",
+    "url": "https://github.com/Zwhao0/myflash/actions/runs/38038070584"
+  },
+  "final_index_privacy": {
+    "command": [
+      "python3",
+      "scripts/privacy_check.py"
+    ],
+    "exit_code": 0,
+    "files": 539,
+    "findings": 0,
+    "all_final_added_files_staged": true
+  },
+  "latest_main_verified": "9c66be49c33b9022573011e1dd2846721cca3833",
+  "publication": {
+    "draft_pr": "https://github.com/Zwhao0/myflash/pull/6",
+    "source_head": "d639f66e00fb975a561478e3ed3ead6f1401d6db",
+    "source_tree": "9eb49d43b15af19033d6b82f143f74a645450efc",
+    "remote_commit_tree_equal": true,
+    "git_push_exit_code": 0,
+    "changed_files": 90,
+    "final_receipt_location": "server runs/m5-access/publication-receipt.json; receipt commit CI checked separately"
+  }
+}

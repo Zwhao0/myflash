@@ -1,0 +1,132 @@
+{
+  "stable": {
+    "onset_iteration": null,
+    "event_kind": "no_sustained_event",
+    "matching_tolerance_iterations": 2
+  },
+  "spike": {
+    "onset_iteration": 21,
+    "event_kind": "synthetic_change",
+    "matching_tolerance_iterations": 2
+  },
+  "sustained": {
+    "onset_iteration": 21,
+    "event_kind": "synthetic_change",
+    "matching_tolerance_iterations": 2
+  },
+  "recovery": {
+    "onset_iteration": 21,
+    "event_kind": "synthetic_change",
+    "matching_tolerance_iterations": 2
+  },
+  "multiple": {
+    "onset_iteration": 16,
+    "event_kind": "synthetic_change",
+    "matching_tolerance_iterations": 2
+  },
+  "warmup": {
+    "onset_iteration": null,
+    "event_kind": "no_sustained_event",
+    "matching_tolerance_iterations": 2
+  },
+  "outlier": {
+    "onset_iteration": null,
+    "event_kind": "no_sustained_event",
+    "matching_tolerance_iterations": 2
+  },
+  "adjacent": {
+    "onset_iteration": 21,
+    "event_kind": "synthetic_change",
+    "matching_tolerance_iterations": 2
+  },
+  "constant": {
+    "onset_iteration": null,
+    "event_kind": "no_sustained_event",
+    "matching_tolerance_iterations": 2
+  },
+  "zero_variance": {
+    "onset_iteration": null,
+    "event_kind": "no_sustained_event",
+    "matching_tolerance_iterations": 2
+  },
+  "window_boundary": {
+    "onset_iteration": 6,
+    "event_kind": "synthetic_change",
+    "matching_tolerance_iterations": 2
+  },
+  "latest_endpoint": {
+    "onset_iteration": null,
+    "event_kind": "no_sustained_event",
+    "matching_tolerance_iterations": 2
+  },
+  "empty": {
+    "onset_iteration": null,
+    "event_kind": "no_sustained_event",
+    "matching_tolerance_iterations": 2
+  },
+  "growth_19": {
+    "onset_iteration": 21,
+    "event_kind": "synthetic_change",
+    "matching_tolerance_iterations": 2
+  },
+  "growth_20": {
+    "onset_iteration": 21,
+    "event_kind": "synthetic_change",
+    "matching_tolerance_iterations": 2
+  },
+  "growth_21": {
+    "onset_iteration": 21,
+    "event_kind": "synthetic_change",
+    "matching_tolerance_iterations": 2
+  },
+  "growth_24": {
+    "onset_iteration": 21,
+    "event_kind": "synthetic_change",
+    "matching_tolerance_iterations": 2
+  },
+  "growth_25": {
+    "onset_iteration": 21,
+    "event_kind": "synthetic_change",
+    "matching_tolerance_iterations": 2
+  },
+  "growth_26": {
+    "onset_iteration": 21,
+    "event_kind": "synthetic_change",
+    "matching_tolerance_iterations": 2
+  },
+  "missing": {
+    "onset_iteration": null,
+    "event_kind": "invalid_input",
+    "matching_tolerance_iterations": 2
+  },
+  "duplicate": {
+    "onset_iteration": null,
+    "event_kind": "invalid_input",
+    "matching_tolerance_iterations": 2
+  },
+  "out_of_order": {
+    "onset_iteration": null,
+    "event_kind": "invalid_input",
+    "matching_tolerance_iterations": 2
+  },
+  "zero_time": {
+    "onset_iteration": null,
+    "event_kind": "invalid_input",
+    "matching_tolerance_iterations": 2
+  },
+  "negative_time": {
+    "onset_iteration": null,
+    "event_kind": "invalid_input",
+    "matching_tolerance_iterations": 2
+  },
+  "boolean_time": {
+    "onset_iteration": null,
+    "event_kind": "invalid_input",
+    "matching_tolerance_iterations": 2
+  },
+  "illegal_time": {
+    "onset_iteration": null,
+    "event_kind": "invalid_input",
+    "matching_tolerance_iterations": 2
+  }
+}

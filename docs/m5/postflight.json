@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "command": [
+    "nvidia-smi",
+    "--query-compute-apps=pid",
+    "--format=csv,noheader,nounits"
+  ],
+  "query_exit_code": 0,
+  "own_gpu_pids_remaining": 0,
+  "launches": [
+    {
+      "run": "baseline",
+      "remaining_own_pids": [],
+      "exit_code": 0
+    },
+    {
+      "run": "off",
+      "remaining_own_pids": [],
+      "exit_code": 0
+    },
+    {
+      "run": "on",
+      "remaining_own_pids": [],
+      "exit_code": 0
+    }
+  ]
+}

@@ -1,0 +1,819 @@
+[
+  {
+    "case": "sustained",
+    "input_ms": [
+      10,
+      10,
+      20,
+      20,
+      20
+    ],
+    "raw_fixture": {
+      "time": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "trend": {
+        "cp": [
+          3
+        ],
+        "cpPr": [
+          0.9
+        ],
+        "cpOccPr": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    "mapping": [
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "evidence": [
+      {
+        "slot": 0,
+        "cp": 3,
+        "cpPr": 0.9,
+        "index0": 2,
+        "reason": "G01_G02_G13_UNAPPROVED_FINAL_RULE",
+        "cpOccPr_at_coordinate": 0,
+        "iteration": 6,
+        "stages": {
+          "probability": {
+            "value": 0.9,
+            "threshold": 0.8,
+            "comparison": ">=",
+            "passed": true,
+            "field": "trend.cpPr",
+            "assumption": "G01 interpretation unresolved"
+          },
+          "spacing": {
+            "original_iteration_distance": null,
+            "threshold": 2,
+            "passed": true,
+            "reference": "previous probability-qualified chronological candidate"
+          },
+          "degradation": {
+            "duration_growth": 1.0,
+            "throughput_loss": 0.5,
+            "threshold": 0.2,
+            "duration_growth_pass": true,
+            "throughput_loss_pass": true,
+            "comparison": ">",
+            "approved_formula": null,
+            "reason": "G13 denominator/direction unspecified"
+          },
+          "recovery": {
+            "value": 0.0,
+            "threshold": 0.75,
+            "filtered": false,
+            "denominator_ms": 10.0,
+            "reason": null
+          },
+          "persistence": {
+            "required_iterations": null,
+            "observed_original_iterations": 3,
+            "decision": null,
+            "reason": "G02 >20 versus 1\u20132 unresolved"
+          }
+        },
+        "status": "AMBIGUOUS_SPEC",
+        "statistics": {
+          "baseline_mean": 10.0,
+          "degraded_mean": 20.0,
+          "recent_mean": 20.0,
+          "left_sample_count": 2,
+          "right_sample_count": 3,
+          "recent_sample_count": 2,
+          "observed_original_iterations": 3,
+          "observed_duration_gt20": false,
+          "mean_slices": "whole filtered window: [:cp], [cp:], [cp+1:]; latest included"
+        },
+        "provisional_duration_candidate": true,
+        "provisional_throughput_candidate": true
+      }
+    ],
+    "classification": "UNIT_ARITHMETIC_NOT_NATIVE_EXECUTION"
+  },
+  {
+    "case": "recovery_boundary",
+    "input_ms": [
+      10,
+      10,
+      35,
+      12.5,
+      12.5
+    ],
+    "raw_fixture": {
+      "time": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "trend": {
+        "cp": [
+          3
+        ],
+        "cpPr": [
+          0.9
+        ],
+        "cpOccPr": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    "mapping": [
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "evidence": [
+      {
+        "slot": 0,
+        "cp": 3,
+        "cpPr": 0.9,
+        "index0": 2,
+        "reason": "TRANSIENT_RECOVERY",
+        "cpOccPr_at_coordinate": 0,
+        "iteration": 6,
+        "stages": {
+          "probability": {
+            "value": 0.9,
+            "threshold": 0.8,
+            "comparison": ">=",
+            "passed": true,
+            "field": "trend.cpPr",
+            "assumption": "G01 interpretation unresolved"
+          },
+          "spacing": {
+            "original_iteration_distance": null,
+            "threshold": 2,
+            "passed": true,
+            "reference": "previous probability-qualified chronological candidate"
+          },
+          "degradation": {
+            "duration_growth": 1.0,
+            "throughput_loss": 0.5,
+            "threshold": 0.2,
+            "duration_growth_pass": true,
+            "throughput_loss_pass": true,
+            "comparison": ">",
+            "approved_formula": null,
+            "reason": "G13 denominator/direction unspecified"
+          },
+          "recovery": {
+            "value": 0.75,
+            "threshold": 0.75,
+            "filtered": true,
+            "denominator_ms": 10.0,
+            "reason": null
+          },
+          "persistence": {
+            "required_iterations": null,
+            "observed_original_iterations": 3,
+            "decision": null,
+            "reason": "G02 >20 versus 1\u20132 unresolved"
+          }
+        },
+        "status": "SKIPPED",
+        "statistics": {
+          "baseline_mean": 10.0,
+          "degraded_mean": 20.0,
+          "recent_mean": 12.5,
+          "left_sample_count": 2,
+          "right_sample_count": 3,
+          "recent_sample_count": 2,
+          "observed_original_iterations": 3,
+          "observed_duration_gt20": false,
+          "mean_slices": "whole filtered window: [:cp], [cp:], [cp+1:]; latest included"
+        }
+      }
+    ],
+    "classification": "UNIT_ARITHMETIC_NOT_NATIVE_EXECUTION"
+  },
+  {
+    "case": "right_endpoint",
+    "input_ms": [
+      10,
+      10,
+      20
+    ],
+    "raw_fixture": {
+      "time": [
+        1,
+        2,
+        3
+      ],
+      "trend": {
+        "cp": [
+          3
+        ],
+        "cpPr": [
+          0.9
+        ],
+        "cpOccPr": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    "mapping": [
+      4,
+      5,
+      6
+    ],
+    "evidence": [
+      {
+        "slot": 0,
+        "cp": 3,
+        "cpPr": 0.9,
+        "index0": 2,
+        "reason": "INSUFFICIENT_SAMPLES_OR_ZERO_DENOMINATOR",
+        "cpOccPr_at_coordinate": 0,
+        "iteration": 6,
+        "stages": {
+          "probability": {
+            "value": 0.9,
+            "threshold": 0.8,
+            "comparison": ">=",
+            "passed": true,
+            "field": "trend.cpPr",
+            "assumption": "G01 interpretation unresolved"
+          },
+          "spacing": {
+            "original_iteration_distance": null,
+            "threshold": 2,
+            "passed": true,
+            "reference": "previous probability-qualified chronological candidate"
+          },
+          "degradation": {
+            "duration_growth": 1.0,
+            "throughput_loss": 0.5,
+            "threshold": 0.2,
+            "duration_growth_pass": true,
+            "throughput_loss_pass": true,
+            "comparison": ">",
+            "approved_formula": null,
+            "reason": "G13 denominator/direction unspecified"
+          },
+          "recovery": {
+            "value": null,
+            "threshold": 0.75,
+            "filtered": null,
+            "denominator_ms": 10.0,
+            "reason": "INSUFFICIENT_SAMPLES_OR_ZERO_DENOMINATOR"
+          },
+          "persistence": {
+            "required_iterations": null,
+            "observed_original_iterations": 1,
+            "decision": null,
+            "reason": "G02 >20 versus 1\u20132 unresolved"
+          }
+        },
+        "status": "INSUFFICIENT_EVIDENCE",
+        "statistics": {
+          "baseline_mean": 10.0,
+          "degraded_mean": 20.0,
+          "recent_mean": null,
+          "left_sample_count": 2,
+          "right_sample_count": 1,
+          "recent_sample_count": 0,
+          "observed_original_iterations": 1,
+          "observed_duration_gt20": false,
+          "mean_slices": "whole filtered window: [:cp], [cp:], [cp+1:]; latest included"
+        }
+      }
+    ],
+    "classification": "UNIT_ARITHMETIC_NOT_NATIVE_EXECUTION"
+  },
+  {
+    "case": "zero_denominator",
+    "input_ms": [
+      10,
+      10,
+      10,
+      10
+    ],
+    "raw_fixture": {
+      "time": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "trend": {
+        "cp": [
+          3
+        ],
+        "cpPr": [
+          0.9
+        ],
+        "cpOccPr": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    "mapping": [
+      4,
+      5,
+      6,
+      7
+    ],
+    "evidence": [
+      {
+        "slot": 0,
+        "cp": 3,
+        "cpPr": 0.9,
+        "index0": 2,
+        "reason": "INSUFFICIENT_SAMPLES_OR_ZERO_DENOMINATOR",
+        "cpOccPr_at_coordinate": 0,
+        "iteration": 6,
+        "stages": {
+          "probability": {
+            "value": 0.9,
+            "threshold": 0.8,
+            "comparison": ">=",
+            "passed": true,
+            "field": "trend.cpPr",
+            "assumption": "G01 interpretation unresolved"
+          },
+          "spacing": {
+            "original_iteration_distance": null,
+            "threshold": 2,
+            "passed": true,
+            "reference": "previous probability-qualified chronological candidate"
+          },
+          "degradation": {
+            "duration_growth": 0.0,
+            "throughput_loss": 0.0,
+            "threshold": 0.2,
+            "duration_growth_pass": false,
+            "throughput_loss_pass": false,
+            "comparison": ">",
+            "approved_formula": null,
+            "reason": "G13 denominator/direction unspecified"
+          },
+          "recovery": {
+            "value": null,
+            "threshold": 0.75,
+            "filtered": null,
+            "denominator_ms": 0.0,
+            "reason": "INSUFFICIENT_SAMPLES_OR_ZERO_DENOMINATOR"
+          },
+          "persistence": {
+            "required_iterations": null,
+            "observed_original_iterations": 2,
+            "decision": null,
+            "reason": "G02 >20 versus 1\u20132 unresolved"
+          }
+        },
+        "status": "INSUFFICIENT_EVIDENCE",
+        "statistics": {
+          "baseline_mean": 10.0,
+          "degraded_mean": 10.0,
+          "recent_mean": 10.0,
+          "left_sample_count": 2,
+          "right_sample_count": 2,
+          "recent_sample_count": 1,
+          "observed_original_iterations": 2,
+          "observed_duration_gt20": false,
+          "mean_slices": "whole filtered window: [:cp], [cp:], [cp+1:]; latest included"
+        }
+      }
+    ],
+    "classification": "UNIT_ARITHMETIC_NOT_NATIVE_EXECUTION"
+  },
+  {
+    "case": "adjacent",
+    "input_ms": [
+      10,
+      10,
+      20,
+      30,
+      30
+    ],
+    "raw_fixture": {
+      "time": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "trend": {
+        "cp": [
+          3,
+          4
+        ],
+        "cpPr": [
+          0.9,
+          0.9
+        ],
+        "cpOccPr": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    "mapping": [
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "evidence": [
+      {
+        "slot": 0,
+        "cp": 3,
+        "cpPr": 0.9,
+        "index0": 2,
+        "reason": "G01_G02_G13_UNAPPROVED_FINAL_RULE",
+        "cpOccPr_at_coordinate": 0,
+        "iteration": 6,
+        "stages": {
+          "probability": {
+            "value": 0.9,
+            "threshold": 0.8,
+            "comparison": ">=",
+            "passed": true,
+            "field": "trend.cpPr",
+            "assumption": "G01 interpretation unresolved"
+          },
+          "spacing": {
+            "original_iteration_distance": null,
+            "threshold": 2,
+            "passed": true,
+            "reference": "previous probability-qualified chronological candidate"
+          },
+          "degradation": {
+            "duration_growth": 1.6666666666666667,
+            "throughput_loss": 0.625,
+            "threshold": 0.2,
+            "duration_growth_pass": true,
+            "throughput_loss_pass": true,
+            "comparison": ">",
+            "approved_formula": null,
+            "reason": "G13 denominator/direction unspecified"
+          },
+          "recovery": {
+            "value": -0.19999999999999993,
+            "threshold": 0.75,
+            "filtered": false,
+            "denominator_ms": 16.666666666666668,
+            "reason": null
+          },
+          "persistence": {
+            "required_iterations": null,
+            "observed_original_iterations": 3,
+            "decision": null,
+            "reason": "G02 >20 versus 1\u20132 unresolved"
+          }
+        },
+        "status": "AMBIGUOUS_SPEC",
+        "statistics": {
+          "baseline_mean": 10.0,
+          "degraded_mean": 26.666666666666668,
+          "recent_mean": 30.0,
+          "left_sample_count": 2,
+          "right_sample_count": 3,
+          "recent_sample_count": 2,
+          "observed_original_iterations": 3,
+          "observed_duration_gt20": false,
+          "mean_slices": "whole filtered window: [:cp], [cp:], [cp+1:]; latest included"
+        },
+        "provisional_duration_candidate": true,
+        "provisional_throughput_candidate": true
+      },
+      {
+        "slot": 1,
+        "cp": 4,
+        "cpPr": 0.9,
+        "index0": 3,
+        "reason": "ADJACENT_CHANGEPOINT",
+        "cpOccPr_at_coordinate": 0,
+        "iteration": 7,
+        "stages": {
+          "probability": {
+            "value": 0.9,
+            "threshold": 0.8,
+            "comparison": ">=",
+            "passed": true,
+            "field": "trend.cpPr",
+            "assumption": "G01 interpretation unresolved"
+          },
+          "spacing": {
+            "original_iteration_distance": 1,
+            "threshold": 2,
+            "passed": false,
+            "reference": "previous probability-qualified chronological candidate"
+          },
+          "degradation": {
+            "duration_growth": 1.2499999999999998,
+            "throughput_loss": 0.5555555555555555,
+            "threshold": 0.2,
+            "duration_growth_pass": true,
+            "throughput_loss_pass": true,
+            "comparison": ">",
+            "approved_formula": null,
+            "reason": "G13 denominator/direction unspecified"
+          },
+          "recovery": {
+            "value": 0.0,
+            "threshold": 0.75,
+            "filtered": false,
+            "denominator_ms": 16.666666666666664,
+            "reason": null
+          },
+          "persistence": {
+            "required_iterations": null,
+            "observed_original_iterations": 2,
+            "decision": null,
+            "reason": "G02 >20 versus 1\u20132 unresolved"
+          }
+        },
+        "status": "SKIPPED",
+        "statistics": {
+          "baseline_mean": 13.333333333333334,
+          "degraded_mean": 30.0,
+          "recent_mean": 30.0,
+          "left_sample_count": 3,
+          "right_sample_count": 2,
+          "recent_sample_count": 1,
+          "observed_original_iterations": 2,
+          "observed_duration_gt20": false,
+          "mean_slices": "whole filtered window: [:cp], [cp:], [cp+1:]; latest included"
+        }
+      }
+    ],
+    "classification": "UNIT_ARITHMETIC_NOT_NATIVE_EXECUTION"
+  },
+  {
+    "case": "spacing_two",
+    "input_ms": [
+      10,
+      10,
+      20,
+      20,
+      30,
+      30
+    ],
+    "raw_fixture": {
+      "time": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "trend": {
+        "cp": [
+          3,
+          5
+        ],
+        "cpPr": [
+          0.9,
+          0.9
+        ],
+        "cpOccPr": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    "mapping": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "evidence": [
+      {
+        "slot": 0,
+        "cp": 3,
+        "cpPr": 0.9,
+        "index0": 2,
+        "reason": "G01_G02_G13_UNAPPROVED_FINAL_RULE",
+        "cpOccPr_at_coordinate": 0,
+        "iteration": 6,
+        "stages": {
+          "probability": {
+            "value": 0.9,
+            "threshold": 0.8,
+            "comparison": ">=",
+            "passed": true,
+            "field": "trend.cpPr",
+            "assumption": "G01 interpretation unresolved"
+          },
+          "spacing": {
+            "original_iteration_distance": null,
+            "threshold": 2,
+            "passed": true,
+            "reference": "previous probability-qualified chronological candidate"
+          },
+          "degradation": {
+            "duration_growth": 1.5,
+            "throughput_loss": 0.6,
+            "threshold": 0.2,
+            "duration_growth_pass": true,
+            "throughput_loss_pass": true,
+            "comparison": ">",
+            "approved_formula": null,
+            "reason": "G13 denominator/direction unspecified"
+          },
+          "recovery": {
+            "value": -0.11111111111111119,
+            "threshold": 0.75,
+            "filtered": false,
+            "denominator_ms": 15.0,
+            "reason": null
+          },
+          "persistence": {
+            "required_iterations": null,
+            "observed_original_iterations": 4,
+            "decision": null,
+            "reason": "G02 >20 versus 1\u20132 unresolved"
+          }
+        },
+        "status": "AMBIGUOUS_SPEC",
+        "statistics": {
+          "baseline_mean": 10.0,
+          "degraded_mean": 25.0,
+          "recent_mean": 26.666666666666668,
+          "left_sample_count": 2,
+          "right_sample_count": 4,
+          "recent_sample_count": 3,
+          "observed_original_iterations": 4,
+          "observed_duration_gt20": false,
+          "mean_slices": "whole filtered window: [:cp], [cp:], [cp+1:]; latest included"
+        },
+        "provisional_duration_candidate": true,
+        "provisional_throughput_candidate": true
+      },
+      {
+        "slot": 1,
+        "cp": 5,
+        "cpPr": 0.9,
+        "index0": 4,
+        "reason": "G01_G02_G13_UNAPPROVED_FINAL_RULE",
+        "cpOccPr_at_coordinate": 0,
+        "iteration": 8,
+        "stages": {
+          "probability": {
+            "value": 0.9,
+            "threshold": 0.8,
+            "comparison": ">=",
+            "passed": true,
+            "field": "trend.cpPr",
+            "assumption": "G01 interpretation unresolved"
+          },
+          "spacing": {
+            "original_iteration_distance": 2,
+            "threshold": 2,
+            "passed": true,
+            "reference": "previous probability-qualified chronological candidate"
+          },
+          "degradation": {
+            "duration_growth": 1.0,
+            "throughput_loss": 0.5,
+            "threshold": 0.2,
+            "duration_growth_pass": true,
+            "throughput_loss_pass": true,
+            "comparison": ">",
+            "approved_formula": null,
+            "reason": "G13 denominator/direction unspecified"
+          },
+          "recovery": {
+            "value": 0.0,
+            "threshold": 0.75,
+            "filtered": false,
+            "denominator_ms": 15.0,
+            "reason": null
+          },
+          "persistence": {
+            "required_iterations": null,
+            "observed_original_iterations": 2,
+            "decision": null,
+            "reason": "G02 >20 versus 1\u20132 unresolved"
+          }
+        },
+        "status": "AMBIGUOUS_SPEC",
+        "statistics": {
+          "baseline_mean": 15.0,
+          "degraded_mean": 30.0,
+          "recent_mean": 30.0,
+          "left_sample_count": 4,
+          "right_sample_count": 2,
+          "recent_sample_count": 1,
+          "observed_original_iterations": 2,
+          "observed_duration_gt20": false,
+          "mean_slices": "whole filtered window: [:cp], [cp:], [cp+1:]; latest included"
+        },
+        "provisional_duration_candidate": true,
+        "provisional_throughput_candidate": true
+      }
+    ],
+    "classification": "UNIT_ARITHMETIC_NOT_NATIVE_EXECUTION"
+  },
+  {
+    "raw_fixture": {},
+    "reason": "missing trend result",
+    "classification": "INVALID_RETURN_UNIT_FIXTURE"
+  },
+  {
+    "raw_fixture": {
+      "trend": {
+        "cp": [
+          0
+        ],
+        "cpPr": [
+          0.9
+        ],
+        "cpOccPr": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    "parser_evidence": [
+      {
+        "slot": 0,
+        "cp": 0,
+        "cpPr": 0.9,
+        "index0": null,
+        "reason": "INVALID_COORDINATE"
+      }
+    ],
+    "classification": "INVALID_RETURN_UNIT_FIXTURE"
+  },
+  {
+    "raw_fixture": {
+      "trend": {
+        "cp": [
+          4
+        ],
+        "cpPr": [
+          1.2
+        ],
+        "cpOccPr": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    "parser_evidence": [
+      {
+        "slot": 0,
+        "cp": 4,
+        "cpPr": 1.2,
+        "index0": null,
+        "reason": "INVALID_PROBABILITY"
+      }
+    ],
+    "classification": "INVALID_RETURN_UNIT_FIXTURE"
+  }
+]

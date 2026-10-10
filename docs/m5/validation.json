@@ -1,0 +1,383 @@
+{
+  "machine": "node-0 Linux x86_64; CPU replay and 2 H800 DDP",
+  "base_commit": "9c66be49c33b9022573011e1dd2846721cca3833",
+  "runs": [
+    {
+      "host": "node-0",
+      "started": "2026-10-10T08:05:13.633941+00:00",
+      "source_commit": "9c66be49c33b9022573011e1dd2846721cca3833",
+      "commands": [
+        {
+          "command": [
+            "<project>/.venv-m5/bin/python",
+            "tests/m5_reporter.py"
+          ],
+          "exit_code": 0,
+          "log": "runs/m5-work/runs/m5-validation-01/00.log",
+          "started": "2026-10-10T08:05:13.636497+00:00"
+        },
+        {
+          "command": [
+            "<project>/.venv-m5/bin/python",
+            "tests/m5_detection.py"
+          ],
+          "exit_code": 0,
+          "log": "runs/m5-work/runs/m5-validation-01/01.log",
+          "started": "2026-10-10T08:05:14.752338+00:00"
+        },
+        {
+          "command": [
+            "<project>/.venv-m5/bin/python",
+            "tests/m5_real_api.py",
+            "<project>/runs/m5-work/runs/m5-validation-01/api"
+          ],
+          "exit_code": 1,
+          "log": "runs/m5-work/runs/m5-validation-01/02.log",
+          "started": "2026-10-10T08:05:14.867096+00:00"
+        }
+      ],
+      "status": "FAIL",
+      "sources": {
+        "flash/localization.py": "43604fc3f2c8a32482c1420380efe40731c898e87df8036d8d7371083127f51c",
+        "flash/reader.py": "ef0a0b2ac43fa3c245ce5c9dac74fb5ccde522221ddfd2ea8118c3666908eda1",
+        "flash/iteration_reporter.py": "a2429053bf895cd4afb6301072480ccaec82f97696598704eea030f4b1b6c3a9",
+        "flash/change_detection.py": "ea7e0112924221d4251cf8dbfb1a39129bb552d4426ff3ff032350aad1e9104d",
+        "flash/profile_input.py": "54d61ba4f579cee0622a023b76db8dd4be9587b01fce98bc68842253bf27a8c9",
+        "flash/__init__.py": "ebd6b85348d4590ef8db6c4720c0c46f694ebc13a6b7c01cdfa4687d6d707e18",
+        "flash/rbeast_adapter.py": "ff14c1b21d88f48268c3fe1594256f3de565707b6f29f19c0aa81a877d54f651",
+        "scripts/m5_evaluate.py": "2e795213ac400578dc5a2de58c51db9a7665f00f44644de1d8eb99f67e7c1baa",
+        "scripts/m5_launch.py": "27ee86d3b29b94b0fc941d7d4db81253d06afef84b117e0dc3fda0689d7c99f8",
+        "scripts/m5_replay.py": "60658edfafebeee27c121479597854074e7ff6ff99a7db115f0b24c83cfe400e",
+        "scripts/m5_verify_ddp.py": "b4424c876dfe07b7ffda9d46d1bf2ad05757e3e09a5682be8d75235616a54f7e",
+        "tests/m5_ddp.py": "91966de75bc5348e9c577f92994f0366cc18cfcd1d167919f203b33d321a664e",
+        "tests/m5_replay.py": "859d72e4c48f14d7f3eba656e74fcfe59bd6055d19b2ac789f0c3c5fa77a354d",
+        "tests/m5_detection.py": "5acada38b9076658fd2ca11811e10517fc44c1c6a65c6b31645a949124030df0",
+        "tests/m5_real_api.py": "47d05d2928f6155d15dbe61651863bfe50d788b8558cc6b9e444203819f43629",
+        "tests/m5_reporter.py": "9a3005562c60ffe3f0e1566c00d64078893de0430e3c7a9d1d7c5e3461a86c59"
+      },
+      "error": "RuntimeError: validation failed; stop without weakening assertions"
+    },
+    {
+      "host": "node-0",
+      "started": "2026-10-10T08:10:09.085901+00:00",
+      "source_commit": "9c66be49c33b9022573011e1dd2846721cca3833",
+      "commands": [
+        {
+          "command": [
+            "<project>/.venv-m5/bin/python",
+            "tests/m5_reporter.py"
+          ],
+          "exit_code": 0,
+          "log": "runs/m5-work/runs/m5-validation-02/00.log",
+          "started": "2026-10-10T08:10:09.088373+00:00"
+        },
+        {
+          "command": [
+            "<project>/.venv-m5/bin/python",
+            "tests/m5_detection.py"
+          ],
+          "exit_code": 0,
+          "log": "runs/m5-work/runs/m5-validation-02/01.log",
+          "started": "2026-10-10T08:10:10.203772+00:00"
+        },
+        {
+          "command": [
+            "<project>/.venv-m5/bin/python",
+            "tests/m5_api_fields.py",
+            "<project>/runs/m5-work/runs/m5-validation-02/api-fields"
+          ],
+          "exit_code": 0,
+          "log": "runs/m5-work/runs/m5-validation-02/02.log",
+          "started": "2026-10-10T08:10:10.318327+00:00"
+        },
+        {
+          "command": [
+            "<project>/.venv-m5/bin/python",
+            "scripts/m5_replay.py",
+            "--input",
+            "tests/m5_fixtures/records",
+            "--output",
+            "<project>/runs/m5-work/runs/m5-validation-02/replay"
+          ],
+          "exit_code": 0,
+          "log": "runs/m5-work/runs/m5-validation-02/03.log",
+          "started": "2026-10-10T08:10:10.533032+00:00"
+        },
+        {
+          "command": [
+            "<project>/.venv-m5/bin/python",
+            "tests/m5_causality.py",
+            "<project>/runs/m5-work/runs/m5-validation-02/causality.json"
+          ],
+          "exit_code": 0,
+          "log": "runs/m5-work/runs/m5-validation-02/04.log",
+          "started": "2026-10-10T08:11:35.511375+00:00"
+        },
+        {
+          "command": [
+            "<project>/.venv-m5/bin/python",
+            "scripts/m5_evaluate.py",
+            "--results",
+            "<project>/runs/m5-work/runs/m5-validation-02/replay",
+            "--truth",
+            "tests/m5_fixtures/evaluator.json",
+            "--output",
+            "<project>/runs/m5-work/runs/m5-validation-02/metrics.json"
+          ],
+          "exit_code": 0,
+          "log": "runs/m5-work/runs/m5-validation-02/05.log",
+          "started": "2026-10-10T08:11:42.685507+00:00"
+        },
+        {
+          "command": [
+            "python3",
+            "scripts/m3_cpu_suite.py"
+          ],
+          "exit_code": 1,
+          "log": "runs/m5-work/runs/m5-validation-02/06.log",
+          "started": "2026-10-10T08:11:42.900478+00:00"
+        }
+      ],
+      "status": "FAIL",
+      "sources": {
+        "flash/localization.py": "43604fc3f2c8a32482c1420380efe40731c898e87df8036d8d7371083127f51c",
+        "flash/reader.py": "ef0a0b2ac43fa3c245ce5c9dac74fb5ccde522221ddfd2ea8118c3666908eda1",
+        "flash/iteration_reporter.py": "a2429053bf895cd4afb6301072480ccaec82f97696598704eea030f4b1b6c3a9",
+        "flash/change_detection.py": "ea7e0112924221d4251cf8dbfb1a39129bb552d4426ff3ff032350aad1e9104d",
+        "flash/profile_input.py": "54d61ba4f579cee0622a023b76db8dd4be9587b01fce98bc68842253bf27a8c9",
+        "flash/__init__.py": "ebd6b85348d4590ef8db6c4720c0c46f694ebc13a6b7c01cdfa4687d6d707e18",
+        "flash/rbeast_adapter.py": "ff14c1b21d88f48268c3fe1594256f3de565707b6f29f19c0aa81a877d54f651",
+        "scripts/m5_evaluate.py": "2e795213ac400578dc5a2de58c51db9a7665f00f44644de1d8eb99f67e7c1baa",
+        "scripts/m5_launch.py": "27ee86d3b29b94b0fc941d7d4db81253d06afef84b117e0dc3fda0689d7c99f8",
+        "scripts/m5_replay.py": "60658edfafebeee27c121479597854074e7ff6ff99a7db115f0b24c83cfe400e",
+        "scripts/m5_verify_ddp.py": "b4424c876dfe07b7ffda9d46d1bf2ad05757e3e09a5682be8d75235616a54f7e",
+        "tests/m5_ddp.py": "91966de75bc5348e9c577f92994f0366cc18cfcd1d167919f203b33d321a664e",
+        "tests/m5_replay.py": "859d72e4c48f14d7f3eba656e74fcfe59bd6055d19b2ac789f0c3c5fa77a354d",
+        "tests/m5_api_fields.py": "9463d376f2e096355a8696f50a5dcb46236b74ec912d1928efa261bb0103683a",
+        "tests/m5_detection.py": "5acada38b9076658fd2ca11811e10517fc44c1c6a65c6b31645a949124030df0",
+        "tests/m5_real_api.py": "9e27ff7b3e8ca2a0b57ac851fcdd382c3978a4d389ca2497c0cdb7a57aca1e1b",
+        "tests/m5_reporter.py": "9a3005562c60ffe3f0e1566c00d64078893de0430e3c7a9d1d7c5e3461a86c59",
+        "tests/m5_causality.py": "1c6e312737b1e77c4a7b804d4d35f8064d2d38e3c167f5c699fe64c1ba569a19"
+      },
+      "error": "RuntimeError: validation failed; stop without weakening assertions"
+    },
+    {
+      "host": "node-0",
+      "started": "2026-10-10T08:12:32.215401+00:00",
+      "source_commit": "9c66be49c33b9022573011e1dd2846721cca3833",
+      "commands": [
+        {
+          "command": [
+            "python3",
+            "tests/m3_validation.py"
+          ],
+          "exit_code": 0,
+          "log": "runs/m5-work/runs/m5-validation-03/00.log",
+          "started": "2026-10-10T08:12:32.218396+00:00"
+        },
+        {
+          "command": [
+            "python3",
+            "tests/m4_offline.py",
+            "--output",
+            "<project>/runs/m5-work/runs/m5-validation-03/m4-fixtures"
+          ],
+          "exit_code": 0,
+          "log": "runs/m5-work/runs/m5-validation-03/01.log",
+          "started": "2026-10-10T08:12:32.332360+00:00"
+        },
+        {
+          "command": [
+            "python3",
+            "scripts/m3_validate_public.py"
+          ],
+          "exit_code": 0,
+          "log": "runs/m5-work/runs/m5-validation-03/02.log",
+          "started": "2026-10-10T08:12:34.850081+00:00"
+        },
+        {
+          "command": [
+            "python3",
+            "scripts/m1_launch.py",
+            "--python",
+            "<project>/.venv-m5/bin/python",
+            "--run-id",
+            "m5-ddp-baseline-02",
+            "--gpus",
+            "<approved-2-GPU-UUIDs>",
+            "--mode",
+            "ddp",
+            "--nnodes",
+            "1",
+            "--node-rank",
+            "0",
+            "--master-addr",
+            "127.0.0.1",
+            "--master-port",
+            "29970",
+            "--timeout",
+            "300",
+            "--allow-shared"
+          ],
+          "exit_code": 0,
+          "log": "runs/m5-work/runs/m5-validation-03/03.log",
+          "started": "2026-10-10T08:12:34.915262+00:00"
+        },
+        {
+          "command": [
+            "python3",
+            "scripts/m5_launch.py",
+            "--python",
+            "<project>/.venv-m5/bin/python",
+            "--run-id",
+            "m5-ddp-off-02",
+            "--gpus",
+            "<approved-2-GPU-UUIDs>",
+            "--mode",
+            "ddp",
+            "--nnodes",
+            "1",
+            "--node-rank",
+            "0",
+            "--master-addr",
+            "127.0.0.1",
+            "--master-port",
+            "29971",
+            "--timeout",
+            "300",
+            "--allow-shared"
+          ],
+          "exit_code": 0,
+          "log": "runs/m5-work/runs/m5-validation-03/04.log",
+          "started": "2026-10-10T08:12:43.191544+00:00"
+        },
+        {
+          "command": [
+            "python3",
+            "scripts/m5_launch.py",
+            "--python",
+            "<project>/.venv-m5/bin/python",
+            "--run-id",
+            "m5-ddp-on-02",
+            "--gpus",
+            "<approved-2-GPU-UUIDs>",
+            "--mode",
+            "ddp",
+            "--nnodes",
+            "1",
+            "--node-rank",
+            "0",
+            "--master-addr",
+            "127.0.0.1",
+            "--master-port",
+            "29972",
+            "--timeout",
+            "300",
+            "--allow-shared",
+            "--reporter"
+          ],
+          "exit_code": 0,
+          "log": "runs/m5-work/runs/m5-validation-03/05.log",
+          "started": "2026-10-10T08:12:50.867980+00:00"
+        },
+        {
+          "command": [
+            "<project>/.venv-m5/bin/python",
+            "scripts/m5_verify_ddp.py",
+            "--off",
+            "runs/m5-ddp-off-02/node-0",
+            "--on",
+            "runs/m5-ddp-on-02/node-0",
+            "--output",
+            "<project>/runs/m5-work/runs/m5-validation-03/ddp.json"
+          ],
+          "exit_code": 0,
+          "log": "runs/m5-work/runs/m5-validation-03/06.log",
+          "started": "2026-10-10T08:12:58.994803+00:00"
+        }
+      ],
+      "status": "PASS",
+      "sources": {
+        "flash/localization.py": "43604fc3f2c8a32482c1420380efe40731c898e87df8036d8d7371083127f51c",
+        "flash/reader.py": "ef0a0b2ac43fa3c245ce5c9dac74fb5ccde522221ddfd2ea8118c3666908eda1",
+        "flash/iteration_reporter.py": "a2429053bf895cd4afb6301072480ccaec82f97696598704eea030f4b1b6c3a9",
+        "flash/change_detection.py": "ea7e0112924221d4251cf8dbfb1a39129bb552d4426ff3ff032350aad1e9104d",
+        "flash/profile_input.py": "54d61ba4f579cee0622a023b76db8dd4be9587b01fce98bc68842253bf27a8c9",
+        "flash/__init__.py": "ebd6b85348d4590ef8db6c4720c0c46f694ebc13a6b7c01cdfa4687d6d707e18",
+        "flash/rbeast_adapter.py": "ff14c1b21d88f48268c3fe1594256f3de565707b6f29f19c0aa81a877d54f651",
+        "scripts/m5_evaluate.py": "2e795213ac400578dc5a2de58c51db9a7665f00f44644de1d8eb99f67e7c1baa",
+        "scripts/m5_launch.py": "27ee86d3b29b94b0fc941d7d4db81253d06afef84b117e0dc3fda0689d7c99f8",
+        "scripts/m5_replay.py": "60658edfafebeee27c121479597854074e7ff6ff99a7db115f0b24c83cfe400e",
+        "scripts/m5_verify_ddp.py": "b4424c876dfe07b7ffda9d46d1bf2ad05757e3e09a5682be8d75235616a54f7e",
+        "tests/m5_ddp.py": "91966de75bc5348e9c577f92994f0366cc18cfcd1d167919f203b33d321a664e",
+        "tests/m5_replay.py": "859d72e4c48f14d7f3eba656e74fcfe59bd6055d19b2ac789f0c3c5fa77a354d",
+        "tests/m5_api_fields.py": "9463d376f2e096355a8696f50a5dcb46236b74ec912d1928efa261bb0103683a",
+        "tests/m5_detection.py": "5acada38b9076658fd2ca11811e10517fc44c1c6a65c6b31645a949124030df0",
+        "tests/m5_real_api.py": "9e27ff7b3e8ca2a0b57ac851fcdd382c3978a4d389ca2497c0cdb7a57aca1e1b",
+        "tests/m5_reporter.py": "9a3005562c60ffe3f0e1566c00d64078893de0430e3c7a9d1d7c5e3461a86c59",
+        "tests/m5_causality.py": "1c6e312737b1e77c4a7b804d4d35f8064d2d38e3c167f5c699fe64c1ba569a19"
+      },
+      "original_m1_numerical_equality": true
+    }
+  ],
+  "known_failures": [
+    {
+      "check": "same-process exact seeded native output",
+      "exit_code": 1,
+      "log": "runs/m5-work/runs/m5-validation-01/02.log"
+    },
+    {
+      "check": "isolated exact seeded native output",
+      "identical": false,
+      "log": "runs/m5-access/isolated-repeat.json"
+    },
+    {
+      "check": "full versus prefix exact native output",
+      "exit_code": 1,
+      "log": "runs/m5-access/exact-replay.log"
+    },
+    {
+      "check": "M3 CPU evidence fixture unavailable in isolated clone",
+      "exit_code": 1,
+      "log": "runs/m5-work/runs/m5-validation-02/06.log",
+      "resolution": "same project immutable verified M3 fixture symlink; unchanged test rerun exit0"
+    }
+  ],
+  "versions": {
+    "python": "3.12.3",
+    "torch": "2.8.0+cu128",
+    "numpy": "2.2.6",
+    "Rbeast": "0.1.25",
+    "cuda_runtime": 12080,
+    "nccl": 22703
+  },
+  "source_hashes_current": {
+    "flash/localization.py": "43604fc3f2c8a32482c1420380efe40731c898e87df8036d8d7371083127f51c",
+    "flash/reader.py": "ef0a0b2ac43fa3c245ce5c9dac74fb5ccde522221ddfd2ea8118c3666908eda1",
+    "flash/iteration_reporter.py": "a2429053bf895cd4afb6301072480ccaec82f97696598704eea030f4b1b6c3a9",
+    "flash/change_detection.py": "ea7e0112924221d4251cf8dbfb1a39129bb552d4426ff3ff032350aad1e9104d",
+    "flash/profile_input.py": "54d61ba4f579cee0622a023b76db8dd4be9587b01fce98bc68842253bf27a8c9",
+    "flash/__init__.py": "ebd6b85348d4590ef8db6c4720c0c46f694ebc13a6b7c01cdfa4687d6d707e18",
+    "flash/rbeast_adapter.py": "ff14c1b21d88f48268c3fe1594256f3de565707b6f29f19c0aa81a877d54f651",
+    "scripts/m5_evaluate.py": "2e795213ac400578dc5a2de58c51db9a7665f00f44644de1d8eb99f67e7c1baa",
+    "scripts/m5_launch.py": "27ee86d3b29b94b0fc941d7d4db81253d06afef84b117e0dc3fda0689d7c99f8",
+    "scripts/m5_replay.py": "60658edfafebeee27c121479597854074e7ff6ff99a7db115f0b24c83cfe400e",
+    "scripts/m5_verify_ddp.py": "b4424c876dfe07b7ffda9d46d1bf2ad05757e3e09a5682be8d75235616a54f7e",
+    "tests/m5_ddp.py": "91966de75bc5348e9c577f92994f0366cc18cfcd1d167919f203b33d321a664e",
+    "tests/m5_contract_evidence.py": "b05cd488c5f23dad1b4e79bef89b08552ce09fe3b4f615c5cc3d8ff3d50a246a",
+    "tests/m5_replay.py": "859d72e4c48f14d7f3eba656e74fcfe59bd6055d19b2ac789f0c3c5fa77a354d",
+    "tests/m5_api_fields.py": "9463d376f2e096355a8696f50a5dcb46236b74ec912d1928efa261bb0103683a",
+    "tests/m5_detection.py": "5acada38b9076658fd2ca11811e10517fc44c1c6a65c6b31645a949124030df0",
+    "tests/m5_real_api.py": "9e27ff7b3e8ca2a0b57ac851fcdd382c3978a4d389ca2497c0cdb7a57aca1e1b",
+    "tests/m5_reporter.py": "9a3005562c60ffe3f0e1566c00d64078893de0430e3c7a9d1d7c5e3461a86c59",
+    "tests/m5_causality.py": "1c6e312737b1e77c4a7b804d4d35f8064d2d38e3c167f5c699fe64c1ba569a19"
+  },
+  "closure": "NO_REDIS_NO_AUTO_PROFILE_NO_FINAL_ALERT",
+  "ddp_exit_codes": {
+    "baseline": 0,
+    "off": 0,
+    "on": 0,
+    "verify": 0
+  },
+  "ddp_remaining_own_pids": 0
+}

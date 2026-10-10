@@ -1,0 +1,22 @@
+[
+  {
+    "package": "rbeast",
+    "version": "0.1.25",
+    "filename": "rbeast-0.1.25-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+    "sha256": "1bde99a4c3b6cc8b130c8cd2d179385c50dbba6b00d82917ecb2475b0083eab5",
+    "url": "https://files.pythonhosted.org/packages/a6/af/fa38a14c1557ad93ffca72abf933b29b4f9ee430a95bda90e183a9dcb33f/rbeast-0.1.25-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+    "download_url": "https://pypi.tuna.tsinghua.edu.cn/packages/a6/af/fa38a14c1557ad93ffca72abf933b29b4f9ee430a95bda90e183a9dcb33f/rbeast-0.1.25-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+    "requires_dist": [
+      "numpy>=1.10.0"
+    ]
+  },
+  {
+    "package": "numpy",
+    "version": "2.2.6",
+    "filename": "numpy-2.2.6-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+    "sha256": "fd83c01228a688733f1ded5201c678f0c53ecc1006ffbc404db9f7a899ac6249",
+    "url": "https://files.pythonhosted.org/packages/8c/3d/1e1db36cfd41f895d266b103df00ca5b3cbe965184df824dec5c08c6b803/numpy-2.2.6-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+    "download_url": "https://pypi.tuna.tsinghua.edu.cn/packages/8c/3d/1e1db36cfd41f895d266b103df00ca5b3cbe965184df824dec5c08c6b803/numpy-2.2.6-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+    "requires_dist": null
+  }
+]
