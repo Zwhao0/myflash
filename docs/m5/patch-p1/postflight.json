@@ -1,0 +1,9 @@
+{
+  "rbeast": "0.1.25",
+  "numpy": "2.2.6",
+  "native_sha256": "a7432000e18465d8e4d2ba895a8618b388007528757718d286fcb82440bbb157",
+  "machine": "node-0",
+  "owned_P1_worker_count": 0,
+  "gpu_experiment": false,
+  "system_changes": false
+}

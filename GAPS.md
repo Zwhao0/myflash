@@ -144,3 +144,22 @@ No universal statistical bound or GPU fault accuracy inference from these fixtur
 recommend reviewed upstream remedy before accepting statistical-repeatability limits.
 See docs/m5/repeatability/{ROOT_CAUSE,EXPERIMENTS,RESULTS}.md and complete data.
 final_alert=false; no Redis/control/automatic Profile/M6.
+
+
+## M5-P1 engineering evidence (2026-10-10; scientific gaps remain OPEN)
+ADAPTATION/UPSTREAM: matched fixed-release B/C builds differ only in
+ext_src/abc_rand_pcg_local_avx512.c:avx512_pcg_set_seed increment→increment512.
+C passes independent integer recurrence/prior-memory/reuse/actual-auto gates,
+unchanged API and independent full/short prefix assertions, and both complete
+predeclared exact numerical/decision matrices. B retains prior-memory dependence,
+prefix FAIL and cross-context actual-AVX512 posterior differences; its API PASS
+is also retained. This supports the bounded one-line engineering remedy, not
+universal causation, thread safety or an approved production runtime replacement.
+See docs/m5/patch-p1/RESULTS.md, validation.json and complete indexed byte evidence.
+All historical FAIL/NOT_CAPTURED remain. No probability relaxation/clipping,
+zero-filling, seed/input selection, parser/ISA/default-model change or GPU experiment.
+G01 as a whole, G02/G04/G09/G13/G20 stay OPEN. Both20% denominators remain
+unapproved; cpPr≈0.8 behavior, production false positives, real GPU fault metrics
+and paper1–2 iteration claim are untested. Wheel redistribution/license and PDF
+rights questions remain unresolved. final_alert=false; scientific validity,
+formal adoption and M6 NOT_APPROVED/OPEN. Only next task: independent Draft PR review.

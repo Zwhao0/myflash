@@ -10,9 +10,9 @@ from scripts.m5_p1_diagnostic import canonical,sha,integer_reference
 from flash.rbeast_adapter import candidates_from_raw
 
 data=struct.pack('<dd',0.0,float('nan'))
-fit=dict(raw=dict(trend=dict(cp=[1],cpPr=[.9],cpOccPr=[.1,.2])),arrays={'x':dict(dtype='<f8',shape=[2],bytes_base64=base64.b64encode(data).decode(),sha256=sha(data))},
+fit=dict(raw=dict(x=[0.0,None],trend=dict(cp=[1],cpPr=[.9],cpOccPr=[.1,.2])),arrays={'x':dict(dtype='<f8',shape=[2],bytes_base64=base64.b64encode(data).decode(),sha256=sha(data))},
     input=[1.,2.],input_dtype='<f8',input_shape=[2],input_sha256=sha(struct.pack('<dd',1.,2.)),parameters={},native_binary_sha256='binary',
-    candidate_validation='PASS',candidate_validation_error=None)
+    candidate_validation='PASS',candidate_validation_error=None,dispatch=dict(cpu_current=3,seed_function='avx512_pcg_set_seed'))
 fit.update(raw_json_sha256=sha(canonical(fit['raw'])),posterior_bytes_sha256=sha(canonical(fit['arrays'])))
 assert compare(fit,copy.deepcopy(fit))['equal']
 changed=copy.deepcopy(fit);changed.update(pid=123,elapsed_s=9.,private_path='<path>')

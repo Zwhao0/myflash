@@ -1,0 +1,110 @@
+
+<project>/runs/m5-p1-work/runs/m5-p1-build-01/C-env/lib/python3.12/site-packages/Rbeast/Rbeast.cpython-312-x86_64-linux-gnu.so:     file format elf64-x86-64
+
+
+Disassembly of section .init:
+
+Disassembly of section .plt:
+
+Disassembly of section .plt.got:
+
+Disassembly of section .plt.sec:
+
+Disassembly of section .text:
+
+0000000000022f80 <avx512_pcg_set_seed>:
+   22f80:	f3 0f 1e fa          	endbr64
+   22f84:	48 b9 9b ea 8f 74 e6 	movabs $0x853c49e6748fea9b,%rcx
+   22f8b:	49 3c 85
+   22f8e:	53                   	push   %rbx
+   22f8f:	48 39 ca             	cmp    %rcx,%rdx
+   22f92:	0f 84 18 01 00 00    	je     230b0 <avx512_pcg_set_seed+0x130>
+   22f98:	48 85 d2             	test   %rdx,%rdx
+   22f9b:	0f 85 a7 00 00 00    	jne    23048 <avx512_pcg_set_seed+0xc8>
+   22fa1:	48 b9 fa e4 5d 3c 04 	movabs $0xed9f20043c5de4fa,%rcx
+   22fa8:	20 9f ed
+   22fab:	48 be 2f a4 00 f6 93 	movabs $0x73193493f600a42f,%rsi
+   22fb2:	34 19 73
+   22fb5:	49 b8 58 29 7c 66 f5 	movabs $0xae8d95f5667c2958,%r8
+   22fbc:	95 8d ae
+   22fbf:	49 b9 c5 64 35 64 33 	movabs $0x3f869f33643564c5,%r9
+   22fc6:	9f 86 3f
+   22fc9:	49 ba 06 ba 27 d5 35 	movabs $0xf1c02335d527ba06,%r10
+   22fd0:	23 c0 f1
+   22fd3:	49 bb eb d4 c8 ce ec 	movabs $0x97bd48eccec8d4eb,%r11
+   22fda:	48 bd 97
+   22fdd:	48 bb 84 f2 28 33 4f 	movabs $0xce9eb14f3328f284,%rbx
+   22fe4:	b1 9e ce
+   22fe7:	48 ba 21 ee 29 10 32 	movabs $0xea1b84321029ee21,%rdx
+   22fee:	84 1b ea
+   22ff1:	48 b8 b7 b7 72 29 97 	movabs $0xb47c73972972b7b7,%rax
+   22ff8:	73 7c b4
+   22ffb:	48 89 17             	mov    %rdx,(%rdi)
+   22ffe:	48 89 c2             	mov    %rax,%rdx
+   23001:	48 89 5f 20          	mov    %rbx,0x20(%rdi)
+   23005:	4c 89 47 30          	mov    %r8,0x30(%rdi)
+   23009:	4c 8d 47 50          	lea    0x50(%rdi),%r8
+   2300d:	48 89 77 18          	mov    %rsi,0x18(%rdi)
+   23011:	48 be 2d 7f 95 4c 2d 	movabs $0x5851f42d4c957f2d,%rsi
+   23018:	f4 51 58
+   2301b:	48 89 4f 38          	mov    %rcx,0x38(%rdi)
+   2301f:	48 8d 4f 48          	lea    0x48(%rdi),%rcx
+   23023:	48 89 47 40          	mov    %rax,0x40(%rdi)
+   23027:	4c 89 5f 08          	mov    %r11,0x8(%rdi)
+   2302b:	4c 89 57 28          	mov    %r10,0x28(%rdi)
+   2302f:	4c 89 4f 10          	mov    %r9,0x10(%rdi)
+   23033:	bf 08 00 00 00       	mov    $0x8,%edi
+   23038:	e8 73 cf ff ff       	call   1ffb0 <pcg_get_lcg_multiplier_shift_multistep>
+   2303d:	5b                   	pop    %rbx
+   2303e:	e9 ad cf ff ff       	jmp    1fff0 <init_gauss_rnd>
+   23043:	0f 1f 44 00 00       	nopl   0x0(%rax,%rax,1)
+   23048:	48 8d 44 12 01       	lea    0x1(%rdx,%rdx,1),%rax
+   2304d:	48 31 ca             	xor    %rcx,%rdx
+   23050:	48 b9 2d 7f 95 4c 2d 	movabs $0x5851f42d4c957f2d,%rcx
+   23057:	f4 51 58
+   2305a:	48 01 c2             	add    %rax,%rdx
+   2305d:	48 0f af d1          	imul   %rcx,%rdx
+   23061:	48 01 c2             	add    %rax,%rdx
+   23064:	48 89 d3             	mov    %rdx,%rbx
+   23067:	48 0f af d9          	imul   %rcx,%rbx
+   2306b:	48 01 c3             	add    %rax,%rbx
+   2306e:	49 89 db             	mov    %rbx,%r11
+   23071:	4c 0f af d9          	imul   %rcx,%r11
+   23075:	49 01 c3             	add    %rax,%r11
+   23078:	4d 89 da             	mov    %r11,%r10
+   2307b:	4c 0f af d1          	imul   %rcx,%r10
+   2307f:	49 01 c2             	add    %rax,%r10
+   23082:	4d 89 d1             	mov    %r10,%r9
+   23085:	4c 0f af c9          	imul   %rcx,%r9
+   23089:	49 01 c1             	add    %rax,%r9
+   2308c:	4d 89 c8             	mov    %r9,%r8
+   2308f:	4c 0f af c1          	imul   %rcx,%r8
+   23093:	49 01 c0             	add    %rax,%r8
+   23096:	4c 89 c6             	mov    %r8,%rsi
+   23099:	48 0f af f1          	imul   %rcx,%rsi
+   2309d:	48 01 c6             	add    %rax,%rsi
+   230a0:	48 0f af ce          	imul   %rsi,%rcx
+   230a4:	48 01 c1             	add    %rax,%rcx
+   230a7:	e9 4f ff ff ff       	jmp    22ffb <avx512_pcg_set_seed+0x7b>
+   230ac:	0f 1f 40 00          	nopl   0x0(%rax)
+   230b0:	48 b9 7a 16 65 16 13 	movabs $0x614515131665167a,%rcx
+   230b7:	15 45 61
+   230ba:	48 be 2f 88 2f 5d 20 	movabs $0xaa21b8205d2f882f,%rsi
+   230c1:	b8 21 aa
+   230c4:	49 b8 d8 19 25 27 59 	movabs $0x7a830f59272519d8,%r8
+   230cb:	0f 83 7a
+   230ce:	49 b9 c5 63 7c 99 a3 	movabs $0x598b59a3997c63c5,%r9
+   230d5:	59 8b 59
+   230d8:	49 ba 86 11 92 d9 c7 	movabs $0xee9dbac7d9921186,%r10
+   230df:	ba 9d ee
+   230e2:	49 bb eb 36 cf 79 40 	movabs $0x31049a4079cf36eb,%r11
+   230e9:	9a 04 31
+   230ec:	48 bb 04 19 66 1d 57 	movabs $0xf0b756571d661904,%rbx
+   230f3:	56 b7 f0
+   230f6:	48 ba 21 bb 67 8e f5 	movabs $0x2ca01bf58e67bb21,%rdx
+   230fd:	1b a0 2c
+   23100:	48 b8 37 d5 1f e9 cc 	movabs $0xa7893cce91fd537,%rax
+   23107:	93 78 0a
+   2310a:	e9 ec fe ff ff       	jmp    22ffb <avx512_pcg_set_seed+0x7b>
+
+Disassembly of section .fini:

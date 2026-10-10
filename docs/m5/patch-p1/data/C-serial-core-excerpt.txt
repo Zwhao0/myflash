@@ -1,0 +1,18 @@
+   47dd3:	48 ba dc a3 52 f3 04 	movabs $0x4f352a3dc,%rdx
+   47dda:	00 00 00
+   47ddd:	48 01 c2             	add    %rax,%rdx
+   47de0:	48 85 c0             	test   %rax,%rax
+   47de3:	0f 84 d1 62 00 00    	je     4e0ba <beast2_main_corev4+0x63ea>
+   47de9:	48 8b 05 c0 b0 04 00 	mov    0x4b0c0(%rip),%rax        # 92eb0 <local_pcg_set_seed@@Base-0xbe8>
+   47df0:	48 8d bd 70 fd ff ff 	lea    -0x290(%rbp),%rdi
+   47df7:	48 be 9b ea 8f 74 e6 	movabs $0x853c49e6748fea9b,%rsi
+   47dfe:	49 3c 85
+   47e01:	48 89 bd e0 f2 ff ff 	mov    %rdi,-0xd20(%rbp)
+   47e08:	ff 10                	call   *(%rax)
+   47e0a:	ba 40 00 00 00       	mov    $0x40,%edx
+   47e0f:	be 20 4e 00 00       	mov    $0x4e20,%esi
+   47e14:	4c 89 e7             	mov    %r12,%rdi
+   47e17:	ff 95 e8 f4 ff ff    	call   *-0xb18(%rbp)
+   47e1d:	ba 40 00 00 00       	mov    $0x40,%edx
+   47e22:	be 20 4e 00 00       	mov    $0x4e20,%esi
+   47e27:	4c 89 e7             	mov    %r12,%rdi

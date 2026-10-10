@@ -14,7 +14,7 @@ import sys
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT))
 from scripts.m5_p1_diagnostic import canonical,sha,save,SCENARIOS
-from flash.rbeast_adapter import PARAMETERS
+from flash.rbeast_adapter import PARAMETERS,candidates_from_raw,json_safe
 from flash.change_detection import preprocess, DetectionConfig
 from flash.iteration_reporter import IterationRecord
 
@@ -57,6 +57,10 @@ def validate_fit(fit,expected_binary,values,parameters):
         if difference(fit.get(key),want):errors.append(key)
     if fit.get('raw_json_sha256')!=sha(canonical(fit['raw'])):errors.append('raw_digest')
     if fit.get('posterior_bytes_sha256')!=sha(canonical(fit['arrays'])):errors.append('array_digest')
+    selected=fit.get('dispatch',{})
+    seeders={1:'gen_pcg_set_seed',2:'avx_pcg_set_seed',3:'avx512_pcg_set_seed'}
+    if selected.get('seed_function')!=seeders.get(selected.get('cpu_current')) or selected.get('cpu_current') not in seeders:
+        errors.append('unknown_or_inconsistent_actual_dispatch')
     import numpy as np
     for field,array in fit['arrays'].items():
         data=base64.b64decode(array['bytes_base64'],validate=True)
@@ -64,7 +68,19 @@ def validate_fit(fit,expected_binary,values,parameters):
         count=1
         for size in array['shape']:count*=size
         if len(data)!=count*dtype.itemsize or sha(data)!=array['sha256']:errors.append('array_bytes:'+field)
+        decoded=json_safe(np.frombuffer(data,dtype=dtype).reshape(array['shape']))
+        raw_value=fit['raw']
+        try:
+            for key in field.split('.'):raw_value=raw_value[int(key)] if isinstance(raw_value,list) else raw_value[key]
+            if difference(raw_value,decoded):errors.append('raw_array_reference:'+field)
+        except (KeyError,IndexError,ValueError,TypeError):errors.append('raw_array_reference:'+field)
     if fit.get('candidate_validation_error') or fit.get('candidate_validation')!='PASS':errors.append('native_validation')
+    try:
+        validated=candidates_from_raw(fit['raw'],len(values))
+        if any(c['reason'] not in (None,'PADDED_SLOT') for c in validated) and 'native_validation' not in errors:errors.append('native_validation')
+        if 'native_candidates' in fit and difference(validated,fit['native_candidates']):errors.append('candidate_validation_reference')
+    except ValueError:
+        if 'native_validation' not in errors:errors.append('native_validation')
     return errors
 
 
@@ -94,6 +110,11 @@ def qualified(d,rule):
 def validate_batch(run,binary,output):
     """Independent expected counts/inputs/bytes and ledger referential checks."""
     protocol=load(ROOT/'docs/m5/patch-p1/protocol.json')
+    # Fixed-model field contract from frozen real-API evidence, not a posterior
+    # value/label oracle. Prevent uniformly missing capture fields from passing.
+    field_contract=load(ROOT/'docs/m5/repeatability/data/reference-original-c3-auto-fresh.json')
+    expected_array_fields=set(field_contract['fits'][0]['arrays'])
+    assert len(expected_array_fields)==24
     expected=load(run/'expected-run-ledger.json')
     receipts=load(run/'worker-receipts-private.json')
     artifacts=load(run/'artifact-ledger-private.json')
@@ -115,7 +136,7 @@ def validate_batch(run,binary,output):
     expected_decisions=[f'decisions/{s}/{i:02d}' for s in SCENARIOS for i in range(20)]
     if {x['path'] for x in expected}!=set(expected_cells+expected_decisions):errors.append('expected_ledger_protocol')
     receipt_map={r['path']:r for r in receipts}
-    reference={};decision_groups={s:[] for s in SCENARIOS}
+    reference={};reference_workers={};decision_groups={s:[] for s in SCENARIOS}
     fit_count=0;prefix_count=0;array_count=0;native_errors=0
     fit_errors=[]
     for item in expected:
@@ -124,8 +145,18 @@ def validate_batch(run,binary,output):
         files=sorted(directory.glob('fit-*.json'));files=[p for p in files if '.command.' not in p.name]
         if len(files)!=item['expected_fits']:errors.append('fit_count:'+item['path'])
         fits=[load(p) for p in files];fit_count+=len(fits)
+        for fit in fits:
+            if set(fit['arrays'])!=expected_array_fields:errors.append('array_field_contract:'+item['path'])
         if item['kind']=='reference':
             c=item['cell'];params=dict(PARAMETERS,mcmc_chains=c['chains'])
+            worker_path=directory/'worker.json'
+            if not worker_path.exists():errors.append('missing_worker_metadata:'+item['path'])
+            else:
+                worker=load(worker_path)
+                if worker['count']!=item['expected_fits']:errors.append('worker_fit_count:'+item['path'])
+                if c['affinity']=='pinned' and (len(worker['affinity'])!=1 or any(x!='1' for x in worker['thread_environment'].values())):
+                    errors.append('pinned_controls:'+item['path'])
+                reference_workers.setdefault(directory.parent.name,[]).append(dict(path=item['path'],**worker))
             if c['requested_cpu']!='auto':params['cputype']=c['requested_cpu']
             values=[100+(i%3)*.2+(30 if i>=15 else 0) for i in range(30)]
             for fit in fits:
@@ -162,13 +193,15 @@ def validate_batch(run,binary,output):
                     problems=validate_fit(fit,binary,values,PARAMETERS);array_count+=len(fit['arrays'])
                     native_errors+=int('native_validation' in problems)
                     if problems:fit_errors.append(dict(path=item['path'],prefix=prefix,errors=problems))
-                    if record['engine'].get('status')!='OK':errors.append('engine_invalid:'+item['path']+f':{prefix}')
-                    if record['engine']['raw']!=fit['raw']:errors.append('raw_reference:'+item['path'])
+                    expected_status='INSUFFICIENT_EVIDENCE' if fit.get('candidate_validation_error') else 'OK'
+                    if record['engine'].get('status')!=expected_status:errors.append('engine_validation_reference:'+item['path']+f':{prefix}')
+                    if difference(record['engine']['raw'],fit['raw']):errors.append('raw_reference:'+item['path'])
                 elif should_fit:errors.append('missing_engine:'+item['path']+f':{prefix}')
                 elif record.get('reason') not in ('NATIVE_MINIMUM_8_RETAINED_SAMPLES_GUARD','CONSTANT_SERIES_ZERO_VARIANCE'):errors.append('non_fit_reason:'+item['path'])
                 if record['final_alert'] is not False:errors.append('final_alert')
             decision_groups[s].append(dict(decisions=d['decisions'],fits=mapped))
     if fit_count!=5540 or prefix_count!=6300:errors.append('total_counts')
+    if array_count!=132960:errors.append('total_array_count')
     summaries=[]
     for cell,fits in sorted(reference.items()):
         if len(fits)!=20:errors.append('cell_count:'+cell)
@@ -177,7 +210,7 @@ def validate_batch(run,binary,output):
         first_diffs=[compare(fits[0],f) for f in fits]
         summaries.append(dict(cell=cell,fits=len(fits),unique_outputs=len({numeric_digest(f) for f in fits}),
             dispatch=fits[0]['dispatch'],differences=first_diffs))
-        save(output/f'reference-{cell}.json',dict(cell=cell,fits=fits))
+        save(output/f'reference-{cell}.json',dict(cell=cell,workers=reference_workers.get(cell,[]),fits=fits))
     decisions_summary=[]
     for scenario,groups in decision_groups.items():
         by_prefix=[]
@@ -241,13 +274,16 @@ def main():
             unique_native_per_prefix=native_per_prefix,
             unique_complete_stages=len({sha(canonical([compact_decision(d) for d in r['decisions']])) for r in replays})))
     c_matrices=[m for m in matrices if m['build']=='C']
-    c_integrity=len(c_matrices)==2 and all(not m['integrity_errors'] and not m['fit_errors'] for m in c_matrices)
+    c_integrity=len(c_matrices)==2 and all(not m['integrity_errors'] and not any(
+        any(e!='native_validation' for e in f['errors']) for f in m['fit_errors']) for m in c_matrices)
+    c_native_validity=c_integrity and all(m['native_errors']==0 for m in c_matrices)
     c_numeric=c_integrity and all(x['unique_outputs']==1 for x in controls if x['build']=='C') and all(
         all(n==1 for n in x['unique_native_per_prefix']) for x in decision_across if x['build']=='C')
-    c_decision=c_integrity and all(x['unique_complete_stages']==1 for x in decision_across if x['build']=='C')
+    c_decision=c_native_validity and all(x['unique_complete_stages']==1 for x in decision_across if x['build']=='C')
     result=dict(matrices=matrices,cross_batch_cells=across,same_model_actual_isa_controls=controls,
         decision_cross_batches=decision_across,C_integrity='PASS' if c_integrity else 'FAIL' if execution['batches'] else 'NOT_RUN',
         C_numerical='PASS' if c_numeric else 'FAIL' if execution['batches'] else 'NOT_RUN',
+        C_native_validity='PASS' if c_native_validity else 'FAIL' if execution['batches'] else 'NOT_RUN',
         C_decisions='PASS' if c_decision else 'FAIL' if execution['batches'] else 'NOT_RUN')
     save(args.output/'comparison.json',result)
     print(json.dumps({k:result[k] for k in ('C_integrity','C_numerical','C_decisions')}))
