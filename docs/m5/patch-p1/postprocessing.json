@@ -1,0 +1,140 @@
+{
+  "machine": "node-0",
+  "receipts": [
+    {
+      "stage": "initial",
+      "operation": "audit",
+      "argv": [
+        "nice",
+        "-n",
+        "10",
+        "<project>/runs/m5-p1-work/runs/m5-p1-build-01/C-env/bin/python",
+        "scripts/m5_p1_compare.py",
+        "--execution",
+        "runs/m5-p1-execution-01",
+        "--build",
+        "runs/m5-p1-build-01",
+        "--output",
+        "runs/m5-p1-comparison-01"
+      ],
+      "exit_code": 0,
+      "elapsed_s": 100.30264366196934
+    },
+    {
+      "stage": "initial",
+      "operation": "export",
+      "argv": [
+        "nice",
+        "-n",
+        "10",
+        "<project>/runs/m5-p1-work/runs/m5-p1-build-01/C-env/bin/python",
+        "scripts/m5_p1_delivery.py",
+        "--execution",
+        "runs/m5-p1-execution-01",
+        "--build",
+        "runs/m5-p1-build-01",
+        "--comparison",
+        "runs/m5-p1-comparison-01",
+        "--supplement",
+        "<project>/runs/m5-p1-access/provenance-supplement-final.json"
+      ],
+      "exit_code": 1,
+      "elapsed_s": 31.558102356968448
+    },
+    {
+      "stage": "final",
+      "operation": "audit",
+      "argv": [
+        "nice",
+        "-n",
+        "10",
+        "<project>/runs/m5-p1-work/runs/m5-p1-build-01/C-env/bin/python",
+        "scripts/m5_p1_compare.py",
+        "--execution",
+        "runs/m5-p1-execution-01",
+        "--build",
+        "runs/m5-p1-build-01",
+        "--output",
+        "runs/m5-p1-comparison-02"
+      ],
+      "exit_code": 0,
+      "elapsed_s": 104.8081977700349
+    },
+    {
+      "stage": "final",
+      "operation": "export",
+      "argv": [
+        "nice",
+        "-n",
+        "10",
+        "<project>/runs/m5-p1-work/runs/m5-p1-build-01/C-env/bin/python",
+        "scripts/m5_p1_delivery.py",
+        "--execution",
+        "runs/m5-p1-execution-01",
+        "--build",
+        "runs/m5-p1-build-01",
+        "--comparison",
+        "runs/m5-p1-comparison-02",
+        "--supplement",
+        "<project>/runs/m5-p1-access/provenance-supplement-final.json",
+        "--output",
+        "runs/m5-p1-export-02"
+      ],
+      "exit_code": 0,
+      "elapsed_s": 33.06005499092862
+    }
+  ],
+  "measurement_reruns": 0,
+  "initial_export_failure": "relative build receipt path was passed to absolute-root relative_to; corrected only exporter, retained initial partial export and logs",
+  "final_comparator_test": {
+    "argv": "cd <project>/runs/m5-p1-work && PYTHONNOUSERSITE=1 OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 nice -n 10 runs/m5-p1-build-01/C-env/bin/python tests/m5_p1_compare.py",
+    "exit_code": 0,
+    "machine": "node-0",
+    "log": "runs/m5-p1-access/final-comparator-test.log"
+  },
+  "public_text_formatting": {
+    "operation": "rstrip per disassembly/excerpt line only; original private stdout unchanged; no native/numeric data modified",
+    "files": [
+      {
+        "path": "data/C-seeder-disassembly.txt",
+        "before_sha256": "1a211da2dfb098c2e310d1e0290d8d02585a12c2c0954ec3c564f698e2cb79b2",
+        "after_sha256": "6d7bd1eb2bdbe03369bc40210f7c05d631e0382b4f800321f84ab137fd11ae23"
+      },
+      {
+        "path": "data/B-seeder-disassembly.txt",
+        "before_sha256": "6d8fd3926e1cfae206a671767c0cf5a3bb5b62e2fef4adec0769ef559e0cab84",
+        "after_sha256": "ea7a7be720f3d18f47f77c8d7f8f00bdf4d5ec0637e2a78f2785169b7506fc44"
+      },
+      {
+        "path": "data/B-serial-core-excerpt.txt",
+        "before_sha256": "981bdfb1ef42040475cdd85c1d302ef22656410b9f33ed115aa98e0db2156dfa",
+        "after_sha256": "2b23ff5da495a19261ef7eb747b0e96c35fc66fe9156c071d70321fc530c65db"
+      },
+      {
+        "path": "data/C-serial-core-excerpt.txt",
+        "before_sha256": "d893e207e254e6166aa2299831ce57ebf28a412ba3fdf6b2a413fefe39653c84",
+        "after_sha256": "7a726d7a3d0b5a737dfe61f6b973fae0d80dac84bde1d5ae6c7657d526eaf51e"
+      },
+      {
+        "path": "data/B-elf.txt",
+        "before_sha256": "753c9109e7173f55153cc034bc9e21ba8f2010341ba4e919ee7f986335851213",
+        "after_sha256": "5a5623612d5be02e85a325b93f835615b20ee8f5278d4aad78b897b7565ba41a"
+      },
+      {
+        "path": "data/C-elf.txt",
+        "before_sha256": "a3a59e833b65f8657a5d7654a3b8d315bed4d5203dcdbbdfd65110781e8d5b7a",
+        "after_sha256": "3a08f0a769afb8de5002b26de0056a46096832350abfecd0980a44c8788cf969"
+      }
+    ],
+    "initial_diff_check_exit": 2
+  },
+  "final_delivery_code_hashes": {
+    "scripts/m5_p1_run.py": "858c258d532d4c37e210235671967737e91ead93a4cb5a6ebdedf642d78603a7",
+    "scripts/m5_p1_diagnostic.py": "37c6f2c0b1f65377ec23412f7f50f66810012c236bdf9a5fad210e1606ae69e5",
+    "scripts/m5_p1_compare.py": "dac106dbba3f0c569977a3b8d80704f2c4735577ab27ad430b1ccd73d341cfaf",
+    "scripts/m5_p1_readback.py": "10049f0da0bad453ffc7b8cbfefc0d529ff99214f966af334d2533d50193068d",
+    "scripts/m5_p1_build.py": "db237b2bd7ce50579500bfc78e0866846b3e6554e13c62f189218c31632203c8",
+    "scripts/m5_p1_delivery.py": "b8eacff1e6f312097ca88c57e2fc990a3ede2e9a31a49cd4470536f3b55dc0d9",
+    "scripts/m5_p1_strict.py": "cefc2cfbcc80eb7d7c41eabb2f49a30acbf6a95e9602fa5a8e2514f033a7850e"
+  }
+}

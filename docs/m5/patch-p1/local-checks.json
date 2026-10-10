@@ -1,0 +1,101 @@
+{
+  "machine": "local macOS arm64",
+  "checks": [
+    {
+      "command": "python3 -c import numpy",
+      "exit_code": 1,
+      "status": "NOT_RUN local comparator: NumPy absent; node-0 test is authoritative"
+    },
+    {
+      "command": "patch --dry-run -p1 -i minimal.patch (initial hand-written LF context)",
+      "exit_code": 1,
+      "status": "FAIL: fixed release has CRLF; retained and corrected patch format only"
+    },
+    {
+      "command": "patch --dry-run -p1 -i minimal.patch (exact difflib release bytes)",
+      "exit_code": 0,
+      "status": "PASS"
+    },
+    {
+      "command": "git diff --cached --check (CRLF patch)",
+      "exit_code": 2,
+      "status": "FAIL retained; final minimal review diff uses LF/no context"
+    },
+    {
+      "command": "patch -l --dry-run -p1 -i minimal.patch (final LF zero-context)",
+      "exit_code": 0,
+      "status": "PASS"
+    }
+  ],
+  "native_builds_local": false,
+  "publication_initial_checks": [
+    {
+      "machine": "local macOS arm64",
+      "argv": [
+        "python3",
+        "tests/privacy_check_test.py"
+      ],
+      "exit_code": 0,
+      "elapsed_s": 0.083436542,
+      "log": "runs/m5-p1-access/privacy-unit.log"
+    },
+    {
+      "machine": "local macOS arm64",
+      "argv": [
+        "python3",
+        "scripts/privacy_check.py"
+      ],
+      "exit_code": 0,
+      "elapsed_s": 160.997241584,
+      "log": "runs/m5-p1-access/privacy-current-initial.log"
+    },
+    {
+      "machine": "local macOS arm64",
+      "argv": [
+        "git",
+        "diff",
+        "--cached",
+        "--check"
+      ],
+      "exit_code": 2,
+      "elapsed_s": 1.7854198339999812,
+      "log": "runs/m5-p1-access/diff-initial.log"
+    }
+  ],
+  "first_final_check_attempt": [
+    {
+      "machine": "local macOS arm64",
+      "argv": [
+        "python3",
+        "scripts/m5_p1_readback.py",
+        "--output",
+        "runs/m5-p1-readback-final.json"
+      ],
+      "exit_code": 0,
+      "elapsed_s": 15.274267209000001,
+      "log": "runs/m5-p1-access/public-readback-final.log"
+    },
+    {
+      "machine": "local macOS arm64",
+      "argv": [
+        "python3",
+        "tests/privacy_check_test.py"
+      ],
+      "exit_code": 0,
+      "elapsed_s": 0.08067983299999959,
+      "log": "runs/m5-p1-access/privacy-unit-final.log"
+    },
+    {
+      "machine": "local macOS arm64",
+      "argv": [
+        "git",
+        "diff",
+        "--cached",
+        "--check"
+      ],
+      "exit_code": 2,
+      "elapsed_s": 2.032476292000002,
+      "log": "runs/m5-p1-access/diff-final.log"
+    }
+  ]
+}

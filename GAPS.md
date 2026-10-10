@@ -144,3 +144,45 @@ No universal statistical bound or GPU fault accuracy inference from these fixtur
 recommend reviewed upstream remedy before accepting statistical-repeatability limits.
 See docs/m5/repeatability/{ROOT_CAUSE,EXPERIMENTS,RESULTS}.md and complete data.
 final_alert=false; no Redis/control/automatic Profile/M6.
+
+
+## M5-P1 engineering evidence (2026-10-10; scientific gaps remain OPEN)
+ADAPTATION/UPSTREAM: matched fixed-release B/C builds differ only in
+ext_src/abc_rand_pcg_local_avx512.c:avx512_pcg_set_seed increment→increment512.
+C passes independent integer recurrence/prior-memory/reuse/actual-auto gates,
+unchanged API and independent full/short prefix assertions, and both complete
+predeclared exact numerical/decision matrices. B retains prior-memory dependence,
+prefix FAIL and cross-context actual-AVX512 posterior differences; its API PASS
+is also retained. This supports the bounded one-line engineering remedy, not
+universal causation, thread safety or an approved production runtime replacement.
+See docs/m5/patch-p1/RESULTS.md, validation.json and complete indexed byte evidence.
+All historical FAIL/NOT_CAPTURED remain. No probability relaxation/clipping,
+zero-filling, seed/input selection, parser/ISA/default-model change or GPU experiment.
+G01 as a whole, G02/G04/G09/G13/G20 stay OPEN. Both20% denominators remain
+unapproved; cpPr≈0.8 behavior, production false positives, real GPU fault metrics
+and paper1–2 iteration claim are untested. Wheel redistribution/license and PDF
+rights questions remain unresolved. final_alert=false; scientific validity,
+formal adoption and M6 NOT_APPROVED/OPEN. Only next task: independent Draft PR review.
+
+
+## M5-S1 scientific audit (2026-10-10; no decisions approved)
+
+G01/G02/G13: OPEN / REQUIRES_OWNER_DECISION. PAPER full pp26/27/40/43/44,
+fixed UPSTREAM Rbeast0.1.25 sdist and ADAPTATION code at PR8 d2973f5 are
+separated in docs/m5/science-s1. BEAST MCMC/window refit is not proven online
+run-length BOCD; cpPr is local summed/capped occurrence output, distinct from
+pointwise cpOccPr and unproven as P(run_length=0). All24 adapter parameters are
+explicit engineering/model choices without exact paper authority. No replacement.
+G02: inclusive span>20, exclusive elapsed>20, retained count>20, consecutive
+qualified prefixes>20 and k1/k2 guards independently saved/tested, none enabled.
+Sustained candidate22 versus span41/elapsed42 demonstrates differing semantics;
+final alert iteration null. G13: A time growth/B reciprocal-mean throughput proxy
+remain separate strict>0.2; growth20 A first23/B none, growth21 A22/B none;
+recovery diverges30..32. No fixture-driven choice or GPU accuracy claim.
+EXTENSION sensitivity audits all12600 saved C prefixes/280 replays,630 unique
+rows; original832 files and formal1424 runtime files byte-preserved. Current
+node-0 CPU validation02 all11 commands0; validation01 source-path/citation FAIL
+retained, no relaxed arithmetic. Scientific validity/runtime adoption/M6 remain
+NOT_APPROVED. G04/G09/G20 dependencies only; no localization/controller changes.
+See G01_SEMANTICS/G02_TIMELINE/G13_THRESHOLD/DECISION_PROPOSAL/validation.json.
+Only next task: independent owner/ChatGPT review of M5-S1 Draft PR.

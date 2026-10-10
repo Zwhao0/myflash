@@ -1,0 +1,276 @@
+{
+  "task": "M5-P1",
+  "authorization": "Owner: 执行这个任务书; 2026-10-10",
+  "baseline": "ed954f5a289e2a9f3c585f7f5af3792d0fde0c8d",
+  "baseline_tree": "36d19267fbbbaa12cacbaaac42bd3a56e4cac68b",
+  "main": "ca6923d58d1fd5b2a0f899176780b17d6bd7e364",
+  "machine": "node-0",
+  "sources": [
+    "PAPER SPEC S3",
+    "UPSTREAM Rbeast0.1.25 fixed sdist",
+    "ADAPTATION one-line repair",
+    "EXTENSION repeated fixtures"
+  ],
+  "batch_order": [
+    [
+      "B",
+      "C"
+    ],
+    [
+      "C",
+      "B"
+    ]
+  ],
+  "repeats": 20,
+  "cells": [
+    {
+      "affinity": "original",
+      "chains": 3,
+      "requested_cpu": "auto",
+      "process": "same"
+    },
+    {
+      "affinity": "original",
+      "chains": 3,
+      "requested_cpu": "auto",
+      "process": "fresh"
+    },
+    {
+      "affinity": "original",
+      "chains": 3,
+      "requested_cpu": "SSE",
+      "process": "same"
+    },
+    {
+      "affinity": "original",
+      "chains": 3,
+      "requested_cpu": "SSE",
+      "process": "fresh"
+    },
+    {
+      "affinity": "original",
+      "chains": 3,
+      "requested_cpu": "AVX2",
+      "process": "same"
+    },
+    {
+      "affinity": "original",
+      "chains": 3,
+      "requested_cpu": "AVX2",
+      "process": "fresh"
+    },
+    {
+      "affinity": "original",
+      "chains": 3,
+      "requested_cpu": "AVX512",
+      "process": "same"
+    },
+    {
+      "affinity": "original",
+      "chains": 3,
+      "requested_cpu": "AVX512",
+      "process": "fresh"
+    },
+    {
+      "affinity": "original",
+      "chains": 1,
+      "requested_cpu": "auto",
+      "process": "same"
+    },
+    {
+      "affinity": "original",
+      "chains": 1,
+      "requested_cpu": "auto",
+      "process": "fresh"
+    },
+    {
+      "affinity": "original",
+      "chains": 1,
+      "requested_cpu": "SSE",
+      "process": "same"
+    },
+    {
+      "affinity": "original",
+      "chains": 1,
+      "requested_cpu": "SSE",
+      "process": "fresh"
+    },
+    {
+      "affinity": "original",
+      "chains": 1,
+      "requested_cpu": "AVX2",
+      "process": "same"
+    },
+    {
+      "affinity": "original",
+      "chains": 1,
+      "requested_cpu": "AVX2",
+      "process": "fresh"
+    },
+    {
+      "affinity": "original",
+      "chains": 1,
+      "requested_cpu": "AVX512",
+      "process": "same"
+    },
+    {
+      "affinity": "original",
+      "chains": 1,
+      "requested_cpu": "AVX512",
+      "process": "fresh"
+    },
+    {
+      "affinity": "pinned",
+      "chains": 3,
+      "requested_cpu": "auto",
+      "process": "same"
+    },
+    {
+      "affinity": "pinned",
+      "chains": 3,
+      "requested_cpu": "auto",
+      "process": "fresh"
+    },
+    {
+      "affinity": "pinned",
+      "chains": 3,
+      "requested_cpu": "SSE",
+      "process": "same"
+    },
+    {
+      "affinity": "pinned",
+      "chains": 3,
+      "requested_cpu": "SSE",
+      "process": "fresh"
+    },
+    {
+      "affinity": "pinned",
+      "chains": 3,
+      "requested_cpu": "AVX2",
+      "process": "same"
+    },
+    {
+      "affinity": "pinned",
+      "chains": 3,
+      "requested_cpu": "AVX2",
+      "process": "fresh"
+    },
+    {
+      "affinity": "pinned",
+      "chains": 3,
+      "requested_cpu": "AVX512",
+      "process": "same"
+    },
+    {
+      "affinity": "pinned",
+      "chains": 3,
+      "requested_cpu": "AVX512",
+      "process": "fresh"
+    },
+    {
+      "affinity": "pinned",
+      "chains": 1,
+      "requested_cpu": "auto",
+      "process": "same"
+    },
+    {
+      "affinity": "pinned",
+      "chains": 1,
+      "requested_cpu": "auto",
+      "process": "fresh"
+    },
+    {
+      "affinity": "pinned",
+      "chains": 1,
+      "requested_cpu": "SSE",
+      "process": "same"
+    },
+    {
+      "affinity": "pinned",
+      "chains": 1,
+      "requested_cpu": "SSE",
+      "process": "fresh"
+    },
+    {
+      "affinity": "pinned",
+      "chains": 1,
+      "requested_cpu": "AVX2",
+      "process": "same"
+    },
+    {
+      "affinity": "pinned",
+      "chains": 1,
+      "requested_cpu": "AVX2",
+      "process": "fresh"
+    },
+    {
+      "affinity": "pinned",
+      "chains": 1,
+      "requested_cpu": "AVX512",
+      "process": "same"
+    },
+    {
+      "affinity": "pinned",
+      "chains": 1,
+      "requested_cpu": "AVX512",
+      "process": "fresh"
+    }
+  ],
+  "scenarios": [
+    "stable",
+    "sustained",
+    "growth_19",
+    "growth_20",
+    "growth_21",
+    "spike",
+    "recovery"
+  ],
+  "expected": {
+    "reference_fits": 640,
+    "decision_prefixes": 6300,
+    "decision_native_fits": 4900
+  },
+  "limits_s": {
+    "build": 900,
+    "batch": 3600,
+    "native": 30,
+    "reference": 120,
+    "decision": 180,
+    "kill_grace": 5
+  },
+  "priority_nice": 10,
+  "max_concurrent_workers": 1,
+  "dependencies": [
+    "setuptools==80.9.0 --hash=sha256:062d34222ad13e0cc312a4c02d73f059e86a4acbfbdea8f8f76b28c99f306922",
+    "wheel==0.42.0 --hash=sha256:177f9c9b0d45c47873b619f5b650346d632cdc35fb5e4d25058e09c9e581433d",
+    "numpy==2.2.6 --hash=sha256:fd83c01228a688733f1ded5201c678f0c53ecc1006ffbc404db9f7a899ac6249"
+  ],
+  "final_alert": false,
+  "gpu": false,
+  "full_matrix_requires": [
+    "C source/build/ABI",
+    "C RNG reference/prior-buffer/reuse/auto path",
+    "C original API assertion",
+    "C original replay assertion"
+  ],
+  "engineering_pass_requires": [
+    "all six required gate categories"
+  ],
+  "scientific_status": "NOT_APPROVED/OPEN",
+  "immutable_hashes": {
+    "tests/m5_real_api.py": "9e27ff7b3e8ca2a0b57ac851fcdd382c3978a4d389ca2497c0cdb7a57aca1e1b",
+    "tests/m5_replay.py": "859d72e4c48f14d7f3eba656e74fcfe59bd6055d19b2ac789f0c3c5fa77a354d",
+    "scripts/m5_replay.py": "60658edfafebeee27c121479597854074e7ff6ff99a7db115f0b24c83cfe400e",
+    "flash/rbeast_adapter.py": "ff14c1b21d88f48268c3fe1594256f3de565707b6f29f19c0aa81a877d54f651",
+    "flash/change_detection.py": "ea7e0112924221d4251cf8dbfb1a39129bb552d4426ff3ff032350aad1e9104d"
+  },
+  "fixture_hashes": {
+    "stable": "10c6abfa683bea71bc94b19bec642f89223586c4af9b6e37a8983cf027b68469",
+    "sustained": "1a97c72c5a15f7f2b59885c356eab978bb5dd429ad48545df45edc6214c8095e",
+    "growth_19": "3357c294b30b8f9aba75a8df85a868b86fe7543eef71b49d1daf9f7ba0190952",
+    "growth_20": "b9b67c2070e1771af7e3e37a62ad7d697caf53cfd69dd8dfcd9ef7daa3f34711",
+    "growth_21": "7d2a38c09e8e74e8f7cbd75d056f0c67be97c23d9a6bc7da2b64f4e71f915d9d",
+    "spike": "19a40ed383bc5f82badd1c733b62ae4a3ab9e7d3ada3975633358dbba1a7c4bc",
+    "recovery": "325fad48530957e2d331a68c0182aa7e09a670dfb713a3eb26bd3edf22d5b618"
+  }
+}

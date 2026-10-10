@@ -1,0 +1,5 @@
+--- a/ext_src/abc_rand_pcg_local_avx512.c
++++ b/ext_src/abc_rand_pcg_local_avx512.c
+@@ -107 +107 @@
+-	state = state * PCG_DEFAULT_MULTIPLIER_64 + rng->increment;	// pcg_random(&rnd, 1);
++	state = state * PCG_DEFAULT_MULTIPLIER_64 + rng->increment512;	// pcg_random(&rnd, 1);
