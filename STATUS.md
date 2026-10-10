@@ -130,3 +130,5 @@ G04权重/20%/std与部分score参照OPEN；候选PROVISIONAL_CANDIDATE/分歧AM
 下一唯一任务：审核本M4明确交付及G04选项，并补充截断M4d后半；本轮到此停止，不自动推进下一关。审核PR/服务器与GitHub内容树匹配回执待本轮同步完成追加。
 
 M4审核发布完成：Draft PR https://github.com/Zwhao0/myflash/pull/4 ，base=codex/m3-profile（PR2仍未合并），head=codex/m4-localization。服务器源124405ce4d3e3b72dfe96b93d2c532145eb096c4 → GitHub f2b1c54dcbd32db65f06cf10365611f7f9b7cdfc，327变化文件blob及完整tree d9348a2d80c98dca08efa0851150fbbfbe026de5一致，main未改。整包/分批inline tree两次连接器传输错误保留；逐blob上传204个独立对象全部SHA核验后组装完整tree成功，不影响CPU/GPU结果。首次公开中转取数因Expect缓冲区默认太小失败，改显式缓冲后完整payload/每blob hash校验成功；未下载原始敏感数据。docs/m4/SYNC.json记录此次审核快照，文档回执追加的最后双方head/tree写.git/m4-final-sync.json。M4明确范围完成且停止；G04完整判决OPEN，截断附加标准未验收，M5不启动。
+
+M4最终回读补充：执行期间用户的PR2已经合并，main=2fcc45724e8bbfde800539beeae45febddd7e572、tree177745dd与M4起点完全相同；本轮没有更新main。PR4由创建时的codex/m3-profile retarget为main，只调整审核基线，源/实验不变。文档追加提交同步后最终服务器/GitHub head/tree记录.git/m4-final-sync.json。

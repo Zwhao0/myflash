@@ -10,7 +10,7 @@
   "pull_request": "https://github.com/Zwhao0/myflash/pull/4",
   "draft": true,
   "merged": false,
-  "base_branch": "codex/m3-profile",
+  "base_branch": "main",
   "reviewed_m3_source": "a1ed7e2b5a6c0c6e3ae8d032567add2189fe1a79",
   "reviewed_m3_github": "30ca7409696b03ae3178d2403378163bddbb4387",
   "reviewed_m3_tree": "177745dd097536c46e3ef5d72d77bd5e6b717184",
@@ -1656,5 +1656,9 @@
       "sha": "67921dfc0c0f28b1dac2e8e91adb84259dc8fd0d"
     }
   ],
-  "note": "Records implementation/evidence snapshot. This receipt and STATUS update form a later documentation-only commit; final heads/tree recorded in .git/m4-final-sync.json. Server/GitHub commit histories differ; content trees match."
+  "note": "Records implementation/evidence snapshot. This receipt and STATUS update form a later documentation-only commit; final heads/tree recorded in .git/m4-final-sync.json. Server/GitHub commit histories differ; content trees match.",
+  "base_branch_at_creation": "codex/m3-profile",
+  "reviewed_m3_merged_commit": "2fcc45724e8bbfde800539beeae45febddd7e572",
+  "reviewed_m3_merged_tree": "177745dd097536c46e3ef5d72d77bd5e6b717184",
+  "reviewed_m3_merged_during_m4": true
 }
