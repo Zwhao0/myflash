@@ -25,6 +25,21 @@ from flash.m6_iteration import IterationPublisher, IterationReader
 CLIENT=None
 
 
+def private_client(socket, timeout):
+    """UPSTREAM redis-py8 Redis(unix_socket_path=...) drops connect timeout.
+
+    Explicit pool config reaches UnixDomainSocketConnection._connect. Both
+    deadlines stay finite; no hidden transport retry can confirm a lost reply.
+    """
+    import redis
+    from redis.backoff import NoBackoff
+    from redis.retry import Retry
+    return redis.Redis(connection_pool=redis.ConnectionPool(
+        connection_class=redis.UnixDomainSocketConnection,path=str(socket),
+        socket_timeout=timeout,socket_connect_timeout=timeout,
+        retry=Retry(NoBackoff(),0)))
+
+
 class RedisTests(unittest.TestCase):
     def setUp(self):
         self.s=Simulation(store=RedisStore(CLIENT),run='m6r-'+uuid.uuid4().hex)
@@ -83,8 +98,7 @@ class RedisTests(unittest.TestCase):
         import redis
         broken=RedisStore(CLIENT)
         original=broken.client
-        broken.client=redis.Redis(unix_socket_path=str(ROOT/'runs/nonexistent-m6a-owned.socket'),
-                                 socket_timeout=.2,socket_connect_timeout=.2)
+        broken.client=private_client(ROOT/'runs/nonexistent-m6a-owned.socket',.2)
         with self.assertRaises(Unavailable):broken.read(self.s.run)
         broken.client=original
         self.assertEqual(broken.read(self.s.run)['run_id'],self.s.run)
@@ -100,7 +114,7 @@ class RedisTests(unittest.TestCase):
         self.assertLess(len(str(socket).encode()),100)
         command=[shutil.which('redis-server'),'--port','0','--unixsocket',str(socket),
                  '--unixsocketperm','600','--disable-thp','no','--save','','--appendonly','no','--dir',str(owned)]
-        client=redis.Redis(unix_socket_path=str(socket),socket_timeout=.2,socket_connect_timeout=.2)
+        client=private_client(socket,.2)
         children=[];logs=[];exits=[];proof={}
         def start():
             log=(owned/('server-'+str(len(children))+'.log')).open('wb');logs.append(log)
@@ -177,7 +191,7 @@ def main():
              '--disable-thp','no','--save','','--appendonly','no','--dir',str(owned)]
     with (owned/'redis.log').open('wb') as log:
         child=subprocess.Popen(command,stdout=log,stderr=subprocess.STDOUT)
-        CLIENT=redis.Redis(unix_socket_path=str(socket),socket_timeout=.5,socket_connect_timeout=.5)
+        CLIENT=private_client(socket,.5)
         results=None
         try:
             until=time.monotonic()+5

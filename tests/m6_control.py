@@ -315,6 +315,8 @@ class ControlTests(unittest.TestCase):
         for timeout in (None,0,-1,float('inf'),float('nan'),True):
             Client.connection_pool.connection_kwargs={'socket_timeout':timeout,'socket_connect_timeout':1}
             with self.assertRaises(ValueError):RedisStore(Client())
+            Client.connection_pool.connection_kwargs={'socket_timeout':1,'socket_connect_timeout':timeout}
+            with self.assertRaises(ValueError):RedisStore(Client())
 
     def test_manual_trigger_lost_store_returns_blocked(self):
         self.s.store.online=False
