@@ -1,0 +1,56 @@
+{
+  "node_rank": 1,
+  "status": "PASS",
+  "rank_pids_checked": 50,
+  "probe_sha256": "c9f6987d35d2bff32aed205c2bac0741a41fe6804861b2e82450f4369c541e77",
+  "source_hashes": {
+    "native/ring.cpp": "2214ea8adc167f8d0fdcfcf956e4930cba15a20687cfccd05df497ea4be1c5f6",
+    "native/probe.cpp": "7a397516cd5d4bb84d21207a3b19558846463c8c099d59d7179ad4f611882311",
+    "native/ring.hpp": "94599dcc02fba33f275d59ec5d3b7dcaa1cf88d431b5afc973ee47f73bd8bd5d",
+    "flash/__init__.py": "ebd6b85348d4590ef8db6c4720c0c46f694ebc13a6b7c01cdfa4687d6d707e18",
+    "flash/reader.py": "ef0a0b2ac43fa3c245ce5c9dac74fb5ccde522221ddfd2ea8118c3666908eda1"
+  },
+  "proof": [
+    {
+      "run_id": "m3d-roce-01",
+      "events": 137
+    },
+    {
+      "run_id": "m3f-allreduce-01",
+      "events": 954
+    },
+    {
+      "run_id": "m3f-ddp-01",
+      "events": 1659
+    },
+    {
+      "run_id": "m3f-allreduce-02",
+      "events": 952
+    },
+    {
+      "run_id": "m3f-ddp-02",
+      "events": 1652
+    },
+    {
+      "run_id": "m3d-monitor-cross-01",
+      "events": 117
+    },
+    {
+      "run_id": "m3d-monitor-allreduce-01",
+      "events": 951
+    },
+    {
+      "run_id": "m3d-monitor-ddp-01",
+      "events": 1652
+    }
+  ],
+  "remaining_own_pids": 0,
+  "own_gpu_pids": 0,
+  "remaining_run_shm": 0,
+  "raw_evidence_dir": "runs/m3-postflight-node-1-20261010T054812463575Z",
+  "command_exit_codes": [
+    0,
+    0,
+    0
+  ]
+}

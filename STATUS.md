@@ -1,8 +1,8 @@
 # FLASH 全新开发状态
 
-当前阶段：M2 透明 NCCL Probe / Monitor 共享内存
-当前状态：M2 PASS（已支持范围），本轮完成并停止；M3 NOT_RUN
-当前任务：tasks/02_monitor.md 已完成；等待M2审核，不自动推进M3。
+当前阶段：M3 手动 CUDA Event 剖析与机制验证
+当前状态：M3 PASS（已验证范围），本轮完成并停止，等待审核；M4 NOT_RUN
+当前任务：tasks/03_profile.md 已完成；等待M3审核，不自动推进M4。
 
 ## 权威路径、来源与改动
 
@@ -43,7 +43,7 @@ PASS：用户创建并指定 [Zwhao0/myflash](https://github.com/Zwhao0/myflash)
 | M0 | PASS | 本轮文档/独立仓库实际核验；后续阶段待审核 |
 | M1 | PASS（核心） | M1a–M1d实测通过；M1e准备BLOCKED、MoE NOT_RUN，详见docs/m1 |
 | M2 | PASS（已支持范围） | Probe/Reader构建、CPU11项、单机/跨机/16rank/DDP/Group实测，docs/m2 |
-| M3 | NOT_RUN | 无 Event 剖析/GPU 机制实验 |
+| M3 | PASS（已验证范围） | 手动两轮、Event、A–F机制/16rank/Monitor回归，docs/m3 |
 | M4 | NOT_RUN | 无定位算法/fixture |
 | M5 | NOT_RUN | 无 Rbeast 安装/检测器实现 |
 | M6 | NOT_RUN | 无 Redis 服务/自动闭环 |
@@ -101,3 +101,13 @@ CPU9项PASS（包括未ACK重启与持锁进程死亡poison），单机native与
 M2完成即停。下一唯一任务：用户审核M2；M3及以后未开始。GitHub审核分支与最终tree回执在.git/m2-final-sync.json记录，完成发布后追加链接。
 
 GitHub审核分支已发布：codex/m2-monitor；Draft PR https://github.com/Zwhao0/myflash/pull/1 。首份脱敏交付source 4f6ed9610b78e0b1aa627536f80bcb6fae7d2ec9 → GitHub 4eb3cd71957298877dcdd0109c90ab129745caaf，25个变化blob及完整tree 3ea4153194c63cd1248f0ebd279e8eba95185890 完全匹配、分支回读成功，main未改动。公开首轮回执docs/m2/SYNC.json；本次状态/回执追加的最终双方SHA/tree在.git/m2-final-sync.json记录。M2结束，不进入M3。
+
+
+## M3最终结果与停止（2026-10-10）
+用户审核M2后一次授权完整M3a–M3d，内部连续推进；没有进入M4。PR1已经merged，服务器64badbf的tree79a1254与PR最新f8316cf对齐；从已审核M2创建codex/m3-profile，main与M2提交未覆盖。权威源gpu-01:/home/campus/zhangweihao/myflash；gpu-02只执行同步镜像，Git提交历史不同，不冒称两机SHA一样。
+实现/提交：ccded07手动控制/ABI2/Event/恢复/负载；14a5c70补强失败内层GroupEnd无效化和部分rank校验；最终辅助验证/文档/白名单提交用git log和同步回执查询。diff为native/ring.*、native/probe.cpp、flash/reader.py，新增tests/m3_*、scripts/m3_*、tasks/03_profile与docs/m3，更新GAPS/本文件；M1及M2基线入口不改。PAPER/UPSTREAM/ADAPTATION/EXTENSION出处见SOURCES，没有GreyHound源码复用或旧失败实现访问，无系统软件变更。
+实际设备两台各8×H800，PyTorch2.8+cu128/CUDA12080/NCCL22703；完整命令/退出/原始日志/断言在docs/m3/VALIDATION与每run服务器manifest。手动两轮0→1→0、非Group真实路径、CUDA Event时间和无效null、Reader尾中断/中部损坏/已ACK丢失拒绝通过；CPU六命令全0（suite053356468174Z）。单机/跨RoCE分别260有效时延，CPU20ms与同依赖链GPU前置计算两个目标rank均观察到短Event通信区间；G09只在该边界受支持，仍OPEN。
+最新Group02：80有效成员/48有效scope；32多stream成员UNSUPPORTED/null，验证PASS不称该全窗口完整Profile。最新16rank AR02：1904事件、192有效Profile，原25次数值/SUM136；DDP02：3299事件、320有效Profile、各20step/676参数/更新>0/同步误差0。全部正常采集loss0，排空/清理0；Monitor单机/跨机/16rank/DDP/lifecycle、native2rank及原M2 CPU回归全部通过。真实不支持/未测API、stream、Graph、异步行为见RESULTS/VALIDATION。
+最终两节点Probe SHA256 c9f6987d35d2bff32aed205c2bac0741a41fe6804861b2e82450f4369c541e77与核心源hash完全相同；两节点检查62/50个本轮rank PID、剩余进程/GPU PID/shm均0；单run<=300s、预检3072MiB余量、1536目标/2048运行末界限，最高约1058MiB。Profile的stop等待独立统计，AR02全rank之和35.651ms/DDP02 122.267ms，不当墙钟开销或无开销结论。
+首轮header重载build exit1、gpu-02 postflight因源Git对象未导入exit1/底层128、一次GitHub连接器查询传输失败均保留。postflight改为审批源blob hash比较，范围不变、两节点新run/日志exit0。原敏感实验日志只在服务器，公开520机制原始样本/完整分布与其它Profile成员数据均白名单导出、不改原时延/标签。
+下一唯一任务：用户审核M3交付及G09适用边界；未经明确通过不进入M4。未授权/未执行降频、OOM、网络拥塞、其它作业终止、Redis、BOCD、自动检测/两阶段定位或训练恢复。GitHub审核分支/PR及完整tree回读结果以docs/m3/SYNC.json或后续回执为准。

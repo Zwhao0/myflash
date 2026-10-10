@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "raw_samples": 520,
+  "nonwarmup_samples": 400,
+  "distributions": 20,
+  "profile_rows": 4652,
+  "cross_node_rank_sets": "complete",
+  "baseline_hashes": "unchanged",
+  "group_complete_profile": false,
+  "probe_sha256": "c9f6987d35d2bff32aed205c2bac0741a41fe6804861b2e82450f4369c541e77"
+}
