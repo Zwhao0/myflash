@@ -1,15 +1,15 @@
 # M2 验证入口与原始证据
-实测设备：gpu-01/gpu-02，各8×H800，沿用M1 PyTorch2.8.0+cu128/NCCL2.27.3；gpu-01目录/home/campus/zhangweihao/myflash为权威源，gpu-02为执行镜像。实际hostname、UUID/进程/网卡/地址、完整底层命令仅服务器runs/；公开evidence.json只保留白名单数字/断言。
+实测设备：node-0/node-1，各8×H800，沿用M1 PyTorch2.8.0+cu128/NCCL2.27.3；node-0目录<project>为权威源，node-1为执行镜像。实际hostname、UUID/进程/网卡/地址、完整底层命令仅服务器runs/；公开evidence.json只保留白名单数字/断言。
 ## 实际命令
 下列是实际使用的完整高层入口，已在项目根执行；m2_run_node从本项目M1最终PASS的runs/m1d-20261010-allreduce-04/node-R/manifest.json读取已授权UUID/peer，启动前重新核验余量，不从其他项目读取配置。完整展开的torchrun参数、env、source SHA/diff/hash、所有退出值在各run control-node-R.json与node-R/manifest.json。
 ```sh
 python3 scripts/m2_build.py
 python3 tests/m2_ring.py
 python3 tests/m2_hook_smoke.py
-# B：gpu-01原生M1负载与显式Probe；各25次4096 int64元素
+# B：node-0原生M1负载与显式Probe；各25次4096 int64元素
 python3 scripts/m2_run_node.py --run-id m2b-20261010-native-01 --gpu-count 2 --mode allreduce --master-port 29751
 python3 scripts/m2_run_node.py --run-id m2b-20261010-probe-04 --gpu-count 2 --mode allreduce --master-port 29751 --probe
-# F：gpu-01直接NCCL Group/InitRank/Config/Split/lifecycle
+# F：node-0直接NCCL Group/InitRank/Config/Split/lifecycle
 python3 scripts/m2_run_node.py --run-id m2f-20261010-lifecycle-03 --gpu-count 2 --mode lifecycle --master-port 29761 --probe
 # C：在两节点分别执行，node-rank为0与1；同时启动
 python3 scripts/m2_run_node.py --run-id m2c-20261010-probe-02 --node-rank 0 --nnodes 2 --gpu-count 1 --mode allreduce --master-port 29771 --probe

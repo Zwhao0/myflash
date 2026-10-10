@@ -1,6 +1,6 @@
 HOST: local macOS source-reference review only
-CWD: /Users/henry/Desktop/FLASH_Codex
-COMMAND: /Users/henry/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 -c 'from pathlib import Path; from pypdf import PdfReader; import hashlib,json; p=Path('"'"'references/chapter3.pdf'"'"'); r=PdfReader(p); m=json.loads(Path('"'"'references/source_manifest.json'"'"').read_text()); h=hashlib.sha256(p.read_bytes()).hexdigest(); assert len(r.pages)==30 and h==m['"'"'excerpt_sha256'"'"']; [page.extract_text() for page in r.pages]; print('"'"'page_count'"'"',len(r.pages)); print('"'"'SHA256'"'"',h); print('"'"'manifest_match'"'"',True); print('"'"'text_extraction_all_pages'"'"',True)'
+CWD: <local-project>
+COMMAND: <local-python> -c 'from pathlib import Path; from pypdf import PdfReader; import hashlib,json; p=Path('"'"'references/chapter3.pdf'"'"'); r=PdfReader(p); m=json.loads(Path('"'"'references/source_manifest.json'"'"').read_text()); h=hashlib.sha256(p.read_bytes()).hexdigest(); assert len(r.pages)==30 and h==m['"'"'excerpt_sha256'"'"']; [page.extract_text() for page in r.pages]; print('"'"'page_count'"'"',len(r.pages)); print('"'"'SHA256'"'"',h); print('"'"'manifest_match'"'"',True); print('"'"'text_extraction_all_pages'"'"',True)'
 STDOUT:
 page_count 30
 SHA256 49694130e79e0f08e17aec8ad2f7955f2551cf0942f076389d8b11cf2aebadaa

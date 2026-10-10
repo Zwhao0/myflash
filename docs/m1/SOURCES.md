@@ -20,7 +20,7 @@ ADAPTATION：两机离线，使用用户本机既有系统代理访问清华 PyP
 
 UPSTREAM：主 wheel 哈希另核对官方 [torch2.8.0 PyPI文件](https://pypi.org/project/torch/2.8.0/)（cp312 manylinux2_28 x86_64：b2aca0939fb7e4d842561febbd4ffda67a8e958ff725c1c27e244e85e982173c）与 [NCCL2.27.3 PyPI文件](https://pypi.org/project/nvidia-nccl-cu12/2.27.3/)（x86_64：adf27ccf4238253e0b826bce3ff5fa532d65fc42322c8bfdfaf28024c0fbe039）。其余包按 TLS 镜像索引下载并做锁文件哈希/两机传输后核验，不声称逐包另行核对了官方元数据。接口文档固定 [NCCL2.27.3 archive](https://docs.nvidia.com/deeplearning/nccl/archives/nccl_2273/user-guide/docs/env.html)。
 
-ADAPTATION：gpu-02 使用当前新项目路径的轻量源码镜像执行，SOURCE_COMMIT标注 gpu-01 权威源快照；各节点 run manifest保留自己的GitSHA、diff、测试源码SHA256，双机测试前核对源码哈希。训练无大型模型/数据下载，Megatron/TE未安装。
+ADAPTATION：node-1 使用当前新项目路径的轻量源码镜像执行，SOURCE_COMMIT标注 node-0 权威源快照；各节点 run manifest保留自己的GitSHA、diff、测试源码SHA256，双机测试前核对源码哈希。训练无大型模型/数据下载，Megatron/TE未安装。
 
 ## 显存预算明确调整（用户批准）
 

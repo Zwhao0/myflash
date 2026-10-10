@@ -1,8 +1,8 @@
 {
-  "host": "gpu-01",
+  "host": "node-0",
   "platform": "Linux-6.8.0-142-generic-x86_64-with-glibc2.39",
   "machine": "x86_64",
-  "workspace": "/home/campus/zhangweihao/myflash",
+  "workspace": "<project>",
   "client_date": "2026-10-10",
   "timezone": "Asia/Shanghai",
   "remote_m0": "executed",

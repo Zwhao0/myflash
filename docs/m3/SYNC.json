@@ -1,6 +1,6 @@
 {
   "status": "PASS",
-  "authoritative_source": "gpu-01:/home/campus/zhangweihao/myflash",
+  "authoritative_source": "node-0:<project>",
   "source_commit": "831c53e7e023302e30ea1267f44db7c357f6e608",
   "source_tree": "c4ce7dd1b5740e10e7c30d2966279662064570a8",
   "source_branch": "codex/m3-profile",

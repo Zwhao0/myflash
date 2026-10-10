@@ -1,8 +1,8 @@
-HOST: gpu-01
-CWD: /home/campus/zhangweihao/myflash
+HOST: node-0
+CWD: <project>
 COMMAND: git rev-parse --show-toplevel
 STDOUT:
-/home/campus/zhangweihao/myflash
+<project>
 
 STDERR:
 

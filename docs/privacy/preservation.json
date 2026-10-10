@@ -1,0 +1,248 @@
+{
+  "status": "PASS",
+  "unchanged_files": 60,
+  "json_parse": "PASS",
+  "inventory_root_expression": "PASS",
+  "hashes": [
+    {
+      "path": "docs/m1/SYNC.json",
+      "sha256": "f429834ee1b81368abf82ac4261e03cdf9c1ba48c5ee92e7c65d95105a8aefac"
+    },
+    {
+      "path": "docs/m1/evidence.json",
+      "sha256": "b6235e47d1897962890bcdbde0abb2d071ada45cc82d4cf6dc8cfe996e08764b"
+    },
+    {
+      "path": "docs/m2/SYNC.json",
+      "sha256": "bef5ba7ce3e355beb3bd0914ed02765cbae8952abd6c906ee9d5b206c884db24"
+    },
+    {
+      "path": "docs/m2/evidence.json",
+      "sha256": "4613d4984d3b83d88d1b13d019e0dc59532337649a3067bb051857cd0bbef3ed"
+    },
+    {
+      "path": "docs/m3/baseline-hashes.json",
+      "sha256": "b6faf1a6cfdf2eb1e22c04d6f898f696432c8e26168503dc85b6e335c60a9917"
+    },
+    {
+      "path": "docs/m3/distributions-node-0.csv",
+      "sha256": "c1ab29d9a7dc8cec5357eb64f9a93cc4b8fcc1521eddb7f576a294dd7c9d9789"
+    },
+    {
+      "path": "docs/m3/distributions-node-1.csv",
+      "sha256": "b3cdd55b53a68aeccf97e95583740406f60cfd38299211d6ccb880b2d7b8e2bf"
+    },
+    {
+      "path": "docs/m3/evidence-node-0.json",
+      "sha256": "57979a618b6db962cfeda79d758b4e11ae4136e96a666c08df4458cc14a0443b"
+    },
+    {
+      "path": "docs/m3/evidence-node-1.json",
+      "sha256": "cd18722f8767501554d1c084e6c8746a6a06b93a9183875788cd616eacda1bf2"
+    },
+    {
+      "path": "docs/m3/final-validation-node-0.json",
+      "sha256": "c4dc1a64ad789887ab340c322d39b4090fcdb40e48c4764b8d0c27d386522749"
+    },
+    {
+      "path": "docs/m3/final-validation-node-1.json",
+      "sha256": "724800bbf8afcae97dcfa97ea13f89033bdc6f2f92d16b70eb87424f0b0795e7"
+    },
+    {
+      "path": "docs/m3/postflight-node-0.json",
+      "sha256": "9d57d8c36ac685d2703b432000cbdb0d39727b83fe1a9b004bce21eef0ed7c72"
+    },
+    {
+      "path": "docs/m3/postflight-node-1.json",
+      "sha256": "6e196f4383109fd2262bc4eb0c009d498213f7356161f66e453c1a809e3ad0f3"
+    },
+    {
+      "path": "docs/m3/profile-samples-node-0.csv",
+      "sha256": "d88783b768c278716fb3a7ed4a9fd2590f921ab3576862ad3d2cf065f04e3597"
+    },
+    {
+      "path": "docs/m3/profile-samples-node-1.csv",
+      "sha256": "23fe0164b2cc59aed6dd4df2dd08244ef9a6e0beff86a92ce74b736b55b362e5"
+    },
+    {
+      "path": "docs/m3/public-validation.json",
+      "sha256": "a933f95c3e83e8776958d9e7f441048c8b7c657588e0326b3b4ed72a821257ad"
+    },
+    {
+      "path": "docs/m3/samples-node-0.csv",
+      "sha256": "3c1ceb0cfd2440d1583727cb6b3a5ad997abb77fb49176322f3ebc90a40f1501"
+    },
+    {
+      "path": "docs/m3/samples-node-1.csv",
+      "sha256": "027bd02b6aab6a8c513b890c461b0fd500fd943b40453b01a2d38c53455a0638"
+    },
+    {
+      "path": "flash/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "flash/__init__.py",
+      "sha256": "ebd6b85348d4590ef8db6c4720c0c46f694ebc13a6b7c01cdfa4687d6d707e18"
+    },
+    {
+      "path": "flash/reader.py",
+      "sha256": "ef0a0b2ac43fa3c245ce5c9dac74fb5ccde522221ddfd2ea8118c3666908eda1"
+    },
+    {
+      "path": "native/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "native/probe.cpp",
+      "sha256": "7a397516cd5d4bb84d21207a3b19558846463c8c099d59d7179ad4f611882311"
+    },
+    {
+      "path": "native/ring.cpp",
+      "sha256": "2214ea8adc167f8d0fdcfcf956e4930cba15a20687cfccd05df497ea4be1c5f6"
+    },
+    {
+      "path": "native/ring.hpp",
+      "sha256": "94599dcc02fba33f275d59ec5d3b7dcaa1cf88d431b5afc973ee47f73bd8bd5d"
+    },
+    {
+      "path": "references/chapter3.pdf",
+      "sha256": "49694130e79e0f08e17aec8ad2f7955f2551cf0942f076389d8b11cf2aebadaa"
+    },
+    {
+      "path": "references/chapter3_extracted.txt",
+      "sha256": "99363e7b59ee6c7db7cfbbc0f7db69caa405194c0c77390731c30fcfe85de07e"
+    },
+    {
+      "path": "references/source_manifest.json",
+      "sha256": "f4e4503b7181218d090238d88d93b419c78d0abdedd026f19adc655237f58419"
+    },
+    {
+      "path": "scripts/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "scripts/m1_install_offline.py",
+      "sha256": "5520393266a61c7eabb963ca97792367abc04a668896505beb789e6bf74ce742"
+    },
+    {
+      "path": "scripts/m1_launch.py",
+      "sha256": "7a389c32f74c756310a9d3d4f2ecd27c3b5a8e0d72140d87b0d10f34fac31b5a"
+    },
+    {
+      "path": "scripts/m1_summarize.py",
+      "sha256": "3d35e7809264d5127bdaea88ebdb00f634c4ff5f3c78496e834e0dabe53b7333"
+    },
+    {
+      "path": "scripts/m2_build.py",
+      "sha256": "d672a3056200e893b4043c69e289ba6a12e77b311f1704f8b008e64de8df2e40"
+    },
+    {
+      "path": "scripts/m2_cleanup.py",
+      "sha256": "1649844fc3a237136ab997eb72ff3ec7fe9ba447bcc2028bc6afe58ef19629da"
+    },
+    {
+      "path": "scripts/m2_launch.py",
+      "sha256": "c42896efc9d5dc50b8902ded68358be1998ef0b430dddb7181f78336f94c06cb"
+    },
+    {
+      "path": "scripts/m2_run_node.py",
+      "sha256": "57d18977a18e67b7418764c04b3e744952cf9c01b8fe3e07385bb7c74eb52036"
+    },
+    {
+      "path": "scripts/m2_verify.py",
+      "sha256": "3714583538fd052ec8726b0b3324793fcdb9d0eda7e5b7f29d75600ba3bb6ae2"
+    },
+    {
+      "path": "scripts/m3_build.py",
+      "sha256": "232ab8fd0838a55a37642be6368d74fa5063cc303692a882c4e085322b1ddb68"
+    },
+    {
+      "path": "scripts/m3_cpu_suite.py",
+      "sha256": "e510c58ad17c92b50d90b19d6c59e2a1b662cb21a76380ac8f2454f21ab21f2e"
+    },
+    {
+      "path": "scripts/m3_export.py",
+      "sha256": "b333d19469430f5720b030351d73f791e00ea973f485896c7b60ed6966d4dfca"
+    },
+    {
+      "path": "scripts/m3_launch.py",
+      "sha256": "c8f1f624308831803acb603b037ca349660fc56a767fa36ed0f156408b95fd99"
+    },
+    {
+      "path": "scripts/m3_postflight.py",
+      "sha256": "18f2f8e548e31a2c36bfbb7671e3066164b2ee8d47293756f031962938129526"
+    },
+    {
+      "path": "scripts/m3_run_node.py",
+      "sha256": "7e1425299fae1164170b901dd09e6e3fb8ed85888b8b4774824be6a6c02c87ad"
+    },
+    {
+      "path": "scripts/m3_validate_all.py",
+      "sha256": "b7f05fd4f1c0211dc91ba843cf1e23b8f7009631245245d91cd9405c516d0386"
+    },
+    {
+      "path": "scripts/m3_validate_public.py",
+      "sha256": "b26b48187d21e078750eff0cf1b5ea5831b73329ac5b77074ff74ce147f5e352"
+    },
+    {
+      "path": "scripts/m3_verify.py",
+      "sha256": "53a5766d6f1217ae56ae3c5a01ca1d97496de5c8c048c358fdc110c6858b7a59"
+    },
+    {
+      "path": "tests/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "tests/m1_baseline.py",
+      "sha256": "298c0a9994e839f017552677225939b96683c49226ca079e381398fa428c4695"
+    },
+    {
+      "path": "tests/m2_hook_smoke.py",
+      "sha256": "e89e4b1d2a61052b743cedaa2ccf58fd97b2cf96e11619c62c67baf2765263a4"
+    },
+    {
+      "path": "tests/m2_lifecycle.py",
+      "sha256": "37e27630be9ccc2802b7ddeab49930b14b617490f0f4577e9d252987dbb00f18"
+    },
+    {
+      "path": "tests/m2_lifecycle_driver.cpp",
+      "sha256": "379af1b386f00301ae0a8608cc257304368ec0c2572dc32e792e221833e83db0"
+    },
+    {
+      "path": "tests/m2_mock_nccl.cpp",
+      "sha256": "e5ea195d415baaa93e8ffbf97f572e7371e282bdbaf21d16ac0696d24a5b74a9"
+    },
+    {
+      "path": "tests/m2_ring.py",
+      "sha256": "f1de41cb56172f138a84763f5fa5c3334450ddb74400413ab8c0bed576ff55da"
+    },
+    {
+      "path": "tests/m3_hook.py",
+      "sha256": "48c413ec00cdf133cdb258a703528d15e0f41cfd6196cb02766745ac9a525294"
+    },
+    {
+      "path": "tests/m3_mechanism.py",
+      "sha256": "8e846ddeee7d5c4f13cdfedec62f30445ab22af703f2ee8697d18e0f398ccb56"
+    },
+    {
+      "path": "tests/m3_mock_cuda.cpp",
+      "sha256": "655901d2a59c890223cc63bae98567359d14ee0d3d097f24418bfc5d6f76093a"
+    },
+    {
+      "path": "tests/m3_mock_nccl.cpp",
+      "sha256": "324b5c98f2cc771a12fe813060ff0ee37a194deea34ea46decfeb5d6deb30705"
+    },
+    {
+      "path": "tests/m3_reader.py",
+      "sha256": "1ec2eb301d2b50f067ed1ff9ebc42308a633b47a3b9d9a68886f18194e95e51d"
+    },
+    {
+      "path": "tests/m3_regression.py",
+      "sha256": "327e58efab176117016d3094c957335d0ddb0cb5a0c520b506fc53950c14590e"
+    },
+    {
+      "path": "tests/m3_validation.py",
+      "sha256": "c9d282779f3dcfd94e8630062720244fea32e1659bd7e00bfd48fe8ff0af5c8a"
+    }
+  ]
+}

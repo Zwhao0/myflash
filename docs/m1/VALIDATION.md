@@ -1,10 +1,10 @@
 # M1 执行与验收证据
 
-2026-10-10，实际设备gpu-01/gpu-02。项目根均为 `/home/campus/zhangweihao/myflash`；gpu-01为权威开发源，gpu-02为当前项目执行镜像。下述公开命令以占位符替代真实UUID、地址；**实际完整命令、环境、时间、代码SHA/diff/源码哈希、退出码、GPU映射在每run的control/manifest中**，原始记录只在服务器，本机CPU检查不能替代GPU PASS。
+2026-10-10，实际设备node-0/node-1。项目根均为 `<project>`；node-0为权威开发源，node-1为当前项目执行镜像。下述公开命令以占位符替代真实UUID、地址；**实际完整命令、环境、时间、代码SHA/diff/源码哈希、退出码、GPU映射在每run的control/manifest中**，原始记录只在服务器，本机CPU检查不能替代GPU PASS。
 
 ## 已实际执行的入口及日志
 
-| 检查 | gpu-01原始目录 | gpu-02原始目录 | 退出/依据 |
+| 检查 | node-0原始目录 | node-1原始目录 | 退出/依据 |
 |---|---|---|---|
 | 初始只读inventory | runs/m1a-20261010T031757Z | runs/m1a-20261010T031855Z | manifest各命令/00..23.log；nvcc缺失127，其余正常；host torch缺失独立记录 |
 | 项目环境后inventory | runs/m1a-20261010T034421Z | runs/m1a-20261010T034423Z | Python stack查询0；库maps/version与硬件/网络原始输出 |
@@ -23,7 +23,7 @@
 首先确定获准GPU UUID与实际peer地址，检查剩余显存；不能复制旧run_id。跨机时两节点同一新run_id、同一master地址/端口同时启动。以下变量由操作者从本项目私有盘点填写，不从其他项目凭证读取；`--allow-shared`仅用于本用户已批准的小测试。
 
 ```sh
-# gpu-01单机两GPU；GPU_UUIDS为2个已确认且唯一的UUID
+# node-0单机两GPU；GPU_UUIDS为2个已确认且唯一的UUID
 python3 scripts/m1_launch.py --python "$PWD/.venv-m1/bin/python"   --run-id "$NEW_RUN_ID" --gpus "$GPU_UUIDS" --mode allreduce   --nnodes 1 --node-rank 0 --master-addr 127.0.0.1 --master-port 29651   --timeout 300 --allow-shared
 
 # 两机：每机GPU_UUIDS为1个UUID（M1c）或8个UUID（M1d）；NODE_RANK分别0/1
