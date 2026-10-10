@@ -179,3 +179,9 @@ M5 发布回执：Draft PR https://github.com/Zwhao0/myflash/pull/6 ，base main
 命令、机器、exit与私有日志位置见repeatability/validation.json；suite01/02均0（01不代表完整性PASS）、export01为1/export02为0，严格两测试1；node-0原Reporter/8处理/6隐私测试0。私有原始命令/worker stdout/stderr/原模型打印位于服务器runs/m5-work/runs/m5-r-{20261010-01,20261010-02,strict-20261010-01,prefix-capture-01}与runs/m5-r-launch-20261010-{01,02}，入口脚本runs/m5-access/m5-r-*。本地macOS/Python3.9标准库验证5540 fits/132960数组/6300前缀的数据hash、native bytes、输入、固定配置与无未来映射exit0，不称本地真实Rbeast/GPU实验。运行时binary hash前后相同、M1仍无新增包、自身实验进程残留0；无GPU/Redis/自动Profile/控制器/真值读取。
 保留隐私CI工作流和原head成功记录；本轮新head远端CI不得冒充前次PASS。最终当前树扫描/保留SHA/diff及发布状态以publication-validation和私有交付回执为准。Git CLI连接的SSH publickey与HTTPS认证未就绪，M5-R目前交付在本地同名分支，远端PR6仍为原baa7638，未更新；不把未发布的新改动称远端CI PASS。G01/G02/G13/G20全部OPEN、final_alert=false。
 下一唯一任务：用户审核M5-R证据与补丁/独立复测方案，决定是否另行批准隔离native修复；本轮停止，不自动进入M6。
+
+
+## M5-R 发布补充（2026-10-10）
+用户明确批准继续推送以便ChatGPT审核；本轮只发布已有M5-R提交并追加本状态（ADAPTATION），不新增实验或科学实现。已使用现有GitHub专用SSH身份及已验证主机密钥/HTTP CONNECT代理，普通fast-forward push exit0，将codex/m5-iteration-rbeast从baa7638更新至004b1d6f98a9052db4edcf243f8c6d5359d5eed1；Git fetch远端回读exit0，commit/tree67b3e5332879e76d3ebf8060f016ddf78ef31e6c一致。完整私有命令/退出码/原始日志在本地M5 checkout runs/m5-r-publish-01/{ls-remote,push,fetch,main-fetch}.{log,exit}；未输出或上传认证材料。前次认证失败仍为历史失败记录，repeatability/publication-validation.json的NOT_UPDATED/NOT_RUN是前次快照，由本段与私有发布回执补充，不覆盖旧记录。
+推送前查询PR6为open/draft，推送后查询发现外部已于2026-10-10 09:57:36 UTC合并旧M5 head baa7638、merge ca6923d58d1fd5b2a0f899176780b17d6bd7e364；本轮未执行合并或修改main。沿用当前M5分支新建Draft PR https://github.com/Zwhao0/myflash/pull/7 ，base main ca6923d，首份head004b1d6、61文件差异，专门审核M5-R。科学提交及原始数据不变，本回执仅文档追加；最终head/树/隐私CI以私有runs/m5-r-access/publication-receipt.json和PR7实际状态为准，旧M5 CI不代表新head通过。
+严格重复性FAIL、决策稳定性不能无条件PASS、三次异常raw NOT_CAPTURED及全部失败均保留；G01/G02/G13/G20 OPEN、final_alert=false。未patch/rebuild/安装依赖，无GPU占用或M6推进。下一唯一任务：审核PR7的M5-R证据与隔离补丁/复测方案；发布完成后停止。
