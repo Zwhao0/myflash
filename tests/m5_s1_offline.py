@@ -66,6 +66,15 @@ class Evidence(unittest.TestCase):
                     self.assertLessEqual(c['original_iteration'],row['iteration'])
             self.assertFalse(row['final_alert']);self.assertIsNone(row['final_alert_iteration'])
 
+    def test_removed_outlier_and_rolling_window_mapping(self):
+        series=json.loads((a.ROOT/'docs/m5/patch-p1/data/m5-p1-c-batch01/decisions-spike.json').read_text())['replays'][0]['decisions']
+        prepared=a.prepare(series[29]['input'])
+        self.assertIsNone(prepared['iteration_to_index0']['21'])
+        self.assertNotIn(21,prepared['index0_to_iteration'])
+        prepared=a.prepare(series[40]['input'])
+        self.assertEqual(prepared['window_iterations'],list(range(12,42)))
+        self.assertEqual(prepared['index0_to_iteration'][9],22)
+
     def test_future_invariance(self):
         history={};short=[a.analyze_prefix(x,history) for x in self.saved[:23]]
         altered=copy.deepcopy(self.saved)

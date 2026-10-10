@@ -30,7 +30,7 @@ def main():
            ('ext_src/abc_rand_pcg_local_avx512.c','avx512_pcg_set_seed',88,111,'rng->increment')]
     with tarfile.open(a.sdist) as t:
         for path,function,start,end,anchor in spans:
-            blob=t.extractfile('rbeast-0.1.25/'+path).read();lines=blob.decode('latin1').splitlines()
+            blob=t.extractfile('rbeast-0.1.25/'+path).read();lines=[line.decode('latin1') for line in blob.splitlines()]
             span='\n'.join(lines[start-1:end]);assert anchor in span,(path,start,end)
             ledger.append(dict(nature='UPSTREAM',release='Rbeast0.1.25',sdist_sha256=SDIST,path=path,function=function,line_start=start,line_end=end,file_sha256=sha(blob),text_encoding='latin1 lossless byte mapping',span_normalized_lf_sha256=sha(span.encode()),anchor=anchor))
     for path,function,start,end in [('flash/rbeast_adapter.py','PARAMETERS',12,19),('flash/rbeast_adapter.py','candidates_from_raw',22,55),('flash/rbeast_adapter.py','RbeastAdapter/worker',75,125),('flash/change_detection.py','preprocess',28,54),('flash/change_detection.py','filter_candidates',57,104),('flash/change_detection.py','detect/prefix_replay',107,130)]:

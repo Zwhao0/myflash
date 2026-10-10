@@ -65,7 +65,7 @@ source-index/preservation与RNG/STRICT/MATRIX报告为权威。版本号相同�
 | 原sdist | Rbeast0.1.25，SHA256 8265bd53f9c16bdb1ab103de047288ea1af6875415394abf3ac0104cfb2917ec |
 | 原源文件 | ext_src/abc_rand_pcg_local_avx512.c，SHA256 92041e7fea6aae20e53d706463de749aa9fcde694006b19bf4e81028ddef2c21 |
 | C源文件 | SHA256 0263aa122da6d7989fb2d8ff01f51cf2e232382a48bd93a2e47e5886dd2d9c56；avx512_pcg_set_seed L107，increment→increment512，CRLF保持 |
-| 最小patch | docs/m5/patch-p1/minimal.patch；完整SHA见 science-s1/data/input-hashes.json；不是清零内存或改优化策略 |
+| 最小patch | docs/m5/patch-p1/minimal.patch；SHA256 46acf5f1d44e7d1137818a83701b0c5aed55ef56ed53205c7ccf2a390b787cc8；不是清零内存或改优化策略 |
 | C wheel | rbeast-0.1.25-2c-cp312-cp312-linux_x86_64.whl；SHA256 a4925769e85d015682712fd18f924d3ad02e4a02e4f8bca9e4280028353c29ce |
 | C .so | SHA256 1f08fbc9f24d0c00eb21f91f357519f15289ffd1ef18b9e7e0aca47c2596faeb |
 | 正式原wheel | SHA256 1bde99a4c3b6cc8b130c8cd2d179385c50dbba6b00d82917ecb2475b0083eab5；原cp312 manylinux wheel |
