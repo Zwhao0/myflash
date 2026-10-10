@@ -25,3 +25,7 @@ credentials/
 /runs/
 /.venv-m1/
 /.wheels-m1/
+
+# M2 project-only compiler headers
+/.wheels-m2/
+/.build-deps-m2/

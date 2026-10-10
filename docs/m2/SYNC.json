@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "source_commit": "4f6ed9610b78e0b1aa627536f80bcb6fae7d2ec9",
+  "github_commit": "4eb3cd71957298877dcdd0109c90ab129745caaf",
+  "identical_tree": "3ea4153194c63cd1248f0ebd279e8eba95185890",
+  "changed_blob_matches": 25,
+  "readback_match": true,
+  "privacy_scan": "PASS",
+  "branch": "codex/m2-monitor",
+  "pull_request": "https://github.com/Zwhao0/myflash/pull/1",
+  "draft": true,
+  "main_updated": false,
+  "force": false,
+  "raw_logs_uploaded": false,
+  "M2": "PASS_supported_scope",
+  "M3": "NOT_RUN"
+}
