@@ -1,0 +1,8 @@
+{
+  "exit_code": 0,
+  "checks": {
+    "status": "NO_CANDIDATE",
+    "candidate_ranks": []
+  },
+  "hand_calculation": "two finite equal1e308; mean1e308, CV0; naive sum would overflow"
+}

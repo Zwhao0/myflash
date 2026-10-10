@@ -1,0 +1,11 @@
+{
+  "exit_code": 0,
+  "checks": {
+    "status": "NO_CANDIDATE",
+    "candidate_ranks": [],
+    "tags.DP.excluded_single_rank": [
+      "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+    ]
+  },
+  "hand_calculation": "one member excluded before Stage1"
+}

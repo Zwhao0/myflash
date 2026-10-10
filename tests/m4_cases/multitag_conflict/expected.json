@@ -1,0 +1,12 @@
+{
+  "exit_code": 0,
+  "checks": {
+    "status": "AMBIGUOUS_SPEC",
+    "candidate_ranks": [
+      0,
+      1
+    ],
+    "cross_tag.conflict": true
+  },
+  "hand_calculation": "DP min0; TP min1; both evidence retained, no vote"
+}

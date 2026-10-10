@@ -1,0 +1,10 @@
+{
+  "exit_code": 0,
+  "checks": {
+    "status": "PROVISIONAL_CANDIDATE",
+    "candidate_ranks": [
+      0
+    ]
+  },
+  "hand_calculation": "mean10 std1 CV exactly .1 (>=); min rank0; sample CV sqrt2/10 also above"
+}

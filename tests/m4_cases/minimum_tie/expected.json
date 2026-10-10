@@ -1,0 +1,11 @@
+{
+  "exit_code": 0,
+  "checks": {
+    "candidate_ranks": [
+      0,
+      1
+    ],
+    "status": "AMBIGUOUS_SPEC"
+  },
+  "hand_calculation": "min2 shared by0,1; no arbitrary tiebreak; conflict preserved"
+}

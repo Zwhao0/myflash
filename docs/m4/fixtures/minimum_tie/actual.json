@@ -1,0 +1,265 @@
+{
+  "schema_version": 1,
+  "context": {
+    "run_id": "fixture",
+    "profile_epoch": 1
+  },
+  "status": "AMBIGUOUS_SPEC",
+  "final_fault_ranks": [],
+  "candidate_ranks": [
+    0,
+    1
+  ],
+  "tags": {
+    "DP": {
+      "excluded_single_rank": [],
+      "selected_groups": [
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      ],
+      "stage2": {
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa": {
+          "status": "PROVISIONAL_CANDIDATE",
+          "sensitivity_disagreement": false,
+          "methods": {
+            "unweighted_communicator_mean": {
+              "avg_latency_us": {
+                "0": 2.0,
+                "1": 2.0,
+                "2": 20.0
+              },
+              "cv": {
+                "mean_us": 7.999999999999999,
+                "population": 1.0606601717798214,
+                "sample": 1.2990381056766582,
+                "decision": "ABOVE",
+                "convention": "population baseline; sample sensitivity (ADAPTATION G04)"
+              },
+              "candidates": [
+                0,
+                1
+              ],
+              "rank_scores": {
+                "reference_mean_us": 7.999999999999999,
+                "status": "DEFINED",
+                "scores": {
+                  "0": 0.75,
+                  "1": 0.75,
+                  "2": -1.5000000000000004
+                }
+              },
+              "rule": "minimum avg_latency; 20% filter unresolved and disabled"
+            },
+            "sample_weighted": {
+              "avg_latency_us": {
+                "0": 2.0,
+                "1": 2.0,
+                "2": 20.0
+              },
+              "cv": {
+                "mean_us": 7.999999999999999,
+                "population": 1.0606601717798214,
+                "sample": 1.2990381056766582,
+                "decision": "ABOVE",
+                "convention": "population baseline; sample sensitivity (ADAPTATION G04)"
+              },
+              "candidates": [
+                0,
+                1
+              ],
+              "rank_scores": {
+                "reference_mean_us": 7.999999999999999,
+                "status": "DEFINED",
+                "scores": {
+                  "0": 0.75,
+                  "1": 0.75,
+                  "2": -1.5000000000000004
+                }
+              },
+              "rule": "minimum avg_latency; 20% filter unresolved and disabled"
+            }
+          }
+        }
+      },
+      "max_avg_latency_us": {
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa": 20.0
+      },
+      "clique_scores": {
+        "reference_mean_us": 7.999999999999999,
+        "status": "DEFINED",
+        "scores": {
+          "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa": 0.0
+        }
+      },
+      "stage1": "SINGLE_GROUP_DIRECT",
+      "group_cv": null,
+      "status": "PROVISIONAL_CANDIDATE"
+    }
+  },
+  "groups": {
+    "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa": {
+      "id_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "members": [
+        0,
+        1,
+        2
+      ],
+      "local_communicators": [
+        {
+          "node_id": "n0",
+          "global_rank": 0,
+          "process_instance": "p0",
+          "comm_generation": 1,
+          "avg_latency_us": 2.0,
+          "sample_count": 1,
+          "min_us": 2.0,
+          "max_us": 2.0
+        },
+        {
+          "node_id": "n0",
+          "global_rank": 1,
+          "process_instance": "p1",
+          "comm_generation": 1,
+          "avg_latency_us": 2.0,
+          "sample_count": 1,
+          "min_us": 2.0,
+          "max_us": 2.0
+        },
+        {
+          "node_id": "n0",
+          "global_rank": 2,
+          "process_instance": "p2",
+          "comm_generation": 1,
+          "avg_latency_us": 20.0,
+          "sample_count": 1,
+          "min_us": 20.0,
+          "max_us": 20.0
+        }
+      ],
+      "max_avg_latency_us": 20.0,
+      "clique_mean_us": 7.999999999999999
+    }
+  },
+  "cross_tag": {
+    "conflict": true,
+    "support": {
+      "0": {
+        "labels": [
+          "DP"
+        ],
+        "evidence": [
+          {
+            "label": "DP",
+            "id_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+            "method": "unweighted_communicator_mean",
+            "status": "PROVISIONAL_CANDIDATE",
+            "avg_latency_us": 2.0,
+            "rank_cv": {
+              "mean_us": 7.999999999999999,
+              "population": 1.0606601717798214,
+              "sample": 1.2990381056766582,
+              "decision": "ABOVE",
+              "convention": "population baseline; sample sensitivity (ADAPTATION G04)"
+            },
+            "comparison_rank_means_us": {
+              "0": 2.0,
+              "1": 2.0,
+              "2": 20.0
+            },
+            "rule": "min rank after max group/CV"
+          },
+          {
+            "label": "DP",
+            "id_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+            "method": "sample_weighted",
+            "status": "PROVISIONAL_CANDIDATE",
+            "avg_latency_us": 2.0,
+            "rank_cv": {
+              "mean_us": 7.999999999999999,
+              "population": 1.0606601717798214,
+              "sample": 1.2990381056766582,
+              "decision": "ABOVE",
+              "convention": "population baseline; sample sensitivity (ADAPTATION G04)"
+            },
+            "comparison_rank_means_us": {
+              "0": 2.0,
+              "1": 2.0,
+              "2": 20.0
+            },
+            "rule": "min rank after max group/CV"
+          }
+        ]
+      },
+      "1": {
+        "labels": [
+          "DP"
+        ],
+        "evidence": [
+          {
+            "label": "DP",
+            "id_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+            "method": "unweighted_communicator_mean",
+            "status": "PROVISIONAL_CANDIDATE",
+            "avg_latency_us": 2.0,
+            "rank_cv": {
+              "mean_us": 7.999999999999999,
+              "population": 1.0606601717798214,
+              "sample": 1.2990381056766582,
+              "decision": "ABOVE",
+              "convention": "population baseline; sample sensitivity (ADAPTATION G04)"
+            },
+            "comparison_rank_means_us": {
+              "0": 2.0,
+              "1": 2.0,
+              "2": 20.0
+            },
+            "rule": "min rank after max group/CV"
+          },
+          {
+            "label": "DP",
+            "id_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+            "method": "sample_weighted",
+            "status": "PROVISIONAL_CANDIDATE",
+            "avg_latency_us": 2.0,
+            "rank_cv": {
+              "mean_us": 7.999999999999999,
+              "population": 1.0606601717798214,
+              "sample": 1.2990381056766582,
+              "decision": "ABOVE",
+              "convention": "population baseline; sample sensitivity (ADAPTATION G04)"
+            },
+            "comparison_rank_means_us": {
+              "0": 2.0,
+              "1": 2.0,
+              "2": 20.0
+            },
+            "rule": "min rank after max group/CV"
+          }
+        ]
+      }
+    }
+  },
+  "completeness": {
+    "records": 3,
+    "independent_process_scopes": 3,
+    "communicator_scope_observations": 3,
+    "expected_instances": 3,
+    "valid_records": 3
+  },
+  "measurement_signatures": [
+    {
+      "api": "ncclAllReduce",
+      "count": 4,
+      "count_unit": "elements",
+      "datatype": 7,
+      "member_records": 3
+    }
+  ],
+  "risks": [],
+  "unresolved": [
+    "G04: 20% reference/filter undefined",
+    "G04: communicator aggregation weights undefined",
+    "G04: statistical references and std convention not uniquely specified"
+  ],
+  "interpretation": "Offline ordering evidence only; no final fault decision, probability or automatic diagnosis",
+  "source_audit": []
+}

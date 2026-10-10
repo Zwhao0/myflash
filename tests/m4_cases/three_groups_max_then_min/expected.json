@@ -1,0 +1,14 @@
+{
+  "exit_code": 0,
+  "checks": {
+    "candidate_ranks": [
+      2
+    ],
+    "tags.DP.selected_groups": [
+      "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+    ],
+    "groups.bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb.max_avg_latency_us": 30,
+    "tags.DP.clique_scores.scores.bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb": 0.1707317073170731
+  },
+  "hand_calculation": "max means11,30,15; group CV=sqrt(602/9)/(56/3)=.43813698; choose B; rank means2,30 CV.875 -> rank2. clique means10,16,15,reference41/3, Bscore7/41"
+}

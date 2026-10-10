@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "context": {
+    "run_id": "fixture",
+    "profile_epoch": 1
+  },
+  "records": [],
+  "communicators": [
+    {
+      "id_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "members": [
+        0,
+        1
+      ],
+      "local_instances": [
+        {
+          "node_id": "n0",
+          "global_rank": 0,
+          "process_instance": "p0",
+          "comm_generation": 1,
+          "comm_rank": 0,
+          "expected_samples": 2,
+          "expected_records": 2
+        },
+        {
+          "node_id": "n0",
+          "global_rank": 1,
+          "process_instance": "p1",
+          "comm_generation": 1,
+          "comm_rank": 1,
+          "expected_samples": 2,
+          "expected_records": 2
+        }
+      ]
+    }
+  ],
+  "parallel_states": [
+    {
+      "label": "DP",
+      "members": [
+        0,
+        1
+      ],
+      "id_hashes": [
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      ],
+      "evidence": "explicit fixed fixture membership"
+    }
+  ]
+}

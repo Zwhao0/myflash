@@ -1,0 +1,8 @@
+{
+  "exit_code": 0,
+  "checks": {
+    "status": "NO_CANDIDATE",
+    "candidate_ranks": []
+  },
+  "hand_calculation": "equal means10,10 std0 CV0"
+}

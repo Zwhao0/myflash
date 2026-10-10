@@ -1,0 +1,10 @@
+{
+  "exit_code": 0,
+  "checks": {
+    "status": "NO_CANDIDATE",
+    "completeness.records": 4,
+    "completeness.independent_process_scopes": 2,
+    "completeness.communicator_scope_observations": 4
+  },
+  "hand_calculation": "each rank shares duration across two comms; two physical scopes/four correlated comm observations; equal max18 -> groupCV0"
+}

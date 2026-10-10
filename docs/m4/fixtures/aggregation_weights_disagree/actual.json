@@ -1,0 +1,226 @@
+{
+  "schema_version": 1,
+  "context": {
+    "run_id": "fixture",
+    "profile_epoch": 1
+  },
+  "status": "AMBIGUOUS_SPEC",
+  "final_fault_ranks": [],
+  "candidate_ranks": [
+    0,
+    1
+  ],
+  "tags": {
+    "DP": {
+      "excluded_single_rank": [],
+      "selected_groups": [
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      ],
+      "stage2": {
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa": {
+          "status": "AMBIGUOUS_SPEC",
+          "sensitivity_disagreement": true,
+          "methods": {
+            "unweighted_communicator_mean": {
+              "avg_latency_us": {
+                "0": 50.5,
+                "1": 24.999999999999996
+              },
+              "cv": {
+                "mean_us": 37.75,
+                "population": 0.33774834437086093,
+                "sample": 0.47764828927833014,
+                "decision": "ABOVE",
+                "convention": "population baseline; sample sensitivity (ADAPTATION G04)"
+              },
+              "candidates": [
+                1
+              ],
+              "rank_scores": {
+                "reference_mean_us": 37.75,
+                "status": "DEFINED",
+                "scores": {
+                  "0": -0.3377483443708609,
+                  "1": 0.337748344370861
+                }
+              },
+              "rule": "minimum avg_latency; 20% filter unresolved and disabled"
+            },
+            "sample_weighted": {
+              "avg_latency_us": {
+                "0": 10.900000000000002,
+                "1": 28.999999999999996
+              },
+              "cv": {
+                "mean_us": 19.95,
+                "population": 0.4536340852130325,
+                "sample": 0.6415354756629829,
+                "decision": "ABOVE",
+                "convention": "population baseline; sample sensitivity (ADAPTATION G04)"
+              },
+              "candidates": [
+                0
+              ],
+              "rank_scores": {
+                "reference_mean_us": 19.95,
+                "status": "DEFINED",
+                "scores": {
+                  "0": 0.4536340852130325,
+                  "1": -0.4536340852130325
+                }
+              },
+              "rule": "minimum avg_latency; 20% filter unresolved and disabled"
+            }
+          }
+        }
+      },
+      "max_avg_latency_us": {
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa": 100.0
+      },
+      "clique_scores": {
+        "reference_mean_us": 37.75,
+        "status": "DEFINED",
+        "scores": {
+          "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa": 0.0
+        }
+      },
+      "stage1": "SINGLE_GROUP_DIRECT",
+      "group_cv": null,
+      "status": "AMBIGUOUS_SPEC"
+    }
+  },
+  "groups": {
+    "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa": {
+      "id_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "members": [
+        0,
+        1
+      ],
+      "local_communicators": [
+        {
+          "node_id": "n0",
+          "global_rank": 0,
+          "process_instance": "p0",
+          "comm_generation": 1,
+          "avg_latency_us": 1.0,
+          "sample_count": 9,
+          "min_us": 1.0,
+          "max_us": 1.0
+        },
+        {
+          "node_id": "n0",
+          "global_rank": 1,
+          "process_instance": "p1",
+          "comm_generation": 1,
+          "avg_latency_us": 20.0,
+          "sample_count": 1,
+          "min_us": 20.0,
+          "max_us": 20.0
+        },
+        {
+          "node_id": "n0",
+          "global_rank": 0,
+          "process_instance": "p0",
+          "comm_generation": 2,
+          "avg_latency_us": 100.0,
+          "sample_count": 1,
+          "min_us": 100.0,
+          "max_us": 100.0
+        },
+        {
+          "node_id": "n0",
+          "global_rank": 1,
+          "process_instance": "p1",
+          "comm_generation": 2,
+          "avg_latency_us": 30.0,
+          "sample_count": 9,
+          "min_us": 30.0,
+          "max_us": 30.0
+        }
+      ],
+      "max_avg_latency_us": 100.0,
+      "clique_mean_us": 37.75
+    }
+  },
+  "cross_tag": {
+    "conflict": true,
+    "support": {
+      "1": {
+        "labels": [
+          "DP"
+        ],
+        "evidence": [
+          {
+            "label": "DP",
+            "id_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+            "method": "unweighted_communicator_mean",
+            "status": "AMBIGUOUS_SPEC",
+            "avg_latency_us": 24.999999999999996,
+            "rank_cv": {
+              "mean_us": 37.75,
+              "population": 0.33774834437086093,
+              "sample": 0.47764828927833014,
+              "decision": "ABOVE",
+              "convention": "population baseline; sample sensitivity (ADAPTATION G04)"
+            },
+            "comparison_rank_means_us": {
+              "0": 50.5,
+              "1": 24.999999999999996
+            },
+            "rule": "min rank after max group/CV"
+          }
+        ]
+      },
+      "0": {
+        "labels": [
+          "DP"
+        ],
+        "evidence": [
+          {
+            "label": "DP",
+            "id_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+            "method": "sample_weighted",
+            "status": "AMBIGUOUS_SPEC",
+            "avg_latency_us": 10.900000000000002,
+            "rank_cv": {
+              "mean_us": 19.95,
+              "population": 0.4536340852130325,
+              "sample": 0.6415354756629829,
+              "decision": "ABOVE",
+              "convention": "population baseline; sample sensitivity (ADAPTATION G04)"
+            },
+            "comparison_rank_means_us": {
+              "0": 10.900000000000002,
+              "1": 28.999999999999996
+            },
+            "rule": "min rank after max group/CV"
+          }
+        ]
+      }
+    }
+  },
+  "completeness": {
+    "records": 20,
+    "independent_process_scopes": 20,
+    "communicator_scope_observations": 20,
+    "expected_instances": 4,
+    "valid_records": 20
+  },
+  "measurement_signatures": [
+    {
+      "api": "ncclAllReduce",
+      "count": 4,
+      "count_unit": "elements",
+      "datatype": 7,
+      "member_records": 20
+    }
+  ],
+  "risks": [],
+  "unresolved": [
+    "G04: 20% reference/filter undefined",
+    "G04: communicator aggregation weights undefined",
+    "G04: statistical references and std convention not uniquely specified"
+  ],
+  "interpretation": "Offline ordering evidence only; no final fault decision, probability or automatic diagnosis",
+  "source_audit": []
+}

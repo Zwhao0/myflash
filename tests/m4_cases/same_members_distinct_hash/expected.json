@@ -1,0 +1,13 @@
+{
+  "exit_code": 0,
+  "checks": {
+    "candidate_ranks": [
+      0
+    ],
+    "tags.DP.selected_groups": [
+      "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+    ],
+    "completeness.expected_instances": 4
+  },
+  "hand_calculation": "A max18, B max36; CV1/3; separate hash identities despite same members"
+}
