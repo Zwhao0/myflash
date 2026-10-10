@@ -1,0 +1,13 @@
+test_acceptance_timeout_partial_monitor (__main__.RedisTests.test_acceptance_timeout_partial_monitor) ... ok
+test_actual_server_stop_restart_and_lost_document (__main__.RedisTests.test_actual_server_stop_restart_and_lost_document)
+UPSTREAM server run_id changes; ADAPTATION refuses active-run recovery. ... ok
+test_client_reconnect_and_namespace_isolation (__main__.RedisTests.test_client_reconnect_and_namespace_isolation) ... ok
+test_concurrent_idempotence_conflict_and_500 (__main__.RedisTests.test_concurrent_idempotence_conflict_and_500) ... ok
+test_restart_fencing_and_previous_epoch_not_pooled (__main__.RedisTests.test_restart_fencing_and_previous_epoch_not_pooled) ... ok
+test_two_epochs_actual_lua_and_private_socket (__main__.RedisTests.test_two_epochs_actual_lua_and_private_socket) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 7.417s
+
+OK
+{"status": "PASS", "private_receipts": "<approved-project>/runs/m6a-work/runs/m6r-lr11bpwb", "child_exit": 0}

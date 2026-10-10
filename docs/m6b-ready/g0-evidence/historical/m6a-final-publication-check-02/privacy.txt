@@ -1,0 +1,2 @@
+worktree references/chapter3.pdf: NOT_SCANNED_BINARY; redistribution rights pending
+TEXT_CHECK PASS; files=876; findings=0

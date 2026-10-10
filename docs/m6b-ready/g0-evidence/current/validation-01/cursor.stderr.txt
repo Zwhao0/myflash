@@ -1,0 +1,145 @@
+test_cursor_before_retention_gap (__main__.CursorContract.test_cursor_before_retention_gap) ... ERROR
+test_empty_history (__main__.CursorContract.test_empty_history) ... ERROR
+test_expired_record (__main__.CursorContract.test_expired_record) ... ERROR
+test_future_after_500_retained (__main__.CursorContract.test_future_after_500_retained) ... ERROR
+test_future_large (__main__.CursorContract.test_future_large) ... ERROR
+test_future_one_step (__main__.CursorContract.test_future_one_step) ... ERROR
+test_invalid_types_strict_integer_adaptation (__main__.CursorContract.test_invalid_types_strict_integer_adaptation) ... ERROR
+test_legal_boundaries_keep_full_window (__main__.CursorContract.test_legal_boundaries_keep_full_window) ... ERROR
+test_missing_run (__main__.CursorContract.test_missing_run) ... ok
+
+======================================================================
+ERROR: test_cursor_before_retention_gap (__main__.CursorContract.test_cursor_before_retention_gap)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<approved-project>/runs/m6b-ready-g0-e-20261011/checkout/tests/m6b_ready_cursor_contract.py", line 91, in test_cursor_before_retention_gap
+    self.setup_stream(501)
+  File "<approved-project>/runs/m6b-ready-g0-e-20261011/checkout/tests/m6b_ready_cursor_contract.py", line 29, in setup_stream
+    self.controller = GlobalController(self.store, self.run, {'node-0': [0]})
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<approved-project>/runs/m6b-ready-g0-e-20261011/checkout/flash/m6_controller.py", line 48, in __init__
+    expected = registration(run_id, nodes)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<approved-project>/runs/m6b-ready-g0-e-20261011/checkout/flash/m6_protocol.py", line 65, in registration
+    raise ValueError('M6-A requires two explicitly declared logical nodes')
+ValueError: M6-A requires two explicitly declared logical nodes
+
+======================================================================
+ERROR: test_empty_history (__main__.CursorContract.test_empty_history)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<approved-project>/runs/m6b-ready-g0-e-20261011/checkout/tests/m6b_ready_cursor_contract.py", line 99, in test_empty_history
+    self.setup_stream(0)
+  File "<approved-project>/runs/m6b-ready-g0-e-20261011/checkout/tests/m6b_ready_cursor_contract.py", line 29, in setup_stream
+    self.controller = GlobalController(self.store, self.run, {'node-0': [0]})
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<approved-project>/runs/m6b-ready-g0-e-20261011/checkout/flash/m6_controller.py", line 48, in __init__
+    expected = registration(run_id, nodes)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<approved-project>/runs/m6b-ready-g0-e-20261011/checkout/flash/m6_protocol.py", line 65, in registration
+    raise ValueError('M6-A requires two explicitly declared logical nodes')
+ValueError: M6-A requires two explicitly declared logical nodes
+
+======================================================================
+ERROR: test_expired_record (__main__.CursorContract.test_expired_record)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<approved-project>/runs/m6b-ready-g0-e-20261011/checkout/tests/m6b_ready_cursor_contract.py", line 103, in test_expired_record
+    self.setup_stream()
+  File "<approved-project>/runs/m6b-ready-g0-e-20261011/checkout/tests/m6b_ready_cursor_contract.py", line 29, in setup_stream
+    self.controller = GlobalController(self.store, self.run, {'node-0': [0]})
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<approved-project>/runs/m6b-ready-g0-e-20261011/checkout/flash/m6_controller.py", line 48, in __init__
+    expected = registration(run_id, nodes)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<approved-project>/runs/m6b-ready-g0-e-20261011/checkout/flash/m6_protocol.py", line 65, in registration
+    raise ValueError('M6-A requires two explicitly declared logical nodes')
+ValueError: M6-A requires two explicitly declared logical nodes
+
+======================================================================
+ERROR: test_future_after_500_retained (__main__.CursorContract.test_future_after_500_retained)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<approved-project>/runs/m6b-ready-g0-e-20261011/checkout/tests/m6b_ready_cursor_contract.py", line 80, in test_future_after_500_retained
+    self.setup_stream(501); self.assert_rejected(self.observe(502))
+    ^^^^^^^^^^^^^^^^^^^^^^
+  File "<approved-project>/runs/m6b-ready-g0-e-20261011/checkout/tests/m6b_ready_cursor_contract.py", line 29, in setup_stream
+    self.controller = GlobalController(self.store, self.run, {'node-0': [0]})
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<approved-project>/runs/m6b-ready-g0-e-20261011/checkout/flash/m6_controller.py", line 48, in __init__
+    expected = registration(run_id, nodes)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<approved-project>/runs/m6b-ready-g0-e-20261011/checkout/flash/m6_protocol.py", line 65, in registration
+    raise ValueError('M6-A requires two explicitly declared logical nodes')
+ValueError: M6-A requires two explicitly declared logical nodes
+
+======================================================================
+ERROR: test_future_large (__main__.CursorContract.test_future_large)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<approved-project>/runs/m6b-ready-g0-e-20261011/checkout/tests/m6b_ready_cursor_contract.py", line 77, in test_future_large
+    self.setup_stream(); self.assert_rejected(self.observe(1000000))
+    ^^^^^^^^^^^^^^^^^^^
+  File "<approved-project>/runs/m6b-ready-g0-e-20261011/checkout/tests/m6b_ready_cursor_contract.py", line 29, in setup_stream
+    self.controller = GlobalController(self.store, self.run, {'node-0': [0]})
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<approved-project>/runs/m6b-ready-g0-e-20261011/checkout/flash/m6_controller.py", line 48, in __init__
+    expected = registration(run_id, nodes)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<approved-project>/runs/m6b-ready-g0-e-20261011/checkout/flash/m6_protocol.py", line 65, in registration
+    raise ValueError('M6-A requires two explicitly declared logical nodes')
+ValueError: M6-A requires two explicitly declared logical nodes
+
+======================================================================
+ERROR: test_future_one_step (__main__.CursorContract.test_future_one_step)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<approved-project>/runs/m6b-ready-g0-e-20261011/checkout/tests/m6b_ready_cursor_contract.py", line 74, in test_future_one_step
+    self.setup_stream(); self.assert_rejected(self.observe(2))
+    ^^^^^^^^^^^^^^^^^^^
+  File "<approved-project>/runs/m6b-ready-g0-e-20261011/checkout/tests/m6b_ready_cursor_contract.py", line 29, in setup_stream
+    self.controller = GlobalController(self.store, self.run, {'node-0': [0]})
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<approved-project>/runs/m6b-ready-g0-e-20261011/checkout/flash/m6_controller.py", line 48, in __init__
+    expected = registration(run_id, nodes)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<approved-project>/runs/m6b-ready-g0-e-20261011/checkout/flash/m6_protocol.py", line 65, in registration
+    raise ValueError('M6-A requires two explicitly declared logical nodes')
+ValueError: M6-A requires two explicitly declared logical nodes
+
+======================================================================
+ERROR: test_invalid_types_strict_integer_adaptation (__main__.CursorContract.test_invalid_types_strict_integer_adaptation)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<approved-project>/runs/m6b-ready-g0-e-20261011/checkout/tests/m6b_ready_cursor_contract.py", line 107, in test_invalid_types_strict_integer_adaptation
+    self.setup_stream()
+  File "<approved-project>/runs/m6b-ready-g0-e-20261011/checkout/tests/m6b_ready_cursor_contract.py", line 29, in setup_stream
+    self.controller = GlobalController(self.store, self.run, {'node-0': [0]})
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<approved-project>/runs/m6b-ready-g0-e-20261011/checkout/flash/m6_controller.py", line 48, in __init__
+    expected = registration(run_id, nodes)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<approved-project>/runs/m6b-ready-g0-e-20261011/checkout/flash/m6_protocol.py", line 65, in registration
+    raise ValueError('M6-A requires two explicitly declared logical nodes')
+ValueError: M6-A requires two explicitly declared logical nodes
+
+======================================================================
+ERROR: test_legal_boundaries_keep_full_window (__main__.CursorContract.test_legal_boundaries_keep_full_window)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<approved-project>/runs/m6b-ready-g0-e-20261011/checkout/tests/m6b_ready_cursor_contract.py", line 83, in test_legal_boundaries_keep_full_window
+    self.setup_stream(501)
+  File "<approved-project>/runs/m6b-ready-g0-e-20261011/checkout/tests/m6b_ready_cursor_contract.py", line 29, in setup_stream
+    self.controller = GlobalController(self.store, self.run, {'node-0': [0]})
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<approved-project>/runs/m6b-ready-g0-e-20261011/checkout/flash/m6_controller.py", line 48, in __init__
+    expected = registration(run_id, nodes)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<approved-project>/runs/m6b-ready-g0-e-20261011/checkout/flash/m6_protocol.py", line 65, in registration
+    raise ValueError('M6-A requires two explicitly declared logical nodes')
+ValueError: M6-A requires two explicitly declared logical nodes
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.002s
+
+FAILED (errors=8)

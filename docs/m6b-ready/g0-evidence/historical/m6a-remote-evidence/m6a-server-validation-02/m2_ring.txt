@@ -1,0 +1,16 @@
+test_bad_record_and_abi (__main__.RingTests.test_bad_record_and_abi) ... ok
+test_boundaries_and_wrap (__main__.RingTests.test_boundaries_and_wrap) ... ok
+test_bounded_lock_loss (__main__.RingTests.test_bounded_lock_loss) ... ok
+test_cli_restart_durable_before_ack (__main__.RingTests.test_cli_restart_durable_before_ack) ... ok
+test_concurrent_threads_and_reader (__main__.RingTests.test_concurrent_threads_and_reader) ... ok
+test_full_and_loss (__main__.RingTests.test_full_and_loss) ... ok
+test_normal_writer_close_and_cleanup (__main__.RingTests.test_normal_writer_close_and_cleanup) ... ok
+test_owner_death_is_poisoned (__main__.RingTests.test_owner_death_is_poisoned) ... ok
+test_reader_restart_and_exclusive_reader (__main__.RingTests.test_reader_restart_and_exclusive_reader) ... ok
+test_run_isolation_and_stale (__main__.RingTests.test_run_isolation_and_stale) ... ok
+test_unacknowledged_reader_restart (__main__.RingTests.test_unacknowledged_reader_restart) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.638s
+
+OK

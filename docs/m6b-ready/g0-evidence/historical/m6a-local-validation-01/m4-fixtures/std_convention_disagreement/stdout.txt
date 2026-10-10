@@ -1,0 +1,5 @@
+{
+  "status": "AMBIGUOUS_SPEC",
+  "candidate_ranks": [],
+  "exit_code": 0
+}

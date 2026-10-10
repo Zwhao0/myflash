@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "<local-project>/m6a-work/tests/m6_control.py", line 11, in <module>
+    from scripts.m6_demo import Simulation
+  File "<local-project>/m6a-work/scripts/m6_demo.py", line 14, in <module>
+    from flash.m6_probe import ProbeAdapter
+  File "<local-project>/m6a-work/flash/m6_probe.py", line 42
+    state.update(last_boundary_seconds=now,(state=command['requested_state'], epoch=command['profile_epoch'],
+                                                 ^
+SyntaxError: invalid syntax

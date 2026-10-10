@@ -1,0 +1,14 @@
+{
+  "command": [
+    "<approved-project>/.venv-m5/bin/python",
+    "tests/privacy_check_test.py"
+  ],
+  "cwd": "<approved-project>/runs/m6b-ready-g0-e-20261011/checkout",
+  "timeout_budget_seconds": 120,
+  "environment": {
+    "LD_PRELOAD": "REMOVED",
+    "CUDA_VISIBLE_DEVICES": "",
+    "PYTHONDONTWRITEBYTECODE": "1"
+  },
+  "child_finished": false
+}

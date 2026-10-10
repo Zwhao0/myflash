@@ -1,0 +1,48 @@
+{
+  "case": "test_invalid_types_strict_integer_adaptation-6",
+  "input": {
+    "after_iteration_repr": "nan",
+    "cursor_type": "float",
+    "read_kwargs": {}
+  },
+  "server_last": 1,
+  "server_retained_from": 1,
+  "server_stream": {
+    "last": 1,
+    "records": [
+      {
+        "record": {
+          "run_id": "m6b-cursor-cpu",
+          "global_rank": 0,
+          "iteration": 1,
+          "iteration_time_ms": 100.0,
+          "timestamp": "2026-10-10T00:00:00+00:00",
+          "source": "CPU_SIMULATED_FRAMEWORK",
+          "timing_boundary": "cpu_simulated_iteration_end",
+          "cuda_completion_wait": false
+        },
+        "sha256": "1a155df98433b996871cc5fcb80b97713b2046e70cea66415ae9ec3b3b5770fb",
+        "confirmed_at_seconds": 10.0
+      }
+    ]
+  },
+  "reader_sha256": "57dd7ce9cf80287ee0b73782c6ca0bab9be406c303bfa30e6d5f4b60ef835ba9",
+  "returned": {
+    "status": "READ_CONFIRMED",
+    "records": [
+      {
+        "run_id": "m6b-cursor-cpu",
+        "global_rank": 0,
+        "iteration": 1,
+        "iteration_time_ms": 100.0,
+        "timestamp": "2026-10-10T00:00:00+00:00",
+        "source": "CPU_SIMULATED_FRAMEWORK",
+        "timing_boundary": "cpu_simulated_iteration_end",
+        "cuda_completion_wait": false
+      }
+    ],
+    "retained_from": 1,
+    "last": 1,
+    "earlier_evicted": false
+  }
+}

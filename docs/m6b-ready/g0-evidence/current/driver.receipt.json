@@ -1,0 +1,12 @@
+{
+  "command": [
+    "<approved-project>/.venv-m5/bin/python",
+    "<approved-project>/runs/m6b-ready-g0-e-20261011/checkout/scripts/m6b_ready_g0_validate.py",
+    "--output",
+    "<approved-project>/runs/m6b-ready-g0-e-20261011/validation-01",
+    "--machine-alias",
+    "node-0"
+  ],
+  "exit_code": 1,
+  "child_finished": true
+}

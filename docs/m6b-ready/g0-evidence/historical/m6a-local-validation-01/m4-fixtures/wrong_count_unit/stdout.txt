@@ -1,0 +1,5 @@
+{
+  "status": "REJECTED_INPUT",
+  "candidate_ranks": [],
+  "exit_code": 2
+}

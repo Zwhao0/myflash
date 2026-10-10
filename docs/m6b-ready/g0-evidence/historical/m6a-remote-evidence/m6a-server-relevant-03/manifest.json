@@ -1,0 +1,60 @@
+{
+  "machine": "node-0",
+  "os": "Linux-6.8.0-142-generic-x86_64-with-glibc2.39",
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "code_sha": "3cc3e9bfd82ffd91621572d1846cbb5754fc19e8",
+  "code_hashes": {
+    "flash/m6_protocol.py": "02428d0c45c00843b4c66f9298c1f751fbca6a67eb82cf786c5621128b14454e",
+    "flash/m6_controller.py": "12cf7cf7a96a4d3e83f78ae59a305738878f7e53e39c1b7d68e3a2b4facfdc37",
+    "flash/m6_probe.py": "b206ace6d7603a4d1f2762de37346acca19e219b0c8a9194fa5df9dc160ca7aa",
+    "flash/m6_store.py": "54b3e3d613353e7719b7dcf0ab4d824ad0f606ae23cfc693a7cefebe4ab36c1e",
+    "flash/m6_iteration.py": "57dd7ce9cf80287ee0b73782c6ca0bab9be406c303bfa30e6d5f4b60ef835ba9",
+    "scripts/m6_demo.py": "a96bb73ff3b87f6e5605d8926498c5f4846722d6b4668f2ee88d1c28f5c63a84",
+    "scripts/m6_validate.py": "42414984077216eb39d7808de565ebe6e174916e810138074ca6b3fbedfbf3db",
+    "tests/m6_control.py": "218a8ff5088dce3339c94fd0c9d84b78f3ce7d3fb3d6e2e53a16ddadb0becd47",
+    "tests/m6_redis.py": "cc6b984e5e379e7526e560dda23e9bb9501da4e68908ed25a2c87062a2e44a06"
+  },
+  "commands": [
+    {
+      "command": [
+        "<approved-project>/.venv-m5/bin/python",
+        "tests/m6_control.py"
+      ],
+      "exit_code": 0,
+      "timeout": false,
+      "log": "runs/m6a-server-relevant-03/control.log",
+      "log_sha256": "0df5276c5a43d099a22f824a74eaba05a88fdd3cc92ee7932f9f7135e400efec",
+      "elapsed_test_wall_seconds": 3.3688191999681294,
+      "status": "PASS",
+      "child_finished": true
+    },
+    {
+      "command": [
+        "<approved-project>/.venv-m5/bin/python",
+        "scripts/m6_demo.py",
+        "--output",
+        "<approved-project>/runs/m6a-work/runs/m6a-server-relevant-03/demo"
+      ],
+      "exit_code": 0,
+      "timeout": false,
+      "log": "runs/m6a-server-relevant-03/demo.log",
+      "log_sha256": "e6d9e29c2caa18023664d9049b2b2490c26aa7024509186780dd55dc4b400961",
+      "elapsed_test_wall_seconds": 0.2149179889820516,
+      "status": "PASS",
+      "child_finished": true
+    },
+    {
+      "command": [
+        "<approved-project>/.venv-m5/bin/python",
+        "tests/m6_redis.py"
+      ],
+      "exit_code": 3,
+      "timeout": false,
+      "log": "runs/m6a-server-relevant-03/redis.log",
+      "log_sha256": "0c7f779040dd2d60ff89df4ed605a195c5cd91c24b34411d1d6b55ea73ff240c",
+      "elapsed_test_wall_seconds": 0.11454093805514276,
+      "status": "BLOCKED",
+      "child_finished": true
+    }
+  ]
+}

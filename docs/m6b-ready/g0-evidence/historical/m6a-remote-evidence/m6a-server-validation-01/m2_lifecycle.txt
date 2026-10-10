@@ -1,0 +1,2 @@
+usage: m2_lifecycle.py [-h] [--mode MODE] --output OUTPUT
+m2_lifecycle.py: error: the following arguments are required: --output

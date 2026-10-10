@@ -1,0 +1,6 @@
+test_reject_missing_rank_loss_timeout_and_invalid_duration (__main__.EvidenceTests.test_reject_missing_rank_loss_timeout_and_invalid_duration) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.035s
+
+OK

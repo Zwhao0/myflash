@@ -1,0 +1,5 @@
+{
+  "status": "NO_CANDIDATE",
+  "candidate_ranks": [],
+  "exit_code": 0
+}

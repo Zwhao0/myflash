@@ -1,0 +1,7 @@
+{
+  "status": "BLOCKED",
+  "redis_server_found": false,
+  "existing_python_client_found": false,
+  "reason": "no installation authorized",
+  "real_gpu": false
+}

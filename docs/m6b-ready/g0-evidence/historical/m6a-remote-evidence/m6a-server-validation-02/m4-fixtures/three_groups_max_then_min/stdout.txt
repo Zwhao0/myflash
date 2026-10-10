@@ -1,0 +1,7 @@
+{
+  "status": "PROVISIONAL_CANDIDATE",
+  "candidate_ranks": [
+    2
+  ],
+  "exit_code": 0
+}

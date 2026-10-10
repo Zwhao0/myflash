@@ -1,0 +1,18 @@
+{
+  "case": "test_empty_history",
+  "input": {
+    "after_iteration_repr": "0",
+    "cursor_type": "int",
+    "read_kwargs": {}
+  },
+  "server_last": null,
+  "server_retained_from": null,
+  "server_stream": null,
+  "reader_sha256": "57dd7ce9cf80287ee0b73782c6ca0bab9be406c303bfa30e6d5f4b60ef835ba9",
+  "returned": {
+    "status": "INSUFFICIENT_EVIDENCE",
+    "reason": "no iteration records",
+    "final_alert": false,
+    "final_fault_ranks": []
+  }
+}

@@ -1,0 +1,2151 @@
+{
+  "before_stop": {
+    "active": {
+      "analysis": null,
+      "command_at_seconds": 0,
+      "deadline_seconds": 25.2,
+      "duration_seconds": 20.0,
+      "failure": null,
+      "iteration_record": {
+        "cuda_completion_wait": false,
+        "global_rank": 0,
+        "iteration": 1,
+        "iteration_time_ms": 100.0,
+        "run_id": "m6s-dd372a5be7544d9094d0a66858fdba43",
+        "source": "CPU_SIMULATED_FRAMEWORK",
+        "timestamp": "2026-10-10T00:00:00+00:00",
+        "timing_boundary": "cpu_simulated_iteration_end"
+      },
+      "iteration_sha256": "bf755f1e809906810032fbcf67b1a7c5b38fa6a84eae7169e1286fb173e65d71",
+      "last_time_seconds": 0.2,
+      "manifest": {
+        "communicators": [
+          {
+            "id_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+            "local_instances": [
+              {
+                "comm_generation": 1,
+                "comm_rank": 0,
+                "expected_records": 1,
+                "expected_samples": 1,
+                "global_rank": 0,
+                "node_id": "node-0",
+                "process_instance": "p0"
+              },
+              {
+                "comm_generation": 1,
+                "comm_rank": 1,
+                "expected_records": 1,
+                "expected_samples": 1,
+                "global_rank": 1,
+                "node_id": "node-1",
+                "process_instance": "p1"
+              }
+            ],
+            "members": [
+              0,
+              1
+            ]
+          },
+          {
+            "id_hash": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+            "local_instances": [
+              {
+                "comm_generation": 1,
+                "comm_rank": 0,
+                "expected_records": 1,
+                "expected_samples": 1,
+                "global_rank": 2,
+                "node_id": "node-0",
+                "process_instance": "p2"
+              },
+              {
+                "comm_generation": 1,
+                "comm_rank": 1,
+                "expected_records": 1,
+                "expected_samples": 1,
+                "global_rank": 3,
+                "node_id": "node-1",
+                "process_instance": "p3"
+              }
+            ],
+            "members": [
+              2,
+              3
+            ]
+          },
+          {
+            "id_hash": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+            "local_instances": [
+              {
+                "comm_generation": 1,
+                "comm_rank": 0,
+                "expected_records": 1,
+                "expected_samples": 1,
+                "global_rank": 4,
+                "node_id": "node-0",
+                "process_instance": "p4"
+              },
+              {
+                "comm_generation": 1,
+                "comm_rank": 1,
+                "expected_records": 1,
+                "expected_samples": 1,
+                "global_rank": 5,
+                "node_id": "node-1",
+                "process_instance": "p5"
+              }
+            ],
+            "members": [
+              4,
+              5
+            ]
+          }
+        ],
+        "context": {
+          "profile_epoch": 1,
+          "run_id": "m6s-dd372a5be7544d9094d0a66858fdba43"
+        },
+        "parallel_states": [
+          {
+            "evidence": "explicit fixed fixture membership",
+            "id_hashes": [
+              "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+            ],
+            "label": "DP",
+            "members": [
+              0,
+              1
+            ]
+          },
+          {
+            "evidence": "explicit fixed fixture membership",
+            "id_hashes": [
+              "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+            ],
+            "label": "DP",
+            "members": [
+              2,
+              3
+            ]
+          },
+          {
+            "evidence": "explicit fixed fixture membership",
+            "id_hashes": [
+              "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"
+            ],
+            "label": "DP",
+            "members": [
+              4,
+              5
+            ]
+          }
+        ],
+        "records": [],
+        "schema_version": 1
+      },
+      "manifest_sha256": "bd5ddb4d4c6d0cd617f2cf44dad4acd74bd003c150db46c6408c48ae16c4c856",
+      "nodes": {
+        "node-0": {
+          "ack": {
+            "accepted_at_seconds": 0,
+            "command_id": "e1-g1-s1-node-0",
+            "command_sha256": "c2b515b7883452b19ccf58b155756bf4cec60cf6076282f78571523def989d33",
+            "kind": "COMMAND_ACCEPTED_ONLY",
+            "local_generation": 1,
+            "source": "CPU_LOCAL_CONTROLLER"
+          },
+          "applied": {
+            "0": {
+              "applied_at_seconds": 0.1,
+              "boundary": "legal_scope_start",
+              "command_id": "e1-g1-s1-node-0",
+              "generation": 1,
+              "global_rank": 0,
+              "local_generation": 1,
+              "node_id": "node-0",
+              "profile_epoch": 1,
+              "requested_state": 1,
+              "run_id": "m6s-dd372a5be7544d9094d0a66858fdba43",
+              "scope_sequence": 1,
+              "source": "CPU_SIMULATED_PROBE"
+            },
+            "2": {
+              "applied_at_seconds": 0.1,
+              "boundary": "legal_scope_start",
+              "command_id": "e1-g1-s1-node-0",
+              "generation": 1,
+              "global_rank": 2,
+              "local_generation": 1,
+              "node_id": "node-0",
+              "profile_epoch": 1,
+              "requested_state": 1,
+              "run_id": "m6s-dd372a5be7544d9094d0a66858fdba43",
+              "scope_sequence": 1,
+              "source": "CPU_SIMULATED_PROBE"
+            },
+            "4": {
+              "applied_at_seconds": 0.1,
+              "boundary": "legal_scope_start",
+              "command_id": "e1-g1-s1-node-0",
+              "generation": 1,
+              "global_rank": 4,
+              "local_generation": 1,
+              "node_id": "node-0",
+              "profile_epoch": 1,
+              "requested_state": 1,
+              "run_id": "m6s-dd372a5be7544d9094d0a66858fdba43",
+              "scope_sequence": 1,
+              "source": "CPU_SIMULATED_PROBE"
+            }
+          },
+          "command": {
+            "command_id": "e1-g1-s1-node-0",
+            "deadline_seconds": 5.0,
+            "expected_nodes": [
+              "node-0",
+              "node-1"
+            ],
+            "expected_ranks": [
+              0,
+              2,
+              4
+            ],
+            "generation": 1,
+            "local_generation": 1,
+            "node_id": "node-0",
+            "profile_epoch": 1,
+            "requested_at_seconds": 0,
+            "requested_state": 1,
+            "run_id": "m6s-dd372a5be7544d9094d0a66858fdba43",
+            "schema_version": 1
+          },
+          "ignored_old": 0,
+          "ready": null,
+          "samples": []
+        },
+        "node-1": {
+          "ack": {
+            "accepted_at_seconds": 0,
+            "command_id": "e1-g1-s1-node-1",
+            "command_sha256": "4752cd6ae5f7fe1e846edd1cb0b18486485426be90ec5af19b22879322137d8a",
+            "kind": "COMMAND_ACCEPTED_ONLY",
+            "local_generation": 1,
+            "source": "CPU_LOCAL_CONTROLLER"
+          },
+          "applied": {
+            "1": {
+              "applied_at_seconds": 0.1,
+              "boundary": "legal_scope_start",
+              "command_id": "e1-g1-s1-node-1",
+              "generation": 1,
+              "global_rank": 1,
+              "local_generation": 1,
+              "node_id": "node-1",
+              "profile_epoch": 1,
+              "requested_state": 1,
+              "run_id": "m6s-dd372a5be7544d9094d0a66858fdba43",
+              "scope_sequence": 1,
+              "source": "CPU_SIMULATED_PROBE"
+            },
+            "3": {
+              "applied_at_seconds": 0.1,
+              "boundary": "legal_scope_start",
+              "command_id": "e1-g1-s1-node-1",
+              "generation": 1,
+              "global_rank": 3,
+              "local_generation": 1,
+              "node_id": "node-1",
+              "profile_epoch": 1,
+              "requested_state": 1,
+              "run_id": "m6s-dd372a5be7544d9094d0a66858fdba43",
+              "scope_sequence": 1,
+              "source": "CPU_SIMULATED_PROBE"
+            },
+            "5": {
+              "applied_at_seconds": 0.1,
+              "boundary": "legal_scope_start",
+              "command_id": "e1-g1-s1-node-1",
+              "generation": 1,
+              "global_rank": 5,
+              "local_generation": 1,
+              "node_id": "node-1",
+              "profile_epoch": 1,
+              "requested_state": 1,
+              "run_id": "m6s-dd372a5be7544d9094d0a66858fdba43",
+              "scope_sequence": 1,
+              "source": "CPU_SIMULATED_PROBE"
+            }
+          },
+          "command": {
+            "command_id": "e1-g1-s1-node-1",
+            "deadline_seconds": 5.0,
+            "expected_nodes": [
+              "node-0",
+              "node-1"
+            ],
+            "expected_ranks": [
+              1,
+              3,
+              5
+            ],
+            "generation": 1,
+            "local_generation": 1,
+            "node_id": "node-1",
+            "profile_epoch": 1,
+            "requested_at_seconds": 0,
+            "requested_state": 1,
+            "run_id": "m6s-dd372a5be7544d9094d0a66858fdba43",
+            "schema_version": 1
+          },
+          "ignored_old": 0,
+          "ready": null,
+          "samples": []
+        }
+      },
+      "profile_epoch": 1,
+      "request_id": "manual-1",
+      "request_sha256": "952e6960bf39a5c489d26feaf6995c16afae426dda585f97f02f076d2c89a2a5",
+      "started_at_seconds": 0,
+      "transitions": [
+        "MONITOR",
+        "PROFILE_REQUESTED",
+        "PROFILE_ARMING",
+        "PROFILE_COLLECTING"
+      ],
+      "trigger": "MANUAL_TEST_TRIGGER",
+      "window": {
+        "end_seconds": 20.2,
+        "start_seconds": 0.2,
+        "time_domain": "single_host_cpu_simulation_monotonic_seconds"
+      }
+    },
+    "epochs": [],
+    "events": [
+      {
+        "generation": 1,
+        "kind": "GLOBAL_CLAIM",
+        "sequence": 1
+      },
+      {
+        "generation": 1,
+        "kind": "LOCAL_CLAIM",
+        "node_id": "node-0",
+        "sequence": 2
+      },
+      {
+        "generation": 1,
+        "kind": "LOCAL_CLAIM",
+        "node_id": "node-1",
+        "sequence": 3
+      },
+      {
+        "iteration": 1,
+        "kind": "ITERATION_RECEIPT",
+        "rank": 0,
+        "sequence": 4,
+        "status": "WRITE_CONFIRMED"
+      },
+      {
+        "at_seconds": 0,
+        "duration_seconds": 20.0,
+        "generation": 1,
+        "kind": "PROFILE_REQUEST",
+        "profile_epoch": 1,
+        "sequence": 5,
+        "trigger": "MANUAL_TEST_TRIGGER"
+      },
+      {
+        "command_id": "e1-g1-s1-node-0",
+        "kind": "COMMAND_ACK",
+        "node_id": "node-0",
+        "sequence": 6
+      },
+      {
+        "command_id": "e1-g1-s1-node-1",
+        "kind": "COMMAND_ACK",
+        "node_id": "node-1",
+        "sequence": 7
+      },
+      {
+        "at_seconds": 0,
+        "kind": "TRANSITION",
+        "profile_epoch": 1,
+        "sequence": 8,
+        "state": "PROFILE_ARMING"
+      },
+      {
+        "at_seconds": 0.2,
+        "kind": "TRANSITION",
+        "profile_epoch": 1,
+        "sequence": 9,
+        "state": "PROFILE_COLLECTING"
+      }
+    ],
+    "expected_nodes": [
+      "node-0",
+      "node-1"
+    ],
+    "expected_ranks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "final_alert": false,
+    "final_fault_ranks": [],
+    "global_generation": 1,
+    "iterations": {
+      "0": {
+        "last": 1,
+        "records": [
+          {
+            "confirmed_at_seconds": 0,
+            "record": {
+              "cuda_completion_wait": false,
+              "global_rank": 0,
+              "iteration": 1,
+              "iteration_time_ms": 100.0,
+              "run_id": "m6s-dd372a5be7544d9094d0a66858fdba43",
+              "source": "CPU_SIMULATED_FRAMEWORK",
+              "timestamp": "2026-10-10T00:00:00+00:00",
+              "timing_boundary": "cpu_simulated_iteration_end"
+            },
+            "sha256": "bf755f1e809906810032fbcf67b1a7c5b38fa6a84eae7169e1286fb173e65d71"
+          }
+        ]
+      }
+    },
+    "nodes": {
+      "node-0": {
+        "generation": 1,
+        "ranks": [
+          0,
+          2,
+          4
+        ]
+      },
+      "node-1": {
+        "generation": 1,
+        "ranks": [
+          1,
+          3,
+          5
+        ]
+      }
+    },
+    "profile_epoch": 1,
+    "revision": 15,
+    "run_id": "m6s-dd372a5be7544d9094d0a66858fdba43",
+    "schema_version": 1,
+    "state": "PROFILE_COLLECTING"
+  },
+  "disconnect_receipt": {
+    "status": "BLOCKED",
+    "reason": "Redis read unconfirmed: ConnectionError",
+    "final_alert": false,
+    "final_fault_ranks": []
+  },
+  "old_server_id": "b21edae00bc7dbfbf03c7f99c4e316aa3a377332",
+  "new_server_id": "5f77dc15683d92ad5d795c12b762f57fa2643da8",
+  "old_run_lost": true,
+  "replacement_run": {
+    "active": null,
+    "epochs": [
+      {
+        "analysis": {
+          "candidate_ranks": [
+            2
+          ],
+          "completeness": {
+            "communicator_scope_observations": 6,
+            "expected_instances": 6,
+            "independent_process_scopes": 6,
+            "records": 6,
+            "valid_records": 6
+          },
+          "context": {
+            "profile_epoch": 1,
+            "run_id": "m6s-e0f32e8d15d54091a1bf7c4a2aa8ed5e"
+          },
+          "cross_tag": {
+            "conflict": false,
+            "support": {
+              "2": {
+                "evidence": [
+                  {
+                    "avg_latency_us": 2.0,
+                    "comparison_rank_means_us": {
+                      "2": 2.0,
+                      "3": 30.0
+                    },
+                    "id_hash": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+                    "label": "DP",
+                    "method": "unweighted_communicator_mean",
+                    "rank_cv": {
+                      "convention": "population baseline; sample sensitivity (ADAPTATION G04)",
+                      "decision": "ABOVE",
+                      "mean_us": 16.0,
+                      "population": 0.875,
+                      "sample": 1.2374368670764582
+                    },
+                    "rule": "min rank after max group/CV",
+                    "status": "PROVISIONAL_CANDIDATE"
+                  },
+                  {
+                    "avg_latency_us": 2.0,
+                    "comparison_rank_means_us": {
+                      "2": 2.0,
+                      "3": 30.0
+                    },
+                    "id_hash": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+                    "label": "DP",
+                    "method": "sample_weighted",
+                    "rank_cv": {
+                      "convention": "population baseline; sample sensitivity (ADAPTATION G04)",
+                      "decision": "ABOVE",
+                      "mean_us": 16.0,
+                      "population": 0.875,
+                      "sample": 1.2374368670764582
+                    },
+                    "rule": "min rank after max group/CV",
+                    "status": "PROVISIONAL_CANDIDATE"
+                  }
+                ],
+                "labels": [
+                  "DP"
+                ]
+              }
+            }
+          },
+          "final_alert": false,
+          "final_fault_ranks": [],
+          "groups": {
+            "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa": {
+              "clique_mean_us": 10.0,
+              "id_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+              "local_communicators": [
+                {
+                  "avg_latency_us": 9.0,
+                  "comm_generation": 1,
+                  "global_rank": 0,
+                  "max_us": 9.0,
+                  "min_us": 9.0,
+                  "node_id": "node-0",
+                  "process_instance": "p0",
+                  "sample_count": 1
+                },
+                {
+                  "avg_latency_us": 11.0,
+                  "comm_generation": 1,
+                  "global_rank": 1,
+                  "max_us": 11.0,
+                  "min_us": 11.0,
+                  "node_id": "node-1",
+                  "process_instance": "p1",
+                  "sample_count": 1
+                }
+              ],
+              "max_avg_latency_us": 11.0,
+              "members": [
+                0,
+                1
+              ]
+            },
+            "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb": {
+              "clique_mean_us": 16.0,
+              "id_hash": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+              "local_communicators": [
+                {
+                  "avg_latency_us": 2.0,
+                  "comm_generation": 1,
+                  "global_rank": 2,
+                  "max_us": 2.0,
+                  "min_us": 2.0,
+                  "node_id": "node-0",
+                  "process_instance": "p2",
+                  "sample_count": 1
+                },
+                {
+                  "avg_latency_us": 30.0,
+                  "comm_generation": 1,
+                  "global_rank": 3,
+                  "max_us": 30.0,
+                  "min_us": 30.0,
+                  "node_id": "node-1",
+                  "process_instance": "p3",
+                  "sample_count": 1
+                }
+              ],
+              "max_avg_latency_us": 30.0,
+              "members": [
+                2,
+                3
+              ]
+            },
+            "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc": {
+              "clique_mean_us": 15.0,
+              "id_hash": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+              "local_communicators": [
+                {
+                  "avg_latency_us": 15.0,
+                  "comm_generation": 1,
+                  "global_rank": 4,
+                  "max_us": 15.0,
+                  "min_us": 15.0,
+                  "node_id": "node-0",
+                  "process_instance": "p4",
+                  "sample_count": 1
+                },
+                {
+                  "avg_latency_us": 15.0,
+                  "comm_generation": 1,
+                  "global_rank": 5,
+                  "max_us": 15.0,
+                  "min_us": 15.0,
+                  "node_id": "node-1",
+                  "process_instance": "p5",
+                  "sample_count": 1
+                }
+              ],
+              "max_avg_latency_us": 15.0,
+              "members": [
+                4,
+                5
+              ]
+            }
+          },
+          "input_sha256": "2b41df5f8e79217e88903e7bd66c1c0178f9bd12ce8051aba1e883ef8a101f27",
+          "interpretation": "Offline ordering evidence only; no final fault decision, probability or automatic diagnosis",
+          "manifest_sha256": "199498a555371e159145068e4d306bd2a1109730a2141e9d98c22ae930151b4b",
+          "measurement_signatures": [
+            {
+              "api": "ncclAllReduce",
+              "count": 4,
+              "count_unit": "elements",
+              "datatype": 7,
+              "member_records": 6
+            }
+          ],
+          "risks": [],
+          "schema_version": 1,
+          "source": "CPU_SIMULATED_M4_REPLAY",
+          "status": "PROVISIONAL_CANDIDATE",
+          "tags": {
+            "DP": {
+              "clique_scores": {
+                "reference_mean_us": 13.666666666666666,
+                "scores": {
+                  "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa": -0.2682926829268293,
+                  "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb": 0.17073170731707332,
+                  "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc": 0.09756097560975618
+                },
+                "status": "DEFINED"
+              },
+              "excluded_single_rank": [],
+              "group_cv": {
+                "convention": "population baseline; sample sensitivity (ADAPTATION G04)",
+                "decision": "ABOVE",
+                "mean_us": 18.666666666666668,
+                "population": 0.43813729094233195,
+                "sample": 0.5366064000470256
+              },
+              "max_avg_latency_us": {
+                "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa": 11.0,
+                "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb": 30.0,
+                "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc": 15.0
+              },
+              "selected_groups": [
+                "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+              ],
+              "stage1": "MAX_GROUP",
+              "stage2": {
+                "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb": {
+                  "methods": {
+                    "sample_weighted": {
+                      "avg_latency_us": {
+                        "2": 2.0,
+                        "3": 30.0
+                      },
+                      "candidates": [
+                        2
+                      ],
+                      "cv": {
+                        "convention": "population baseline; sample sensitivity (ADAPTATION G04)",
+                        "decision": "ABOVE",
+                        "mean_us": 16.0,
+                        "population": 0.875,
+                        "sample": 1.2374368670764582
+                      },
+                      "rank_scores": {
+                        "reference_mean_us": 16.0,
+                        "scores": {
+                          "2": 0.875,
+                          "3": -0.875
+                        },
+                        "status": "DEFINED"
+                      },
+                      "rule": "minimum avg_latency; 20% filter unresolved and disabled"
+                    },
+                    "unweighted_communicator_mean": {
+                      "avg_latency_us": {
+                        "2": 2.0,
+                        "3": 30.0
+                      },
+                      "candidates": [
+                        2
+                      ],
+                      "cv": {
+                        "convention": "population baseline; sample sensitivity (ADAPTATION G04)",
+                        "decision": "ABOVE",
+                        "mean_us": 16.0,
+                        "population": 0.875,
+                        "sample": 1.2374368670764582
+                      },
+                      "rank_scores": {
+                        "reference_mean_us": 16.0,
+                        "scores": {
+                          "2": 0.875,
+                          "3": -0.875
+                        },
+                        "status": "DEFINED"
+                      },
+                      "rule": "minimum avg_latency; 20% filter unresolved and disabled"
+                    }
+                  },
+                  "sensitivity_disagreement": false,
+                  "status": "PROVISIONAL_CANDIDATE"
+                }
+              },
+              "status": "PROVISIONAL_CANDIDATE"
+            }
+          },
+          "unresolved": [
+            "G04: 20% reference/filter undefined",
+            "G04: communicator aggregation weights undefined",
+            "G04: statistical references and std convention not uniquely specified"
+          ]
+        },
+        "closed_at_seconds": 20.7,
+        "command_at_seconds": 20.5,
+        "completeness": {
+          "communicator_scope_observations": 6,
+          "expected_instances": 6,
+          "independent_process_scopes": 6,
+          "records": 6,
+          "valid_records": 6
+        },
+        "data_sha256": "2b41df5f8e79217e88903e7bd66c1c0178f9bd12ce8051aba1e883ef8a101f27",
+        "deadline_seconds": 25.5,
+        "duration_seconds": 20.0,
+        "failure": null,
+        "iteration_record": {
+          "cuda_completion_wait": false,
+          "global_rank": 0,
+          "iteration": 1,
+          "iteration_time_ms": 100.0,
+          "run_id": "m6s-e0f32e8d15d54091a1bf7c4a2aa8ed5e",
+          "source": "CPU_SIMULATED_FRAMEWORK",
+          "timestamp": "2026-10-10T00:00:00+00:00",
+          "timing_boundary": "cpu_simulated_iteration_end"
+        },
+        "iteration_sha256": "90034c4b864e2adbf12557498c45975bbc903908ab57c5c7ac7753a74273dae2",
+        "last_time_seconds": 20.7,
+        "manifest": {
+          "communicators": [
+            {
+              "id_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+              "local_instances": [
+                {
+                  "comm_generation": 1,
+                  "comm_rank": 0,
+                  "expected_records": 1,
+                  "expected_samples": 1,
+                  "global_rank": 0,
+                  "node_id": "node-0",
+                  "process_instance": "p0"
+                },
+                {
+                  "comm_generation": 1,
+                  "comm_rank": 1,
+                  "expected_records": 1,
+                  "expected_samples": 1,
+                  "global_rank": 1,
+                  "node_id": "node-1",
+                  "process_instance": "p1"
+                }
+              ],
+              "members": [
+                0,
+                1
+              ]
+            },
+            {
+              "id_hash": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+              "local_instances": [
+                {
+                  "comm_generation": 1,
+                  "comm_rank": 0,
+                  "expected_records": 1,
+                  "expected_samples": 1,
+                  "global_rank": 2,
+                  "node_id": "node-0",
+                  "process_instance": "p2"
+                },
+                {
+                  "comm_generation": 1,
+                  "comm_rank": 1,
+                  "expected_records": 1,
+                  "expected_samples": 1,
+                  "global_rank": 3,
+                  "node_id": "node-1",
+                  "process_instance": "p3"
+                }
+              ],
+              "members": [
+                2,
+                3
+              ]
+            },
+            {
+              "id_hash": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+              "local_instances": [
+                {
+                  "comm_generation": 1,
+                  "comm_rank": 0,
+                  "expected_records": 1,
+                  "expected_samples": 1,
+                  "global_rank": 4,
+                  "node_id": "node-0",
+                  "process_instance": "p4"
+                },
+                {
+                  "comm_generation": 1,
+                  "comm_rank": 1,
+                  "expected_records": 1,
+                  "expected_samples": 1,
+                  "global_rank": 5,
+                  "node_id": "node-1",
+                  "process_instance": "p5"
+                }
+              ],
+              "members": [
+                4,
+                5
+              ]
+            }
+          ],
+          "context": {
+            "profile_epoch": 1,
+            "run_id": "m6s-e0f32e8d15d54091a1bf7c4a2aa8ed5e"
+          },
+          "parallel_states": [
+            {
+              "evidence": "explicit fixed fixture membership",
+              "id_hashes": [
+                "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+              ],
+              "label": "DP",
+              "members": [
+                0,
+                1
+              ]
+            },
+            {
+              "evidence": "explicit fixed fixture membership",
+              "id_hashes": [
+                "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+              ],
+              "label": "DP",
+              "members": [
+                2,
+                3
+              ]
+            },
+            {
+              "evidence": "explicit fixed fixture membership",
+              "id_hashes": [
+                "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"
+              ],
+              "label": "DP",
+              "members": [
+                4,
+                5
+              ]
+            }
+          ],
+          "records": [],
+          "schema_version": 1
+        },
+        "manifest_sha256": "199498a555371e159145068e4d306bd2a1109730a2141e9d98c22ae930151b4b",
+        "nodes": {
+          "node-0": {
+            "ack": {
+              "accepted_at_seconds": 20.5,
+              "command_id": "e1-g1-s0-node-0",
+              "command_sha256": "65ad0e81b8886bfb9ab4e1d9ee8e75ac081c7b55cd2d983977a9b758dd05320e",
+              "kind": "COMMAND_ACCEPTED_ONLY",
+              "local_generation": 1,
+              "source": "CPU_LOCAL_CONTROLLER"
+            },
+            "applied": {
+              "0": {
+                "applied_at_seconds": 20.599999999999998,
+                "boundary": "legal_scope_start",
+                "command_id": "e1-g1-s0-node-0",
+                "generation": 1,
+                "global_rank": 0,
+                "local_generation": 1,
+                "node_id": "node-0",
+                "profile_epoch": 1,
+                "requested_state": 0,
+                "run_id": "m6s-e0f32e8d15d54091a1bf7c4a2aa8ed5e",
+                "scope_sequence": 2,
+                "source": "CPU_SIMULATED_PROBE"
+              },
+              "2": {
+                "applied_at_seconds": 20.599999999999998,
+                "boundary": "legal_scope_start",
+                "command_id": "e1-g1-s0-node-0",
+                "generation": 1,
+                "global_rank": 2,
+                "local_generation": 1,
+                "node_id": "node-0",
+                "profile_epoch": 1,
+                "requested_state": 0,
+                "run_id": "m6s-e0f32e8d15d54091a1bf7c4a2aa8ed5e",
+                "scope_sequence": 2,
+                "source": "CPU_SIMULATED_PROBE"
+              },
+              "4": {
+                "applied_at_seconds": 20.599999999999998,
+                "boundary": "legal_scope_start",
+                "command_id": "e1-g1-s0-node-0",
+                "generation": 1,
+                "global_rank": 4,
+                "local_generation": 1,
+                "node_id": "node-0",
+                "profile_epoch": 1,
+                "requested_state": 0,
+                "run_id": "m6s-e0f32e8d15d54091a1bf7c4a2aa8ed5e",
+                "scope_sequence": 2,
+                "source": "CPU_SIMULATED_PROBE"
+              }
+            },
+            "command": {
+              "command_id": "e1-g1-s0-node-0",
+              "deadline_seconds": 25.5,
+              "expected_nodes": [
+                "node-0",
+                "node-1"
+              ],
+              "expected_ranks": [
+                0,
+                2,
+                4
+              ],
+              "generation": 1,
+              "local_generation": 1,
+              "node_id": "node-0",
+              "profile_epoch": 1,
+              "requested_at_seconds": 20.5,
+              "requested_state": 0,
+              "run_id": "m6s-e0f32e8d15d54091a1bf7c4a2aa8ed5e",
+              "schema_version": 1
+            },
+            "ignored_old": 3,
+            "ready": null,
+            "samples": []
+          },
+          "node-1": {
+            "ack": {
+              "accepted_at_seconds": 20.5,
+              "command_id": "e1-g1-s0-node-1",
+              "command_sha256": "6181308cf92495c6fcf657e067c4bb69e500d7a8682630fd40bd25aaf0eda661",
+              "kind": "COMMAND_ACCEPTED_ONLY",
+              "local_generation": 1,
+              "source": "CPU_LOCAL_CONTROLLER"
+            },
+            "applied": {
+              "1": {
+                "applied_at_seconds": 20.599999999999998,
+                "boundary": "legal_scope_start",
+                "command_id": "e1-g1-s0-node-1",
+                "generation": 1,
+                "global_rank": 1,
+                "local_generation": 1,
+                "node_id": "node-1",
+                "profile_epoch": 1,
+                "requested_state": 0,
+                "run_id": "m6s-e0f32e8d15d54091a1bf7c4a2aa8ed5e",
+                "scope_sequence": 2,
+                "source": "CPU_SIMULATED_PROBE"
+              },
+              "3": {
+                "applied_at_seconds": 20.599999999999998,
+                "boundary": "legal_scope_start",
+                "command_id": "e1-g1-s0-node-1",
+                "generation": 1,
+                "global_rank": 3,
+                "local_generation": 1,
+                "node_id": "node-1",
+                "profile_epoch": 1,
+                "requested_state": 0,
+                "run_id": "m6s-e0f32e8d15d54091a1bf7c4a2aa8ed5e",
+                "scope_sequence": 2,
+                "source": "CPU_SIMULATED_PROBE"
+              },
+              "5": {
+                "applied_at_seconds": 20.599999999999998,
+                "boundary": "legal_scope_start",
+                "command_id": "e1-g1-s0-node-1",
+                "generation": 1,
+                "global_rank": 5,
+                "local_generation": 1,
+                "node_id": "node-1",
+                "profile_epoch": 1,
+                "requested_state": 0,
+                "run_id": "m6s-e0f32e8d15d54091a1bf7c4a2aa8ed5e",
+                "scope_sequence": 2,
+                "source": "CPU_SIMULATED_PROBE"
+              }
+            },
+            "command": {
+              "command_id": "e1-g1-s0-node-1",
+              "deadline_seconds": 25.5,
+              "expected_nodes": [
+                "node-0",
+                "node-1"
+              ],
+              "expected_ranks": [
+                1,
+                3,
+                5
+              ],
+              "generation": 1,
+              "local_generation": 1,
+              "node_id": "node-1",
+              "profile_epoch": 1,
+              "requested_at_seconds": 20.5,
+              "requested_state": 0,
+              "run_id": "m6s-e0f32e8d15d54091a1bf7c4a2aa8ed5e",
+              "schema_version": 1
+            },
+            "ignored_old": 3,
+            "ready": null,
+            "samples": []
+          }
+        },
+        "profile_epoch": 1,
+        "profile_nodes": {
+          "node-0": {
+            "ack": {
+              "accepted_at_seconds": 0,
+              "command_id": "e1-g1-s1-node-0",
+              "command_sha256": "396b89ff267e8541234c89f1de0d007909bc57e1c03767ac31917e55e619ff2e",
+              "kind": "COMMAND_ACCEPTED_ONLY",
+              "local_generation": 1,
+              "source": "CPU_LOCAL_CONTROLLER"
+            },
+            "applied": {
+              "0": {
+                "applied_at_seconds": 0.1,
+                "boundary": "legal_scope_start",
+                "command_id": "e1-g1-s1-node-0",
+                "generation": 1,
+                "global_rank": 0,
+                "local_generation": 1,
+                "node_id": "node-0",
+                "profile_epoch": 1,
+                "requested_state": 1,
+                "run_id": "m6s-e0f32e8d15d54091a1bf7c4a2aa8ed5e",
+                "scope_sequence": 1,
+                "source": "CPU_SIMULATED_PROBE"
+              },
+              "2": {
+                "applied_at_seconds": 0.1,
+                "boundary": "legal_scope_start",
+                "command_id": "e1-g1-s1-node-0",
+                "generation": 1,
+                "global_rank": 2,
+                "local_generation": 1,
+                "node_id": "node-0",
+                "profile_epoch": 1,
+                "requested_state": 1,
+                "run_id": "m6s-e0f32e8d15d54091a1bf7c4a2aa8ed5e",
+                "scope_sequence": 1,
+                "source": "CPU_SIMULATED_PROBE"
+              },
+              "4": {
+                "applied_at_seconds": 0.1,
+                "boundary": "legal_scope_start",
+                "command_id": "e1-g1-s1-node-0",
+                "generation": 1,
+                "global_rank": 4,
+                "local_generation": 1,
+                "node_id": "node-0",
+                "profile_epoch": 1,
+                "requested_state": 1,
+                "run_id": "m6s-e0f32e8d15d54091a1bf7c4a2aa8ed5e",
+                "scope_sequence": 1,
+                "source": "CPU_SIMULATED_PROBE"
+              }
+            },
+            "command": {
+              "command_id": "e1-g1-s1-node-0",
+              "deadline_seconds": 5.0,
+              "expected_nodes": [
+                "node-0",
+                "node-1"
+              ],
+              "expected_ranks": [
+                0,
+                2,
+                4
+              ],
+              "generation": 1,
+              "local_generation": 1,
+              "node_id": "node-0",
+              "profile_epoch": 1,
+              "requested_at_seconds": 0,
+              "requested_state": 1,
+              "run_id": "m6s-e0f32e8d15d54091a1bf7c4a2aa8ed5e",
+              "schema_version": 1
+            },
+            "ignored_old": 0,
+            "outside_window": 0,
+            "ready": {
+              "command_sha256": "396b89ff267e8541234c89f1de0d007909bc57e1c03767ac31917e55e619ff2e",
+              "completeness": "PENDING_M4_VALIDATION",
+              "data_sha256": "a33418978e5a6464fad482583c1ab488f6c74e2cac83e5b1c12e1856825e4385",
+              "drained_at_seconds": 20.2,
+              "records": 3,
+              "source": "CPU_SIMULATED_DRAIN"
+            },
+            "samples": [
+              {
+                "collected_at_seconds": 1,
+                "command_id": "e1-g1-s1-node-0",
+                "generation": 1,
+                "local_generation": 1,
+                "row": {
+                  "api": "ncclAllReduce",
+                  "comm_generation": 1,
+                  "comm_rank": 0,
+                  "comm_size": 2,
+                  "count": 4,
+                  "count_unit": "elements",
+                  "cuda_results": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    -1
+                  ],
+                  "datatype": 7,
+                  "duration_unit": "us",
+                  "duration_us": 9,
+                  "global_rank": 0,
+                  "group_depth": 0,
+                  "group_id": 0,
+                  "id_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                  "identity_source": "UNIQUE_ID_SHA256",
+                  "node_id": "node-0",
+                  "process_instance": "p0",
+                  "profile_epoch": 1,
+                  "result": 0,
+                  "run_id": "m6s-e0f32e8d15d54091a1bf7c4a2aa8ed5e",
+                  "sample_seq": 1,
+                  "state": 1,
+                  "thread_id": "t0",
+                  "timing_definition": "synthetic_nonnegative_v1",
+                  "timing_scope": "collective",
+                  "timing_status": "VALID"
+                },
+                "sha256": "31cf7c4501cd5f54a4ce1e59c5cf2f86f8687e8576c444551d0165fb073fd83a",
+                "source": "CPU_SIMULATED_PROBE"
+              },
+              {
+                "collected_at_seconds": 1,
+                "command_id": "e1-g1-s1-node-0",
+                "generation": 1,
+                "local_generation": 1,
+                "row": {
+                  "api": "ncclAllReduce",
+                  "comm_generation": 1,
+                  "comm_rank": 0,
+                  "comm_size": 2,
+                  "count": 4,
+                  "count_unit": "elements",
+                  "cuda_results": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    -1
+                  ],
+                  "datatype": 7,
+                  "duration_unit": "us",
+                  "duration_us": 2,
+                  "global_rank": 2,
+                  "group_depth": 0,
+                  "group_id": 0,
+                  "id_hash": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+                  "identity_source": "UNIQUE_ID_SHA256",
+                  "node_id": "node-0",
+                  "process_instance": "p2",
+                  "profile_epoch": 1,
+                  "result": 0,
+                  "run_id": "m6s-e0f32e8d15d54091a1bf7c4a2aa8ed5e",
+                  "sample_seq": 1,
+                  "state": 1,
+                  "thread_id": "t0",
+                  "timing_definition": "synthetic_nonnegative_v1",
+                  "timing_scope": "collective",
+                  "timing_status": "VALID"
+                },
+                "sha256": "1d708db15d0bc9d3823b249fdfd097f6a6d569c48f5148a9d9ba5c96684fe3a8",
+                "source": "CPU_SIMULATED_PROBE"
+              },
+              {
+                "collected_at_seconds": 1,
+                "command_id": "e1-g1-s1-node-0",
+                "generation": 1,
+                "local_generation": 1,
+                "row": {
+                  "api": "ncclAllReduce",
+                  "comm_generation": 1,
+                  "comm_rank": 0,
+                  "comm_size": 2,
+                  "count": 4,
+                  "count_unit": "elements",
+                  "cuda_results": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    -1
+                  ],
+                  "datatype": 7,
+                  "duration_unit": "us",
+                  "duration_us": 15,
+                  "global_rank": 4,
+                  "group_depth": 0,
+                  "group_id": 0,
+                  "id_hash": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+                  "identity_source": "UNIQUE_ID_SHA256",
+                  "node_id": "node-0",
+                  "process_instance": "p4",
+                  "profile_epoch": 1,
+                  "result": 0,
+                  "run_id": "m6s-e0f32e8d15d54091a1bf7c4a2aa8ed5e",
+                  "sample_seq": 1,
+                  "state": 1,
+                  "thread_id": "t0",
+                  "timing_definition": "synthetic_nonnegative_v1",
+                  "timing_scope": "collective",
+                  "timing_status": "VALID"
+                },
+                "sha256": "7aca13f2fafcb8a994bbd81788d82ad06a9f107c58202817e10e1c9b8dbfaae3",
+                "source": "CPU_SIMULATED_PROBE"
+              }
+            ]
+          },
+          "node-1": {
+            "ack": {
+              "accepted_at_seconds": 0,
+              "command_id": "e1-g1-s1-node-1",
+              "command_sha256": "73f635ca766fbc50ec65157bc2d5530da639f1da4f026b7db9a8e81a9431b0c4",
+              "kind": "COMMAND_ACCEPTED_ONLY",
+              "local_generation": 1,
+              "source": "CPU_LOCAL_CONTROLLER"
+            },
+            "applied": {
+              "1": {
+                "applied_at_seconds": 0.1,
+                "boundary": "legal_scope_start",
+                "command_id": "e1-g1-s1-node-1",
+                "generation": 1,
+                "global_rank": 1,
+                "local_generation": 1,
+                "node_id": "node-1",
+                "profile_epoch": 1,
+                "requested_state": 1,
+                "run_id": "m6s-e0f32e8d15d54091a1bf7c4a2aa8ed5e",
+                "scope_sequence": 1,
+                "source": "CPU_SIMULATED_PROBE"
+              },
+              "3": {
+                "applied_at_seconds": 0.1,
+                "boundary": "legal_scope_start",
+                "command_id": "e1-g1-s1-node-1",
+                "generation": 1,
+                "global_rank": 3,
+                "local_generation": 1,
+                "node_id": "node-1",
+                "profile_epoch": 1,
+                "requested_state": 1,
+                "run_id": "m6s-e0f32e8d15d54091a1bf7c4a2aa8ed5e",
+                "scope_sequence": 1,
+                "source": "CPU_SIMULATED_PROBE"
+              },
+              "5": {
+                "applied_at_seconds": 0.1,
+                "boundary": "legal_scope_start",
+                "command_id": "e1-g1-s1-node-1",
+                "generation": 1,
+                "global_rank": 5,
+                "local_generation": 1,
+                "node_id": "node-1",
+                "profile_epoch": 1,
+                "requested_state": 1,
+                "run_id": "m6s-e0f32e8d15d54091a1bf7c4a2aa8ed5e",
+                "scope_sequence": 1,
+                "source": "CPU_SIMULATED_PROBE"
+              }
+            },
+            "command": {
+              "command_id": "e1-g1-s1-node-1",
+              "deadline_seconds": 5.0,
+              "expected_nodes": [
+                "node-0",
+                "node-1"
+              ],
+              "expected_ranks": [
+                1,
+                3,
+                5
+              ],
+              "generation": 1,
+              "local_generation": 1,
+              "node_id": "node-1",
+              "profile_epoch": 1,
+              "requested_at_seconds": 0,
+              "requested_state": 1,
+              "run_id": "m6s-e0f32e8d15d54091a1bf7c4a2aa8ed5e",
+              "schema_version": 1
+            },
+            "ignored_old": 0,
+            "outside_window": 0,
+            "ready": {
+              "command_sha256": "73f635ca766fbc50ec65157bc2d5530da639f1da4f026b7db9a8e81a9431b0c4",
+              "completeness": "PENDING_M4_VALIDATION",
+              "data_sha256": "d440c50c351d71669534bc81100b70fdb158e0e6256c09a0256a92e734d77b5e",
+              "drained_at_seconds": 20.2,
+              "records": 3,
+              "source": "CPU_SIMULATED_DRAIN"
+            },
+            "samples": [
+              {
+                "collected_at_seconds": 1,
+                "command_id": "e1-g1-s1-node-1",
+                "generation": 1,
+                "local_generation": 1,
+                "row": {
+                  "api": "ncclAllReduce",
+                  "comm_generation": 1,
+                  "comm_rank": 1,
+                  "comm_size": 2,
+                  "count": 4,
+                  "count_unit": "elements",
+                  "cuda_results": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    -1
+                  ],
+                  "datatype": 7,
+                  "duration_unit": "us",
+                  "duration_us": 11,
+                  "global_rank": 1,
+                  "group_depth": 0,
+                  "group_id": 0,
+                  "id_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                  "identity_source": "UNIQUE_ID_SHA256",
+                  "node_id": "node-1",
+                  "process_instance": "p1",
+                  "profile_epoch": 1,
+                  "result": 0,
+                  "run_id": "m6s-e0f32e8d15d54091a1bf7c4a2aa8ed5e",
+                  "sample_seq": 1,
+                  "state": 1,
+                  "thread_id": "t0",
+                  "timing_definition": "synthetic_nonnegative_v1",
+                  "timing_scope": "collective",
+                  "timing_status": "VALID"
+                },
+                "sha256": "749ef79769c747d72405d13c9c20e0861b97ab9e49d4a2d8aad45d2e2be6bfb8",
+                "source": "CPU_SIMULATED_PROBE"
+              },
+              {
+                "collected_at_seconds": 1,
+                "command_id": "e1-g1-s1-node-1",
+                "generation": 1,
+                "local_generation": 1,
+                "row": {
+                  "api": "ncclAllReduce",
+                  "comm_generation": 1,
+                  "comm_rank": 1,
+                  "comm_size": 2,
+                  "count": 4,
+                  "count_unit": "elements",
+                  "cuda_results": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    -1
+                  ],
+                  "datatype": 7,
+                  "duration_unit": "us",
+                  "duration_us": 30,
+                  "global_rank": 3,
+                  "group_depth": 0,
+                  "group_id": 0,
+                  "id_hash": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+                  "identity_source": "UNIQUE_ID_SHA256",
+                  "node_id": "node-1",
+                  "process_instance": "p3",
+                  "profile_epoch": 1,
+                  "result": 0,
+                  "run_id": "m6s-e0f32e8d15d54091a1bf7c4a2aa8ed5e",
+                  "sample_seq": 1,
+                  "state": 1,
+                  "thread_id": "t0",
+                  "timing_definition": "synthetic_nonnegative_v1",
+                  "timing_scope": "collective",
+                  "timing_status": "VALID"
+                },
+                "sha256": "910d85dd8349f1f88ba327d3fbdd99ed10d8da6c61f037b71ab2dfc90b0fd22b",
+                "source": "CPU_SIMULATED_PROBE"
+              },
+              {
+                "collected_at_seconds": 1,
+                "command_id": "e1-g1-s1-node-1",
+                "generation": 1,
+                "local_generation": 1,
+                "row": {
+                  "api": "ncclAllReduce",
+                  "comm_generation": 1,
+                  "comm_rank": 1,
+                  "comm_size": 2,
+                  "count": 4,
+                  "count_unit": "elements",
+                  "cuda_results": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    -1
+                  ],
+                  "datatype": 7,
+                  "duration_unit": "us",
+                  "duration_us": 15,
+                  "global_rank": 5,
+                  "group_depth": 0,
+                  "group_id": 0,
+                  "id_hash": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+                  "identity_source": "UNIQUE_ID_SHA256",
+                  "node_id": "node-1",
+                  "process_instance": "p5",
+                  "profile_epoch": 1,
+                  "result": 0,
+                  "run_id": "m6s-e0f32e8d15d54091a1bf7c4a2aa8ed5e",
+                  "sample_seq": 1,
+                  "state": 1,
+                  "thread_id": "t0",
+                  "timing_definition": "synthetic_nonnegative_v1",
+                  "timing_scope": "collective",
+                  "timing_status": "VALID"
+                },
+                "sha256": "3fb2ee2657c3397afc2be2e74bd7911a51cc58e76b4652b2485c90fffbc1482c",
+                "source": "CPU_SIMULATED_PROBE"
+              }
+            ]
+          }
+        },
+        "request_id": "fresh-run",
+        "request_sha256": "952e6960bf39a5c489d26feaf6995c16afae426dda585f97f02f076d2c89a2a5",
+        "reset_nodes": {
+          "node-0": {
+            "ack": {
+              "accepted_at_seconds": 20.5,
+              "command_id": "e1-g1-s0-node-0",
+              "command_sha256": "65ad0e81b8886bfb9ab4e1d9ee8e75ac081c7b55cd2d983977a9b758dd05320e",
+              "kind": "COMMAND_ACCEPTED_ONLY",
+              "local_generation": 1,
+              "source": "CPU_LOCAL_CONTROLLER"
+            },
+            "applied": {
+              "0": {
+                "applied_at_seconds": 20.599999999999998,
+                "boundary": "legal_scope_start",
+                "command_id": "e1-g1-s0-node-0",
+                "generation": 1,
+                "global_rank": 0,
+                "local_generation": 1,
+                "node_id": "node-0",
+                "profile_epoch": 1,
+                "requested_state": 0,
+                "run_id": "m6s-e0f32e8d15d54091a1bf7c4a2aa8ed5e",
+                "scope_sequence": 2,
+                "source": "CPU_SIMULATED_PROBE"
+              },
+              "2": {
+                "applied_at_seconds": 20.599999999999998,
+                "boundary": "legal_scope_start",
+                "command_id": "e1-g1-s0-node-0",
+                "generation": 1,
+                "global_rank": 2,
+                "local_generation": 1,
+                "node_id": "node-0",
+                "profile_epoch": 1,
+                "requested_state": 0,
+                "run_id": "m6s-e0f32e8d15d54091a1bf7c4a2aa8ed5e",
+                "scope_sequence": 2,
+                "source": "CPU_SIMULATED_PROBE"
+              },
+              "4": {
+                "applied_at_seconds": 20.599999999999998,
+                "boundary": "legal_scope_start",
+                "command_id": "e1-g1-s0-node-0",
+                "generation": 1,
+                "global_rank": 4,
+                "local_generation": 1,
+                "node_id": "node-0",
+                "profile_epoch": 1,
+                "requested_state": 0,
+                "run_id": "m6s-e0f32e8d15d54091a1bf7c4a2aa8ed5e",
+                "scope_sequence": 2,
+                "source": "CPU_SIMULATED_PROBE"
+              }
+            },
+            "command": {
+              "command_id": "e1-g1-s0-node-0",
+              "deadline_seconds": 25.5,
+              "expected_nodes": [
+                "node-0",
+                "node-1"
+              ],
+              "expected_ranks": [
+                0,
+                2,
+                4
+              ],
+              "generation": 1,
+              "local_generation": 1,
+              "node_id": "node-0",
+              "profile_epoch": 1,
+              "requested_at_seconds": 20.5,
+              "requested_state": 0,
+              "run_id": "m6s-e0f32e8d15d54091a1bf7c4a2aa8ed5e",
+              "schema_version": 1
+            },
+            "ignored_old": 3,
+            "ready": null,
+            "samples": []
+          },
+          "node-1": {
+            "ack": {
+              "accepted_at_seconds": 20.5,
+              "command_id": "e1-g1-s0-node-1",
+              "command_sha256": "6181308cf92495c6fcf657e067c4bb69e500d7a8682630fd40bd25aaf0eda661",
+              "kind": "COMMAND_ACCEPTED_ONLY",
+              "local_generation": 1,
+              "source": "CPU_LOCAL_CONTROLLER"
+            },
+            "applied": {
+              "1": {
+                "applied_at_seconds": 20.599999999999998,
+                "boundary": "legal_scope_start",
+                "command_id": "e1-g1-s0-node-1",
+                "generation": 1,
+                "global_rank": 1,
+                "local_generation": 1,
+                "node_id": "node-1",
+                "profile_epoch": 1,
+                "requested_state": 0,
+                "run_id": "m6s-e0f32e8d15d54091a1bf7c4a2aa8ed5e",
+                "scope_sequence": 2,
+                "source": "CPU_SIMULATED_PROBE"
+              },
+              "3": {
+                "applied_at_seconds": 20.599999999999998,
+                "boundary": "legal_scope_start",
+                "command_id": "e1-g1-s0-node-1",
+                "generation": 1,
+                "global_rank": 3,
+                "local_generation": 1,
+                "node_id": "node-1",
+                "profile_epoch": 1,
+                "requested_state": 0,
+                "run_id": "m6s-e0f32e8d15d54091a1bf7c4a2aa8ed5e",
+                "scope_sequence": 2,
+                "source": "CPU_SIMULATED_PROBE"
+              },
+              "5": {
+                "applied_at_seconds": 20.599999999999998,
+                "boundary": "legal_scope_start",
+                "command_id": "e1-g1-s0-node-1",
+                "generation": 1,
+                "global_rank": 5,
+                "local_generation": 1,
+                "node_id": "node-1",
+                "profile_epoch": 1,
+                "requested_state": 0,
+                "run_id": "m6s-e0f32e8d15d54091a1bf7c4a2aa8ed5e",
+                "scope_sequence": 2,
+                "source": "CPU_SIMULATED_PROBE"
+              }
+            },
+            "command": {
+              "command_id": "e1-g1-s0-node-1",
+              "deadline_seconds": 25.5,
+              "expected_nodes": [
+                "node-0",
+                "node-1"
+              ],
+              "expected_ranks": [
+                1,
+                3,
+                5
+              ],
+              "generation": 1,
+              "local_generation": 1,
+              "node_id": "node-1",
+              "profile_epoch": 1,
+              "requested_at_seconds": 20.5,
+              "requested_state": 0,
+              "run_id": "m6s-e0f32e8d15d54091a1bf7c4a2aa8ed5e",
+              "schema_version": 1
+            },
+            "ignored_old": 3,
+            "ready": null,
+            "samples": []
+          }
+        },
+        "reset_verified": true,
+        "result": {
+          "candidate_ranks": [
+            2
+          ],
+          "completeness": {
+            "communicator_scope_observations": 6,
+            "expected_instances": 6,
+            "independent_process_scopes": 6,
+            "records": 6,
+            "valid_records": 6
+          },
+          "context": {
+            "profile_epoch": 1,
+            "run_id": "m6s-e0f32e8d15d54091a1bf7c4a2aa8ed5e"
+          },
+          "cross_tag": {
+            "conflict": false,
+            "support": {
+              "2": {
+                "evidence": [
+                  {
+                    "avg_latency_us": 2.0,
+                    "comparison_rank_means_us": {
+                      "2": 2.0,
+                      "3": 30.0
+                    },
+                    "id_hash": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+                    "label": "DP",
+                    "method": "unweighted_communicator_mean",
+                    "rank_cv": {
+                      "convention": "population baseline; sample sensitivity (ADAPTATION G04)",
+                      "decision": "ABOVE",
+                      "mean_us": 16.0,
+                      "population": 0.875,
+                      "sample": 1.2374368670764582
+                    },
+                    "rule": "min rank after max group/CV",
+                    "status": "PROVISIONAL_CANDIDATE"
+                  },
+                  {
+                    "avg_latency_us": 2.0,
+                    "comparison_rank_means_us": {
+                      "2": 2.0,
+                      "3": 30.0
+                    },
+                    "id_hash": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+                    "label": "DP",
+                    "method": "sample_weighted",
+                    "rank_cv": {
+                      "convention": "population baseline; sample sensitivity (ADAPTATION G04)",
+                      "decision": "ABOVE",
+                      "mean_us": 16.0,
+                      "population": 0.875,
+                      "sample": 1.2374368670764582
+                    },
+                    "rule": "min rank after max group/CV",
+                    "status": "PROVISIONAL_CANDIDATE"
+                  }
+                ],
+                "labels": [
+                  "DP"
+                ]
+              }
+            }
+          },
+          "final_alert": false,
+          "final_fault_ranks": [],
+          "groups": {
+            "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa": {
+              "clique_mean_us": 10.0,
+              "id_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+              "local_communicators": [
+                {
+                  "avg_latency_us": 9.0,
+                  "comm_generation": 1,
+                  "global_rank": 0,
+                  "max_us": 9.0,
+                  "min_us": 9.0,
+                  "node_id": "node-0",
+                  "process_instance": "p0",
+                  "sample_count": 1
+                },
+                {
+                  "avg_latency_us": 11.0,
+                  "comm_generation": 1,
+                  "global_rank": 1,
+                  "max_us": 11.0,
+                  "min_us": 11.0,
+                  "node_id": "node-1",
+                  "process_instance": "p1",
+                  "sample_count": 1
+                }
+              ],
+              "max_avg_latency_us": 11.0,
+              "members": [
+                0,
+                1
+              ]
+            },
+            "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb": {
+              "clique_mean_us": 16.0,
+              "id_hash": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+              "local_communicators": [
+                {
+                  "avg_latency_us": 2.0,
+                  "comm_generation": 1,
+                  "global_rank": 2,
+                  "max_us": 2.0,
+                  "min_us": 2.0,
+                  "node_id": "node-0",
+                  "process_instance": "p2",
+                  "sample_count": 1
+                },
+                {
+                  "avg_latency_us": 30.0,
+                  "comm_generation": 1,
+                  "global_rank": 3,
+                  "max_us": 30.0,
+                  "min_us": 30.0,
+                  "node_id": "node-1",
+                  "process_instance": "p3",
+                  "sample_count": 1
+                }
+              ],
+              "max_avg_latency_us": 30.0,
+              "members": [
+                2,
+                3
+              ]
+            },
+            "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc": {
+              "clique_mean_us": 15.0,
+              "id_hash": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+              "local_communicators": [
+                {
+                  "avg_latency_us": 15.0,
+                  "comm_generation": 1,
+                  "global_rank": 4,
+                  "max_us": 15.0,
+                  "min_us": 15.0,
+                  "node_id": "node-0",
+                  "process_instance": "p4",
+                  "sample_count": 1
+                },
+                {
+                  "avg_latency_us": 15.0,
+                  "comm_generation": 1,
+                  "global_rank": 5,
+                  "max_us": 15.0,
+                  "min_us": 15.0,
+                  "node_id": "node-1",
+                  "process_instance": "p5",
+                  "sample_count": 1
+                }
+              ],
+              "max_avg_latency_us": 15.0,
+              "members": [
+                4,
+                5
+              ]
+            }
+          },
+          "input_sha256": "2b41df5f8e79217e88903e7bd66c1c0178f9bd12ce8051aba1e883ef8a101f27",
+          "interpretation": "Offline ordering evidence only; no final fault decision, probability or automatic diagnosis",
+          "manifest_sha256": "199498a555371e159145068e4d306bd2a1109730a2141e9d98c22ae930151b4b",
+          "measurement_signatures": [
+            {
+              "api": "ncclAllReduce",
+              "count": 4,
+              "count_unit": "elements",
+              "datatype": 7,
+              "member_records": 6
+            }
+          ],
+          "risks": [],
+          "schema_version": 1,
+          "source": "CPU_SIMULATED_M4_REPLAY",
+          "status": "PROVISIONAL_CANDIDATE",
+          "tags": {
+            "DP": {
+              "clique_scores": {
+                "reference_mean_us": 13.666666666666666,
+                "scores": {
+                  "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa": -0.2682926829268293,
+                  "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb": 0.17073170731707332,
+                  "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc": 0.09756097560975618
+                },
+                "status": "DEFINED"
+              },
+              "excluded_single_rank": [],
+              "group_cv": {
+                "convention": "population baseline; sample sensitivity (ADAPTATION G04)",
+                "decision": "ABOVE",
+                "mean_us": 18.666666666666668,
+                "population": 0.43813729094233195,
+                "sample": 0.5366064000470256
+              },
+              "max_avg_latency_us": {
+                "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa": 11.0,
+                "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb": 30.0,
+                "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc": 15.0
+              },
+              "selected_groups": [
+                "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+              ],
+              "stage1": "MAX_GROUP",
+              "stage2": {
+                "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb": {
+                  "methods": {
+                    "sample_weighted": {
+                      "avg_latency_us": {
+                        "2": 2.0,
+                        "3": 30.0
+                      },
+                      "candidates": [
+                        2
+                      ],
+                      "cv": {
+                        "convention": "population baseline; sample sensitivity (ADAPTATION G04)",
+                        "decision": "ABOVE",
+                        "mean_us": 16.0,
+                        "population": 0.875,
+                        "sample": 1.2374368670764582
+                      },
+                      "rank_scores": {
+                        "reference_mean_us": 16.0,
+                        "scores": {
+                          "2": 0.875,
+                          "3": -0.875
+                        },
+                        "status": "DEFINED"
+                      },
+                      "rule": "minimum avg_latency; 20% filter unresolved and disabled"
+                    },
+                    "unweighted_communicator_mean": {
+                      "avg_latency_us": {
+                        "2": 2.0,
+                        "3": 30.0
+                      },
+                      "candidates": [
+                        2
+                      ],
+                      "cv": {
+                        "convention": "population baseline; sample sensitivity (ADAPTATION G04)",
+                        "decision": "ABOVE",
+                        "mean_us": 16.0,
+                        "population": 0.875,
+                        "sample": 1.2374368670764582
+                      },
+                      "rank_scores": {
+                        "reference_mean_us": 16.0,
+                        "scores": {
+                          "2": 0.875,
+                          "3": -0.875
+                        },
+                        "status": "DEFINED"
+                      },
+                      "rule": "minimum avg_latency; 20% filter unresolved and disabled"
+                    }
+                  },
+                  "sensitivity_disagreement": false,
+                  "status": "PROVISIONAL_CANDIDATE"
+                }
+              },
+              "status": "PROVISIONAL_CANDIDATE"
+            }
+          },
+          "unresolved": [
+            "G04: 20% reference/filter undefined",
+            "G04: communicator aggregation weights undefined",
+            "G04: statistical references and std convention not uniquely specified"
+          ]
+        },
+        "started_at_seconds": 0,
+        "transitions": [
+          "MONITOR",
+          "PROFILE_REQUESTED",
+          "PROFILE_ARMING",
+          "PROFILE_COLLECTING",
+          "PROFILE_DRAINING",
+          "PROFILE_READY",
+          "ANALYZED_PROVISIONAL",
+          "MONITOR_RESET_REQUESTED",
+          "MONITOR"
+        ],
+        "trigger": "MANUAL_TEST_TRIGGER",
+        "window": {
+          "end_seconds": 20.2,
+          "start_seconds": 0.2,
+          "time_domain": "single_host_cpu_simulation_monotonic_seconds"
+        }
+      }
+    ],
+    "events": [
+      {
+        "generation": 1,
+        "kind": "GLOBAL_CLAIM",
+        "sequence": 1
+      },
+      {
+        "generation": 1,
+        "kind": "LOCAL_CLAIM",
+        "node_id": "node-0",
+        "sequence": 2
+      },
+      {
+        "generation": 1,
+        "kind": "LOCAL_CLAIM",
+        "node_id": "node-1",
+        "sequence": 3
+      },
+      {
+        "iteration": 1,
+        "kind": "ITERATION_RECEIPT",
+        "rank": 0,
+        "sequence": 4,
+        "status": "WRITE_CONFIRMED"
+      },
+      {
+        "at_seconds": 0,
+        "duration_seconds": 20.0,
+        "generation": 1,
+        "kind": "PROFILE_REQUEST",
+        "profile_epoch": 1,
+        "sequence": 5,
+        "trigger": "MANUAL_TEST_TRIGGER"
+      },
+      {
+        "command_id": "e1-g1-s1-node-0",
+        "kind": "COMMAND_ACK",
+        "node_id": "node-0",
+        "sequence": 6
+      },
+      {
+        "command_id": "e1-g1-s1-node-1",
+        "kind": "COMMAND_ACK",
+        "node_id": "node-1",
+        "sequence": 7
+      },
+      {
+        "at_seconds": 0,
+        "kind": "TRANSITION",
+        "profile_epoch": 1,
+        "sequence": 8,
+        "state": "PROFILE_ARMING"
+      },
+      {
+        "at_seconds": 0.2,
+        "kind": "TRANSITION",
+        "profile_epoch": 1,
+        "sequence": 9,
+        "state": "PROFILE_COLLECTING"
+      },
+      {
+        "at_seconds": 20.2,
+        "kind": "TRANSITION",
+        "profile_epoch": 1,
+        "sequence": 10,
+        "state": "PROFILE_DRAINING"
+      },
+      {
+        "at_seconds": 20.3,
+        "kind": "TRANSITION",
+        "profile_epoch": 1,
+        "sequence": 11,
+        "state": "PROFILE_READY"
+      },
+      {
+        "at_seconds": 20.4,
+        "kind": "TRANSITION",
+        "profile_epoch": 1,
+        "sequence": 12,
+        "state": "ANALYZED_PROVISIONAL"
+      },
+      {
+        "at_seconds": 20.5,
+        "kind": "TRANSITION",
+        "profile_epoch": 1,
+        "sequence": 13,
+        "state": "MONITOR_RESET_REQUESTED"
+      },
+      {
+        "command_id": "e1-g1-s0-node-0",
+        "kind": "COMMAND_ACK",
+        "node_id": "node-0",
+        "sequence": 14
+      },
+      {
+        "command_id": "e1-g1-s0-node-1",
+        "kind": "COMMAND_ACK",
+        "node_id": "node-1",
+        "sequence": 15
+      },
+      {
+        "at_seconds": 20.7,
+        "kind": "MONITOR_VERIFIED",
+        "profile_epoch": 1,
+        "sequence": 16
+      }
+    ],
+    "expected_nodes": [
+      "node-0",
+      "node-1"
+    ],
+    "expected_ranks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "final_alert": false,
+    "final_fault_ranks": [],
+    "global_generation": 1,
+    "iterations": {
+      "0": {
+        "last": 1,
+        "records": [
+          {
+            "confirmed_at_seconds": 0,
+            "record": {
+              "cuda_completion_wait": false,
+              "global_rank": 0,
+              "iteration": 1,
+              "iteration_time_ms": 100.0,
+              "run_id": "m6s-e0f32e8d15d54091a1bf7c4a2aa8ed5e",
+              "source": "CPU_SIMULATED_FRAMEWORK",
+              "timestamp": "2026-10-10T00:00:00+00:00",
+              "timing_boundary": "cpu_simulated_iteration_end"
+            },
+            "sha256": "90034c4b864e2adbf12557498c45975bbc903908ab57c5c7ac7753a74273dae2"
+          }
+        ]
+      }
+    },
+    "nodes": {
+      "node-0": {
+        "generation": 1,
+        "ranks": [
+          0,
+          2,
+          4
+        ]
+      },
+      "node-1": {
+        "generation": 1,
+        "ranks": [
+          1,
+          3,
+          5
+        ]
+      }
+    },
+    "profile_epoch": 1,
+    "revision": 36,
+    "run_id": "m6s-e0f32e8d15d54091a1bf7c4a2aa8ed5e",
+    "schema_version": 1,
+    "state": "MONITOR"
+  },
+  "command": [
+    "<approved-project>/runs/m6a-deps/redis-8.10.2/src/redis-server",
+    "--port",
+    "0",
+    "--unixsocket",
+    "<approved-project>/runs/m6a-work/runs/m6s-_h94im07/r.sock",
+    "--unixsocketperm",
+    "600",
+    "--disable-thp",
+    "no",
+    "--save",
+    "",
+    "--appendonly",
+    "no",
+    "--dir",
+    "<approved-project>/runs/m6a-work/runs/m6s-_h94im07"
+  ],
+  "child_exits": [
+    0,
+    0
+  ],
+  "child_finished": true,
+  "socket_remaining": false,
+  "other_services_touched": false
+}

@@ -1,0 +1,13 @@
+{
+  "command": [
+    "python3",
+    "scripts/privacy_check.py"
+  ],
+  "execution_machine_alias": "local-macOS",
+  "wrapper_exit_code": 1,
+  "child_exit_code": "NOT_CAPTURED_WRAPPER_PATH_ERROR",
+  "log": "runs/m6a-final-publication-check/privacy.log",
+  "log_sha256": "116097fcd38a8359442f2b220bfb2b0831589f634ea21ae44a9fd0b2e18fff60",
+  "acceptance": false,
+  "reason": "execute returned after wait but private caller gave relative output dir; relative_to failed before persisting child result; TEXT_CHECK PASS log retained, excluded from exit-based acceptance"
+}

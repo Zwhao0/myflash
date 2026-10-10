@@ -1,0 +1,2417 @@
+[
+  {
+    "schema_version": 1,
+    "run_id": "m6a-cpu",
+    "revision": 64,
+    "expected_nodes": [
+      "node-0",
+      "node-1"
+    ],
+    "expected_ranks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "nodes": {
+      "node-0": {
+        "ranks": [
+          0,
+          2,
+          4
+        ],
+        "generation": 1
+      },
+      "node-1": {
+        "ranks": [
+          1,
+          3,
+          5
+        ],
+        "generation": 1
+      }
+    },
+    "global_generation": 1,
+    "profile_epoch": 2,
+    "state": "MONITOR",
+    "active": null,
+    "epochs": [
+      {
+        "profile_epoch": 1,
+        "trigger": "MANUAL_TEST_TRIGGER",
+        "request_id": "first",
+        "request_sha256": "952e6960bf39a5c489d26feaf6995c16afae426dda585f97f02f076d2c89a2a5",
+        "command_at_seconds": 20.5,
+        "started_at_seconds": 0,
+        "last_time_seconds": 20.7,
+        "duration_seconds": 20.0,
+        "iteration_record": {
+          "run_id": "m6a-cpu",
+          "global_rank": 0,
+          "iteration": 1,
+          "iteration_time_ms": 100.0,
+          "timestamp": "2026-10-10T00:00:00+00:00",
+          "source": "CPU_SIMULATED_FRAMEWORK",
+          "timing_boundary": "cpu_simulated_iteration_end",
+          "cuda_completion_wait": false
+        },
+        "iteration_sha256": "adf215822e0771b9f4b4343f6b5c1f41e9ed6e37642f4a133f1c7296c0acd144",
+        "manifest": {
+          "schema_version": 1,
+          "context": {
+            "run_id": "m6a-cpu",
+            "profile_epoch": 1
+          },
+          "communicators": [
+            {
+              "id_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+              "members": [
+                0,
+                1
+              ],
+              "local_instances": [
+                {
+                  "node_id": "node-0",
+                  "global_rank": 0,
+                  "process_instance": "p0",
+                  "comm_generation": 1,
+                  "comm_rank": 0,
+                  "expected_samples": 1,
+                  "expected_records": 1
+                },
+                {
+                  "node_id": "node-1",
+                  "global_rank": 1,
+                  "process_instance": "p1",
+                  "comm_generation": 1,
+                  "comm_rank": 1,
+                  "expected_samples": 1,
+                  "expected_records": 1
+                }
+              ]
+            },
+            {
+              "id_hash": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+              "members": [
+                2,
+                3
+              ],
+              "local_instances": [
+                {
+                  "node_id": "node-0",
+                  "global_rank": 2,
+                  "process_instance": "p2",
+                  "comm_generation": 1,
+                  "comm_rank": 0,
+                  "expected_samples": 1,
+                  "expected_records": 1
+                },
+                {
+                  "node_id": "node-1",
+                  "global_rank": 3,
+                  "process_instance": "p3",
+                  "comm_generation": 1,
+                  "comm_rank": 1,
+                  "expected_samples": 1,
+                  "expected_records": 1
+                }
+              ]
+            },
+            {
+              "id_hash": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+              "members": [
+                4,
+                5
+              ],
+              "local_instances": [
+                {
+                  "node_id": "node-0",
+                  "global_rank": 4,
+                  "process_instance": "p4",
+                  "comm_generation": 1,
+                  "comm_rank": 0,
+                  "expected_samples": 1,
+                  "expected_records": 1
+                },
+                {
+                  "node_id": "node-1",
+                  "global_rank": 5,
+                  "process_instance": "p5",
+                  "comm_generation": 1,
+                  "comm_rank": 1,
+                  "expected_samples": 1,
+                  "expected_records": 1
+                }
+              ]
+            }
+          ],
+          "parallel_states": [
+            {
+              "label": "DP",
+              "members": [
+                0,
+                1
+              ],
+              "id_hashes": [
+                "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+              ],
+              "evidence": "explicit fixed fixture membership"
+            },
+            {
+              "label": "DP",
+              "members": [
+                2,
+                3
+              ],
+              "id_hashes": [
+                "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+              ],
+              "evidence": "explicit fixed fixture membership"
+            },
+            {
+              "label": "DP",
+              "members": [
+                4,
+                5
+              ],
+              "id_hashes": [
+                "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"
+              ],
+              "evidence": "explicit fixed fixture membership"
+            }
+          ],
+          "records": []
+        },
+        "manifest_sha256": "e9a6b24bb3fdccacd10146a59a05d065c33f4759e2186c3ebfbacd7797e98bf4",
+        "deadline_seconds": 25.5,
+        "window": {
+          "start_seconds": 0.2,
+          "end_seconds": 20.2,
+          "time_domain": "single_host_cpu_simulation_monotonic_seconds"
+        },
+        "failure": null,
+        "analysis": {
+          "schema_version": 1,
+          "context": {
+            "run_id": "m6a-cpu",
+            "profile_epoch": 1
+          },
+          "status": "PROVISIONAL_CANDIDATE",
+          "final_fault_ranks": [],
+          "candidate_ranks": [
+            2
+          ],
+          "tags": {
+            "DP": {
+              "excluded_single_rank": [],
+              "selected_groups": [
+                "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+              ],
+              "stage2": {
+                "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb": {
+                  "status": "PROVISIONAL_CANDIDATE",
+                  "sensitivity_disagreement": false,
+                  "methods": {
+                    "unweighted_communicator_mean": {
+                      "avg_latency_us": {
+                        "2": 2.0,
+                        "3": 30.0
+                      },
+                      "cv": {
+                        "mean_us": 16.0,
+                        "population": 0.875,
+                        "sample": 1.2374368670764582,
+                        "decision": "ABOVE",
+                        "convention": "population baseline; sample sensitivity (ADAPTATION G04)"
+                      },
+                      "candidates": [
+                        2
+                      ],
+                      "rank_scores": {
+                        "reference_mean_us": 16.0,
+                        "status": "DEFINED",
+                        "scores": {
+                          "2": 0.875,
+                          "3": -0.875
+                        }
+                      },
+                      "rule": "minimum avg_latency; 20% filter unresolved and disabled"
+                    },
+                    "sample_weighted": {
+                      "avg_latency_us": {
+                        "2": 2.0,
+                        "3": 30.0
+                      },
+                      "cv": {
+                        "mean_us": 16.0,
+                        "population": 0.875,
+                        "sample": 1.2374368670764582,
+                        "decision": "ABOVE",
+                        "convention": "population baseline; sample sensitivity (ADAPTATION G04)"
+                      },
+                      "candidates": [
+                        2
+                      ],
+                      "rank_scores": {
+                        "reference_mean_us": 16.0,
+                        "status": "DEFINED",
+                        "scores": {
+                          "2": 0.875,
+                          "3": -0.875
+                        }
+                      },
+                      "rule": "minimum avg_latency; 20% filter unresolved and disabled"
+                    }
+                  }
+                }
+              },
+              "max_avg_latency_us": {
+                "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa": 11.0,
+                "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb": 30.0,
+                "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc": 15.0
+              },
+              "clique_scores": {
+                "reference_mean_us": 13.666666666666666,
+                "status": "DEFINED",
+                "scores": {
+                  "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa": -0.2682926829268293,
+                  "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb": 0.17073170731707332,
+                  "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc": 0.09756097560975618
+                }
+              },
+              "group_cv": {
+                "mean_us": 18.666666666666668,
+                "population": 0.43813729094233195,
+                "sample": 0.5366064000470256,
+                "decision": "ABOVE",
+                "convention": "population baseline; sample sensitivity (ADAPTATION G04)"
+              },
+              "stage1": "MAX_GROUP",
+              "status": "PROVISIONAL_CANDIDATE"
+            }
+          },
+          "groups": {
+            "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa": {
+              "id_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+              "members": [
+                0,
+                1
+              ],
+              "local_communicators": [
+                {
+                  "node_id": "node-0",
+                  "global_rank": 0,
+                  "process_instance": "p0",
+                  "comm_generation": 1,
+                  "avg_latency_us": 9.0,
+                  "sample_count": 1,
+                  "min_us": 9.0,
+                  "max_us": 9.0
+                },
+                {
+                  "node_id": "node-1",
+                  "global_rank": 1,
+                  "process_instance": "p1",
+                  "comm_generation": 1,
+                  "avg_latency_us": 11.0,
+                  "sample_count": 1,
+                  "min_us": 11.0,
+                  "max_us": 11.0
+                }
+              ],
+              "max_avg_latency_us": 11.0,
+              "clique_mean_us": 10.0
+            },
+            "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb": {
+              "id_hash": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+              "members": [
+                2,
+                3
+              ],
+              "local_communicators": [
+                {
+                  "node_id": "node-0",
+                  "global_rank": 2,
+                  "process_instance": "p2",
+                  "comm_generation": 1,
+                  "avg_latency_us": 2.0,
+                  "sample_count": 1,
+                  "min_us": 2.0,
+                  "max_us": 2.0
+                },
+                {
+                  "node_id": "node-1",
+                  "global_rank": 3,
+                  "process_instance": "p3",
+                  "comm_generation": 1,
+                  "avg_latency_us": 30.0,
+                  "sample_count": 1,
+                  "min_us": 30.0,
+                  "max_us": 30.0
+                }
+              ],
+              "max_avg_latency_us": 30.0,
+              "clique_mean_us": 16.0
+            },
+            "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc": {
+              "id_hash": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+              "members": [
+                4,
+                5
+              ],
+              "local_communicators": [
+                {
+                  "node_id": "node-0",
+                  "global_rank": 4,
+                  "process_instance": "p4",
+                  "comm_generation": 1,
+                  "avg_latency_us": 15.0,
+                  "sample_count": 1,
+                  "min_us": 15.0,
+                  "max_us": 15.0
+                },
+                {
+                  "node_id": "node-1",
+                  "global_rank": 5,
+                  "process_instance": "p5",
+                  "comm_generation": 1,
+                  "avg_latency_us": 15.0,
+                  "sample_count": 1,
+                  "min_us": 15.0,
+                  "max_us": 15.0
+                }
+              ],
+              "max_avg_latency_us": 15.0,
+              "clique_mean_us": 15.0
+            }
+          },
+          "cross_tag": {
+            "conflict": false,
+            "support": {
+              "2": {
+                "labels": [
+                  "DP"
+                ],
+                "evidence": [
+                  {
+                    "label": "DP",
+                    "id_hash": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+                    "method": "unweighted_communicator_mean",
+                    "status": "PROVISIONAL_CANDIDATE",
+                    "avg_latency_us": 2.0,
+                    "rank_cv": {
+                      "mean_us": 16.0,
+                      "population": 0.875,
+                      "sample": 1.2374368670764582,
+                      "decision": "ABOVE",
+                      "convention": "population baseline; sample sensitivity (ADAPTATION G04)"
+                    },
+                    "comparison_rank_means_us": {
+                      "2": 2.0,
+                      "3": 30.0
+                    },
+                    "rule": "min rank after max group/CV"
+                  },
+                  {
+                    "label": "DP",
+                    "id_hash": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+                    "method": "sample_weighted",
+                    "status": "PROVISIONAL_CANDIDATE",
+                    "avg_latency_us": 2.0,
+                    "rank_cv": {
+                      "mean_us": 16.0,
+                      "population": 0.875,
+                      "sample": 1.2374368670764582,
+                      "decision": "ABOVE",
+                      "convention": "population baseline; sample sensitivity (ADAPTATION G04)"
+                    },
+                    "comparison_rank_means_us": {
+                      "2": 2.0,
+                      "3": 30.0
+                    },
+                    "rule": "min rank after max group/CV"
+                  }
+                ]
+              }
+            }
+          },
+          "completeness": {
+            "records": 6,
+            "independent_process_scopes": 6,
+            "communicator_scope_observations": 6,
+            "expected_instances": 6,
+            "valid_records": 6
+          },
+          "measurement_signatures": [
+            {
+              "api": "ncclAllReduce",
+              "count": 4,
+              "count_unit": "elements",
+              "datatype": 7,
+              "member_records": 6
+            }
+          ],
+          "risks": [],
+          "unresolved": [
+            "G04: 20% reference/filter undefined",
+            "G04: communicator aggregation weights undefined",
+            "G04: statistical references and std convention not uniquely specified"
+          ],
+          "interpretation": "Offline ordering evidence only; no final fault decision, probability or automatic diagnosis",
+          "final_alert": false,
+          "source": "CPU_SIMULATED_M4_REPLAY",
+          "input_sha256": "8b3e27a475e3c7326fe74050ebb6f369bfff4c8786f80efda75fb40c19ebaeca",
+          "manifest_sha256": "e9a6b24bb3fdccacd10146a59a05d065c33f4759e2186c3ebfbacd7797e98bf4"
+        },
+        "nodes": {
+          "node-0": {
+            "command": {
+              "schema_version": 1,
+              "run_id": "m6a-cpu",
+              "node_id": "node-0",
+              "profile_epoch": 1,
+              "expected_nodes": [
+                "node-0",
+                "node-1"
+              ],
+              "expected_ranks": [
+                0,
+                2,
+                4
+              ],
+              "requested_state": 0,
+              "command_id": "e1-g1-s0-node-0",
+              "generation": 1,
+              "local_generation": 1,
+              "deadline_seconds": 25.5,
+              "requested_at_seconds": 20.5
+            },
+            "ack": {
+              "command_id": "e1-g1-s0-node-0",
+              "command_sha256": "1dc7229b565135629afbfd50765c63a762d3e7b7e492efe6a4abc31ccd416b38",
+              "accepted_at_seconds": 20.5,
+              "local_generation": 1,
+              "kind": "COMMAND_ACCEPTED_ONLY",
+              "source": "CPU_LOCAL_CONTROLLER"
+            },
+            "applied": {
+              "0": {
+                "run_id": "m6a-cpu",
+                "node_id": "node-0",
+                "global_rank": 0,
+                "profile_epoch": 1,
+                "requested_state": 0,
+                "command_id": "e1-g1-s0-node-0",
+                "generation": 1,
+                "local_generation": 1,
+                "scope_sequence": 2,
+                "applied_at_seconds": 20.599999999999998,
+                "boundary": "legal_scope_start",
+                "source": "CPU_SIMULATED_PROBE"
+              },
+              "2": {
+                "run_id": "m6a-cpu",
+                "node_id": "node-0",
+                "global_rank": 2,
+                "profile_epoch": 1,
+                "requested_state": 0,
+                "command_id": "e1-g1-s0-node-0",
+                "generation": 1,
+                "local_generation": 1,
+                "scope_sequence": 2,
+                "applied_at_seconds": 20.599999999999998,
+                "boundary": "legal_scope_start",
+                "source": "CPU_SIMULATED_PROBE"
+              },
+              "4": {
+                "run_id": "m6a-cpu",
+                "node_id": "node-0",
+                "global_rank": 4,
+                "profile_epoch": 1,
+                "requested_state": 0,
+                "command_id": "e1-g1-s0-node-0",
+                "generation": 1,
+                "local_generation": 1,
+                "scope_sequence": 2,
+                "applied_at_seconds": 20.599999999999998,
+                "boundary": "legal_scope_start",
+                "source": "CPU_SIMULATED_PROBE"
+              }
+            },
+            "samples": [],
+            "ready": null,
+            "ignored_old": 3
+          },
+          "node-1": {
+            "command": {
+              "schema_version": 1,
+              "run_id": "m6a-cpu",
+              "node_id": "node-1",
+              "profile_epoch": 1,
+              "expected_nodes": [
+                "node-0",
+                "node-1"
+              ],
+              "expected_ranks": [
+                1,
+                3,
+                5
+              ],
+              "requested_state": 0,
+              "command_id": "e1-g1-s0-node-1",
+              "generation": 1,
+              "local_generation": 1,
+              "deadline_seconds": 25.5,
+              "requested_at_seconds": 20.5
+            },
+            "ack": {
+              "command_id": "e1-g1-s0-node-1",
+              "command_sha256": "3bd8928af7244c0f0a3a4657fe4e634a568bd5b0c8ab12acff7a18890bbc9ad5",
+              "accepted_at_seconds": 20.5,
+              "local_generation": 1,
+              "kind": "COMMAND_ACCEPTED_ONLY",
+              "source": "CPU_LOCAL_CONTROLLER"
+            },
+            "applied": {
+              "1": {
+                "run_id": "m6a-cpu",
+                "node_id": "node-1",
+                "global_rank": 1,
+                "profile_epoch": 1,
+                "requested_state": 0,
+                "command_id": "e1-g1-s0-node-1",
+                "generation": 1,
+                "local_generation": 1,
+                "scope_sequence": 2,
+                "applied_at_seconds": 20.599999999999998,
+                "boundary": "legal_scope_start",
+                "source": "CPU_SIMULATED_PROBE"
+              },
+              "3": {
+                "run_id": "m6a-cpu",
+                "node_id": "node-1",
+                "global_rank": 3,
+                "profile_epoch": 1,
+                "requested_state": 0,
+                "command_id": "e1-g1-s0-node-1",
+                "generation": 1,
+                "local_generation": 1,
+                "scope_sequence": 2,
+                "applied_at_seconds": 20.599999999999998,
+                "boundary": "legal_scope_start",
+                "source": "CPU_SIMULATED_PROBE"
+              },
+              "5": {
+                "run_id": "m6a-cpu",
+                "node_id": "node-1",
+                "global_rank": 5,
+                "profile_epoch": 1,
+                "requested_state": 0,
+                "command_id": "e1-g1-s0-node-1",
+                "generation": 1,
+                "local_generation": 1,
+                "scope_sequence": 2,
+                "applied_at_seconds": 20.599999999999998,
+                "boundary": "legal_scope_start",
+                "source": "CPU_SIMULATED_PROBE"
+              }
+            },
+            "samples": [],
+            "ready": null,
+            "ignored_old": 3
+          }
+        },
+        "transitions": [
+          "MONITOR",
+          "PROFILE_REQUESTED",
+          "PROFILE_ARMING",
+          "PROFILE_COLLECTING",
+          "PROFILE_DRAINING",
+          "PROFILE_READY",
+          "ANALYZED_PROVISIONAL",
+          "MONITOR_RESET_REQUESTED",
+          "MONITOR"
+        ],
+        "completeness": {
+          "records": 6,
+          "independent_process_scopes": 6,
+          "communicator_scope_observations": 6,
+          "expected_instances": 6,
+          "valid_records": 6
+        },
+        "data_sha256": "8b3e27a475e3c7326fe74050ebb6f369bfff4c8786f80efda75fb40c19ebaeca",
+        "profile_nodes": {
+          "node-0": {
+            "command": {
+              "schema_version": 1,
+              "run_id": "m6a-cpu",
+              "node_id": "node-0",
+              "profile_epoch": 1,
+              "expected_nodes": [
+                "node-0",
+                "node-1"
+              ],
+              "expected_ranks": [
+                0,
+                2,
+                4
+              ],
+              "requested_state": 1,
+              "command_id": "e1-g1-s1-node-0",
+              "generation": 1,
+              "local_generation": 1,
+              "deadline_seconds": 5.0,
+              "requested_at_seconds": 0
+            },
+            "ack": {
+              "command_id": "e1-g1-s1-node-0",
+              "command_sha256": "640ce14e3cafe221d3edf9ddde5c5e2b0c7ba008171fa6dc9b6dd3ebd64932f5",
+              "accepted_at_seconds": 0,
+              "local_generation": 1,
+              "kind": "COMMAND_ACCEPTED_ONLY",
+              "source": "CPU_LOCAL_CONTROLLER"
+            },
+            "applied": {
+              "0": {
+                "run_id": "m6a-cpu",
+                "node_id": "node-0",
+                "global_rank": 0,
+                "profile_epoch": 1,
+                "requested_state": 1,
+                "command_id": "e1-g1-s1-node-0",
+                "generation": 1,
+                "local_generation": 1,
+                "scope_sequence": 1,
+                "applied_at_seconds": 0.1,
+                "boundary": "legal_scope_start",
+                "source": "CPU_SIMULATED_PROBE"
+              },
+              "2": {
+                "run_id": "m6a-cpu",
+                "node_id": "node-0",
+                "global_rank": 2,
+                "profile_epoch": 1,
+                "requested_state": 1,
+                "command_id": "e1-g1-s1-node-0",
+                "generation": 1,
+                "local_generation": 1,
+                "scope_sequence": 1,
+                "applied_at_seconds": 0.1,
+                "boundary": "legal_scope_start",
+                "source": "CPU_SIMULATED_PROBE"
+              },
+              "4": {
+                "run_id": "m6a-cpu",
+                "node_id": "node-0",
+                "global_rank": 4,
+                "profile_epoch": 1,
+                "requested_state": 1,
+                "command_id": "e1-g1-s1-node-0",
+                "generation": 1,
+                "local_generation": 1,
+                "scope_sequence": 1,
+                "applied_at_seconds": 0.1,
+                "boundary": "legal_scope_start",
+                "source": "CPU_SIMULATED_PROBE"
+              }
+            },
+            "samples": [
+              {
+                "source": "CPU_SIMULATED_PROBE",
+                "row": {
+                  "run_id": "m6a-cpu",
+                  "profile_epoch": 1,
+                  "node_id": "node-0",
+                  "global_rank": 0,
+                  "id_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                  "comm_generation": 1,
+                  "process_instance": "p0",
+                  "comm_rank": 0,
+                  "comm_size": 2,
+                  "identity_source": "UNIQUE_ID_SHA256",
+                  "timing_scope": "collective",
+                  "timing_status": "VALID",
+                  "duration_us": 9,
+                  "duration_unit": "us",
+                  "timing_definition": "synthetic_nonnegative_v1",
+                  "state": 1,
+                  "api": "ncclAllReduce",
+                  "count": 4,
+                  "count_unit": "elements",
+                  "datatype": 7,
+                  "group_id": 0,
+                  "group_depth": 0,
+                  "thread_id": "t0",
+                  "sample_seq": 1,
+                  "result": 0,
+                  "cuda_results": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    -1
+                  ]
+                },
+                "sha256": "aeef9e9c9f25bd0c5d6bc2ce92a2f7eb722a324e98c15aff43ca55e57b621768",
+                "collected_at_seconds": 1,
+                "command_id": "e1-g1-s1-node-0",
+                "generation": 1,
+                "local_generation": 1
+              },
+              {
+                "source": "CPU_SIMULATED_PROBE",
+                "row": {
+                  "run_id": "m6a-cpu",
+                  "profile_epoch": 1,
+                  "node_id": "node-0",
+                  "global_rank": 2,
+                  "id_hash": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+                  "comm_generation": 1,
+                  "process_instance": "p2",
+                  "comm_rank": 0,
+                  "comm_size": 2,
+                  "identity_source": "UNIQUE_ID_SHA256",
+                  "timing_scope": "collective",
+                  "timing_status": "VALID",
+                  "duration_us": 2,
+                  "duration_unit": "us",
+                  "timing_definition": "synthetic_nonnegative_v1",
+                  "state": 1,
+                  "api": "ncclAllReduce",
+                  "count": 4,
+                  "count_unit": "elements",
+                  "datatype": 7,
+                  "group_id": 0,
+                  "group_depth": 0,
+                  "thread_id": "t0",
+                  "sample_seq": 1,
+                  "result": 0,
+                  "cuda_results": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    -1
+                  ]
+                },
+                "sha256": "78544bbc77fe4f85b939f33271769eaf1fb22e60bdcae6f1a2106508186891cc",
+                "collected_at_seconds": 1,
+                "command_id": "e1-g1-s1-node-0",
+                "generation": 1,
+                "local_generation": 1
+              },
+              {
+                "source": "CPU_SIMULATED_PROBE",
+                "row": {
+                  "run_id": "m6a-cpu",
+                  "profile_epoch": 1,
+                  "node_id": "node-0",
+                  "global_rank": 4,
+                  "id_hash": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+                  "comm_generation": 1,
+                  "process_instance": "p4",
+                  "comm_rank": 0,
+                  "comm_size": 2,
+                  "identity_source": "UNIQUE_ID_SHA256",
+                  "timing_scope": "collective",
+                  "timing_status": "VALID",
+                  "duration_us": 15,
+                  "duration_unit": "us",
+                  "timing_definition": "synthetic_nonnegative_v1",
+                  "state": 1,
+                  "api": "ncclAllReduce",
+                  "count": 4,
+                  "count_unit": "elements",
+                  "datatype": 7,
+                  "group_id": 0,
+                  "group_depth": 0,
+                  "thread_id": "t0",
+                  "sample_seq": 1,
+                  "result": 0,
+                  "cuda_results": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    -1
+                  ]
+                },
+                "sha256": "0b66f8f8b846e75ea378ec696209054605f34503f444bd1a0bf4ab3259b8f229",
+                "collected_at_seconds": 1,
+                "command_id": "e1-g1-s1-node-0",
+                "generation": 1,
+                "local_generation": 1
+              }
+            ],
+            "ready": {
+              "command_sha256": "640ce14e3cafe221d3edf9ddde5c5e2b0c7ba008171fa6dc9b6dd3ebd64932f5",
+              "data_sha256": "71a74dda88c1b4f9254c3c22d080f164f8791deee72ec362df019daaf4348158",
+              "drained_at_seconds": 20.2,
+              "records": 3,
+              "source": "CPU_SIMULATED_DRAIN",
+              "completeness": "PENDING_M4_VALIDATION"
+            },
+            "ignored_old": 0,
+            "outside_window": 0
+          },
+          "node-1": {
+            "command": {
+              "schema_version": 1,
+              "run_id": "m6a-cpu",
+              "node_id": "node-1",
+              "profile_epoch": 1,
+              "expected_nodes": [
+                "node-0",
+                "node-1"
+              ],
+              "expected_ranks": [
+                1,
+                3,
+                5
+              ],
+              "requested_state": 1,
+              "command_id": "e1-g1-s1-node-1",
+              "generation": 1,
+              "local_generation": 1,
+              "deadline_seconds": 5.0,
+              "requested_at_seconds": 0
+            },
+            "ack": {
+              "command_id": "e1-g1-s1-node-1",
+              "command_sha256": "01437ff1c2962a72ebc80af5890106e2379a3d40ea9231aea3aa944fc731af3c",
+              "accepted_at_seconds": 0,
+              "local_generation": 1,
+              "kind": "COMMAND_ACCEPTED_ONLY",
+              "source": "CPU_LOCAL_CONTROLLER"
+            },
+            "applied": {
+              "1": {
+                "run_id": "m6a-cpu",
+                "node_id": "node-1",
+                "global_rank": 1,
+                "profile_epoch": 1,
+                "requested_state": 1,
+                "command_id": "e1-g1-s1-node-1",
+                "generation": 1,
+                "local_generation": 1,
+                "scope_sequence": 1,
+                "applied_at_seconds": 0.1,
+                "boundary": "legal_scope_start",
+                "source": "CPU_SIMULATED_PROBE"
+              },
+              "3": {
+                "run_id": "m6a-cpu",
+                "node_id": "node-1",
+                "global_rank": 3,
+                "profile_epoch": 1,
+                "requested_state": 1,
+                "command_id": "e1-g1-s1-node-1",
+                "generation": 1,
+                "local_generation": 1,
+                "scope_sequence": 1,
+                "applied_at_seconds": 0.1,
+                "boundary": "legal_scope_start",
+                "source": "CPU_SIMULATED_PROBE"
+              },
+              "5": {
+                "run_id": "m6a-cpu",
+                "node_id": "node-1",
+                "global_rank": 5,
+                "profile_epoch": 1,
+                "requested_state": 1,
+                "command_id": "e1-g1-s1-node-1",
+                "generation": 1,
+                "local_generation": 1,
+                "scope_sequence": 1,
+                "applied_at_seconds": 0.1,
+                "boundary": "legal_scope_start",
+                "source": "CPU_SIMULATED_PROBE"
+              }
+            },
+            "samples": [
+              {
+                "source": "CPU_SIMULATED_PROBE",
+                "row": {
+                  "run_id": "m6a-cpu",
+                  "profile_epoch": 1,
+                  "node_id": "node-1",
+                  "global_rank": 1,
+                  "id_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                  "comm_generation": 1,
+                  "process_instance": "p1",
+                  "comm_rank": 1,
+                  "comm_size": 2,
+                  "identity_source": "UNIQUE_ID_SHA256",
+                  "timing_scope": "collective",
+                  "timing_status": "VALID",
+                  "duration_us": 11,
+                  "duration_unit": "us",
+                  "timing_definition": "synthetic_nonnegative_v1",
+                  "state": 1,
+                  "api": "ncclAllReduce",
+                  "count": 4,
+                  "count_unit": "elements",
+                  "datatype": 7,
+                  "group_id": 0,
+                  "group_depth": 0,
+                  "thread_id": "t0",
+                  "sample_seq": 1,
+                  "result": 0,
+                  "cuda_results": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    -1
+                  ]
+                },
+                "sha256": "65171c6fd33d1853c05804b236cfc4f527623baf1ad9569c37eef241c4523634",
+                "collected_at_seconds": 1,
+                "command_id": "e1-g1-s1-node-1",
+                "generation": 1,
+                "local_generation": 1
+              },
+              {
+                "source": "CPU_SIMULATED_PROBE",
+                "row": {
+                  "run_id": "m6a-cpu",
+                  "profile_epoch": 1,
+                  "node_id": "node-1",
+                  "global_rank": 3,
+                  "id_hash": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+                  "comm_generation": 1,
+                  "process_instance": "p3",
+                  "comm_rank": 1,
+                  "comm_size": 2,
+                  "identity_source": "UNIQUE_ID_SHA256",
+                  "timing_scope": "collective",
+                  "timing_status": "VALID",
+                  "duration_us": 30,
+                  "duration_unit": "us",
+                  "timing_definition": "synthetic_nonnegative_v1",
+                  "state": 1,
+                  "api": "ncclAllReduce",
+                  "count": 4,
+                  "count_unit": "elements",
+                  "datatype": 7,
+                  "group_id": 0,
+                  "group_depth": 0,
+                  "thread_id": "t0",
+                  "sample_seq": 1,
+                  "result": 0,
+                  "cuda_results": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    -1
+                  ]
+                },
+                "sha256": "0a18ddfe3e413236c42c2be1b706ab8543e9848c3a330017098a971d8cb6f9cb",
+                "collected_at_seconds": 1,
+                "command_id": "e1-g1-s1-node-1",
+                "generation": 1,
+                "local_generation": 1
+              },
+              {
+                "source": "CPU_SIMULATED_PROBE",
+                "row": {
+                  "run_id": "m6a-cpu",
+                  "profile_epoch": 1,
+                  "node_id": "node-1",
+                  "global_rank": 5,
+                  "id_hash": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+                  "comm_generation": 1,
+                  "process_instance": "p5",
+                  "comm_rank": 1,
+                  "comm_size": 2,
+                  "identity_source": "UNIQUE_ID_SHA256",
+                  "timing_scope": "collective",
+                  "timing_status": "VALID",
+                  "duration_us": 15,
+                  "duration_unit": "us",
+                  "timing_definition": "synthetic_nonnegative_v1",
+                  "state": 1,
+                  "api": "ncclAllReduce",
+                  "count": 4,
+                  "count_unit": "elements",
+                  "datatype": 7,
+                  "group_id": 0,
+                  "group_depth": 0,
+                  "thread_id": "t0",
+                  "sample_seq": 1,
+                  "result": 0,
+                  "cuda_results": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    -1
+                  ]
+                },
+                "sha256": "f7edaea0f1c5c036738c597bc5d866b877cf7af5bd8304b04e65dabc7b50f040",
+                "collected_at_seconds": 1,
+                "command_id": "e1-g1-s1-node-1",
+                "generation": 1,
+                "local_generation": 1
+              }
+            ],
+            "ready": {
+              "command_sha256": "01437ff1c2962a72ebc80af5890106e2379a3d40ea9231aea3aa944fc731af3c",
+              "data_sha256": "eb5305efb1a6bc5ce53ab4ac40b57e483b0db3a28fb0e3fcf975ae99c56a2ffd",
+              "drained_at_seconds": 20.2,
+              "records": 3,
+              "source": "CPU_SIMULATED_DRAIN",
+              "completeness": "PENDING_M4_VALIDATION"
+            },
+            "ignored_old": 0,
+            "outside_window": 0
+          }
+        },
+        "reset_verified": true,
+        "reset_nodes": {
+          "node-0": {
+            "command": {
+              "schema_version": 1,
+              "run_id": "m6a-cpu",
+              "node_id": "node-0",
+              "profile_epoch": 1,
+              "expected_nodes": [
+                "node-0",
+                "node-1"
+              ],
+              "expected_ranks": [
+                0,
+                2,
+                4
+              ],
+              "requested_state": 0,
+              "command_id": "e1-g1-s0-node-0",
+              "generation": 1,
+              "local_generation": 1,
+              "deadline_seconds": 25.5,
+              "requested_at_seconds": 20.5
+            },
+            "ack": {
+              "command_id": "e1-g1-s0-node-0",
+              "command_sha256": "1dc7229b565135629afbfd50765c63a762d3e7b7e492efe6a4abc31ccd416b38",
+              "accepted_at_seconds": 20.5,
+              "local_generation": 1,
+              "kind": "COMMAND_ACCEPTED_ONLY",
+              "source": "CPU_LOCAL_CONTROLLER"
+            },
+            "applied": {
+              "0": {
+                "run_id": "m6a-cpu",
+                "node_id": "node-0",
+                "global_rank": 0,
+                "profile_epoch": 1,
+                "requested_state": 0,
+                "command_id": "e1-g1-s0-node-0",
+                "generation": 1,
+                "local_generation": 1,
+                "scope_sequence": 2,
+                "applied_at_seconds": 20.599999999999998,
+                "boundary": "legal_scope_start",
+                "source": "CPU_SIMULATED_PROBE"
+              },
+              "2": {
+                "run_id": "m6a-cpu",
+                "node_id": "node-0",
+                "global_rank": 2,
+                "profile_epoch": 1,
+                "requested_state": 0,
+                "command_id": "e1-g1-s0-node-0",
+                "generation": 1,
+                "local_generation": 1,
+                "scope_sequence": 2,
+                "applied_at_seconds": 20.599999999999998,
+                "boundary": "legal_scope_start",
+                "source": "CPU_SIMULATED_PROBE"
+              },
+              "4": {
+                "run_id": "m6a-cpu",
+                "node_id": "node-0",
+                "global_rank": 4,
+                "profile_epoch": 1,
+                "requested_state": 0,
+                "command_id": "e1-g1-s0-node-0",
+                "generation": 1,
+                "local_generation": 1,
+                "scope_sequence": 2,
+                "applied_at_seconds": 20.599999999999998,
+                "boundary": "legal_scope_start",
+                "source": "CPU_SIMULATED_PROBE"
+              }
+            },
+            "samples": [],
+            "ready": null,
+            "ignored_old": 3
+          },
+          "node-1": {
+            "command": {
+              "schema_version": 1,
+              "run_id": "m6a-cpu",
+              "node_id": "node-1",
+              "profile_epoch": 1,
+              "expected_nodes": [
+                "node-0",
+                "node-1"
+              ],
+              "expected_ranks": [
+                1,
+                3,
+                5
+              ],
+              "requested_state": 0,
+              "command_id": "e1-g1-s0-node-1",
+              "generation": 1,
+              "local_generation": 1,
+              "deadline_seconds": 25.5,
+              "requested_at_seconds": 20.5
+            },
+            "ack": {
+              "command_id": "e1-g1-s0-node-1",
+              "command_sha256": "3bd8928af7244c0f0a3a4657fe4e634a568bd5b0c8ab12acff7a18890bbc9ad5",
+              "accepted_at_seconds": 20.5,
+              "local_generation": 1,
+              "kind": "COMMAND_ACCEPTED_ONLY",
+              "source": "CPU_LOCAL_CONTROLLER"
+            },
+            "applied": {
+              "1": {
+                "run_id": "m6a-cpu",
+                "node_id": "node-1",
+                "global_rank": 1,
+                "profile_epoch": 1,
+                "requested_state": 0,
+                "command_id": "e1-g1-s0-node-1",
+                "generation": 1,
+                "local_generation": 1,
+                "scope_sequence": 2,
+                "applied_at_seconds": 20.599999999999998,
+                "boundary": "legal_scope_start",
+                "source": "CPU_SIMULATED_PROBE"
+              },
+              "3": {
+                "run_id": "m6a-cpu",
+                "node_id": "node-1",
+                "global_rank": 3,
+                "profile_epoch": 1,
+                "requested_state": 0,
+                "command_id": "e1-g1-s0-node-1",
+                "generation": 1,
+                "local_generation": 1,
+                "scope_sequence": 2,
+                "applied_at_seconds": 20.599999999999998,
+                "boundary": "legal_scope_start",
+                "source": "CPU_SIMULATED_PROBE"
+              },
+              "5": {
+                "run_id": "m6a-cpu",
+                "node_id": "node-1",
+                "global_rank": 5,
+                "profile_epoch": 1,
+                "requested_state": 0,
+                "command_id": "e1-g1-s0-node-1",
+                "generation": 1,
+                "local_generation": 1,
+                "scope_sequence": 2,
+                "applied_at_seconds": 20.599999999999998,
+                "boundary": "legal_scope_start",
+                "source": "CPU_SIMULATED_PROBE"
+              }
+            },
+            "samples": [],
+            "ready": null,
+            "ignored_old": 3
+          }
+        },
+        "result": {
+          "schema_version": 1,
+          "context": {
+            "run_id": "m6a-cpu",
+            "profile_epoch": 1
+          },
+          "status": "PROVISIONAL_CANDIDATE",
+          "final_fault_ranks": [],
+          "candidate_ranks": [
+            2
+          ],
+          "tags": {
+            "DP": {
+              "excluded_single_rank": [],
+              "selected_groups": [
+                "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+              ],
+              "stage2": {
+                "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb": {
+                  "status": "PROVISIONAL_CANDIDATE",
+                  "sensitivity_disagreement": false,
+                  "methods": {
+                    "unweighted_communicator_mean": {
+                      "avg_latency_us": {
+                        "2": 2.0,
+                        "3": 30.0
+                      },
+                      "cv": {
+                        "mean_us": 16.0,
+                        "population": 0.875,
+                        "sample": 1.2374368670764582,
+                        "decision": "ABOVE",
+                        "convention": "population baseline; sample sensitivity (ADAPTATION G04)"
+                      },
+                      "candidates": [
+                        2
+                      ],
+                      "rank_scores": {
+                        "reference_mean_us": 16.0,
+                        "status": "DEFINED",
+                        "scores": {
+                          "2": 0.875,
+                          "3": -0.875
+                        }
+                      },
+                      "rule": "minimum avg_latency; 20% filter unresolved and disabled"
+                    },
+                    "sample_weighted": {
+                      "avg_latency_us": {
+                        "2": 2.0,
+                        "3": 30.0
+                      },
+                      "cv": {
+                        "mean_us": 16.0,
+                        "population": 0.875,
+                        "sample": 1.2374368670764582,
+                        "decision": "ABOVE",
+                        "convention": "population baseline; sample sensitivity (ADAPTATION G04)"
+                      },
+                      "candidates": [
+                        2
+                      ],
+                      "rank_scores": {
+                        "reference_mean_us": 16.0,
+                        "status": "DEFINED",
+                        "scores": {
+                          "2": 0.875,
+                          "3": -0.875
+                        }
+                      },
+                      "rule": "minimum avg_latency; 20% filter unresolved and disabled"
+                    }
+                  }
+                }
+              },
+              "max_avg_latency_us": {
+                "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa": 11.0,
+                "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb": 30.0,
+                "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc": 15.0
+              },
+              "clique_scores": {
+                "reference_mean_us": 13.666666666666666,
+                "status": "DEFINED",
+                "scores": {
+                  "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa": -0.2682926829268293,
+                  "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb": 0.17073170731707332,
+                  "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc": 0.09756097560975618
+                }
+              },
+              "group_cv": {
+                "mean_us": 18.666666666666668,
+                "population": 0.43813729094233195,
+                "sample": 0.5366064000470256,
+                "decision": "ABOVE",
+                "convention": "population baseline; sample sensitivity (ADAPTATION G04)"
+              },
+              "stage1": "MAX_GROUP",
+              "status": "PROVISIONAL_CANDIDATE"
+            }
+          },
+          "groups": {
+            "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa": {
+              "id_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+              "members": [
+                0,
+                1
+              ],
+              "local_communicators": [
+                {
+                  "node_id": "node-0",
+                  "global_rank": 0,
+                  "process_instance": "p0",
+                  "comm_generation": 1,
+                  "avg_latency_us": 9.0,
+                  "sample_count": 1,
+                  "min_us": 9.0,
+                  "max_us": 9.0
+                },
+                {
+                  "node_id": "node-1",
+                  "global_rank": 1,
+                  "process_instance": "p1",
+                  "comm_generation": 1,
+                  "avg_latency_us": 11.0,
+                  "sample_count": 1,
+                  "min_us": 11.0,
+                  "max_us": 11.0
+                }
+              ],
+              "max_avg_latency_us": 11.0,
+              "clique_mean_us": 10.0
+            },
+            "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb": {
+              "id_hash": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+              "members": [
+                2,
+                3
+              ],
+              "local_communicators": [
+                {
+                  "node_id": "node-0",
+                  "global_rank": 2,
+                  "process_instance": "p2",
+                  "comm_generation": 1,
+                  "avg_latency_us": 2.0,
+                  "sample_count": 1,
+                  "min_us": 2.0,
+                  "max_us": 2.0
+                },
+                {
+                  "node_id": "node-1",
+                  "global_rank": 3,
+                  "process_instance": "p3",
+                  "comm_generation": 1,
+                  "avg_latency_us": 30.0,
+                  "sample_count": 1,
+                  "min_us": 30.0,
+                  "max_us": 30.0
+                }
+              ],
+              "max_avg_latency_us": 30.0,
+              "clique_mean_us": 16.0
+            },
+            "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc": {
+              "id_hash": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+              "members": [
+                4,
+                5
+              ],
+              "local_communicators": [
+                {
+                  "node_id": "node-0",
+                  "global_rank": 4,
+                  "process_instance": "p4",
+                  "comm_generation": 1,
+                  "avg_latency_us": 15.0,
+                  "sample_count": 1,
+                  "min_us": 15.0,
+                  "max_us": 15.0
+                },
+                {
+                  "node_id": "node-1",
+                  "global_rank": 5,
+                  "process_instance": "p5",
+                  "comm_generation": 1,
+                  "avg_latency_us": 15.0,
+                  "sample_count": 1,
+                  "min_us": 15.0,
+                  "max_us": 15.0
+                }
+              ],
+              "max_avg_latency_us": 15.0,
+              "clique_mean_us": 15.0
+            }
+          },
+          "cross_tag": {
+            "conflict": false,
+            "support": {
+              "2": {
+                "labels": [
+                  "DP"
+                ],
+                "evidence": [
+                  {
+                    "label": "DP",
+                    "id_hash": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+                    "method": "unweighted_communicator_mean",
+                    "status": "PROVISIONAL_CANDIDATE",
+                    "avg_latency_us": 2.0,
+                    "rank_cv": {
+                      "mean_us": 16.0,
+                      "population": 0.875,
+                      "sample": 1.2374368670764582,
+                      "decision": "ABOVE",
+                      "convention": "population baseline; sample sensitivity (ADAPTATION G04)"
+                    },
+                    "comparison_rank_means_us": {
+                      "2": 2.0,
+                      "3": 30.0
+                    },
+                    "rule": "min rank after max group/CV"
+                  },
+                  {
+                    "label": "DP",
+                    "id_hash": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+                    "method": "sample_weighted",
+                    "status": "PROVISIONAL_CANDIDATE",
+                    "avg_latency_us": 2.0,
+                    "rank_cv": {
+                      "mean_us": 16.0,
+                      "population": 0.875,
+                      "sample": 1.2374368670764582,
+                      "decision": "ABOVE",
+                      "convention": "population baseline; sample sensitivity (ADAPTATION G04)"
+                    },
+                    "comparison_rank_means_us": {
+                      "2": 2.0,
+                      "3": 30.0
+                    },
+                    "rule": "min rank after max group/CV"
+                  }
+                ]
+              }
+            }
+          },
+          "completeness": {
+            "records": 6,
+            "independent_process_scopes": 6,
+            "communicator_scope_observations": 6,
+            "expected_instances": 6,
+            "valid_records": 6
+          },
+          "measurement_signatures": [
+            {
+              "api": "ncclAllReduce",
+              "count": 4,
+              "count_unit": "elements",
+              "datatype": 7,
+              "member_records": 6
+            }
+          ],
+          "risks": [],
+          "unresolved": [
+            "G04: 20% reference/filter undefined",
+            "G04: communicator aggregation weights undefined",
+            "G04: statistical references and std convention not uniquely specified"
+          ],
+          "interpretation": "Offline ordering evidence only; no final fault decision, probability or automatic diagnosis",
+          "final_alert": false,
+          "source": "CPU_SIMULATED_M4_REPLAY",
+          "input_sha256": "8b3e27a475e3c7326fe74050ebb6f369bfff4c8786f80efda75fb40c19ebaeca",
+          "manifest_sha256": "e9a6b24bb3fdccacd10146a59a05d065c33f4759e2186c3ebfbacd7797e98bf4"
+        },
+        "closed_at_seconds": 20.7
+      },
+      {
+        "profile_epoch": 2,
+        "trigger": "MANUAL_TEST_TRIGGER",
+        "request_id": "second",
+        "request_sha256": "952e6960bf39a5c489d26feaf6995c16afae426dda585f97f02f076d2c89a2a5",
+        "command_at_seconds": 50.300000000000004,
+        "started_at_seconds": 30,
+        "last_time_seconds": 50.7,
+        "duration_seconds": 20.0,
+        "iteration_record": {
+          "run_id": "m6a-cpu",
+          "global_rank": 0,
+          "iteration": 1,
+          "iteration_time_ms": 100.0,
+          "timestamp": "2026-10-10T00:00:00+00:00",
+          "source": "CPU_SIMULATED_FRAMEWORK",
+          "timing_boundary": "cpu_simulated_iteration_end",
+          "cuda_completion_wait": false
+        },
+        "iteration_sha256": "adf215822e0771b9f4b4343f6b5c1f41e9ed6e37642f4a133f1c7296c0acd144",
+        "manifest": {
+          "schema_version": 1,
+          "context": {
+            "run_id": "m6a-cpu",
+            "profile_epoch": 2
+          },
+          "communicators": [
+            {
+              "id_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+              "members": [
+                0,
+                1
+              ],
+              "local_instances": [
+                {
+                  "node_id": "node-0",
+                  "global_rank": 0,
+                  "process_instance": "p0",
+                  "comm_generation": 1,
+                  "comm_rank": 0,
+                  "expected_samples": 1,
+                  "expected_records": 1
+                },
+                {
+                  "node_id": "node-1",
+                  "global_rank": 1,
+                  "process_instance": "p1",
+                  "comm_generation": 1,
+                  "comm_rank": 1,
+                  "expected_samples": 1,
+                  "expected_records": 1
+                }
+              ]
+            },
+            {
+              "id_hash": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+              "members": [
+                2,
+                3
+              ],
+              "local_instances": [
+                {
+                  "node_id": "node-0",
+                  "global_rank": 2,
+                  "process_instance": "p2",
+                  "comm_generation": 1,
+                  "comm_rank": 0,
+                  "expected_samples": 1,
+                  "expected_records": 1
+                },
+                {
+                  "node_id": "node-1",
+                  "global_rank": 3,
+                  "process_instance": "p3",
+                  "comm_generation": 1,
+                  "comm_rank": 1,
+                  "expected_samples": 1,
+                  "expected_records": 1
+                }
+              ]
+            },
+            {
+              "id_hash": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+              "members": [
+                4,
+                5
+              ],
+              "local_instances": [
+                {
+                  "node_id": "node-0",
+                  "global_rank": 4,
+                  "process_instance": "p4",
+                  "comm_generation": 1,
+                  "comm_rank": 0,
+                  "expected_samples": 1,
+                  "expected_records": 1
+                },
+                {
+                  "node_id": "node-1",
+                  "global_rank": 5,
+                  "process_instance": "p5",
+                  "comm_generation": 1,
+                  "comm_rank": 1,
+                  "expected_samples": 1,
+                  "expected_records": 1
+                }
+              ]
+            }
+          ],
+          "parallel_states": [
+            {
+              "label": "DP",
+              "members": [
+                0,
+                1
+              ],
+              "id_hashes": [
+                "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+              ],
+              "evidence": "explicit fixed fixture membership"
+            },
+            {
+              "label": "DP",
+              "members": [
+                2,
+                3
+              ],
+              "id_hashes": [
+                "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+              ],
+              "evidence": "explicit fixed fixture membership"
+            },
+            {
+              "label": "DP",
+              "members": [
+                4,
+                5
+              ],
+              "id_hashes": [
+                "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"
+              ],
+              "evidence": "explicit fixed fixture membership"
+            }
+          ],
+          "records": []
+        },
+        "manifest_sha256": "9485705ed5e5bc7cb7c38d7e52d8f71bbedf6f14e6e0a2ccded86f07b587ac3b",
+        "deadline_seconds": 55.300000000000004,
+        "window": {
+          "start_seconds": 30.2,
+          "end_seconds": 50.2,
+          "time_domain": "single_host_cpu_simulation_monotonic_seconds"
+        },
+        "failure": {
+          "status": "INCOMPLETE",
+          "reason": "empty Profile input",
+          "final_alert": false,
+          "final_fault_ranks": []
+        },
+        "analysis": null,
+        "nodes": {
+          "node-0": {
+            "command": {
+              "schema_version": 1,
+              "run_id": "m6a-cpu",
+              "node_id": "node-0",
+              "profile_epoch": 2,
+              "expected_nodes": [
+                "node-0",
+                "node-1"
+              ],
+              "expected_ranks": [
+                0,
+                2,
+                4
+              ],
+              "requested_state": 0,
+              "command_id": "e2-g1-s0-node-0",
+              "generation": 1,
+              "local_generation": 1,
+              "deadline_seconds": 55.300000000000004,
+              "requested_at_seconds": 50.300000000000004
+            },
+            "ack": {
+              "command_id": "e2-g1-s0-node-0",
+              "command_sha256": "394976e4c0b7e4f30ee36aa92f96491c67f76a42fd6ac1ade61a5042906f4e5d",
+              "accepted_at_seconds": 50.5,
+              "local_generation": 1,
+              "kind": "COMMAND_ACCEPTED_ONLY",
+              "source": "CPU_LOCAL_CONTROLLER"
+            },
+            "applied": {
+              "0": {
+                "run_id": "m6a-cpu",
+                "node_id": "node-0",
+                "global_rank": 0,
+                "profile_epoch": 2,
+                "requested_state": 0,
+                "command_id": "e2-g1-s0-node-0",
+                "generation": 1,
+                "local_generation": 1,
+                "scope_sequence": 4,
+                "applied_at_seconds": 50.6,
+                "boundary": "legal_scope_start",
+                "source": "CPU_SIMULATED_PROBE"
+              },
+              "2": {
+                "run_id": "m6a-cpu",
+                "node_id": "node-0",
+                "global_rank": 2,
+                "profile_epoch": 2,
+                "requested_state": 0,
+                "command_id": "e2-g1-s0-node-0",
+                "generation": 1,
+                "local_generation": 1,
+                "scope_sequence": 4,
+                "applied_at_seconds": 50.6,
+                "boundary": "legal_scope_start",
+                "source": "CPU_SIMULATED_PROBE"
+              },
+              "4": {
+                "run_id": "m6a-cpu",
+                "node_id": "node-0",
+                "global_rank": 4,
+                "profile_epoch": 2,
+                "requested_state": 0,
+                "command_id": "e2-g1-s0-node-0",
+                "generation": 1,
+                "local_generation": 1,
+                "scope_sequence": 4,
+                "applied_at_seconds": 50.6,
+                "boundary": "legal_scope_start",
+                "source": "CPU_SIMULATED_PROBE"
+              }
+            },
+            "samples": [],
+            "ready": null,
+            "ignored_old": 9
+          },
+          "node-1": {
+            "command": {
+              "schema_version": 1,
+              "run_id": "m6a-cpu",
+              "node_id": "node-1",
+              "profile_epoch": 2,
+              "expected_nodes": [
+                "node-0",
+                "node-1"
+              ],
+              "expected_ranks": [
+                1,
+                3,
+                5
+              ],
+              "requested_state": 0,
+              "command_id": "e2-g1-s0-node-1",
+              "generation": 1,
+              "local_generation": 1,
+              "deadline_seconds": 55.300000000000004,
+              "requested_at_seconds": 50.300000000000004
+            },
+            "ack": {
+              "command_id": "e2-g1-s0-node-1",
+              "command_sha256": "28d3405a55f482236576ce22fa1d01f055ab00a6d03cba8dff8f9bfc8fa422cb",
+              "accepted_at_seconds": 50.5,
+              "local_generation": 1,
+              "kind": "COMMAND_ACCEPTED_ONLY",
+              "source": "CPU_LOCAL_CONTROLLER"
+            },
+            "applied": {
+              "1": {
+                "run_id": "m6a-cpu",
+                "node_id": "node-1",
+                "global_rank": 1,
+                "profile_epoch": 2,
+                "requested_state": 0,
+                "command_id": "e2-g1-s0-node-1",
+                "generation": 1,
+                "local_generation": 1,
+                "scope_sequence": 4,
+                "applied_at_seconds": 50.6,
+                "boundary": "legal_scope_start",
+                "source": "CPU_SIMULATED_PROBE"
+              },
+              "3": {
+                "run_id": "m6a-cpu",
+                "node_id": "node-1",
+                "global_rank": 3,
+                "profile_epoch": 2,
+                "requested_state": 0,
+                "command_id": "e2-g1-s0-node-1",
+                "generation": 1,
+                "local_generation": 1,
+                "scope_sequence": 4,
+                "applied_at_seconds": 50.6,
+                "boundary": "legal_scope_start",
+                "source": "CPU_SIMULATED_PROBE"
+              },
+              "5": {
+                "run_id": "m6a-cpu",
+                "node_id": "node-1",
+                "global_rank": 5,
+                "profile_epoch": 2,
+                "requested_state": 0,
+                "command_id": "e2-g1-s0-node-1",
+                "generation": 1,
+                "local_generation": 1,
+                "scope_sequence": 4,
+                "applied_at_seconds": 50.6,
+                "boundary": "legal_scope_start",
+                "source": "CPU_SIMULATED_PROBE"
+              }
+            },
+            "samples": [],
+            "ready": null,
+            "ignored_old": 9
+          }
+        },
+        "transitions": [
+          "MONITOR",
+          "PROFILE_REQUESTED",
+          "PROFILE_ARMING",
+          "PROFILE_COLLECTING",
+          "PROFILE_DRAINING",
+          "MONITOR_RESET_REQUESTED",
+          "MONITOR"
+        ],
+        "profile_nodes": {
+          "node-0": {
+            "command": {
+              "schema_version": 1,
+              "run_id": "m6a-cpu",
+              "node_id": "node-0",
+              "profile_epoch": 2,
+              "expected_nodes": [
+                "node-0",
+                "node-1"
+              ],
+              "expected_ranks": [
+                0,
+                2,
+                4
+              ],
+              "requested_state": 1,
+              "command_id": "e2-g1-s1-node-0",
+              "generation": 1,
+              "local_generation": 1,
+              "deadline_seconds": 35.0,
+              "requested_at_seconds": 30
+            },
+            "ack": {
+              "command_id": "e2-g1-s1-node-0",
+              "command_sha256": "705e902061b2b7c0381c0e75113b2b60185cdef2c3e62f6370f7a77593cb3341",
+              "accepted_at_seconds": 30,
+              "local_generation": 1,
+              "kind": "COMMAND_ACCEPTED_ONLY",
+              "source": "CPU_LOCAL_CONTROLLER"
+            },
+            "applied": {
+              "0": {
+                "run_id": "m6a-cpu",
+                "node_id": "node-0",
+                "global_rank": 0,
+                "profile_epoch": 2,
+                "requested_state": 1,
+                "command_id": "e2-g1-s1-node-0",
+                "generation": 1,
+                "local_generation": 1,
+                "scope_sequence": 3,
+                "applied_at_seconds": 30.1,
+                "boundary": "legal_scope_start",
+                "source": "CPU_SIMULATED_PROBE"
+              },
+              "2": {
+                "run_id": "m6a-cpu",
+                "node_id": "node-0",
+                "global_rank": 2,
+                "profile_epoch": 2,
+                "requested_state": 1,
+                "command_id": "e2-g1-s1-node-0",
+                "generation": 1,
+                "local_generation": 1,
+                "scope_sequence": 3,
+                "applied_at_seconds": 30.1,
+                "boundary": "legal_scope_start",
+                "source": "CPU_SIMULATED_PROBE"
+              },
+              "4": {
+                "run_id": "m6a-cpu",
+                "node_id": "node-0",
+                "global_rank": 4,
+                "profile_epoch": 2,
+                "requested_state": 1,
+                "command_id": "e2-g1-s1-node-0",
+                "generation": 1,
+                "local_generation": 1,
+                "scope_sequence": 3,
+                "applied_at_seconds": 30.1,
+                "boundary": "legal_scope_start",
+                "source": "CPU_SIMULATED_PROBE"
+              }
+            },
+            "samples": [],
+            "ready": {
+              "command_sha256": "705e902061b2b7c0381c0e75113b2b60185cdef2c3e62f6370f7a77593cb3341",
+              "data_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+              "drained_at_seconds": 50.2,
+              "records": 0,
+              "source": "CPU_SIMULATED_DRAIN",
+              "completeness": "PENDING_M4_VALIDATION"
+            },
+            "ignored_old": 6,
+            "outside_window": 0
+          },
+          "node-1": {
+            "command": {
+              "schema_version": 1,
+              "run_id": "m6a-cpu",
+              "node_id": "node-1",
+              "profile_epoch": 2,
+              "expected_nodes": [
+                "node-0",
+                "node-1"
+              ],
+              "expected_ranks": [
+                1,
+                3,
+                5
+              ],
+              "requested_state": 1,
+              "command_id": "e2-g1-s1-node-1",
+              "generation": 1,
+              "local_generation": 1,
+              "deadline_seconds": 35.0,
+              "requested_at_seconds": 30
+            },
+            "ack": {
+              "command_id": "e2-g1-s1-node-1",
+              "command_sha256": "348a44c7d5e5d6d32b23febe6103ff0b13b683686d9e725ed6481417623d8ba4",
+              "accepted_at_seconds": 30,
+              "local_generation": 1,
+              "kind": "COMMAND_ACCEPTED_ONLY",
+              "source": "CPU_LOCAL_CONTROLLER"
+            },
+            "applied": {
+              "1": {
+                "run_id": "m6a-cpu",
+                "node_id": "node-1",
+                "global_rank": 1,
+                "profile_epoch": 2,
+                "requested_state": 1,
+                "command_id": "e2-g1-s1-node-1",
+                "generation": 1,
+                "local_generation": 1,
+                "scope_sequence": 3,
+                "applied_at_seconds": 30.1,
+                "boundary": "legal_scope_start",
+                "source": "CPU_SIMULATED_PROBE"
+              },
+              "3": {
+                "run_id": "m6a-cpu",
+                "node_id": "node-1",
+                "global_rank": 3,
+                "profile_epoch": 2,
+                "requested_state": 1,
+                "command_id": "e2-g1-s1-node-1",
+                "generation": 1,
+                "local_generation": 1,
+                "scope_sequence": 3,
+                "applied_at_seconds": 30.1,
+                "boundary": "legal_scope_start",
+                "source": "CPU_SIMULATED_PROBE"
+              },
+              "5": {
+                "run_id": "m6a-cpu",
+                "node_id": "node-1",
+                "global_rank": 5,
+                "profile_epoch": 2,
+                "requested_state": 1,
+                "command_id": "e2-g1-s1-node-1",
+                "generation": 1,
+                "local_generation": 1,
+                "scope_sequence": 3,
+                "applied_at_seconds": 30.1,
+                "boundary": "legal_scope_start",
+                "source": "CPU_SIMULATED_PROBE"
+              }
+            },
+            "samples": [],
+            "ready": {
+              "command_sha256": "348a44c7d5e5d6d32b23febe6103ff0b13b683686d9e725ed6481417623d8ba4",
+              "data_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+              "drained_at_seconds": 50.2,
+              "records": 0,
+              "source": "CPU_SIMULATED_DRAIN",
+              "completeness": "PENDING_M4_VALIDATION"
+            },
+            "ignored_old": 6,
+            "outside_window": 0
+          }
+        },
+        "reset_verified": true,
+        "reset_nodes": {
+          "node-0": {
+            "command": {
+              "schema_version": 1,
+              "run_id": "m6a-cpu",
+              "node_id": "node-0",
+              "profile_epoch": 2,
+              "expected_nodes": [
+                "node-0",
+                "node-1"
+              ],
+              "expected_ranks": [
+                0,
+                2,
+                4
+              ],
+              "requested_state": 0,
+              "command_id": "e2-g1-s0-node-0",
+              "generation": 1,
+              "local_generation": 1,
+              "deadline_seconds": 55.300000000000004,
+              "requested_at_seconds": 50.300000000000004
+            },
+            "ack": {
+              "command_id": "e2-g1-s0-node-0",
+              "command_sha256": "394976e4c0b7e4f30ee36aa92f96491c67f76a42fd6ac1ade61a5042906f4e5d",
+              "accepted_at_seconds": 50.5,
+              "local_generation": 1,
+              "kind": "COMMAND_ACCEPTED_ONLY",
+              "source": "CPU_LOCAL_CONTROLLER"
+            },
+            "applied": {
+              "0": {
+                "run_id": "m6a-cpu",
+                "node_id": "node-0",
+                "global_rank": 0,
+                "profile_epoch": 2,
+                "requested_state": 0,
+                "command_id": "e2-g1-s0-node-0",
+                "generation": 1,
+                "local_generation": 1,
+                "scope_sequence": 4,
+                "applied_at_seconds": 50.6,
+                "boundary": "legal_scope_start",
+                "source": "CPU_SIMULATED_PROBE"
+              },
+              "2": {
+                "run_id": "m6a-cpu",
+                "node_id": "node-0",
+                "global_rank": 2,
+                "profile_epoch": 2,
+                "requested_state": 0,
+                "command_id": "e2-g1-s0-node-0",
+                "generation": 1,
+                "local_generation": 1,
+                "scope_sequence": 4,
+                "applied_at_seconds": 50.6,
+                "boundary": "legal_scope_start",
+                "source": "CPU_SIMULATED_PROBE"
+              },
+              "4": {
+                "run_id": "m6a-cpu",
+                "node_id": "node-0",
+                "global_rank": 4,
+                "profile_epoch": 2,
+                "requested_state": 0,
+                "command_id": "e2-g1-s0-node-0",
+                "generation": 1,
+                "local_generation": 1,
+                "scope_sequence": 4,
+                "applied_at_seconds": 50.6,
+                "boundary": "legal_scope_start",
+                "source": "CPU_SIMULATED_PROBE"
+              }
+            },
+            "samples": [],
+            "ready": null,
+            "ignored_old": 9
+          },
+          "node-1": {
+            "command": {
+              "schema_version": 1,
+              "run_id": "m6a-cpu",
+              "node_id": "node-1",
+              "profile_epoch": 2,
+              "expected_nodes": [
+                "node-0",
+                "node-1"
+              ],
+              "expected_ranks": [
+                1,
+                3,
+                5
+              ],
+              "requested_state": 0,
+              "command_id": "e2-g1-s0-node-1",
+              "generation": 1,
+              "local_generation": 1,
+              "deadline_seconds": 55.300000000000004,
+              "requested_at_seconds": 50.300000000000004
+            },
+            "ack": {
+              "command_id": "e2-g1-s0-node-1",
+              "command_sha256": "28d3405a55f482236576ce22fa1d01f055ab00a6d03cba8dff8f9bfc8fa422cb",
+              "accepted_at_seconds": 50.5,
+              "local_generation": 1,
+              "kind": "COMMAND_ACCEPTED_ONLY",
+              "source": "CPU_LOCAL_CONTROLLER"
+            },
+            "applied": {
+              "1": {
+                "run_id": "m6a-cpu",
+                "node_id": "node-1",
+                "global_rank": 1,
+                "profile_epoch": 2,
+                "requested_state": 0,
+                "command_id": "e2-g1-s0-node-1",
+                "generation": 1,
+                "local_generation": 1,
+                "scope_sequence": 4,
+                "applied_at_seconds": 50.6,
+                "boundary": "legal_scope_start",
+                "source": "CPU_SIMULATED_PROBE"
+              },
+              "3": {
+                "run_id": "m6a-cpu",
+                "node_id": "node-1",
+                "global_rank": 3,
+                "profile_epoch": 2,
+                "requested_state": 0,
+                "command_id": "e2-g1-s0-node-1",
+                "generation": 1,
+                "local_generation": 1,
+                "scope_sequence": 4,
+                "applied_at_seconds": 50.6,
+                "boundary": "legal_scope_start",
+                "source": "CPU_SIMULATED_PROBE"
+              },
+              "5": {
+                "run_id": "m6a-cpu",
+                "node_id": "node-1",
+                "global_rank": 5,
+                "profile_epoch": 2,
+                "requested_state": 0,
+                "command_id": "e2-g1-s0-node-1",
+                "generation": 1,
+                "local_generation": 1,
+                "scope_sequence": 4,
+                "applied_at_seconds": 50.6,
+                "boundary": "legal_scope_start",
+                "source": "CPU_SIMULATED_PROBE"
+              }
+            },
+            "samples": [],
+            "ready": null,
+            "ignored_old": 9
+          }
+        },
+        "result": {
+          "status": "INCOMPLETE",
+          "reason": "empty Profile input",
+          "final_alert": false,
+          "final_fault_ranks": []
+        },
+        "closed_at_seconds": 50.7
+      }
+    ],
+    "events": [
+      {
+        "sequence": 1,
+        "kind": "GLOBAL_CLAIM",
+        "generation": 1
+      },
+      {
+        "sequence": 2,
+        "kind": "LOCAL_CLAIM",
+        "node_id": "node-0",
+        "generation": 1
+      },
+      {
+        "sequence": 3,
+        "kind": "LOCAL_CLAIM",
+        "node_id": "node-1",
+        "generation": 1
+      },
+      {
+        "sequence": 4,
+        "kind": "ITERATION_RECEIPT",
+        "rank": 0,
+        "iteration": 1,
+        "status": "WRITE_CONFIRMED"
+      },
+      {
+        "sequence": 5,
+        "kind": "PROFILE_REQUEST",
+        "profile_epoch": 1,
+        "generation": 1,
+        "trigger": "MANUAL_TEST_TRIGGER",
+        "duration_seconds": 20.0,
+        "at_seconds": 0
+      },
+      {
+        "sequence": 6,
+        "kind": "COMMAND_ACK",
+        "node_id": "node-0",
+        "command_id": "e1-g1-s1-node-0"
+      },
+      {
+        "sequence": 7,
+        "kind": "COMMAND_ACK",
+        "node_id": "node-1",
+        "command_id": "e1-g1-s1-node-1"
+      },
+      {
+        "sequence": 8,
+        "kind": "TRANSITION",
+        "state": "PROFILE_ARMING",
+        "profile_epoch": 1,
+        "at_seconds": 0
+      },
+      {
+        "sequence": 9,
+        "kind": "TRANSITION",
+        "state": "PROFILE_COLLECTING",
+        "profile_epoch": 1,
+        "at_seconds": 0.2
+      },
+      {
+        "sequence": 10,
+        "kind": "TRANSITION",
+        "state": "PROFILE_DRAINING",
+        "profile_epoch": 1,
+        "at_seconds": 20.2
+      },
+      {
+        "sequence": 11,
+        "kind": "TRANSITION",
+        "state": "PROFILE_READY",
+        "profile_epoch": 1,
+        "at_seconds": 20.3
+      },
+      {
+        "sequence": 12,
+        "kind": "TRANSITION",
+        "state": "ANALYZED_PROVISIONAL",
+        "profile_epoch": 1,
+        "at_seconds": 20.4
+      },
+      {
+        "sequence": 13,
+        "kind": "TRANSITION",
+        "state": "MONITOR_RESET_REQUESTED",
+        "profile_epoch": 1,
+        "at_seconds": 20.5
+      },
+      {
+        "sequence": 14,
+        "kind": "COMMAND_ACK",
+        "node_id": "node-0",
+        "command_id": "e1-g1-s0-node-0"
+      },
+      {
+        "sequence": 15,
+        "kind": "COMMAND_ACK",
+        "node_id": "node-1",
+        "command_id": "e1-g1-s0-node-1"
+      },
+      {
+        "sequence": 16,
+        "kind": "MONITOR_VERIFIED",
+        "profile_epoch": 1,
+        "at_seconds": 20.7
+      },
+      {
+        "sequence": 17,
+        "kind": "PROFILE_REQUEST",
+        "profile_epoch": 2,
+        "generation": 1,
+        "trigger": "MANUAL_TEST_TRIGGER",
+        "duration_seconds": 20.0,
+        "at_seconds": 30
+      },
+      {
+        "sequence": 18,
+        "kind": "COMMAND_ACK",
+        "node_id": "node-0",
+        "command_id": "e2-g1-s1-node-0"
+      },
+      {
+        "sequence": 19,
+        "kind": "COMMAND_ACK",
+        "node_id": "node-1",
+        "command_id": "e2-g1-s1-node-1"
+      },
+      {
+        "sequence": 20,
+        "kind": "TRANSITION",
+        "state": "PROFILE_ARMING",
+        "profile_epoch": 2,
+        "at_seconds": 30
+      },
+      {
+        "sequence": 21,
+        "kind": "TRANSITION",
+        "state": "PROFILE_COLLECTING",
+        "profile_epoch": 2,
+        "at_seconds": 30.2
+      },
+      {
+        "sequence": 22,
+        "kind": "TRANSITION",
+        "state": "PROFILE_DRAINING",
+        "profile_epoch": 2,
+        "at_seconds": 50.2
+      },
+      {
+        "sequence": 23,
+        "kind": "FAILURE",
+        "profile_epoch": 2,
+        "status": "INCOMPLETE",
+        "reason": "empty Profile input"
+      },
+      {
+        "sequence": 24,
+        "kind": "TRANSITION",
+        "state": "MONITOR_RESET_REQUESTED",
+        "profile_epoch": 2,
+        "at_seconds": 50.300000000000004
+      },
+      {
+        "sequence": 25,
+        "kind": "COMMAND_ACK",
+        "node_id": "node-0",
+        "command_id": "e2-g1-s0-node-0"
+      },
+      {
+        "sequence": 26,
+        "kind": "COMMAND_ACK",
+        "node_id": "node-1",
+        "command_id": "e2-g1-s0-node-1"
+      },
+      {
+        "sequence": 27,
+        "kind": "MONITOR_VERIFIED",
+        "profile_epoch": 2,
+        "at_seconds": 50.7
+      }
+    ],
+    "iterations": {
+      "0": {
+        "last": 1,
+        "records": [
+          {
+            "record": {
+              "run_id": "m6a-cpu",
+              "global_rank": 0,
+              "iteration": 1,
+              "iteration_time_ms": 100.0,
+              "timestamp": "2026-10-10T00:00:00+00:00",
+              "source": "CPU_SIMULATED_FRAMEWORK",
+              "timing_boundary": "cpu_simulated_iteration_end",
+              "cuda_completion_wait": false
+            },
+            "sha256": "adf215822e0771b9f4b4343f6b5c1f41e9ed6e37642f4a133f1c7296c0acd144",
+            "confirmed_at_seconds": 0
+          }
+        ]
+      }
+    },
+    "final_alert": false,
+    "final_fault_ranks": []
+  }
+]

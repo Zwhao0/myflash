@@ -1,0 +1,89 @@
+{
+  "active": null,
+  "epochs": [],
+  "events": [
+    {
+      "generation": 1,
+      "kind": "GLOBAL_CLAIM",
+      "sequence": 1
+    },
+    {
+      "generation": 1,
+      "kind": "LOCAL_CLAIM",
+      "node_id": "node-0",
+      "sequence": 2
+    },
+    {
+      "generation": 1,
+      "kind": "LOCAL_CLAIM",
+      "node_id": "node-1",
+      "sequence": 3
+    },
+    {
+      "iteration": 1,
+      "kind": "ITERATION_RECEIPT",
+      "rank": 0,
+      "sequence": 4,
+      "status": "WRITE_CONFIRMED"
+    }
+  ],
+  "expected_nodes": [
+    "node-0",
+    "node-1"
+  ],
+  "expected_ranks": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "final_alert": false,
+  "final_fault_ranks": [],
+  "global_generation": 1,
+  "iterations": {
+    "0": {
+      "last": 1,
+      "records": [
+        {
+          "confirmed_at_seconds": 0,
+          "record": {
+            "cuda_completion_wait": false,
+            "global_rank": 0,
+            "iteration": 1,
+            "iteration_time_ms": 100.0,
+            "run_id": "m6r-4cf4f33b839d4d3f9c71ee84410ddf6d",
+            "source": "CPU_SIMULATED_FRAMEWORK",
+            "timestamp": "2026-10-10T00:00:00+00:00",
+            "timing_boundary": "cpu_simulated_iteration_end"
+          },
+          "sha256": "db1f360407791543b78f99fefb87aa80c7b62b80c35b0d6f7b36b773d3c46d4a"
+        }
+      ]
+    }
+  },
+  "nodes": {
+    "node-0": {
+      "generation": 1,
+      "ranks": [
+        0,
+        2,
+        4
+      ]
+    },
+    "node-1": {
+      "generation": 1,
+      "ranks": [
+        1,
+        3,
+        5
+      ]
+    }
+  },
+  "profile_epoch": 0,
+  "revision": 4,
+  "run_id": "m6r-4cf4f33b839d4d3f9c71ee84410ddf6d",
+  "schema_version": 1,
+  "state": "MONITOR"
+}

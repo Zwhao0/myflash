@@ -1,0 +1,35 @@
+test_ambiguous_and_no_candidate_preserved (__main__.ControlTests.test_ambiguous_and_no_candidate_preserved) ... ok
+test_cas_concurrent_publication_and_fenced_registration (__main__.ControlTests.test_cas_concurrent_publication_and_fenced_registration) ... ok
+test_command_ack_without_application_and_missing_scope (__main__.ControlTests.test_command_ack_without_application_and_missing_scope) ... ok
+test_data_timeout_not_no_candidate (__main__.ControlTests.test_data_timeout_not_no_candidate) ... ok
+test_delayed_transport_bounded_error (__main__.ControlTests.test_delayed_transport_bounded_error) ... ok
+test_disconnect_then_reconcile_not_no_candidate (__main__.ControlTests.test_disconnect_then_reconcile_not_no_candidate) ... ok
+test_duplicate_ack_is_exact_idempotent (__main__.ControlTests.test_duplicate_ack_is_exact_idempotent) ... ok
+test_finished_manual_request_stays_idempotent_and_clock_monotone (__main__.ControlTests.test_finished_manual_request_stays_idempotent_and_clock_monotone) ... ok
+test_future_applied_boundary_cannot_arm_earlier_window (__main__.ControlTests.test_future_applied_boundary_cannot_arm_earlier_window) ... ok
+test_global_restart_aborts_and_fences_old_commands (__main__.ControlTests.test_global_restart_aborts_and_fences_old_commands) ... ok
+test_group_shared_counts_not_records (__main__.ControlTests.test_group_shared_counts_not_records) ... ok
+test_iteration_duplicate_conflict_gap_retention_restart (__main__.ControlTests.test_iteration_duplicate_conflict_gap_retention_restart) ... ok
+test_iteration_rank_isolation_and_missing_boundary (__main__.ControlTests.test_iteration_rank_isolation_and_missing_boundary) ... ok
+test_iteration_timeout_and_cursor_gap_visible (__main__.ControlTests.test_iteration_timeout_and_cursor_gap_visible) ... ok
+test_iteration_unconfirmed_reply_retry_and_corruption (__main__.ControlTests.test_iteration_unconfirmed_reply_retry_and_corruption) ... ok
+test_local_restart_invalidates_epoch_and_fences_old_owner (__main__.ControlTests.test_local_restart_invalidates_epoch_and_fences_old_owner) ... ok
+test_lost_registration_restart_blocked (__main__.ControlTests.test_lost_registration_restart_blocked) ... ok
+test_manifest_coverage_and_hash_integrity (__main__.ControlTests.test_manifest_coverage_and_hash_integrity) ... ok
+test_manual_request_idempotence_and_conflict (__main__.ControlTests.test_manual_request_idempotence_and_conflict) ... ok
+test_missing_data_fails_closed (__main__.ControlTests.test_missing_data_fails_closed) ... ok
+test_missing_iteration_not_zero_filled (__main__.ControlTests.test_missing_iteration_not_zero_filled) ... ok
+test_missing_node_timeout (__main__.ControlTests.test_missing_node_timeout) ... ok
+test_no_previous_epoch_data_reuse (__main__.ControlTests.test_no_previous_epoch_data_reuse) ... ok
+test_partial_reset_blocks_next_epoch (__main__.ControlTests.test_partial_reset_blocks_next_epoch) ... ok
+test_profile_corruption_old_run_old_epoch_unsupported (__main__.ControlTests.test_profile_corruption_old_run_old_epoch_unsupported) ... ok
+test_profile_duplicate_origin_rejected (__main__.ControlTests.test_profile_duplicate_origin_rejected) ... ok
+test_restart_during_partial_reset_requires_new_boundaries (__main__.ControlTests.test_restart_during_partial_reset_requires_new_boundaries) ... ok
+test_sample_window_boundary_not_cpu_wall_duration (__main__.ControlTests.test_sample_window_boundary_not_cpu_wall_duration) ... ok
+test_two_epochs_m4_equivalence_and_traces (__main__.ControlTests.test_two_epochs_m4_equivalence_and_traces) ... ok
+test_window_ms_floor_and_long_iteration (__main__.ControlTests.test_window_ms_floor_and_long_iteration) ... ok
+
+----------------------------------------------------------------------
+Ran 30 tests in 3.262s
+
+OK

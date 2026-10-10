@@ -1,0 +1,27 @@
+{
+  "classification": "ADAPTATION provenance ledger",
+  "historical_install_authorization": "VERIFIED_SCOPE_ONLY",
+  "approver": "human user of same-project M6-A chat; personal/legal identity not supplied",
+  "approval_time": null,
+  "approval_time_status": "NOT_CAPTURED_PER_MESSAGE; turn bounds are not message timestamp",
+  "original_locator": {
+    "thread_id": "01a12630-c635-7280-aa8b-4f5c5d3f30a8",
+    "thread_title": "实现 M6-A Redis 控制面",
+    "message_id": "01a12651-ecb6-79a0-90be-bdfb747b3a20",
+    "provider": "mcp__codex_app__read_thread",
+    "private_original": "runs/m6b-ready-g0-e-20261011/authorization-original.json",
+    "private_original_sha256": "076b2fce682de09b6bc09b74a4a9fc9445e0a5ce9343ae993c26c3a95604381f"
+  },
+  "original_message": "环境可以安装真实的Redis,便于完成我们的FLASH M6-A：\n\n",
+  "authorized_scope": "Install real Redis to complete FLASH M6-A",
+  "versions_or_path_explicitly_approved_in_original_message": null,
+  "observed_selected_dependencies": {
+    "server": "Redis8.10.2",
+    "client": "redis-py8.1.0",
+    "source": "fixed docs/m6/dependency-lock.json, not words of owner"
+  },
+  "future_dependency_use": "REQUIRES_OWNER_DECISION",
+  "future_approval": null,
+  "current_task_authorization": "User requested execution of supplied M6B-READY-G0-E task; scope prohibits installation/services/Redis/GPU/native/scientific changes",
+  "scientific_approvals": "REQUIRES_OWNER_DECISION; current blanket task authorization supplies no choice for G01/G02/G13/G04"
+}

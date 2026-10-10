@@ -1,0 +1,1555 @@
+{
+  "active": null,
+  "epochs": [
+    {
+      "analysis": null,
+      "closed_at_seconds": 1.2,
+      "command_at_seconds": 1,
+      "deadline_seconds": 6.0,
+      "duration_seconds": 20.0,
+      "failure": {
+        "final_alert": false,
+        "final_fault_ranks": [],
+        "reason": "global controller restart; explicit Monitor reset required",
+        "status": "ABORTED"
+      },
+      "iteration_record": {
+        "cuda_completion_wait": false,
+        "global_rank": 0,
+        "iteration": 1,
+        "iteration_time_ms": 100.0,
+        "run_id": "m6r-9edaf97084d644659656a72802927b6e",
+        "source": "CPU_SIMULATED_FRAMEWORK",
+        "timestamp": "2026-10-10T00:00:00+00:00",
+        "timing_boundary": "cpu_simulated_iteration_end"
+      },
+      "iteration_sha256": "68e245d49a44130a43507f80a978b02ec3cea405a1106c4c5cb9177e5c278f4a",
+      "last_time_seconds": 1.2,
+      "manifest": {
+        "communicators": [
+          {
+            "id_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+            "local_instances": [
+              {
+                "comm_generation": 1,
+                "comm_rank": 0,
+                "expected_records": 1,
+                "expected_samples": 1,
+                "global_rank": 0,
+                "node_id": "node-0",
+                "process_instance": "p0"
+              },
+              {
+                "comm_generation": 1,
+                "comm_rank": 1,
+                "expected_records": 1,
+                "expected_samples": 1,
+                "global_rank": 1,
+                "node_id": "node-1",
+                "process_instance": "p1"
+              }
+            ],
+            "members": [
+              0,
+              1
+            ]
+          },
+          {
+            "id_hash": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+            "local_instances": [
+              {
+                "comm_generation": 1,
+                "comm_rank": 0,
+                "expected_records": 1,
+                "expected_samples": 1,
+                "global_rank": 2,
+                "node_id": "node-0",
+                "process_instance": "p2"
+              },
+              {
+                "comm_generation": 1,
+                "comm_rank": 1,
+                "expected_records": 1,
+                "expected_samples": 1,
+                "global_rank": 3,
+                "node_id": "node-1",
+                "process_instance": "p3"
+              }
+            ],
+            "members": [
+              2,
+              3
+            ]
+          },
+          {
+            "id_hash": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+            "local_instances": [
+              {
+                "comm_generation": 1,
+                "comm_rank": 0,
+                "expected_records": 1,
+                "expected_samples": 1,
+                "global_rank": 4,
+                "node_id": "node-0",
+                "process_instance": "p4"
+              },
+              {
+                "comm_generation": 1,
+                "comm_rank": 1,
+                "expected_records": 1,
+                "expected_samples": 1,
+                "global_rank": 5,
+                "node_id": "node-1",
+                "process_instance": "p5"
+              }
+            ],
+            "members": [
+              4,
+              5
+            ]
+          }
+        ],
+        "context": {
+          "profile_epoch": 1,
+          "run_id": "m6r-9edaf97084d644659656a72802927b6e"
+        },
+        "parallel_states": [
+          {
+            "evidence": "explicit fixed fixture membership",
+            "id_hashes": [
+              "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+            ],
+            "label": "DP",
+            "members": [
+              0,
+              1
+            ]
+          },
+          {
+            "evidence": "explicit fixed fixture membership",
+            "id_hashes": [
+              "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+            ],
+            "label": "DP",
+            "members": [
+              2,
+              3
+            ]
+          },
+          {
+            "evidence": "explicit fixed fixture membership",
+            "id_hashes": [
+              "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"
+            ],
+            "label": "DP",
+            "members": [
+              4,
+              5
+            ]
+          }
+        ],
+        "records": [],
+        "schema_version": 1
+      },
+      "manifest_sha256": "82ade68516493f0092a870e4aeb8680a6a7565c7d86d574ef8d658e88c3f2564",
+      "nodes": {
+        "node-0": {
+          "ack": {
+            "accepted_at_seconds": 1,
+            "command_id": "e1-g2-s0-node-0",
+            "command_sha256": "4681326bb0aa0960f6ed8dc698b9010e4ded90b09e712303325d8b1029d4ae40",
+            "kind": "COMMAND_ACCEPTED_ONLY",
+            "local_generation": 1,
+            "source": "CPU_LOCAL_CONTROLLER"
+          },
+          "applied": {
+            "0": {
+              "applied_at_seconds": 1.1,
+              "boundary": "legal_scope_start",
+              "command_id": "e1-g2-s0-node-0",
+              "generation": 2,
+              "global_rank": 0,
+              "local_generation": 1,
+              "node_id": "node-0",
+              "profile_epoch": 1,
+              "requested_state": 0,
+              "run_id": "m6r-9edaf97084d644659656a72802927b6e",
+              "scope_sequence": 2,
+              "source": "CPU_SIMULATED_PROBE"
+            },
+            "2": {
+              "applied_at_seconds": 1.1,
+              "boundary": "legal_scope_start",
+              "command_id": "e1-g2-s0-node-0",
+              "generation": 2,
+              "global_rank": 2,
+              "local_generation": 1,
+              "node_id": "node-0",
+              "profile_epoch": 1,
+              "requested_state": 0,
+              "run_id": "m6r-9edaf97084d644659656a72802927b6e",
+              "scope_sequence": 2,
+              "source": "CPU_SIMULATED_PROBE"
+            },
+            "4": {
+              "applied_at_seconds": 1.1,
+              "boundary": "legal_scope_start",
+              "command_id": "e1-g2-s0-node-0",
+              "generation": 2,
+              "global_rank": 4,
+              "local_generation": 1,
+              "node_id": "node-0",
+              "profile_epoch": 1,
+              "requested_state": 0,
+              "run_id": "m6r-9edaf97084d644659656a72802927b6e",
+              "scope_sequence": 2,
+              "source": "CPU_SIMULATED_PROBE"
+            }
+          },
+          "command": {
+            "command_id": "e1-g2-s0-node-0",
+            "deadline_seconds": 6.0,
+            "expected_nodes": [
+              "node-0",
+              "node-1"
+            ],
+            "expected_ranks": [
+              0,
+              2,
+              4
+            ],
+            "generation": 2,
+            "local_generation": 1,
+            "node_id": "node-0",
+            "profile_epoch": 1,
+            "requested_at_seconds": 1,
+            "requested_state": 0,
+            "run_id": "m6r-9edaf97084d644659656a72802927b6e",
+            "schema_version": 1
+          },
+          "ignored_old": 3,
+          "ready": null,
+          "samples": []
+        },
+        "node-1": {
+          "ack": {
+            "accepted_at_seconds": 1,
+            "command_id": "e1-g2-s0-node-1",
+            "command_sha256": "c8278a626f3f975998d245e8f861d140a7d7b523ccff410224e8e69402567511",
+            "kind": "COMMAND_ACCEPTED_ONLY",
+            "local_generation": 1,
+            "source": "CPU_LOCAL_CONTROLLER"
+          },
+          "applied": {
+            "1": {
+              "applied_at_seconds": 1.1,
+              "boundary": "legal_scope_start",
+              "command_id": "e1-g2-s0-node-1",
+              "generation": 2,
+              "global_rank": 1,
+              "local_generation": 1,
+              "node_id": "node-1",
+              "profile_epoch": 1,
+              "requested_state": 0,
+              "run_id": "m6r-9edaf97084d644659656a72802927b6e",
+              "scope_sequence": 2,
+              "source": "CPU_SIMULATED_PROBE"
+            },
+            "3": {
+              "applied_at_seconds": 1.1,
+              "boundary": "legal_scope_start",
+              "command_id": "e1-g2-s0-node-1",
+              "generation": 2,
+              "global_rank": 3,
+              "local_generation": 1,
+              "node_id": "node-1",
+              "profile_epoch": 1,
+              "requested_state": 0,
+              "run_id": "m6r-9edaf97084d644659656a72802927b6e",
+              "scope_sequence": 2,
+              "source": "CPU_SIMULATED_PROBE"
+            },
+            "5": {
+              "applied_at_seconds": 1.1,
+              "boundary": "legal_scope_start",
+              "command_id": "e1-g2-s0-node-1",
+              "generation": 2,
+              "global_rank": 5,
+              "local_generation": 1,
+              "node_id": "node-1",
+              "profile_epoch": 1,
+              "requested_state": 0,
+              "run_id": "m6r-9edaf97084d644659656a72802927b6e",
+              "scope_sequence": 2,
+              "source": "CPU_SIMULATED_PROBE"
+            }
+          },
+          "command": {
+            "command_id": "e1-g2-s0-node-1",
+            "deadline_seconds": 6.0,
+            "expected_nodes": [
+              "node-0",
+              "node-1"
+            ],
+            "expected_ranks": [
+              1,
+              3,
+              5
+            ],
+            "generation": 2,
+            "local_generation": 1,
+            "node_id": "node-1",
+            "profile_epoch": 1,
+            "requested_at_seconds": 1,
+            "requested_state": 0,
+            "run_id": "m6r-9edaf97084d644659656a72802927b6e",
+            "schema_version": 1
+          },
+          "ignored_old": 3,
+          "ready": null,
+          "samples": []
+        }
+      },
+      "profile_epoch": 1,
+      "profile_nodes": {
+        "node-0": {
+          "ack": {
+            "accepted_at_seconds": 0,
+            "command_id": "e1-g1-s1-node-0",
+            "command_sha256": "4481906a2bd0ef03096517dc61a2e22a32e5be33bcc4bb06e2962e85055b60ef",
+            "kind": "COMMAND_ACCEPTED_ONLY",
+            "local_generation": 1,
+            "source": "CPU_LOCAL_CONTROLLER"
+          },
+          "applied": {
+            "0": {
+              "applied_at_seconds": 0.1,
+              "boundary": "legal_scope_start",
+              "command_id": "e1-g1-s1-node-0",
+              "generation": 1,
+              "global_rank": 0,
+              "local_generation": 1,
+              "node_id": "node-0",
+              "profile_epoch": 1,
+              "requested_state": 1,
+              "run_id": "m6r-9edaf97084d644659656a72802927b6e",
+              "scope_sequence": 1,
+              "source": "CPU_SIMULATED_PROBE"
+            },
+            "2": {
+              "applied_at_seconds": 0.1,
+              "boundary": "legal_scope_start",
+              "command_id": "e1-g1-s1-node-0",
+              "generation": 1,
+              "global_rank": 2,
+              "local_generation": 1,
+              "node_id": "node-0",
+              "profile_epoch": 1,
+              "requested_state": 1,
+              "run_id": "m6r-9edaf97084d644659656a72802927b6e",
+              "scope_sequence": 1,
+              "source": "CPU_SIMULATED_PROBE"
+            },
+            "4": {
+              "applied_at_seconds": 0.1,
+              "boundary": "legal_scope_start",
+              "command_id": "e1-g1-s1-node-0",
+              "generation": 1,
+              "global_rank": 4,
+              "local_generation": 1,
+              "node_id": "node-0",
+              "profile_epoch": 1,
+              "requested_state": 1,
+              "run_id": "m6r-9edaf97084d644659656a72802927b6e",
+              "scope_sequence": 1,
+              "source": "CPU_SIMULATED_PROBE"
+            }
+          },
+          "command": {
+            "command_id": "e1-g1-s1-node-0",
+            "deadline_seconds": 5.0,
+            "expected_nodes": [
+              "node-0",
+              "node-1"
+            ],
+            "expected_ranks": [
+              0,
+              2,
+              4
+            ],
+            "generation": 1,
+            "local_generation": 1,
+            "node_id": "node-0",
+            "profile_epoch": 1,
+            "requested_at_seconds": 0,
+            "requested_state": 1,
+            "run_id": "m6r-9edaf97084d644659656a72802927b6e",
+            "schema_version": 1
+          },
+          "ignored_old": 0,
+          "ready": null,
+          "samples": []
+        },
+        "node-1": {
+          "ack": {
+            "accepted_at_seconds": 0,
+            "command_id": "e1-g1-s1-node-1",
+            "command_sha256": "482d03b8e734cd9e9f2debf6f2c951dcdbb04d3f7eb5f632212bf2af6bfd9f98",
+            "kind": "COMMAND_ACCEPTED_ONLY",
+            "local_generation": 1,
+            "source": "CPU_LOCAL_CONTROLLER"
+          },
+          "applied": {
+            "1": {
+              "applied_at_seconds": 0.1,
+              "boundary": "legal_scope_start",
+              "command_id": "e1-g1-s1-node-1",
+              "generation": 1,
+              "global_rank": 1,
+              "local_generation": 1,
+              "node_id": "node-1",
+              "profile_epoch": 1,
+              "requested_state": 1,
+              "run_id": "m6r-9edaf97084d644659656a72802927b6e",
+              "scope_sequence": 1,
+              "source": "CPU_SIMULATED_PROBE"
+            },
+            "3": {
+              "applied_at_seconds": 0.1,
+              "boundary": "legal_scope_start",
+              "command_id": "e1-g1-s1-node-1",
+              "generation": 1,
+              "global_rank": 3,
+              "local_generation": 1,
+              "node_id": "node-1",
+              "profile_epoch": 1,
+              "requested_state": 1,
+              "run_id": "m6r-9edaf97084d644659656a72802927b6e",
+              "scope_sequence": 1,
+              "source": "CPU_SIMULATED_PROBE"
+            },
+            "5": {
+              "applied_at_seconds": 0.1,
+              "boundary": "legal_scope_start",
+              "command_id": "e1-g1-s1-node-1",
+              "generation": 1,
+              "global_rank": 5,
+              "local_generation": 1,
+              "node_id": "node-1",
+              "profile_epoch": 1,
+              "requested_state": 1,
+              "run_id": "m6r-9edaf97084d644659656a72802927b6e",
+              "scope_sequence": 1,
+              "source": "CPU_SIMULATED_PROBE"
+            }
+          },
+          "command": {
+            "command_id": "e1-g1-s1-node-1",
+            "deadline_seconds": 5.0,
+            "expected_nodes": [
+              "node-0",
+              "node-1"
+            ],
+            "expected_ranks": [
+              1,
+              3,
+              5
+            ],
+            "generation": 1,
+            "local_generation": 1,
+            "node_id": "node-1",
+            "profile_epoch": 1,
+            "requested_at_seconds": 0,
+            "requested_state": 1,
+            "run_id": "m6r-9edaf97084d644659656a72802927b6e",
+            "schema_version": 1
+          },
+          "ignored_old": 0,
+          "ready": null,
+          "samples": []
+        }
+      },
+      "request_id": "manual-1",
+      "request_sha256": "952e6960bf39a5c489d26feaf6995c16afae426dda585f97f02f076d2c89a2a5",
+      "reset_nodes": {
+        "node-0": {
+          "ack": {
+            "accepted_at_seconds": 1,
+            "command_id": "e1-g2-s0-node-0",
+            "command_sha256": "4681326bb0aa0960f6ed8dc698b9010e4ded90b09e712303325d8b1029d4ae40",
+            "kind": "COMMAND_ACCEPTED_ONLY",
+            "local_generation": 1,
+            "source": "CPU_LOCAL_CONTROLLER"
+          },
+          "applied": {
+            "0": {
+              "applied_at_seconds": 1.1,
+              "boundary": "legal_scope_start",
+              "command_id": "e1-g2-s0-node-0",
+              "generation": 2,
+              "global_rank": 0,
+              "local_generation": 1,
+              "node_id": "node-0",
+              "profile_epoch": 1,
+              "requested_state": 0,
+              "run_id": "m6r-9edaf97084d644659656a72802927b6e",
+              "scope_sequence": 2,
+              "source": "CPU_SIMULATED_PROBE"
+            },
+            "2": {
+              "applied_at_seconds": 1.1,
+              "boundary": "legal_scope_start",
+              "command_id": "e1-g2-s0-node-0",
+              "generation": 2,
+              "global_rank": 2,
+              "local_generation": 1,
+              "node_id": "node-0",
+              "profile_epoch": 1,
+              "requested_state": 0,
+              "run_id": "m6r-9edaf97084d644659656a72802927b6e",
+              "scope_sequence": 2,
+              "source": "CPU_SIMULATED_PROBE"
+            },
+            "4": {
+              "applied_at_seconds": 1.1,
+              "boundary": "legal_scope_start",
+              "command_id": "e1-g2-s0-node-0",
+              "generation": 2,
+              "global_rank": 4,
+              "local_generation": 1,
+              "node_id": "node-0",
+              "profile_epoch": 1,
+              "requested_state": 0,
+              "run_id": "m6r-9edaf97084d644659656a72802927b6e",
+              "scope_sequence": 2,
+              "source": "CPU_SIMULATED_PROBE"
+            }
+          },
+          "command": {
+            "command_id": "e1-g2-s0-node-0",
+            "deadline_seconds": 6.0,
+            "expected_nodes": [
+              "node-0",
+              "node-1"
+            ],
+            "expected_ranks": [
+              0,
+              2,
+              4
+            ],
+            "generation": 2,
+            "local_generation": 1,
+            "node_id": "node-0",
+            "profile_epoch": 1,
+            "requested_at_seconds": 1,
+            "requested_state": 0,
+            "run_id": "m6r-9edaf97084d644659656a72802927b6e",
+            "schema_version": 1
+          },
+          "ignored_old": 3,
+          "ready": null,
+          "samples": []
+        },
+        "node-1": {
+          "ack": {
+            "accepted_at_seconds": 1,
+            "command_id": "e1-g2-s0-node-1",
+            "command_sha256": "c8278a626f3f975998d245e8f861d140a7d7b523ccff410224e8e69402567511",
+            "kind": "COMMAND_ACCEPTED_ONLY",
+            "local_generation": 1,
+            "source": "CPU_LOCAL_CONTROLLER"
+          },
+          "applied": {
+            "1": {
+              "applied_at_seconds": 1.1,
+              "boundary": "legal_scope_start",
+              "command_id": "e1-g2-s0-node-1",
+              "generation": 2,
+              "global_rank": 1,
+              "local_generation": 1,
+              "node_id": "node-1",
+              "profile_epoch": 1,
+              "requested_state": 0,
+              "run_id": "m6r-9edaf97084d644659656a72802927b6e",
+              "scope_sequence": 2,
+              "source": "CPU_SIMULATED_PROBE"
+            },
+            "3": {
+              "applied_at_seconds": 1.1,
+              "boundary": "legal_scope_start",
+              "command_id": "e1-g2-s0-node-1",
+              "generation": 2,
+              "global_rank": 3,
+              "local_generation": 1,
+              "node_id": "node-1",
+              "profile_epoch": 1,
+              "requested_state": 0,
+              "run_id": "m6r-9edaf97084d644659656a72802927b6e",
+              "scope_sequence": 2,
+              "source": "CPU_SIMULATED_PROBE"
+            },
+            "5": {
+              "applied_at_seconds": 1.1,
+              "boundary": "legal_scope_start",
+              "command_id": "e1-g2-s0-node-1",
+              "generation": 2,
+              "global_rank": 5,
+              "local_generation": 1,
+              "node_id": "node-1",
+              "profile_epoch": 1,
+              "requested_state": 0,
+              "run_id": "m6r-9edaf97084d644659656a72802927b6e",
+              "scope_sequence": 2,
+              "source": "CPU_SIMULATED_PROBE"
+            }
+          },
+          "command": {
+            "command_id": "e1-g2-s0-node-1",
+            "deadline_seconds": 6.0,
+            "expected_nodes": [
+              "node-0",
+              "node-1"
+            ],
+            "expected_ranks": [
+              1,
+              3,
+              5
+            ],
+            "generation": 2,
+            "local_generation": 1,
+            "node_id": "node-1",
+            "profile_epoch": 1,
+            "requested_at_seconds": 1,
+            "requested_state": 0,
+            "run_id": "m6r-9edaf97084d644659656a72802927b6e",
+            "schema_version": 1
+          },
+          "ignored_old": 3,
+          "ready": null,
+          "samples": []
+        }
+      },
+      "reset_verified": true,
+      "result": {
+        "final_alert": false,
+        "final_fault_ranks": [],
+        "reason": "global controller restart; explicit Monitor reset required",
+        "status": "ABORTED"
+      },
+      "started_at_seconds": 0,
+      "transitions": [
+        "MONITOR",
+        "PROFILE_REQUESTED",
+        "PROFILE_ARMING",
+        "PROFILE_COLLECTING",
+        "MONITOR_RESET_REQUESTED",
+        "MONITOR"
+      ],
+      "trigger": "MANUAL_TEST_TRIGGER",
+      "window": {
+        "end_seconds": 20.2,
+        "start_seconds": 0.2,
+        "time_domain": "single_host_cpu_simulation_monotonic_seconds"
+      }
+    },
+    {
+      "analysis": null,
+      "closed_at_seconds": 50.7,
+      "command_at_seconds": 50.300000000000004,
+      "deadline_seconds": 55.300000000000004,
+      "duration_seconds": 20.0,
+      "failure": {
+        "final_alert": false,
+        "final_fault_ranks": [],
+        "reason": "empty Profile input",
+        "status": "INCOMPLETE"
+      },
+      "iteration_record": {
+        "cuda_completion_wait": false,
+        "global_rank": 0,
+        "iteration": 1,
+        "iteration_time_ms": 100.0,
+        "run_id": "m6r-9edaf97084d644659656a72802927b6e",
+        "source": "CPU_SIMULATED_FRAMEWORK",
+        "timestamp": "2026-10-10T00:00:00+00:00",
+        "timing_boundary": "cpu_simulated_iteration_end"
+      },
+      "iteration_sha256": "68e245d49a44130a43507f80a978b02ec3cea405a1106c4c5cb9177e5c278f4a",
+      "last_time_seconds": 50.7,
+      "manifest": {
+        "communicators": [
+          {
+            "id_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+            "local_instances": [
+              {
+                "comm_generation": 1,
+                "comm_rank": 0,
+                "expected_records": 1,
+                "expected_samples": 1,
+                "global_rank": 0,
+                "node_id": "node-0",
+                "process_instance": "p0"
+              },
+              {
+                "comm_generation": 1,
+                "comm_rank": 1,
+                "expected_records": 1,
+                "expected_samples": 1,
+                "global_rank": 1,
+                "node_id": "node-1",
+                "process_instance": "p1"
+              }
+            ],
+            "members": [
+              0,
+              1
+            ]
+          },
+          {
+            "id_hash": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+            "local_instances": [
+              {
+                "comm_generation": 1,
+                "comm_rank": 0,
+                "expected_records": 1,
+                "expected_samples": 1,
+                "global_rank": 2,
+                "node_id": "node-0",
+                "process_instance": "p2"
+              },
+              {
+                "comm_generation": 1,
+                "comm_rank": 1,
+                "expected_records": 1,
+                "expected_samples": 1,
+                "global_rank": 3,
+                "node_id": "node-1",
+                "process_instance": "p3"
+              }
+            ],
+            "members": [
+              2,
+              3
+            ]
+          },
+          {
+            "id_hash": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+            "local_instances": [
+              {
+                "comm_generation": 1,
+                "comm_rank": 0,
+                "expected_records": 1,
+                "expected_samples": 1,
+                "global_rank": 4,
+                "node_id": "node-0",
+                "process_instance": "p4"
+              },
+              {
+                "comm_generation": 1,
+                "comm_rank": 1,
+                "expected_records": 1,
+                "expected_samples": 1,
+                "global_rank": 5,
+                "node_id": "node-1",
+                "process_instance": "p5"
+              }
+            ],
+            "members": [
+              4,
+              5
+            ]
+          }
+        ],
+        "context": {
+          "profile_epoch": 2,
+          "run_id": "m6r-9edaf97084d644659656a72802927b6e"
+        },
+        "parallel_states": [
+          {
+            "evidence": "explicit fixed fixture membership",
+            "id_hashes": [
+              "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+            ],
+            "label": "DP",
+            "members": [
+              0,
+              1
+            ]
+          },
+          {
+            "evidence": "explicit fixed fixture membership",
+            "id_hashes": [
+              "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+            ],
+            "label": "DP",
+            "members": [
+              2,
+              3
+            ]
+          },
+          {
+            "evidence": "explicit fixed fixture membership",
+            "id_hashes": [
+              "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"
+            ],
+            "label": "DP",
+            "members": [
+              4,
+              5
+            ]
+          }
+        ],
+        "records": [],
+        "schema_version": 1
+      },
+      "manifest_sha256": "e435ed07a83ed5619bb410bcaedb6c8370150e8ea82ca4f915112aabc1cd00c4",
+      "nodes": {
+        "node-0": {
+          "ack": {
+            "accepted_at_seconds": 50.5,
+            "command_id": "e2-g2-s0-node-0",
+            "command_sha256": "bd86a48acfffbc8d2a7808beaf9638b4565965bb17aabbca5e8a22a86914b878",
+            "kind": "COMMAND_ACCEPTED_ONLY",
+            "local_generation": 1,
+            "source": "CPU_LOCAL_CONTROLLER"
+          },
+          "applied": {
+            "0": {
+              "applied_at_seconds": 50.6,
+              "boundary": "legal_scope_start",
+              "command_id": "e2-g2-s0-node-0",
+              "generation": 2,
+              "global_rank": 0,
+              "local_generation": 1,
+              "node_id": "node-0",
+              "profile_epoch": 2,
+              "requested_state": 0,
+              "run_id": "m6r-9edaf97084d644659656a72802927b6e",
+              "scope_sequence": 4,
+              "source": "CPU_SIMULATED_PROBE"
+            },
+            "2": {
+              "applied_at_seconds": 50.6,
+              "boundary": "legal_scope_start",
+              "command_id": "e2-g2-s0-node-0",
+              "generation": 2,
+              "global_rank": 2,
+              "local_generation": 1,
+              "node_id": "node-0",
+              "profile_epoch": 2,
+              "requested_state": 0,
+              "run_id": "m6r-9edaf97084d644659656a72802927b6e",
+              "scope_sequence": 4,
+              "source": "CPU_SIMULATED_PROBE"
+            },
+            "4": {
+              "applied_at_seconds": 50.6,
+              "boundary": "legal_scope_start",
+              "command_id": "e2-g2-s0-node-0",
+              "generation": 2,
+              "global_rank": 4,
+              "local_generation": 1,
+              "node_id": "node-0",
+              "profile_epoch": 2,
+              "requested_state": 0,
+              "run_id": "m6r-9edaf97084d644659656a72802927b6e",
+              "scope_sequence": 4,
+              "source": "CPU_SIMULATED_PROBE"
+            }
+          },
+          "command": {
+            "command_id": "e2-g2-s0-node-0",
+            "deadline_seconds": 55.300000000000004,
+            "expected_nodes": [
+              "node-0",
+              "node-1"
+            ],
+            "expected_ranks": [
+              0,
+              2,
+              4
+            ],
+            "generation": 2,
+            "local_generation": 1,
+            "node_id": "node-0",
+            "profile_epoch": 2,
+            "requested_at_seconds": 50.300000000000004,
+            "requested_state": 0,
+            "run_id": "m6r-9edaf97084d644659656a72802927b6e",
+            "schema_version": 1
+          },
+          "ignored_old": 9,
+          "ready": null,
+          "samples": []
+        },
+        "node-1": {
+          "ack": {
+            "accepted_at_seconds": 50.5,
+            "command_id": "e2-g2-s0-node-1",
+            "command_sha256": "d1f00a0cdb48f11343b08cde21932e247dfa76c9fb1df9682ba3764051a3fc68",
+            "kind": "COMMAND_ACCEPTED_ONLY",
+            "local_generation": 1,
+            "source": "CPU_LOCAL_CONTROLLER"
+          },
+          "applied": {
+            "1": {
+              "applied_at_seconds": 50.6,
+              "boundary": "legal_scope_start",
+              "command_id": "e2-g2-s0-node-1",
+              "generation": 2,
+              "global_rank": 1,
+              "local_generation": 1,
+              "node_id": "node-1",
+              "profile_epoch": 2,
+              "requested_state": 0,
+              "run_id": "m6r-9edaf97084d644659656a72802927b6e",
+              "scope_sequence": 4,
+              "source": "CPU_SIMULATED_PROBE"
+            },
+            "3": {
+              "applied_at_seconds": 50.6,
+              "boundary": "legal_scope_start",
+              "command_id": "e2-g2-s0-node-1",
+              "generation": 2,
+              "global_rank": 3,
+              "local_generation": 1,
+              "node_id": "node-1",
+              "profile_epoch": 2,
+              "requested_state": 0,
+              "run_id": "m6r-9edaf97084d644659656a72802927b6e",
+              "scope_sequence": 4,
+              "source": "CPU_SIMULATED_PROBE"
+            },
+            "5": {
+              "applied_at_seconds": 50.6,
+              "boundary": "legal_scope_start",
+              "command_id": "e2-g2-s0-node-1",
+              "generation": 2,
+              "global_rank": 5,
+              "local_generation": 1,
+              "node_id": "node-1",
+              "profile_epoch": 2,
+              "requested_state": 0,
+              "run_id": "m6r-9edaf97084d644659656a72802927b6e",
+              "scope_sequence": 4,
+              "source": "CPU_SIMULATED_PROBE"
+            }
+          },
+          "command": {
+            "command_id": "e2-g2-s0-node-1",
+            "deadline_seconds": 55.300000000000004,
+            "expected_nodes": [
+              "node-0",
+              "node-1"
+            ],
+            "expected_ranks": [
+              1,
+              3,
+              5
+            ],
+            "generation": 2,
+            "local_generation": 1,
+            "node_id": "node-1",
+            "profile_epoch": 2,
+            "requested_at_seconds": 50.300000000000004,
+            "requested_state": 0,
+            "run_id": "m6r-9edaf97084d644659656a72802927b6e",
+            "schema_version": 1
+          },
+          "ignored_old": 9,
+          "ready": null,
+          "samples": []
+        }
+      },
+      "profile_epoch": 2,
+      "profile_nodes": {
+        "node-0": {
+          "ack": {
+            "accepted_at_seconds": 30,
+            "command_id": "e2-g2-s1-node-0",
+            "command_sha256": "6afa7944a9987937fd0b03149a6c105749affa6f405a4395c0d2e5a96d1210f1",
+            "kind": "COMMAND_ACCEPTED_ONLY",
+            "local_generation": 1,
+            "source": "CPU_LOCAL_CONTROLLER"
+          },
+          "applied": {
+            "0": {
+              "applied_at_seconds": 30.1,
+              "boundary": "legal_scope_start",
+              "command_id": "e2-g2-s1-node-0",
+              "generation": 2,
+              "global_rank": 0,
+              "local_generation": 1,
+              "node_id": "node-0",
+              "profile_epoch": 2,
+              "requested_state": 1,
+              "run_id": "m6r-9edaf97084d644659656a72802927b6e",
+              "scope_sequence": 3,
+              "source": "CPU_SIMULATED_PROBE"
+            },
+            "2": {
+              "applied_at_seconds": 30.1,
+              "boundary": "legal_scope_start",
+              "command_id": "e2-g2-s1-node-0",
+              "generation": 2,
+              "global_rank": 2,
+              "local_generation": 1,
+              "node_id": "node-0",
+              "profile_epoch": 2,
+              "requested_state": 1,
+              "run_id": "m6r-9edaf97084d644659656a72802927b6e",
+              "scope_sequence": 3,
+              "source": "CPU_SIMULATED_PROBE"
+            },
+            "4": {
+              "applied_at_seconds": 30.1,
+              "boundary": "legal_scope_start",
+              "command_id": "e2-g2-s1-node-0",
+              "generation": 2,
+              "global_rank": 4,
+              "local_generation": 1,
+              "node_id": "node-0",
+              "profile_epoch": 2,
+              "requested_state": 1,
+              "run_id": "m6r-9edaf97084d644659656a72802927b6e",
+              "scope_sequence": 3,
+              "source": "CPU_SIMULATED_PROBE"
+            }
+          },
+          "command": {
+            "command_id": "e2-g2-s1-node-0",
+            "deadline_seconds": 35.0,
+            "expected_nodes": [
+              "node-0",
+              "node-1"
+            ],
+            "expected_ranks": [
+              0,
+              2,
+              4
+            ],
+            "generation": 2,
+            "local_generation": 1,
+            "node_id": "node-0",
+            "profile_epoch": 2,
+            "requested_at_seconds": 30,
+            "requested_state": 1,
+            "run_id": "m6r-9edaf97084d644659656a72802927b6e",
+            "schema_version": 1
+          },
+          "ignored_old": 6,
+          "outside_window": 0,
+          "ready": {
+            "command_sha256": "6afa7944a9987937fd0b03149a6c105749affa6f405a4395c0d2e5a96d1210f1",
+            "completeness": "PENDING_M4_VALIDATION",
+            "data_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+            "drained_at_seconds": 50.2,
+            "records": 0,
+            "source": "CPU_SIMULATED_DRAIN"
+          },
+          "samples": []
+        },
+        "node-1": {
+          "ack": {
+            "accepted_at_seconds": 30,
+            "command_id": "e2-g2-s1-node-1",
+            "command_sha256": "9dfdad5a5393c7b6ae48bd8ee94aedcba4a160e34420afcb39230f7b4495ebb8",
+            "kind": "COMMAND_ACCEPTED_ONLY",
+            "local_generation": 1,
+            "source": "CPU_LOCAL_CONTROLLER"
+          },
+          "applied": {
+            "1": {
+              "applied_at_seconds": 30.1,
+              "boundary": "legal_scope_start",
+              "command_id": "e2-g2-s1-node-1",
+              "generation": 2,
+              "global_rank": 1,
+              "local_generation": 1,
+              "node_id": "node-1",
+              "profile_epoch": 2,
+              "requested_state": 1,
+              "run_id": "m6r-9edaf97084d644659656a72802927b6e",
+              "scope_sequence": 3,
+              "source": "CPU_SIMULATED_PROBE"
+            },
+            "3": {
+              "applied_at_seconds": 30.1,
+              "boundary": "legal_scope_start",
+              "command_id": "e2-g2-s1-node-1",
+              "generation": 2,
+              "global_rank": 3,
+              "local_generation": 1,
+              "node_id": "node-1",
+              "profile_epoch": 2,
+              "requested_state": 1,
+              "run_id": "m6r-9edaf97084d644659656a72802927b6e",
+              "scope_sequence": 3,
+              "source": "CPU_SIMULATED_PROBE"
+            },
+            "5": {
+              "applied_at_seconds": 30.1,
+              "boundary": "legal_scope_start",
+              "command_id": "e2-g2-s1-node-1",
+              "generation": 2,
+              "global_rank": 5,
+              "local_generation": 1,
+              "node_id": "node-1",
+              "profile_epoch": 2,
+              "requested_state": 1,
+              "run_id": "m6r-9edaf97084d644659656a72802927b6e",
+              "scope_sequence": 3,
+              "source": "CPU_SIMULATED_PROBE"
+            }
+          },
+          "command": {
+            "command_id": "e2-g2-s1-node-1",
+            "deadline_seconds": 35.0,
+            "expected_nodes": [
+              "node-0",
+              "node-1"
+            ],
+            "expected_ranks": [
+              1,
+              3,
+              5
+            ],
+            "generation": 2,
+            "local_generation": 1,
+            "node_id": "node-1",
+            "profile_epoch": 2,
+            "requested_at_seconds": 30,
+            "requested_state": 1,
+            "run_id": "m6r-9edaf97084d644659656a72802927b6e",
+            "schema_version": 1
+          },
+          "ignored_old": 6,
+          "outside_window": 0,
+          "ready": {
+            "command_sha256": "9dfdad5a5393c7b6ae48bd8ee94aedcba4a160e34420afcb39230f7b4495ebb8",
+            "completeness": "PENDING_M4_VALIDATION",
+            "data_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+            "drained_at_seconds": 50.2,
+            "records": 0,
+            "source": "CPU_SIMULATED_DRAIN"
+          },
+          "samples": []
+        }
+      },
+      "request_id": "two",
+      "request_sha256": "952e6960bf39a5c489d26feaf6995c16afae426dda585f97f02f076d2c89a2a5",
+      "reset_nodes": {
+        "node-0": {
+          "ack": {
+            "accepted_at_seconds": 50.5,
+            "command_id": "e2-g2-s0-node-0",
+            "command_sha256": "bd86a48acfffbc8d2a7808beaf9638b4565965bb17aabbca5e8a22a86914b878",
+            "kind": "COMMAND_ACCEPTED_ONLY",
+            "local_generation": 1,
+            "source": "CPU_LOCAL_CONTROLLER"
+          },
+          "applied": {
+            "0": {
+              "applied_at_seconds": 50.6,
+              "boundary": "legal_scope_start",
+              "command_id": "e2-g2-s0-node-0",
+              "generation": 2,
+              "global_rank": 0,
+              "local_generation": 1,
+              "node_id": "node-0",
+              "profile_epoch": 2,
+              "requested_state": 0,
+              "run_id": "m6r-9edaf97084d644659656a72802927b6e",
+              "scope_sequence": 4,
+              "source": "CPU_SIMULATED_PROBE"
+            },
+            "2": {
+              "applied_at_seconds": 50.6,
+              "boundary": "legal_scope_start",
+              "command_id": "e2-g2-s0-node-0",
+              "generation": 2,
+              "global_rank": 2,
+              "local_generation": 1,
+              "node_id": "node-0",
+              "profile_epoch": 2,
+              "requested_state": 0,
+              "run_id": "m6r-9edaf97084d644659656a72802927b6e",
+              "scope_sequence": 4,
+              "source": "CPU_SIMULATED_PROBE"
+            },
+            "4": {
+              "applied_at_seconds": 50.6,
+              "boundary": "legal_scope_start",
+              "command_id": "e2-g2-s0-node-0",
+              "generation": 2,
+              "global_rank": 4,
+              "local_generation": 1,
+              "node_id": "node-0",
+              "profile_epoch": 2,
+              "requested_state": 0,
+              "run_id": "m6r-9edaf97084d644659656a72802927b6e",
+              "scope_sequence": 4,
+              "source": "CPU_SIMULATED_PROBE"
+            }
+          },
+          "command": {
+            "command_id": "e2-g2-s0-node-0",
+            "deadline_seconds": 55.300000000000004,
+            "expected_nodes": [
+              "node-0",
+              "node-1"
+            ],
+            "expected_ranks": [
+              0,
+              2,
+              4
+            ],
+            "generation": 2,
+            "local_generation": 1,
+            "node_id": "node-0",
+            "profile_epoch": 2,
+            "requested_at_seconds": 50.300000000000004,
+            "requested_state": 0,
+            "run_id": "m6r-9edaf97084d644659656a72802927b6e",
+            "schema_version": 1
+          },
+          "ignored_old": 9,
+          "ready": null,
+          "samples": []
+        },
+        "node-1": {
+          "ack": {
+            "accepted_at_seconds": 50.5,
+            "command_id": "e2-g2-s0-node-1",
+            "command_sha256": "d1f00a0cdb48f11343b08cde21932e247dfa76c9fb1df9682ba3764051a3fc68",
+            "kind": "COMMAND_ACCEPTED_ONLY",
+            "local_generation": 1,
+            "source": "CPU_LOCAL_CONTROLLER"
+          },
+          "applied": {
+            "1": {
+              "applied_at_seconds": 50.6,
+              "boundary": "legal_scope_start",
+              "command_id": "e2-g2-s0-node-1",
+              "generation": 2,
+              "global_rank": 1,
+              "local_generation": 1,
+              "node_id": "node-1",
+              "profile_epoch": 2,
+              "requested_state": 0,
+              "run_id": "m6r-9edaf97084d644659656a72802927b6e",
+              "scope_sequence": 4,
+              "source": "CPU_SIMULATED_PROBE"
+            },
+            "3": {
+              "applied_at_seconds": 50.6,
+              "boundary": "legal_scope_start",
+              "command_id": "e2-g2-s0-node-1",
+              "generation": 2,
+              "global_rank": 3,
+              "local_generation": 1,
+              "node_id": "node-1",
+              "profile_epoch": 2,
+              "requested_state": 0,
+              "run_id": "m6r-9edaf97084d644659656a72802927b6e",
+              "scope_sequence": 4,
+              "source": "CPU_SIMULATED_PROBE"
+            },
+            "5": {
+              "applied_at_seconds": 50.6,
+              "boundary": "legal_scope_start",
+              "command_id": "e2-g2-s0-node-1",
+              "generation": 2,
+              "global_rank": 5,
+              "local_generation": 1,
+              "node_id": "node-1",
+              "profile_epoch": 2,
+              "requested_state": 0,
+              "run_id": "m6r-9edaf97084d644659656a72802927b6e",
+              "scope_sequence": 4,
+              "source": "CPU_SIMULATED_PROBE"
+            }
+          },
+          "command": {
+            "command_id": "e2-g2-s0-node-1",
+            "deadline_seconds": 55.300000000000004,
+            "expected_nodes": [
+              "node-0",
+              "node-1"
+            ],
+            "expected_ranks": [
+              1,
+              3,
+              5
+            ],
+            "generation": 2,
+            "local_generation": 1,
+            "node_id": "node-1",
+            "profile_epoch": 2,
+            "requested_at_seconds": 50.300000000000004,
+            "requested_state": 0,
+            "run_id": "m6r-9edaf97084d644659656a72802927b6e",
+            "schema_version": 1
+          },
+          "ignored_old": 9,
+          "ready": null,
+          "samples": []
+        }
+      },
+      "reset_verified": true,
+      "result": {
+        "final_alert": false,
+        "final_fault_ranks": [],
+        "reason": "empty Profile input",
+        "status": "INCOMPLETE"
+      },
+      "started_at_seconds": 30,
+      "transitions": [
+        "MONITOR",
+        "PROFILE_REQUESTED",
+        "PROFILE_ARMING",
+        "PROFILE_COLLECTING",
+        "PROFILE_DRAINING",
+        "MONITOR_RESET_REQUESTED",
+        "MONITOR"
+      ],
+      "trigger": "MANUAL_TEST_TRIGGER",
+      "window": {
+        "end_seconds": 50.2,
+        "start_seconds": 30.2,
+        "time_domain": "single_host_cpu_simulation_monotonic_seconds"
+      }
+    }
+  ],
+  "events": [
+    {
+      "generation": 1,
+      "kind": "GLOBAL_CLAIM",
+      "sequence": 1
+    },
+    {
+      "generation": 1,
+      "kind": "LOCAL_CLAIM",
+      "node_id": "node-0",
+      "sequence": 2
+    },
+    {
+      "generation": 1,
+      "kind": "LOCAL_CLAIM",
+      "node_id": "node-1",
+      "sequence": 3
+    },
+    {
+      "iteration": 1,
+      "kind": "ITERATION_RECEIPT",
+      "rank": 0,
+      "sequence": 4,
+      "status": "WRITE_CONFIRMED"
+    },
+    {
+      "at_seconds": 0,
+      "duration_seconds": 20.0,
+      "generation": 1,
+      "kind": "PROFILE_REQUEST",
+      "profile_epoch": 1,
+      "sequence": 5,
+      "trigger": "MANUAL_TEST_TRIGGER"
+    },
+    {
+      "command_id": "e1-g1-s1-node-0",
+      "kind": "COMMAND_ACK",
+      "node_id": "node-0",
+      "sequence": 6
+    },
+    {
+      "command_id": "e1-g1-s1-node-1",
+      "kind": "COMMAND_ACK",
+      "node_id": "node-1",
+      "sequence": 7
+    },
+    {
+      "at_seconds": 0,
+      "kind": "TRANSITION",
+      "profile_epoch": 1,
+      "sequence": 8,
+      "state": "PROFILE_ARMING"
+    },
+    {
+      "at_seconds": 0.2,
+      "kind": "TRANSITION",
+      "profile_epoch": 1,
+      "sequence": 9,
+      "state": "PROFILE_COLLECTING"
+    },
+    {
+      "kind": "FAILURE",
+      "profile_epoch": 1,
+      "reason": "global controller restart; explicit Monitor reset required",
+      "sequence": 10,
+      "status": "ABORTED"
+    },
+    {
+      "generation": 2,
+      "kind": "GLOBAL_CLAIM",
+      "sequence": 11
+    },
+    {
+      "at_seconds": 1,
+      "kind": "TRANSITION",
+      "profile_epoch": 1,
+      "sequence": 12,
+      "state": "MONITOR_RESET_REQUESTED"
+    },
+    {
+      "command_id": "e1-g2-s0-node-0",
+      "kind": "COMMAND_ACK",
+      "node_id": "node-0",
+      "sequence": 13
+    },
+    {
+      "command_id": "e1-g2-s0-node-1",
+      "kind": "COMMAND_ACK",
+      "node_id": "node-1",
+      "sequence": 14
+    },
+    {
+      "at_seconds": 1.2,
+      "kind": "MONITOR_VERIFIED",
+      "profile_epoch": 1,
+      "sequence": 15
+    },
+    {
+      "at_seconds": 30,
+      "duration_seconds": 20.0,
+      "generation": 2,
+      "kind": "PROFILE_REQUEST",
+      "profile_epoch": 2,
+      "sequence": 16,
+      "trigger": "MANUAL_TEST_TRIGGER"
+    },
+    {
+      "command_id": "e2-g2-s1-node-0",
+      "kind": "COMMAND_ACK",
+      "node_id": "node-0",
+      "sequence": 17
+    },
+    {
+      "command_id": "e2-g2-s1-node-1",
+      "kind": "COMMAND_ACK",
+      "node_id": "node-1",
+      "sequence": 18
+    },
+    {
+      "at_seconds": 30,
+      "kind": "TRANSITION",
+      "profile_epoch": 2,
+      "sequence": 19,
+      "state": "PROFILE_ARMING"
+    },
+    {
+      "at_seconds": 30.2,
+      "kind": "TRANSITION",
+      "profile_epoch": 2,
+      "sequence": 20,
+      "state": "PROFILE_COLLECTING"
+    },
+    {
+      "at_seconds": 50.2,
+      "kind": "TRANSITION",
+      "profile_epoch": 2,
+      "sequence": 21,
+      "state": "PROFILE_DRAINING"
+    },
+    {
+      "kind": "FAILURE",
+      "profile_epoch": 2,
+      "reason": "empty Profile input",
+      "sequence": 22,
+      "status": "INCOMPLETE"
+    },
+    {
+      "at_seconds": 50.300000000000004,
+      "kind": "TRANSITION",
+      "profile_epoch": 2,
+      "sequence": 23,
+      "state": "MONITOR_RESET_REQUESTED"
+    },
+    {
+      "command_id": "e2-g2-s0-node-0",
+      "kind": "COMMAND_ACK",
+      "node_id": "node-0",
+      "sequence": 24
+    },
+    {
+      "command_id": "e2-g2-s0-node-1",
+      "kind": "COMMAND_ACK",
+      "node_id": "node-1",
+      "sequence": 25
+    },
+    {
+      "at_seconds": 50.7,
+      "kind": "MONITOR_VERIFIED",
+      "profile_epoch": 2,
+      "sequence": 26
+    }
+  ],
+  "expected_nodes": [
+    "node-0",
+    "node-1"
+  ],
+  "expected_ranks": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "final_alert": false,
+  "final_fault_ranks": [],
+  "global_generation": 2,
+  "iterations": {
+    "0": {
+      "last": 1,
+      "records": [
+        {
+          "confirmed_at_seconds": 0,
+          "record": {
+            "cuda_completion_wait": false,
+            "global_rank": 0,
+            "iteration": 1,
+            "iteration_time_ms": 100.0,
+            "run_id": "m6r-9edaf97084d644659656a72802927b6e",
+            "source": "CPU_SIMULATED_FRAMEWORK",
+            "timestamp": "2026-10-10T00:00:00+00:00",
+            "timing_boundary": "cpu_simulated_iteration_end"
+          },
+          "sha256": "68e245d49a44130a43507f80a978b02ec3cea405a1106c4c5cb9177e5c278f4a"
+        }
+      ]
+    }
+  },
+  "nodes": {
+    "node-0": {
+      "generation": 1,
+      "ranks": [
+        0,
+        2,
+        4
+      ]
+    },
+    "node-1": {
+      "generation": 1,
+      "ranks": [
+        1,
+        3,
+        5
+      ]
+    }
+  },
+  "profile_epoch": 2,
+  "revision": 54,
+  "run_id": "m6r-9edaf97084d644659656a72802927b6e",
+  "schema_version": 1,
+  "state": "MONITOR"
+}

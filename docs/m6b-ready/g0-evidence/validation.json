@@ -1,0 +1,300 @@
+{
+  "task": "M6B-READY-G0-E",
+  "classification": "ADAPTATION CPU evidence and preservation; EXTENSION synthetic inputs",
+  "overall": "FAIL_REQUIRED_CURSOR_CONTRACT / M6B-READY_BLOCKED",
+  "executor_conclusion": "EVIDENCE_DELIVERED; FUTURE_CURSOR_FAIL",
+  "independent_ChatGPT_review": "PENDING",
+  "attempts": [
+    {
+      "name": "validation-01",
+      "machine_alias": "node-0",
+      "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+      "execution_base_sha": "5b91977b07b4f357e0c2e37490739e4a5803fea0",
+      "uncommitted_added_source_hashes": {
+        "scripts/m6b_ready_g0_validate.py": "9aaf19698bafd658619f0c740354d15f348c9054e0ff38f6fde35790f788ec72",
+        "tests/m6b_ready_cursor_contract.py": "78f15c8b2943b6620bc4b5312e46fe7c675d36c4a09bee420b288b0c73a7fd42"
+      },
+      "manifest": "docs/m6b-ready/g0-evidence/current/validation-01/manifest.json",
+      "original_manifest_sha256": "a8e86ac379bb1fa5c75d277209d2d52d9cfdfeda1bcb234da62a3d3a755eefd9",
+      "driver_exit_code": 1,
+      "overall": "FAIL",
+      "commands": [
+        {
+          "command": [
+            "<approved-project>/.venv-m5/bin/python",
+            "tests/m6_control.py"
+          ],
+          "cwd": "<approved-project>/runs/m6b-ready-g0-e-20261011/checkout",
+          "timeout_budget_seconds": 120,
+          "environment": {
+            "LD_PRELOAD": "REMOVED",
+            "CUDA_VISIBLE_DEVICES": "",
+            "PYTHONDONTWRITEBYTECODE": "1"
+          },
+          "child_finished": true,
+          "owned_pid": "<private-pid-4>",
+          "exit_code": 0,
+          "timeout": false,
+          "elapsed_wall_seconds": 3.368719585938379,
+          "status": "PASS",
+          "stdout": "control.stdout.txt",
+          "stderr": "control.stderr.txt",
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "b39fde761f12d9c25b241dc9b7d8109802457897a7732b6429a0adcdd0f70cd9"
+        },
+        {
+          "command": [
+            "<approved-project>/.venv-m5/bin/python",
+            "scripts/m6_demo.py",
+            "--output",
+            "<approved-project>/runs/m6b-ready-g0-e-20261011/validation-01/demo"
+          ],
+          "cwd": "<approved-project>/runs/m6b-ready-g0-e-20261011/checkout",
+          "timeout_budget_seconds": 120,
+          "environment": {
+            "LD_PRELOAD": "REMOVED",
+            "CUDA_VISIBLE_DEVICES": "",
+            "PYTHONDONTWRITEBYTECODE": "1"
+          },
+          "child_finished": true,
+          "owned_pid": "<private-pid-2>",
+          "exit_code": 0,
+          "timeout": false,
+          "elapsed_wall_seconds": 0.2146635230164975,
+          "status": "PASS",
+          "stdout": "demo.stdout.txt",
+          "stderr": "demo.stderr.txt",
+          "stdout_sha256": "e6d9e29c2caa18023664d9049b2b2490c26aa7024509186780dd55dc4b400961",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "command": [
+            "<approved-project>/.venv-m5/bin/python",
+            "tests/m6b_ready_cursor_contract.py",
+            "--output",
+            "<approved-project>/runs/m6b-ready-g0-e-20261011/validation-01/cursor"
+          ],
+          "cwd": "<approved-project>/runs/m6b-ready-g0-e-20261011/checkout",
+          "timeout_budget_seconds": 120,
+          "environment": {
+            "LD_PRELOAD": "REMOVED",
+            "CUDA_VISIBLE_DEVICES": "",
+            "PYTHONDONTWRITEBYTECODE": "1"
+          },
+          "child_finished": true,
+          "owned_pid": "<private-pid-3>",
+          "exit_code": 1,
+          "timeout": false,
+          "elapsed_wall_seconds": 0.11464918090496212,
+          "status": "FAIL",
+          "stdout": "cursor.stdout.txt",
+          "stderr": "cursor.stderr.txt",
+          "stdout_sha256": "638368ca9cb9b8ff2faf5758a4264923ebff7bece31220af15d00efed31d8c72",
+          "stderr_sha256": "8231a4019d14715c5a3b10396c84a55b86dcc5a2515d45e947d3e96ebcbec857"
+        },
+        {
+          "command": [
+            "<approved-project>/.venv-m5/bin/python",
+            "tests/privacy_check_test.py"
+          ],
+          "cwd": "<approved-project>/runs/m6b-ready-g0-e-20261011/checkout",
+          "timeout_budget_seconds": 120,
+          "environment": {
+            "LD_PRELOAD": "REMOVED",
+            "CUDA_VISIBLE_DEVICES": "",
+            "PYTHONDONTWRITEBYTECODE": "1"
+          },
+          "child_finished": true,
+          "owned_pid": "<private-pid-1>",
+          "exit_code": 0,
+          "timeout": false,
+          "elapsed_wall_seconds": 0.06460698402952403,
+          "status": "PASS",
+          "stdout": "privacy-units.stdout.txt",
+          "stderr": "privacy-units.stderr.txt",
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "c6b9b1f09add0403cc07e90bfdf272129b1ddfa2f8f7675ea8218862f2516371"
+        },
+        {
+          "command": [
+            "<approved-project>/.venv-m5/bin/python",
+            "scripts/privacy_check.py"
+          ],
+          "cwd": "<approved-project>/runs/m6b-ready-g0-e-20261011/checkout",
+          "timeout_budget_seconds": 600,
+          "environment": {
+            "LD_PRELOAD": "REMOVED",
+            "CUDA_VISIBLE_DEVICES": "",
+            "PYTHONDONTWRITEBYTECODE": "1"
+          },
+          "child_finished": true,
+          "owned_pid": "<private-pid-5>",
+          "exit_code": 0,
+          "timeout": false,
+          "elapsed_wall_seconds": 133.55194151296746,
+          "status": "PASS",
+          "stdout": "privacy.stdout.txt",
+          "stderr": "privacy.stderr.txt",
+          "stdout_sha256": "116097fcd38a8359442f2b220bfb2b0831589f634ea21ae44a9fd0b2e18fff60",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ]
+    },
+    {
+      "name": "validation-02",
+      "machine_alias": "node-0",
+      "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+      "execution_base_sha": "5b91977b07b4f357e0c2e37490739e4a5803fea0",
+      "uncommitted_added_source_hashes": {
+        "scripts/m6b_ready_g0_validate.py": "4e62593ffb64214b08ecf989041a2b1986222bdf05df71f7735322d6db1865b0",
+        "tests/m6b_ready_cursor_contract.py": "fca99d078fb4ac5c1a9dc99ba3fa0293961969617e4e684f4eeafd7a4994c6cf"
+      },
+      "manifest": "docs/m6b-ready/g0-evidence/current/validation-02/manifest.json",
+      "original_manifest_sha256": "8344c5a69c6d554330abc0c1b297d42591fd1b6d68597deae422de3295aea8ac",
+      "driver_exit_code": 1,
+      "overall": "FAIL",
+      "commands": [
+        {
+          "command": [
+            "<approved-project>/.venv-m5/bin/python",
+            "tests/m6b_ready_cursor_contract.py",
+            "--output",
+            "<approved-project>/runs/m6b-ready-g0-e-20261011/validation-02/cursor"
+          ],
+          "cwd": "<approved-project>/runs/m6b-ready-g0-e-20261011/checkout",
+          "timeout_budget_seconds": 120,
+          "environment": {
+            "LD_PRELOAD": "REMOVED",
+            "CUDA_VISIBLE_DEVICES": "",
+            "PYTHONDONTWRITEBYTECODE": "1"
+          },
+          "child_finished": true,
+          "owned_pid": "<private-pid-6>",
+          "exit_code": 1,
+          "timeout": false,
+          "elapsed_wall_seconds": 6.723264490952715,
+          "status": "FAIL",
+          "stdout": "cursor.stdout.txt",
+          "stderr": "cursor.stderr.txt",
+          "stdout_sha256": "ec04f4d9e1fa5b8ee6047557a8320f335adee8b3cc704ff4132b43b374f94980",
+          "stderr_sha256": "c683454660acd9c9a607f0c35eddd8140e36b6a9b9d5031f5904024bf40c463d"
+        }
+      ]
+    }
+  ],
+  "historical_redis_regression_this_round": "NOT_RUN",
+  "gpu": "NOT_RUN",
+  "second_node": "NOT_RUN",
+  "native": "NOT_RUN",
+  "rbeast_fit": "NOT_RUN",
+  "installation": "NOT_RUN",
+  "final_alert": false,
+  "retained_failures": [
+    {
+      "attempt": "validation-01",
+      "status": "ERROR",
+      "reason": "new test used one node; registration requires two; 8 setup errors; not defect evidence"
+    },
+    {
+      "attempt": "validation-02",
+      "status": "FAIL",
+      "reason": "3 future cursors + 6 invalid type acceptance failures; 9 tests completed, 9 failures"
+    },
+    {
+      "operation": "initial independent state-summary parser",
+      "exit_code": 1,
+      "reason": "TypeError on actual missing-run null document; corrected parser records null separately, successful-epoch assertions unchanged"
+    },
+    {
+      "operation": "initial GitHub connector calls",
+      "status": "INVALID_ARGUMENT",
+      "reason": "wrong schema names, no mutations; switched to public REST GETs"
+    },
+    {
+      "operation": "initial current export helper",
+      "exit_code": 1,
+      "reason": "NameError __file__ absent in isolated helper namespace; retried with exact helper location, no evidence mutation before error"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--cached",
+        "--check"
+      ],
+      "exit_code": 2,
+      "status": "FAIL_TRAILING_WHITESPACE_IN_FULL_EVIDENCE",
+      "stdout_sha256": "439c0edee66462049724e9140c953e0faad31c8008e83f50505480f10ce96150",
+      "reason": "5 trailing-whitespace lines from raw logs retained to preserve full stdout/stderr; no code assertion is weakened"
+    },
+    {
+      "operation": "initial local work-package inventory",
+      "exit_code": 1,
+      "reason": "root is a documentation work package, not Git; ARCHITECTURE/docs absent. Existing explicitly authorized m6a-work selected; no old failed source accessed",
+      "raw_output": "TOOL_OUTPUT_ONLY_NOT_SAVED_AS_PRIVATE_RAW"
+    },
+    {
+      "operation": "initial DAG query on m6a-work",
+      "exit_code": 128,
+      "reason": "main object absent locally; explicit public origin fetch obtained fixed main then DAG verified",
+      "raw_output": "TOOL_OUTPUT_ONLY_NOT_SAVED_AS_PRIVATE_RAW"
+    }
+  ],
+  "publication_privacy": {
+    "machine_alias": "local-macOS",
+    "python": "3.9.6 (default, May 22 2026, 11:13:45) \n[Clang 21.0.0 (clang-2100.1.1.101)]",
+    "driver_exit_code": 0,
+    "commands": [
+      {
+        "command": [
+          "/Library/Developer/CommandLineTools/usr/bin/python3",
+          "tests/privacy_check_test.py"
+        ],
+        "cwd": "<local-project>/m6b-ready-work",
+        "timeout_budget_seconds": 120,
+        "environment": {
+          "LD_PRELOAD": "REMOVED",
+          "CUDA_VISIBLE_DEVICES": "",
+          "PYTHONDONTWRITEBYTECODE": "1"
+        },
+        "child_finished": true,
+        "owned_pid": "<private-pid-1>",
+        "exit_code": 0,
+        "timeout": false,
+        "elapsed_wall_seconds": 0.07819675000000004,
+        "status": "PASS",
+        "stdout": "privacy-units.stdout.txt",
+        "stderr": "privacy-units.stderr.txt",
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderr_sha256": "c6b9b1f09add0403cc07e90bfdf272129b1ddfa2f8f7675ea8218862f2516371"
+      },
+      {
+        "command": [
+          "/Library/Developer/CommandLineTools/usr/bin/python3",
+          "scripts/privacy_check.py"
+        ],
+        "cwd": "<local-project>/m6b-ready-work",
+        "timeout_budget_seconds": 600,
+        "environment": {
+          "LD_PRELOAD": "REMOVED",
+          "CUDA_VISIBLE_DEVICES": "",
+          "PYTHONDONTWRITEBYTECODE": "1"
+        },
+        "child_finished": true,
+        "owned_pid": "<private-pid-2>",
+        "exit_code": 0,
+        "timeout": false,
+        "elapsed_wall_seconds": 158.644439792,
+        "status": "PASS",
+        "stdout": "privacy.stdout.txt",
+        "stderr": "privacy.stderr.txt",
+        "stdout_sha256": "df8a59e6751f08d0b7c704f8ee0d91cf9e450758c42993da98bbc50ef8d9eb6b",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    ],
+    "manifest": "docs/m6b-ready/g0-evidence/publication-check-01/manifest.json",
+    "raw_manifest_sha256": "fb0a9f08ed43a94f52e91227732bd2561ad575b0b677d05455d009fdcd635593",
+    "scope": "1381 staged full-tree files, findings0; later receipt bytes get additional exact changed-text scan",
+    "publication_head_CI": "PENDING_UNTIL_PUSH"
+  }
+}

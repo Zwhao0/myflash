@@ -1,0 +1,5 @@
+{"name": "control", "exit_code": 0, "timeout": false, "child_finished": true}
+{"name": "demo", "exit_code": 0, "timeout": false, "child_finished": true}
+{"name": "cursor", "exit_code": 1, "timeout": false, "child_finished": true}
+{"name": "privacy-units", "exit_code": 0, "timeout": false, "child_finished": true}
+{"name": "privacy", "exit_code": 0, "timeout": false, "child_finished": true}

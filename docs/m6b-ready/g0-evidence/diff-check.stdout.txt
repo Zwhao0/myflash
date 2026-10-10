@@ -1,0 +1,10 @@
+docs/m6b-ready/g0-evidence/current/validation-02/cursor.stderr.txt:7: trailing whitespace.
++test_invalid_types_strict_integer_adaptation (__main__.CursorContract.test_invalid_types_strict_integer_adaptation) ... 
+docs/m6b-ready/g0-evidence/historical/m6a-remote-evidence/installation/command-1.txt:117: trailing whitespace.
++cc -std=c99 -Wall -Os -g  -DHDR_MALLOC_INCLUDE=\"hdr_redis_malloc.h\" -c  hdr_histogram.c 
+docs/m6b-ready/g0-evidence/historical/m6a-remote-evidence/installation/command-1.txt:120: trailing whitespace.
++cc -o lua  lua.o liblua.a -lm 
+docs/m6b-ready/g0-evidence/historical/m6a-remote-evidence/installation/command-1.txt:121: trailing whitespace.
++cc -o luac  luac.o print.o liblua.a -lm 
+docs/m6b-ready/g0-evidence/historical/m6a-remote-evidence/installation/command-1.txt:126: trailing whitespace.
++cc  -Wall -Os -g  -c  fpconv_dtoa.c 

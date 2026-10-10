@@ -1,0 +1,71 @@
+[
+  {
+    "schema_version": 1,
+    "run_id": "m6a-cpu",
+    "revision": 5,
+    "expected_nodes": [
+      "node-0",
+      "node-1"
+    ],
+    "expected_ranks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "nodes": {
+      "node-0": {
+        "ranks": [
+          0,
+          2,
+          4
+        ],
+        "generation": 1
+      },
+      "node-1": {
+        "ranks": [
+          1,
+          3,
+          5
+        ],
+        "generation": 1
+      }
+    },
+    "global_generation": 1,
+    "profile_epoch": 0,
+    "state": "MONITOR",
+    "active": null,
+    "epochs": [],
+    "events": [
+      {
+        "sequence": 1,
+        "kind": "GLOBAL_CLAIM",
+        "generation": 1
+      },
+      {
+        "sequence": 2,
+        "kind": "LOCAL_CLAIM",
+        "node_id": "node-0",
+        "generation": 1
+      },
+      {
+        "sequence": 3,
+        "kind": "LOCAL_CLAIM",
+        "node_id": "node-1",
+        "generation": 1
+      },
+      {
+        "sequence": 4,
+        "kind": "ITERATION_RECEIPT",
+        "rank": 0,
+        "iteration": 1,
+        "status": "WRITE_CONFIRMED"
+      }
+    ],
+    "iterations": {},
+    "final_alert": false,
+    "final_fault_ranks": []
+  }
+]

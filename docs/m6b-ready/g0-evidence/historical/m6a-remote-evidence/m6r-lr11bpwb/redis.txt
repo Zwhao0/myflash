@@ -1,0 +1,14 @@
+3664236:C 10 Oct 2026 15:07:07.157 # WARNING Memory overcommit must be enabled! Without it, a background save or replication may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+3664236:C 10 Oct 2026 15:07:07.157 * oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+3664236:C 10 Oct 2026 15:07:07.157 * Redis version=8.10.2, bits=64, commit=762be718, modified=0, pid=3664236, just started
+3664236:C 10 Oct 2026 15:07:07.157 * Configuration loaded
+3664236:M 10 Oct 2026 15:07:07.157 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+3664236:M 10 Oct 2026 15:07:07.157 * monotonic clock: POSIX clock_gettime
+3664236:M 10 Oct 2026 15:07:07.158 * Running mode=standalone, port=0.
+3664236:M 10 Oct 2026 15:07:07.158 * Server initialized
+3664236:M 10 Oct 2026 15:07:07.158 * Ready to accept connections unix
+3664236:M 10 Oct 2026 15:07:07.158 # WARNING: Redis does not require authentication. Redis will accept connections from any local client.
+3664236:signal-handler (1791644834) Received SIGTERM scheduling shutdown...
+3664236:M 10 Oct 2026 15:07:14.654 * User requested shutdown...
+3664236:M 10 Oct 2026 15:07:14.654 * Removing the unix socket file.
+3664236:M 10 Oct 2026 15:07:14.654 # Redis is now ready to exit, bye bye...

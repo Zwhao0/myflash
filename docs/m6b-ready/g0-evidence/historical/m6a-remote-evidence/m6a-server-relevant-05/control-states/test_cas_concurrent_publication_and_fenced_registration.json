@@ -1,0 +1,133 @@
+[
+  {
+    "schema_version": 1,
+    "run_id": "m6a-cpu",
+    "revision": 8,
+    "expected_nodes": [
+      "node-0",
+      "node-1"
+    ],
+    "expected_ranks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "nodes": {
+      "node-0": {
+        "ranks": [
+          0,
+          2,
+          4
+        ],
+        "generation": 1
+      },
+      "node-1": {
+        "ranks": [
+          1,
+          3,
+          5
+        ],
+        "generation": 1
+      }
+    },
+    "global_generation": 1,
+    "profile_epoch": 0,
+    "state": "MONITOR",
+    "active": null,
+    "epochs": [],
+    "events": [
+      {
+        "sequence": 1,
+        "kind": "GLOBAL_CLAIM",
+        "generation": 1
+      },
+      {
+        "sequence": 2,
+        "kind": "LOCAL_CLAIM",
+        "node_id": "node-0",
+        "generation": 1
+      },
+      {
+        "sequence": 3,
+        "kind": "LOCAL_CLAIM",
+        "node_id": "node-1",
+        "generation": 1
+      },
+      {
+        "sequence": 4,
+        "kind": "ITERATION_RECEIPT",
+        "rank": 0,
+        "iteration": 1,
+        "status": "WRITE_CONFIRMED"
+      },
+      {
+        "sequence": 5,
+        "kind": "ITERATION_RECEIPT",
+        "rank": 0,
+        "iteration": 2,
+        "status": "WRITE_CONFIRMED"
+      },
+      {
+        "sequence": 6,
+        "kind": "ITERATION_RECEIPT",
+        "rank": 0,
+        "iteration": 2,
+        "status": "DUPLICATE_CONFIRMED"
+      },
+      {
+        "sequence": 7,
+        "kind": "ITERATION_RECEIPT",
+        "rank": 0,
+        "iteration": 2,
+        "status": "DUPLICATE_CONFIRMED"
+      },
+      {
+        "sequence": 8,
+        "kind": "ITERATION_RECEIPT",
+        "rank": 0,
+        "iteration": 2,
+        "status": "DUPLICATE_CONFIRMED"
+      }
+    ],
+    "iterations": {
+      "0": {
+        "last": 2,
+        "records": [
+          {
+            "record": {
+              "run_id": "m6a-cpu",
+              "global_rank": 0,
+              "iteration": 1,
+              "iteration_time_ms": 100.0,
+              "timestamp": "2026-10-10T00:00:00+00:00",
+              "source": "CPU_SIMULATED_FRAMEWORK",
+              "timing_boundary": "cpu_simulated_iteration_end",
+              "cuda_completion_wait": false
+            },
+            "sha256": "adf215822e0771b9f4b4343f6b5c1f41e9ed6e37642f4a133f1c7296c0acd144",
+            "confirmed_at_seconds": 0
+          },
+          {
+            "record": {
+              "run_id": "m6a-cpu",
+              "global_rank": 0,
+              "iteration": 2,
+              "iteration_time_ms": 100.0,
+              "timestamp": "2026-10-10T00:00:00+00:00",
+              "source": "CPU_SIMULATED_FRAMEWORK",
+              "timing_boundary": "cpu_simulated_iteration_end",
+              "cuda_completion_wait": false
+            },
+            "sha256": "5cc6fa2a6ea51fbf636955fb65ba3c9fe7c3f78f8f6295be271de170564d10d0",
+            "confirmed_at_seconds": 692502.101152462
+          }
+        ]
+      }
+    },
+    "final_alert": false,
+    "final_fault_ranks": []
+  }
+]

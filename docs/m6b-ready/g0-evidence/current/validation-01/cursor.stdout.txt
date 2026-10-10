@@ -1,0 +1,12 @@
+{
+  "case": "test_missing_run",
+  "input": {
+    "after_iteration_repr": "0",
+    "cursor_type": "int",
+    "read_kwargs": {}
+  },
+  "last": null,
+  "retained_from": null,
+  "returned_status": "BLOCKED",
+  "exception": null
+}

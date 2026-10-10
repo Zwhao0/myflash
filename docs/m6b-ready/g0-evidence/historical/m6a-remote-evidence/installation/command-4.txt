@@ -1,0 +1,1 @@
+Redis server v=8.10.2 sha=762be718:0 malloc=libc bits=64 build=f9833f447fbb8681
