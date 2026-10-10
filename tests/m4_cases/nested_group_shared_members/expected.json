@@ -1,0 +1,12 @@
+{
+  "exit_code": 0,
+  "checks": {
+    "candidate_ranks": [
+      0
+    ],
+    "completeness.records": 4,
+    "completeness.independent_process_scopes": 2,
+    "completeness.communicator_scope_observations": 2
+  },
+  "hand_calculation": "two records/rank same outer Group, depth1/2; one2us/18us observation each, no double counting"
+}

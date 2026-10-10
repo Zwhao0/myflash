@@ -1,12 +1,12 @@
 # FLASH 全新开发状态
 
-当前阶段：M3 手动 CUDA Event 剖析与机制验证
-当前状态：M3 PASS（已验证范围），本轮完成并停止，等待审核；M4 NOT_RUN
-当前任务：P1 隐私修复供审核，见 tasks/04_privacy.md；M3 原有证据保留，M4 NOT_RUN。
+当前阶段：M4 离线两阶段定位
+当前状态：M4 PASS（已收到授权范围/确定性算法）；G04最终科学判决OPEN；完成后停止
+当前任务：tasks/04_localization.md已完成明确范围；等待M4审核与截断消息补充，不进入M5。
 
 ## 权威路径、来源与改动
 
-- 开发机：node-0，Linux 6.8.0-142-generic x86_64/glibc2.39；工作目录 `<project>`，独立 Git 分支 `main`。
+- 开发机：node-0，Linux 6.8.0-142-generic x86_64/glibc2.39；工作目录 `<project>`，当前 Git 分支 `codex/m4-localization`（M0初建为main）。
 - 用户明确在服务器开发；该目录 SSH 只读检查时不存在，创建时再次确认不存在。不访问旧失败实现。
 - 原始输入是本地工作包的文档/第三章 PDF；未将本地连接凭证、其他项目、实现或构建产物传入。输入哈希见 `docs/m0/input_hashes.json`。
 - 新增 `.gitignore`、`ARCHITECTURE.md`、`SOURCE_MAP.md`、`ENVIRONMENT_PLAN.md`、四个目录 `.gitkeep` 与 `docs/m0` 证据；更新本文件与 `GAPS.md`。
@@ -44,7 +44,7 @@ PASS：用户创建并指定 [Zwhao0/myflash](https://github.com/Zwhao0/myflash)
 | M1 | PASS（核心） | M1a–M1d实测通过；M1e准备BLOCKED、MoE NOT_RUN，详见docs/m1 |
 | M2 | PASS（已支持范围） | Probe/Reader构建、CPU11项、单机/跨机/16rank/DDP/Group实测，docs/m2 |
 | M3 | PASS（已验证范围） | 手动两轮、Event、A–F机制/16rank/Monitor回归，docs/m3 |
-| M4 | NOT_RUN | 无定位算法/fixture |
+| M4 | PASS（确定性/明确范围） | docs/m4；G04完整判决OPEN，未收到附加标准NOT_RUN |
 | M5 | NOT_RUN | 无 Rbeast 安装/检测器实现 |
 | M6 | NOT_RUN | 无 Redis 服务/自动闭环 |
 | M7 | NOT_RUN | 无训练/降频/停机/网络注入 |
@@ -54,7 +54,7 @@ PASS：用户创建并指定 [Zwhao0/myflash](https://github.com/Zwhao0/myflash)
 
 两机已确认各8张H800、运行时CUDA12.8/NCCL2.27.3及实际RoCE通信。Megatron/TE/native训练入口、可用授权容器、Redis实例位置仍缺失/未核验；G01–G20科学未知保持OPEN。M1小模型DDP不能填补论文训练配置。
 
-下一唯一任务：用户审核已完成M2的docs/m2及源码。M3手动剖析/机制验证未授权、未执行；MoE准备仍需独立授权。
+下一唯一任务：用户审核M4的docs/m4及源码，并补充截断M4d要求；M3已审核，M5未开始。MoE仍不在当前批准范围。
 
 ## M1 2026-10-10 早期执行记录（历史）
 
@@ -114,9 +114,35 @@ GitHub审核分支已发布：codex/m2-monitor；Draft PR https://github.com/Zwh
 
 M3审核发布已完成：Draft PR https://github.com/Zwhao0/myflash/pull/2 ，分支codex/m3-profile。从权威node-0源831c53e7e023302e30ea1267f44db7c357f6e608同步到GitHub eebe891d46f107bc3e978f7b7c14443774680c0e；41个变化blob及完整tree c4ce7dd1b5740e10e7c30d2966279662064570a8逐SHA完全相同，PR分支回读PASS，main保持672e82aa且M3未合并。公开回执docs/m3/SYNC.json；本回执/状态后续仅文档提交的最终双方SHA/tree在.git/m3-final-sync.json保存。收尾联合验证与diff/commit命令、退出码、日志见服务器runs/m3-final-public/final-manifest.json，均0。M3结束，停止等待审核；M4 NOT_RUN。
 
+## M4执行中
+从PR2最新已验证30ca740的等树服务器a1ed7e2建立codex/m4-localization；main不缺M3地推进，也未合并PR2。node-0为开发源。
+M4a输入、M4b确定两阶段/双权重/CV敏感性、M4c首50手算fixture PASS；M4d 520机制样本与公开CSV/raw逐字段一致回放PASS（runs/m4-replay-03，exit0）。错误适配尝试runs/m4-replay-01/02保留：CSV字符串转换、DDP每epoch计数假设错误，不改原M3数据/科学阈值。
+真实M3 normal样本也输出候选，不掩饰误报；详见最终docs/m4。有限正常4rank五通信组准备中，300s、M1获准UUID前4、每进程<=2GiB末检查/启动>=3GiB余量、仅当前run结束和精确shm清理。
+
+## M4最终结果与停止（2026-10-10）
+任务04，用户审核M3后完整授权；从未合并PR2最新30ca740的等树服务器a1ed7e2建立codex/m4-localization，不从缺M3的main开发。初始M4源码提交d8f4867，后续交付SHA/tree见SYNC/最终回执；diff仅新flash/profile_input.py/localization.py、scripts/tests/m4_*、固定fixtures/docs/m4、tasks04与STATUS/GAPS/ARCHITECTURE/PLAN。native/Reader与M1–M3原源/证据字节不变。
+PAPER最大组/最小rank/CV0.1与独立式3-1/3-2；UPSTREAM官方API与安装NCCL2.27.3 header（dtype0..11）；ADAPTATION数据验证/共享scope/双权重与std/CLI/评估隔离；EXTENSION合成零timing定义与有限人工并行组。精确出处见docs/m4/SOURCES。
+实际node-0，65固定CPU fixtures全部PASS；每项input/手算expect/actual/exit和日志明确保存（tests/m4_cases、docs/m4/fixtures、fixture-validation.json，runs/m4-offline-final-03）。完整命令python3 tests/m4_offline.py --output runs/m4-offline-final-03 exit0，原log runs/m4-final-check-03/0.log。不是GPU实验。
+python3 scripts/m4_replay.py --output runs/m4-replay-final-03 exit0，log同目录1.log；520机制数据全保留，192AR/320DDP与两个含unsupported的Group窗口（拒绝）回放；raw/公开CSV一致。两采样口径16/16迟到窗口排序匹配，但normal3/4产生临时候选；不能宣称最终精确率/召回率或自动诊断成功。
+真实node-0四H800，python3 scripts/m4_run_real.py --run-id m4-multigroup-normal-01 --master-port 29911，各launch/verify/cleanup exit0，完整展开命令/日志runs/m4-multigroup-normal-01/control.json和command-0..2.log；NCCL22703/CUDA12080/Torch2.8+cu128、300s/3GiB预余量/2GiB末检查，实际978–980MiB。五同标签/跨标签通信组、十local实例、两epoch各60有效记录；两轮正常负载的max组/min rank均rank3，真值空，保留临时误报。没有新故障注入或真实MoE。
+最终只读python3 scripts/m4_verify_real.py --run-id m4-multigroup-normal-01 exit0，runs/m4-final-check-03/2.log；Reader/source preservation和三个原M3 CPU/公开证据回归均0，runs/m4-final-check-01/3..5.log。postflight本run四PID/对应GPU PID/shm残留全0，公开postflight.json。原失败回放01/02与中转错误保留，不暗改数据/阈值。
+G04权重/20%/std与部分score参照OPEN；候选PROVISIONAL_CANDIDATE/分歧AMBIGUOUS_SPEC，final_fault_ranks为空。M4d消息后半截断未收到，额外验收条件NOT_RUN；新跨机多组/延迟注入多组/混合comm真实Group/Float8真实GPU/完整最终判决NOT_RUN。BOCD/Redis/自动闭环/恢复/MoE/M5未开发未启动。
+下一唯一任务：审核本M4明确交付及G04选项，并补充截断M4d后半；本轮到此停止，不自动推进下一关。审核PR/服务器与GitHub内容树匹配回执待本轮同步完成追加。
+
+M4审核发布完成：Draft PR https://github.com/Zwhao0/myflash/pull/4 ，base=codex/m3-profile（PR2仍未合并），head=codex/m4-localization。服务器源124405ce4d3e3b72dfe96b93d2c532145eb096c4 → GitHub f2b1c54dcbd32db65f06cf10365611f7f9b7cdfc，327变化文件blob及完整tree d9348a2d80c98dca08efa0851150fbbfbe026de5一致，main未改。整包/分批inline tree两次连接器传输错误保留；逐blob上传204个独立对象全部SHA核验后组装完整tree成功，不影响CPU/GPU结果。首次公开中转取数因Expect缓冲区默认太小失败，改显式缓冲后完整payload/每blob hash校验成功；未下载原始敏感数据。docs/m4/SYNC.json记录此次审核快照，文档回执追加的最后双方head/tree写.git/m4-final-sync.json。M4明确范围完成且停止；G04完整判决OPEN，截断附加标准未验收，M5不启动。
+
+M4最终回读补充：执行期间用户的PR2已经合并，main=2fcc45724e8bbfde800539beeae45febddd7e572、tree177745dd与M4起点完全相同；本轮没有更新main。PR4由创建时的codex/m3-profile retarget为main，只调整审核基线，源/实验不变。文档追加提交同步后最终服务器/GitHub head/tree记录.git/m4-final-sync.json。
+
 
 ## P1 隐私审查与可审核修复（2026-10-10）
 任务：tasks/04_privacy.md。用户要求处理公开仓库隐私；基线 GitHub main 2fcc45724e8bbfde800539beeae45febddd7e572，11个不同提交/4分支已扫描；既有安全分支与main同SHA。可审核 diff 将身份文档/M0公开日志脱敏，盘点脚本从自身路径确定根目录，补充ignore/隐私检查/5项合成测试/CI与docs/privacy。出处ADAPTATION用户请求与AGENTS日志约束；UPSTREAM GitHub清理文档和MIT checkout固定SHA，详见AUDIT。没有科学机制、训练配置、数值或样本标签变更。
 实际设备：本地macOS Darwin25.6.0 arm64，Python3.9.6；没有访问实验服务器/执行GPU测试/安装软件。完整命令、退出码、原始本地日志路径在docs/privacy/validation.json，cwd为审查clone；日志相对该clone保存在../logs/。文本检查0、5项合成测试0、数据/核心保留检查0、既有M3公开证据验证0、git diff --cached --check 0。preservation.json保存逐文件SHA256；这是本地文件验证，不是新增H800 PASS。
 历史扫描exit1/FAIL：旧路径/机器名与M0真实私网地址仍可访问；只是检查器正确检出，不能称历史清理PASS。当前文本的已测隐私规则PASS；PDF及全文摘录公开再分发授权PENDING、项目LICENSE未选定；专用分支保护API403/BLOCKED；随后通用branch API确认main protected=false/无必需checks，Secret scanning配置UNKNOWN。没有强推/历史改写/可见性变更，没有合并main。GitHub上传SHA/tree与Draft PR结果以本轮回执为准，不覆盖旧同步哈希；旧日志/hash均标为历史快照或脱敏副本。
 下一唯一任务：审核P1改动及材料授权，决定是否明确批准独立的全refs历史清理；不进入M4。
+
+
+## P1-C1 PR3冲突解决（2026-10-10）
+用户反馈有冲突；仅把已合并M4的main 01c96abeab2be25ff38176357a19fb53f18356f8合入P1安全分支，保留双父历史，不强推。冲突为STATUS两块，保留M4当前状态/完整阶段记录及P1历史。ARCHITECTURE/GAPS/PLAN自动合并并保留M4内容。ADAPTATION来源是用户冲突修复请求；新增文档身份字段按既定别名脱敏，M4 replay只改机器名注释，AST与main一致。
+10份人工NDJSON按精确路径/哈希登记，仍接受所有秘密/身份文本规则；317份M4代码/fixtures/输入期望/实验数据与main逐字相同，完整范围/哈希见docs/privacy/conflict-preservation.json。其余M4改动只含身份元数据/一行注释，原断言/失败/样本/时延/标签保持。原P1快照JSON保留历史口径。
+本地macOS Darwin25.6.0 arm64/Python3.9.6：6隐私测试、当前树检查、原60文件保留、M3公开证据、65M4 fixtures、main M4保留/AST/PLAN一致与diff两检查均exit0；完整命令/退出码/原始日志路径见docs/privacy/conflict-validation.json（../logs/conflict-01/00..07.log）。第一次65fixtures日志runs/p1-conflict-m4-fixtures保留。一次状态追加的Python编码错误未写入成功，保留本地错误日志并用显式UTF8重试，未更改测试断言。没有新GPU实验/服务器回放/科学选择。最终commit/tree/远端CI以收尾回执为准。
+下一唯一任务：用户审核已解冲突的PR3；不代合并main，不推进M5；旧历史与材料授权仍待另行处理。

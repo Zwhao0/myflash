@@ -1,0 +1,8 @@
+{
+  "exit_code": 2,
+  "checks": {
+    "status": "REJECTED_INPUT",
+    "candidate_ranks": []
+  },
+  "hand_calculation": "digest/sequence/context/evidence corruption rejects; valid raw or CSV has means2,18 and CV.8"
+}

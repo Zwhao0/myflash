@@ -43,3 +43,11 @@ UPSTREAM 来源：[GitHub 删除敏感数据官方说明](https://docs.github.co
 下一唯一任务：审核 P1 diff、确认论文 PDF/全文摘录的公开再分发授权，并决定是否另开一个明确批准的全 refs 历史清理任务。执行前需冻结写入、限定 refs、保留私有备份与旧新 SHA 映射、在独立 clone 演练并验证全部字段及实验数据不变，再审核具体 ref 更新方案。不能删除旧分支后就宣称清除历史；不能仅用新空仓库替换而隐去实验可追溯性。若未来发现真实凭证，先撤销/轮换，再评估历史清理。
 
 P1 的本地检查通过仅证明本次已测隐私规则及数据保留；历史/授权/远端安全设置尚未关闭。M4 及新 GPU 实验均 NOT_RUN。
+
+## P1-C1 与已合并 M4 的冲突处理
+
+上文为首次 P1 基线的历史记录；随后 main 合并 PR4，变为 01c96abeab2be25ff38176357a19fb53f18356f8。用户要求处理 PR3 冲突，本轮只把该 main 合入安全分支。STATUS.md 的两处冲突保留 M4 最新状态/完整阶段记录与 P1 历史；ARCHITECTURE/GAPS/PLAN 的 M4 内容自动合并并保留。M4 已执行的事实来自 main，本轮没有重新开展 GPU 实验或推进 M5。
+
+ADAPTATION：M4 新增文档/机器字段使用同一 node-0/node-1/<project> 身份脱敏；scripts/m4_replay.py 仅替换一行机器名注释，AST 与 main 相同。所有 M4 算法、65 个测试输入/期望和原始 NDJSON/CSV 保持字节一致。人工 NDJSON 源为 main 的 tests/m4_cases 中五组 CPU 构造测试（包括故意损坏/截断），使用 fixture/synthetic_nonnegative_v1 标记。十份精确路径/SHA256 登记于 synthetic-fixtures.json，仅允许匹配的已审查字节通过文件类型限制；文本秘密/身份规则继续检查内容，新增/修改字节或 runs 中原始文件不能借此通过。没有改掉原 M4 坏数据断言或修改样本。
+
+本地 macOS/Python3.9.6：6项隐私测试、65项既有M4固定测试、M3公开证据验证、原60文件保留检查及与main的M4保留/AST比较通过；命令/退出码/原始私有日志位置见 conflict-validation.json。P1初版 redactions/preservation/validation/settings JSON继续指向各自当时的快照，不覆盖原记录。PDF授权/旧Git历史清理仍待审核。下一唯一任务是用户审核已解冲突的PR3，不自动合并或推进科学实验。

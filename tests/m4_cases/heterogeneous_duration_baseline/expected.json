@@ -1,0 +1,10 @@
+{
+  "exit_code": 0,
+  "checks": {
+    "candidate_ranks": [
+      0
+    ],
+    "groups.aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.max_avg_latency_us": 18
+  },
+  "hand_calculation": "mixed API/count/dtype still means2/18, report heterogeneous risk, no normalization"
+}

@@ -1,0 +1,14 @@
+{
+  "exit_code": 0,
+  "checks": {
+    "status": "AMBIGUOUS_SPEC",
+    "candidate_ranks": [
+      0,
+      1
+    ],
+    "tags.DP.stage2.aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.sensitivity_disagreement": true,
+    "tags.DP.stage2.aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.methods.unweighted_communicator_mean.avg_latency_us.0": 50.5,
+    "tags.DP.stage2.aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.methods.sample_weighted.avg_latency_us.0": 10.9
+  },
+  "hand_calculation": "rank0 localmeans1,100 ->50.5 equal or(9+100)/10=10.9 weighted; rank1 means20,30->25 equal or290/10=29 weighted; candidates1 vs0"
+}

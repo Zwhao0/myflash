@@ -1,0 +1,68 @@
+{
+  "status": "PASS",
+  "test_rank_pid_count": 4,
+  "remaining_test_processes": 0,
+  "remaining_test_gpu_pids": 0,
+  "remaining_test_shm": 0,
+  "commands": [
+    [
+      "ps",
+      "-eo",
+      "pid="
+    ],
+    [
+      "nvidia-smi",
+      "--query-compute-apps=pid",
+      "--format=csv,noheader,nounits"
+    ]
+  ],
+  "memory_mib": [
+    980.0,
+    980.0,
+    978.0,
+    978.0
+  ],
+  "probe_sha256": "c9f6987d35d2bff32aed205c2bac0741a41fe6804861b2e82450f4369c541e77",
+  "versions": [
+    [
+      {
+        "family": "cudart",
+        "encoded": 12080
+      },
+      {
+        "family": "nccl",
+        "encoded": 22703
+      }
+    ],
+    [
+      {
+        "family": "cudart",
+        "encoded": 12080
+      },
+      {
+        "family": "nccl",
+        "encoded": 22703
+      }
+    ],
+    [
+      {
+        "family": "cudart",
+        "encoded": 12080
+      },
+      {
+        "family": "nccl",
+        "encoded": 22703
+      }
+    ],
+    [
+      {
+        "family": "cudart",
+        "encoded": 12080
+      },
+      {
+        "family": "nccl",
+        "encoded": 22703
+      }
+    ]
+  ]
+}

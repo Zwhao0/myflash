@@ -1,0 +1,8 @@
+{
+  "exit_code": 0,
+  "checks": {
+    "status": "AMBIGUOUS_SPEC",
+    "candidate_ranks": []
+  },
+  "hand_calculation": "synthetic nonnegative timing permits exact zero; CV0/0 undefined, no rank"
+}

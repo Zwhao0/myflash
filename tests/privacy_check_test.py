@@ -44,6 +44,15 @@ class PublicationChecks(unittest.TestCase):
         for name in ['.env.example', 'docs/m0/01_bootstrap.log', 'native/probe.cpp']:
             self.assertFalse(checker.sensitive_path(name), name)
 
+    def test_only_exact_reviewed_synthetic_raw_bytes_are_allowed(self):
+        path = 'tests/m4_cases/raw_ndjson_valid/rank-0.ndjson'
+        data = (checker.ROOT / path).read_bytes()
+        self.assertTrue(checker.reviewed_synthetic_fixture(path, data))
+        self.assertFalse(checker.reviewed_synthetic_fixture(path, data + b'\n'))
+        self.assertFalse(checker.reviewed_synthetic_fixture('tests/m4_cases/new/rank-0.ndjson', data))
+        self.assertFalse(checker.reviewed_synthetic_fixture('runs/run/raw.ndjson', data))
+        self.assertTrue(checker.sensitive_path(path))
+
 
 if __name__ == '__main__':
     unittest.main()

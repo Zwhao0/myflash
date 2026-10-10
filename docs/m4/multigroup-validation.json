@@ -1,0 +1,375 @@
+{
+  "status": "PASS",
+  "run_id": "m4-multigroup-normal-01",
+  "records": 120,
+  "communication_groups": 5,
+  "local_communicator_instances": 10,
+  "normal_only": true,
+  "interpretation": "real Stage1 arithmetic/data path, not fault localization accuracy; any candidate is provisional false positive",
+  "predictions": [
+    {
+      "epoch": 1,
+      "status": "PROVISIONAL_CANDIDATE",
+      "candidate_ranks": [
+        3
+      ],
+      "tags": {
+        "DP": {
+          "excluded_single_rank": [],
+          "selected_groups": [
+            "409070b2cd5ea297adcd2b63222213a5ae49f383a097d054d8b161819a469f8c"
+          ],
+          "stage2": {
+            "409070b2cd5ea297adcd2b63222213a5ae49f383a097d054d8b161819a469f8c": {
+              "status": "PROVISIONAL_CANDIDATE",
+              "sensitivity_disagreement": false,
+              "methods": {
+                "unweighted_communicator_mean": {
+                  "avg_latency_us": {
+                    "2": 111.71199878056844,
+                    "3": 41.311999782919884
+                  },
+                  "cv": {
+                    "mean_us": 76.51199928174417,
+                    "population": 0.46005855067524065,
+                    "sample": 0.6506210418506352,
+                    "decision": "ABOVE",
+                    "convention": "population baseline; sample sensitivity (ADAPTATION G04)"
+                  },
+                  "candidates": [
+                    3
+                  ],
+                  "rank_scores": {
+                    "reference_mean_us": 76.51199928174417,
+                    "status": "DEFINED",
+                    "scores": {
+                      "2": -0.4600585506752406,
+                      "3": 0.4600585506752407
+                    }
+                  },
+                  "rule": "minimum avg_latency; 20% filter unresolved and disabled"
+                },
+                "sample_weighted": {
+                  "avg_latency_us": {
+                    "2": 111.71199878056844,
+                    "3": 41.311999782919884
+                  },
+                  "cv": {
+                    "mean_us": 76.51199928174417,
+                    "population": 0.46005855067524065,
+                    "sample": 0.6506210418506352,
+                    "decision": "ABOVE",
+                    "convention": "population baseline; sample sensitivity (ADAPTATION G04)"
+                  },
+                  "candidates": [
+                    3
+                  ],
+                  "rank_scores": {
+                    "reference_mean_us": 76.51199928174417,
+                    "status": "DEFINED",
+                    "scores": {
+                      "2": -0.4600585506752406,
+                      "3": 0.4600585506752407
+                    }
+                  },
+                  "rule": "minimum avg_latency; 20% filter unresolved and disabled"
+                }
+              }
+            }
+          },
+          "max_avg_latency_us": {
+            "2148fc2365985412bc2f7e1f6ea739d962ab9c09b9867af84f9b45de6f4508aa": 44.789332896471024,
+            "409070b2cd5ea297adcd2b63222213a5ae49f383a097d054d8b161819a469f8c": 111.71199878056844,
+            "e8f99bfa43081f15c6afd8366a190d14e583e0607f90d777bb1477e5dbf59db3": 62.431999792655304
+          },
+          "clique_scores": {
+            "reference_mean_us": 54.04622185354432,
+            "status": "DEFINED",
+            "scores": {
+              "2148fc2365985412bc2f7e1f6ea739d962ab9c09b9867af84f9b45de6f4508aa": -0.3164369594585842,
+              "409070b2cd5ea297adcd2b63222213a5ae49f383a097d054d8b161819a469f8c": 0.41567711225177084,
+              "e8f99bfa43081f15c6afd8366a190d14e583e0607f90d777bb1477e5dbf59db3": -0.09924015279318676
+            }
+          },
+          "group_cv": {
+            "mean_us": 72.97777715656491,
+            "population": 0.388069351337588,
+            "sample": 0.47528594779497163,
+            "decision": "ABOVE",
+            "convention": "population baseline; sample sensitivity (ADAPTATION G04)"
+          },
+          "stage1": "MAX_GROUP",
+          "status": "PROVISIONAL_CANDIDATE"
+        },
+        "TP": {
+          "excluded_single_rank": [],
+          "selected_groups": [
+            "6c94586bd1f9f14163891cbbd45d96e735a052765eb03cfc5fe3775e4bd0b67c"
+          ],
+          "stage2": {
+            "6c94586bd1f9f14163891cbbd45d96e735a052765eb03cfc5fe3775e4bd0b67c": {
+              "status": "PROVISIONAL_CANDIDATE",
+              "sensitivity_disagreement": false,
+              "methods": {
+                "unweighted_communicator_mean": {
+                  "avg_latency_us": {
+                    "1": 117.72266775369644,
+                    "3": 38.85333426296711
+                  },
+                  "cv": {
+                    "mean_us": 78.28800100833178,
+                    "population": 0.5037127814921196,
+                    "sample": 0.7123574471268309,
+                    "decision": "ABOVE",
+                    "convention": "population baseline; sample sensitivity (ADAPTATION G04)"
+                  },
+                  "candidates": [
+                    3
+                  ],
+                  "rank_scores": {
+                    "reference_mean_us": 78.28800100833178,
+                    "status": "DEFINED",
+                    "scores": {
+                      "1": -0.5037127814921196,
+                      "3": 0.5037127814921196
+                    }
+                  },
+                  "rule": "minimum avg_latency; 20% filter unresolved and disabled"
+                },
+                "sample_weighted": {
+                  "avg_latency_us": {
+                    "1": 117.72266775369644,
+                    "3": 38.85333426296711
+                  },
+                  "cv": {
+                    "mean_us": 78.28800100833178,
+                    "population": 0.5037127814921196,
+                    "sample": 0.7123574471268309,
+                    "decision": "ABOVE",
+                    "convention": "population baseline; sample sensitivity (ADAPTATION G04)"
+                  },
+                  "candidates": [
+                    3
+                  ],
+                  "rank_scores": {
+                    "reference_mean_us": 78.28800100833178,
+                    "status": "DEFINED",
+                    "scores": {
+                      "1": -0.5037127814921196,
+                      "3": 0.5037127814921196
+                    }
+                  },
+                  "rule": "minimum avg_latency; 20% filter unresolved and disabled"
+                }
+              }
+            }
+          },
+          "max_avg_latency_us": {
+            "6c94586bd1f9f14163891cbbd45d96e735a052765eb03cfc5fe3775e4bd0b67c": 117.72266775369644,
+            "f79518126298e6f368017670779d956f8684b3b1fe91f27964be3da2c481c612": 40.68799906720717
+          },
+          "clique_scores": {
+            "reference_mean_us": 58.17200033925474,
+            "status": "DEFINED",
+            "scores": {
+              "6c94586bd1f9f14163891cbbd45d96e735a052765eb03cfc5fe3775e4bd0b67c": 0.3458021135900782,
+              "f79518126298e6f368017670779d956f8684b3b1fe91f27964be3da2c481c612": -0.3458021135900783
+            }
+          },
+          "group_cv": {
+            "mean_us": 79.20533341045181,
+            "population": 0.4862972313195509,
+            "sample": 0.6877281398765951,
+            "decision": "ABOVE",
+            "convention": "population baseline; sample sensitivity (ADAPTATION G04)"
+          },
+          "stage1": "MAX_GROUP",
+          "status": "PROVISIONAL_CANDIDATE"
+        }
+      },
+      "truth_fault_ranks": []
+    },
+    {
+      "epoch": 2,
+      "status": "PROVISIONAL_CANDIDATE",
+      "candidate_ranks": [
+        3
+      ],
+      "tags": {
+        "DP": {
+          "excluded_single_rank": [],
+          "selected_groups": [
+            "409070b2cd5ea297adcd2b63222213a5ae49f383a097d054d8b161819a469f8c"
+          ],
+          "stage2": {
+            "409070b2cd5ea297adcd2b63222213a5ae49f383a097d054d8b161819a469f8c": {
+              "status": "PROVISIONAL_CANDIDATE",
+              "sensitivity_disagreement": false,
+              "methods": {
+                "unweighted_communicator_mean": {
+                  "avg_latency_us": {
+                    "2": 110.3413353363673,
+                    "3": 37.95733364919822
+                  },
+                  "cv": {
+                    "mean_us": 74.14933449278276,
+                    "population": 0.48809609811275173,
+                    "sample": 0.6902721216924423,
+                    "decision": "ABOVE",
+                    "convention": "population baseline; sample sensitivity (ADAPTATION G04)"
+                  },
+                  "candidates": [
+                    3
+                  ],
+                  "rank_scores": {
+                    "reference_mean_us": 74.14933449278276,
+                    "status": "DEFINED",
+                    "scores": {
+                      "2": -0.4880960981127518,
+                      "3": 0.4880960981127517
+                    }
+                  },
+                  "rule": "minimum avg_latency; 20% filter unresolved and disabled"
+                },
+                "sample_weighted": {
+                  "avg_latency_us": {
+                    "2": 110.3413353363673,
+                    "3": 37.95733364919822
+                  },
+                  "cv": {
+                    "mean_us": 74.14933449278276,
+                    "population": 0.48809609811275173,
+                    "sample": 0.6902721216924423,
+                    "decision": "ABOVE",
+                    "convention": "population baseline; sample sensitivity (ADAPTATION G04)"
+                  },
+                  "candidates": [
+                    3
+                  ],
+                  "rank_scores": {
+                    "reference_mean_us": 74.14933449278276,
+                    "status": "DEFINED",
+                    "scores": {
+                      "2": -0.4880960981127518,
+                      "3": 0.4880960981127517
+                    }
+                  },
+                  "rule": "minimum avg_latency; 20% filter unresolved and disabled"
+                }
+              }
+            }
+          },
+          "max_avg_latency_us": {
+            "2148fc2365985412bc2f7e1f6ea739d962ab9c09b9867af84f9b45de6f4508aa": 41.029333447416626,
+            "409070b2cd5ea297adcd2b63222213a5ae49f383a097d054d8b161819a469f8c": 110.3413353363673,
+            "e8f99bfa43081f15c6afd8366a190d14e583e0607f90d777bb1477e5dbf59db3": 44.43199994663398
+          },
+          "clique_scores": {
+            "reference_mean_us": 49.878222660885925,
+            "status": "DEFINED",
+            "scores": {
+              "2148fc2365985412bc2f7e1f6ea739d962ab9c09b9867af84f9b45de6f4508aa": -0.3021403315541864,
+              "409070b2cd5ea297adcd2b63222213a5ae49f383a097d054d8b161819a469f8c": 0.4866073917050382,
+              "e8f99bfa43081f15c6afd8366a190d14e583e0607f90d777bb1477e5dbf59db3": -0.18446706015085212
+            }
+          },
+          "group_cv": {
+            "mean_us": 65.26755624347263,
+            "population": 0.48879159634172115,
+            "sample": 0.5986450007988308,
+            "decision": "ABOVE",
+            "convention": "population baseline; sample sensitivity (ADAPTATION G04)"
+          },
+          "stage1": "MAX_GROUP",
+          "status": "PROVISIONAL_CANDIDATE"
+        },
+        "TP": {
+          "excluded_single_rank": [],
+          "selected_groups": [
+            "6c94586bd1f9f14163891cbbd45d96e735a052765eb03cfc5fe3775e4bd0b67c"
+          ],
+          "stage2": {
+            "6c94586bd1f9f14163891cbbd45d96e735a052765eb03cfc5fe3775e4bd0b67c": {
+              "status": "PROVISIONAL_CANDIDATE",
+              "sensitivity_disagreement": false,
+              "methods": {
+                "unweighted_communicator_mean": {
+                  "avg_latency_us": {
+                    "1": 105.87733238935469,
+                    "3": 35.066667323311165
+                  },
+                  "cv": {
+                    "mean_us": 70.47199985633293,
+                    "population": 0.5024028352423731,
+                    "sample": 0.7105049033744595,
+                    "decision": "ABOVE",
+                    "convention": "population baseline; sample sensitivity (ADAPTATION G04)"
+                  },
+                  "candidates": [
+                    3
+                  ],
+                  "rank_scores": {
+                    "reference_mean_us": 70.47199985633293,
+                    "status": "DEFINED",
+                    "scores": {
+                      "1": -0.5024028352423731,
+                      "3": 0.502402835242373
+                    }
+                  },
+                  "rule": "minimum avg_latency; 20% filter unresolved and disabled"
+                },
+                "sample_weighted": {
+                  "avg_latency_us": {
+                    "1": 105.87733238935469,
+                    "3": 35.066667323311165
+                  },
+                  "cv": {
+                    "mean_us": 70.47199985633293,
+                    "population": 0.5024028352423731,
+                    "sample": 0.7105049033744595,
+                    "decision": "ABOVE",
+                    "convention": "population baseline; sample sensitivity (ADAPTATION G04)"
+                  },
+                  "candidates": [
+                    3
+                  ],
+                  "rank_scores": {
+                    "reference_mean_us": 70.47199985633293,
+                    "status": "DEFINED",
+                    "scores": {
+                      "1": -0.5024028352423731,
+                      "3": 0.502402835242373
+                    }
+                  },
+                  "rule": "minimum avg_latency; 20% filter unresolved and disabled"
+                }
+              }
+            }
+          },
+          "max_avg_latency_us": {
+            "6c94586bd1f9f14163891cbbd45d96e735a052765eb03cfc5fe3775e4bd0b67c": 105.87733238935469,
+            "f79518126298e6f368017670779d956f8684b3b1fe91f27964be3da2c481c612": 45.26933344701926
+          },
+          "clique_scores": {
+            "reference_mean_us": 53.51199985792239,
+            "status": "DEFINED",
+            "scores": {
+              "6c94586bd1f9f14163891cbbd45d96e735a052765eb03cfc5fe3775e4bd0b67c": 0.31693825765137484,
+              "f79518126298e6f368017670779d956f8684b3b1fe91f27964be3da2c481c612": -0.31693825765137484
+            }
+          },
+          "group_cv": {
+            "mean_us": 75.57333291818698,
+            "population": 0.40098799802800494,
+            "sample": 0.5670826651600405,
+            "decision": "ABOVE",
+            "convention": "population baseline; sample sensitivity (ADAPTATION G04)"
+          },
+          "stage1": "MAX_GROUP",
+          "status": "PROVISIONAL_CANDIDATE"
+        }
+      },
+      "truth_fault_ranks": []
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "exit_code": 0,
+  "checks": {
+    "status": "NO_CANDIDATE",
+    "candidate_ranks": [],
+    "tags.DP.stage1": "CV_SKIP",
+    "tags.DP.group_cv.population": 0.009900990099009901
+  },
+  "hand_calculation": "group max100,102; mean101 std1 CV1/101<.1, no rank analysis even though ranks differ"
+}

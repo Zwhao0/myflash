@@ -1,0 +1,38 @@
+{
+  "fixture:0:2": {
+    "node_id": "n0",
+    "pid": 1000,
+    "thread_id": "t0",
+    "process_instance": "p0",
+    "comm_generation": 1,
+    "comm_rank": 0,
+    "comm_size": 2,
+    "identity_source": "UNIQUE_ID_SHA256",
+    "result": 0,
+    "source_csv_sha256": "27255b22d17707f00fe0ea08966dc16d9ddfa29642b097d38535522dd1a7c0a8"
+  },
+  "fixture:1:1": {
+    "node_id": "n0",
+    "pid": 1001,
+    "thread_id": "t0",
+    "process_instance": "p1",
+    "comm_generation": 1,
+    "comm_rank": 1,
+    "comm_size": 2,
+    "identity_source": "UNIQUE_ID_SHA256",
+    "result": 0,
+    "source_csv_sha256": "df3711f5faacfb649f61be7d0cda21057578ab2c9c98df9d2060c40e0c71c94f"
+  },
+  "fixture:1:2": {
+    "node_id": "n0",
+    "pid": 1001,
+    "thread_id": "t0",
+    "process_instance": "p1",
+    "comm_generation": 1,
+    "comm_rank": 1,
+    "comm_size": 2,
+    "identity_source": "UNIQUE_ID_SHA256",
+    "result": 0,
+    "source_csv_sha256": "df3711f5faacfb649f61be7d0cda21057578ab2c9c98df9d2060c40e0c71c94f"
+  }
+}

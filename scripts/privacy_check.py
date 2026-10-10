@@ -4,7 +4,9 @@ Source: tasks/04_privacy.md and docs/privacy/AUDIT.md. Standard library only.
 This is a heuristic text check, not a complete secret scanner or rights review.
 """
 import argparse
+import hashlib
 import ipaddress
+import json
 import re
 import subprocess
 from pathlib import Path
@@ -76,6 +78,21 @@ def sensitive_path(path):
     )
 
 
+def reviewed_synthetic_fixture(path, data):
+    """Only exact reviewed M4 CPU fixture bytes may bypass the raw-file ban.
+
+    Text content still goes through every identity/credential rule below.
+    Source hashes and review scope: docs/privacy/synthetic-fixtures.json.
+    """
+    if not path.startswith('tests/m4_cases/') or not path.endswith('.ndjson'):
+        return False
+    manifest = ROOT / 'docs/privacy/synthetic-fixtures.json'
+    if not manifest.is_file():
+        return False
+    expected = {entry['path']: entry['sha256'] for entry in json.loads(manifest.read_text())['files']}
+    return expected.get(path) == hashlib.sha256(data).hexdigest()
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--history', action='store_true', help='scan all locally fetched commit trees')
@@ -100,7 +117,7 @@ def main():
                 entries.append((path, (ROOT / path).read_bytes(), 'worktree'))
     failures = 0
     for path, data, scope in entries:
-        if sensitive_path(path):
+        if sensitive_path(path) and not reviewed_synthetic_fixture(path, data):
             print(f'{scope} {path}: prohibited_private_file')
             failures += 1
         try:

@@ -1,0 +1,198 @@
+{
+  "schema_version": 1,
+  "context": {
+    "run_id": "fixture",
+    "profile_epoch": 1
+  },
+  "status": "PROVISIONAL_CANDIDATE",
+  "final_fault_ranks": [],
+  "candidate_ranks": [
+    0
+  ],
+  "tags": {
+    "DP": {
+      "excluded_single_rank": [],
+      "selected_groups": [
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      ],
+      "stage2": {
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa": {
+          "status": "PROVISIONAL_CANDIDATE",
+          "sensitivity_disagreement": false,
+          "methods": {
+            "unweighted_communicator_mean": {
+              "avg_latency_us": {
+                "0": 2.0,
+                "1": 18.0
+              },
+              "cv": {
+                "mean_us": 10.0,
+                "population": 0.8,
+                "sample": 1.131370849898476,
+                "decision": "ABOVE",
+                "convention": "population baseline; sample sensitivity (ADAPTATION G04)"
+              },
+              "candidates": [
+                0
+              ],
+              "rank_scores": {
+                "reference_mean_us": 10.0,
+                "status": "DEFINED",
+                "scores": {
+                  "0": 0.8,
+                  "1": -0.8
+                }
+              },
+              "rule": "minimum avg_latency; 20% filter unresolved and disabled"
+            },
+            "sample_weighted": {
+              "avg_latency_us": {
+                "0": 2.0,
+                "1": 18.0
+              },
+              "cv": {
+                "mean_us": 10.0,
+                "population": 0.8,
+                "sample": 1.131370849898476,
+                "decision": "ABOVE",
+                "convention": "population baseline; sample sensitivity (ADAPTATION G04)"
+              },
+              "candidates": [
+                0
+              ],
+              "rank_scores": {
+                "reference_mean_us": 10.0,
+                "status": "DEFINED",
+                "scores": {
+                  "0": 0.8,
+                  "1": -0.8
+                }
+              },
+              "rule": "minimum avg_latency; 20% filter unresolved and disabled"
+            }
+          }
+        }
+      },
+      "max_avg_latency_us": {
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa": 18.0
+      },
+      "clique_scores": {
+        "reference_mean_us": 10.0,
+        "status": "DEFINED",
+        "scores": {
+          "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa": 0.0
+        }
+      },
+      "stage1": "SINGLE_GROUP_DIRECT",
+      "group_cv": null,
+      "status": "PROVISIONAL_CANDIDATE"
+    }
+  },
+  "groups": {
+    "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa": {
+      "id_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "members": [
+        0,
+        1
+      ],
+      "local_communicators": [
+        {
+          "node_id": "n0",
+          "global_rank": 0,
+          "process_instance": "p0",
+          "comm_generation": 1,
+          "avg_latency_us": 2.0,
+          "sample_count": 2,
+          "min_us": 2.0,
+          "max_us": 2.0
+        },
+        {
+          "node_id": "n0",
+          "global_rank": 1,
+          "process_instance": "p1",
+          "comm_generation": 1,
+          "avg_latency_us": 18.0,
+          "sample_count": 2,
+          "min_us": 18.0,
+          "max_us": 18.0
+        }
+      ],
+      "max_avg_latency_us": 18.0,
+      "clique_mean_us": 10.0
+    }
+  },
+  "cross_tag": {
+    "conflict": false,
+    "support": {
+      "0": {
+        "labels": [
+          "DP"
+        ],
+        "evidence": [
+          {
+            "label": "DP",
+            "id_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+            "method": "unweighted_communicator_mean",
+            "status": "PROVISIONAL_CANDIDATE",
+            "avg_latency_us": 2.0,
+            "rank_cv": {
+              "mean_us": 10.0,
+              "population": 0.8,
+              "sample": 1.131370849898476,
+              "decision": "ABOVE",
+              "convention": "population baseline; sample sensitivity (ADAPTATION G04)"
+            },
+            "comparison_rank_means_us": {
+              "0": 2.0,
+              "1": 18.0
+            },
+            "rule": "min rank after max group/CV"
+          },
+          {
+            "label": "DP",
+            "id_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+            "method": "sample_weighted",
+            "status": "PROVISIONAL_CANDIDATE",
+            "avg_latency_us": 2.0,
+            "rank_cv": {
+              "mean_us": 10.0,
+              "population": 0.8,
+              "sample": 1.131370849898476,
+              "decision": "ABOVE",
+              "convention": "population baseline; sample sensitivity (ADAPTATION G04)"
+            },
+            "comparison_rank_means_us": {
+              "0": 2.0,
+              "1": 18.0
+            },
+            "rule": "min rank after max group/CV"
+          }
+        ]
+      }
+    }
+  },
+  "completeness": {
+    "records": 4,
+    "independent_process_scopes": 4,
+    "communicator_scope_observations": 4,
+    "expected_instances": 2,
+    "valid_records": 4
+  },
+  "measurement_signatures": [
+    {
+      "api": "ncclAllReduce",
+      "count": 4,
+      "count_unit": "elements",
+      "datatype": 7,
+      "member_records": 4
+    }
+  ],
+  "risks": [],
+  "unresolved": [
+    "G04: 20% reference/filter undefined",
+    "G04: communicator aggregation weights undefined",
+    "G04: statistical references and std convention not uniquely specified"
+  ],
+  "interpretation": "Offline ordering evidence only; no final fault decision, probability or automatic diagnosis",
+  "source_audit": []
+}

@@ -1,0 +1,90 @@
+{
+  "task": "P1-C1",
+  "main_commit": "01c96abeab2be25ff38176357a19fb53f18356f8",
+  "previous_pr_head": "62de1f99462130536bd7a5d6c045475b0129dc94",
+  "machine": "local macOS Darwin25.6.0 arm64",
+  "python": "3.9.6",
+  "cwd": "<audit-clone>",
+  "commands": [
+    {
+      "command": [
+        "python3",
+        "tests/privacy_check_test.py"
+      ],
+      "exit_code": 0,
+      "status": "PASS",
+      "log": "../logs/conflict-01/00.log"
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/privacy_check.py"
+      ],
+      "exit_code": 0,
+      "status": "PASS",
+      "log": "../logs/conflict-01/01.log"
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/privacy_preservation.py"
+      ],
+      "exit_code": 0,
+      "status": "PASS",
+      "log": "../logs/conflict-01/02.log"
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/m3_validate_public.py"
+      ],
+      "exit_code": 0,
+      "status": "PASS",
+      "log": "../logs/conflict-01/03.log"
+    },
+    {
+      "command": [
+        "python3",
+        "tests/m4_offline.py",
+        "--output",
+        "runs/p1-conflict-m4-fixtures-02"
+      ],
+      "exit_code": 0,
+      "status": "PASS",
+      "log": "../logs/conflict-01/04.log"
+    },
+    {
+      "command": [
+        "python3",
+        "../verify_conflict_preservation.py"
+      ],
+      "exit_code": 0,
+      "status": "PASS",
+      "log": "../logs/conflict-01/05.log"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "status": "PASS",
+      "log": "../logs/conflict-01/06.log"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--cached",
+        "--check"
+      ],
+      "exit_code": 0,
+      "status": "PASS",
+      "log": "../logs/conflict-01/07.log"
+    }
+  ],
+  "preservation_command_source": "import ast,hashlib,json,subprocess\nfrom pathlib import Path\nbase='01c96abeab2be25ff38176357a19fb53f18356f8'\nfiles=subprocess.check_output(['git','ls-tree','-r','--name-only',base],text=True).splitlines()\nprivate=json.loads(subprocess.check_output(['git','show','2fcc457:docs/m0/host.json'],text=True))['workspace']\nrows=[];redacted=[]\nfor name in files:\n if not (name.startswith(('docs/m4/','tests/m4','scripts/m4')) or name in ['flash/localization.py','flash/profile_input.py','tasks/04_localization.md']):continue\n old=subprocess.check_output(['git','show',base+':'+name]);new=Path(name).read_bytes()\n if old!=new:\n  assert name.startswith('docs/m4/') or name=='scripts/m4_replay.py',name\n  normalized=old.decode().replace(private,'<project>').replace('gpu-'+'01','node-0').replace('gpu-'+'02','node-1').encode()\n  assert normalized==new,name\n  if name.endswith('.py'):assert ast.dump(ast.parse(old))==ast.dump(ast.parse(new)),name\n  redacted.append(name)\n else:rows.append({'path':name,'sha256':hashlib.sha256(new).hexdigest()})\nassert Path('PLAN.md').read_bytes()==subprocess.check_output(['git','show',base+':PLAN.md'])\nassert not subprocess.check_output(['git','diff','--name-only','--diff-filter=U'],text=True)\ns=Path('STATUS.md').read_text();assert s.startswith('# FLASH \u5168\u65b0\u5f00\u53d1\u72b6\u6001\\n\\n\u5f53\u524d\u9636\u6bb5\uff1aM4')\nassert all(x in s for x in ['## M4\u6700\u7ec8\u7ed3\u679c\u4e0e\u505c\u6b62','## P1 \u9690\u79c1\u5ba1\u67e5'])\nresult={'status':'PASS','main_commit':base,'unchanged_m4_files':len(rows),'identity_only_files':redacted,'replay_AST':'identical','plan':'identical_to_main','unmerged_paths':0,'files':rows}\nprint(json.dumps(result,indent=2))\n",
+  "gpu_experiments": "NOT_RUN",
+  "remote_CI": "pending publication"
+}

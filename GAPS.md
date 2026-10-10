@@ -71,3 +71,14 @@ G07 / ADAPTATION / ABI2与已验证恢复范围：Event280bytes、请求/应用w
 G09 / PAPER机制假设 / 仅观察到适用边界，仍OPEN：单机及RoCE的CPU0/1、GPU0/1迟到，两轮各13次（每轮预先固定3warmup），有效分布每case/rank20点；目标rank的通信Event区间较短。GPU计算经compute→Event→comm wait→Probe start，目标自身前置工作在区间外；Event也可包含主机提交间隙、GPU排队/peer等待，不是纯内核本体。尚未分解组成，未检验降频/拥塞/其它消息/算法/真实MoE/并发故障，禁止推广或翻转min/max。原始值/标签未改，见docs/m3 samples/distributions与RESULTS。
 G16 / ADAPTATION / 手动协议已验证：控制本地请求和逐事件实际epoch；Header应用值只是最近调用线程边界，不代表全rank ACK；验证器要求所有rank/epoch/计数/状态完整，缺rank/部分生效/timeout/异常不能完整Profile。Group预期Unsupported的测试PASS与complete_profile=false分开。自动分布式控制/20s公式/Redis/控制失联闭环仍未实现，留M6审核。
 G04/G01/G02/G03/G06/G10–G15/G17–G20等科学/复杂范围不因M3功能通过自动关闭。Group共享字段聚合必须按scope解释，不将成员重复当独立测量；M4权重尚待批准。
+
+## M4 G04 核对与待决定选项（2026-10-10，OPEN）
+证据：第三章 §3.2.3 pp30–31、§3.3.2 p34、式3-1/3-2 pp41–42全文/公式页已复核。已有SPEC/ARCHITECTURE/M3设计也未提供唯一20%参照或跨comm权重。没有GreyHound算法作为FLASH规则旁证。
+PAPER：确定部分仅max communicator mean选组、min rank mean排序、CV0.1、独立绘图scores。正式20%过滤未实现，候选标PROVISIONAL_CANDIDATE；分歧标AMBIGUOUS_SPEC，不输出最终故障rank。
+待用户决定（本轮不请求猜测性批准）：
+1. rank聚合：每本地communicator均值等权 / 每独立scope样本数加权 / 新证据定义。影响：不等样本量时可改变rank排序；fixture aggregation_weights_disagree明确给出rank1 vs rank0。
+2. 20%分母/参照：相对组内rank均值 / 相对其它rank均值 / 相对次小时延 / 原作者规则。各自改变近阈值候选与正常误报；均未启用默认过滤。
+3. std总体 / 样本：小组可跨越CV0.1；本轮population标ADAPTATION、sample并列敏感性，跨门槛不强判。
+4. 式3-1 clique平均与全组参照的权重：本轮展示本地comm均值等权，明确统计口径，不替代max_avg_latency；未校准概率。
+ADAPTATION G05/G16：同进程/线程/outer group_id scope内每本地comm最多一观测，保留成员数量和独立scope数量。跨comm共享scope相关性风险可见，不假装独立；缺失/无效/重复/身份不可靠直接拒绝，零均值不定义CV。
+批准：用户M4明确允许确定性部分PASS、保留G04。实现flash/profile_input.py/localization.py；测试tests/m4_cases与docs/m4验证记录。科学问题未关闭。

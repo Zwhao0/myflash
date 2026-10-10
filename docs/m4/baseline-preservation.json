@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "base_commit": "a1ed7e2b5a6c0c6e3ae8d032567add2189fe1a79",
+  "paths": [
+    "native",
+    "flash/reader.py",
+    "scripts/m1*",
+    "scripts/m2*",
+    "scripts/m3*",
+    "tests/m1*",
+    "tests/m2*",
+    "tests/m3*",
+    "docs/m3"
+  ],
+  "command": [
+    "git",
+    "diff",
+    "--exit-code",
+    "a1ed7e2b5a6c0c6e3ae8d032567add2189fe1a79",
+    "--",
+    "native",
+    "flash/reader.py",
+    "scripts/m1*",
+    "scripts/m2*",
+    "scripts/m3*",
+    "tests/m1*",
+    "tests/m2*",
+    "tests/m3*",
+    "docs/m3"
+  ],
+  "exit_code": 0,
+  "changed_baseline_bytes": 0
+}

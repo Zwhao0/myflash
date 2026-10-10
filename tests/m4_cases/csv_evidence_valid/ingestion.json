@@ -1,0 +1,8 @@
+{
+  "format": "m3_csv",
+  "records": [
+    "rank-0.csv",
+    "rank-1.csv"
+  ],
+  "supplements": "supplements.json"
+}

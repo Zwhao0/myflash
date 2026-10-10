@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "context": {
+    "run_id": "fixture",
+    "profile_epoch": 1
+  },
+  "status": "NO_CANDIDATE",
+  "final_fault_ranks": [],
+  "candidate_ranks": [],
+  "tags": {
+    "DP": {
+      "excluded_single_rank": [
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      ],
+      "selected_groups": [],
+      "stage2": {},
+      "status": "NO_CANDIDATE",
+      "reason": "NO_MULTIRANK_GROUP"
+    }
+  },
+  "groups": {
+    "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa": {
+      "id_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "members": [
+        0
+      ],
+      "local_communicators": [
+        {
+          "node_id": "n0",
+          "global_rank": 0,
+          "process_instance": "p0",
+          "comm_generation": 1,
+          "avg_latency_us": 3.0,
+          "sample_count": 1,
+          "min_us": 3.0,
+          "max_us": 3.0
+        }
+      ],
+      "max_avg_latency_us": 3.0,
+      "clique_mean_us": 3.0
+    }
+  },
+  "cross_tag": {
+    "conflict": false,
+    "support": {}
+  },
+  "completeness": {
+    "records": 1,
+    "independent_process_scopes": 1,
+    "communicator_scope_observations": 1,
+    "expected_instances": 1,
+    "valid_records": 1
+  },
+  "measurement_signatures": [
+    {
+      "api": "ncclAllReduce",
+      "count": 4,
+      "count_unit": "elements",
+      "datatype": 7,
+      "member_records": 1
+    }
+  ],
+  "risks": [],
+  "unresolved": [
+    "G04: 20% reference/filter undefined",
+    "G04: communicator aggregation weights undefined",
+    "G04: statistical references and std convention not uniquely specified"
+  ],
+  "interpretation": "Offline ordering evidence only; no final fault decision, probability or automatic diagnosis",
+  "source_audit": []
+}

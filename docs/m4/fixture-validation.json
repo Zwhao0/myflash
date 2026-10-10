@@ -1,0 +1,1235 @@
+{
+  "machine": "node-0",
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "status": "PASS",
+  "results": [
+    {
+      "fixture": "single_group_min_rank",
+      "status": "PASS",
+      "reason": null,
+      "command": [
+        "/usr/bin/python3",
+        "scripts/m4_analyze.py",
+        "--input",
+        "<project>/tests/m4_cases/single_group_min_rank/input.json",
+        "--output",
+        "runs/m4-offline-final-03/single_group_min_rank/actual.json"
+      ],
+      "exit_code": 0,
+      "input": "<project>/tests/m4_cases/single_group_min_rank/input.json",
+      "hand_expected": "<project>/tests/m4_cases/single_group_min_rank/expected.json",
+      "actual": "runs/m4-offline-final-03/single_group_min_rank/actual.json",
+      "log": "runs/m4-offline-final-03/single_group_min_rank/stdout.log"
+    },
+    {
+      "fixture": "three_groups_max_then_min",
+      "status": "PASS",
+      "reason": null,
+      "command": [
+        "/usr/bin/python3",
+        "scripts/m4_analyze.py",
+        "--input",
+        "<project>/tests/m4_cases/three_groups_max_then_min/input.json",
+        "--output",
+        "runs/m4-offline-final-03/three_groups_max_then_min/actual.json"
+      ],
+      "exit_code": 0,
+      "input": "<project>/tests/m4_cases/three_groups_max_then_min/input.json",
+      "hand_expected": "<project>/tests/m4_cases/three_groups_max_then_min/expected.json",
+      "actual": "runs/m4-offline-final-03/three_groups_max_then_min/actual.json",
+      "log": "runs/m4-offline-final-03/three_groups_max_then_min/stdout.log"
+    },
+    {
+      "fixture": "max_is_not_clique_score",
+      "status": "PASS",
+      "reason": null,
+      "command": [
+        "/usr/bin/python3",
+        "scripts/m4_analyze.py",
+        "--input",
+        "<project>/tests/m4_cases/max_is_not_clique_score/input.json",
+        "--output",
+        "runs/m4-offline-final-03/max_is_not_clique_score/actual.json"
+      ],
+      "exit_code": 0,
+      "input": "<project>/tests/m4_cases/max_is_not_clique_score/input.json",
+      "hand_expected": "<project>/tests/m4_cases/max_is_not_clique_score/expected.json",
+      "actual": "runs/m4-offline-final-03/max_is_not_clique_score/actual.json",
+      "log": "runs/m4-offline-final-03/max_is_not_clique_score/stdout.log"
+    },
+    {
+      "fixture": "stage1_cv_below",
+      "status": "PASS",
+      "reason": null,
+      "command": [
+        "/usr/bin/python3",
+        "scripts/m4_analyze.py",
+        "--input",
+        "<project>/tests/m4_cases/stage1_cv_below/input.json",
+        "--output",
+        "runs/m4-offline-final-03/stage1_cv_below/actual.json"
+      ],
+      "exit_code": 0,
+      "input": "<project>/tests/m4_cases/stage1_cv_below/input.json",
+      "hand_expected": "<project>/tests/m4_cases/stage1_cv_below/expected.json",
+      "actual": "runs/m4-offline-final-03/stage1_cv_below/actual.json",
+      "log": "runs/m4-offline-final-03/stage1_cv_below/stdout.log"
+    },
+    {
+      "fixture": "stage2_cv_below",
+      "status": "PASS",
+      "reason": null,
+      "command": [
+        "/usr/bin/python3",
+        "scripts/m4_analyze.py",
+        "--input",
+        "<project>/tests/m4_cases/stage2_cv_below/input.json",
+        "--output",
+        "runs/m4-offline-final-03/stage2_cv_below/actual.json"
+      ],
+      "exit_code": 0,
+      "input": "<project>/tests/m4_cases/stage2_cv_below/input.json",
+      "hand_expected": "<project>/tests/m4_cases/stage2_cv_below/expected.json",
+      "actual": "runs/m4-offline-final-03/stage2_cv_below/actual.json",
+      "log": "runs/m4-offline-final-03/stage2_cv_below/stdout.log"
+    },
+    {
+      "fixture": "cv_boundary_exact",
+      "status": "PASS",
+      "reason": null,
+      "command": [
+        "/usr/bin/python3",
+        "scripts/m4_analyze.py",
+        "--input",
+        "<project>/tests/m4_cases/cv_boundary_exact/input.json",
+        "--output",
+        "runs/m4-offline-final-03/cv_boundary_exact/actual.json"
+      ],
+      "exit_code": 0,
+      "input": "<project>/tests/m4_cases/cv_boundary_exact/input.json",
+      "hand_expected": "<project>/tests/m4_cases/cv_boundary_exact/expected.json",
+      "actual": "runs/m4-offline-final-03/cv_boundary_exact/actual.json",
+      "log": "runs/m4-offline-final-03/cv_boundary_exact/stdout.log"
+    },
+    {
+      "fixture": "std_convention_disagreement",
+      "status": "PASS",
+      "reason": null,
+      "command": [
+        "/usr/bin/python3",
+        "scripts/m4_analyze.py",
+        "--input",
+        "<project>/tests/m4_cases/std_convention_disagreement/input.json",
+        "--output",
+        "runs/m4-offline-final-03/std_convention_disagreement/actual.json"
+      ],
+      "exit_code": 0,
+      "input": "<project>/tests/m4_cases/std_convention_disagreement/input.json",
+      "hand_expected": "<project>/tests/m4_cases/std_convention_disagreement/expected.json",
+      "actual": "runs/m4-offline-final-03/std_convention_disagreement/actual.json",
+      "log": "runs/m4-offline-final-03/std_convention_disagreement/stdout.log"
+    },
+    {
+      "fixture": "normal_equal",
+      "status": "PASS",
+      "reason": null,
+      "command": [
+        "/usr/bin/python3",
+        "scripts/m4_analyze.py",
+        "--input",
+        "<project>/tests/m4_cases/normal_equal/input.json",
+        "--output",
+        "runs/m4-offline-final-03/normal_equal/actual.json"
+      ],
+      "exit_code": 0,
+      "input": "<project>/tests/m4_cases/normal_equal/input.json",
+      "hand_expected": "<project>/tests/m4_cases/normal_equal/expected.json",
+      "actual": "runs/m4-offline-final-03/normal_equal/actual.json",
+      "log": "runs/m4-offline-final-03/normal_equal/stdout.log"
+    },
+    {
+      "fixture": "zero_mean",
+      "status": "PASS",
+      "reason": null,
+      "command": [
+        "/usr/bin/python3",
+        "scripts/m4_analyze.py",
+        "--input",
+        "<project>/tests/m4_cases/zero_mean/input.json",
+        "--output",
+        "runs/m4-offline-final-03/zero_mean/actual.json"
+      ],
+      "exit_code": 0,
+      "input": "<project>/tests/m4_cases/zero_mean/input.json",
+      "hand_expected": "<project>/tests/m4_cases/zero_mean/expected.json",
+      "actual": "runs/m4-offline-final-03/zero_mean/actual.json",
+      "log": "runs/m4-offline-final-03/zero_mean/stdout.log"
+    },
+    {
+      "fixture": "singleton_excluded",
+      "status": "PASS",
+      "reason": null,
+      "command": [
+        "/usr/bin/python3",
+        "scripts/m4_analyze.py",
+        "--input",
+        "<project>/tests/m4_cases/singleton_excluded/input.json",
+        "--output",
+        "runs/m4-offline-final-03/singleton_excluded/actual.json"
+      ],
+      "exit_code": 0,
+      "input": "<project>/tests/m4_cases/singleton_excluded/input.json",
+      "hand_expected": "<project>/tests/m4_cases/singleton_excluded/expected.json",
+      "actual": "runs/m4-offline-final-03/singleton_excluded/actual.json",
+      "log": "runs/m4-offline-final-03/singleton_excluded/stdout.log"
+    },
+    {
+      "fixture": "same_members_distinct_hash",
+      "status": "PASS",
+      "reason": null,
+      "command": [
+        "/usr/bin/python3",
+        "scripts/m4_analyze.py",
+        "--input",
+        "<project>/tests/m4_cases/same_members_distinct_hash/input.json",
+        "--output",
+        "runs/m4-offline-final-03/same_members_distinct_hash/actual.json"
+      ],
+      "exit_code": 0,
+      "input": "<project>/tests/m4_cases/same_members_distinct_hash/input.json",
+      "hand_expected": "<project>/tests/m4_cases/same_members_distinct_hash/expected.json",
+      "actual": "runs/m4-offline-final-03/same_members_distinct_hash/actual.json",
+      "log": "runs/m4-offline-final-03/same_members_distinct_hash/stdout.log"
+    },
+    {
+      "fixture": "multitag_agree",
+      "status": "PASS",
+      "reason": null,
+      "command": [
+        "/usr/bin/python3",
+        "scripts/m4_analyze.py",
+        "--input",
+        "<project>/tests/m4_cases/multitag_agree/input.json",
+        "--output",
+        "runs/m4-offline-final-03/multitag_agree/actual.json"
+      ],
+      "exit_code": 0,
+      "input": "<project>/tests/m4_cases/multitag_agree/input.json",
+      "hand_expected": "<project>/tests/m4_cases/multitag_agree/expected.json",
+      "actual": "runs/m4-offline-final-03/multitag_agree/actual.json",
+      "log": "runs/m4-offline-final-03/multitag_agree/stdout.log"
+    },
+    {
+      "fixture": "multitag_conflict",
+      "status": "PASS",
+      "reason": null,
+      "command": [
+        "/usr/bin/python3",
+        "scripts/m4_analyze.py",
+        "--input",
+        "<project>/tests/m4_cases/multitag_conflict/input.json",
+        "--output",
+        "runs/m4-offline-final-03/multitag_conflict/actual.json"
+      ],
+      "exit_code": 0,
+      "input": "<project>/tests/m4_cases/multitag_conflict/input.json",
+      "hand_expected": "<project>/tests/m4_cases/multitag_conflict/expected.json",
+      "actual": "runs/m4-offline-final-03/multitag_conflict/actual.json",
+      "log": "runs/m4-offline-final-03/multitag_conflict/stdout.log"
+    },
+    {
+      "fixture": "nested_group_shared_members",
+      "status": "PASS",
+      "reason": null,
+      "command": [
+        "/usr/bin/python3",
+        "scripts/m4_analyze.py",
+        "--input",
+        "<project>/tests/m4_cases/nested_group_shared_members/input.json",
+        "--output",
+        "runs/m4-offline-final-03/nested_group_shared_members/actual.json"
+      ],
+      "exit_code": 0,
+      "input": "<project>/tests/m4_cases/nested_group_shared_members/input.json",
+      "hand_expected": "<project>/tests/m4_cases/nested_group_shared_members/expected.json",
+      "actual": "runs/m4-offline-final-03/nested_group_shared_members/actual.json",
+      "log": "runs/m4-offline-final-03/nested_group_shared_members/stdout.log"
+    },
+    {
+      "fixture": "cross_comm_group_correlated",
+      "status": "PASS",
+      "reason": null,
+      "command": [
+        "/usr/bin/python3",
+        "scripts/m4_analyze.py",
+        "--input",
+        "<project>/tests/m4_cases/cross_comm_group_correlated/input.json",
+        "--output",
+        "runs/m4-offline-final-03/cross_comm_group_correlated/actual.json"
+      ],
+      "exit_code": 0,
+      "input": "<project>/tests/m4_cases/cross_comm_group_correlated/input.json",
+      "hand_expected": "<project>/tests/m4_cases/cross_comm_group_correlated/expected.json",
+      "actual": "runs/m4-offline-final-03/cross_comm_group_correlated/actual.json",
+      "log": "runs/m4-offline-final-03/cross_comm_group_correlated/stdout.log"
+    },
+    {
+      "fixture": "heterogeneous_duration_baseline",
+      "status": "PASS",
+      "reason": null,
+      "command": [
+        "/usr/bin/python3",
+        "scripts/m4_analyze.py",
+        "--input",
+        "<project>/tests/m4_cases/heterogeneous_duration_baseline/input.json",
+        "--output",
+        "runs/m4-offline-final-03/heterogeneous_duration_baseline/actual.json"
+      ],
+      "exit_code": 0,
+      "input": "<project>/tests/m4_cases/heterogeneous_duration_baseline/input.json",
+      "hand_expected": "<project>/tests/m4_cases/heterogeneous_duration_baseline/expected.json",
+      "actual": "runs/m4-offline-final-03/heterogeneous_duration_baseline/actual.json",
+      "log": "runs/m4-offline-final-03/heterogeneous_duration_baseline/stdout.log"
+    },
+    {
+      "fixture": "aggregation_weights_disagree",
+      "status": "PASS",
+      "reason": null,
+      "command": [
+        "/usr/bin/python3",
+        "scripts/m4_analyze.py",
+        "--input",
+        "<project>/tests/m4_cases/aggregation_weights_disagree/input.json",
+        "--output",
+        "runs/m4-offline-final-03/aggregation_weights_disagree/actual.json"
+      ],
+      "exit_code": 0,
+      "input": "<project>/tests/m4_cases/aggregation_weights_disagree/input.json",
+      "hand_expected": "<project>/tests/m4_cases/aggregation_weights_disagree/expected.json",
+      "actual": "runs/m4-offline-final-03/aggregation_weights_disagree/actual.json",
+      "log": "runs/m4-offline-final-03/aggregation_weights_disagree/stdout.log"
+    },
+    {
+      "fixture": "minimum_tie",
+      "status": "PASS",
+      "reason": null,
+      "command": [
+        "/usr/bin/python3",
+        "scripts/m4_analyze.py",
+        "--input",
+        "<project>/tests/m4_cases/minimum_tie/input.json",
+        "--output",
+        "runs/m4-offline-final-03/minimum_tie/actual.json"
+      ],
+      "exit_code": 0,
+      "input": "<project>/tests/m4_cases/minimum_tie/input.json",
+      "hand_expected": "<project>/tests/m4_cases/minimum_tie/expected.json",
+      "actual": "runs/m4-offline-final-03/minimum_tie/actual.json",
+      "log": "runs/m4-offline-final-03/minimum_tie/stdout.log"
+    },
+    {
+      "fixture": "missing_duration",
+      "status": "PASS",
+      "reason": null,
+      "command": [
+        "/usr/bin/python3",
+        "scripts/m4_analyze.py",
+        "--input",
+        "<project>/tests/m4_cases/missing_duration/input.json",
+        "--output",
+        "runs/m4-offline-final-03/missing_duration/actual.json"
+      ],
+      "exit_code": 2,
+      "input": "<project>/tests/m4_cases/missing_duration/input.json",
+      "hand_expected": "<project>/tests/m4_cases/missing_duration/expected.json",
+      "actual": "runs/m4-offline-final-03/missing_duration/actual.json",
+      "log": "runs/m4-offline-final-03/missing_duration/stdout.log"
+    },
+    {
+      "fixture": "nan_duration",
+      "status": "PASS",
+      "reason": null,
+      "command": [
+        "/usr/bin/python3",
+        "scripts/m4_analyze.py",
+        "--input",
+        "<project>/tests/m4_cases/nan_duration/input.json",
+        "--output",
+        "runs/m4-offline-final-03/nan_duration/actual.json"
+      ],
+      "exit_code": 2,
+      "input": "<project>/tests/m4_cases/nan_duration/input.json",
+      "hand_expected": "<project>/tests/m4_cases/nan_duration/expected.json",
+      "actual": "runs/m4-offline-final-03/nan_duration/actual.json",
+      "log": "runs/m4-offline-final-03/nan_duration/stdout.log"
+    },
+    {
+      "fixture": "infinite_duration",
+      "status": "PASS",
+      "reason": null,
+      "command": [
+        "/usr/bin/python3",
+        "scripts/m4_analyze.py",
+        "--input",
+        "<project>/tests/m4_cases/infinite_duration/input.json",
+        "--output",
+        "runs/m4-offline-final-03/infinite_duration/actual.json"
+      ],
+      "exit_code": 2,
+      "input": "<project>/tests/m4_cases/infinite_duration/input.json",
+      "hand_expected": "<project>/tests/m4_cases/infinite_duration/expected.json",
+      "actual": "runs/m4-offline-final-03/infinite_duration/actual.json",
+      "log": "runs/m4-offline-final-03/infinite_duration/stdout.log"
+    },
+    {
+      "fixture": "negative_duration",
+      "status": "PASS",
+      "reason": null,
+      "command": [
+        "/usr/bin/python3",
+        "scripts/m4_analyze.py",
+        "--input",
+        "<project>/tests/m4_cases/negative_duration/input.json",
+        "--output",
+        "runs/m4-offline-final-03/negative_duration/actual.json"
+      ],
+      "exit_code": 2,
+      "input": "<project>/tests/m4_cases/negative_duration/input.json",
+      "hand_expected": "<project>/tests/m4_cases/negative_duration/expected.json",
+      "actual": "runs/m4-offline-final-03/negative_duration/actual.json",
+      "log": "runs/m4-offline-final-03/negative_duration/stdout.log"
+    },
+    {
+      "fixture": "bad_duration",
+      "status": "PASS",
+      "reason": null,
+      "command": [
+        "/usr/bin/python3",
+        "scripts/m4_analyze.py",
+        "--input",
+        "<project>/tests/m4_cases/bad_duration/input.json",
+        "--output",
+        "runs/m4-offline-final-03/bad_duration/actual.json"
+      ],
+      "exit_code": 2,
+      "input": "<project>/tests/m4_cases/bad_duration/input.json",
+      "hand_expected": "<project>/tests/m4_cases/bad_duration/expected.json",
+      "actual": "runs/m4-offline-final-03/bad_duration/actual.json",
+      "log": "runs/m4-offline-final-03/bad_duration/stdout.log"
+    },
+    {
+      "fixture": "boolean_duration",
+      "status": "PASS",
+      "reason": null,
+      "command": [
+        "/usr/bin/python3",
+        "scripts/m4_analyze.py",
+        "--input",
+        "<project>/tests/m4_cases/boolean_duration/input.json",
+        "--output",
+        "runs/m4-offline-final-03/boolean_duration/actual.json"
+      ],
+      "exit_code": 2,
+      "input": "<project>/tests/m4_cases/boolean_duration/input.json",
+      "hand_expected": "<project>/tests/m4_cases/boolean_duration/expected.json",
+      "actual": "runs/m4-offline-final-03/boolean_duration/actual.json",
+      "log": "runs/m4-offline-final-03/boolean_duration/stdout.log"
+    },
+    {
+      "fixture": "wrong_duration_unit",
+      "status": "PASS",
+      "reason": null,
+      "command": [
+        "/usr/bin/python3",
+        "scripts/m4_analyze.py",
+        "--input",
+        "<project>/tests/m4_cases/wrong_duration_unit/input.json",
+        "--output",
+        "runs/m4-offline-final-03/wrong_duration_unit/actual.json"
+      ],
+      "exit_code": 2,
+      "input": "<project>/tests/m4_cases/wrong_duration_unit/input.json",
+      "hand_expected": "<project>/tests/m4_cases/wrong_duration_unit/expected.json",
+      "actual": "runs/m4-offline-final-03/wrong_duration_unit/actual.json",
+      "log": "runs/m4-offline-final-03/wrong_duration_unit/stdout.log"
+    },
+    {
+      "fixture": "wrong_count_unit",
+      "status": "PASS",
+      "reason": null,
+      "command": [
+        "/usr/bin/python3",
+        "scripts/m4_analyze.py",
+        "--input",
+        "<project>/tests/m4_cases/wrong_count_unit/input.json",
+        "--output",
+        "runs/m4-offline-final-03/wrong_count_unit/actual.json"
+      ],
+      "exit_code": 2,
+      "input": "<project>/tests/m4_cases/wrong_count_unit/input.json",
+      "hand_expected": "<project>/tests/m4_cases/wrong_count_unit/expected.json",
+      "actual": "runs/m4-offline-final-03/wrong_count_unit/actual.json",
+      "log": "runs/m4-offline-final-03/wrong_count_unit/stdout.log"
+    },
+    {
+      "fixture": "unsupported_timing",
+      "status": "PASS",
+      "reason": null,
+      "command": [
+        "/usr/bin/python3",
+        "scripts/m4_analyze.py",
+        "--input",
+        "<project>/tests/m4_cases/unsupported_timing/input.json",
+        "--output",
+        "runs/m4-offline-final-03/unsupported_timing/actual.json"
+      ],
+      "exit_code": 2,
+      "input": "<project>/tests/m4_cases/unsupported_timing/input.json",
+      "hand_expected": "<project>/tests/m4_cases/unsupported_timing/expected.json",
+      "actual": "runs/m4-offline-final-03/unsupported_timing/actual.json",
+      "log": "runs/m4-offline-final-03/unsupported_timing/stdout.log"
+    },
+    {
+      "fixture": "invalid_duration_status",
+      "status": "PASS",
+      "reason": null,
+      "command": [
+        "/usr/bin/python3",
+        "scripts/m4_analyze.py",
+        "--input",
+        "<project>/tests/m4_cases/invalid_duration_status/input.json",
+        "--output",
+        "runs/m4-offline-final-03/invalid_duration_status/actual.json"
+      ],
+      "exit_code": 2,
+      "input": "<project>/tests/m4_cases/invalid_duration_status/input.json",
+      "hand_expected": "<project>/tests/m4_cases/invalid_duration_status/expected.json",
+      "actual": "runs/m4-offline-final-03/invalid_duration_status/actual.json",
+      "log": "runs/m4-offline-final-03/invalid_duration_status/stdout.log"
+    },
+    {
+      "fixture": "unresolved_split",
+      "status": "PASS",
+      "reason": null,
+      "command": [
+        "/usr/bin/python3",
+        "scripts/m4_analyze.py",
+        "--input",
+        "<project>/tests/m4_cases/unresolved_split/input.json",
+        "--output",
+        "runs/m4-offline-final-03/unresolved_split/actual.json"
+      ],
+      "exit_code": 2,
+      "input": "<project>/tests/m4_cases/unresolved_split/input.json",
+      "hand_expected": "<project>/tests/m4_cases/unresolved_split/expected.json",
+      "actual": "runs/m4-offline-final-03/unresolved_split/actual.json",
+      "log": "runs/m4-offline-final-03/unresolved_split/stdout.log"
+    },
+    {
+      "fixture": "epoch_pollution",
+      "status": "PASS",
+      "reason": null,
+      "command": [
+        "/usr/bin/python3",
+        "scripts/m4_analyze.py",
+        "--input",
+        "<project>/tests/m4_cases/epoch_pollution/input.json",
+        "--output",
+        "runs/m4-offline-final-03/epoch_pollution/actual.json"
+      ],
+      "exit_code": 2,
+      "input": "<project>/tests/m4_cases/epoch_pollution/input.json",
+      "hand_expected": "<project>/tests/m4_cases/epoch_pollution/expected.json",
+      "actual": "runs/m4-offline-final-03/epoch_pollution/actual.json",
+      "log": "runs/m4-offline-final-03/epoch_pollution/stdout.log"
+    },
+    {
+      "fixture": "run_pollution",
+      "status": "PASS",
+      "reason": null,
+      "command": [
+        "/usr/bin/python3",
+        "scripts/m4_analyze.py",
+        "--input",
+        "<project>/tests/m4_cases/run_pollution/input.json",
+        "--output",
+        "runs/m4-offline-final-03/run_pollution/actual.json"
+      ],
+      "exit_code": 2,
+      "input": "<project>/tests/m4_cases/run_pollution/input.json",
+      "hand_expected": "<project>/tests/m4_cases/run_pollution/expected.json",
+      "actual": "runs/m4-offline-final-03/run_pollution/actual.json",
+      "log": "runs/m4-offline-final-03/run_pollution/stdout.log"
+    },
+    {
+      "fixture": "bad_cuda_evidence",
+      "status": "PASS",
+      "reason": null,
+      "command": [
+        "/usr/bin/python3",
+        "scripts/m4_analyze.py",
+        "--input",
+        "<project>/tests/m4_cases/bad_cuda_evidence/input.json",
+        "--output",
+        "runs/m4-offline-final-03/bad_cuda_evidence/actual.json"
+      ],
+      "exit_code": 2,
+      "input": "<project>/tests/m4_cases/bad_cuda_evidence/input.json",
+      "hand_expected": "<project>/tests/m4_cases/bad_cuda_evidence/expected.json",
+      "actual": "runs/m4-offline-final-03/bad_cuda_evidence/actual.json",
+      "log": "runs/m4-offline-final-03/bad_cuda_evidence/stdout.log"
+    },
+    {
+      "fixture": "failed_nccl_result",
+      "status": "PASS",
+      "reason": null,
+      "command": [
+        "/usr/bin/python3",
+        "scripts/m4_analyze.py",
+        "--input",
+        "<project>/tests/m4_cases/failed_nccl_result/input.json",
+        "--output",
+        "runs/m4-offline-final-03/failed_nccl_result/actual.json"
+      ],
+      "exit_code": 2,
+      "input": "<project>/tests/m4_cases/failed_nccl_result/input.json",
+      "hand_expected": "<project>/tests/m4_cases/failed_nccl_result/expected.json",
+      "actual": "runs/m4-offline-final-03/failed_nccl_result/actual.json",
+      "log": "runs/m4-offline-final-03/failed_nccl_result/stdout.log"
+    },
+    {
+      "fixture": "undeclared_generation",
+      "status": "PASS",
+      "reason": null,
+      "command": [
+        "/usr/bin/python3",
+        "scripts/m4_analyze.py",
+        "--input",
+        "<project>/tests/m4_cases/undeclared_generation/input.json",
+        "--output",
+        "runs/m4-offline-final-03/undeclared_generation/actual.json"
+      ],
+      "exit_code": 2,
+      "input": "<project>/tests/m4_cases/undeclared_generation/input.json",
+      "hand_expected": "<project>/tests/m4_cases/undeclared_generation/expected.json",
+      "actual": "runs/m4-offline-final-03/undeclared_generation/actual.json",
+      "log": "runs/m4-offline-final-03/undeclared_generation/stdout.log"
+    },
+    {
+      "fixture": "bad_hash",
+      "status": "PASS",
+      "reason": null,
+      "command": [
+        "/usr/bin/python3",
+        "scripts/m4_analyze.py",
+        "--input",
+        "<project>/tests/m4_cases/bad_hash/input.json",
+        "--output",
+        "runs/m4-offline-final-03/bad_hash/actual.json"
+      ],
+      "exit_code": 2,
+      "input": "<project>/tests/m4_cases/bad_hash/input.json",
+      "hand_expected": "<project>/tests/m4_cases/bad_hash/expected.json",
+      "actual": "runs/m4-offline-final-03/bad_hash/actual.json",
+      "log": "runs/m4-offline-final-03/bad_hash/stdout.log"
+    },
+    {
+      "fixture": "missing_scope",
+      "status": "PASS",
+      "reason": null,
+      "command": [
+        "/usr/bin/python3",
+        "scripts/m4_analyze.py",
+        "--input",
+        "<project>/tests/m4_cases/missing_scope/input.json",
+        "--output",
+        "runs/m4-offline-final-03/missing_scope/actual.json"
+      ],
+      "exit_code": 2,
+      "input": "<project>/tests/m4_cases/missing_scope/input.json",
+      "hand_expected": "<project>/tests/m4_cases/missing_scope/expected.json",
+      "actual": "runs/m4-offline-final-03/missing_scope/actual.json",
+      "log": "runs/m4-offline-final-03/missing_scope/stdout.log"
+    },
+    {
+      "fixture": "zero_sample_sequence",
+      "status": "PASS",
+      "reason": null,
+      "command": [
+        "/usr/bin/python3",
+        "scripts/m4_analyze.py",
+        "--input",
+        "<project>/tests/m4_cases/zero_sample_sequence/input.json",
+        "--output",
+        "runs/m4-offline-final-03/zero_sample_sequence/actual.json"
+      ],
+      "exit_code": 2,
+      "input": "<project>/tests/m4_cases/zero_sample_sequence/input.json",
+      "hand_expected": "<project>/tests/m4_cases/zero_sample_sequence/expected.json",
+      "actual": "runs/m4-offline-final-03/zero_sample_sequence/actual.json",
+      "log": "runs/m4-offline-final-03/zero_sample_sequence/stdout.log"
+    },
+    {
+      "fixture": "wrong_comm_size",
+      "status": "PASS",
+      "reason": null,
+      "command": [
+        "/usr/bin/python3",
+        "scripts/m4_analyze.py",
+        "--input",
+        "<project>/tests/m4_cases/wrong_comm_size/input.json",
+        "--output",
+        "runs/m4-offline-final-03/wrong_comm_size/actual.json"
+      ],
+      "exit_code": 2,
+      "input": "<project>/tests/m4_cases/wrong_comm_size/input.json",
+      "hand_expected": "<project>/tests/m4_cases/wrong_comm_size/expected.json",
+      "actual": "runs/m4-offline-final-03/wrong_comm_size/actual.json",
+      "log": "runs/m4-offline-final-03/wrong_comm_size/stdout.log"
+    },
+    {
+      "fixture": "wrong_comm_rank",
+      "status": "PASS",
+      "reason": null,
+      "command": [
+        "/usr/bin/python3",
+        "scripts/m4_analyze.py",
+        "--input",
+        "<project>/tests/m4_cases/wrong_comm_rank/input.json",
+        "--output",
+        "runs/m4-offline-final-03/wrong_comm_rank/actual.json"
+      ],
+      "exit_code": 2,
+      "input": "<project>/tests/m4_cases/wrong_comm_rank/input.json",
+      "hand_expected": "<project>/tests/m4_cases/wrong_comm_rank/expected.json",
+      "actual": "runs/m4-offline-final-03/wrong_comm_rank/actual.json",
+      "log": "runs/m4-offline-final-03/wrong_comm_rank/stdout.log"
+    },
+    {
+      "fixture": "monitor_record",
+      "status": "PASS",
+      "reason": null,
+      "command": [
+        "/usr/bin/python3",
+        "scripts/m4_analyze.py",
+        "--input",
+        "<project>/tests/m4_cases/monitor_record/input.json",
+        "--output",
+        "runs/m4-offline-final-03/monitor_record/actual.json"
+      ],
+      "exit_code": 2,
+      "input": "<project>/tests/m4_cases/monitor_record/input.json",
+      "hand_expected": "<project>/tests/m4_cases/monitor_record/expected.json",
+      "actual": "runs/m4-offline-final-03/monitor_record/actual.json",
+      "log": "runs/m4-offline-final-03/monitor_record/stdout.log"
+    },
+    {
+      "fixture": "empty_input",
+      "status": "PASS",
+      "reason": null,
+      "command": [
+        "/usr/bin/python3",
+        "scripts/m4_analyze.py",
+        "--input",
+        "<project>/tests/m4_cases/empty_input/input.json",
+        "--output",
+        "runs/m4-offline-final-03/empty_input/actual.json"
+      ],
+      "exit_code": 2,
+      "input": "<project>/tests/m4_cases/empty_input/input.json",
+      "hand_expected": "<project>/tests/m4_cases/empty_input/expected.json",
+      "actual": "runs/m4-offline-final-03/empty_input/actual.json",
+      "log": "runs/m4-offline-final-03/empty_input/stdout.log"
+    },
+    {
+      "fixture": "missing_rank",
+      "status": "PASS",
+      "reason": null,
+      "command": [
+        "/usr/bin/python3",
+        "scripts/m4_analyze.py",
+        "--input",
+        "<project>/tests/m4_cases/missing_rank/input.json",
+        "--output",
+        "runs/m4-offline-final-03/missing_rank/actual.json"
+      ],
+      "exit_code": 2,
+      "input": "<project>/tests/m4_cases/missing_rank/input.json",
+      "hand_expected": "<project>/tests/m4_cases/missing_rank/expected.json",
+      "actual": "runs/m4-offline-final-03/missing_rank/actual.json",
+      "log": "runs/m4-offline-final-03/missing_rank/stdout.log"
+    },
+    {
+      "fixture": "missing_sample",
+      "status": "PASS",
+      "reason": null,
+      "command": [
+        "/usr/bin/python3",
+        "scripts/m4_analyze.py",
+        "--input",
+        "<project>/tests/m4_cases/missing_sample/input.json",
+        "--output",
+        "runs/m4-offline-final-03/missing_sample/actual.json"
+      ],
+      "exit_code": 2,
+      "input": "<project>/tests/m4_cases/missing_sample/input.json",
+      "hand_expected": "<project>/tests/m4_cases/missing_sample/expected.json",
+      "actual": "runs/m4-offline-final-03/missing_sample/actual.json",
+      "log": "runs/m4-offline-final-03/missing_sample/stdout.log"
+    },
+    {
+      "fixture": "duplicate_sample",
+      "status": "PASS",
+      "reason": null,
+      "command": [
+        "/usr/bin/python3",
+        "scripts/m4_analyze.py",
+        "--input",
+        "<project>/tests/m4_cases/duplicate_sample/input.json",
+        "--output",
+        "runs/m4-offline-final-03/duplicate_sample/actual.json"
+      ],
+      "exit_code": 2,
+      "input": "<project>/tests/m4_cases/duplicate_sample/input.json",
+      "hand_expected": "<project>/tests/m4_cases/duplicate_sample/expected.json",
+      "actual": "runs/m4-offline-final-03/duplicate_sample/actual.json",
+      "log": "runs/m4-offline-final-03/duplicate_sample/stdout.log"
+    },
+    {
+      "fixture": "missing_communicator",
+      "status": "PASS",
+      "reason": null,
+      "command": [
+        "/usr/bin/python3",
+        "scripts/m4_analyze.py",
+        "--input",
+        "<project>/tests/m4_cases/missing_communicator/input.json",
+        "--output",
+        "runs/m4-offline-final-03/missing_communicator/actual.json"
+      ],
+      "exit_code": 2,
+      "input": "<project>/tests/m4_cases/missing_communicator/input.json",
+      "hand_expected": "<project>/tests/m4_cases/missing_communicator/expected.json",
+      "actual": "runs/m4-offline-final-03/missing_communicator/actual.json",
+      "log": "runs/m4-offline-final-03/missing_communicator/stdout.log"
+    },
+    {
+      "fixture": "missing_parallel_states",
+      "status": "PASS",
+      "reason": null,
+      "command": [
+        "/usr/bin/python3",
+        "scripts/m4_analyze.py",
+        "--input",
+        "<project>/tests/m4_cases/missing_parallel_states/input.json",
+        "--output",
+        "runs/m4-offline-final-03/missing_parallel_states/actual.json"
+      ],
+      "exit_code": 2,
+      "input": "<project>/tests/m4_cases/missing_parallel_states/input.json",
+      "hand_expected": "<project>/tests/m4_cases/missing_parallel_states/expected.json",
+      "actual": "runs/m4-offline-final-03/missing_parallel_states/actual.json",
+      "log": "runs/m4-offline-final-03/missing_parallel_states/stdout.log"
+    },
+    {
+      "fixture": "parallel_member_mismatch",
+      "status": "PASS",
+      "reason": null,
+      "command": [
+        "/usr/bin/python3",
+        "scripts/m4_analyze.py",
+        "--input",
+        "<project>/tests/m4_cases/parallel_member_mismatch/input.json",
+        "--output",
+        "runs/m4-offline-final-03/parallel_member_mismatch/actual.json"
+      ],
+      "exit_code": 2,
+      "input": "<project>/tests/m4_cases/parallel_member_mismatch/input.json",
+      "hand_expected": "<project>/tests/m4_cases/parallel_member_mismatch/expected.json",
+      "actual": "runs/m4-offline-final-03/parallel_member_mismatch/actual.json",
+      "log": "runs/m4-offline-final-03/parallel_member_mismatch/stdout.log"
+    },
+    {
+      "fixture": "group_duration_mismatch",
+      "status": "PASS",
+      "reason": null,
+      "command": [
+        "/usr/bin/python3",
+        "scripts/m4_analyze.py",
+        "--input",
+        "<project>/tests/m4_cases/group_duration_mismatch/input.json",
+        "--output",
+        "runs/m4-offline-final-03/group_duration_mismatch/actual.json"
+      ],
+      "exit_code": 2,
+      "input": "<project>/tests/m4_cases/group_duration_mismatch/input.json",
+      "hand_expected": "<project>/tests/m4_cases/group_duration_mismatch/expected.json",
+      "actual": "runs/m4-offline-final-03/group_duration_mismatch/actual.json",
+      "log": "runs/m4-offline-final-03/group_duration_mismatch/stdout.log"
+    },
+    {
+      "fixture": "m3_zero_duration",
+      "status": "PASS",
+      "reason": null,
+      "command": [
+        "/usr/bin/python3",
+        "scripts/m4_analyze.py",
+        "--input",
+        "<project>/tests/m4_cases/m3_zero_duration/input.json",
+        "--output",
+        "runs/m4-offline-final-03/m3_zero_duration/actual.json"
+      ],
+      "exit_code": 2,
+      "input": "<project>/tests/m4_cases/m3_zero_duration/input.json",
+      "hand_expected": "<project>/tests/m4_cases/m3_zero_duration/expected.json",
+      "actual": "runs/m4-offline-final-03/m3_zero_duration/actual.json",
+      "log": "runs/m4-offline-final-03/m3_zero_duration/stdout.log"
+    },
+    {
+      "fixture": "truncated_cuda_evidence",
+      "status": "PASS",
+      "reason": null,
+      "command": [
+        "/usr/bin/python3",
+        "scripts/m4_analyze.py",
+        "--input",
+        "<project>/tests/m4_cases/truncated_cuda_evidence/input.json",
+        "--output",
+        "runs/m4-offline-final-03/truncated_cuda_evidence/actual.json"
+      ],
+      "exit_code": 2,
+      "input": "<project>/tests/m4_cases/truncated_cuda_evidence/input.json",
+      "hand_expected": "<project>/tests/m4_cases/truncated_cuda_evidence/expected.json",
+      "actual": "runs/m4-offline-final-03/truncated_cuda_evidence/actual.json",
+      "log": "runs/m4-offline-final-03/truncated_cuda_evidence/stdout.log"
+    },
+    {
+      "fixture": "raw_ndjson_valid",
+      "status": "PASS",
+      "reason": null,
+      "command": [
+        "/usr/bin/python3",
+        "scripts/m4_analyze.py",
+        "--input",
+        "<project>/tests/m4_cases/raw_ndjson_valid/input.json",
+        "--output",
+        "runs/m4-offline-final-03/raw_ndjson_valid/actual.json",
+        "--format",
+        "m3_ndjson",
+        "--records",
+        "<project>/tests/m4_cases/raw_ndjson_valid/rank-0.ndjson",
+        "<project>/tests/m4_cases/raw_ndjson_valid/rank-1.ndjson"
+      ],
+      "exit_code": 0,
+      "input": "<project>/tests/m4_cases/raw_ndjson_valid/input.json",
+      "hand_expected": "<project>/tests/m4_cases/raw_ndjson_valid/expected.json",
+      "actual": "runs/m4-offline-final-03/raw_ndjson_valid/actual.json",
+      "log": "runs/m4-offline-final-03/raw_ndjson_valid/stdout.log"
+    },
+    {
+      "fixture": "raw_checksum_bad",
+      "status": "PASS",
+      "reason": null,
+      "command": [
+        "/usr/bin/python3",
+        "scripts/m4_analyze.py",
+        "--input",
+        "<project>/tests/m4_cases/raw_checksum_bad/input.json",
+        "--output",
+        "runs/m4-offline-final-03/raw_checksum_bad/actual.json",
+        "--format",
+        "m3_ndjson",
+        "--records",
+        "<project>/tests/m4_cases/raw_checksum_bad/rank-0.ndjson",
+        "<project>/tests/m4_cases/raw_checksum_bad/rank-1.ndjson"
+      ],
+      "exit_code": 2,
+      "input": "<project>/tests/m4_cases/raw_checksum_bad/input.json",
+      "hand_expected": "<project>/tests/m4_cases/raw_checksum_bad/expected.json",
+      "actual": "runs/m4-offline-final-03/raw_checksum_bad/actual.json",
+      "log": "runs/m4-offline-final-03/raw_checksum_bad/stdout.log"
+    },
+    {
+      "fixture": "raw_sequence_gap",
+      "status": "PASS",
+      "reason": null,
+      "command": [
+        "/usr/bin/python3",
+        "scripts/m4_analyze.py",
+        "--input",
+        "<project>/tests/m4_cases/raw_sequence_gap/input.json",
+        "--output",
+        "runs/m4-offline-final-03/raw_sequence_gap/actual.json",
+        "--format",
+        "m3_ndjson",
+        "--records",
+        "<project>/tests/m4_cases/raw_sequence_gap/rank-0.ndjson",
+        "<project>/tests/m4_cases/raw_sequence_gap/rank-1.ndjson"
+      ],
+      "exit_code": 2,
+      "input": "<project>/tests/m4_cases/raw_sequence_gap/input.json",
+      "hand_expected": "<project>/tests/m4_cases/raw_sequence_gap/expected.json",
+      "actual": "runs/m4-offline-final-03/raw_sequence_gap/actual.json",
+      "log": "runs/m4-offline-final-03/raw_sequence_gap/stdout.log"
+    },
+    {
+      "fixture": "raw_truncated_tail",
+      "status": "PASS",
+      "reason": null,
+      "command": [
+        "/usr/bin/python3",
+        "scripts/m4_analyze.py",
+        "--input",
+        "<project>/tests/m4_cases/raw_truncated_tail/input.json",
+        "--output",
+        "runs/m4-offline-final-03/raw_truncated_tail/actual.json",
+        "--format",
+        "m3_ndjson",
+        "--records",
+        "<project>/tests/m4_cases/raw_truncated_tail/rank-0.ndjson",
+        "<project>/tests/m4_cases/raw_truncated_tail/rank-1.ndjson"
+      ],
+      "exit_code": 2,
+      "input": "<project>/tests/m4_cases/raw_truncated_tail/input.json",
+      "hand_expected": "<project>/tests/m4_cases/raw_truncated_tail/expected.json",
+      "actual": "runs/m4-offline-final-03/raw_truncated_tail/actual.json",
+      "log": "runs/m4-offline-final-03/raw_truncated_tail/stdout.log"
+    },
+    {
+      "fixture": "raw_context_change",
+      "status": "PASS",
+      "reason": null,
+      "command": [
+        "/usr/bin/python3",
+        "scripts/m4_analyze.py",
+        "--input",
+        "<project>/tests/m4_cases/raw_context_change/input.json",
+        "--output",
+        "runs/m4-offline-final-03/raw_context_change/actual.json",
+        "--format",
+        "m3_ndjson",
+        "--records",
+        "<project>/tests/m4_cases/raw_context_change/rank-0.ndjson",
+        "<project>/tests/m4_cases/raw_context_change/rank-1.ndjson"
+      ],
+      "exit_code": 2,
+      "input": "<project>/tests/m4_cases/raw_context_change/input.json",
+      "hand_expected": "<project>/tests/m4_cases/raw_context_change/expected.json",
+      "actual": "runs/m4-offline-final-03/raw_context_change/actual.json",
+      "log": "runs/m4-offline-final-03/raw_context_change/stdout.log"
+    },
+    {
+      "fixture": "csv_evidence_valid",
+      "status": "PASS",
+      "reason": null,
+      "command": [
+        "/usr/bin/python3",
+        "scripts/m4_analyze.py",
+        "--input",
+        "<project>/tests/m4_cases/csv_evidence_valid/input.json",
+        "--output",
+        "runs/m4-offline-final-03/csv_evidence_valid/actual.json",
+        "--format",
+        "m3_csv",
+        "--records",
+        "<project>/tests/m4_cases/csv_evidence_valid/rank-0.csv",
+        "<project>/tests/m4_cases/csv_evidence_valid/rank-1.csv",
+        "--supplements",
+        "<project>/tests/m4_cases/csv_evidence_valid/supplements.json"
+      ],
+      "exit_code": 0,
+      "input": "<project>/tests/m4_cases/csv_evidence_valid/input.json",
+      "hand_expected": "<project>/tests/m4_cases/csv_evidence_valid/expected.json",
+      "actual": "runs/m4-offline-final-03/csv_evidence_valid/actual.json",
+      "log": "runs/m4-offline-final-03/csv_evidence_valid/stdout.log"
+    },
+    {
+      "fixture": "csv_missing_supplement",
+      "status": "PASS",
+      "reason": null,
+      "command": [
+        "/usr/bin/python3",
+        "scripts/m4_analyze.py",
+        "--input",
+        "<project>/tests/m4_cases/csv_missing_supplement/input.json",
+        "--output",
+        "runs/m4-offline-final-03/csv_missing_supplement/actual.json",
+        "--format",
+        "m3_csv",
+        "--records",
+        "<project>/tests/m4_cases/csv_missing_supplement/rank-0.csv",
+        "<project>/tests/m4_cases/csv_missing_supplement/rank-1.csv",
+        "--supplements",
+        "<project>/tests/m4_cases/csv_missing_supplement/supplements.json"
+      ],
+      "exit_code": 2,
+      "input": "<project>/tests/m4_cases/csv_missing_supplement/input.json",
+      "hand_expected": "<project>/tests/m4_cases/csv_missing_supplement/expected.json",
+      "actual": "runs/m4-offline-final-03/csv_missing_supplement/actual.json",
+      "log": "runs/m4-offline-final-03/csv_missing_supplement/stdout.log"
+    },
+    {
+      "fixture": "csv_missing_evidence",
+      "status": "PASS",
+      "reason": null,
+      "command": [
+        "/usr/bin/python3",
+        "scripts/m4_analyze.py",
+        "--input",
+        "<project>/tests/m4_cases/csv_missing_evidence/input.json",
+        "--output",
+        "runs/m4-offline-final-03/csv_missing_evidence/actual.json",
+        "--format",
+        "m3_csv",
+        "--records",
+        "<project>/tests/m4_cases/csv_missing_evidence/rank-0.csv",
+        "<project>/tests/m4_cases/csv_missing_evidence/rank-1.csv"
+      ],
+      "exit_code": 2,
+      "input": "<project>/tests/m4_cases/csv_missing_evidence/input.json",
+      "hand_expected": "<project>/tests/m4_cases/csv_missing_evidence/expected.json",
+      "actual": "runs/m4-offline-final-03/csv_missing_evidence/actual.json",
+      "log": "runs/m4-offline-final-03/csv_missing_evidence/stdout.log"
+    },
+    {
+      "fixture": "csv_wrong_proof_hash",
+      "status": "PASS",
+      "reason": null,
+      "command": [
+        "/usr/bin/python3",
+        "scripts/m4_analyze.py",
+        "--input",
+        "<project>/tests/m4_cases/csv_wrong_proof_hash/input.json",
+        "--output",
+        "runs/m4-offline-final-03/csv_wrong_proof_hash/actual.json",
+        "--format",
+        "m3_csv",
+        "--records",
+        "<project>/tests/m4_cases/csv_wrong_proof_hash/rank-0.csv",
+        "<project>/tests/m4_cases/csv_wrong_proof_hash/rank-1.csv",
+        "--supplements",
+        "<project>/tests/m4_cases/csv_wrong_proof_hash/supplements.json"
+      ],
+      "exit_code": 2,
+      "input": "<project>/tests/m4_cases/csv_wrong_proof_hash/input.json",
+      "hand_expected": "<project>/tests/m4_cases/csv_wrong_proof_hash/expected.json",
+      "actual": "runs/m4-offline-final-03/csv_wrong_proof_hash/actual.json",
+      "log": "runs/m4-offline-final-03/csv_wrong_proof_hash/stdout.log"
+    },
+    {
+      "fixture": "declared_communicator_absent",
+      "status": "PASS",
+      "reason": null,
+      "command": [
+        "/usr/bin/python3",
+        "scripts/m4_analyze.py",
+        "--input",
+        "<project>/tests/m4_cases/declared_communicator_absent/input.json",
+        "--output",
+        "runs/m4-offline-final-03/declared_communicator_absent/actual.json"
+      ],
+      "exit_code": 2,
+      "input": "<project>/tests/m4_cases/declared_communicator_absent/input.json",
+      "hand_expected": "<project>/tests/m4_cases/declared_communicator_absent/expected.json",
+      "actual": "runs/m4-offline-final-03/declared_communicator_absent/actual.json",
+      "log": "runs/m4-offline-final-03/declared_communicator_absent/stdout.log"
+    },
+    {
+      "fixture": "stage1_maximum_tie",
+      "status": "PASS",
+      "reason": null,
+      "command": [
+        "/usr/bin/python3",
+        "scripts/m4_analyze.py",
+        "--input",
+        "<project>/tests/m4_cases/stage1_maximum_tie/input.json",
+        "--output",
+        "runs/m4-offline-final-03/stage1_maximum_tie/actual.json"
+      ],
+      "exit_code": 0,
+      "input": "<project>/tests/m4_cases/stage1_maximum_tie/input.json",
+      "hand_expected": "<project>/tests/m4_cases/stage1_maximum_tie/expected.json",
+      "actual": "runs/m4-offline-final-03/stage1_maximum_tie/actual.json",
+      "log": "runs/m4-offline-final-03/stage1_maximum_tie/stdout.log"
+    },
+    {
+      "fixture": "subnormal_finite_equal",
+      "status": "PASS",
+      "reason": null,
+      "command": [
+        "/usr/bin/python3",
+        "scripts/m4_analyze.py",
+        "--input",
+        "<project>/tests/m4_cases/subnormal_finite_equal/input.json",
+        "--output",
+        "runs/m4-offline-final-03/subnormal_finite_equal/actual.json"
+      ],
+      "exit_code": 0,
+      "input": "<project>/tests/m4_cases/subnormal_finite_equal/input.json",
+      "hand_expected": "<project>/tests/m4_cases/subnormal_finite_equal/expected.json",
+      "actual": "runs/m4-offline-final-03/subnormal_finite_equal/actual.json",
+      "log": "runs/m4-offline-final-03/subnormal_finite_equal/stdout.log"
+    },
+    {
+      "fixture": "large_finite_no_overflow",
+      "status": "PASS",
+      "reason": null,
+      "command": [
+        "/usr/bin/python3",
+        "scripts/m4_analyze.py",
+        "--input",
+        "<project>/tests/m4_cases/large_finite_no_overflow/input.json",
+        "--output",
+        "runs/m4-offline-final-03/large_finite_no_overflow/actual.json"
+      ],
+      "exit_code": 0,
+      "input": "<project>/tests/m4_cases/large_finite_no_overflow/input.json",
+      "hand_expected": "<project>/tests/m4_cases/large_finite_no_overflow/expected.json",
+      "actual": "runs/m4-offline-final-03/large_finite_no_overflow/actual.json",
+      "log": "runs/m4-offline-final-03/large_finite_no_overflow/stdout.log"
+    },
+    {
+      "fixture": "csv_measurement_override_rejected",
+      "status": "PASS",
+      "reason": null,
+      "command": [
+        "/usr/bin/python3",
+        "scripts/m4_analyze.py",
+        "--input",
+        "<project>/tests/m4_cases/csv_measurement_override_rejected/input.json",
+        "--output",
+        "runs/m4-offline-final-03/csv_measurement_override_rejected/actual.json",
+        "--format",
+        "m3_csv",
+        "--records",
+        "<project>/tests/m4_cases/csv_measurement_override_rejected/rank-0.csv",
+        "<project>/tests/m4_cases/csv_measurement_override_rejected/rank-1.csv",
+        "--supplements",
+        "<project>/tests/m4_cases/csv_measurement_override_rejected/supplements.json"
+      ],
+      "exit_code": 2,
+      "input": "<project>/tests/m4_cases/csv_measurement_override_rejected/input.json",
+      "hand_expected": "<project>/tests/m4_cases/csv_measurement_override_rejected/expected.json",
+      "actual": "runs/m4-offline-final-03/csv_measurement_override_rejected/actual.json",
+      "log": "runs/m4-offline-final-03/csv_measurement_override_rejected/stdout.log"
+    },
+    {
+      "fixture": "installed_nccl_float8_metadata",
+      "status": "PASS",
+      "reason": null,
+      "command": [
+        "/usr/bin/python3",
+        "scripts/m4_analyze.py",
+        "--input",
+        "<project>/tests/m4_cases/installed_nccl_float8_metadata/input.json",
+        "--output",
+        "runs/m4-offline-final-03/installed_nccl_float8_metadata/actual.json"
+      ],
+      "exit_code": 0,
+      "input": "<project>/tests/m4_cases/installed_nccl_float8_metadata/input.json",
+      "hand_expected": "<project>/tests/m4_cases/installed_nccl_float8_metadata/expected.json",
+      "actual": "runs/m4-offline-final-03/installed_nccl_float8_metadata/actual.json",
+      "log": "runs/m4-offline-final-03/installed_nccl_float8_metadata/stdout.log"
+    }
+  ]
+}

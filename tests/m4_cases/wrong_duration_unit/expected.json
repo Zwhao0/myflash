@@ -1,0 +1,8 @@
+{
+  "exit_code": 2,
+  "checks": {
+    "status": "REJECTED_INPUT",
+    "candidate_ranks": []
+  },
+  "hand_calculation": "invalid duration_unit must not enter rank minimum"
+}

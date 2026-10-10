@@ -1,0 +1,8 @@
+{
+  "exit_code": 0,
+  "checks": {
+    "status": "AMBIGUOUS_SPEC",
+    "candidate_ranks": []
+  },
+  "hand_calculation": "population CV.08<.1; sample CV.113137>.1 -> specification disagreement"
+}

@@ -1,0 +1,35 @@
+{
+  "machine": "node-0",
+  "commands": [
+    {
+      "command": [
+        "python3",
+        "tests/m4_offline.py",
+        "--output",
+        "runs/m4-offline-final-03"
+      ],
+      "exit_code": 0,
+      "log": "runs/m4-final-check-03/0.log"
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/m4_replay.py",
+        "--output",
+        "runs/m4-replay-final-03"
+      ],
+      "exit_code": 0,
+      "log": "runs/m4-final-check-03/1.log"
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/m4_verify_real.py",
+        "--run-id",
+        "m4-multigroup-normal-01"
+      ],
+      "exit_code": 0,
+      "log": "runs/m4-final-check-03/2.log"
+    }
+  ]
+}
