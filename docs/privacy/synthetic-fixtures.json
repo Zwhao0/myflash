@@ -1,0 +1,47 @@
+{
+  "source_commit": "01c96abeab2be25ff38176357a19fb53f18356f8",
+  "classification": "ADAPTATION",
+  "source": "M4 hand-built CPU input fixtures; run_id=fixture, synthetic_nonnegative_v1; bytes preserved including deliberate corruption",
+  "files": [
+    {
+      "path": "tests/m4_cases/raw_checksum_bad/rank-0.ndjson",
+      "sha256": "9f8691cdee5e785080bb4cb9880af1a30df5f7bd935f07303e4df65e27ccc300"
+    },
+    {
+      "path": "tests/m4_cases/raw_checksum_bad/rank-1.ndjson",
+      "sha256": "1bd27e488811c70357973895b2b21f6dec1ef7b1cb2519a75c46f52bde985d42"
+    },
+    {
+      "path": "tests/m4_cases/raw_context_change/rank-0.ndjson",
+      "sha256": "553028582676d938943a0126a99ddaf5c66068497ac3811ea3035a3bdb316cb7"
+    },
+    {
+      "path": "tests/m4_cases/raw_context_change/rank-1.ndjson",
+      "sha256": "1bd27e488811c70357973895b2b21f6dec1ef7b1cb2519a75c46f52bde985d42"
+    },
+    {
+      "path": "tests/m4_cases/raw_ndjson_valid/rank-0.ndjson",
+      "sha256": "73ec24e5798297927a21b11162dc655503adf5845ca42b61d1d31d12749b82b4"
+    },
+    {
+      "path": "tests/m4_cases/raw_ndjson_valid/rank-1.ndjson",
+      "sha256": "1bd27e488811c70357973895b2b21f6dec1ef7b1cb2519a75c46f52bde985d42"
+    },
+    {
+      "path": "tests/m4_cases/raw_sequence_gap/rank-0.ndjson",
+      "sha256": "66eae340bc81b9e1a01dd0c8ef5e7283aa8659e191e8b94601f75a3b11981876"
+    },
+    {
+      "path": "tests/m4_cases/raw_sequence_gap/rank-1.ndjson",
+      "sha256": "1bd27e488811c70357973895b2b21f6dec1ef7b1cb2519a75c46f52bde985d42"
+    },
+    {
+      "path": "tests/m4_cases/raw_truncated_tail/rank-0.ndjson",
+      "sha256": "61b5271a663020a9b2aacb76ff2042446f6cb4d6a2f3048c03be88f9ae928658"
+    },
+    {
+      "path": "tests/m4_cases/raw_truncated_tail/rank-1.ndjson",
+      "sha256": "1bd27e488811c70357973895b2b21f6dec1ef7b1cb2519a75c46f52bde985d42"
+    }
+  ]
+}

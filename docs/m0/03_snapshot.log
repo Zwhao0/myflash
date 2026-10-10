@@ -1,5 +1,5 @@
-HOST: gpu-01
-CWD: /home/campus/zhangweihao/myflash
+HOST: node-0
+CWD: <project>
 COMMAND: git add -- .gitignore AGENTS.md SPEC.md GAPS.md PLAN.md STATUS.md GREYHOUND_MAP.md README.md ARCHITECTURE.md SOURCE_MAP.md ENVIRONMENT_PLAN.md references tasks native flash scripts tests docs
 STDOUT:
 
@@ -48,9 +48,9 @@ tests/.gitkeep
 STDERR:
 
 EXIT_CODE: 0
-COMMAND: git -c user.name=Codex -c user.email=codex@localhost commit -m 'docs: bootstrap clean-room FLASH M0 on gpu-01'
+COMMAND: git -c user.name=Codex -c user.email=codex@localhost commit -m 'docs: bootstrap clean-room FLASH M0 on node-0'
 STDOUT:
-[main (root-commit) 2d608b7] docs: bootstrap clean-room FLASH M0 on gpu-01
+[main (root-commit) 2d608b7] docs: bootstrap clean-room FLASH M0 on node-0
  30 files changed, 3021 insertions(+)
  create mode 100644 .gitignore
  create mode 100644 AGENTS.md
@@ -95,7 +95,7 @@ STDERR:
 EXIT_CODE: 0
 COMMAND: git show --stat --oneline HEAD
 STDOUT:
-2d608b7 docs: bootstrap clean-room FLASH M0 on gpu-01
+2d608b7 docs: bootstrap clean-room FLASH M0 on node-0
  .gitignore                        |   22 +
  AGENTS.md                         |   35 +
  ARCHITECTURE.md                   |  100 ++

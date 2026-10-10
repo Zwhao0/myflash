@@ -1,0 +1,23 @@
+{
+  "checked_date": "2026-10-10",
+  "repository": "Zwhao0/myflash",
+  "visibility": "public",
+  "private": false,
+  "forks_count": 0,
+  "main_sha": "2fcc45724e8bbfde800539beeae45febddd7e572",
+  "main_branch_endpoint": {
+    "protected": false,
+    "protection_enabled": false,
+    "required_checks": []
+  },
+  "rulesets": [],
+  "dedicated_protection_endpoint": "BLOCKED: HTTP 403 Resource not accessible by integration",
+  "security_and_analysis": "UNKNOWN: field not returned",
+  "settings_changed": false,
+  "sources": [
+    "https://api.github.com/repos/Zwhao0/myflash",
+    "https://api.github.com/repos/Zwhao0/myflash/branches/main",
+    "https://api.github.com/repos/Zwhao0/myflash/rulesets",
+    "https://api.github.com/repos/Zwhao0/myflash/branches/main/protection"
+  ]
+}

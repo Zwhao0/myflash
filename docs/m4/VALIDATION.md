@@ -1,5 +1,5 @@
 # M4 实测命令与证据
-开发源/实际CPU与GPU执行机器：gpu-01:/home/campus/zhangweihao/myflash；Python3.12.3，GPU额外使用项目.venv-m1内PyTorch2.8.0+cu128。M3跨机样本原采集gpu-01/gpu-02；当前只读离线重放均gpu-01。
+开发源/实际CPU与GPU执行机器：node-0:<project>；Python3.12.3，GPU额外使用项目.venv-m1内PyTorch2.8.0+cu128。M3跨机样本原采集node-0/node-1；当前只读离线重放均node-0。
 以下完整命令均项目根运行，退出0；GPU展开UUID命令只存私有control.json，公开用占位符且不冒称完整展开命令。
 
 ```sh

@@ -1,5 +1,5 @@
 {
-  "machine": "gpu-01",
+  "machine": "node-0",
   "commands": [
     {
       "command": [

@@ -1,6 +1,6 @@
 {
   "status": "PASS",
-  "machine": "gpu-01",
+  "machine": "node-0",
   "mechanism_records": 520,
   "raw_csv_equal": true,
   "results": [

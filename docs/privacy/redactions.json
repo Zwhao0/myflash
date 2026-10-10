@@ -1,0 +1,144 @@
+{
+  "base": "2fcc45724e8bbfde800539beeae45febddd7e572",
+  "identity_files": 23,
+  "files": [
+    {
+      "path": "ARCHITECTURE.md",
+      "before_blob": "c0cfbe6958f7c43c07acb6f25452c47ca041b2c0",
+      "after_blob": "c885f033f594ed1615ec0f78fe7412d922dbd014",
+      "kind": "identity_only"
+    },
+    {
+      "path": "ENVIRONMENT_PLAN.md",
+      "before_blob": "e0afaa7f3d9fe4d6c3eb51bff97f15852eaa9467",
+      "after_blob": "68e9a5b748fe1df9d74bbe58abd340f11ba8eab3",
+      "kind": "identity_only"
+    },
+    {
+      "path": "GAPS.md",
+      "before_blob": "36229e488fddbc80fd6692ee410da725afdbb38c",
+      "after_blob": "3bc8503bf619a31bc904812575e7b19b9aa34f50",
+      "kind": "identity_only"
+    },
+    {
+      "path": "STATUS.md",
+      "before_blob": "787f907cd03a3fdd64fef2534b3a19d9a3e24822",
+      "after_blob": "7a7548584b9bb1fca981b75c16cef8cf854622cb",
+      "kind": "identity_only"
+    },
+    {
+      "path": "docs/m0/00_local_reference.log",
+      "before_blob": "1315147fb6145f67a580f5cc5c4f633afbcb7295",
+      "after_blob": "5fb80e5ed8e567da99409a12d3d96b67c1f9bea2",
+      "kind": "identity_only"
+    },
+    {
+      "path": "docs/m0/01_bootstrap.log",
+      "before_blob": "cacfbd1891003a1ce72f4ae7b20e7bf2b5dcc3c6",
+      "after_blob": "431851eae444e3a02bfdb0c9673ff954b8cad337",
+      "kind": "identity_only"
+    },
+    {
+      "path": "docs/m0/02_verify.log",
+      "before_blob": "fee1841e071bd9d0c4a6f44c53932d147643f4b4",
+      "after_blob": "405bfcd3bccf8fa75018d5d9a47cf3fe1c93f106",
+      "kind": "identity_only"
+    },
+    {
+      "path": "docs/m0/03_snapshot.log",
+      "before_blob": "b348d254ddc8ca31d3ec253074bb038324da631b",
+      "after_blob": "e7243caed9df3c38424fd3af1bb5f3763d218991",
+      "kind": "identity_only"
+    },
+    {
+      "path": "docs/m0/04_github_sync.json",
+      "before_blob": "4a2e009af3a3156b84f3dcdd4786ca55f2ba29fd",
+      "after_blob": "e3be3c56ec556899ab0967c68ee790f2e5c1b7f6",
+      "kind": "identity_only"
+    },
+    {
+      "path": "docs/m0/SYNC.md",
+      "before_blob": "3449408387eb1e143bda2141a533aa17ea9c7017",
+      "after_blob": "870c75043365a906780d1d93073da51da3a47e66",
+      "kind": "identity_only"
+    },
+    {
+      "path": "docs/m0/VALIDATION.md",
+      "before_blob": "052caa9ccf6490abda9474d35fce9076fae019c8",
+      "after_blob": "01410c9c1209d0a80ad1f8adfb38bcac3fdc1a35",
+      "kind": "identity_only"
+    },
+    {
+      "path": "docs/m0/commands.json",
+      "before_blob": "781a2a74da0d691207ac8b0eea397945424f98bb",
+      "after_blob": "1f4cd11871d1cc6421c89950a8bdebf62aa3e1e1",
+      "kind": "identity_only"
+    },
+    {
+      "path": "docs/m0/host.json",
+      "before_blob": "11ba067040ef1535f31e78560a8582d346c58140",
+      "after_blob": "0f53ca9a57c4853e52c393eb1e2360726293a07e",
+      "kind": "identity_only"
+    },
+    {
+      "path": "docs/m1/ENVIRONMENT.md",
+      "before_blob": "0deef973d9cd34f0eddbb0a42ce173bd6fb0501e",
+      "after_blob": "176afd3d06de3eb3fdfef8fe0fe663f199f948a9",
+      "kind": "identity_only"
+    },
+    {
+      "path": "docs/m1/RESULTS.md",
+      "before_blob": "aa1059ee20b5248e0b58fdaa20bbd90bd0b875d6",
+      "after_blob": "e6bc94db04c82b20829e3ccddfb492c6fb568737",
+      "kind": "identity_only"
+    },
+    {
+      "path": "docs/m1/SOURCES.md",
+      "before_blob": "03b9993c53e6f2148550954353da35571195140a",
+      "after_blob": "36dc4b969abb6f00ce327d5c0d113204a5fa6e9a",
+      "kind": "identity_only"
+    },
+    {
+      "path": "docs/m1/VALIDATION.md",
+      "before_blob": "1c7ec4f718fb651dd64739904831fe01bc0fec98",
+      "after_blob": "41b9d892e86995f4b4b61517b5cc81b8b6d3f78e",
+      "kind": "identity_only"
+    },
+    {
+      "path": "docs/m2/RESULTS.md",
+      "before_blob": "8e2c3271441a2e7bca51f4e275af20834f42f5a9",
+      "after_blob": "195aa5e5cb3ad1df609c0ff093bde8289185c85f",
+      "kind": "identity_only"
+    },
+    {
+      "path": "docs/m2/VALIDATION.md",
+      "before_blob": "a8ba819999b7baa96c483d6320199219ec4b6947",
+      "after_blob": "576c733735d4681a0edc5fa26f98da1ede1ea113",
+      "kind": "identity_only"
+    },
+    {
+      "path": "docs/m3/RESULTS.md",
+      "before_blob": "e07876d3107bb8d15ad7132a5f0628b48be3e0fe",
+      "after_blob": "4603b1911fe6e3037f2c98d5c9e02c383ebf1f82",
+      "kind": "identity_only"
+    },
+    {
+      "path": "docs/m3/SYNC.json",
+      "before_blob": "3e641f345b3d42f48904638949877548046b253e",
+      "after_blob": "75d52b81daf375ea44f5e7b5c553179386ce042a",
+      "kind": "identity_only"
+    },
+    {
+      "path": "docs/m3/VALIDATION.md",
+      "before_blob": "837d9ddbeb2a8834f9c9ea39eeb708dc1e1a716e",
+      "after_blob": "d641d87c40a1490082ac3c125febd70f1834b3b7",
+      "kind": "identity_only"
+    },
+    {
+      "path": "scripts/m1_inventory.py",
+      "before_blob": "720fbe5beff33848f16d152939a7982b63183fc0",
+      "after_blob": "603fdb94d4c599b8557af90e1d674045651c5f91",
+      "kind": "project_root_from_script"
+    }
+  ]
+}

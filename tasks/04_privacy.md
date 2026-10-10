@@ -1,0 +1,12 @@
+# P1：公开仓库隐私审查与可审核修复
+
+批准：用户要求处理 Zwhao0/myflash 公开前的安全审查，保留公开仓库；历史改写先说明影响、不直接强推。
+唯一目标：检查当前树、可见分支及 M0–M3 历史，脱敏不必要的身份信息并补充发布防护。
+允许：含身份信息的文档/M0公开日志、scripts/m1_inventory.py 的项目根目录一行、.gitignore、隐私检查及合成测试、CI、docs/privacy、STATUS。
+接口：机器仅使用 node-0/node-1 稳定别名；文档项目路径为 <project>；盘点脚本根目录从 __file__ 推导。原始私有日志留服务器，不重新导出训练数据。
+禁止：FLASH算法/计时/阈值/样本/失败记录变更、GPU实验、软件安装、访问其它项目/凭证、历史改写、强推、仓库可见性修改。
+来源：ADAPTATION 为用户隐私请求与 AGENTS 资源/日志约束；UPSTREAM 为 GitHub 删除敏感数据文档与固定版本 checkout action；没有新的 PAPER/科学决定。
+验证：文本扫描、5项合成防护测试、JSON可解析、原实验 CSV/evidence/核心代码哈希不变、已有 M3 公开证据验证、diff --check。GPU/新机器盘点 NOT_RUN。
+退出：本地独立审查分支完成后停止；可发布供审核的普通分支/Draft PR，不合并；历史处理及论文再分发授权待用户决定。
+
+P1-C1追加：用户反馈PR3有冲突，批准合入已合并M4的main并解决兼容性。允许冲突STATUS及同范围身份字段、M4 replay一行注释、固定人工NDJSON哈希登记及防护回归测试、docs/privacy/STATUS。保留M4科学内容/输入/期望/数据，原记录不追改。普通双父merge提交追加至原安全分支，非force，不合并main。验证6隐私测试、65原M4 fixtures、M3公开证据、原60文件保留及main M4字节/AST一致，完整命令/退出/日志见conflict-validation.json。完成后停止等待审核。

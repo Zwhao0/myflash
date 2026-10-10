@@ -1,6 +1,6 @@
-HOST: gpu-01
+HOST: node-0
 PLATFORM: Linux-6.8.0-142-generic-x86_64-with-glibc2.39
-CWD: /home/campus/zhangweihao/myflash
+CWD: <project>
 TARGET_BEFORE_CREATION: absent
 FILES_TRANSFERRED: 24
 COMMAND: git rev-parse --show-toplevel
@@ -12,14 +12,14 @@ fatal: not a git repository (or any of the parent directories): .git
 EXIT_CODE: 128
 COMMAND: git init -b main
 STDOUT:
-Initialized empty Git repository in /home/campus/zhangweihao/myflash/.git/
+Initialized empty Git repository in <project>/.git/
 
 STDERR:
 
 EXIT_CODE: 0
 COMMAND: git rev-parse --show-toplevel
 STDOUT:
-/home/campus/zhangweihao/myflash
+<project>
 
 STDERR:
 

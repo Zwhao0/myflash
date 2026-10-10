@@ -6,7 +6,7 @@
 
 PAPER：目标为第三章 FLASH：持续退化检测、按需剖析、group→rank 定位与 fail-stop 报告。主要依据 `references/chapter3.pdf`，摘录共 30 页；印刷页 p 的摘录页为 p−18，原 PDF 页为 p+16。`SPEC.md` 是提要，图表和公式以 PDF 为准。
 
-ADAPTATION：开发仓库在 `gpu-01:/home/campus/zhangweihao/myflash`，由不存在的目录新建；目标部署为两台 H800，实际第二台主机、卡数、软件与互联仍待 M1a。H800 不自动等同于论文两机各 8 张 H200（§3.4.1 pp.36–37）。
+ADAPTATION：开发仓库在 `node-0:<project>`，由不存在的目录新建；目标部署为两台 H800，实际第二台主机、卡数、软件与互联仍待 M1a。H800 不自动等同于论文两机各 8 张 H200（§3.4.1 pp.36–37）。
 
 本项目不做 SHIFT、恢复、迁移或 mitigation。不默认引入 GreyHound ACF 推断迭代、暂停训练的 validation/precheck、NCCL 控制广播或 stop-the-world 流程。Pre-check 在论文被提及，但实施细节缺失（G14）。DeepEP/Gloo/MPI、EP AllToAll 直接定位、硬件/软件/计算/网络根因分类不在本基线覆盖内（§3.1.3 p.23；§3.5 pp.46–47）。
 

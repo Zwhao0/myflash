@@ -5,7 +5,7 @@
 | 项目 | 结论 | 实际依据 |
 |---|---|---|
 | M1a | PASS（盘点完成，缺失如实登记） | 两机各8张H800；系统/编译/运行库口径区分；GPU/PCIe/NIC/NUMA、RDMA、路由和占用原始采集 |
-| M1b | PASS（保留首轮FAIL） | gpu-01两个rank正确初始化，UUID对应，SUM3与25次collective断言通过，退出0、无本次遗留进程 |
+| M1b | PASS（保留首轮FAIL） | node-0两个rank正确初始化，UUID对应，SUM3与25次collective断言通过，退出0、无本次遗留进程 |
 | M1c | PASS | 两机各1GPU；两个独立run_id均退出0；rank0/1映射及25次数值验证；实际NET/IB/RoCE数据通道日志 |
 | M1d AllReduce | PASS | 两机各8rank；所有16rank初始SUM136；每rank4096个int64元素全部检查；4次独立启动正常退出，最终低资源配置2次 |
 | M1d DDP | PASS（保留2次历史FAIL） | 676参数小模型、rank差异合成数据、前向/反向/同步/SGD更新；最终两次各16rank×20step通过 |

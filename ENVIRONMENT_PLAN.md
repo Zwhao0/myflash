@@ -1,14 +1,14 @@
 # M1a 两台 H800 只读环境盘点计划（已执行，结果见docs/m1）
 
-ADAPTATION：以下原计划形成于M0；当时是下一任务命令草案，实际M1a结果现见docs/m1/ENVIRONMENT.md与VALIDATION.md。原计划不是执行报告，不创建训练进程/GPU 上下文、collective、CUDA Event、Redis 服务或基线代码。M0 仅通过 SSH 在 gpu-01 建档与运行 Git/文件核验；未做下列 GPU/网络/软件盘点。
+ADAPTATION：以下原计划形成于M0；当时是下一任务命令草案，实际M1a结果现见docs/m1/ENVIRONMENT.md与VALIDATION.md。原计划不是执行报告，不创建训练进程/GPU 上下文、collective、CUDA Event、Redis 服务或基线代码。M0 仅通过 SSH 在 node-0 建档与运行 Git/文件核验；未做下列 GPU/网络/软件盘点。
 
 ## 已知目标与待补信息
 
 | 对象 | 已知 | M1a 前需确认 |
 |---|---|---|
-| 开发服务器 H800-A | 本地私有 `服务器.md` 指向 `test@<server-address>`；实际主机名 gpu-01 | 是否也是第一台部署 H800、作业资源归属、指定 Python/容器和允许读取的范围 |
+| 开发服务器 H800-A | 本地私有 `服务器.md` 指向 `test@<server-address>`；实际主机名 node-0 | 是否也是第一台部署 H800、作业资源归属、指定 Python/容器和允许读取的范围 |
 | 第二台 H800-B | 用户计划两台 H800 | 连接目标、账号/端口、目标项目目录；不从其他项目/凭证或扫描网段寻找 |
-| 开发目录 | `/home/campus/zhangweihao/myflash`；M0 从不存在的目录创建 | 后续运行的 scratch/run_id 目录与容器挂载 |
+| 开发目录 | `<project>`；M0 从不存在的目录创建 | 后续运行的 scratch/run_id 目录与容器挂载 |
 | 互联 | 未知 | 双方可达接口/地址、RDMA/RoCE/IB 设备、GPU↔NIC 对应关系 |
 | Redis | 论文图3-2/3-3 为远端服务，本项目位置未选定 | 已有实例/管理者、允许访问的地址、资源占用与 run 前缀；M1a 不部署、不写键 |
 
@@ -32,7 +32,7 @@ M1a 中可产生文档/日志文件，目标采集命令只读。任何 ImportEr
 | Python/包版本 | 指定现有 `<python>` 的 `--version`；下面 host-only Python 查询 | compiled CUDA、PyTorch/NCCL 的实际加载须分别记录 |
 | NIC/地址/路由 | `ip -br link`；`ip -br addr`；`ip route show` | 不扫描网段、不改网络；分享时过滤无关地址 |
 | RDMA/IB/RoCE | `rdma link show`；`ibv_devinfo`；`ibdev2netdev`；`ibstat` | 设备存在不证明 NCCL 实际用它；缺命令或权限原样登记 |
-| 磁盘/共享内存容量 | `df -h /home/campus/zhangweihao/myflash /dev/shm` | 只看容量，不清理、不枚举别的项目 |
+| 磁盘/共享内存容量 | `df -h <project> /dev/shm` | 只看容量，不清理、不枚举别的项目 |
 
 以下 Python 命令仅在用户指定的现有解释器/容器运行；`<python>` 必须替换为实测路径，不建立 venv、不安装 torch。host-only 查询不调用 `torch.cuda.init/is_available/get_device_properties`，不创建 tensor 或 ProcessGroup：
 

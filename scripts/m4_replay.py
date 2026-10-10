@@ -45,7 +45,7 @@ def main():
         assert ndjson,run
         all_raw=[json.loads(l) for f in ndjson for l in f.read_text().splitlines()]
         profiles=[r for r in all_raw if r['state']==1 and 1<=r['api']<=8]
-        # Raw source from gpu-02 is transferred project-locally for read-only replay.
+        # Raw source from node-1 is transferred project-locally for read-only replay.
         supplements={}
         for node in [0,1]:
             path=public/f'profile-samples-node-{node}.csv'

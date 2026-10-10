@@ -1,0 +1,81 @@
+{
+  "task": "P1",
+  "baseline": "2fcc45724e8bbfde800539beeae45febddd7e572",
+  "machine": "local macOS Darwin 25.6.0 arm64",
+  "python": "3.9.6",
+  "cwd": "<audit-clone>",
+  "commands": [
+    {
+      "command": [
+        "python3",
+        "tests/privacy_check_test.py"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "log": "../logs/00.log",
+      "status": "PASS",
+      "expectation_met": true
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/privacy_check.py"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "log": "../logs/01.log",
+      "status": "PASS",
+      "expectation_met": true
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/privacy_check.py",
+        "--history"
+      ],
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "log": "../logs/02.log",
+      "status": "FAIL",
+      "expectation_met": true
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/privacy_preservation.py"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "log": "../logs/03.log",
+      "status": "PASS",
+      "expectation_met": true
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/m3_validate_public.py"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "log": "../logs/04.log",
+      "status": "PASS",
+      "expectation_met": true
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--cached",
+        "--check"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "log": "../logs/05.log",
+      "status": "PASS",
+      "expectation_met": true
+    }
+  ],
+  "history_finding_note": "exit 1 confirms known unmodified historical identity leaks; not repaired",
+  "gpu_experiments": "NOT_RUN",
+  "remote_ci": "NOT_RUN"
+}

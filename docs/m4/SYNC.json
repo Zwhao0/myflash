@@ -1,6 +1,6 @@
 {
   "status": "PASS",
-  "authoritative_source": "gpu-01:/home/campus/zhangweihao/myflash",
+  "authoritative_source": "node-0:<project>",
   "source_branch": "codex/m4-localization",
   "source_commit": "124405ce4d3e3b72dfe96b93d2c532145eb096c4",
   "source_tree": "d9348a2d80c98dca08efa0851150fbbfbe026de5",

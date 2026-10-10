@@ -1,5 +1,5 @@
 # M3结果
-M3在下列支持范围内完成，停止等待审核；M4及后续未开始。实测gpu-01/gpu-02，各8×H800，PyTorch2.8.0+cu128、NCCL22703、CUDA runtime12080；沿用M1低资源配置。所有完整原始日志只在服务器runs；公开CSV是隐私白名单导出，数值没有调整。
+M3在下列支持范围内完成，停止等待审核；M4及后续未开始。实测node-0/node-1，各8×H800，PyTorch2.8.0+cu128、NCCL22703、CUDA runtime12080；沿用M1低资源配置。所有完整原始日志只在服务器runs；公开CSV是隐私白名单导出，数值没有调整。
 
 ## 六项验收结论
 1. **手动状态机PASS**：ABI2；进程本地API/Reader.request；非Group collective入口和最外层GroupStart生效，Group内固定state/epoch；两轮0→1→0正确。epoch保存历史而不清零。每rank证据齐全才视为完整Profile；请求返回0只代表请求接受。Reader PASS只代表传输/排空通过。
@@ -14,21 +14,21 @@ M3在下列支持范围内完成，停止等待审核；M4及后续未开始。�
 
 | run_id | 机器 | NDJSON事件（各节点） | 退出码 |
 |---|---|---|---|
-| m3abc-local-01 | gpu-01 | 275 | 0/0/0/0 |
-| m3d-roce-01 | gpu-01/gpu-02 | 138/137 | 0/0/0/0 |
-| m3e-group-01 | gpu-01 | 255 | 0/0/0/0 |
-| m3e-group-02 | gpu-01 | 255 | 0/0/0/0 |
-| m3f-allreduce-01 | gpu-01/gpu-02 | 955/954 | 0/0/0/0 |
-| m3f-ddp-01 | gpu-01/gpu-02 | 1656/1659 | 0/0/0/0 |
-| m3f-allreduce-02 | gpu-01/gpu-02 | 952/952 | 0/0/0/0 |
-| m3f-ddp-02 | gpu-01/gpu-02 | 1647/1652 | 0/0/0/0 |
-| m3d-monitor-local-01 | gpu-01 | 235 | 0/0/0/0 |
-| m3d-monitor-cross-01 | gpu-01/gpu-02 | 121/117 | 0/0/0/0 |
-| m3d-monitor-allreduce-01 | gpu-01/gpu-02 | 949/951 | 0/0/0/0 |
-| m3d-monitor-ddp-01 | gpu-01/gpu-02 | 1647/1652 | 0/0/0/0 |
-| m3d-monitor-lifecycle-01 | gpu-01 | 72 | 0/0/0/0 |
+| m3abc-local-01 | node-0 | 275 | 0/0/0/0 |
+| m3d-roce-01 | node-0/node-1 | 138/137 | 0/0/0/0 |
+| m3e-group-01 | node-0 | 255 | 0/0/0/0 |
+| m3e-group-02 | node-0 | 255 | 0/0/0/0 |
+| m3f-allreduce-01 | node-0/node-1 | 955/954 | 0/0/0/0 |
+| m3f-ddp-01 | node-0/node-1 | 1656/1659 | 0/0/0/0 |
+| m3f-allreduce-02 | node-0/node-1 | 952/952 | 0/0/0/0 |
+| m3f-ddp-02 | node-0/node-1 | 1647/1652 | 0/0/0/0 |
+| m3d-monitor-local-01 | node-0 | 235 | 0/0/0/0 |
+| m3d-monitor-cross-01 | node-0/node-1 | 121/117 | 0/0/0/0 |
+| m3d-monitor-allreduce-01 | node-0/node-1 | 949/951 | 0/0/0/0 |
+| m3d-monitor-ddp-01 | node-0/node-1 | 1647/1652 | 0/0/0/0 |
+| m3d-monitor-lifecycle-01 | node-0 | 72 | 0/0/0/0 |
 
-CPU最终suite：gpu-01 runs/m3-cpu-20261010T053356468174Z/manifest.json，六个完整命令退出均0；原11项ring、原4线程1205-event hook、Reader25次测试执行（包含原11项重复发现；新增3类恢复/协议测试）、Profile错误mock46事件（6有效、11无效、5不支持collective），缺rank/部分rank未进入第二epoch/timeout/丢失/损坏拒绝测试。不是GPU实验。最终更严格只读验证，两节点分别runs/m3-final-node-R/validation.log exit0、gpu-01 validation-tests.log exit0；公开final-validation-node-R.json包含完整Profile标志。
+CPU最终suite：node-0 runs/m3-cpu-20261010T053356468174Z/manifest.json，六个完整命令退出均0；原11项ring、原4线程1205-event hook、Reader25次测试执行（包含原11项重复发现；新增3类恢复/协议测试）、Profile错误mock46事件（6有效、11无效、5不支持collective），缺rank/部分rank未进入第二epoch/timeout/丢失/损坏拒绝测试。不是GPU实验。最终更严格只读验证，两节点分别runs/m3-final-node-R/validation.log exit0、node-0 validation-tests.log exit0；公开final-validation-node-R.json包含完整Profile标志。
 
 科学A–D及首轮F使用Probe SHA256 583371a93b85308c2f5db4d4c7980344d9dc9fea7714988545b5054e472a9b19；最终Group02/F02/16rank Monitor使用c9f6987d35d2bff32aed205c2bac0741a41fe6804861b2e82450f4369c541e77，两机一致。差异是补强失败内层End无效化；正常Event位置/单位/stream和原始实验标签没有变化。实际source_commit/diff/hash在每run manifest；核心实现提交ccded07、补强提交14a5c70，最终交付提交另由git log/SYNC查询，不自引用。
 
@@ -56,7 +56,7 @@ M3运行末每PID约982–1058MiB，均<=2048MiB，启动前每UUID>=3072MiB余�
 
 ## 失败保留和边界
 - 首轮build runs/m2-build-20261010T052107331199Z exit1：CUDA header重载函数地址歧义；修正公共C函数指针后新build通过，原日志保留。
-- gpu-02首轮postflight exit1，底层git diff exit128：执行镜像没有gpu-01的64badbf Git对象；非GPU失败。保留runs/m3-final-node-1/postflight.log与原m3-postflight目录/2.log。改为比对审批源blob SHA256，gpu-01逐个git show64badbf核验后两机postflight2均0；未放宽文件范围或修改原M1/M2入口。
+- node-1首轮postflight exit1，底层git diff exit128：执行镜像没有node-0的64badbf Git对象；非GPU失败。保留runs/m3-final-node-1/postflight.log与原m3-postflight目录/2.log。改为比对审批源blob SHA256，node-0逐个git show64badbf核验后两机postflight2均0；未放宽文件范围或修改原M1/M2入口。
 - 连接器search_branches一次传输失败；后续PR1读取和M3分支创建恢复。发布结果以SYNC回执为准，不能当GPU验收。
 - 收尾白名单验证首次误用不存在的Python路径exit127，runs/m3-final-node-0/public-validation.log/.exit保留；改用python3后runs/m3-final-public/validation.log和validation2.log均exit0，没有GPU重跑或数据改动。
 - 多stream/multidevice Group、capture与未知/非阻塞comm明确UNSUPPORTED/null；真实multidevice/capture/InProgress错误行为NOT_RUN，CPU mock仅验证拒绝/原返回码。Profile非Group Send/Recv不支持同步计时；其它Profile API、mixed-comm Group、default-stream、并发多线程Profile没有真实验收。CUDA Graph重放、GroupSimulateEnd等未包装API不承诺覆盖。没有真实CUDA错误注入。

@@ -2,7 +2,7 @@
 import argparse,ctypes,datetime,importlib.metadata as md,json,os,re,shutil,subprocess,sys
 from pathlib import Path
 p=argparse.ArgumentParser();p.add_argument('--peer');a=p.parse_args()
-root=Path('/home/campus/zhangweihao/myflash');root.mkdir(parents=True,exist_ok=True)
+root=Path(__file__).resolve().parents[1]
 rid='m1a-'+datetime.datetime.now(datetime.timezone.utc).strftime('%Y%m%dT%H%M%SZ')
 out=root/'runs'/rid;out.mkdir(parents=True,exist_ok=False);os.chmod(out,0o700)
 commands=[['hostname'],['uname','-srmo'],['cat','/etc/os-release'],['id','-un'],['nvidia-smi','--query-gpu=index,name,uuid,pci.bus_id,memory.total,memory.used,utilization.gpu,driver_version','--format=csv'],['nvidia-smi','-L'],['nvidia-smi','--query-compute-apps=gpu_uuid,pid,used_gpu_memory','--format=csv'],['nvidia-smi','topo','-m'],['lspci','-nn'],['numactl','--hardware'],['nvcc','--version'],['readlink','-f','/usr/local/cuda'],['ip','-br','link'],['ip','-br','addr'],['ip','route','show'],['rdma','link','show'],['ibv_devinfo'],['ibdev2netdev'],['ibstat'],['df','-h',str(root),'/dev/shm'],[sys.executable,'--version'],['ldconfig','-p']]
