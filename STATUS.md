@@ -1,8 +1,8 @@
 # FLASH 全新开发状态
 
-当前阶段：M4 离线两阶段定位
-当前状态：M4 PASS（已收到授权范围/确定性算法）；G04最终科学判决OPEN；完成后停止
-当前任务：tasks/04_localization.md已完成明确范围；等待M4审核与截断消息补充，不进入M5。
+当前阶段：M4 真实多通信组迟到补充验收
+当前状态：M4 supplement PASS（采集/条件化排序）；正常临时候选与标签冲突保留；G04 OPEN；停止待审核
+当前任务：tasks/04_supplement.md已完成；独立补充PR待审核，不进入M5。
 
 ## 权威路径、来源与改动
 
@@ -146,3 +146,14 @@ M4最终回读补充：执行期间用户的PR2已经合并，main=2fcc45724e8bb
 10份人工NDJSON按精确路径/哈希登记，仍接受所有秘密/身份文本规则；317份M4代码/fixtures/输入期望/实验数据与main逐字相同，完整范围/哈希见docs/privacy/conflict-preservation.json。其余M4改动只含身份元数据/一行注释，原断言/失败/样本/时延/标签保持。原P1快照JSON保留历史口径。
 本地macOS Darwin25.6.0 arm64/Python3.9.6：6隐私测试、当前树检查、原60文件保留、M3公开证据、65M4 fixtures、main M4保留/AST/PLAN一致与diff两检查均exit0；完整命令/退出码/原始日志路径见docs/privacy/conflict-validation.json（../logs/conflict-01/00..07.log）。第一次65fixtures日志runs/p1-conflict-m4-fixtures保留。一次状态追加的Python编码错误未写入成功，保留本地错误日志并用显式UTF8重试，未更改测试断言。没有新GPU实验/服务器回放/科学选择。最终commit/tree/远端CI以收尾回执为准。
 下一唯一任务：用户审核已解冲突的PR3；不代合并main，不推进M5；旧历史与材料授权仍待另行处理。
+
+
+## M4 真实迟到补充验收（2026-10-10）
+用户已审核M4/PR4并明确授权补齐本关，非M5。起点最新main 01c96abeab2be25ff38176357a19fb53f18356f8 / tree335aec2975709ede80fd6fb2b032bb587f777491；分支codex/m4-controlled-delay。GPU实验源ba968bc2dde153d7cdde24cb422e5164435958f2，发布期间P1合并到main 896057a07fee5afeb66801ac98ff4ab9d643e2fd，按该已审核上游更新公开分支；native/flash/tests科学源字节未变。新增tests/m4_late.py、scripts/m4_late_{launch,run,verify,export}.py、tasks04_supplement、docs/m4/supplement和本状态；最终提交与diff/树回执见私有publication-receipt。相对发布main无M1–M3/原M4修改，243受保护文件逐SHA核验；原实验precheck亦243/243相等。
+来源PAPER max-group/min-rank/CV0.1/独立scores；UPSTREAM官方NCCL/PyTorch与实测2.27.3/12.8；ADAPTATION隔离/完整性/安全/公开别名；EXTENSION有界CPU迟到与人工DP/TP标签。精确commit/path/function与边界见docs/m4/supplement/PROTOCOL.md，无GreyHound复用。
+node-0单机四H800，Torch2.8+cu128/CUDA12080/NCCL22703，实际进程显存978–980MiB；固定场景A–E核心各2启动/2epoch，warmup3/采样10；五组有限各1启动/2epoch。核心16/16迟到窗口Stage1/Stage2匹配，正常4/4临时候选；五组DP8/8匹配，但5/10窗口跨标签冲突（迟到5/8），保留AMBIGUOUS_SPEC。全部1800样本/30窗口/45独立comm身份正确，所有数值、Event、原digest/计数、Monitor恢复、run/epoch/comm隔离拒绝和私有/公开逐字段重放一致。
+实际完整子命令/exit0/原日志仅服务器runs/m4-late-core-01-w01..w10、m4-late-five-01-w01..w05的control.json/command-0..2.log与node-0/manifest、probe、analysis/evaluator；汇总入口runs/m4-supplement-access。65fixtures命令/日志exit0，导出三次exit0；详细命令/外层未捕获事项见PROTOCOL。每run300s/预检3GiB/末检查2GiB，15run精确清理及PID/GPU/shm残留0。CPU有界20ms，无系统升级或其它作业干扰。
+G04继续OPEN，20%规则未定义/禁用、双权重与population/sample敏感性原样输出；final_fault_ranks为空。本结果仅条件化排序，完整FLASH自动precision/recall、两机多组、真实训练/降频/网络干扰NOT_RUN。全部正常候选、冲突与历史失败保留；GitHub提交前隐私扫描，原始地址/UUID/PID/路径/命令只在服务器runs。
+下一唯一任务：审核本M4补充PR与真实结果；完成即停止，不自动进入M5。
+
+M4补充发布完成：Draft PR https://github.com/Zwhao0/myflash/pull/5 ，base main896057a，head codex/m4-controlled-delay。通过命令行Git SSH推送，exit0；GitHub接口创建PR成功，未使用浏览器文件上传/未改变扩展权限。初次22端口连接关闭/超时与443直连关闭均保留发布失败回执，使用已有代理的SSH443连接成功；主机密钥对照官方指纹严格核验。5516cc5e5fe75c14e7c3acfbc5c05c51c6930a40/tree15b03fc34478c4d734174442b267eff9af955d11完整451文件路径/模式/blob SHA远端回读一致，相对main12文件。该STATUS回执追加后的最终head/tree/CI状态见服务器runs/m4-supplement-access/publication-receipt.json。实验数据与算法没有改动，PR不代合并，本轮停止待审，不进入M5。
