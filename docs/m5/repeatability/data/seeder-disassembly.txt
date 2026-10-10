@@ -1,0 +1,86 @@
+
+<runtime>/Rbeast/Rbeast.cpython-312-x86_64-linux-gnu.so:     file format elf64-x86-64
+
+
+Disassembly of section .init:
+
+Disassembly of section .plt:
+
+Disassembly of section .text:
+
+00000000000279d0 <avx512_pcg_set_seed>:
+   279d0:	55                   	push   %rbp
+   279d1:	48 89 d1             	mov    %rdx,%rcx
+   279d4:	48 ba 9b ea 8f 74 e6 	movabs $0x853c49e6748fea9b,%rdx
+   279db:	49 3c 85
+   279de:	48 89 c8             	mov    %rcx,%rax
+   279e1:	48 31 d0             	xor    %rdx,%rax
+   279e4:	48 89 e5             	mov    %rsp,%rbp
+   279e7:	41 54                	push   %r12
+   279e9:	53                   	push   %rbx
+   279ea:	48 83 e4 c0          	and    $0xffffffffffffffc0,%rsp
+   279ee:	48 39 d1             	cmp    %rdx,%rcx
+   279f1:	0f 84 f1 00 00 00    	je     27ae8 <avx512_pcg_set_seed+0x118>
+   279f7:	48 ba b7 b7 72 29 97 	movabs $0xb47c73972972b7b7,%rdx
+   279fe:	73 7c b4
+   27a01:	48 8d 74 09 01       	lea    0x1(%rcx,%rcx,1),%rsi
+   27a06:	48 85 c9             	test   %rcx,%rcx
+   27a09:	48 0f 45 d6          	cmovne %rsi,%rdx
+   27a0d:	48 03 47 20          	add    0x20(%rdi),%rax
+   27a11:	48 89 57 40          	mov    %rdx,0x40(%rdi)
+   27a15:	48 be 2d 7f 95 4c 2d 	movabs $0x5851f42d4c957f2d,%rsi
+   27a1c:	f4 51 58
+   27a1f:	48 89 c1             	mov    %rax,%rcx
+   27a22:	c4 e1 f9 6e f0       	vmovq  %rax,%xmm6
+   27a27:	48 0f af ce          	imul   %rsi,%rcx
+   27a2b:	48 01 d1             	add    %rdx,%rcx
+   27a2e:	49 89 ca             	mov    %rcx,%r10
+   27a31:	c4 e1 f9 6e e1       	vmovq  %rcx,%xmm4
+   27a36:	48 8d 4f 48          	lea    0x48(%rdi),%rcx
+   27a3a:	4c 0f af d6          	imul   %rsi,%r10
+   27a3e:	49 01 d2             	add    %rdx,%r10
+   27a41:	4c 89 d3             	mov    %r10,%rbx
+   27a44:	48 0f af de          	imul   %rsi,%rbx
+   27a48:	48 01 d3             	add    %rdx,%rbx
+   27a4b:	49 89 d8             	mov    %rbx,%r8
+   27a4e:	c4 e3 d9 22 cb 01    	vpinsrq $0x1,%rbx,%xmm4,%xmm1
+   27a54:	4c 0f af c6          	imul   %rsi,%r8
+   27a58:	49 01 d0             	add    %rdx,%r8
+   27a5b:	4d 89 c1             	mov    %r8,%r9
+   27a5e:	c4 c1 f9 6e e8       	vmovq  %r8,%xmm5
+   27a63:	4c 8d 47 50          	lea    0x50(%rdi),%r8
+   27a67:	4c 0f af ce          	imul   %rsi,%r9
+   27a6b:	49 01 d1             	add    %rdx,%r9
+   27a6e:	4d 89 cb             	mov    %r9,%r11
+   27a71:	c4 c1 f9 6e d9       	vmovq  %r9,%xmm3
+   27a76:	4c 0f af de          	imul   %rsi,%r11
+   27a7a:	49 01 d3             	add    %rdx,%r11
+   27a7d:	4d 89 dc             	mov    %r11,%r12
+   27a80:	c4 c3 d1 22 d3 01    	vpinsrq $0x1,%r11,%xmm5,%xmm2
+   27a86:	4c 0f af e6          	imul   %rsi,%r12
+   27a8a:	49 01 d4             	add    %rdx,%r12
+   27a8d:	c4 c3 e1 22 c4 01    	vpinsrq $0x1,%r12,%xmm3,%xmm0
+   27a93:	c4 e3 75 38 c8 01    	vinserti128 $0x1,%xmm0,%ymm1,%ymm1
+   27a99:	c4 c3 c9 22 c2 01    	vpinsrq $0x1,%r10,%xmm6,%xmm0
+   27a9f:	c4 e3 7d 38 c2 01    	vinserti128 $0x1,%xmm2,%ymm0,%ymm0
+   27aa5:	62 f3 fd 48 3a c1 01 	vinserti64x4 $0x1,%ymm1,%zmm0,%zmm0
+   27aac:	62 f2 fd 48 7c ca    	vpbroadcastq %rdx,%zmm1
+   27ab2:	62 f2 fd 48 40 05 44 	vpmullq 0x71144(%rip),%zmm0,%zmm0        # 98c00 <spinnerChar.0+0x16bc>
+   27ab9:	11 07 00
+   27abc:	62 f1 fd 48 d4 c1    	vpaddq %zmm1,%zmm0,%zmm0
+   27ac2:	62 f1 fe 48 7f 07    	vmovdqu64 %zmm0,(%rdi)
+   27ac8:	bf 08 00 00 00       	mov    $0x8,%edi
+   27acd:	c5 f8 77             	vzeroupper
+   27ad0:	e8 9b 45 fe ff       	call   c070 <pcg_get_lcg_multiplier_shift_multistep@plt>
+   27ad5:	48 8d 65 f0          	lea    -0x10(%rbp),%rsp
+   27ad9:	5b                   	pop    %rbx
+   27ada:	41 5c                	pop    %r12
+   27adc:	5d                   	pop    %rbp
+   27add:	e9 1e 4e fe ff       	jmp    c900 <init_gauss_rnd@plt>
+   27ae2:	66 0f 1f 44 00 00    	nopw   0x0(%rax,%rax,1)
+   27ae8:	48 ba 37 d5 1f e9 cc 	movabs $0xa7893cce91fd537,%rdx
+   27aef:	93 78 0a
+   27af2:	48 89 c8             	mov    %rcx,%rax
+   27af5:	e9 13 ff ff ff       	jmp    27a0d <avx512_pcg_set_seed+0x3d>
+
+Disassembly of section .fini:

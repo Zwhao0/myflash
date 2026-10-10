@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "machine": "local macOS arm64",
+  "python": "3.9.6",
+  "files": 199,
+  "bytes": 751318224,
+  "arrays_by_batch": {
+    "m5-p1-b-batch01": 132960,
+    "m5-p1-c-batch01": 132960,
+    "m5-p1-c-batch02": 132960,
+    "m5-p1-b-batch02": 132960
+  },
+  "arrays": 531840,
+  "dtypes": [
+    "<f4"
+  ],
+  "native_experiment": false,
+  "gpu_experiment": false,
+  "note": "Independent file SHA256, lossless base64, ndarray byte counts; node-0 native/comparator gates reported separately."
+}

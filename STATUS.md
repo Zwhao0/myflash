@@ -168,3 +168,63 @@ M4补充发布完成：Draft PR https://github.com/Zwhao0/myflash/pull/5 ，base
 下一唯一任务：用户审核M5，决定真实Rbeast严格重复性上游修复与G01/G02/G13/G20科学规则；本轮停止，M6须另行批准。
 
 M5 发布回执：Draft PR https://github.com/Zwhao0/myflash/pull/6 ，base main9c66be49，首份source head d639f66e00fb975a561478e3ed3ead6f1401d6db/tree9eb49d43b15af19033d6b82f143f74a645450efc，90文件diff（88新文件+STATUS/GAPS），Git SSH普通push exit0，远端commit/tree与本地/服务器相等。539文件当前隐私扫描findings0、6隐私测试0、最后diff检查0；GitHub Publication privacy check run38038070584 completed/success。该段只记录首份快照，文档回执后最终head/tree/CI保存在私有runs/m5-access/publication-receipt.json，不把前次CI冒充后次检查。自身GPU PID结束复核0，原运行日志保留。严格重复性FAIL和科学规则OPEN未被覆盖；M5停止待审核，不进入M6。
+
+
+## M5-R 专项交付（2026-10-10）
+用户只批准M5-R；沿用PR6的codex/m5-iteration-rbeast、起点baa7638d775e1462240f0f63207c145ce209fcab，main9c66be49不改、PR保持Draft不合并。新增tasks/05_repeatability.md、两个scripts/m5_repeatability*.py和docs/m5/repeatability（ROOT_CAUSE/EXPERIMENTS/RESULTS、完整脱敏比较数据、验证/保留记录）；本文件/GAPS仅追加。正式adapter/detection/阈值、原严格断言、M1–M4源码与数据逐字保留。提交/diff最终快照见本地Git和私有runs/m5-r-access/交付回执。
+来源PAPER既有窗口/阈值；UPSTREAM固定Rbeast0.1.25 sdist/wheel、实际导出符号与反汇编；ADAPTATION有界进程/affinity/完整hash/原数组字节采集；EXTENSION固定人工输入重复性，不是GPU实验。源码位置/许可/界限及未批准补丁方案见ROOT_CAUSE，不复制GreyHound或旧失败实现。
+实际node-0 Intel Xeon Platinum8463B、Linux6.8.0 x86_64、Python3.12.3，现有隔离Rbeast0.1.25/NumPy2.2.6。两独立CPU批次m5-r-20261010-01/02：每批32单元×20 reference fits、七固定场景×20×45前缀（4900 native决策fit）。同/新进程、默认/单链、原/固定CPU0与线程1、SSE/AVX2/AVX512实际分派对照完整。默认AVX512仍不重复，SSE/AVX2各单元20次字节一致仅诊断，不改正式默认。初始化缓冲区因果实验和已加载指令确认AVX512旧byte32依赖缺陷；未证明是所有posterior差异的唯一原因，更没有修复后PASS。未patch/rebuild/安装/升级运行时。
+严格重复性FAIL：独立m5-r-strict-20261010-01的原m5_real_api.py与m5_replay.py均exit1，原断言不改；完整API raw/新full-short失败raw和历史FAIL全部保留。完整批次02每场景35/35 fitted前缀后验字节不一致；有效输出候选有无/qualified cp/首次iteration在20次中稳定，低概率raw cp有邻迭代漂移。20% first duration23、throughput无；21% first22、throughput无。不同分母/不同prefix均值影响完整列出。首次批次三次invalid cpOccPr拒绝造成持续退化28/35及19%场景29候选有无翻转，因此决策稳定性不能无条件PASS；不接受通用有界统计重复性代替严格PASS。
+首诊断在候选验证之后保存raw导致这三次raw未采到；源脚本/异常/输入hash/参数/决策/NOT_CAPTURED及导出fit-count断言exit1保留，不补零、不猜数值、不删除重复。仅修正诊断采集顺序，使用独立02完整重跑同一矩阵，4900 raw完整；不替换01失败。源码字段错误已证实，特定cpOccPr无效值和成因因缺raw保持未知。
+命令、机器、exit与私有日志位置见repeatability/validation.json；suite01/02均0（01不代表完整性PASS）、export01为1/export02为0，严格两测试1；node-0原Reporter/8处理/6隐私测试0。私有原始命令/worker stdout/stderr/原模型打印位于服务器runs/m5-work/runs/m5-r-{20261010-01,20261010-02,strict-20261010-01,prefix-capture-01}与runs/m5-r-launch-20261010-{01,02}，入口脚本runs/m5-access/m5-r-*。本地macOS/Python3.9标准库验证5540 fits/132960数组/6300前缀的数据hash、native bytes、输入、固定配置与无未来映射exit0，不称本地真实Rbeast/GPU实验。运行时binary hash前后相同、M1仍无新增包、自身实验进程残留0；无GPU/Redis/自动Profile/控制器/真值读取。
+保留隐私CI工作流和原head成功记录；本轮新head远端CI不得冒充前次PASS。最终当前树扫描/保留SHA/diff及发布状态以publication-validation和私有交付回执为准。Git CLI连接的SSH publickey与HTTPS认证未就绪，M5-R目前交付在本地同名分支，远端PR6仍为原baa7638，未更新；不把未发布的新改动称远端CI PASS。G01/G02/G13/G20全部OPEN、final_alert=false。
+下一唯一任务：用户审核M5-R证据与补丁/独立复测方案，决定是否另行批准隔离native修复；本轮停止，不自动进入M6。
+
+
+## M5-R 发布补充（2026-10-10）
+用户明确批准继续推送以便ChatGPT审核；本轮只发布已有M5-R提交并追加本状态（ADAPTATION），不新增实验或科学实现。已使用现有GitHub专用SSH身份及已验证主机密钥/HTTP CONNECT代理，普通fast-forward push exit0，将codex/m5-iteration-rbeast从baa7638更新至004b1d6f98a9052db4edcf243f8c6d5359d5eed1；Git fetch远端回读exit0，commit/tree67b3e5332879e76d3ebf8060f016ddf78ef31e6c一致。完整私有命令/退出码/原始日志在本地M5 checkout runs/m5-r-publish-01/{ls-remote,push,fetch,main-fetch}.{log,exit}；未输出或上传认证材料。前次认证失败仍为历史失败记录，repeatability/publication-validation.json的NOT_UPDATED/NOT_RUN是前次快照，由本段与私有发布回执补充，不覆盖旧记录。
+推送前查询PR6为open/draft，推送后查询发现外部已于2026-10-10 09:57:36 UTC合并旧M5 head baa7638、merge ca6923d58d1fd5b2a0f899176780b17d6bd7e364；本轮未执行合并或修改main。沿用当前M5分支新建Draft PR https://github.com/Zwhao0/myflash/pull/7 ，base main ca6923d，首份head004b1d6、61文件差异，专门审核M5-R。科学提交及原始数据不变，本回执仅文档追加；最终head/树/隐私CI以私有runs/m5-r-access/publication-receipt.json和PR7实际状态为准，旧M5 CI不代表新head通过。
+严格重复性FAIL、决策稳定性不能无条件PASS、三次异常raw NOT_CAPTURED及全部失败均保留；G01/G02/G13/G20 OPEN、final_alert=false。未patch/rebuild/安装依赖，无GPU占用或M6推进。下一唯一任务：审核PR7的M5-R证据与隔离补丁/复测方案；发布完成后停止。
+
+
+## M5-P1 隔离单行修复验证（2026-10-10）
+用户“执行这个任务书”批准所附M5-P1有限CPU构建/安装/测试与独立Draft PR；精确起点PR7 ed954f5a289e2a9f3c585f7f5af3792d0fde0c8d/tree36d19267fbbbaa12cacbaaac42bd3a56e4cac68b，mainca6923d保持；新codex/m5-p1-avx512-seed，预声明提交a4db998865cab0f6e7d59a51301b9ee5d7678687。仅新增批准的P1任务/脚本/ABI辅助/文档数据，本文件/GAPS追加；原598文件实验前后逐字一致。最终提交/diff/head/tree/真实新head CI以独立Draft PR与私有runs/m5-p1-access/publication-receipt.json为准，不沿用PR7 CI。
+来源PAPER现有SPEC S3；UPSTREAM固定Rbeast0.1.25 sdist及真实接口/工具链；ADAPTATION avx512_pcg_set_seed中increment→increment512单行与隔离采集核验；EXTENSION固定人工序列矩阵。无清零/解析器/模型/seed/阈值/优化策略变更，无GreyHound或此前失败FLASH源码。版权/发布边界见docs/m5/patch-p1/SOURCE_LICENSE_AUDIT.md；wheel/完整第三方树私有，公开发布阻塞许可审核。
+实际node-0 Xeon Platinum8463B/Linux/Python3.12.3/GCC13.3，固定setuptools80.9.0/wheel0.42.0/NumPy2.2.6（版本来源及SHA锁定）；B/C legal1b/2c cp312-linux_x86_64且version0.1.25，ABI sizeof96/align32/increment32/increment51264完全相同。唯一源文件一行差异；17构建/安装/ABI/指令检查子命令均exit0，不把detached launch视为完成。完整命令/真实exit/日志在服务器runs/m5-p1-work/runs/m5-p1-build-01与公开validation.json脱敏回执。
+工程六类PASS：source/build/ABI、独立整数RNG/旧内存独立与复用/实际auto AVX512、原API/原prefix断言、完整后验、零原生错误及候选/首次iteration、Reporter/detection/privacy/完整性。A API/prefix exit1，B API exit0/prefix exit1；A/B RNG旧内存依赖保留。C独立full回放生成0、两个原严格断言0，未修改原断言/字段或用切片伪造短执行。
+预声明B1,C1,C2,B2一次完成：每批640参考fit+4900真实决策fit、6300前缀，合计22160fit/531840数组/25200判断；C同模型/实际ISA跨进程、affinity/thread和两批所有raw/24数组dtype/shape/bytes与候选全部阶段严格一致，native error/crash/timeout/missing raw均0。B auto/AVX512实际ISA组合存在2种后验，SSE/AVX2未修改控制一致；不以分格掩盖跨上下文差异，不要求跨ISA后验相等。实际矩阵nice19（嵌套nice10饱和）同用于B/C，比声明优先级更低，记录偏差，不作性能结论。全部参数/fixture/分母/过滤方向不变、final_alert=false。
+完整测量driver exit0，原Reporter/detection/API-fields/contract/比较器自检/6隐私回归均0；最终独立audit与export0（首次export相对路径处理1保留，修正新导出目录且fit重跑0）。本地macOS/Python3.9.6标准库独立核验全部531840数组哈希/字节数exit0，不称本地native/GPU实验。实际子命令/exit/私有日志在runs/m5-p1-execution-01、runs/m5-p1-comparison-01/02、runs/m5-p1-export-02与项目runs/m5-p1-access；公开脱敏命令/exit见validation.json、postprocessing.json，完整索引data-index.json。原生stdout/stderr/路径/PID只留私有runs；初次格式失败也保留。当前树隐私扫描830文件/0发现；最终提交检查与新head CI见私有最终发布回执。
+正式.venv-m5的1424非缓存文件SHA前后相等，正式.so仍a7432000e18465d8e4d2ba895a8618b388007528757718d286fcb82440bbb157、Rbeast0.1.25/NumPy2.2.6；P1自身工作进程残留0。没有GPU/NCCL/Redis/故障注入/系统安装/节点1迁移。旧M5-R FAIL和三份NOT_CAPTURED不改；G01/G02/G04/G09/G13/G20全部OPEN，科学有效性/正式runtime采纳/M6 NOT_APPROVED。隐私CI不解决历史泄露或PDF/整体许可证待决问题。
+下一唯一任务：ChatGPT审核独立M5-P1 Draft PR的实际代码、来源与完整证据；本轮完成后停止，不自行合并、部署或进入M6。
+
+
+## M5-S1 科学语义审计交付（2026-10-10）
+
+用户完整批准M5-S1内部连续完成与独立Draft PR；基线PR8精确
+ d2973f5fa66ae99ec7ea09ea7040a11d1b95b845/tree c81e05380685e86acccde6ff97638d49d02457c8，
+新codex/m5-s1-science-audit，base codex/m5-p1-avx512-seed。PR7/PR8/main不改。
+执行源码提交2f8971f4d2402ea64363edba1af7cb2ae97bdd4a；最终Git提交/tree与实际diff
+通过独立PR和私有publication回执绑定，文档不硬写自己的提交SHA。
+仅新增tasks/05_science_s1、三scripts/m5_s1_*.py、一tests/m5_s1_offline.py和
+science-s1文档/数值/哈希；本文件与GAPS只追加。来源PAPER完整原页、UPSTREAM
+固定Rbeast0.1.25、ADAPTATION独立算术核验、EXTENSION候选解释/敏感性。
+
+node-0 CPU/Xeon8463B/Linux x86_64/Python3.12.3；正式Rbeast0.1.25/NumPy2.2.6。
+完整命令/真实exit/原始日志在runs/m5-s1-validation-{01,02}/*.command.json与*.log；
+公开docs/m5/science-s1/validation.json记录脱敏argv、运行代码SHA/环境/输入与输出
+哈希。validation01 FAIL（sdist路径缺失、引用测试缺凭据，均1）；其余0且失败
+回执保留data/validation-attempt01.json。validation02全部11项0：固定引用、
+12600前缀/280重放、16新增规则测试、Reporter4/检测8/contract/M4的65例、
+P1全部531840数组/隐私6测试/diff/当前树扫描。832原文件逐字核验（最终本两文件
+仅追加），正式1424非缓存文件前后SHA相等，原.so仍a7432000…；不执行native
+新fit/安装/编译/迁移、GPU/NCCL/Redis或最终告警。原M5-R/P1失败/缺失不改。
+本地开发结构/编码/锚点错误和Python3.9末位精确对照FAIL均保留，不加容差。
+
+审计交付的离线计算/完整性PASS；最终全树隐私与远端精确head的CI以本PR实际
+回执验收，不沿用PR8 CI。科学有效性不是PASS；G01/G02/G13 OPEN /
+REQUIRES_OWNER_DECISION，G04/G09/G20仍OPEN。final_alert=false、最终iteration
+null、正式runtime采纳/M6 NOT_APPROVED/NOT_RUN。完整结果与待批准S2隔离部署/
+保留原wheel/回滚方案见docs/m5/science-s1/RESULTS.md与DECISION_PROPOSAL.md。
+
+下一唯一任务：ChatGPT基于独立M5-S1 Draft PR精确Git tree/代码/证据审核。
+完成发布与核验后停止，不自行合并、科学批准、正式迁移或推进M6。

@@ -1,0 +1,75 @@
+{
+  "machine": "local macOS arm64",
+  "python": "3.9.6",
+  "checks": [
+    {
+      "command": [
+        "python3",
+        "tests/m5_reporter.py"
+      ],
+      "exit_code": 0,
+      "log": "runs/m5-r-local-02/0.log"
+    },
+    {
+      "command": [
+        "python3",
+        "tests/m5_detection.py"
+      ],
+      "exit_code": 0,
+      "log": "runs/m5-r-local-02/1.log"
+    },
+    {
+      "command": [
+        "python3",
+        "tests/privacy_check_test.py"
+      ],
+      "exit_code": 0,
+      "log": "runs/m5-r-local-02/2.log"
+    },
+    {
+      "command": [
+        "python3",
+        "../runs/m5-r-access/verify-data.py"
+      ],
+      "exit_code": 0,
+      "log": "runs/m5-r-local-02/verify-data.log"
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/privacy_check.py"
+      ],
+      "exit_code": 0,
+      "log": "runs/m5-r-local-02/privacy-final.log"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--cached",
+        "--check"
+      ],
+      "exit_code": 0,
+      "log": "runs/m5-r-local-02/diff-final.log"
+    }
+  ],
+  "data_verified": {
+    "fits": 5540,
+    "native_arrays": 132960,
+    "prefix_decisions": 6300
+  },
+  "data_files_after_sanitization": "data/data-index.json",
+  "preservation": "preservation.json; 539 original files, only STATUS/GAPS appended",
+  "initial_diff_check": {
+    "exit_code": 2,
+    "log": "runs/m5-r-local-02/diff-initial.log",
+    "repair": "sanitized assembly trailing whitespace only; private original unchanged"
+  },
+  "first_export_failure": "server run01/export.stderr exit1 preserved",
+  "strict_native_repeatability": "FAIL",
+  "decision_stability": "Run02 conditional stability; Run01 three candidate absence flips retained",
+  "remote_publication": "NOT_UPDATED: Git CLI SSH publickey/HTTPS authentication unavailable; PR6 remains original baa7638",
+  "github_ci": "NOT_RUN_FOR_M5_R; workflow unchanged and prior baa7638 successful run retained",
+  "no_runtime_patch": true,
+  "stopped_before_M6": true
+}
