@@ -1,0 +1,9 @@
+{
+  "exit_code": 0,
+  "checks": {
+    "status": "NO_CANDIDATE",
+    "candidate_ranks": [],
+    "tags.DP.stage1": "CV_SKIP"
+  },
+  "hand_calculation": "both max18 -> CV0 so no group selected"
+}

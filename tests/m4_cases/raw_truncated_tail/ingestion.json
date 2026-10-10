@@ -1,0 +1,7 @@
+{
+  "format": "m3_ndjson",
+  "records": [
+    "rank-0.ndjson",
+    "rank-1.ndjson"
+  ]
+}

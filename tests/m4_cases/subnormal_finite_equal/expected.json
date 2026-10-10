@@ -1,0 +1,8 @@
+{
+  "exit_code": 0,
+  "checks": {
+    "status": "NO_CANDIDATE",
+    "candidate_ranks": []
+  },
+  "hand_calculation": "finite smallest positive float equal; scale-aware mean stays positive, CV0"
+}

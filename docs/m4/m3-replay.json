@@ -1,0 +1,807 @@
+{
+  "status": "PASS",
+  "machine": "gpu-01",
+  "mechanism_records": 520,
+  "raw_csv_equal": true,
+  "results": [
+    {
+      "run_id": "m3abc-local-01",
+      "epoch": 1,
+      "records": 130,
+      "status": "AMBIGUOUS_SPEC",
+      "candidate_ranks": [],
+      "csv_raw_exact": true,
+      "command": [
+        "/usr/bin/python3",
+        "scripts/m4_analyze.py",
+        "--input",
+        "runs/m4-replay-final-03/m3abc-local-01-epoch1/input.json",
+        "--output",
+        "runs/m4-replay-final-03/m3abc-local-01-epoch1/prediction.json"
+      ],
+      "exit_code": 0
+    },
+    {
+      "run_id": "m3abc-local-01",
+      "epoch": 1,
+      "window_id": "w1",
+      "selection_policy": "all13",
+      "records": 26,
+      "case": "normal",
+      "truth_ranks": [],
+      "candidate_ranks": [],
+      "status": "AMBIGUOUS_SPEC",
+      "match": true
+    },
+    {
+      "run_id": "m3abc-local-01",
+      "epoch": 1,
+      "window_id": "w1",
+      "selection_policy": "fixed_warmup3",
+      "records": 20,
+      "case": "normal",
+      "truth_ranks": [],
+      "candidate_ranks": [],
+      "status": "NO_CANDIDATE",
+      "match": true
+    },
+    {
+      "run_id": "m3abc-local-01",
+      "epoch": 1,
+      "window_id": "w2",
+      "selection_policy": "all13",
+      "records": 26,
+      "case": "cpu0",
+      "truth_ranks": [
+        0
+      ],
+      "candidate_ranks": [
+        0
+      ],
+      "status": "PROVISIONAL_CANDIDATE",
+      "match": true
+    },
+    {
+      "run_id": "m3abc-local-01",
+      "epoch": 1,
+      "window_id": "w2",
+      "selection_policy": "fixed_warmup3",
+      "records": 20,
+      "case": "cpu0",
+      "truth_ranks": [
+        0
+      ],
+      "candidate_ranks": [
+        0
+      ],
+      "status": "PROVISIONAL_CANDIDATE",
+      "match": true
+    },
+    {
+      "run_id": "m3abc-local-01",
+      "epoch": 1,
+      "window_id": "w3",
+      "selection_policy": "all13",
+      "records": 26,
+      "case": "cpu1",
+      "truth_ranks": [
+        1
+      ],
+      "candidate_ranks": [
+        1
+      ],
+      "status": "PROVISIONAL_CANDIDATE",
+      "match": true
+    },
+    {
+      "run_id": "m3abc-local-01",
+      "epoch": 1,
+      "window_id": "w3",
+      "selection_policy": "fixed_warmup3",
+      "records": 20,
+      "case": "cpu1",
+      "truth_ranks": [
+        1
+      ],
+      "candidate_ranks": [
+        1
+      ],
+      "status": "PROVISIONAL_CANDIDATE",
+      "match": true
+    },
+    {
+      "run_id": "m3abc-local-01",
+      "epoch": 1,
+      "window_id": "w4",
+      "selection_policy": "all13",
+      "records": 26,
+      "case": "gpu0",
+      "truth_ranks": [
+        0
+      ],
+      "candidate_ranks": [
+        0
+      ],
+      "status": "PROVISIONAL_CANDIDATE",
+      "match": true
+    },
+    {
+      "run_id": "m3abc-local-01",
+      "epoch": 1,
+      "window_id": "w4",
+      "selection_policy": "fixed_warmup3",
+      "records": 20,
+      "case": "gpu0",
+      "truth_ranks": [
+        0
+      ],
+      "candidate_ranks": [
+        0
+      ],
+      "status": "PROVISIONAL_CANDIDATE",
+      "match": true
+    },
+    {
+      "run_id": "m3abc-local-01",
+      "epoch": 1,
+      "window_id": "w5",
+      "selection_policy": "all13",
+      "records": 26,
+      "case": "gpu1",
+      "truth_ranks": [
+        1
+      ],
+      "candidate_ranks": [
+        1
+      ],
+      "status": "PROVISIONAL_CANDIDATE",
+      "match": true
+    },
+    {
+      "run_id": "m3abc-local-01",
+      "epoch": 1,
+      "window_id": "w5",
+      "selection_policy": "fixed_warmup3",
+      "records": 20,
+      "case": "gpu1",
+      "truth_ranks": [
+        1
+      ],
+      "candidate_ranks": [
+        1
+      ],
+      "status": "PROVISIONAL_CANDIDATE",
+      "match": true
+    },
+    {
+      "run_id": "m3abc-local-01",
+      "epoch": 2,
+      "records": 130,
+      "status": "AMBIGUOUS_SPEC",
+      "candidate_ranks": [],
+      "csv_raw_exact": true,
+      "command": [
+        "/usr/bin/python3",
+        "scripts/m4_analyze.py",
+        "--input",
+        "runs/m4-replay-final-03/m3abc-local-01-epoch2/input.json",
+        "--output",
+        "runs/m4-replay-final-03/m3abc-local-01-epoch2/prediction.json"
+      ],
+      "exit_code": 0
+    },
+    {
+      "run_id": "m3abc-local-01",
+      "epoch": 2,
+      "window_id": "w1",
+      "selection_policy": "all13",
+      "records": 26,
+      "case": "normal",
+      "truth_ranks": [],
+      "candidate_ranks": [
+        1
+      ],
+      "status": "PROVISIONAL_CANDIDATE",
+      "match": false
+    },
+    {
+      "run_id": "m3abc-local-01",
+      "epoch": 2,
+      "window_id": "w1",
+      "selection_policy": "fixed_warmup3",
+      "records": 20,
+      "case": "normal",
+      "truth_ranks": [],
+      "candidate_ranks": [
+        1
+      ],
+      "status": "PROVISIONAL_CANDIDATE",
+      "match": false
+    },
+    {
+      "run_id": "m3abc-local-01",
+      "epoch": 2,
+      "window_id": "w2",
+      "selection_policy": "all13",
+      "records": 26,
+      "case": "cpu0",
+      "truth_ranks": [
+        0
+      ],
+      "candidate_ranks": [
+        0
+      ],
+      "status": "PROVISIONAL_CANDIDATE",
+      "match": true
+    },
+    {
+      "run_id": "m3abc-local-01",
+      "epoch": 2,
+      "window_id": "w2",
+      "selection_policy": "fixed_warmup3",
+      "records": 20,
+      "case": "cpu0",
+      "truth_ranks": [
+        0
+      ],
+      "candidate_ranks": [
+        0
+      ],
+      "status": "PROVISIONAL_CANDIDATE",
+      "match": true
+    },
+    {
+      "run_id": "m3abc-local-01",
+      "epoch": 2,
+      "window_id": "w3",
+      "selection_policy": "all13",
+      "records": 26,
+      "case": "cpu1",
+      "truth_ranks": [
+        1
+      ],
+      "candidate_ranks": [
+        1
+      ],
+      "status": "PROVISIONAL_CANDIDATE",
+      "match": true
+    },
+    {
+      "run_id": "m3abc-local-01",
+      "epoch": 2,
+      "window_id": "w3",
+      "selection_policy": "fixed_warmup3",
+      "records": 20,
+      "case": "cpu1",
+      "truth_ranks": [
+        1
+      ],
+      "candidate_ranks": [
+        1
+      ],
+      "status": "PROVISIONAL_CANDIDATE",
+      "match": true
+    },
+    {
+      "run_id": "m3abc-local-01",
+      "epoch": 2,
+      "window_id": "w4",
+      "selection_policy": "all13",
+      "records": 26,
+      "case": "gpu0",
+      "truth_ranks": [
+        0
+      ],
+      "candidate_ranks": [
+        0
+      ],
+      "status": "PROVISIONAL_CANDIDATE",
+      "match": true
+    },
+    {
+      "run_id": "m3abc-local-01",
+      "epoch": 2,
+      "window_id": "w4",
+      "selection_policy": "fixed_warmup3",
+      "records": 20,
+      "case": "gpu0",
+      "truth_ranks": [
+        0
+      ],
+      "candidate_ranks": [
+        0
+      ],
+      "status": "PROVISIONAL_CANDIDATE",
+      "match": true
+    },
+    {
+      "run_id": "m3abc-local-01",
+      "epoch": 2,
+      "window_id": "w5",
+      "selection_policy": "all13",
+      "records": 26,
+      "case": "gpu1",
+      "truth_ranks": [
+        1
+      ],
+      "candidate_ranks": [
+        1
+      ],
+      "status": "PROVISIONAL_CANDIDATE",
+      "match": true
+    },
+    {
+      "run_id": "m3abc-local-01",
+      "epoch": 2,
+      "window_id": "w5",
+      "selection_policy": "fixed_warmup3",
+      "records": 20,
+      "case": "gpu1",
+      "truth_ranks": [
+        1
+      ],
+      "candidate_ranks": [
+        1
+      ],
+      "status": "PROVISIONAL_CANDIDATE",
+      "match": true
+    },
+    {
+      "run_id": "m3d-roce-01",
+      "epoch": 1,
+      "records": 130,
+      "status": "AMBIGUOUS_SPEC",
+      "candidate_ranks": [],
+      "csv_raw_exact": true,
+      "command": [
+        "/usr/bin/python3",
+        "scripts/m4_analyze.py",
+        "--input",
+        "runs/m4-replay-final-03/m3d-roce-01-epoch1/input.json",
+        "--output",
+        "runs/m4-replay-final-03/m3d-roce-01-epoch1/prediction.json"
+      ],
+      "exit_code": 0
+    },
+    {
+      "run_id": "m3d-roce-01",
+      "epoch": 1,
+      "window_id": "w1",
+      "selection_policy": "all13",
+      "records": 26,
+      "case": "normal",
+      "truth_ranks": [],
+      "candidate_ranks": [
+        1
+      ],
+      "status": "PROVISIONAL_CANDIDATE",
+      "match": false
+    },
+    {
+      "run_id": "m3d-roce-01",
+      "epoch": 1,
+      "window_id": "w1",
+      "selection_policy": "fixed_warmup3",
+      "records": 20,
+      "case": "normal",
+      "truth_ranks": [],
+      "candidate_ranks": [
+        1
+      ],
+      "status": "PROVISIONAL_CANDIDATE",
+      "match": false
+    },
+    {
+      "run_id": "m3d-roce-01",
+      "epoch": 1,
+      "window_id": "w2",
+      "selection_policy": "all13",
+      "records": 26,
+      "case": "cpu0",
+      "truth_ranks": [
+        0
+      ],
+      "candidate_ranks": [
+        0
+      ],
+      "status": "PROVISIONAL_CANDIDATE",
+      "match": true
+    },
+    {
+      "run_id": "m3d-roce-01",
+      "epoch": 1,
+      "window_id": "w2",
+      "selection_policy": "fixed_warmup3",
+      "records": 20,
+      "case": "cpu0",
+      "truth_ranks": [
+        0
+      ],
+      "candidate_ranks": [
+        0
+      ],
+      "status": "PROVISIONAL_CANDIDATE",
+      "match": true
+    },
+    {
+      "run_id": "m3d-roce-01",
+      "epoch": 1,
+      "window_id": "w3",
+      "selection_policy": "all13",
+      "records": 26,
+      "case": "cpu1",
+      "truth_ranks": [
+        1
+      ],
+      "candidate_ranks": [
+        1
+      ],
+      "status": "PROVISIONAL_CANDIDATE",
+      "match": true
+    },
+    {
+      "run_id": "m3d-roce-01",
+      "epoch": 1,
+      "window_id": "w3",
+      "selection_policy": "fixed_warmup3",
+      "records": 20,
+      "case": "cpu1",
+      "truth_ranks": [
+        1
+      ],
+      "candidate_ranks": [
+        1
+      ],
+      "status": "PROVISIONAL_CANDIDATE",
+      "match": true
+    },
+    {
+      "run_id": "m3d-roce-01",
+      "epoch": 1,
+      "window_id": "w4",
+      "selection_policy": "all13",
+      "records": 26,
+      "case": "gpu0",
+      "truth_ranks": [
+        0
+      ],
+      "candidate_ranks": [
+        0
+      ],
+      "status": "PROVISIONAL_CANDIDATE",
+      "match": true
+    },
+    {
+      "run_id": "m3d-roce-01",
+      "epoch": 1,
+      "window_id": "w4",
+      "selection_policy": "fixed_warmup3",
+      "records": 20,
+      "case": "gpu0",
+      "truth_ranks": [
+        0
+      ],
+      "candidate_ranks": [
+        0
+      ],
+      "status": "PROVISIONAL_CANDIDATE",
+      "match": true
+    },
+    {
+      "run_id": "m3d-roce-01",
+      "epoch": 1,
+      "window_id": "w5",
+      "selection_policy": "all13",
+      "records": 26,
+      "case": "gpu1",
+      "truth_ranks": [
+        1
+      ],
+      "candidate_ranks": [
+        1
+      ],
+      "status": "PROVISIONAL_CANDIDATE",
+      "match": true
+    },
+    {
+      "run_id": "m3d-roce-01",
+      "epoch": 1,
+      "window_id": "w5",
+      "selection_policy": "fixed_warmup3",
+      "records": 20,
+      "case": "gpu1",
+      "truth_ranks": [
+        1
+      ],
+      "candidate_ranks": [
+        1
+      ],
+      "status": "PROVISIONAL_CANDIDATE",
+      "match": true
+    },
+    {
+      "run_id": "m3d-roce-01",
+      "epoch": 2,
+      "records": 130,
+      "status": "AMBIGUOUS_SPEC",
+      "candidate_ranks": [],
+      "csv_raw_exact": true,
+      "command": [
+        "/usr/bin/python3",
+        "scripts/m4_analyze.py",
+        "--input",
+        "runs/m4-replay-final-03/m3d-roce-01-epoch2/input.json",
+        "--output",
+        "runs/m4-replay-final-03/m3d-roce-01-epoch2/prediction.json"
+      ],
+      "exit_code": 0
+    },
+    {
+      "run_id": "m3d-roce-01",
+      "epoch": 2,
+      "window_id": "w1",
+      "selection_policy": "all13",
+      "records": 26,
+      "case": "normal",
+      "truth_ranks": [],
+      "candidate_ranks": [
+        1
+      ],
+      "status": "PROVISIONAL_CANDIDATE",
+      "match": false
+    },
+    {
+      "run_id": "m3d-roce-01",
+      "epoch": 2,
+      "window_id": "w1",
+      "selection_policy": "fixed_warmup3",
+      "records": 20,
+      "case": "normal",
+      "truth_ranks": [],
+      "candidate_ranks": [
+        1
+      ],
+      "status": "PROVISIONAL_CANDIDATE",
+      "match": false
+    },
+    {
+      "run_id": "m3d-roce-01",
+      "epoch": 2,
+      "window_id": "w2",
+      "selection_policy": "all13",
+      "records": 26,
+      "case": "cpu0",
+      "truth_ranks": [
+        0
+      ],
+      "candidate_ranks": [
+        0
+      ],
+      "status": "PROVISIONAL_CANDIDATE",
+      "match": true
+    },
+    {
+      "run_id": "m3d-roce-01",
+      "epoch": 2,
+      "window_id": "w2",
+      "selection_policy": "fixed_warmup3",
+      "records": 20,
+      "case": "cpu0",
+      "truth_ranks": [
+        0
+      ],
+      "candidate_ranks": [
+        0
+      ],
+      "status": "PROVISIONAL_CANDIDATE",
+      "match": true
+    },
+    {
+      "run_id": "m3d-roce-01",
+      "epoch": 2,
+      "window_id": "w3",
+      "selection_policy": "all13",
+      "records": 26,
+      "case": "cpu1",
+      "truth_ranks": [
+        1
+      ],
+      "candidate_ranks": [
+        1
+      ],
+      "status": "PROVISIONAL_CANDIDATE",
+      "match": true
+    },
+    {
+      "run_id": "m3d-roce-01",
+      "epoch": 2,
+      "window_id": "w3",
+      "selection_policy": "fixed_warmup3",
+      "records": 20,
+      "case": "cpu1",
+      "truth_ranks": [
+        1
+      ],
+      "candidate_ranks": [
+        1
+      ],
+      "status": "PROVISIONAL_CANDIDATE",
+      "match": true
+    },
+    {
+      "run_id": "m3d-roce-01",
+      "epoch": 2,
+      "window_id": "w4",
+      "selection_policy": "all13",
+      "records": 26,
+      "case": "gpu0",
+      "truth_ranks": [
+        0
+      ],
+      "candidate_ranks": [
+        0
+      ],
+      "status": "PROVISIONAL_CANDIDATE",
+      "match": true
+    },
+    {
+      "run_id": "m3d-roce-01",
+      "epoch": 2,
+      "window_id": "w4",
+      "selection_policy": "fixed_warmup3",
+      "records": 20,
+      "case": "gpu0",
+      "truth_ranks": [
+        0
+      ],
+      "candidate_ranks": [
+        0
+      ],
+      "status": "PROVISIONAL_CANDIDATE",
+      "match": true
+    },
+    {
+      "run_id": "m3d-roce-01",
+      "epoch": 2,
+      "window_id": "w5",
+      "selection_policy": "all13",
+      "records": 26,
+      "case": "gpu1",
+      "truth_ranks": [
+        1
+      ],
+      "candidate_ranks": [
+        1
+      ],
+      "status": "PROVISIONAL_CANDIDATE",
+      "match": true
+    },
+    {
+      "run_id": "m3d-roce-01",
+      "epoch": 2,
+      "window_id": "w5",
+      "selection_policy": "fixed_warmup3",
+      "records": 20,
+      "case": "gpu1",
+      "truth_ranks": [
+        1
+      ],
+      "candidate_ranks": [
+        1
+      ],
+      "status": "PROVISIONAL_CANDIDATE",
+      "match": true
+    },
+    {
+      "run_id": "m3e-group-02",
+      "epoch": 1,
+      "records": 56,
+      "status": "REJECTED_INPUT",
+      "candidate_ranks": [],
+      "csv_raw_exact": true,
+      "command": [
+        "/usr/bin/python3",
+        "scripts/m4_analyze.py",
+        "--input",
+        "runs/m4-replay-final-03/m3e-group-02-epoch1/input.json",
+        "--output",
+        "runs/m4-replay-final-03/m3e-group-02-epoch1/prediction.json"
+      ],
+      "exit_code": 2
+    },
+    {
+      "run_id": "m3e-group-02",
+      "epoch": 2,
+      "records": 56,
+      "status": "REJECTED_INPUT",
+      "candidate_ranks": [],
+      "csv_raw_exact": true,
+      "command": [
+        "/usr/bin/python3",
+        "scripts/m4_analyze.py",
+        "--input",
+        "runs/m4-replay-final-03/m3e-group-02-epoch2/input.json",
+        "--output",
+        "runs/m4-replay-final-03/m3e-group-02-epoch2/prediction.json"
+      ],
+      "exit_code": 2
+    },
+    {
+      "run_id": "m3f-allreduce-02",
+      "epoch": 1,
+      "records": 96,
+      "status": "PROVISIONAL_CANDIDATE",
+      "candidate_ranks": [
+        11
+      ],
+      "csv_raw_exact": true,
+      "command": [
+        "/usr/bin/python3",
+        "scripts/m4_analyze.py",
+        "--input",
+        "runs/m4-replay-final-03/m3f-allreduce-02-epoch1/input.json",
+        "--output",
+        "runs/m4-replay-final-03/m3f-allreduce-02-epoch1/prediction.json"
+      ],
+      "exit_code": 0
+    },
+    {
+      "run_id": "m3f-allreduce-02",
+      "epoch": 2,
+      "records": 96,
+      "status": "PROVISIONAL_CANDIDATE",
+      "candidate_ranks": [
+        11
+      ],
+      "csv_raw_exact": true,
+      "command": [
+        "/usr/bin/python3",
+        "scripts/m4_analyze.py",
+        "--input",
+        "runs/m4-replay-final-03/m3f-allreduce-02-epoch2/input.json",
+        "--output",
+        "runs/m4-replay-final-03/m3f-allreduce-02-epoch2/prediction.json"
+      ],
+      "exit_code": 0
+    },
+    {
+      "run_id": "m3f-ddp-02",
+      "epoch": 1,
+      "records": 192,
+      "status": "PROVISIONAL_CANDIDATE",
+      "candidate_ranks": [
+        14
+      ],
+      "csv_raw_exact": true,
+      "command": [
+        "/usr/bin/python3",
+        "scripts/m4_analyze.py",
+        "--input",
+        "runs/m4-replay-final-03/m3f-ddp-02-epoch1/input.json",
+        "--output",
+        "runs/m4-replay-final-03/m3f-ddp-02-epoch1/prediction.json"
+      ],
+      "exit_code": 0
+    },
+    {
+      "run_id": "m3f-ddp-02",
+      "epoch": 2,
+      "records": 128,
+      "status": "PROVISIONAL_CANDIDATE",
+      "candidate_ranks": [
+        9
+      ],
+      "csv_raw_exact": true,
+      "command": [
+        "/usr/bin/python3",
+        "scripts/m4_analyze.py",
+        "--input",
+        "runs/m4-replay-final-03/m3f-ddp-02-epoch2/input.json",
+        "--output",
+        "runs/m4-replay-final-03/m3f-ddp-02-epoch2/prediction.json"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "limitation": "M3 has one communicator group/window, so it does not validate real Stage1; normal candidates are not suppressed."
+}

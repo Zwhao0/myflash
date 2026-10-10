@@ -1,0 +1,10 @@
+{
+  "status": "REJECTED_INPUT",
+  "candidate_ranks": [],
+  "final_fault_ranks": [],
+  "reason": "non-VALID timing: UNSUPPORTED",
+  "completeness": {
+    "verified": false,
+    "policy": "fail closed; no invalid/missing duration enters statistics"
+  }
+}

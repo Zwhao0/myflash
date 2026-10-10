@@ -1,0 +1,13 @@
+{
+  "exit_code": 0,
+  "checks": {
+    "candidate_ranks": [
+      0
+    ],
+    "tags.DP.selected_groups": [
+      "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+    ],
+    "tags.DP.clique_scores.scores.aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa": -0.17647058823529416
+  },
+  "hand_calculation": "max40>30 picks A; clique mean21<30 -> A score (21-25.5)/25.5=-3/17; scores are separate"
+}

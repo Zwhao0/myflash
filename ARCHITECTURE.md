@@ -101,3 +101,6 @@ EXTENSION：带宽、消息大小分桶、异步 Event 回收、复杂根因分�
 
 ## M2 已实现边界（ADAPTATION，2026-10-10）
 PAPER Monitor/LD_PRELOAD/ring路径已做功能验收；ABI1、每进程POSIX shm、0600/O_EXCL/posix_fallocate、ROBUST互斥与C++ bridge读取/持久化ACK实现见docs/m2/DESIGN.md。此安全协议替代论文Python无锁清空，不声称同等开销。state只支持0，无0→1控制；无CUDAEvent、Redis/检测/定位。InitRank/Config可靠SHA256，Split身份明确未解决；comm本地generation、Group批次与训练组分离。当前完整支持范围、命令与实测在docs/m2；M3及后续接口仍是草案，未实现。
+
+## M4 已实现（2026-10-10）
+PAPER两阶段确定排序/CV和独立score函数见flash/localization.py；ADAPTATION schema1、完整性/身份/单位/共享scope拒绝见flash/profile_input.py与docs/m4/INPUT。G04权重/20%/参照未关闭，双口径分歧AMBIGUOUS_SPEC、排序仅PROVISIONAL_CANDIDATE，无完整最终诊断。仅离线CLI与有限正常多组功能验证，没有BOCD/Redis/自动控制/恢复/MoE。实际normal误报见docs/m4/RESULTS。

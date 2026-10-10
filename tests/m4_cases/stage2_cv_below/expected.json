@@ -1,0 +1,9 @@
+{
+  "exit_code": 0,
+  "checks": {
+    "status": "NO_CANDIDATE",
+    "candidate_ranks": [],
+    "tags.DP.stage2.aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.methods.sample_weighted.cv.population": 0.01
+  },
+  "hand_calculation": "mean100 std1 CV.01 -> no candidate"
+}

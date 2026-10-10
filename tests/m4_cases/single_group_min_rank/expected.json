@@ -1,0 +1,13 @@
+{
+  "exit_code": 0,
+  "checks": {
+    "status": "PROVISIONAL_CANDIDATE",
+    "candidate_ranks": [
+      0
+    ],
+    "tags.DP.stage1": "SINGLE_GROUP_DIRECT",
+    "tags.DP.stage2.aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.methods.sample_weighted.cv.population": 0.8,
+    "tags.DP.stage2.aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.methods.sample_weighted.rank_scores.scores.0": 0.8
+  },
+  "hand_calculation": "means2,18; mean10; population std8; CV0.8; score0=(10-2)/10=.8; min rank0"
+}

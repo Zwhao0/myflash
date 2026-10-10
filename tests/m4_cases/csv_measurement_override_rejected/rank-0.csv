@@ -1,0 +1,3 @@
+run_id,rank,profile_epoch,state,api,count,count_unit,datatype,comm_id_hash,group_id,group_depth,timing_scope,timing_status,duration_us,cuda_results,publish_seq
+fixture,0,1,1,ncclAllReduce,4,elements,7,aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa,0,0,collective,VALID,2,"[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1]",1
+fixture,0,1,1,ncclAllReduce,4,elements,7,aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa,0,0,collective,VALID,2,"[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1]",2

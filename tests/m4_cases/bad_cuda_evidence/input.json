@@ -1,0 +1,211 @@
+{
+  "schema_version": 1,
+  "context": {
+    "run_id": "fixture",
+    "profile_epoch": 1
+  },
+  "records": [
+    {
+      "run_id": "fixture",
+      "profile_epoch": 1,
+      "node_id": "n0",
+      "global_rank": 0,
+      "id_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "comm_generation": 1,
+      "process_instance": "p0",
+      "comm_rank": 0,
+      "comm_size": 2,
+      "identity_source": "UNIQUE_ID_SHA256",
+      "timing_scope": "collective",
+      "timing_status": "VALID",
+      "duration_us": 2,
+      "duration_unit": "us",
+      "timing_definition": "synthetic_nonnegative_v1",
+      "state": 1,
+      "api": "ncclAllReduce",
+      "count": 4,
+      "count_unit": "elements",
+      "datatype": 7,
+      "group_id": 0,
+      "group_depth": 0,
+      "thread_id": "t0",
+      "sample_seq": 1,
+      "result": 0,
+      "cuda_results": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        -1
+      ]
+    },
+    {
+      "run_id": "fixture",
+      "profile_epoch": 1,
+      "node_id": "n0",
+      "global_rank": 0,
+      "id_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "comm_generation": 1,
+      "process_instance": "p0",
+      "comm_rank": 0,
+      "comm_size": 2,
+      "identity_source": "UNIQUE_ID_SHA256",
+      "timing_scope": "collective",
+      "timing_status": "VALID",
+      "duration_us": 2,
+      "duration_unit": "us",
+      "timing_definition": "synthetic_nonnegative_v1",
+      "state": 1,
+      "api": "ncclAllReduce",
+      "count": 4,
+      "count_unit": "elements",
+      "datatype": 7,
+      "group_id": 0,
+      "group_depth": 0,
+      "thread_id": "t0",
+      "sample_seq": 2,
+      "result": 0,
+      "cuda_results": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "run_id": "fixture",
+      "profile_epoch": 1,
+      "node_id": "n0",
+      "global_rank": 1,
+      "id_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "comm_generation": 1,
+      "process_instance": "p1",
+      "comm_rank": 1,
+      "comm_size": 2,
+      "identity_source": "UNIQUE_ID_SHA256",
+      "timing_scope": "collective",
+      "timing_status": "VALID",
+      "duration_us": 18,
+      "duration_unit": "us",
+      "timing_definition": "synthetic_nonnegative_v1",
+      "state": 1,
+      "api": "ncclAllReduce",
+      "count": 4,
+      "count_unit": "elements",
+      "datatype": 7,
+      "group_id": 0,
+      "group_depth": 0,
+      "thread_id": "t0",
+      "sample_seq": 1,
+      "result": 0,
+      "cuda_results": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "run_id": "fixture",
+      "profile_epoch": 1,
+      "node_id": "n0",
+      "global_rank": 1,
+      "id_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "comm_generation": 1,
+      "process_instance": "p1",
+      "comm_rank": 1,
+      "comm_size": 2,
+      "identity_source": "UNIQUE_ID_SHA256",
+      "timing_scope": "collective",
+      "timing_status": "VALID",
+      "duration_us": 18,
+      "duration_unit": "us",
+      "timing_definition": "synthetic_nonnegative_v1",
+      "state": 1,
+      "api": "ncclAllReduce",
+      "count": 4,
+      "count_unit": "elements",
+      "datatype": 7,
+      "group_id": 0,
+      "group_depth": 0,
+      "thread_id": "t0",
+      "sample_seq": 2,
+      "result": 0,
+      "cuda_results": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -1
+      ]
+    }
+  ],
+  "communicators": [
+    {
+      "id_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "members": [
+        0,
+        1
+      ],
+      "local_instances": [
+        {
+          "node_id": "n0",
+          "global_rank": 0,
+          "process_instance": "p0",
+          "comm_generation": 1,
+          "comm_rank": 0,
+          "expected_samples": 2,
+          "expected_records": 2
+        },
+        {
+          "node_id": "n0",
+          "global_rank": 1,
+          "process_instance": "p1",
+          "comm_generation": 1,
+          "comm_rank": 1,
+          "expected_samples": 2,
+          "expected_records": 2
+        }
+      ]
+    }
+  ],
+  "parallel_states": [
+    {
+      "label": "DP",
+      "members": [
+        0,
+        1
+      ],
+      "id_hashes": [
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      ],
+      "evidence": "explicit fixed fixture membership"
+    }
+  ]
+}

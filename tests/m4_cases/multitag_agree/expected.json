@@ -1,0 +1,14 @@
+{
+  "exit_code": 0,
+  "checks": {
+    "candidate_ranks": [
+      0
+    ],
+    "cross_tag.conflict": false,
+    "cross_tag.support.0.labels": [
+      "DP",
+      "expert_dp"
+    ]
+  },
+  "hand_calculation": "DP and expert_dp both min0; support two labels; no confidence calibration"
+}

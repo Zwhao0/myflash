@@ -1,0 +1,455 @@
+{
+  "schema_version": 1,
+  "context": {
+    "run_id": "m4-multigroup-normal-01",
+    "profile_epoch": 2
+  },
+  "status": "PROVISIONAL_CANDIDATE",
+  "final_fault_ranks": [],
+  "candidate_ranks": [
+    3
+  ],
+  "tags": {
+    "DP": {
+      "excluded_single_rank": [],
+      "selected_groups": [
+        "409070b2cd5ea297adcd2b63222213a5ae49f383a097d054d8b161819a469f8c"
+      ],
+      "stage2": {
+        "409070b2cd5ea297adcd2b63222213a5ae49f383a097d054d8b161819a469f8c": {
+          "status": "PROVISIONAL_CANDIDATE",
+          "sensitivity_disagreement": false,
+          "methods": {
+            "unweighted_communicator_mean": {
+              "avg_latency_us": {
+                "2": 110.3413353363673,
+                "3": 37.95733364919822
+              },
+              "cv": {
+                "mean_us": 74.14933449278276,
+                "population": 0.48809609811275173,
+                "sample": 0.6902721216924423,
+                "decision": "ABOVE",
+                "convention": "population baseline; sample sensitivity (ADAPTATION G04)"
+              },
+              "candidates": [
+                3
+              ],
+              "rank_scores": {
+                "reference_mean_us": 74.14933449278276,
+                "status": "DEFINED",
+                "scores": {
+                  "2": -0.4880960981127518,
+                  "3": 0.4880960981127517
+                }
+              },
+              "rule": "minimum avg_latency; 20% filter unresolved and disabled"
+            },
+            "sample_weighted": {
+              "avg_latency_us": {
+                "2": 110.3413353363673,
+                "3": 37.95733364919822
+              },
+              "cv": {
+                "mean_us": 74.14933449278276,
+                "population": 0.48809609811275173,
+                "sample": 0.6902721216924423,
+                "decision": "ABOVE",
+                "convention": "population baseline; sample sensitivity (ADAPTATION G04)"
+              },
+              "candidates": [
+                3
+              ],
+              "rank_scores": {
+                "reference_mean_us": 74.14933449278276,
+                "status": "DEFINED",
+                "scores": {
+                  "2": -0.4880960981127518,
+                  "3": 0.4880960981127517
+                }
+              },
+              "rule": "minimum avg_latency; 20% filter unresolved and disabled"
+            }
+          }
+        }
+      },
+      "max_avg_latency_us": {
+        "2148fc2365985412bc2f7e1f6ea739d962ab9c09b9867af84f9b45de6f4508aa": 41.029333447416626,
+        "409070b2cd5ea297adcd2b63222213a5ae49f383a097d054d8b161819a469f8c": 110.3413353363673,
+        "e8f99bfa43081f15c6afd8366a190d14e583e0607f90d777bb1477e5dbf59db3": 44.43199994663398
+      },
+      "clique_scores": {
+        "reference_mean_us": 49.878222660885925,
+        "status": "DEFINED",
+        "scores": {
+          "2148fc2365985412bc2f7e1f6ea739d962ab9c09b9867af84f9b45de6f4508aa": -0.3021403315541864,
+          "409070b2cd5ea297adcd2b63222213a5ae49f383a097d054d8b161819a469f8c": 0.4866073917050382,
+          "e8f99bfa43081f15c6afd8366a190d14e583e0607f90d777bb1477e5dbf59db3": -0.18446706015085212
+        }
+      },
+      "group_cv": {
+        "mean_us": 65.26755624347263,
+        "population": 0.48879159634172115,
+        "sample": 0.5986450007988308,
+        "decision": "ABOVE",
+        "convention": "population baseline; sample sensitivity (ADAPTATION G04)"
+      },
+      "stage1": "MAX_GROUP",
+      "status": "PROVISIONAL_CANDIDATE"
+    },
+    "TP": {
+      "excluded_single_rank": [],
+      "selected_groups": [
+        "6c94586bd1f9f14163891cbbd45d96e735a052765eb03cfc5fe3775e4bd0b67c"
+      ],
+      "stage2": {
+        "6c94586bd1f9f14163891cbbd45d96e735a052765eb03cfc5fe3775e4bd0b67c": {
+          "status": "PROVISIONAL_CANDIDATE",
+          "sensitivity_disagreement": false,
+          "methods": {
+            "unweighted_communicator_mean": {
+              "avg_latency_us": {
+                "1": 105.87733238935469,
+                "3": 35.066667323311165
+              },
+              "cv": {
+                "mean_us": 70.47199985633293,
+                "population": 0.5024028352423731,
+                "sample": 0.7105049033744595,
+                "decision": "ABOVE",
+                "convention": "population baseline; sample sensitivity (ADAPTATION G04)"
+              },
+              "candidates": [
+                3
+              ],
+              "rank_scores": {
+                "reference_mean_us": 70.47199985633293,
+                "status": "DEFINED",
+                "scores": {
+                  "1": -0.5024028352423731,
+                  "3": 0.502402835242373
+                }
+              },
+              "rule": "minimum avg_latency; 20% filter unresolved and disabled"
+            },
+            "sample_weighted": {
+              "avg_latency_us": {
+                "1": 105.87733238935469,
+                "3": 35.066667323311165
+              },
+              "cv": {
+                "mean_us": 70.47199985633293,
+                "population": 0.5024028352423731,
+                "sample": 0.7105049033744595,
+                "decision": "ABOVE",
+                "convention": "population baseline; sample sensitivity (ADAPTATION G04)"
+              },
+              "candidates": [
+                3
+              ],
+              "rank_scores": {
+                "reference_mean_us": 70.47199985633293,
+                "status": "DEFINED",
+                "scores": {
+                  "1": -0.5024028352423731,
+                  "3": 0.502402835242373
+                }
+              },
+              "rule": "minimum avg_latency; 20% filter unresolved and disabled"
+            }
+          }
+        }
+      },
+      "max_avg_latency_us": {
+        "6c94586bd1f9f14163891cbbd45d96e735a052765eb03cfc5fe3775e4bd0b67c": 105.87733238935469,
+        "f79518126298e6f368017670779d956f8684b3b1fe91f27964be3da2c481c612": 45.26933344701926
+      },
+      "clique_scores": {
+        "reference_mean_us": 53.51199985792239,
+        "status": "DEFINED",
+        "scores": {
+          "6c94586bd1f9f14163891cbbd45d96e735a052765eb03cfc5fe3775e4bd0b67c": 0.31693825765137484,
+          "f79518126298e6f368017670779d956f8684b3b1fe91f27964be3da2c481c612": -0.31693825765137484
+        }
+      },
+      "group_cv": {
+        "mean_us": 75.57333291818698,
+        "population": 0.40098799802800494,
+        "sample": 0.5670826651600405,
+        "decision": "ABOVE",
+        "convention": "population baseline; sample sensitivity (ADAPTATION G04)"
+      },
+      "stage1": "MAX_GROUP",
+      "status": "PROVISIONAL_CANDIDATE"
+    }
+  },
+  "groups": {
+    "e8f99bfa43081f15c6afd8366a190d14e583e0607f90d777bb1477e5dbf59db3": {
+      "id_hash": "e8f99bfa43081f15c6afd8366a190d14e583e0607f90d777bb1477e5dbf59db3",
+      "members": [
+        0,
+        1
+      ],
+      "local_communicators": [
+        {
+          "node_id": "node-0",
+          "global_rank": 0,
+          "process_instance": "rank0",
+          "comm_generation": 1,
+          "avg_latency_us": 36.92266717553139,
+          "sample_count": 6,
+          "min_us": 27.23200060427189,
+          "max_us": 56.992001831531525
+        },
+        {
+          "node_id": "node-0",
+          "global_rank": 1,
+          "process_instance": "rank1",
+          "comm_generation": 1,
+          "avg_latency_us": 44.43199994663398,
+          "sample_count": 6,
+          "min_us": 28.863999992609024,
+          "max_us": 51.77599936723709
+        }
+      ],
+      "max_avg_latency_us": 44.43199994663398,
+      "clique_mean_us": 40.67733356108268
+    },
+    "f79518126298e6f368017670779d956f8684b3b1fe91f27964be3da2c481c612": {
+      "id_hash": "f79518126298e6f368017670779d956f8684b3b1fe91f27964be3da2c481c612",
+      "members": [
+        0,
+        2
+      ],
+      "local_communicators": [
+        {
+          "node_id": "node-0",
+          "global_rank": 0,
+          "process_instance": "rank0",
+          "comm_generation": 2,
+          "avg_latency_us": 45.26933344701926,
+          "sample_count": 6,
+          "min_us": 38.656000047922134,
+          "max_us": 58.52799862623215
+        },
+        {
+          "node_id": "node-0",
+          "global_rank": 2,
+          "process_instance": "rank2",
+          "comm_generation": 2,
+          "avg_latency_us": 27.834666272004448,
+          "sample_count": 6,
+          "min_us": 27.103999629616737,
+          "max_us": 29.311999678611755
+        }
+      ],
+      "max_avg_latency_us": 45.26933344701926,
+      "clique_mean_us": 36.55199985951185
+    },
+    "2148fc2365985412bc2f7e1f6ea739d962ab9c09b9867af84f9b45de6f4508aa": {
+      "id_hash": "2148fc2365985412bc2f7e1f6ea739d962ab9c09b9867af84f9b45de6f4508aa",
+      "members": [
+        0,
+        1
+      ],
+      "local_communicators": [
+        {
+          "node_id": "node-0",
+          "global_rank": 0,
+          "process_instance": "rank0",
+          "comm_generation": 3,
+          "avg_latency_us": 41.029333447416626,
+          "sample_count": 6,
+          "min_us": 34.71999987959862,
+          "max_us": 48.608001321554184
+        },
+        {
+          "node_id": "node-0",
+          "global_rank": 1,
+          "process_instance": "rank1",
+          "comm_generation": 3,
+          "avg_latency_us": 28.586666410168014,
+          "sample_count": 6,
+          "min_us": 27.775999158620834,
+          "max_us": 30.559999868273735
+        }
+      ],
+      "max_avg_latency_us": 41.029333447416626,
+      "clique_mean_us": 34.80799992879232
+    },
+    "6c94586bd1f9f14163891cbbd45d96e735a052765eb03cfc5fe3775e4bd0b67c": {
+      "id_hash": "6c94586bd1f9f14163891cbbd45d96e735a052765eb03cfc5fe3775e4bd0b67c",
+      "members": [
+        1,
+        3
+      ],
+      "local_communicators": [
+        {
+          "node_id": "node-0",
+          "global_rank": 1,
+          "process_instance": "rank1",
+          "comm_generation": 2,
+          "avg_latency_us": 105.87733238935469,
+          "sample_count": 6,
+          "min_us": 101.79200023412704,
+          "max_us": 112.22399771213531
+        },
+        {
+          "node_id": "node-0",
+          "global_rank": 3,
+          "process_instance": "rank3",
+          "comm_generation": 2,
+          "avg_latency_us": 35.066667323311165,
+          "sample_count": 6,
+          "min_us": 32.92800113558769,
+          "max_us": 41.24800115823746
+        }
+      ],
+      "max_avg_latency_us": 105.87733238935469,
+      "clique_mean_us": 70.47199985633293
+    },
+    "409070b2cd5ea297adcd2b63222213a5ae49f383a097d054d8b161819a469f8c": {
+      "id_hash": "409070b2cd5ea297adcd2b63222213a5ae49f383a097d054d8b161819a469f8c",
+      "members": [
+        2,
+        3
+      ],
+      "local_communicators": [
+        {
+          "node_id": "node-0",
+          "global_rank": 2,
+          "process_instance": "rank2",
+          "comm_generation": 1,
+          "avg_latency_us": 110.3413353363673,
+          "sample_count": 6,
+          "min_us": 96.19200229644775,
+          "max_us": 124.95999783277512
+        },
+        {
+          "node_id": "node-0",
+          "global_rank": 3,
+          "process_instance": "rank3",
+          "comm_generation": 1,
+          "avg_latency_us": 37.95733364919822,
+          "sample_count": 6,
+          "min_us": 33.28000009059906,
+          "max_us": 47.648001462221146
+        }
+      ],
+      "max_avg_latency_us": 110.3413353363673,
+      "clique_mean_us": 74.14933449278276
+    }
+  },
+  "cross_tag": {
+    "conflict": false,
+    "support": {
+      "3": {
+        "labels": [
+          "DP",
+          "TP"
+        ],
+        "evidence": [
+          {
+            "label": "DP",
+            "id_hash": "409070b2cd5ea297adcd2b63222213a5ae49f383a097d054d8b161819a469f8c",
+            "method": "unweighted_communicator_mean",
+            "status": "PROVISIONAL_CANDIDATE",
+            "avg_latency_us": 37.95733364919822,
+            "rank_cv": {
+              "mean_us": 74.14933449278276,
+              "population": 0.48809609811275173,
+              "sample": 0.6902721216924423,
+              "decision": "ABOVE",
+              "convention": "population baseline; sample sensitivity (ADAPTATION G04)"
+            },
+            "comparison_rank_means_us": {
+              "2": 110.3413353363673,
+              "3": 37.95733364919822
+            },
+            "rule": "min rank after max group/CV"
+          },
+          {
+            "label": "DP",
+            "id_hash": "409070b2cd5ea297adcd2b63222213a5ae49f383a097d054d8b161819a469f8c",
+            "method": "sample_weighted",
+            "status": "PROVISIONAL_CANDIDATE",
+            "avg_latency_us": 37.95733364919822,
+            "rank_cv": {
+              "mean_us": 74.14933449278276,
+              "population": 0.48809609811275173,
+              "sample": 0.6902721216924423,
+              "decision": "ABOVE",
+              "convention": "population baseline; sample sensitivity (ADAPTATION G04)"
+            },
+            "comparison_rank_means_us": {
+              "2": 110.3413353363673,
+              "3": 37.95733364919822
+            },
+            "rule": "min rank after max group/CV"
+          },
+          {
+            "label": "TP",
+            "id_hash": "6c94586bd1f9f14163891cbbd45d96e735a052765eb03cfc5fe3775e4bd0b67c",
+            "method": "unweighted_communicator_mean",
+            "status": "PROVISIONAL_CANDIDATE",
+            "avg_latency_us": 35.066667323311165,
+            "rank_cv": {
+              "mean_us": 70.47199985633293,
+              "population": 0.5024028352423731,
+              "sample": 0.7105049033744595,
+              "decision": "ABOVE",
+              "convention": "population baseline; sample sensitivity (ADAPTATION G04)"
+            },
+            "comparison_rank_means_us": {
+              "1": 105.87733238935469,
+              "3": 35.066667323311165
+            },
+            "rule": "min rank after max group/CV"
+          },
+          {
+            "label": "TP",
+            "id_hash": "6c94586bd1f9f14163891cbbd45d96e735a052765eb03cfc5fe3775e4bd0b67c",
+            "method": "sample_weighted",
+            "status": "PROVISIONAL_CANDIDATE",
+            "avg_latency_us": 35.066667323311165,
+            "rank_cv": {
+              "mean_us": 70.47199985633293,
+              "population": 0.5024028352423731,
+              "sample": 0.7105049033744595,
+              "decision": "ABOVE",
+              "convention": "population baseline; sample sensitivity (ADAPTATION G04)"
+            },
+            "comparison_rank_means_us": {
+              "1": 105.87733238935469,
+              "3": 35.066667323311165
+            },
+            "rule": "min rank after max group/CV"
+          }
+        ]
+      }
+    }
+  },
+  "completeness": {
+    "records": 60,
+    "independent_process_scopes": 60,
+    "communicator_scope_observations": 60,
+    "expected_instances": 10,
+    "valid_records": 60
+  },
+  "measurement_signatures": [
+    {
+      "api": "ncclAllReduce",
+      "count": 4096,
+      "count_unit": "elements",
+      "datatype": 7,
+      "member_records": 60
+    }
+  ],
+  "risks": [],
+  "unresolved": [
+    "G04: 20% reference/filter undefined",
+    "G04: communicator aggregation weights undefined",
+    "G04: statistical references and std convention not uniquely specified"
+  ],
+  "interpretation": "Offline ordering evidence only; no final fault decision, probability or automatic diagnosis"
+}
