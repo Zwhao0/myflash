@@ -20,3 +20,8 @@ credentials/
 *.pem
 *.key
 服务器.md
+
+# M1 private experiment resources
+/runs/
+/.venv-m1/
+/.wheels-m1/
