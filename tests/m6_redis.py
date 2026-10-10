@@ -99,7 +99,7 @@ class RedisTests(unittest.TestCase):
         os.chmod(owned,0o700);socket=owned/'r.sock'
         self.assertLess(len(str(socket).encode()),100)
         command=[shutil.which('redis-server'),'--port','0','--unixsocket',str(socket),
-                 '--unixsocketperm','600','--save','','--appendonly','no','--dir',str(owned)]
+                 '--unixsocketperm','600','--disable-thp','no','--save','','--appendonly','no','--dir',str(owned)]
         client=redis.Redis(unix_socket_path=str(socket),socket_timeout=.2,socket_connect_timeout=.2)
         children=[];logs=[];exits=[];proof={}
         def start():
@@ -174,7 +174,7 @@ def main():
     socket=owned/'r.sock'
     if len(str(socket).encode())>=100:raise ValueError('private socket path too long')
     command=[executable,'--port','0','--unixsocket',str(socket),'--unixsocketperm','600',
-             '--save','','--appendonly','no','--dir',str(owned)]
+             '--disable-thp','no','--save','','--appendonly','no','--dir',str(owned)]
     with (owned/'redis.log').open('wb') as log:
         child=subprocess.Popen(command,stdout=log,stderr=subprocess.STDOUT)
         CLIENT=redis.Redis(unix_socket_path=str(socket),socket_timeout=.5,socket_connect_timeout=.5)
