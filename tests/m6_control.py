@@ -14,7 +14,7 @@ from flash.localization import analyze
 from flash.m6_protocol import digest, window_seconds, provisional
 from flash.m6_iteration import IterationPublisher, IterationReader
 from flash.m6_controller import GlobalController, LocalController, TRIGGER
-from flash.m6_store import transaction, Unavailable, MemoryStore
+from flash.m6_store import transaction, Unavailable, MemoryStore, RedisStore
 
 
 class ControlTests(unittest.TestCase):
@@ -306,6 +306,21 @@ class ControlTests(unittest.TestCase):
         self.s.global_.tick(2)
         self.assertEqual(self.doc()['state'],'PROFILE_COLLECTING')
         with self.assertRaises(ValueError):self.s.probes['node-0'].sample(0,self.s.rows[0],1)
+
+    def test_redis_timeout_validation_before_any_network(self):
+        class Pool: connection_kwargs={}
+        class Client:
+            connection_pool=Pool()
+            def info(self, *args):raise AssertionError('network attempted before timeout validation')
+        for timeout in (None,0,-1,float('inf'),float('nan'),True):
+            Client.connection_pool.connection_kwargs={'socket_timeout':timeout,'socket_connect_timeout':1}
+            with self.assertRaises(ValueError):RedisStore(Client())
+
+    def test_manual_trigger_lost_store_returns_blocked(self):
+        self.s.store.online=False
+        self.assertEqual(self.s.global_.start(TRIGGER,self.s.manifest,0,request_id='lost')['status'],'BLOCKED')
+        self.s.store.online=True;self.s.store.values.clear()
+        self.assertEqual(self.s.global_.start(TRIGGER,self.s.manifest,0,request_id='lost2')['status'],'BLOCKED')
 
     def test_missing_iteration_not_zero_filled(self):
         self.mutate(lambda d:d['iterations'].clear())

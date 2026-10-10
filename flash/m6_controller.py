@@ -72,7 +72,16 @@ class GlobalController:
         number(now)
         identity(request_id)
         request_hash = digest(dict(trigger=trigger, manifest=manifest))
-        existing = self.store.read(self.run_id)
+        try:
+            existing = self.store.read(self.run_id)
+        except Unavailable as exc:
+            self.disconnected = True
+            result = provisional('BLOCKED', str(exc)); self.receipts.append(result)
+            return result
+        if existing is None:
+            result = provisional('BLOCKED', 'lost run document; operator reconciliation/new run required')
+            self.receipts.append(result)
+            return result
         self._owned(existing)
         for prior in existing['epochs'] + ([existing['active']] if existing['active'] else []):
             if prior['request_id'] == request_id:

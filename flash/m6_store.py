@@ -1,7 +1,7 @@
 """ADAPTATION run document CAS; UPSTREAM Redis EVAL atomicity, no HA promise."""
 import copy
 import threading
-from flash.m6_protocol import encode, identity, MAX_BYTES
+from flash.m6_protocol import encode, identity, number, MAX_BYTES
 
 CAS = """
 local old = redis.call('GET', KEYS[1])
@@ -57,10 +57,15 @@ class RedisStore:
     """
     def __init__(self, client):
         self.client = client
-        self.server_id = client.info('server')['run_id']
         options = client.connection_pool.connection_kwargs
-        if not options.get('socket_timeout') or not options.get('socket_connect_timeout'):
-            raise ValueError('finite Redis socket/connect timeouts required')
+        for key in ('socket_timeout', 'socket_connect_timeout'):
+            value = options.get(key)
+            try:
+                if number(value) <= 0: raise ValueError('positive timeout required')
+            except ValueError:
+                raise ValueError('finite positive Redis socket/connect timeouts required') from None
+        # Validate before issuing the first network operation.
+        self.server_id = client.info('server')['run_id']
 
     def key(self, run):
         return 'flash:m6a:v1:{' + identity(run) + '}:document'
