@@ -1,0 +1,535 @@
+{
+  "status": "PASS",
+  "scope": "M2 supported blocking InitRank/Config; Split global identity unresolved",
+  "cross_node_checks": [
+    {
+      "run_id": "m2c-20261010-probe-02",
+      "complete_rank_set": true,
+      "cross_node_unique_id_hash_match": true,
+      "group_sizes": [
+        2
+      ],
+      "executed_source_hash_match": true
+    },
+    {
+      "run_id": "m2d-20261010-allreduce-02",
+      "complete_rank_set": true,
+      "cross_node_unique_id_hash_match": true,
+      "group_sizes": [
+        16
+      ],
+      "executed_source_hash_match": true
+    },
+    {
+      "run_id": "m2e-20261010-ddp-04",
+      "complete_rank_set": true,
+      "cross_node_unique_id_hash_match": true,
+      "group_sizes": [
+        16
+      ],
+      "executed_source_hash_match": true
+    }
+  ],
+  "runs": [
+    {
+      "run_id": "m2c-20261010-probe-02",
+      "world": 2,
+      "mode": "allreduce",
+      "node_results": [
+        {
+          "node_rank": 0,
+          "launch_exit_code": 0,
+          "reader_exit_code": 0,
+          "elapsed_s": 6.606747944955714,
+          "total_events": 118,
+          "memory_max_mib": 984.0,
+          "ranks": [
+            {
+              "rank": 0,
+              "status": "PASS",
+              "steps": 25,
+              "parameter_delta": null,
+              "max_sync_error": null
+            }
+          ],
+          "api_totals": {
+            "ncclGetVersion": 2,
+            "ncclGetUniqueId": 1,
+            "ncclCommInitRankConfig": 1,
+            "ncclAllReduce": 28,
+            "ncclCommGetAsyncError": 84,
+            "ncclCommFinalize": 1,
+            "ncclCommDestroy": 1
+          },
+          "loss": 0,
+          "cleanup_removed": 1
+        },
+        {
+          "node_rank": 1,
+          "launch_exit_code": 0,
+          "reader_exit_code": 0,
+          "elapsed_s": 6.642124651931226,
+          "total_events": 117,
+          "memory_max_mib": 984.0,
+          "ranks": [
+            {
+              "rank": 1,
+              "status": "PASS",
+              "steps": 25,
+              "parameter_delta": null,
+              "max_sync_error": null
+            }
+          ],
+          "api_totals": {
+            "ncclGetVersion": 2,
+            "ncclCommInitRankConfig": 1,
+            "ncclAllReduce": 28,
+            "ncclCommGetAsyncError": 84,
+            "ncclCommFinalize": 1,
+            "ncclCommDestroy": 1
+          },
+          "loss": 0,
+          "cleanup_removed": 1
+        }
+      ]
+    },
+    {
+      "run_id": "m2d-20261010-allreduce-02",
+      "world": 16,
+      "mode": "allreduce",
+      "node_results": [
+        {
+          "node_rank": 0,
+          "launch_exit_code": 0,
+          "reader_exit_code": 0,
+          "elapsed_s": 14.963990971911699,
+          "total_events": 955,
+          "memory_max_mib": 1040.0,
+          "ranks": [
+            {
+              "rank": 0,
+              "status": "PASS",
+              "steps": 25,
+              "parameter_delta": null,
+              "max_sync_error": null
+            },
+            {
+              "rank": 1,
+              "status": "PASS",
+              "steps": 25,
+              "parameter_delta": null,
+              "max_sync_error": null
+            },
+            {
+              "rank": 2,
+              "status": "PASS",
+              "steps": 25,
+              "parameter_delta": null,
+              "max_sync_error": null
+            },
+            {
+              "rank": 3,
+              "status": "PASS",
+              "steps": 25,
+              "parameter_delta": null,
+              "max_sync_error": null
+            },
+            {
+              "rank": 4,
+              "status": "PASS",
+              "steps": 25,
+              "parameter_delta": null,
+              "max_sync_error": null
+            },
+            {
+              "rank": 5,
+              "status": "PASS",
+              "steps": 25,
+              "parameter_delta": null,
+              "max_sync_error": null
+            },
+            {
+              "rank": 6,
+              "status": "PASS",
+              "steps": 25,
+              "parameter_delta": null,
+              "max_sync_error": null
+            },
+            {
+              "rank": 7,
+              "status": "PASS",
+              "steps": 25,
+              "parameter_delta": null,
+              "max_sync_error": null
+            }
+          ],
+          "api_totals": {
+            "ncclGetVersion": 16,
+            "ncclGetUniqueId": 1,
+            "ncclCommInitRankConfig": 8,
+            "ncclAllReduce": 224,
+            "ncclCommGetAsyncError": 690,
+            "ncclCommFinalize": 8,
+            "ncclCommDestroy": 8
+          },
+          "loss": 0,
+          "cleanup_removed": 8
+        },
+        {
+          "node_rank": 1,
+          "launch_exit_code": 0,
+          "reader_exit_code": 0,
+          "elapsed_s": 14.980250998982228,
+          "total_events": 951,
+          "memory_max_mib": 1040.0,
+          "ranks": [
+            {
+              "rank": 8,
+              "status": "PASS",
+              "steps": 25,
+              "parameter_delta": null,
+              "max_sync_error": null
+            },
+            {
+              "rank": 9,
+              "status": "PASS",
+              "steps": 25,
+              "parameter_delta": null,
+              "max_sync_error": null
+            },
+            {
+              "rank": 10,
+              "status": "PASS",
+              "steps": 25,
+              "parameter_delta": null,
+              "max_sync_error": null
+            },
+            {
+              "rank": 11,
+              "status": "PASS",
+              "steps": 25,
+              "parameter_delta": null,
+              "max_sync_error": null
+            },
+            {
+              "rank": 12,
+              "status": "PASS",
+              "steps": 25,
+              "parameter_delta": null,
+              "max_sync_error": null
+            },
+            {
+              "rank": 13,
+              "status": "PASS",
+              "steps": 25,
+              "parameter_delta": null,
+              "max_sync_error": null
+            },
+            {
+              "rank": 14,
+              "status": "PASS",
+              "steps": 25,
+              "parameter_delta": null,
+              "max_sync_error": null
+            },
+            {
+              "rank": 15,
+              "status": "PASS",
+              "steps": 25,
+              "parameter_delta": null,
+              "max_sync_error": null
+            }
+          ],
+          "api_totals": {
+            "ncclGetVersion": 16,
+            "ncclCommInitRankConfig": 8,
+            "ncclAllReduce": 224,
+            "ncclCommGetAsyncError": 687,
+            "ncclCommFinalize": 8,
+            "ncclCommDestroy": 8
+          },
+          "loss": 0,
+          "cleanup_removed": 8
+        }
+      ]
+    },
+    {
+      "run_id": "m2e-20261010-ddp-04",
+      "world": 16,
+      "mode": "ddp",
+      "node_results": [
+        {
+          "node_rank": 0,
+          "launch_exit_code": 0,
+          "reader_exit_code": 0,
+          "elapsed_s": 15.575322016957216,
+          "total_events": 1659,
+          "memory_max_mib": 1058.0,
+          "ranks": [
+            {
+              "rank": 0,
+              "status": "PASS",
+              "steps": 20,
+              "parameter_delta": 0.020800277590751648,
+              "max_sync_error": 0.0
+            },
+            {
+              "rank": 1,
+              "status": "PASS",
+              "steps": 20,
+              "parameter_delta": 0.020800277590751648,
+              "max_sync_error": 0.0
+            },
+            {
+              "rank": 2,
+              "status": "PASS",
+              "steps": 20,
+              "parameter_delta": 0.020800277590751648,
+              "max_sync_error": 0.0
+            },
+            {
+              "rank": 3,
+              "status": "PASS",
+              "steps": 20,
+              "parameter_delta": 0.020800277590751648,
+              "max_sync_error": 0.0
+            },
+            {
+              "rank": 4,
+              "status": "PASS",
+              "steps": 20,
+              "parameter_delta": 0.020800277590751648,
+              "max_sync_error": 0.0
+            },
+            {
+              "rank": 5,
+              "status": "PASS",
+              "steps": 20,
+              "parameter_delta": 0.020800277590751648,
+              "max_sync_error": 0.0
+            },
+            {
+              "rank": 6,
+              "status": "PASS",
+              "steps": 20,
+              "parameter_delta": 0.020800277590751648,
+              "max_sync_error": 0.0
+            },
+            {
+              "rank": 7,
+              "status": "PASS",
+              "steps": 20,
+              "parameter_delta": 0.020800277590751648,
+              "max_sync_error": 0.0
+            }
+          ],
+          "api_totals": {
+            "ncclGetVersion": 16,
+            "ncclGetUniqueId": 1,
+            "ncclCommInitRankConfig": 8,
+            "ncclAllReduce": 184,
+            "ncclCommGetAsyncError": 1218,
+            "ncclAllGather": 8,
+            "ncclBcast": 208,
+            "ncclCommFinalize": 8,
+            "ncclCommDestroy": 8
+          },
+          "loss": 0,
+          "cleanup_removed": 8
+        },
+        {
+          "node_rank": 1,
+          "launch_exit_code": 0,
+          "reader_exit_code": 0,
+          "elapsed_s": 15.753493721946143,
+          "total_events": 1665,
+          "memory_max_mib": 1058.0,
+          "ranks": [
+            {
+              "rank": 8,
+              "status": "PASS",
+              "steps": 20,
+              "parameter_delta": 0.020800277590751648,
+              "max_sync_error": 0.0
+            },
+            {
+              "rank": 9,
+              "status": "PASS",
+              "steps": 20,
+              "parameter_delta": 0.020800277590751648,
+              "max_sync_error": 0.0
+            },
+            {
+              "rank": 10,
+              "status": "PASS",
+              "steps": 20,
+              "parameter_delta": 0.020800277590751648,
+              "max_sync_error": 0.0
+            },
+            {
+              "rank": 11,
+              "status": "PASS",
+              "steps": 20,
+              "parameter_delta": 0.020800277590751648,
+              "max_sync_error": 0.0
+            },
+            {
+              "rank": 12,
+              "status": "PASS",
+              "steps": 20,
+              "parameter_delta": 0.020800277590751648,
+              "max_sync_error": 0.0
+            },
+            {
+              "rank": 13,
+              "status": "PASS",
+              "steps": 20,
+              "parameter_delta": 0.020800277590751648,
+              "max_sync_error": 0.0
+            },
+            {
+              "rank": 14,
+              "status": "PASS",
+              "steps": 20,
+              "parameter_delta": 0.020800277590751648,
+              "max_sync_error": 0.0
+            },
+            {
+              "rank": 15,
+              "status": "PASS",
+              "steps": 20,
+              "parameter_delta": 0.020800277590751648,
+              "max_sync_error": 0.0
+            }
+          ],
+          "api_totals": {
+            "ncclGetVersion": 16,
+            "ncclCommInitRankConfig": 8,
+            "ncclAllReduce": 184,
+            "ncclCommGetAsyncError": 1225,
+            "ncclAllGather": 8,
+            "ncclBcast": 208,
+            "ncclCommFinalize": 8,
+            "ncclCommDestroy": 8
+          },
+          "loss": 0,
+          "cleanup_removed": 8
+        }
+      ]
+    }
+  ],
+  "single_node": [
+    {
+      "run_id": "m2b-20261010-native-01",
+      "world": 2,
+      "mode": "allreduce",
+      "launch_exit_code": 0,
+      "reader_exit_code": null,
+      "elapsed_s": 6.924261331092566,
+      "total_events": null,
+      "api_totals": {}
+    },
+    {
+      "run_id": "m2b-20261010-probe-04",
+      "world": 2,
+      "mode": "allreduce",
+      "launch_exit_code": 0,
+      "reader_exit_code": 0,
+      "elapsed_s": 7.411274875979871,
+      "total_events": 238,
+      "api_totals": {
+        "ncclGetVersion": 4,
+        "ncclGetUniqueId": 1,
+        "ncclCommInitRankConfig": 2,
+        "ncclAllReduce": 56,
+        "ncclCommGetAsyncError": 171,
+        "ncclCommFinalize": 2,
+        "ncclCommDestroy": 2
+      }
+    },
+    {
+      "run_id": "m2f-20261010-lifecycle-03",
+      "world": 2,
+      "mode": "lifecycle",
+      "launch_exit_code": 0,
+      "reader_exit_code": 0,
+      "elapsed_s": 9.391574203968048,
+      "total_events": 72,
+      "api_totals": {
+        "ncclGetUniqueId": 2,
+        "ncclGetVersion": 6,
+        "ncclCommInitRankConfig": 2,
+        "ncclCommCount": 2,
+        "ncclCommUserRank": 4,
+        "ncclCommGetAsyncError": 2,
+        "ncclAllReduce": 10,
+        "ncclGroupStart": 8,
+        "ncclGroupEnd": 8,
+        "ncclAllGather": 2,
+        "ncclBroadcast": 2,
+        "ncclReduceScatter": 2,
+        "ncclReduce": 2,
+        "ncclSend": 1,
+        "ncclCommSplit": 2,
+        "ncclCommInitRank": 2,
+        "COMM_MAPPING": 2,
+        "ncclCommFinalize": 6,
+        "ncclCommDestroy": 6,
+        "ncclRecv": 1
+      }
+    }
+  ],
+  "CPU": {
+    "unit_tests": 11,
+    "hook_mock_events": 1205,
+    "threads": 4,
+    "forwarded_error_codes": [
+      4,
+      5,
+      7
+    ],
+    "exit_codes": [
+      0,
+      0
+    ]
+  },
+  "history_failures": [
+    {
+      "run_id": "m2b-20261010-probe-01",
+      "training_exit": 0,
+      "reader_exit": 0,
+      "verification_exit": 1,
+      "reason": "validator incorrectly required Group in PyTorch AllReduce; dedicated Group test retains requirement"
+    },
+    {
+      "run_id": "m2e-20261010-ddp-01",
+      "training_exits": [
+        0,
+        0
+      ],
+      "reader_exits": [
+        0,
+        0
+      ],
+      "verification_exits": [
+        1,
+        1
+      ],
+      "reason": "validator expected ncclBroadcast; actual ncclBcast, subsequent exact Bcast/AllGather/AllReduce checks"
+    }
+  ],
+  "M1_sources_unchanged": true,
+  "history_not_run": [
+    {
+      "run_id": "m2e-20261010-ddp-03-access",
+      "transport_exits": [
+        255,
+        255
+      ],
+      "training_status": "NOT_RUN",
+      "resources_created": false
+    }
+  ],
+  "final_source_commit": "e45f90e455b5abb17914005f92824add519c8f64",
+  "probe_sha256": "5e9d3cd786864c7fe4785504c2004a2c9fd18c563dd32ade4d6da95924b79cad"
+}

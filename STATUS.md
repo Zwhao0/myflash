@@ -1,8 +1,8 @@
 # FLASH 全新开发状态
 
-当前阶段：M1 原生 NCCL / DDP / MoE 条件核验
-当前状态：M1 核心底座 PASS；M1e 环境 BLOCKED / 原生 MoE NOT_RUN；本轮完成并停止
-当前任务：tasks/01_baseline.md 已处理完成；M2 NOT_RUN，须单独审核。
+当前阶段：M2 透明 NCCL Probe / Monitor 共享内存
+当前状态：M2 PASS（已支持范围），本轮完成并停止；M3 NOT_RUN
+当前任务：tasks/02_monitor.md 已完成；等待M2审核，不自动推进M3。
 
 ## 权威路径、来源与改动
 
@@ -42,7 +42,7 @@ PASS：用户创建并指定 [Zwhao0/myflash](https://github.com/Zwhao0/myflash)
 |---|---|---|
 | M0 | PASS | 本轮文档/独立仓库实际核验；后续阶段待审核 |
 | M1 | PASS（核心） | M1a–M1d实测通过；M1e准备BLOCKED、MoE NOT_RUN，详见docs/m1 |
-| M2 | NOT_RUN | 无 Probe/共享内存实现 |
+| M2 | PASS（已支持范围） | Probe/Reader构建、CPU11项、单机/跨机/16rank/DDP/Group实测，docs/m2 |
 | M3 | NOT_RUN | 无 Event 剖析/GPU 机制实验 |
 | M4 | NOT_RUN | 无定位算法/fixture |
 | M5 | NOT_RUN | 无 Rbeast 安装/检测器实现 |
@@ -54,7 +54,7 @@ PASS：用户创建并指定 [Zwhao0/myflash](https://github.com/Zwhao0/myflash)
 
 两机已确认各8张H800、运行时CUDA12.8/NCCL2.27.3及实际RoCE通信。Megatron/TE/native训练入口、可用授权容器、Redis实例位置仍缺失/未核验；G01–G20科学未知保持OPEN。M1小模型DDP不能填补论文训练配置。
 
-下一唯一开发任务建议：用户审核本轮M1后，M2最小透明Monitor/共享内存证据链；先确认C++编译/headers与实际初始化API，再验证hook前后数值一致。尚未执行，不自动推进。MoE框架需独立离线环境/入口准备授权。
+下一唯一任务：用户审核已完成M2的docs/m2及源码。M3手动剖析/机制验证未授权、未执行；MoE准备仍需独立授权。
 
 ## M1 2026-10-10 早期执行记录（历史）
 
@@ -83,3 +83,19 @@ GPU最终实测源快照ed36c024a31f6343277f5330e114f0d6439d86f8；双机launche
 收尾校验PASS：runs/m1-final-validation-20261010T040704Z，5项退出0及证据断言通过；040640Z检查器路径错误的exit128已保留并更正聚合状态，未追改GPU结果。M0两份旧文档的服务器地址已从当前文件移除，备份只留服务器；既有公开Git历史未重写，历史隐私边界需另行处理。
 
 GitHub同步PASS：服务器源c50e53a8e8e70ae83c54b14841b69b397b18e001 → GitHub 5899c098345a4b96c75970db8a18a6ff7ce86930，全部文件tree 734ba0c4244064c4fad632c0d21eb06d5784fde1完全匹配，17个变化blob逐一核验、main回读成功。公开回执docs/m1/SYNC.json；回执与STATUS这次追加亦从服务器提交后同步，最终双方commit/tree及工作树检查保存在.git/m1-sync-final.json。没有force/历史重写，无原始日志/完整机器数据/凭证上传。M1停止，M2未运行。
+
+
+## M2 执行开始（2026-10-10）
+用户完整批准M2a–M2d；后续明确继续解决编译问题，不因缺headers停工。首两次host编译失败分别缺crt/host_config.h与nv/target，原日志runs/m2a-compile-20261010保留。已有M1 Triton提供CUDA12.8 crt headers；用户续令下仅解包官方CCCL12.8.90 wheel到本项目.build-deps-m2，SHA256核对PyPI；无系统升级、未改变M1运行库。
+当前修改范围native/flash/新增m2脚本测试、docs/m2、tasks/02_monitor/.gitignore/GAPS/STATUS。PAPER/UPSTREAM/ADAPTATION边界与ABI、锁/ACK协议见docs/m2/DESIGN.md；没有GreyHound源码复用、CUDAEvent/额外GPU同步/Redis/检测/定位。
+CPU9项PASS（包括未ACK重启与持锁进程死亡poison），单机native与Probe数值断言退出0；m2b-probe-01验证器误要求PyTorch AllReduce必须调用Group而退出1，保留FAIL及原日志，不追改。该错误由专门生命周期/Group测试覆盖相同要求，并新run m2b-probe-02 PASS；m2f-lifecycle-01 InitRank/Config、嵌套Group及Split明示UNRESOLVED数值测试PASS。后续仍在获准M2范围完成跨机/16rank/DDP与完整证据；不进入M3。
+
+
+## M2 最终结果与停止（2026-10-10）
+用户完整授权M2并要求解决编译问题；仅项目隔离CCCL12.8.90 headers补齐，现有g++13.3/ld2.42成功，M1运行库与系统栈未改。PAPER/UPSTREAM/ADAPTATION/EXTENSION来源见docs/m2/SOURCES.md；从零独立实现，没有GreyHound代码复用或访问旧失败系统。
+最终GPU代码快照e45f90e455b5abb17914005f92824add519c8f64，双节点Probe哈希5e9d3cd786864c7fe4785504c2004a2c9fd18c563dd32ade4d6da95924b79cad完全一致。修改：native/ring.hpp/ring.cpp/probe.cpp；flash/reader.py；新增m2 build/launch/run/verify/cleanup脚本与ring/mock/lifecycle测试；tasks/02_monitor、docs/m2四文档/evidence、.gitignore、GAPS/ARCHITECTURE/本文件。最终提交/diff从git log与本轮收尾回执查，不自引用未来SHA。
+实测gpu-01/gpu-02各8×H800，所有PASS的完整命令、退出码、原始日志见docs/m2/VALIDATION.md与RESULTS.md及各run control/manifest。CPU11项和4线程mock1205事件exit0/0；单机native/Probe、单机Group/lifecycle、两机各1rank、16rank AR、16rank20步DDP均训练/Reader/验证/清理0；最终事件238、72、118/117、955/951、1659/1665，全部支持范围内记录完整、丢失0；跨机hash与全rank集合/实际PID、22703/12080库版本匹配。DDP同步误差0、参数更新>0；M1测试/launcher源文件未改、原无Probe保护仍有效。
+最终运行末显存984/1040/1058MiB，保留1536目标/2048运行末检查及启动前3072余量；不是瞬时硬限制。各run在同一测试会话真实unlink2/1/8个当前run对象；postflight两节点58/42个本轮rank PID均已退出、本次GPU PID/shm剩余0。未降频、OOM、拥塞、杀其他作业或广泛清理。
+支持范围：阻塞InitRank/Config（含Group后延迟mapping）、常用collectives、Group/lifecycle；Split新组跨进程身份UNRESOLVED，异步/其他init身份UNSUPPORTED，未测/未包装API见RESULTS。G06/G07只在已验证范围采用明确ADAPTATION，复杂路径仍OPEN。不把comm_ptr/Group/训练组混用。没有Probe CUDAEvent/额外GPU同步、Redis、BOCD、异常检测/定位或恢复。
+保留编译两次exit1、Group/Bcast验证器历史exit1、早期清理失败与DDP03 SSH255/NOT_RUN；未追改失败、缩减M1数值/训练断言或改阈值。两处验证器错误按真实API路径更正，并由更严格/独立测试验收；全部新run证据保留服务器runs，GitHub仅脱敏源码/文档。报告为功能验收，不是论文正式性能结果。
+M2完成即停。下一唯一任务：用户审核M2；M3及以后未开始。GitHub审核分支与最终tree回执在.git/m2-final-sync.json记录，完成发布后追加链接。

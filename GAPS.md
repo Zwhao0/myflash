@@ -56,3 +56,10 @@ ID:
 ## M1 环境与实现边界补充（ADAPTATION）
 
 G01–G20不关闭。M1实测为H800小合成负载、native NCCL2.27.3/PyTorch2.8，而非论文H200/Qwen MoE训练；Megatron/TE/native入口未就绪，G11/G19模型口径仍需核验。低资源CTA/NVLS配置仅功能基线，不用作论文性能比较。原地址现脱敏，备份仅服务器runs；无算法/阈值/科学机制变更。
+
+## M2 工程决定（2026-10-10，ADAPTATION）
+G06：阻塞InitRank/Config输入ncclUniqueId采用SHA256；Group中输出在成功外层GroupEnd后建本地映射；Split跨进程身份明确UNRESOLVED、hash为空，InitAll/Scalable/非阻塞初始化身份UNSUPPORTED。未实现复杂路径不制造一致ID；G06复杂范围仍OPEN。来源installed NCCL2.27.3 nccl.h与官方comms/group文档；位置native/probe.cpp，单机实际证据runs/m2f-20261010-lifecycle-01。
+G07：选择ABI1、每进程ring、进程共享ROBUST mutex、10ms有限锁等待、可观测full/lock丢失、checksum、Reader排他、peek→持久化→ACK、重启去重；替代论文Python无锁读/重置。保持Monitor元数据机制，增加同步/持久化开销；不能引用论文纳秒开销作为实现结果。位置native/ring.*、flash/reader.py，CPU9项runs/m2-unit-20261010-ack。G07本支持范围由M2最终证据验收，跨ABI/任意破坏恢复仍不支持。
+G21：项目runtime wheel缺完整开发头文件；M2不写kernel无需nvcc，现有g++13.3+M1 Triton3.4的CUDA12.8 crt+项目隔离CCCL12.8.90头文件可编译。用户续令解决本问题；没有系统安装或运行库替换。原失败与成功命令/退出码在runs/m2a-compile-20261010，CCCL发布SHA256和许可见docs/m2/SOURCES.md（收尾补齐）。本决定只涉及构建，不改变科学机制。
+
+M2最终证据：G06支持范围验收PASS（InitRank/Config，Group中输出仅成功外层GroupEnd后映射）；Split仍UNRESOLVED、异步/InitAll/Scalable仍UNSUPPORTED，不关闭复杂初始化问题。G07采用已记载ROBUST锁/单调截止/完整发布/ACK，CPU11项、4线程mock及真实1/2/16rank/DDP均通过；不把差异协议称论文原实现，跨ABI/任意毒化恢复仍不支持。G21编译问题已由获准项目headers解决，无系统升级；对应SOURCE/RESULTS日志。追加生命周期观察：早期SSH结束后命名对象消失，原因未确认；当前入口在同一会话真实精确unlink并保存NDJSON，不保证跨最后登录会话的IPC存续。参见docs/m2与runs/m2-final-validation2-20261010。

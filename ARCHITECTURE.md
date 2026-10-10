@@ -98,3 +98,6 @@ PAPER（§3.3.1 pp.32–33）：环形缓冲区，元数据含字段数、容量
 Redis 类型、写入原子性、TTL/清理策略、节点 ACK 与全局窗口归属均待 G16。不得 Redis FLUSHALL、全局清空 /dev/shm 或用旧 run 数据参与定位。Redis 位置/现有服务与访问范围在 M1a 盘点，M0 不启动服务。
 
 EXTENSION：带宽、消息大小分桶、异步 Event 回收、复杂根因分类与其他通信库支持均不在默认基线；须另行批准、记录与对照。
+
+## M2 已实现边界（ADAPTATION，2026-10-10）
+PAPER Monitor/LD_PRELOAD/ring路径已做功能验收；ABI1、每进程POSIX shm、0600/O_EXCL/posix_fallocate、ROBUST互斥与C++ bridge读取/持久化ACK实现见docs/m2/DESIGN.md。此安全协议替代论文Python无锁清空，不声称同等开销。state只支持0，无0→1控制；无CUDAEvent、Redis/检测/定位。InitRank/Config可靠SHA256，Split身份明确未解决；comm本地generation、Group批次与训练组分离。当前完整支持范围、命令与实测在docs/m2；M3及后续接口仍是草案，未实现。
