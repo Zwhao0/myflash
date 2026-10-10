@@ -1,0 +1,19 @@
+{
+  "own_validation_process_remaining": 0,
+  "temporary_references_removed": [
+    "build",
+    "runs/m3abc-local-01"
+  ],
+  "redis_instances_started": 0,
+  "redis_cleanup": "NOT_APPLICABLE",
+  "GPU_workloads_started": 0,
+  "new_Rbeast_fits": 0,
+  "formal_binaries": [
+    {
+      "filename": "Rbeast.cpython-312-x86_64-linux-gnu.so",
+      "sha256": "a7432000e18465d8e4d2ba895a8618b388007528757718d286fcb82440bbb157"
+    }
+  ],
+  "unrelated_resources_touched": false,
+  "old_evidence_kept": true
+}

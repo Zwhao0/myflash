@@ -1,0 +1,26 @@
+{
+  "classification": "EXTENSION M4 synthetic CPU replay; no GPU data",
+  "baseline": "7746fccb88718a5567da0d042d2679672d4226fc",
+  "inputs": [
+    {
+      "path": "tests/m4_cases/three_groups_max_then_min/input.json",
+      "sha256": "a1cd5b94a9e2df159176142f0f17c56efceca69e96b39d911658276feef0a630",
+      "adaptation": "run/epoch/node identifiers only; copy, no changes to source"
+    },
+    {
+      "path": "tests/m4_cases/normal_equal/input.json",
+      "sha256": "d6ca4a7db5a60d46ece83e4bb738522210cc8d6d7013b4feac95a0fe4726de92",
+      "adaptation": "run/epoch/node identifiers only; copy, no changes to source"
+    },
+    {
+      "path": "tests/m4_cases/std_convention_disagreement/input.json",
+      "sha256": "df4992e9d151e6b36f662f61308b498b463e70e0ad5eacca83fa9453120eb105",
+      "adaptation": "run/epoch/node identifiers only; copy, no changes to source"
+    },
+    {
+      "path": "tests/m4_cases/nested_group_shared_members/input.json",
+      "sha256": "fc13970ba4144fab357dc82c82d28949e2fa7845aedd3bbe509fb5bd13a9e1e6",
+      "adaptation": "run/epoch/node identifiers only; copy, no changes to source"
+    }
+  ]
+}

@@ -186,3 +186,47 @@ retained, no relaxed arithmetic. Scientific validity/runtime adoption/M6 remain
 NOT_APPROVED. G04/G09/G20 dependencies only; no localization/controller changes.
 See G01_SEMANTICS/G02_TIMELINE/G13_THRESHOLD/DECISION_PROPOSAL/validation.json.
 Only next task: independent owner/ChatGPT review of M5-S1 Draft PR.
+
+## M6-A CPU control engineering (2026-10-10)
+G16 / ADAPTATION: explicit schema1 run/epoch, atomic revision CAS, command/hash ACK,
+global/local fencing, per-rank legal-scope proof, window/drain/data hashes and
+bounded verified Monitor reset implemented separately in flash/m6_*.py. CPU-only
+logical nodes and virtual clocks (EXTENSION) pass final32 tests and two epochs;
+actual Redis integration BLOCKED (existing server/client absent, no installation).
+This is bounded engineering evidence, not a final distributed/GPU protocol or HA
+claim. Source PAPER SPEC S1/S2/S4; UPSTREAM official Redis EVAL/LTRIM docs;
+prior request/application authority PR9 native/probe.cpp and docs/m3/DESIGN.md.
+See docs/m6/{CONTROL_PROTOCOL,STATE_MACHINE,REDIS_SCHEMA,RESULTS,VALIDATION}.md.
+
+G20 stays OPEN: original IterationRecord fields/boundaries retained, independent
+500-item ordered transport, exact retained dedup/conflict/unknown-write receipts,
+freshness/cursor/restart visibility added. Transport response is server-memory
+confirmation only, not disk/training/GPU completion. CPU mock end is explicitly
+simulated. Production callback/outbox ACK, real ABI fencing, persistence after
+Redis loss and true process/Probe recovery remain unapproved. Control loss/partial
+reset returns BLOCKED/TIMEOUT/ABORTED with operator conditions; no fake rank ACK,
+zero-fill, previous-epoch replenishment or final scientific alert.
+
+G01/G02/G04/G09/G13 remain OPEN and unchanged; M6-A imports no automatic Rbeast
+trigger. Complete synthetic M4 inputs alone yield existing provisional/no-candidate/
+ambiguous evidence; defaults/weights/min-rank/CV/20% filters untouched. Formal
+runtime1424 non-cache files and all851 old source/fixtures/evidence preserved
+(STATUS/GAPS append only). final_alert=false, final_fault_ranks=[]; M6 overall,
+GPU/cross-machine loop, science validity and paper precision/recall NOT_RUN or
+NOT_APPROVED. Next unique task is independent M6-A Draft PR technical review.
+
+### M6-A actual Redis authorization supplement (2026-10-10)
+The human user superseded the earlier dependency prohibition specifically for
+real Redis installation. Private fixed Redis8.10.2/client8.1.0 installed without
+formal .venv-m5/system service changes; CPU mock32 and actual Redis6 tests pass.
+M6-A ENGINEERING PASS supersedes initial overall BLOCKED; all initial failure/
+missing-dependency receipts remain. UPSTREAM versions/source/license/SHA in
+docs/m6/dependency-lock.json, ADAPTATION isolated build/venv/socket/deadlines.
+Actual server stop/restart changes server run_id and loses the old run document;
+stale client operations/resume stay BLOCKED, a new run succeeds. This confirms
+only exercised socket/standalone-memory behavior, not persistence, HA, physical
+Probe recovery or cross-host training. G20 remains OPEN. No lost-reply or delay
+network impairment was injected; those cases remain deterministic mock coverage.
+G01/G02/G04/G09/G13 also remain OPEN. Original scientific algorithms/evidence
+unchanged, final_alert=false/final_fault_ranks=[]; no M6 overall/science/GPU PASS.
+Next unique task is independent M6-A Draft PR technical review.
