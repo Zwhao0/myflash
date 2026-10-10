@@ -53,3 +53,15 @@ hashes versus PR9 and artifact hashes before/after. Only CPU mocks run, with
 CUDA_VISIBLE_DEVICES empty; native child processes have bounded own-group timeout.
 Formal .venv-m5 is used only for standard-library/parser unit regressions and
 read-only identity/hash audit. No Rbeast fit or package changes.
+
+Retained validation01 correction: two CLI entries were incorrectly selected:
+m5_api_fields requires argv output and performs real Rbeast fits; m2_lifecycle
+is a real GPU workload requiring output. Both stopped before their workloads
+(IndexError / argparse exit2); no fits/GPU calls ran. Remove them from CPU control
+regression registry as unauthorized workloads, record NOT_RUN instead; no original
+assertion or source changed. Pure M5 field/parser checks remain covered by existing
+m5_detection/contract/P1 units. CPU native registry is m2_ring/m2_hook_smoke/
+m3_reader/m3_hook/m3_validation. Preserve full validation01 FAIL receipt/logs.
+Full-tree privacy scanner has >700MiB prior byte evidence and hit120s timeout on
+node-0; separate scanner budget600s, core test120s/M4 180s unchanged. This is a
+validation command budget correction, not a collection-window/scientific change.

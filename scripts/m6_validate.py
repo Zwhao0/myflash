@@ -86,16 +86,15 @@ def main():
         ('m4',[sys.executable,'tests/m4_offline.py','--output',str(out/'m4-fixtures')]),
         ('reporter',[sys.executable,'tests/m5_reporter.py']),
         ('detection',[sys.executable,'tests/m5_detection.py']),
-        ('api-fields',[sys.executable,'tests/m5_api_fields.py']),
         ('contract',[sys.executable,'tests/m5_contract_evidence.py',str(out/'contract.json')]),
         ('p1-units',[sys.executable,'tests/m5_p1_compare.py']),
         ('s1-units',[sys.executable,'tests/m5_s1_offline.py']),
         ('privacy-units',[sys.executable,'tests/privacy_check_test.py']),
         ('privacy',[sys.executable,'scripts/privacy_check.py'])]
-    results=[execute(cmd,out,tag,180 if tag=='m4' else 120) for tag,cmd in commands]
+    results=[execute(cmd,out,tag,600 if tag=='privacy' else 180 if tag=='m4' else 120) for tag,cmd in commands]
     native=[]
     if args.native_artifacts:
-        for name in ('m2_ring','m2_hook_smoke','m2_lifecycle','m3_reader','m3_hook','m3_validation'):
+        for name in ('m2_ring','m2_hook_smoke','m3_reader','m3_hook','m3_validation'):
             result=execute([sys.executable,'tests/'+name+'.py'],out,name)
             native.append(result)
             if result['exit_code']:break
@@ -115,9 +114,13 @@ def main():
         baseline=BASE,baseline_files=len(before),preservation=after,source_checks=source_checks,
         formal_file_count=None if formal_before is None else len(formal_before),formal_unchanged=formal_before==formal_after,
         native_artifact_hashes=binaries_before,native_unchanged=binaries_before==binaries_after,
-        commands=results,native_commands=native,native_status='NOT_RUN' if not native else 'PASS' if len(native)==6 and all(r['exit_code']==0 for r in native) else 'FAIL',
+        commands=results,native_commands=native,native_status='NOT_RUN' if not native else 'PASS' if len(native)==5 and all(r['exit_code']==0 for r in native) else 'FAIL',
         final_alert=False,final_fault_ranks=[],gpu='NOT_RUN',cross_physical_nodes='NOT_RUN',
-        automatic_detection='NOT_APPROVED',next_unique_task='independent ChatGPT GitHub technical review')
+        automatic_detection='NOT_APPROVED',
+        excluded_tests={'m2_lifecycle':'NOT_RUN GPU workload, outside authorization',
+                        'm5_api_fields':'NOT_RUN real Rbeast fit, no detector change',
+                        'm5_real_api_and_replay':'NOT_RUN historical scientific/native assertions retained unchanged'},
+        next_unique_task='independent ChatGPT GitHub technical review')
     failures=[r for r in results+native if r['status']=='FAIL']
     redis_result=next(r for r in results if r['command'][-1]=='tests/m6_redis.py')
     manifest['status']='FAIL' if failures else 'BLOCKED' if redis_result['status']=='BLOCKED' else 'M6-A ENGINEERING PASS'
