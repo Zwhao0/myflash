@@ -65,6 +65,7 @@ def main():
     p=argparse.ArgumentParser();p.add_argument('--output',type=Path,required=True)
     p.add_argument('--native-artifacts',type=Path);p.add_argument('--approved-project',type=Path)
     p.add_argument('--formal-environment',type=Path)
+    p.add_argument('--redis-python',type=Path,help='separate authorized Redis client interpreter; regressions keep existing Python')
     args=p.parse_args();out=args.output.resolve();out.mkdir(parents=True,exist_ok=False);os.chmod(out,0o700)
     before=baseline();formal_before=tree_hashes(args.formal_environment)
     binaries_before=tree_hashes(args.native_artifacts)
@@ -82,7 +83,7 @@ def main():
         if fixture.is_dir():(ROOT/'runs/m3abc-local-01').symlink_to(fixture.resolve(),target_is_directory=True)
     commands=[('control',[sys.executable,'tests/m6_control.py']),
         ('demo',[sys.executable,'scripts/m6_demo.py','--output',str(out/'demo')]),
-        ('redis',[sys.executable,'tests/m6_redis.py']),
+        ('redis',[str(args.redis_python) if args.redis_python else sys.executable,'tests/m6_redis.py']),
         ('m4',[sys.executable,'tests/m4_offline.py','--output',str(out/'m4-fixtures')]),
         ('reporter',[sys.executable,'tests/m5_reporter.py']),
         ('detection',[sys.executable,'tests/m5_detection.py']),
@@ -111,6 +112,7 @@ def main():
         code_sha=subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip(),
         working_diff=subprocess.check_output(['git','status','--short'],cwd=ROOT,text=True),
         code_hashes={n:sha((ROOT/n).read_bytes()) for n in code_paths},versions=versions,
+        redis_python=str(args.redis_python) if args.redis_python else sys.executable,
         baseline=BASE,baseline_files=len(before),preservation=after,source_checks=source_checks,
         formal_file_count=None if formal_before is None else len(formal_before),formal_unchanged=formal_before==formal_after,
         native_artifact_hashes=binaries_before,native_unchanged=binaries_before==binaries_after,
