@@ -1,0 +1,25 @@
+{
+  "command": [
+    "<approved-project>/.venv-m5/bin/python",
+    "tests/m6b_ready_cursor_contract.py",
+    "--output",
+    "<approved-project>/runs/m6b-ready-g0-e-20261011/validation-02/cursor"
+  ],
+  "cwd": "<approved-project>/runs/m6b-ready-g0-e-20261011/checkout",
+  "timeout_budget_seconds": 120,
+  "environment": {
+    "LD_PRELOAD": "REMOVED",
+    "CUDA_VISIBLE_DEVICES": "",
+    "PYTHONDONTWRITEBYTECODE": "1"
+  },
+  "child_finished": true,
+  "owned_pid": "<private-pid-6>",
+  "exit_code": 1,
+  "timeout": false,
+  "elapsed_wall_seconds": 6.723264490952715,
+  "status": "FAIL",
+  "stdout": "cursor.stdout.txt",
+  "stderr": "cursor.stderr.txt",
+  "stdout_sha256": "ec04f4d9e1fa5b8ee6047557a8320f335adee8b3cc704ff4132b43b374f94980",
+  "stderr_sha256": "c683454660acd9c9a607f0c35eddd8140e36b6a9b9d5031f5904024bf40c463d"
+}

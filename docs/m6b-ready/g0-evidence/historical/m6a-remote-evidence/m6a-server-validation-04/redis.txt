@@ -1,0 +1,80 @@
+test_acceptance_timeout_partial_monitor (__main__.RedisTests.test_acceptance_timeout_partial_monitor) ... ERROR
+test_actual_server_stop_restart_and_lost_document (__main__.RedisTests.test_actual_server_stop_restart_and_lost_document)
+UPSTREAM server run_id changes; ADAPTATION refuses active-run recovery. ... ERROR
+test_client_reconnect_and_namespace_isolation (__main__.RedisTests.test_client_reconnect_and_namespace_isolation) ... ERROR
+test_concurrent_idempotence_conflict_and_500 (__main__.RedisTests.test_concurrent_idempotence_conflict_and_500) ... ERROR
+test_restart_fencing_and_previous_epoch_not_pooled (__main__.RedisTests.test_restart_fencing_and_previous_epoch_not_pooled) ... ERROR
+test_two_epochs_actual_lua_and_private_socket (__main__.RedisTests.test_two_epochs_actual_lua_and_private_socket) ... ERROR
+
+======================================================================
+ERROR: test_acceptance_timeout_partial_monitor (__main__.RedisTests.test_acceptance_timeout_partial_monitor)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<approved-project>/runs/m6a-work/tests/m6_redis.py", line 30, in setUp
+    self.s=Simulation(store=RedisStore(CLIENT),run='m6r-'+uuid.uuid4().hex)
+                            ^^^^^^^^^^^^^^^^^^
+  File "<approved-project>/runs/m6a-work/flash/m6_store.py", line 66, in __init__
+    raise ValueError('finite positive Redis socket/connect timeouts required') from None
+ValueError: finite positive Redis socket/connect timeouts required
+
+======================================================================
+ERROR: test_actual_server_stop_restart_and_lost_document (__main__.RedisTests.test_actual_server_stop_restart_and_lost_document)
+UPSTREAM server run_id changes; ADAPTATION refuses active-run recovery.
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<approved-project>/runs/m6a-work/tests/m6_redis.py", line 30, in setUp
+    self.s=Simulation(store=RedisStore(CLIENT),run='m6r-'+uuid.uuid4().hex)
+                            ^^^^^^^^^^^^^^^^^^
+  File "<approved-project>/runs/m6a-work/flash/m6_store.py", line 66, in __init__
+    raise ValueError('finite positive Redis socket/connect timeouts required') from None
+ValueError: finite positive Redis socket/connect timeouts required
+
+======================================================================
+ERROR: test_client_reconnect_and_namespace_isolation (__main__.RedisTests.test_client_reconnect_and_namespace_isolation)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<approved-project>/runs/m6a-work/tests/m6_redis.py", line 30, in setUp
+    self.s=Simulation(store=RedisStore(CLIENT),run='m6r-'+uuid.uuid4().hex)
+                            ^^^^^^^^^^^^^^^^^^
+  File "<approved-project>/runs/m6a-work/flash/m6_store.py", line 66, in __init__
+    raise ValueError('finite positive Redis socket/connect timeouts required') from None
+ValueError: finite positive Redis socket/connect timeouts required
+
+======================================================================
+ERROR: test_concurrent_idempotence_conflict_and_500 (__main__.RedisTests.test_concurrent_idempotence_conflict_and_500)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<approved-project>/runs/m6a-work/tests/m6_redis.py", line 30, in setUp
+    self.s=Simulation(store=RedisStore(CLIENT),run='m6r-'+uuid.uuid4().hex)
+                            ^^^^^^^^^^^^^^^^^^
+  File "<approved-project>/runs/m6a-work/flash/m6_store.py", line 66, in __init__
+    raise ValueError('finite positive Redis socket/connect timeouts required') from None
+ValueError: finite positive Redis socket/connect timeouts required
+
+======================================================================
+ERROR: test_restart_fencing_and_previous_epoch_not_pooled (__main__.RedisTests.test_restart_fencing_and_previous_epoch_not_pooled)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<approved-project>/runs/m6a-work/tests/m6_redis.py", line 30, in setUp
+    self.s=Simulation(store=RedisStore(CLIENT),run='m6r-'+uuid.uuid4().hex)
+                            ^^^^^^^^^^^^^^^^^^
+  File "<approved-project>/runs/m6a-work/flash/m6_store.py", line 66, in __init__
+    raise ValueError('finite positive Redis socket/connect timeouts required') from None
+ValueError: finite positive Redis socket/connect timeouts required
+
+======================================================================
+ERROR: test_two_epochs_actual_lua_and_private_socket (__main__.RedisTests.test_two_epochs_actual_lua_and_private_socket)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<approved-project>/runs/m6a-work/tests/m6_redis.py", line 30, in setUp
+    self.s=Simulation(store=RedisStore(CLIENT),run='m6r-'+uuid.uuid4().hex)
+                            ^^^^^^^^^^^^^^^^^^
+  File "<approved-project>/runs/m6a-work/flash/m6_store.py", line 66, in __init__
+    raise ValueError('finite positive Redis socket/connect timeouts required') from None
+ValueError: finite positive Redis socket/connect timeouts required
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.001s
+
+FAILED (errors=6)
+{"status": "FAIL", "private_receipts": "<approved-project>/runs/m6a-work/runs/m6r-jdc7hweu", "child_exit": 0}

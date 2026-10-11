@@ -326,3 +326,95 @@ does not approve scientific validity, M6 overall, automatic detector, real GPU/
 cross-host loop, precision/recall, HA or formal runtime migration. No merge or
 M6-B. Final publication head/tree/CI are recorded in Draft PR and private receipt.
 Next unique task: wait for independent ChatGPT GitHub technical review of M6-A.
+
+
+## M6B-READY-G0-E evidence delivery (2026-10-11)
+User explicitly requests execution of the attached G0-E task. M6B-READY overall
+goal is gated admission for later M6-B; this round only delivers evidence and an
+independent CPU cursor contract. Exact baseline5b91977/tree5eeeef0, PR10 Draft/Open;
+maince984ea/base7746fcc unchanged. New codex/m6b-ready-g0-evidence with base
+codex/m6a-control-plane. Only new task, independent test/collector and
+docs/m6b-ready/g0-evidence; STATUS/GAPS append. Original876 tracked files preserved.
+PAPER SPEC S2/S4/S6; UPSTREAM existing fixed dependency/source metadata; ADAPTATION
+cursor integer contract/evidence/privacy; EXTENSION deterministic CPU inputs.
+
+node-0 existing Python3.12.3/CPU. Collector command: <existing-formal-python>
+scripts/m6b_ready_g0_validate.py --output <new-private-run> --machine-alias node-0.
+validation01 child exits0(control32),0(demo2epochs),1(new-test setup8errors),
+0(privacy6),0(text scan); driver1. First new test wrongly declared one node;
+registration rejected it, failure/source retained. Only new test setup adjusted
+to two logical nodes. --only-cursor validation02 exits1/FAIL:9tests completed,
+9failures (3future integer cursors +6invalid-type acceptances). No expectedFailure,
+skip, softened assertion or reader fix. All input/server-last/retained-from/raw
+returns are persisted before assertions. Bound original/sanitized logs and SHA,
+full commands/env/timeout/child_finished in docs validation/EVIDENCE_INDEX and
+private runs/m6b-ready-g0-e-20261011/validation-{01,02}.
+
+1175 historical pointers re-read and SHA verified, including server-relevant-05
+original manifest/three exits0/32CPU+6Redis names and full combined stdout/stderr.
+Two epochs, ACK versus per-rank CPU applied, sample/manifest/drain/M4 data hashes
+and reset independently verified. Initial BLOCKED/setup FAIL/timeout/NOT_CAPTURED,
+postflight/publication wrapper failures and M5-R FAIL/three NOT_CAPTURED unchanged.
+Same-project M6-A original human Redis installation authorization message found;
+VERIFIED_SCOPE_ONLY, exact message time/version/path not supplied. Future reuse
+REQUIRES_OWNER_DECISION; no retroactive authorization is inferred from this turn.
+
+Formal1424 non-cache files byte-identical pre/post; original Rbeast.so remains
+a7432000e18465d8e4d2ba895a8618b388007528757718d286fcb82440bbb157.
+Own children all waited; own sockets0; historical Redis cleanup0 is only a prior
+receipt, not a new host measurement. No install/new environment/service/Redis
+instance/native build/load/Rbeast fit/GPU/second node/scientific rule/final alert.
+
+Executor: EVIDENCE_DELIVERED; future cursor FAIL; M6B-READY BLOCKED. Independent
+ChatGPT review PENDING. G1S2/adoption, G2G01/G02/G13 and G3G04 approvals pending;
+G4fix/Reporter/outbox/clocks/restart/ABI2 bridge OPEN/NOT_RUN; G5 BLOCKED, real M6-B
+NOT_RUN. Final publication head/tree/CI and exact file mapping in PR/private
+publication receipt; privacy CI never validates the failed cursor/science/GPU.
+Next unique task: independent ChatGPT review of this Draft PR; stop after delivery.
+
+M6B-G0-E publication precheck: all507 changed paths allowed and effective
+validation02 new source SHA matched. Standard git diff --cached --check exits2:
+5 trailing-whitespace lines in complete original stdout/stderr evidence. This
+formatting failure is retained; full logs are not trimmed. Privacy is checked
+separately; no required functional assertion is reclassified as PASS.
+
+M6B-G0-E full publication privacy: local-macOS Python3.9.6, collector
+--only-privacy publication-check-01,6privacy tests0 and full-tree scanner0:
+1381files/findings0; driver0, no timeout, all children waited. New receipt bytes
+receive a final exact changed-text check. Effective new executable hashes still
+match node-0 validation02; required cursor remains FAIL/engineering BLOCKED.
+
+M6B-G0-E first ordinary push8540313/ceb5603 succeeded. Additional identity
+audit then found raw historical Redis PID prefixes in4 new public logs, not
+covered by the unchanged scanner. Current tree uses stable PID aliases and
+updated sanitized hashes; original evidence SHA/science/status/exits preserved.
+Earlier reachable commit retains those identifiers: history privacy FAIL /
+REQUIRES_OWNER_DECISION. No force-push/history rewriting. This failure is
+recorded in PID_REDACTION_RECEIPT and validation; current CI has limited scope.
+
+
+## M6B-READY-G0F task01 delivered (2026-10-11)
+ADAPTATION cursor contract only: strict builtin nonnegative int validated before
+store access; valid future cursor returns INSUFFICIENT_EVIDENCE after original
+integrity checks. None/legal boundary/full500/gap/hash/expiry semantics preserved.
+Baseline PR11 70a83e7/tree43a4688; independent codex/m6b-ready-g0f-cursor with
+Draft base codex/m6b-ready-g0-evidence. Execution97a639979689a82974c129827f018fd4fe2b872b/
+treed1787e5fe0f095d91f69e4ab8ab6348d840ccdcd, node-0 existing Python3.12.3.
+77 CPU tests across unchanged cursor9/control32/Reporter4/detection8/S1offline16
+and new boundary8 all actual exit0/no timeout; six children waited, collector0
+observed by waiting supervisor. Full commands/source/log SHA/exit and raw-public
+correspondence in docs/m6b-ready/g0f-cursor; private runs/m6b-ready-g0f-20261011.
+Formal1424 files/original.so a7432000... match historical and pre/post; original
+server checkout clean; only existing implementation m6_iteration changed,
+STATUS/GAPS append-only, all prior tests/fixtures/G0-E515 files preserved.
+Original red fca99d... and23 raw failure files/exit1/9failures remain unchanged.
+Setup128 (published object absent in historical server checkout) and probe1
+(absent driver file) retained; exact-source bundle corrected preparation before
+any tests. Local package-root Git error TOOL_OUTPUT_ONLY retained in index.
+PAPER500 retention unchanged; EXTENSION deterministic CPU mocks. No scientific
+thresholds/min-rank/GreyHound reuse, installation/Redis/native fits/build/GPU/
+node-1/formal adoption/M6-B. G01/G02/G04/G13 not approved; overall M6B-READY
+BLOCKED, historical privacy/copyright DEFERRED/OPEN. Publication head/tree/
+independent Draft PR/current-checkout CI recorded in private publication receipt;
+CI is not cursor/science/GPU proof. Next unique task: independent exact-head
+review of G0F; stop, do not execute task02.

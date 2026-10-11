@@ -1,0 +1,113 @@
+test_cursor_before_retention_gap (__main__.CursorContract.test_cursor_before_retention_gap) ... ok
+test_empty_history (__main__.CursorContract.test_empty_history) ... ok
+test_expired_record (__main__.CursorContract.test_expired_record) ... ok
+test_future_after_500_retained (__main__.CursorContract.test_future_after_500_retained) ... FAIL
+test_future_large (__main__.CursorContract.test_future_large) ... FAIL
+test_future_one_step (__main__.CursorContract.test_future_one_step) ... FAIL
+test_invalid_types_strict_integer_adaptation (__main__.CursorContract.test_invalid_types_strict_integer_adaptation) ... 
+  test_invalid_types_strict_integer_adaptation (__main__.CursorContract.test_invalid_types_strict_integer_adaptation) (cursor='True') ... FAIL
+  test_invalid_types_strict_integer_adaptation (__main__.CursorContract.test_invalid_types_strict_integer_adaptation) (cursor='False') ... FAIL
+  test_invalid_types_strict_integer_adaptation (__main__.CursorContract.test_invalid_types_strict_integer_adaptation) (cursor='0.5') ... FAIL
+  test_invalid_types_strict_integer_adaptation (__main__.CursorContract.test_invalid_types_strict_integer_adaptation) (cursor='1.0') ... FAIL
+  test_invalid_types_strict_integer_adaptation (__main__.CursorContract.test_invalid_types_strict_integer_adaptation) (cursor='nan') ... FAIL
+  test_invalid_types_strict_integer_adaptation (__main__.CursorContract.test_invalid_types_strict_integer_adaptation) (cursor='inf') ... FAIL
+test_legal_boundaries_keep_full_window (__main__.CursorContract.test_legal_boundaries_keep_full_window) ... ok
+test_missing_run (__main__.CursorContract.test_missing_run) ... ok
+
+======================================================================
+FAIL: test_future_after_500_retained (__main__.CursorContract.test_future_after_500_retained)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<approved-project>/runs/m6b-ready-g0-e-20261011/checkout/tests/m6b_ready_cursor_contract.py", line 80, in test_future_after_500_retained
+    self.setup_stream(501); self.assert_rejected(self.observe(502))
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<approved-project>/runs/m6b-ready-g0-e-20261011/checkout/tests/m6b_ready_cursor_contract.py", line 70, in assert_rejected
+    self.assertIn(result['status'], ('INSUFFICIENT_EVIDENCE', 'BLOCKED'),
+AssertionError: 'READ_CONFIRMED' not found in ('INSUFFICIENT_EVIDENCE', 'BLOCKED') : cursor must not receive READ_CONFIRMED
+
+======================================================================
+FAIL: test_future_large (__main__.CursorContract.test_future_large)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<approved-project>/runs/m6b-ready-g0-e-20261011/checkout/tests/m6b_ready_cursor_contract.py", line 77, in test_future_large
+    self.setup_stream(); self.assert_rejected(self.observe(1000000))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<approved-project>/runs/m6b-ready-g0-e-20261011/checkout/tests/m6b_ready_cursor_contract.py", line 70, in assert_rejected
+    self.assertIn(result['status'], ('INSUFFICIENT_EVIDENCE', 'BLOCKED'),
+AssertionError: 'READ_CONFIRMED' not found in ('INSUFFICIENT_EVIDENCE', 'BLOCKED') : cursor must not receive READ_CONFIRMED
+
+======================================================================
+FAIL: test_future_one_step (__main__.CursorContract.test_future_one_step)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<approved-project>/runs/m6b-ready-g0-e-20261011/checkout/tests/m6b_ready_cursor_contract.py", line 74, in test_future_one_step
+    self.setup_stream(); self.assert_rejected(self.observe(2))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<approved-project>/runs/m6b-ready-g0-e-20261011/checkout/tests/m6b_ready_cursor_contract.py", line 70, in assert_rejected
+    self.assertIn(result['status'], ('INSUFFICIENT_EVIDENCE', 'BLOCKED'),
+AssertionError: 'READ_CONFIRMED' not found in ('INSUFFICIENT_EVIDENCE', 'BLOCKED') : cursor must not receive READ_CONFIRMED
+
+======================================================================
+FAIL: test_invalid_types_strict_integer_adaptation (__main__.CursorContract.test_invalid_types_strict_integer_adaptation) (cursor='True')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<approved-project>/runs/m6b-ready-g0-e-20261011/checkout/tests/m6b_ready_cursor_contract.py", line 111, in test_invalid_types_strict_integer_adaptation
+    self.assert_rejected(self.observe(cursor, '-' + str(index)))
+  File "<approved-project>/runs/m6b-ready-g0-e-20261011/checkout/tests/m6b_ready_cursor_contract.py", line 70, in assert_rejected
+    self.assertIn(result['status'], ('INSUFFICIENT_EVIDENCE', 'BLOCKED'),
+AssertionError: 'READ_CONFIRMED' not found in ('INSUFFICIENT_EVIDENCE', 'BLOCKED') : cursor must not receive READ_CONFIRMED
+
+======================================================================
+FAIL: test_invalid_types_strict_integer_adaptation (__main__.CursorContract.test_invalid_types_strict_integer_adaptation) (cursor='False')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<approved-project>/runs/m6b-ready-g0-e-20261011/checkout/tests/m6b_ready_cursor_contract.py", line 111, in test_invalid_types_strict_integer_adaptation
+    self.assert_rejected(self.observe(cursor, '-' + str(index)))
+  File "<approved-project>/runs/m6b-ready-g0-e-20261011/checkout/tests/m6b_ready_cursor_contract.py", line 70, in assert_rejected
+    self.assertIn(result['status'], ('INSUFFICIENT_EVIDENCE', 'BLOCKED'),
+AssertionError: 'READ_CONFIRMED' not found in ('INSUFFICIENT_EVIDENCE', 'BLOCKED') : cursor must not receive READ_CONFIRMED
+
+======================================================================
+FAIL: test_invalid_types_strict_integer_adaptation (__main__.CursorContract.test_invalid_types_strict_integer_adaptation) (cursor='0.5')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<approved-project>/runs/m6b-ready-g0-e-20261011/checkout/tests/m6b_ready_cursor_contract.py", line 111, in test_invalid_types_strict_integer_adaptation
+    self.assert_rejected(self.observe(cursor, '-' + str(index)))
+  File "<approved-project>/runs/m6b-ready-g0-e-20261011/checkout/tests/m6b_ready_cursor_contract.py", line 70, in assert_rejected
+    self.assertIn(result['status'], ('INSUFFICIENT_EVIDENCE', 'BLOCKED'),
+AssertionError: 'READ_CONFIRMED' not found in ('INSUFFICIENT_EVIDENCE', 'BLOCKED') : cursor must not receive READ_CONFIRMED
+
+======================================================================
+FAIL: test_invalid_types_strict_integer_adaptation (__main__.CursorContract.test_invalid_types_strict_integer_adaptation) (cursor='1.0')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<approved-project>/runs/m6b-ready-g0-e-20261011/checkout/tests/m6b_ready_cursor_contract.py", line 111, in test_invalid_types_strict_integer_adaptation
+    self.assert_rejected(self.observe(cursor, '-' + str(index)))
+  File "<approved-project>/runs/m6b-ready-g0-e-20261011/checkout/tests/m6b_ready_cursor_contract.py", line 70, in assert_rejected
+    self.assertIn(result['status'], ('INSUFFICIENT_EVIDENCE', 'BLOCKED'),
+AssertionError: 'READ_CONFIRMED' not found in ('INSUFFICIENT_EVIDENCE', 'BLOCKED') : cursor must not receive READ_CONFIRMED
+
+======================================================================
+FAIL: test_invalid_types_strict_integer_adaptation (__main__.CursorContract.test_invalid_types_strict_integer_adaptation) (cursor='nan')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<approved-project>/runs/m6b-ready-g0-e-20261011/checkout/tests/m6b_ready_cursor_contract.py", line 111, in test_invalid_types_strict_integer_adaptation
+    self.assert_rejected(self.observe(cursor, '-' + str(index)))
+  File "<approved-project>/runs/m6b-ready-g0-e-20261011/checkout/tests/m6b_ready_cursor_contract.py", line 70, in assert_rejected
+    self.assertIn(result['status'], ('INSUFFICIENT_EVIDENCE', 'BLOCKED'),
+AssertionError: 'READ_CONFIRMED' not found in ('INSUFFICIENT_EVIDENCE', 'BLOCKED') : cursor must not receive READ_CONFIRMED
+
+======================================================================
+FAIL: test_invalid_types_strict_integer_adaptation (__main__.CursorContract.test_invalid_types_strict_integer_adaptation) (cursor='inf')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<approved-project>/runs/m6b-ready-g0-e-20261011/checkout/tests/m6b_ready_cursor_contract.py", line 111, in test_invalid_types_strict_integer_adaptation
+    self.assert_rejected(self.observe(cursor, '-' + str(index)))
+  File "<approved-project>/runs/m6b-ready-g0-e-20261011/checkout/tests/m6b_ready_cursor_contract.py", line 70, in assert_rejected
+    self.assertIn(result['status'], ('INSUFFICIENT_EVIDENCE', 'BLOCKED'),
+AssertionError: 'READ_CONFIRMED' not found in ('INSUFFICIENT_EVIDENCE', 'BLOCKED') : cursor must not receive READ_CONFIRMED
+
+----------------------------------------------------------------------
+Ran 9 tests in 6.611s
+
+FAILED (failures=9)

@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "<stdin>", line 23, in <module>
+  File "<approved-project>/runs/m6a-work/scripts/m6_validate.py", line 17, in sha
+    def sha(data):return hashlib.sha256(data).hexdigest()
+                         ^^^^^^^^^^^^^^^^^^^^
+TypeError: object supporting the buffer API required

@@ -1,0 +1,16 @@
+{
+  "epochs": [
+    1,
+    2
+  ],
+  "statuses": [
+    "PROVISIONAL_CANDIDATE",
+    "PROVISIONAL_CANDIDATE"
+  ],
+  "reset_verified": [
+    true,
+    true
+  ],
+  "sha256": "2b47a857b579ebc315b8344003f29c23bf506af4f7e8e9f05e7c19d4b116db76",
+  "final_alert": false
+}

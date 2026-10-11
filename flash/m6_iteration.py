@@ -50,6 +50,9 @@ class IterationReader:
         self.store, self.run_id, self.rank = store, run_id, rank
 
     def read(self, *, now=None, timeout_seconds=None, after_iteration=None):
+        # ADAPTATION: reject invalid cursors before any store access.
+        if after_iteration is not None:
+            integer(after_iteration, 0, 'after_iteration')
         doc = self.store.read(self.run_id)
         if doc is None:
             return provisional('BLOCKED', 'run state missing/restart')
@@ -67,6 +70,8 @@ class IterationReader:
         validate_sequence(records)
         if len(records) > 500 or records[-1].iteration != stream['last']:
             raise ValueError('iteration retention/order mismatch')
+        if after_iteration is not None and after_iteration > stream['last']:
+            return provisional('INSUFFICIENT_EVIDENCE', 'consumer cursor ahead of last confirmed iteration')
         if after_iteration is not None and after_iteration + 1 < records[0].iteration:
             return provisional('INSUFFICIENT_EVIDENCE', 'consumer cursor gap outside 500-item retention')
         if timeout_seconds is not None:

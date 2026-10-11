@@ -1,0 +1,10 @@
+{
+  "argv": [
+    "git",
+    "init",
+    "-q",
+    "<approved-checkout>"
+  ],
+  "exit_code": 0,
+  "child_finished": true
+}

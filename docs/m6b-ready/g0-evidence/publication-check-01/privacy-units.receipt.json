@@ -1,0 +1,23 @@
+{
+  "command": [
+    "/Library/Developer/CommandLineTools/usr/bin/python3",
+    "tests/privacy_check_test.py"
+  ],
+  "cwd": "<local-project>/m6b-ready-work",
+  "timeout_budget_seconds": 120,
+  "environment": {
+    "LD_PRELOAD": "REMOVED",
+    "CUDA_VISIBLE_DEVICES": "",
+    "PYTHONDONTWRITEBYTECODE": "1"
+  },
+  "child_finished": true,
+  "owned_pid": "<private-pid-1>",
+  "exit_code": 0,
+  "timeout": false,
+  "elapsed_wall_seconds": 0.07819675000000004,
+  "status": "PASS",
+  "stdout": "privacy-units.stdout.txt",
+  "stderr": "privacy-units.stderr.txt",
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_sha256": "c6b9b1f09add0403cc07e90bfdf272129b1ddfa2f8f7675ea8218862f2516371"
+}

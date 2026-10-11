@@ -1,0 +1,3 @@
+FLASH_PROBE_READY name=/flash_m2_mock_3652709_691093317274812_mock_3652710_691093346363252 abi=2 rank=0
+
+{"status": "PASS", "synthetic": true, "events": 1205, "threads": 4, "forwarded_error_codes": [4, 5, 7], "recursive_internal_init_suppressed": true}

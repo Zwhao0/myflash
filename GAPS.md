@@ -230,3 +230,38 @@ network impairment was injected; those cases remain deterministic mock coverage.
 G01/G02/G04/G09/G13 also remain OPEN. Original scientific algorithms/evidence
 unchanged, final_alert=false/final_fault_ranks=[]; no M6 overall/science/GPU PASS.
 Next unique task is independent M6-A Draft PR technical review.
+
+
+## M6B-READY-G0-E (2026-10-11; no scientific choices)
+ADAPTATION: unchanged IterationReader.read accepts after_iteration>last as
+READ_CONFIRMED (last1/cursor2 or1000000, last501/500retained/cursor502). Strict
+integer contract also fails for bool, floats, NaN/+Inf. Independent CPU test
+exit1/9failures, pre-assert raw receipts retained; first one-node setup ERROR
+retained separately, not defect evidence. No core fix; Gate4 OPEN/NOT_RUN.
+PAPER500retention does not define this engineering cursor type rule.
+
+M6B-READY goal remains BLOCKED: G1 candidate C finite historical engineering
+PASS does not install S2 or point sys.executable at C; G2 full scientific
+parameters/preprocessing/G01/G02/G13 and G3 weights/20%/CV/conflicts still require
+owner choices. G20 Reporter completion/outbox/ACK, caller-clock confirmed_at,
+physical restart and native ABI2 generation bridge remain OPEN. CPU simulated
+applied/sample/drain evidence cannot close GPU/cross-node gates. G5/G09 scope,
+truth isolation, metrics and safety plan require review; real M6-B NOT_RUN.
+Historical installation original human message located (scope M6-A only, message
+time/version/path not supplied); future reuse requires owner decision. Prior
+FAIL/NOT_CAPTURED/normal provisional candidates/cross-label conflicts retained.
+See docs/m6b-ready/g0-evidence. Only next task: independent ChatGPT review.
+
+
+## M6B-READY-G0F cursor engineering scope (2026-10-11)
+ADAPTATION / task01 human-authorized future cursor contract implemented in
+flash/m6_iteration.py:IterationReader.read. Existing integer helper enforces
+type(value) is int and >=0 before store read; valid future cursor rejected only
+after existing integrity checks. None and legal boundaries preserve full window.
+77 CPU tests exit0; unchanged original9 red tests now green, old9failures/exit1
+raw and sanitized history byte preserved. Sources/argv/logs/environment and
+formal1424/.so preservation: docs/m6b-ready/g0f-cursor. Cursor engineering PASS
+only; original G01/G02/G04/G13/G09/G20 and other gate decisions remain OPEN/
+NOT_APPROVED, M6B-READY overall BLOCKED. No Redis/service/install/GPU/native fit.
+Historical privacy/PID/binary rights DEFERRED/OPEN by current task package, no
+history rewriting or scientific acceptance implied. Stop for exact-head review.

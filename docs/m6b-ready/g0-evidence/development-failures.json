@@ -1,0 +1,34 @@
+{
+  "classification": "ADAPTATION",
+  "commands": [
+    {
+      "command": [
+        "git",
+        "bundle",
+        "create",
+        "<new-private-bundle>",
+        "5b91977b07b4f357e0c2e37490739e4a5803fea0",
+        "^e3f6b4225db83ec97e0b59161fa4f46a14ab9f68"
+      ],
+      "exit_code": 128,
+      "stderr": "fatal: Refusing to create empty bundle.",
+      "reason": "git bundle requires a named positive ref; retried with exact branch at same SHA"
+    },
+    {
+      "command": [
+        "python3",
+        "<private transfer payload construction>"
+      ],
+      "exit_code": 1,
+      "stderr": "FileNotFoundError: baseline.bundle absent; no remote mutation"
+    },
+    {
+      "command": [
+        "python3",
+        "<private remote wrapper>"
+      ],
+      "exit_code": 1,
+      "stderr": "shell redirection failed because execute-remote.py absent; no remote mutation"
+    }
+  ]
+}

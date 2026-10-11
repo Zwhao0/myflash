@@ -1,0 +1,13 @@
+{
+  "command": [
+    "python3",
+    "scripts/privacy_check.py"
+  ],
+  "exit_code": 0,
+  "timeout": false,
+  "log": "runs/m6a-final-publication-check-02/privacy.log",
+  "log_sha256": "116097fcd38a8359442f2b220bfb2b0831589f634ea21ae44a9fd0b2e18fff60",
+  "elapsed_test_wall_seconds": 164.67542116700002,
+  "status": "PASS",
+  "child_finished": true
+}

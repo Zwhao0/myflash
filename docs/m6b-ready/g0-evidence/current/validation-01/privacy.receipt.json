@@ -1,0 +1,23 @@
+{
+  "command": [
+    "<approved-project>/.venv-m5/bin/python",
+    "scripts/privacy_check.py"
+  ],
+  "cwd": "<approved-project>/runs/m6b-ready-g0-e-20261011/checkout",
+  "timeout_budget_seconds": 600,
+  "environment": {
+    "LD_PRELOAD": "REMOVED",
+    "CUDA_VISIBLE_DEVICES": "",
+    "PYTHONDONTWRITEBYTECODE": "1"
+  },
+  "child_finished": true,
+  "owned_pid": "<private-pid-5>",
+  "exit_code": 0,
+  "timeout": false,
+  "elapsed_wall_seconds": 133.55194151296746,
+  "status": "PASS",
+  "stdout": "privacy.stdout.txt",
+  "stderr": "privacy.stderr.txt",
+  "stdout_sha256": "116097fcd38a8359442f2b220bfb2b0831589f634ea21ae44a9fd0b2e18fff60",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

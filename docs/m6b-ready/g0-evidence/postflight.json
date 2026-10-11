@@ -1,0 +1,27 @@
+{
+  "classification": "ADAPTATION",
+  "current_observation": {
+    "machine_alias": "node-0",
+    "formal_file_count": 1424,
+    "formal_unchanged": true,
+    "original_m6a_checkout_unchanged": true,
+    "own_run_sockets_remaining": 0,
+    "all_test_children_waited": true,
+    "driver_exit_codes": [
+      1,
+      1
+    ],
+    "redis_started": 0,
+    "gpu_started": 0,
+    "native_build_or_load": 0,
+    "rbeast_fits": 0
+  },
+  "historical_cleanup": {
+    "source": "5b91977:docs/m6/postflight.json",
+    "owned_redis_processes_alive": 0,
+    "owned_sockets_remaining": 0,
+    "meaning": "Historical receipt only; not a new current host measurement"
+  },
+  "current_historical_redis_pid_socket_observation": "NOT_RUN; no new zero-residual claim for historical Redis",
+  "formal_original_so_sha256": "a7432000e18465d8e4d2ba895a8618b388007528757718d286fcb82440bbb157"
+}

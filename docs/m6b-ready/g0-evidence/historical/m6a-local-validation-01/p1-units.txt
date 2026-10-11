@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "<local-project>/m6a-work/tests/m5_p1_compare.py", line 28, in <module>
+    assert not validate_fit(fit,'binary',[1.,2.],{})
+  File "<local-project>/m6a-work/scripts/m5_p1_compare.py", line 64, in validate_fit
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'

@@ -1,0 +1,13 @@
+{
+  "argv": [
+    "<approved-project>/.venv-m5/bin/python",
+    "<private-run>/collector.py",
+    "<approved-checkout>",
+    "<approved-project>/.venv-m5",
+    "<private-run>/validation-01",
+    "<approved-project>/runs/m6b-ready-g0-e-20261011/validation-02"
+  ],
+  "exit_code": 0,
+  "child_finished": true,
+  "timeout": false
+}

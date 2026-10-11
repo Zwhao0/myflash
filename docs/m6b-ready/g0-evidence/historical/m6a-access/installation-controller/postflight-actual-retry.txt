@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "owned_redis_processes_alive": 0,
+  "owned_sockets_remaining": 0,
+  "formal_unchanged": true,
+  "formal_file_count": 1424
+}

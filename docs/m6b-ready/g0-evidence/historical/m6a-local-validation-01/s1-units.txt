@@ -1,0 +1,49 @@
+...E..E.EE......
+======================================================================
+ERROR: test_future_invariance (__main__.Evidence)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<local-project>/m6a-work/tests/m5_s1_offline.py", line 79, in test_future_invariance
+    history={};short=[a.analyze_prefix(x,history) for x in self.saved[:23]]
+  File "<local-project>/m6a-work/tests/m5_s1_offline.py", line 79, in <listcomp>
+    history={};short=[a.analyze_prefix(x,history) for x in self.saved[:23]]
+  File "<local-project>/m6a-work/scripts/m5_s1_analysis.py", line 93, in analyze_prefix
+    raise ValueError('independent preprocessing mismatch')
+ValueError: independent preprocessing mismatch
+
+======================================================================
+ERROR: test_published_values_match_saved (__main__.Evidence)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<local-project>/m6a-work/tests/m5_s1_offline.py", line 118, in test_published_values_match_saved
+    history={};rows=[a.analyze_prefix(x,history) for x in self.saved]
+  File "<local-project>/m6a-work/tests/m5_s1_offline.py", line 118, in <listcomp>
+    history={};rows=[a.analyze_prefix(x,history) for x in self.saved]
+  File "<local-project>/m6a-work/scripts/m5_s1_analysis.py", line 93, in analyze_prefix
+    raise ValueError('independent preprocessing mismatch')
+ValueError: independent preprocessing mismatch
+
+======================================================================
+ERROR: test_saved_prefix_and_raw_mapping (__main__.Evidence)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<local-project>/m6a-work/tests/m5_s1_offline.py", line 62, in test_saved_prefix_and_raw_mapping
+    row=a.analyze_prefix(saved,history)
+  File "<local-project>/m6a-work/scripts/m5_s1_analysis.py", line 93, in analyze_prefix
+    raise ValueError('independent preprocessing mismatch')
+ValueError: independent preprocessing mismatch
+
+======================================================================
+ERROR: test_streak_reset_on_gap_and_drift (__main__.Evidence)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<local-project>/m6a-work/tests/m5_s1_offline.py", line 101, in test_streak_reset_on_gap_and_drift
+    a.analyze_prefix(self.saved[22],h);self.assertEqual(h[(21,'A')],2)
+  File "<local-project>/m6a-work/scripts/m5_s1_analysis.py", line 93, in analyze_prefix
+    raise ValueError('independent preprocessing mismatch')
+ValueError: independent preprocessing mismatch
+
+----------------------------------------------------------------------
+Ran 16 tests in 8.147s
+
+FAILED (errors=4)

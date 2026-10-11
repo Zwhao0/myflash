@@ -1,0 +1,3256 @@
+{
+  "active": null,
+  "epochs": [
+    {
+      "analysis": {
+        "candidate_ranks": [
+          2
+        ],
+        "completeness": {
+          "communicator_scope_observations": 6,
+          "expected_instances": 6,
+          "independent_process_scopes": 6,
+          "records": 6,
+          "valid_records": 6
+        },
+        "context": {
+          "profile_epoch": 1,
+          "run_id": "m6r-a47daed2044c4ec88049b6a0eb2aba1f"
+        },
+        "cross_tag": {
+          "conflict": false,
+          "support": {
+            "2": {
+              "evidence": [
+                {
+                  "avg_latency_us": 2.0,
+                  "comparison_rank_means_us": {
+                    "2": 2.0,
+                    "3": 30.0
+                  },
+                  "id_hash": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+                  "label": "DP",
+                  "method": "unweighted_communicator_mean",
+                  "rank_cv": {
+                    "convention": "population baseline; sample sensitivity (ADAPTATION G04)",
+                    "decision": "ABOVE",
+                    "mean_us": 16.0,
+                    "population": 0.875,
+                    "sample": 1.2374368670764582
+                  },
+                  "rule": "min rank after max group/CV",
+                  "status": "PROVISIONAL_CANDIDATE"
+                },
+                {
+                  "avg_latency_us": 2.0,
+                  "comparison_rank_means_us": {
+                    "2": 2.0,
+                    "3": 30.0
+                  },
+                  "id_hash": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+                  "label": "DP",
+                  "method": "sample_weighted",
+                  "rank_cv": {
+                    "convention": "population baseline; sample sensitivity (ADAPTATION G04)",
+                    "decision": "ABOVE",
+                    "mean_us": 16.0,
+                    "population": 0.875,
+                    "sample": 1.2374368670764582
+                  },
+                  "rule": "min rank after max group/CV",
+                  "status": "PROVISIONAL_CANDIDATE"
+                }
+              ],
+              "labels": [
+                "DP"
+              ]
+            }
+          }
+        },
+        "final_alert": false,
+        "final_fault_ranks": [],
+        "groups": {
+          "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa": {
+            "clique_mean_us": 10.0,
+            "id_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+            "local_communicators": [
+              {
+                "avg_latency_us": 9.0,
+                "comm_generation": 1,
+                "global_rank": 0,
+                "max_us": 9.0,
+                "min_us": 9.0,
+                "node_id": "node-0",
+                "process_instance": "p0",
+                "sample_count": 1
+              },
+              {
+                "avg_latency_us": 11.0,
+                "comm_generation": 1,
+                "global_rank": 1,
+                "max_us": 11.0,
+                "min_us": 11.0,
+                "node_id": "node-1",
+                "process_instance": "p1",
+                "sample_count": 1
+              }
+            ],
+            "max_avg_latency_us": 11.0,
+            "members": [
+              0,
+              1
+            ]
+          },
+          "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb": {
+            "clique_mean_us": 16.0,
+            "id_hash": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+            "local_communicators": [
+              {
+                "avg_latency_us": 2.0,
+                "comm_generation": 1,
+                "global_rank": 2,
+                "max_us": 2.0,
+                "min_us": 2.0,
+                "node_id": "node-0",
+                "process_instance": "p2",
+                "sample_count": 1
+              },
+              {
+                "avg_latency_us": 30.0,
+                "comm_generation": 1,
+                "global_rank": 3,
+                "max_us": 30.0,
+                "min_us": 30.0,
+                "node_id": "node-1",
+                "process_instance": "p3",
+                "sample_count": 1
+              }
+            ],
+            "max_avg_latency_us": 30.0,
+            "members": [
+              2,
+              3
+            ]
+          },
+          "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc": {
+            "clique_mean_us": 15.0,
+            "id_hash": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+            "local_communicators": [
+              {
+                "avg_latency_us": 15.0,
+                "comm_generation": 1,
+                "global_rank": 4,
+                "max_us": 15.0,
+                "min_us": 15.0,
+                "node_id": "node-0",
+                "process_instance": "p4",
+                "sample_count": 1
+              },
+              {
+                "avg_latency_us": 15.0,
+                "comm_generation": 1,
+                "global_rank": 5,
+                "max_us": 15.0,
+                "min_us": 15.0,
+                "node_id": "node-1",
+                "process_instance": "p5",
+                "sample_count": 1
+              }
+            ],
+            "max_avg_latency_us": 15.0,
+            "members": [
+              4,
+              5
+            ]
+          }
+        },
+        "input_sha256": "2dac7452f8b3e5dd264504a6263491878d049609bc6c0a7dd43186442af83634",
+        "interpretation": "Offline ordering evidence only; no final fault decision, probability or automatic diagnosis",
+        "manifest_sha256": "a301f1e39bcaf7d1c440d5ff71d3d24d2da8501ee7a3255c39870e60418e2922",
+        "measurement_signatures": [
+          {
+            "api": "ncclAllReduce",
+            "count": 4,
+            "count_unit": "elements",
+            "datatype": 7,
+            "member_records": 6
+          }
+        ],
+        "risks": [],
+        "schema_version": 1,
+        "source": "CPU_SIMULATED_M4_REPLAY",
+        "status": "PROVISIONAL_CANDIDATE",
+        "tags": {
+          "DP": {
+            "clique_scores": {
+              "reference_mean_us": 13.666666666666666,
+              "scores": {
+                "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa": -0.2682926829268293,
+                "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb": 0.17073170731707332,
+                "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc": 0.09756097560975618
+              },
+              "status": "DEFINED"
+            },
+            "excluded_single_rank": [],
+            "group_cv": {
+              "convention": "population baseline; sample sensitivity (ADAPTATION G04)",
+              "decision": "ABOVE",
+              "mean_us": 18.666666666666668,
+              "population": 0.43813729094233195,
+              "sample": 0.5366064000470256
+            },
+            "max_avg_latency_us": {
+              "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa": 11.0,
+              "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb": 30.0,
+              "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc": 15.0
+            },
+            "selected_groups": [
+              "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+            ],
+            "stage1": "MAX_GROUP",
+            "stage2": {
+              "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb": {
+                "methods": {
+                  "sample_weighted": {
+                    "avg_latency_us": {
+                      "2": 2.0,
+                      "3": 30.0
+                    },
+                    "candidates": [
+                      2
+                    ],
+                    "cv": {
+                      "convention": "population baseline; sample sensitivity (ADAPTATION G04)",
+                      "decision": "ABOVE",
+                      "mean_us": 16.0,
+                      "population": 0.875,
+                      "sample": 1.2374368670764582
+                    },
+                    "rank_scores": {
+                      "reference_mean_us": 16.0,
+                      "scores": {
+                        "2": 0.875,
+                        "3": -0.875
+                      },
+                      "status": "DEFINED"
+                    },
+                    "rule": "minimum avg_latency; 20% filter unresolved and disabled"
+                  },
+                  "unweighted_communicator_mean": {
+                    "avg_latency_us": {
+                      "2": 2.0,
+                      "3": 30.0
+                    },
+                    "candidates": [
+                      2
+                    ],
+                    "cv": {
+                      "convention": "population baseline; sample sensitivity (ADAPTATION G04)",
+                      "decision": "ABOVE",
+                      "mean_us": 16.0,
+                      "population": 0.875,
+                      "sample": 1.2374368670764582
+                    },
+                    "rank_scores": {
+                      "reference_mean_us": 16.0,
+                      "scores": {
+                        "2": 0.875,
+                        "3": -0.875
+                      },
+                      "status": "DEFINED"
+                    },
+                    "rule": "minimum avg_latency; 20% filter unresolved and disabled"
+                  }
+                },
+                "sensitivity_disagreement": false,
+                "status": "PROVISIONAL_CANDIDATE"
+              }
+            },
+            "status": "PROVISIONAL_CANDIDATE"
+          }
+        },
+        "unresolved": [
+          "G04: 20% reference/filter undefined",
+          "G04: communicator aggregation weights undefined",
+          "G04: statistical references and std convention not uniquely specified"
+        ]
+      },
+      "closed_at_seconds": 20.7,
+      "command_at_seconds": 20.5,
+      "completeness": {
+        "communicator_scope_observations": 6,
+        "expected_instances": 6,
+        "independent_process_scopes": 6,
+        "records": 6,
+        "valid_records": 6
+      },
+      "data_sha256": "2dac7452f8b3e5dd264504a6263491878d049609bc6c0a7dd43186442af83634",
+      "deadline_seconds": 25.5,
+      "duration_seconds": 20.0,
+      "failure": null,
+      "iteration_record": {
+        "cuda_completion_wait": false,
+        "global_rank": 0,
+        "iteration": 1,
+        "iteration_time_ms": 100.0,
+        "run_id": "m6r-a47daed2044c4ec88049b6a0eb2aba1f",
+        "source": "CPU_SIMULATED_FRAMEWORK",
+        "timestamp": "2026-10-10T00:00:00+00:00",
+        "timing_boundary": "cpu_simulated_iteration_end"
+      },
+      "iteration_sha256": "6955513d9a560d13afd92f94b8e63e0ee2f455ad017074db136e3d2dc12a4778",
+      "last_time_seconds": 20.7,
+      "manifest": {
+        "communicators": [
+          {
+            "id_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+            "local_instances": [
+              {
+                "comm_generation": 1,
+                "comm_rank": 0,
+                "expected_records": 1,
+                "expected_samples": 1,
+                "global_rank": 0,
+                "node_id": "node-0",
+                "process_instance": "p0"
+              },
+              {
+                "comm_generation": 1,
+                "comm_rank": 1,
+                "expected_records": 1,
+                "expected_samples": 1,
+                "global_rank": 1,
+                "node_id": "node-1",
+                "process_instance": "p1"
+              }
+            ],
+            "members": [
+              0,
+              1
+            ]
+          },
+          {
+            "id_hash": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+            "local_instances": [
+              {
+                "comm_generation": 1,
+                "comm_rank": 0,
+                "expected_records": 1,
+                "expected_samples": 1,
+                "global_rank": 2,
+                "node_id": "node-0",
+                "process_instance": "p2"
+              },
+              {
+                "comm_generation": 1,
+                "comm_rank": 1,
+                "expected_records": 1,
+                "expected_samples": 1,
+                "global_rank": 3,
+                "node_id": "node-1",
+                "process_instance": "p3"
+              }
+            ],
+            "members": [
+              2,
+              3
+            ]
+          },
+          {
+            "id_hash": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+            "local_instances": [
+              {
+                "comm_generation": 1,
+                "comm_rank": 0,
+                "expected_records": 1,
+                "expected_samples": 1,
+                "global_rank": 4,
+                "node_id": "node-0",
+                "process_instance": "p4"
+              },
+              {
+                "comm_generation": 1,
+                "comm_rank": 1,
+                "expected_records": 1,
+                "expected_samples": 1,
+                "global_rank": 5,
+                "node_id": "node-1",
+                "process_instance": "p5"
+              }
+            ],
+            "members": [
+              4,
+              5
+            ]
+          }
+        ],
+        "context": {
+          "profile_epoch": 1,
+          "run_id": "m6r-a47daed2044c4ec88049b6a0eb2aba1f"
+        },
+        "parallel_states": [
+          {
+            "evidence": "explicit fixed fixture membership",
+            "id_hashes": [
+              "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+            ],
+            "label": "DP",
+            "members": [
+              0,
+              1
+            ]
+          },
+          {
+            "evidence": "explicit fixed fixture membership",
+            "id_hashes": [
+              "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+            ],
+            "label": "DP",
+            "members": [
+              2,
+              3
+            ]
+          },
+          {
+            "evidence": "explicit fixed fixture membership",
+            "id_hashes": [
+              "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"
+            ],
+            "label": "DP",
+            "members": [
+              4,
+              5
+            ]
+          }
+        ],
+        "records": [],
+        "schema_version": 1
+      },
+      "manifest_sha256": "a301f1e39bcaf7d1c440d5ff71d3d24d2da8501ee7a3255c39870e60418e2922",
+      "nodes": {
+        "node-0": {
+          "ack": {
+            "accepted_at_seconds": 20.5,
+            "command_id": "e1-g1-s0-node-0",
+            "command_sha256": "a09114b495521d560dc225eceaa459a2831ad95541552473b1260171d7dd1371",
+            "kind": "COMMAND_ACCEPTED_ONLY",
+            "local_generation": 1,
+            "source": "CPU_LOCAL_CONTROLLER"
+          },
+          "applied": {
+            "0": {
+              "applied_at_seconds": 20.599999999999998,
+              "boundary": "legal_scope_start",
+              "command_id": "e1-g1-s0-node-0",
+              "generation": 1,
+              "global_rank": 0,
+              "local_generation": 1,
+              "node_id": "node-0",
+              "profile_epoch": 1,
+              "requested_state": 0,
+              "run_id": "m6r-a47daed2044c4ec88049b6a0eb2aba1f",
+              "scope_sequence": 2,
+              "source": "CPU_SIMULATED_PROBE"
+            },
+            "2": {
+              "applied_at_seconds": 20.599999999999998,
+              "boundary": "legal_scope_start",
+              "command_id": "e1-g1-s0-node-0",
+              "generation": 1,
+              "global_rank": 2,
+              "local_generation": 1,
+              "node_id": "node-0",
+              "profile_epoch": 1,
+              "requested_state": 0,
+              "run_id": "m6r-a47daed2044c4ec88049b6a0eb2aba1f",
+              "scope_sequence": 2,
+              "source": "CPU_SIMULATED_PROBE"
+            },
+            "4": {
+              "applied_at_seconds": 20.599999999999998,
+              "boundary": "legal_scope_start",
+              "command_id": "e1-g1-s0-node-0",
+              "generation": 1,
+              "global_rank": 4,
+              "local_generation": 1,
+              "node_id": "node-0",
+              "profile_epoch": 1,
+              "requested_state": 0,
+              "run_id": "m6r-a47daed2044c4ec88049b6a0eb2aba1f",
+              "scope_sequence": 2,
+              "source": "CPU_SIMULATED_PROBE"
+            }
+          },
+          "command": {
+            "command_id": "e1-g1-s0-node-0",
+            "deadline_seconds": 25.5,
+            "expected_nodes": [
+              "node-0",
+              "node-1"
+            ],
+            "expected_ranks": [
+              0,
+              2,
+              4
+            ],
+            "generation": 1,
+            "local_generation": 1,
+            "node_id": "node-0",
+            "profile_epoch": 1,
+            "requested_at_seconds": 20.5,
+            "requested_state": 0,
+            "run_id": "m6r-a47daed2044c4ec88049b6a0eb2aba1f",
+            "schema_version": 1
+          },
+          "ignored_old": 3,
+          "ready": null,
+          "samples": []
+        },
+        "node-1": {
+          "ack": {
+            "accepted_at_seconds": 20.5,
+            "command_id": "e1-g1-s0-node-1",
+            "command_sha256": "450bd8604b8e0bb484649082b5916c1c8f6f6e30dd57a8904afad8f7b5afdb2c",
+            "kind": "COMMAND_ACCEPTED_ONLY",
+            "local_generation": 1,
+            "source": "CPU_LOCAL_CONTROLLER"
+          },
+          "applied": {
+            "1": {
+              "applied_at_seconds": 20.599999999999998,
+              "boundary": "legal_scope_start",
+              "command_id": "e1-g1-s0-node-1",
+              "generation": 1,
+              "global_rank": 1,
+              "local_generation": 1,
+              "node_id": "node-1",
+              "profile_epoch": 1,
+              "requested_state": 0,
+              "run_id": "m6r-a47daed2044c4ec88049b6a0eb2aba1f",
+              "scope_sequence": 2,
+              "source": "CPU_SIMULATED_PROBE"
+            },
+            "3": {
+              "applied_at_seconds": 20.599999999999998,
+              "boundary": "legal_scope_start",
+              "command_id": "e1-g1-s0-node-1",
+              "generation": 1,
+              "global_rank": 3,
+              "local_generation": 1,
+              "node_id": "node-1",
+              "profile_epoch": 1,
+              "requested_state": 0,
+              "run_id": "m6r-a47daed2044c4ec88049b6a0eb2aba1f",
+              "scope_sequence": 2,
+              "source": "CPU_SIMULATED_PROBE"
+            },
+            "5": {
+              "applied_at_seconds": 20.599999999999998,
+              "boundary": "legal_scope_start",
+              "command_id": "e1-g1-s0-node-1",
+              "generation": 1,
+              "global_rank": 5,
+              "local_generation": 1,
+              "node_id": "node-1",
+              "profile_epoch": 1,
+              "requested_state": 0,
+              "run_id": "m6r-a47daed2044c4ec88049b6a0eb2aba1f",
+              "scope_sequence": 2,
+              "source": "CPU_SIMULATED_PROBE"
+            }
+          },
+          "command": {
+            "command_id": "e1-g1-s0-node-1",
+            "deadline_seconds": 25.5,
+            "expected_nodes": [
+              "node-0",
+              "node-1"
+            ],
+            "expected_ranks": [
+              1,
+              3,
+              5
+            ],
+            "generation": 1,
+            "local_generation": 1,
+            "node_id": "node-1",
+            "profile_epoch": 1,
+            "requested_at_seconds": 20.5,
+            "requested_state": 0,
+            "run_id": "m6r-a47daed2044c4ec88049b6a0eb2aba1f",
+            "schema_version": 1
+          },
+          "ignored_old": 3,
+          "ready": null,
+          "samples": []
+        }
+      },
+      "profile_epoch": 1,
+      "profile_nodes": {
+        "node-0": {
+          "ack": {
+            "accepted_at_seconds": 0,
+            "command_id": "e1-g1-s1-node-0",
+            "command_sha256": "7abc082e70b576f75ae127d4250b3f25ae7a63392f4cb0af12cb9ae45dd1ed29",
+            "kind": "COMMAND_ACCEPTED_ONLY",
+            "local_generation": 1,
+            "source": "CPU_LOCAL_CONTROLLER"
+          },
+          "applied": {
+            "0": {
+              "applied_at_seconds": 0.1,
+              "boundary": "legal_scope_start",
+              "command_id": "e1-g1-s1-node-0",
+              "generation": 1,
+              "global_rank": 0,
+              "local_generation": 1,
+              "node_id": "node-0",
+              "profile_epoch": 1,
+              "requested_state": 1,
+              "run_id": "m6r-a47daed2044c4ec88049b6a0eb2aba1f",
+              "scope_sequence": 1,
+              "source": "CPU_SIMULATED_PROBE"
+            },
+            "2": {
+              "applied_at_seconds": 0.1,
+              "boundary": "legal_scope_start",
+              "command_id": "e1-g1-s1-node-0",
+              "generation": 1,
+              "global_rank": 2,
+              "local_generation": 1,
+              "node_id": "node-0",
+              "profile_epoch": 1,
+              "requested_state": 1,
+              "run_id": "m6r-a47daed2044c4ec88049b6a0eb2aba1f",
+              "scope_sequence": 1,
+              "source": "CPU_SIMULATED_PROBE"
+            },
+            "4": {
+              "applied_at_seconds": 0.1,
+              "boundary": "legal_scope_start",
+              "command_id": "e1-g1-s1-node-0",
+              "generation": 1,
+              "global_rank": 4,
+              "local_generation": 1,
+              "node_id": "node-0",
+              "profile_epoch": 1,
+              "requested_state": 1,
+              "run_id": "m6r-a47daed2044c4ec88049b6a0eb2aba1f",
+              "scope_sequence": 1,
+              "source": "CPU_SIMULATED_PROBE"
+            }
+          },
+          "command": {
+            "command_id": "e1-g1-s1-node-0",
+            "deadline_seconds": 5.0,
+            "expected_nodes": [
+              "node-0",
+              "node-1"
+            ],
+            "expected_ranks": [
+              0,
+              2,
+              4
+            ],
+            "generation": 1,
+            "local_generation": 1,
+            "node_id": "node-0",
+            "profile_epoch": 1,
+            "requested_at_seconds": 0,
+            "requested_state": 1,
+            "run_id": "m6r-a47daed2044c4ec88049b6a0eb2aba1f",
+            "schema_version": 1
+          },
+          "ignored_old": 0,
+          "outside_window": 0,
+          "ready": {
+            "command_sha256": "7abc082e70b576f75ae127d4250b3f25ae7a63392f4cb0af12cb9ae45dd1ed29",
+            "completeness": "PENDING_M4_VALIDATION",
+            "data_sha256": "d80c46a5d2eb92b0babbc74bba030e123c8a34d97ee26107030b9bf3ace34be2",
+            "drained_at_seconds": 20.2,
+            "records": 3,
+            "source": "CPU_SIMULATED_DRAIN"
+          },
+          "samples": [
+            {
+              "collected_at_seconds": 1,
+              "command_id": "e1-g1-s1-node-0",
+              "generation": 1,
+              "local_generation": 1,
+              "row": {
+                "api": "ncclAllReduce",
+                "comm_generation": 1,
+                "comm_rank": 0,
+                "comm_size": 2,
+                "count": 4,
+                "count_unit": "elements",
+                "cuda_results": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -1
+                ],
+                "datatype": 7,
+                "duration_unit": "us",
+                "duration_us": 9,
+                "global_rank": 0,
+                "group_depth": 0,
+                "group_id": 0,
+                "id_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "identity_source": "UNIQUE_ID_SHA256",
+                "node_id": "node-0",
+                "process_instance": "p0",
+                "profile_epoch": 1,
+                "result": 0,
+                "run_id": "m6r-a47daed2044c4ec88049b6a0eb2aba1f",
+                "sample_seq": 1,
+                "state": 1,
+                "thread_id": "t0",
+                "timing_definition": "synthetic_nonnegative_v1",
+                "timing_scope": "collective",
+                "timing_status": "VALID"
+              },
+              "sha256": "7928f68961ca75c24838f45c3b8e21605f124644ac54a7280268b11acd1b5c15",
+              "source": "CPU_SIMULATED_PROBE"
+            },
+            {
+              "collected_at_seconds": 1,
+              "command_id": "e1-g1-s1-node-0",
+              "generation": 1,
+              "local_generation": 1,
+              "row": {
+                "api": "ncclAllReduce",
+                "comm_generation": 1,
+                "comm_rank": 0,
+                "comm_size": 2,
+                "count": 4,
+                "count_unit": "elements",
+                "cuda_results": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -1
+                ],
+                "datatype": 7,
+                "duration_unit": "us",
+                "duration_us": 2,
+                "global_rank": 2,
+                "group_depth": 0,
+                "group_id": 0,
+                "id_hash": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+                "identity_source": "UNIQUE_ID_SHA256",
+                "node_id": "node-0",
+                "process_instance": "p2",
+                "profile_epoch": 1,
+                "result": 0,
+                "run_id": "m6r-a47daed2044c4ec88049b6a0eb2aba1f",
+                "sample_seq": 1,
+                "state": 1,
+                "thread_id": "t0",
+                "timing_definition": "synthetic_nonnegative_v1",
+                "timing_scope": "collective",
+                "timing_status": "VALID"
+              },
+              "sha256": "af4aee16d9b0c5e1dcebd6dac5548d7b6cd7bc0f9cc66c8fc9dbb5610be4ce73",
+              "source": "CPU_SIMULATED_PROBE"
+            },
+            {
+              "collected_at_seconds": 1,
+              "command_id": "e1-g1-s1-node-0",
+              "generation": 1,
+              "local_generation": 1,
+              "row": {
+                "api": "ncclAllReduce",
+                "comm_generation": 1,
+                "comm_rank": 0,
+                "comm_size": 2,
+                "count": 4,
+                "count_unit": "elements",
+                "cuda_results": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -1
+                ],
+                "datatype": 7,
+                "duration_unit": "us",
+                "duration_us": 15,
+                "global_rank": 4,
+                "group_depth": 0,
+                "group_id": 0,
+                "id_hash": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+                "identity_source": "UNIQUE_ID_SHA256",
+                "node_id": "node-0",
+                "process_instance": "p4",
+                "profile_epoch": 1,
+                "result": 0,
+                "run_id": "m6r-a47daed2044c4ec88049b6a0eb2aba1f",
+                "sample_seq": 1,
+                "state": 1,
+                "thread_id": "t0",
+                "timing_definition": "synthetic_nonnegative_v1",
+                "timing_scope": "collective",
+                "timing_status": "VALID"
+              },
+              "sha256": "13f63bd94e433a1c42cf9fd24249e6de7692964368b442fd2b098075fc066522",
+              "source": "CPU_SIMULATED_PROBE"
+            }
+          ]
+        },
+        "node-1": {
+          "ack": {
+            "accepted_at_seconds": 0,
+            "command_id": "e1-g1-s1-node-1",
+            "command_sha256": "f2e1dec496c28a739b85ef458f8b64409a8da257f424549139f21f6113f9024f",
+            "kind": "COMMAND_ACCEPTED_ONLY",
+            "local_generation": 1,
+            "source": "CPU_LOCAL_CONTROLLER"
+          },
+          "applied": {
+            "1": {
+              "applied_at_seconds": 0.1,
+              "boundary": "legal_scope_start",
+              "command_id": "e1-g1-s1-node-1",
+              "generation": 1,
+              "global_rank": 1,
+              "local_generation": 1,
+              "node_id": "node-1",
+              "profile_epoch": 1,
+              "requested_state": 1,
+              "run_id": "m6r-a47daed2044c4ec88049b6a0eb2aba1f",
+              "scope_sequence": 1,
+              "source": "CPU_SIMULATED_PROBE"
+            },
+            "3": {
+              "applied_at_seconds": 0.1,
+              "boundary": "legal_scope_start",
+              "command_id": "e1-g1-s1-node-1",
+              "generation": 1,
+              "global_rank": 3,
+              "local_generation": 1,
+              "node_id": "node-1",
+              "profile_epoch": 1,
+              "requested_state": 1,
+              "run_id": "m6r-a47daed2044c4ec88049b6a0eb2aba1f",
+              "scope_sequence": 1,
+              "source": "CPU_SIMULATED_PROBE"
+            },
+            "5": {
+              "applied_at_seconds": 0.1,
+              "boundary": "legal_scope_start",
+              "command_id": "e1-g1-s1-node-1",
+              "generation": 1,
+              "global_rank": 5,
+              "local_generation": 1,
+              "node_id": "node-1",
+              "profile_epoch": 1,
+              "requested_state": 1,
+              "run_id": "m6r-a47daed2044c4ec88049b6a0eb2aba1f",
+              "scope_sequence": 1,
+              "source": "CPU_SIMULATED_PROBE"
+            }
+          },
+          "command": {
+            "command_id": "e1-g1-s1-node-1",
+            "deadline_seconds": 5.0,
+            "expected_nodes": [
+              "node-0",
+              "node-1"
+            ],
+            "expected_ranks": [
+              1,
+              3,
+              5
+            ],
+            "generation": 1,
+            "local_generation": 1,
+            "node_id": "node-1",
+            "profile_epoch": 1,
+            "requested_at_seconds": 0,
+            "requested_state": 1,
+            "run_id": "m6r-a47daed2044c4ec88049b6a0eb2aba1f",
+            "schema_version": 1
+          },
+          "ignored_old": 0,
+          "outside_window": 0,
+          "ready": {
+            "command_sha256": "f2e1dec496c28a739b85ef458f8b64409a8da257f424549139f21f6113f9024f",
+            "completeness": "PENDING_M4_VALIDATION",
+            "data_sha256": "be8a6bf72661da5ac4b10c66da11ee64d353d551797399ae280daf76ce93cc4c",
+            "drained_at_seconds": 20.2,
+            "records": 3,
+            "source": "CPU_SIMULATED_DRAIN"
+          },
+          "samples": [
+            {
+              "collected_at_seconds": 1,
+              "command_id": "e1-g1-s1-node-1",
+              "generation": 1,
+              "local_generation": 1,
+              "row": {
+                "api": "ncclAllReduce",
+                "comm_generation": 1,
+                "comm_rank": 1,
+                "comm_size": 2,
+                "count": 4,
+                "count_unit": "elements",
+                "cuda_results": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -1
+                ],
+                "datatype": 7,
+                "duration_unit": "us",
+                "duration_us": 11,
+                "global_rank": 1,
+                "group_depth": 0,
+                "group_id": 0,
+                "id_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "identity_source": "UNIQUE_ID_SHA256",
+                "node_id": "node-1",
+                "process_instance": "p1",
+                "profile_epoch": 1,
+                "result": 0,
+                "run_id": "m6r-a47daed2044c4ec88049b6a0eb2aba1f",
+                "sample_seq": 1,
+                "state": 1,
+                "thread_id": "t0",
+                "timing_definition": "synthetic_nonnegative_v1",
+                "timing_scope": "collective",
+                "timing_status": "VALID"
+              },
+              "sha256": "19ceb37ff95667097eb9f5d36c0ac530a9fd6fe0b0c06fb53b59d47292c2c524",
+              "source": "CPU_SIMULATED_PROBE"
+            },
+            {
+              "collected_at_seconds": 1,
+              "command_id": "e1-g1-s1-node-1",
+              "generation": 1,
+              "local_generation": 1,
+              "row": {
+                "api": "ncclAllReduce",
+                "comm_generation": 1,
+                "comm_rank": 1,
+                "comm_size": 2,
+                "count": 4,
+                "count_unit": "elements",
+                "cuda_results": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -1
+                ],
+                "datatype": 7,
+                "duration_unit": "us",
+                "duration_us": 30,
+                "global_rank": 3,
+                "group_depth": 0,
+                "group_id": 0,
+                "id_hash": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+                "identity_source": "UNIQUE_ID_SHA256",
+                "node_id": "node-1",
+                "process_instance": "p3",
+                "profile_epoch": 1,
+                "result": 0,
+                "run_id": "m6r-a47daed2044c4ec88049b6a0eb2aba1f",
+                "sample_seq": 1,
+                "state": 1,
+                "thread_id": "t0",
+                "timing_definition": "synthetic_nonnegative_v1",
+                "timing_scope": "collective",
+                "timing_status": "VALID"
+              },
+              "sha256": "2ac27a7201ac0b9a059a5f5fa8a4339af90b6b27cec4b3c197301f8ff98619c2",
+              "source": "CPU_SIMULATED_PROBE"
+            },
+            {
+              "collected_at_seconds": 1,
+              "command_id": "e1-g1-s1-node-1",
+              "generation": 1,
+              "local_generation": 1,
+              "row": {
+                "api": "ncclAllReduce",
+                "comm_generation": 1,
+                "comm_rank": 1,
+                "comm_size": 2,
+                "count": 4,
+                "count_unit": "elements",
+                "cuda_results": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -1
+                ],
+                "datatype": 7,
+                "duration_unit": "us",
+                "duration_us": 15,
+                "global_rank": 5,
+                "group_depth": 0,
+                "group_id": 0,
+                "id_hash": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+                "identity_source": "UNIQUE_ID_SHA256",
+                "node_id": "node-1",
+                "process_instance": "p5",
+                "profile_epoch": 1,
+                "result": 0,
+                "run_id": "m6r-a47daed2044c4ec88049b6a0eb2aba1f",
+                "sample_seq": 1,
+                "state": 1,
+                "thread_id": "t0",
+                "timing_definition": "synthetic_nonnegative_v1",
+                "timing_scope": "collective",
+                "timing_status": "VALID"
+              },
+              "sha256": "424b0612b1b65840d72fcdd20139172222c23f63b7d20adb67bf320d453915f0",
+              "source": "CPU_SIMULATED_PROBE"
+            }
+          ]
+        }
+      },
+      "request_id": "one",
+      "request_sha256": "952e6960bf39a5c489d26feaf6995c16afae426dda585f97f02f076d2c89a2a5",
+      "reset_nodes": {
+        "node-0": {
+          "ack": {
+            "accepted_at_seconds": 20.5,
+            "command_id": "e1-g1-s0-node-0",
+            "command_sha256": "a09114b495521d560dc225eceaa459a2831ad95541552473b1260171d7dd1371",
+            "kind": "COMMAND_ACCEPTED_ONLY",
+            "local_generation": 1,
+            "source": "CPU_LOCAL_CONTROLLER"
+          },
+          "applied": {
+            "0": {
+              "applied_at_seconds": 20.599999999999998,
+              "boundary": "legal_scope_start",
+              "command_id": "e1-g1-s0-node-0",
+              "generation": 1,
+              "global_rank": 0,
+              "local_generation": 1,
+              "node_id": "node-0",
+              "profile_epoch": 1,
+              "requested_state": 0,
+              "run_id": "m6r-a47daed2044c4ec88049b6a0eb2aba1f",
+              "scope_sequence": 2,
+              "source": "CPU_SIMULATED_PROBE"
+            },
+            "2": {
+              "applied_at_seconds": 20.599999999999998,
+              "boundary": "legal_scope_start",
+              "command_id": "e1-g1-s0-node-0",
+              "generation": 1,
+              "global_rank": 2,
+              "local_generation": 1,
+              "node_id": "node-0",
+              "profile_epoch": 1,
+              "requested_state": 0,
+              "run_id": "m6r-a47daed2044c4ec88049b6a0eb2aba1f",
+              "scope_sequence": 2,
+              "source": "CPU_SIMULATED_PROBE"
+            },
+            "4": {
+              "applied_at_seconds": 20.599999999999998,
+              "boundary": "legal_scope_start",
+              "command_id": "e1-g1-s0-node-0",
+              "generation": 1,
+              "global_rank": 4,
+              "local_generation": 1,
+              "node_id": "node-0",
+              "profile_epoch": 1,
+              "requested_state": 0,
+              "run_id": "m6r-a47daed2044c4ec88049b6a0eb2aba1f",
+              "scope_sequence": 2,
+              "source": "CPU_SIMULATED_PROBE"
+            }
+          },
+          "command": {
+            "command_id": "e1-g1-s0-node-0",
+            "deadline_seconds": 25.5,
+            "expected_nodes": [
+              "node-0",
+              "node-1"
+            ],
+            "expected_ranks": [
+              0,
+              2,
+              4
+            ],
+            "generation": 1,
+            "local_generation": 1,
+            "node_id": "node-0",
+            "profile_epoch": 1,
+            "requested_at_seconds": 20.5,
+            "requested_state": 0,
+            "run_id": "m6r-a47daed2044c4ec88049b6a0eb2aba1f",
+            "schema_version": 1
+          },
+          "ignored_old": 3,
+          "ready": null,
+          "samples": []
+        },
+        "node-1": {
+          "ack": {
+            "accepted_at_seconds": 20.5,
+            "command_id": "e1-g1-s0-node-1",
+            "command_sha256": "450bd8604b8e0bb484649082b5916c1c8f6f6e30dd57a8904afad8f7b5afdb2c",
+            "kind": "COMMAND_ACCEPTED_ONLY",
+            "local_generation": 1,
+            "source": "CPU_LOCAL_CONTROLLER"
+          },
+          "applied": {
+            "1": {
+              "applied_at_seconds": 20.599999999999998,
+              "boundary": "legal_scope_start",
+              "command_id": "e1-g1-s0-node-1",
+              "generation": 1,
+              "global_rank": 1,
+              "local_generation": 1,
+              "node_id": "node-1",
+              "profile_epoch": 1,
+              "requested_state": 0,
+              "run_id": "m6r-a47daed2044c4ec88049b6a0eb2aba1f",
+              "scope_sequence": 2,
+              "source": "CPU_SIMULATED_PROBE"
+            },
+            "3": {
+              "applied_at_seconds": 20.599999999999998,
+              "boundary": "legal_scope_start",
+              "command_id": "e1-g1-s0-node-1",
+              "generation": 1,
+              "global_rank": 3,
+              "local_generation": 1,
+              "node_id": "node-1",
+              "profile_epoch": 1,
+              "requested_state": 0,
+              "run_id": "m6r-a47daed2044c4ec88049b6a0eb2aba1f",
+              "scope_sequence": 2,
+              "source": "CPU_SIMULATED_PROBE"
+            },
+            "5": {
+              "applied_at_seconds": 20.599999999999998,
+              "boundary": "legal_scope_start",
+              "command_id": "e1-g1-s0-node-1",
+              "generation": 1,
+              "global_rank": 5,
+              "local_generation": 1,
+              "node_id": "node-1",
+              "profile_epoch": 1,
+              "requested_state": 0,
+              "run_id": "m6r-a47daed2044c4ec88049b6a0eb2aba1f",
+              "scope_sequence": 2,
+              "source": "CPU_SIMULATED_PROBE"
+            }
+          },
+          "command": {
+            "command_id": "e1-g1-s0-node-1",
+            "deadline_seconds": 25.5,
+            "expected_nodes": [
+              "node-0",
+              "node-1"
+            ],
+            "expected_ranks": [
+              1,
+              3,
+              5
+            ],
+            "generation": 1,
+            "local_generation": 1,
+            "node_id": "node-1",
+            "profile_epoch": 1,
+            "requested_at_seconds": 20.5,
+            "requested_state": 0,
+            "run_id": "m6r-a47daed2044c4ec88049b6a0eb2aba1f",
+            "schema_version": 1
+          },
+          "ignored_old": 3,
+          "ready": null,
+          "samples": []
+        }
+      },
+      "reset_verified": true,
+      "result": {
+        "candidate_ranks": [
+          2
+        ],
+        "completeness": {
+          "communicator_scope_observations": 6,
+          "expected_instances": 6,
+          "independent_process_scopes": 6,
+          "records": 6,
+          "valid_records": 6
+        },
+        "context": {
+          "profile_epoch": 1,
+          "run_id": "m6r-a47daed2044c4ec88049b6a0eb2aba1f"
+        },
+        "cross_tag": {
+          "conflict": false,
+          "support": {
+            "2": {
+              "evidence": [
+                {
+                  "avg_latency_us": 2.0,
+                  "comparison_rank_means_us": {
+                    "2": 2.0,
+                    "3": 30.0
+                  },
+                  "id_hash": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+                  "label": "DP",
+                  "method": "unweighted_communicator_mean",
+                  "rank_cv": {
+                    "convention": "population baseline; sample sensitivity (ADAPTATION G04)",
+                    "decision": "ABOVE",
+                    "mean_us": 16.0,
+                    "population": 0.875,
+                    "sample": 1.2374368670764582
+                  },
+                  "rule": "min rank after max group/CV",
+                  "status": "PROVISIONAL_CANDIDATE"
+                },
+                {
+                  "avg_latency_us": 2.0,
+                  "comparison_rank_means_us": {
+                    "2": 2.0,
+                    "3": 30.0
+                  },
+                  "id_hash": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+                  "label": "DP",
+                  "method": "sample_weighted",
+                  "rank_cv": {
+                    "convention": "population baseline; sample sensitivity (ADAPTATION G04)",
+                    "decision": "ABOVE",
+                    "mean_us": 16.0,
+                    "population": 0.875,
+                    "sample": 1.2374368670764582
+                  },
+                  "rule": "min rank after max group/CV",
+                  "status": "PROVISIONAL_CANDIDATE"
+                }
+              ],
+              "labels": [
+                "DP"
+              ]
+            }
+          }
+        },
+        "final_alert": false,
+        "final_fault_ranks": [],
+        "groups": {
+          "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa": {
+            "clique_mean_us": 10.0,
+            "id_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+            "local_communicators": [
+              {
+                "avg_latency_us": 9.0,
+                "comm_generation": 1,
+                "global_rank": 0,
+                "max_us": 9.0,
+                "min_us": 9.0,
+                "node_id": "node-0",
+                "process_instance": "p0",
+                "sample_count": 1
+              },
+              {
+                "avg_latency_us": 11.0,
+                "comm_generation": 1,
+                "global_rank": 1,
+                "max_us": 11.0,
+                "min_us": 11.0,
+                "node_id": "node-1",
+                "process_instance": "p1",
+                "sample_count": 1
+              }
+            ],
+            "max_avg_latency_us": 11.0,
+            "members": [
+              0,
+              1
+            ]
+          },
+          "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb": {
+            "clique_mean_us": 16.0,
+            "id_hash": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+            "local_communicators": [
+              {
+                "avg_latency_us": 2.0,
+                "comm_generation": 1,
+                "global_rank": 2,
+                "max_us": 2.0,
+                "min_us": 2.0,
+                "node_id": "node-0",
+                "process_instance": "p2",
+                "sample_count": 1
+              },
+              {
+                "avg_latency_us": 30.0,
+                "comm_generation": 1,
+                "global_rank": 3,
+                "max_us": 30.0,
+                "min_us": 30.0,
+                "node_id": "node-1",
+                "process_instance": "p3",
+                "sample_count": 1
+              }
+            ],
+            "max_avg_latency_us": 30.0,
+            "members": [
+              2,
+              3
+            ]
+          },
+          "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc": {
+            "clique_mean_us": 15.0,
+            "id_hash": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+            "local_communicators": [
+              {
+                "avg_latency_us": 15.0,
+                "comm_generation": 1,
+                "global_rank": 4,
+                "max_us": 15.0,
+                "min_us": 15.0,
+                "node_id": "node-0",
+                "process_instance": "p4",
+                "sample_count": 1
+              },
+              {
+                "avg_latency_us": 15.0,
+                "comm_generation": 1,
+                "global_rank": 5,
+                "max_us": 15.0,
+                "min_us": 15.0,
+                "node_id": "node-1",
+                "process_instance": "p5",
+                "sample_count": 1
+              }
+            ],
+            "max_avg_latency_us": 15.0,
+            "members": [
+              4,
+              5
+            ]
+          }
+        },
+        "input_sha256": "2dac7452f8b3e5dd264504a6263491878d049609bc6c0a7dd43186442af83634",
+        "interpretation": "Offline ordering evidence only; no final fault decision, probability or automatic diagnosis",
+        "manifest_sha256": "a301f1e39bcaf7d1c440d5ff71d3d24d2da8501ee7a3255c39870e60418e2922",
+        "measurement_signatures": [
+          {
+            "api": "ncclAllReduce",
+            "count": 4,
+            "count_unit": "elements",
+            "datatype": 7,
+            "member_records": 6
+          }
+        ],
+        "risks": [],
+        "schema_version": 1,
+        "source": "CPU_SIMULATED_M4_REPLAY",
+        "status": "PROVISIONAL_CANDIDATE",
+        "tags": {
+          "DP": {
+            "clique_scores": {
+              "reference_mean_us": 13.666666666666666,
+              "scores": {
+                "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa": -0.2682926829268293,
+                "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb": 0.17073170731707332,
+                "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc": 0.09756097560975618
+              },
+              "status": "DEFINED"
+            },
+            "excluded_single_rank": [],
+            "group_cv": {
+              "convention": "population baseline; sample sensitivity (ADAPTATION G04)",
+              "decision": "ABOVE",
+              "mean_us": 18.666666666666668,
+              "population": 0.43813729094233195,
+              "sample": 0.5366064000470256
+            },
+            "max_avg_latency_us": {
+              "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa": 11.0,
+              "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb": 30.0,
+              "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc": 15.0
+            },
+            "selected_groups": [
+              "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+            ],
+            "stage1": "MAX_GROUP",
+            "stage2": {
+              "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb": {
+                "methods": {
+                  "sample_weighted": {
+                    "avg_latency_us": {
+                      "2": 2.0,
+                      "3": 30.0
+                    },
+                    "candidates": [
+                      2
+                    ],
+                    "cv": {
+                      "convention": "population baseline; sample sensitivity (ADAPTATION G04)",
+                      "decision": "ABOVE",
+                      "mean_us": 16.0,
+                      "population": 0.875,
+                      "sample": 1.2374368670764582
+                    },
+                    "rank_scores": {
+                      "reference_mean_us": 16.0,
+                      "scores": {
+                        "2": 0.875,
+                        "3": -0.875
+                      },
+                      "status": "DEFINED"
+                    },
+                    "rule": "minimum avg_latency; 20% filter unresolved and disabled"
+                  },
+                  "unweighted_communicator_mean": {
+                    "avg_latency_us": {
+                      "2": 2.0,
+                      "3": 30.0
+                    },
+                    "candidates": [
+                      2
+                    ],
+                    "cv": {
+                      "convention": "population baseline; sample sensitivity (ADAPTATION G04)",
+                      "decision": "ABOVE",
+                      "mean_us": 16.0,
+                      "population": 0.875,
+                      "sample": 1.2374368670764582
+                    },
+                    "rank_scores": {
+                      "reference_mean_us": 16.0,
+                      "scores": {
+                        "2": 0.875,
+                        "3": -0.875
+                      },
+                      "status": "DEFINED"
+                    },
+                    "rule": "minimum avg_latency; 20% filter unresolved and disabled"
+                  }
+                },
+                "sensitivity_disagreement": false,
+                "status": "PROVISIONAL_CANDIDATE"
+              }
+            },
+            "status": "PROVISIONAL_CANDIDATE"
+          }
+        },
+        "unresolved": [
+          "G04: 20% reference/filter undefined",
+          "G04: communicator aggregation weights undefined",
+          "G04: statistical references and std convention not uniquely specified"
+        ]
+      },
+      "started_at_seconds": 0,
+      "transitions": [
+        "MONITOR",
+        "PROFILE_REQUESTED",
+        "PROFILE_ARMING",
+        "PROFILE_COLLECTING",
+        "PROFILE_DRAINING",
+        "PROFILE_READY",
+        "ANALYZED_PROVISIONAL",
+        "MONITOR_RESET_REQUESTED",
+        "MONITOR"
+      ],
+      "trigger": "MANUAL_TEST_TRIGGER",
+      "window": {
+        "end_seconds": 20.2,
+        "start_seconds": 0.2,
+        "time_domain": "single_host_cpu_simulation_monotonic_seconds"
+      }
+    },
+    {
+      "analysis": {
+        "candidate_ranks": [
+          2
+        ],
+        "completeness": {
+          "communicator_scope_observations": 6,
+          "expected_instances": 6,
+          "independent_process_scopes": 6,
+          "records": 6,
+          "valid_records": 6
+        },
+        "context": {
+          "profile_epoch": 2,
+          "run_id": "m6r-a47daed2044c4ec88049b6a0eb2aba1f"
+        },
+        "cross_tag": {
+          "conflict": false,
+          "support": {
+            "2": {
+              "evidence": [
+                {
+                  "avg_latency_us": 2.0,
+                  "comparison_rank_means_us": {
+                    "2": 2.0,
+                    "3": 30.0
+                  },
+                  "id_hash": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+                  "label": "DP",
+                  "method": "unweighted_communicator_mean",
+                  "rank_cv": {
+                    "convention": "population baseline; sample sensitivity (ADAPTATION G04)",
+                    "decision": "ABOVE",
+                    "mean_us": 16.0,
+                    "population": 0.875,
+                    "sample": 1.2374368670764582
+                  },
+                  "rule": "min rank after max group/CV",
+                  "status": "PROVISIONAL_CANDIDATE"
+                },
+                {
+                  "avg_latency_us": 2.0,
+                  "comparison_rank_means_us": {
+                    "2": 2.0,
+                    "3": 30.0
+                  },
+                  "id_hash": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+                  "label": "DP",
+                  "method": "sample_weighted",
+                  "rank_cv": {
+                    "convention": "population baseline; sample sensitivity (ADAPTATION G04)",
+                    "decision": "ABOVE",
+                    "mean_us": 16.0,
+                    "population": 0.875,
+                    "sample": 1.2374368670764582
+                  },
+                  "rule": "min rank after max group/CV",
+                  "status": "PROVISIONAL_CANDIDATE"
+                }
+              ],
+              "labels": [
+                "DP"
+              ]
+            }
+          }
+        },
+        "final_alert": false,
+        "final_fault_ranks": [],
+        "groups": {
+          "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa": {
+            "clique_mean_us": 10.0,
+            "id_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+            "local_communicators": [
+              {
+                "avg_latency_us": 9.0,
+                "comm_generation": 1,
+                "global_rank": 0,
+                "max_us": 9.0,
+                "min_us": 9.0,
+                "node_id": "node-0",
+                "process_instance": "p0",
+                "sample_count": 1
+              },
+              {
+                "avg_latency_us": 11.0,
+                "comm_generation": 1,
+                "global_rank": 1,
+                "max_us": 11.0,
+                "min_us": 11.0,
+                "node_id": "node-1",
+                "process_instance": "p1",
+                "sample_count": 1
+              }
+            ],
+            "max_avg_latency_us": 11.0,
+            "members": [
+              0,
+              1
+            ]
+          },
+          "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb": {
+            "clique_mean_us": 16.0,
+            "id_hash": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+            "local_communicators": [
+              {
+                "avg_latency_us": 2.0,
+                "comm_generation": 1,
+                "global_rank": 2,
+                "max_us": 2.0,
+                "min_us": 2.0,
+                "node_id": "node-0",
+                "process_instance": "p2",
+                "sample_count": 1
+              },
+              {
+                "avg_latency_us": 30.0,
+                "comm_generation": 1,
+                "global_rank": 3,
+                "max_us": 30.0,
+                "min_us": 30.0,
+                "node_id": "node-1",
+                "process_instance": "p3",
+                "sample_count": 1
+              }
+            ],
+            "max_avg_latency_us": 30.0,
+            "members": [
+              2,
+              3
+            ]
+          },
+          "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc": {
+            "clique_mean_us": 15.0,
+            "id_hash": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+            "local_communicators": [
+              {
+                "avg_latency_us": 15.0,
+                "comm_generation": 1,
+                "global_rank": 4,
+                "max_us": 15.0,
+                "min_us": 15.0,
+                "node_id": "node-0",
+                "process_instance": "p4",
+                "sample_count": 1
+              },
+              {
+                "avg_latency_us": 15.0,
+                "comm_generation": 1,
+                "global_rank": 5,
+                "max_us": 15.0,
+                "min_us": 15.0,
+                "node_id": "node-1",
+                "process_instance": "p5",
+                "sample_count": 1
+              }
+            ],
+            "max_avg_latency_us": 15.0,
+            "members": [
+              4,
+              5
+            ]
+          }
+        },
+        "input_sha256": "403d99e584138374f22d7430c111633cee4c63c513d3ede810825562798764a4",
+        "interpretation": "Offline ordering evidence only; no final fault decision, probability or automatic diagnosis",
+        "manifest_sha256": "e6fbe23b4010a2657bc33a4dcc7e5ae1cafaa5c1d9011e73d1e28859228e7847",
+        "measurement_signatures": [
+          {
+            "api": "ncclAllReduce",
+            "count": 4,
+            "count_unit": "elements",
+            "datatype": 7,
+            "member_records": 6
+          }
+        ],
+        "risks": [],
+        "schema_version": 1,
+        "source": "CPU_SIMULATED_M4_REPLAY",
+        "status": "PROVISIONAL_CANDIDATE",
+        "tags": {
+          "DP": {
+            "clique_scores": {
+              "reference_mean_us": 13.666666666666666,
+              "scores": {
+                "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa": -0.2682926829268293,
+                "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb": 0.17073170731707332,
+                "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc": 0.09756097560975618
+              },
+              "status": "DEFINED"
+            },
+            "excluded_single_rank": [],
+            "group_cv": {
+              "convention": "population baseline; sample sensitivity (ADAPTATION G04)",
+              "decision": "ABOVE",
+              "mean_us": 18.666666666666668,
+              "population": 0.43813729094233195,
+              "sample": 0.5366064000470256
+            },
+            "max_avg_latency_us": {
+              "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa": 11.0,
+              "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb": 30.0,
+              "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc": 15.0
+            },
+            "selected_groups": [
+              "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+            ],
+            "stage1": "MAX_GROUP",
+            "stage2": {
+              "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb": {
+                "methods": {
+                  "sample_weighted": {
+                    "avg_latency_us": {
+                      "2": 2.0,
+                      "3": 30.0
+                    },
+                    "candidates": [
+                      2
+                    ],
+                    "cv": {
+                      "convention": "population baseline; sample sensitivity (ADAPTATION G04)",
+                      "decision": "ABOVE",
+                      "mean_us": 16.0,
+                      "population": 0.875,
+                      "sample": 1.2374368670764582
+                    },
+                    "rank_scores": {
+                      "reference_mean_us": 16.0,
+                      "scores": {
+                        "2": 0.875,
+                        "3": -0.875
+                      },
+                      "status": "DEFINED"
+                    },
+                    "rule": "minimum avg_latency; 20% filter unresolved and disabled"
+                  },
+                  "unweighted_communicator_mean": {
+                    "avg_latency_us": {
+                      "2": 2.0,
+                      "3": 30.0
+                    },
+                    "candidates": [
+                      2
+                    ],
+                    "cv": {
+                      "convention": "population baseline; sample sensitivity (ADAPTATION G04)",
+                      "decision": "ABOVE",
+                      "mean_us": 16.0,
+                      "population": 0.875,
+                      "sample": 1.2374368670764582
+                    },
+                    "rank_scores": {
+                      "reference_mean_us": 16.0,
+                      "scores": {
+                        "2": 0.875,
+                        "3": -0.875
+                      },
+                      "status": "DEFINED"
+                    },
+                    "rule": "minimum avg_latency; 20% filter unresolved and disabled"
+                  }
+                },
+                "sensitivity_disagreement": false,
+                "status": "PROVISIONAL_CANDIDATE"
+              }
+            },
+            "status": "PROVISIONAL_CANDIDATE"
+          }
+        },
+        "unresolved": [
+          "G04: 20% reference/filter undefined",
+          "G04: communicator aggregation weights undefined",
+          "G04: statistical references and std convention not uniquely specified"
+        ]
+      },
+      "closed_at_seconds": 50.7,
+      "command_at_seconds": 50.5,
+      "completeness": {
+        "communicator_scope_observations": 6,
+        "expected_instances": 6,
+        "independent_process_scopes": 6,
+        "records": 6,
+        "valid_records": 6
+      },
+      "data_sha256": "403d99e584138374f22d7430c111633cee4c63c513d3ede810825562798764a4",
+      "deadline_seconds": 55.5,
+      "duration_seconds": 20.0,
+      "failure": null,
+      "iteration_record": {
+        "cuda_completion_wait": false,
+        "global_rank": 0,
+        "iteration": 1,
+        "iteration_time_ms": 100.0,
+        "run_id": "m6r-a47daed2044c4ec88049b6a0eb2aba1f",
+        "source": "CPU_SIMULATED_FRAMEWORK",
+        "timestamp": "2026-10-10T00:00:00+00:00",
+        "timing_boundary": "cpu_simulated_iteration_end"
+      },
+      "iteration_sha256": "6955513d9a560d13afd92f94b8e63e0ee2f455ad017074db136e3d2dc12a4778",
+      "last_time_seconds": 50.7,
+      "manifest": {
+        "communicators": [
+          {
+            "id_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+            "local_instances": [
+              {
+                "comm_generation": 1,
+                "comm_rank": 0,
+                "expected_records": 1,
+                "expected_samples": 1,
+                "global_rank": 0,
+                "node_id": "node-0",
+                "process_instance": "p0"
+              },
+              {
+                "comm_generation": 1,
+                "comm_rank": 1,
+                "expected_records": 1,
+                "expected_samples": 1,
+                "global_rank": 1,
+                "node_id": "node-1",
+                "process_instance": "p1"
+              }
+            ],
+            "members": [
+              0,
+              1
+            ]
+          },
+          {
+            "id_hash": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+            "local_instances": [
+              {
+                "comm_generation": 1,
+                "comm_rank": 0,
+                "expected_records": 1,
+                "expected_samples": 1,
+                "global_rank": 2,
+                "node_id": "node-0",
+                "process_instance": "p2"
+              },
+              {
+                "comm_generation": 1,
+                "comm_rank": 1,
+                "expected_records": 1,
+                "expected_samples": 1,
+                "global_rank": 3,
+                "node_id": "node-1",
+                "process_instance": "p3"
+              }
+            ],
+            "members": [
+              2,
+              3
+            ]
+          },
+          {
+            "id_hash": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+            "local_instances": [
+              {
+                "comm_generation": 1,
+                "comm_rank": 0,
+                "expected_records": 1,
+                "expected_samples": 1,
+                "global_rank": 4,
+                "node_id": "node-0",
+                "process_instance": "p4"
+              },
+              {
+                "comm_generation": 1,
+                "comm_rank": 1,
+                "expected_records": 1,
+                "expected_samples": 1,
+                "global_rank": 5,
+                "node_id": "node-1",
+                "process_instance": "p5"
+              }
+            ],
+            "members": [
+              4,
+              5
+            ]
+          }
+        ],
+        "context": {
+          "profile_epoch": 2,
+          "run_id": "m6r-a47daed2044c4ec88049b6a0eb2aba1f"
+        },
+        "parallel_states": [
+          {
+            "evidence": "explicit fixed fixture membership",
+            "id_hashes": [
+              "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+            ],
+            "label": "DP",
+            "members": [
+              0,
+              1
+            ]
+          },
+          {
+            "evidence": "explicit fixed fixture membership",
+            "id_hashes": [
+              "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+            ],
+            "label": "DP",
+            "members": [
+              2,
+              3
+            ]
+          },
+          {
+            "evidence": "explicit fixed fixture membership",
+            "id_hashes": [
+              "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"
+            ],
+            "label": "DP",
+            "members": [
+              4,
+              5
+            ]
+          }
+        ],
+        "records": [],
+        "schema_version": 1
+      },
+      "manifest_sha256": "e6fbe23b4010a2657bc33a4dcc7e5ae1cafaa5c1d9011e73d1e28859228e7847",
+      "nodes": {
+        "node-0": {
+          "ack": {
+            "accepted_at_seconds": 50.5,
+            "command_id": "e2-g1-s0-node-0",
+            "command_sha256": "e9670e3e6f2fe19a0d46d9272ebb4013e0cc43346cb115f3deec7e4665d10494",
+            "kind": "COMMAND_ACCEPTED_ONLY",
+            "local_generation": 1,
+            "source": "CPU_LOCAL_CONTROLLER"
+          },
+          "applied": {
+            "0": {
+              "applied_at_seconds": 50.6,
+              "boundary": "legal_scope_start",
+              "command_id": "e2-g1-s0-node-0",
+              "generation": 1,
+              "global_rank": 0,
+              "local_generation": 1,
+              "node_id": "node-0",
+              "profile_epoch": 2,
+              "requested_state": 0,
+              "run_id": "m6r-a47daed2044c4ec88049b6a0eb2aba1f",
+              "scope_sequence": 4,
+              "source": "CPU_SIMULATED_PROBE"
+            },
+            "2": {
+              "applied_at_seconds": 50.6,
+              "boundary": "legal_scope_start",
+              "command_id": "e2-g1-s0-node-0",
+              "generation": 1,
+              "global_rank": 2,
+              "local_generation": 1,
+              "node_id": "node-0",
+              "profile_epoch": 2,
+              "requested_state": 0,
+              "run_id": "m6r-a47daed2044c4ec88049b6a0eb2aba1f",
+              "scope_sequence": 4,
+              "source": "CPU_SIMULATED_PROBE"
+            },
+            "4": {
+              "applied_at_seconds": 50.6,
+              "boundary": "legal_scope_start",
+              "command_id": "e2-g1-s0-node-0",
+              "generation": 1,
+              "global_rank": 4,
+              "local_generation": 1,
+              "node_id": "node-0",
+              "profile_epoch": 2,
+              "requested_state": 0,
+              "run_id": "m6r-a47daed2044c4ec88049b6a0eb2aba1f",
+              "scope_sequence": 4,
+              "source": "CPU_SIMULATED_PROBE"
+            }
+          },
+          "command": {
+            "command_id": "e2-g1-s0-node-0",
+            "deadline_seconds": 55.5,
+            "expected_nodes": [
+              "node-0",
+              "node-1"
+            ],
+            "expected_ranks": [
+              0,
+              2,
+              4
+            ],
+            "generation": 1,
+            "local_generation": 1,
+            "node_id": "node-0",
+            "profile_epoch": 2,
+            "requested_at_seconds": 50.5,
+            "requested_state": 0,
+            "run_id": "m6r-a47daed2044c4ec88049b6a0eb2aba1f",
+            "schema_version": 1
+          },
+          "ignored_old": 9,
+          "ready": null,
+          "samples": []
+        },
+        "node-1": {
+          "ack": {
+            "accepted_at_seconds": 50.5,
+            "command_id": "e2-g1-s0-node-1",
+            "command_sha256": "5ac4b07595007f82b0c56d1873893ffbe437a2493ca35947605e785c8f094b5f",
+            "kind": "COMMAND_ACCEPTED_ONLY",
+            "local_generation": 1,
+            "source": "CPU_LOCAL_CONTROLLER"
+          },
+          "applied": {
+            "1": {
+              "applied_at_seconds": 50.6,
+              "boundary": "legal_scope_start",
+              "command_id": "e2-g1-s0-node-1",
+              "generation": 1,
+              "global_rank": 1,
+              "local_generation": 1,
+              "node_id": "node-1",
+              "profile_epoch": 2,
+              "requested_state": 0,
+              "run_id": "m6r-a47daed2044c4ec88049b6a0eb2aba1f",
+              "scope_sequence": 4,
+              "source": "CPU_SIMULATED_PROBE"
+            },
+            "3": {
+              "applied_at_seconds": 50.6,
+              "boundary": "legal_scope_start",
+              "command_id": "e2-g1-s0-node-1",
+              "generation": 1,
+              "global_rank": 3,
+              "local_generation": 1,
+              "node_id": "node-1",
+              "profile_epoch": 2,
+              "requested_state": 0,
+              "run_id": "m6r-a47daed2044c4ec88049b6a0eb2aba1f",
+              "scope_sequence": 4,
+              "source": "CPU_SIMULATED_PROBE"
+            },
+            "5": {
+              "applied_at_seconds": 50.6,
+              "boundary": "legal_scope_start",
+              "command_id": "e2-g1-s0-node-1",
+              "generation": 1,
+              "global_rank": 5,
+              "local_generation": 1,
+              "node_id": "node-1",
+              "profile_epoch": 2,
+              "requested_state": 0,
+              "run_id": "m6r-a47daed2044c4ec88049b6a0eb2aba1f",
+              "scope_sequence": 4,
+              "source": "CPU_SIMULATED_PROBE"
+            }
+          },
+          "command": {
+            "command_id": "e2-g1-s0-node-1",
+            "deadline_seconds": 55.5,
+            "expected_nodes": [
+              "node-0",
+              "node-1"
+            ],
+            "expected_ranks": [
+              1,
+              3,
+              5
+            ],
+            "generation": 1,
+            "local_generation": 1,
+            "node_id": "node-1",
+            "profile_epoch": 2,
+            "requested_at_seconds": 50.5,
+            "requested_state": 0,
+            "run_id": "m6r-a47daed2044c4ec88049b6a0eb2aba1f",
+            "schema_version": 1
+          },
+          "ignored_old": 9,
+          "ready": null,
+          "samples": []
+        }
+      },
+      "profile_epoch": 2,
+      "profile_nodes": {
+        "node-0": {
+          "ack": {
+            "accepted_at_seconds": 30,
+            "command_id": "e2-g1-s1-node-0",
+            "command_sha256": "9c97746796fab6ab89f2b13275f013f17c5333517e112e80587ceba01a3f3a5e",
+            "kind": "COMMAND_ACCEPTED_ONLY",
+            "local_generation": 1,
+            "source": "CPU_LOCAL_CONTROLLER"
+          },
+          "applied": {
+            "0": {
+              "applied_at_seconds": 30.1,
+              "boundary": "legal_scope_start",
+              "command_id": "e2-g1-s1-node-0",
+              "generation": 1,
+              "global_rank": 0,
+              "local_generation": 1,
+              "node_id": "node-0",
+              "profile_epoch": 2,
+              "requested_state": 1,
+              "run_id": "m6r-a47daed2044c4ec88049b6a0eb2aba1f",
+              "scope_sequence": 3,
+              "source": "CPU_SIMULATED_PROBE"
+            },
+            "2": {
+              "applied_at_seconds": 30.1,
+              "boundary": "legal_scope_start",
+              "command_id": "e2-g1-s1-node-0",
+              "generation": 1,
+              "global_rank": 2,
+              "local_generation": 1,
+              "node_id": "node-0",
+              "profile_epoch": 2,
+              "requested_state": 1,
+              "run_id": "m6r-a47daed2044c4ec88049b6a0eb2aba1f",
+              "scope_sequence": 3,
+              "source": "CPU_SIMULATED_PROBE"
+            },
+            "4": {
+              "applied_at_seconds": 30.1,
+              "boundary": "legal_scope_start",
+              "command_id": "e2-g1-s1-node-0",
+              "generation": 1,
+              "global_rank": 4,
+              "local_generation": 1,
+              "node_id": "node-0",
+              "profile_epoch": 2,
+              "requested_state": 1,
+              "run_id": "m6r-a47daed2044c4ec88049b6a0eb2aba1f",
+              "scope_sequence": 3,
+              "source": "CPU_SIMULATED_PROBE"
+            }
+          },
+          "command": {
+            "command_id": "e2-g1-s1-node-0",
+            "deadline_seconds": 35.0,
+            "expected_nodes": [
+              "node-0",
+              "node-1"
+            ],
+            "expected_ranks": [
+              0,
+              2,
+              4
+            ],
+            "generation": 1,
+            "local_generation": 1,
+            "node_id": "node-0",
+            "profile_epoch": 2,
+            "requested_at_seconds": 30,
+            "requested_state": 1,
+            "run_id": "m6r-a47daed2044c4ec88049b6a0eb2aba1f",
+            "schema_version": 1
+          },
+          "ignored_old": 6,
+          "outside_window": 0,
+          "ready": {
+            "command_sha256": "9c97746796fab6ab89f2b13275f013f17c5333517e112e80587ceba01a3f3a5e",
+            "completeness": "PENDING_M4_VALIDATION",
+            "data_sha256": "aa6267300104c2734a20d68fae9b824c8ffd91d2115cdf55b43eb3eb655d4708",
+            "drained_at_seconds": 50.2,
+            "records": 3,
+            "source": "CPU_SIMULATED_DRAIN"
+          },
+          "samples": [
+            {
+              "collected_at_seconds": 31,
+              "command_id": "e2-g1-s1-node-0",
+              "generation": 1,
+              "local_generation": 1,
+              "row": {
+                "api": "ncclAllReduce",
+                "comm_generation": 1,
+                "comm_rank": 0,
+                "comm_size": 2,
+                "count": 4,
+                "count_unit": "elements",
+                "cuda_results": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -1
+                ],
+                "datatype": 7,
+                "duration_unit": "us",
+                "duration_us": 9,
+                "global_rank": 0,
+                "group_depth": 0,
+                "group_id": 0,
+                "id_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "identity_source": "UNIQUE_ID_SHA256",
+                "node_id": "node-0",
+                "process_instance": "p0",
+                "profile_epoch": 2,
+                "result": 0,
+                "run_id": "m6r-a47daed2044c4ec88049b6a0eb2aba1f",
+                "sample_seq": 1,
+                "state": 1,
+                "thread_id": "t0",
+                "timing_definition": "synthetic_nonnegative_v1",
+                "timing_scope": "collective",
+                "timing_status": "VALID"
+              },
+              "sha256": "4dfe0797767d3145eb09ee7f338696ca28ecf4f508e23bd1b0143dd2957265f1",
+              "source": "CPU_SIMULATED_PROBE"
+            },
+            {
+              "collected_at_seconds": 31,
+              "command_id": "e2-g1-s1-node-0",
+              "generation": 1,
+              "local_generation": 1,
+              "row": {
+                "api": "ncclAllReduce",
+                "comm_generation": 1,
+                "comm_rank": 0,
+                "comm_size": 2,
+                "count": 4,
+                "count_unit": "elements",
+                "cuda_results": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -1
+                ],
+                "datatype": 7,
+                "duration_unit": "us",
+                "duration_us": 2,
+                "global_rank": 2,
+                "group_depth": 0,
+                "group_id": 0,
+                "id_hash": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+                "identity_source": "UNIQUE_ID_SHA256",
+                "node_id": "node-0",
+                "process_instance": "p2",
+                "profile_epoch": 2,
+                "result": 0,
+                "run_id": "m6r-a47daed2044c4ec88049b6a0eb2aba1f",
+                "sample_seq": 1,
+                "state": 1,
+                "thread_id": "t0",
+                "timing_definition": "synthetic_nonnegative_v1",
+                "timing_scope": "collective",
+                "timing_status": "VALID"
+              },
+              "sha256": "97027c6c0b52b30de0243bd3d61de38ea38186024a61a8b5cc6df6756fb72630",
+              "source": "CPU_SIMULATED_PROBE"
+            },
+            {
+              "collected_at_seconds": 31,
+              "command_id": "e2-g1-s1-node-0",
+              "generation": 1,
+              "local_generation": 1,
+              "row": {
+                "api": "ncclAllReduce",
+                "comm_generation": 1,
+                "comm_rank": 0,
+                "comm_size": 2,
+                "count": 4,
+                "count_unit": "elements",
+                "cuda_results": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -1
+                ],
+                "datatype": 7,
+                "duration_unit": "us",
+                "duration_us": 15,
+                "global_rank": 4,
+                "group_depth": 0,
+                "group_id": 0,
+                "id_hash": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+                "identity_source": "UNIQUE_ID_SHA256",
+                "node_id": "node-0",
+                "process_instance": "p4",
+                "profile_epoch": 2,
+                "result": 0,
+                "run_id": "m6r-a47daed2044c4ec88049b6a0eb2aba1f",
+                "sample_seq": 1,
+                "state": 1,
+                "thread_id": "t0",
+                "timing_definition": "synthetic_nonnegative_v1",
+                "timing_scope": "collective",
+                "timing_status": "VALID"
+              },
+              "sha256": "d029197119d37c143f05027966511982e86e0d07063118368b9a6e38672390e2",
+              "source": "CPU_SIMULATED_PROBE"
+            }
+          ]
+        },
+        "node-1": {
+          "ack": {
+            "accepted_at_seconds": 30,
+            "command_id": "e2-g1-s1-node-1",
+            "command_sha256": "8347aeb1fa0d3f8b606b27317d6a134a128b75afb379a610ea150d53c41b1bdb",
+            "kind": "COMMAND_ACCEPTED_ONLY",
+            "local_generation": 1,
+            "source": "CPU_LOCAL_CONTROLLER"
+          },
+          "applied": {
+            "1": {
+              "applied_at_seconds": 30.1,
+              "boundary": "legal_scope_start",
+              "command_id": "e2-g1-s1-node-1",
+              "generation": 1,
+              "global_rank": 1,
+              "local_generation": 1,
+              "node_id": "node-1",
+              "profile_epoch": 2,
+              "requested_state": 1,
+              "run_id": "m6r-a47daed2044c4ec88049b6a0eb2aba1f",
+              "scope_sequence": 3,
+              "source": "CPU_SIMULATED_PROBE"
+            },
+            "3": {
+              "applied_at_seconds": 30.1,
+              "boundary": "legal_scope_start",
+              "command_id": "e2-g1-s1-node-1",
+              "generation": 1,
+              "global_rank": 3,
+              "local_generation": 1,
+              "node_id": "node-1",
+              "profile_epoch": 2,
+              "requested_state": 1,
+              "run_id": "m6r-a47daed2044c4ec88049b6a0eb2aba1f",
+              "scope_sequence": 3,
+              "source": "CPU_SIMULATED_PROBE"
+            },
+            "5": {
+              "applied_at_seconds": 30.1,
+              "boundary": "legal_scope_start",
+              "command_id": "e2-g1-s1-node-1",
+              "generation": 1,
+              "global_rank": 5,
+              "local_generation": 1,
+              "node_id": "node-1",
+              "profile_epoch": 2,
+              "requested_state": 1,
+              "run_id": "m6r-a47daed2044c4ec88049b6a0eb2aba1f",
+              "scope_sequence": 3,
+              "source": "CPU_SIMULATED_PROBE"
+            }
+          },
+          "command": {
+            "command_id": "e2-g1-s1-node-1",
+            "deadline_seconds": 35.0,
+            "expected_nodes": [
+              "node-0",
+              "node-1"
+            ],
+            "expected_ranks": [
+              1,
+              3,
+              5
+            ],
+            "generation": 1,
+            "local_generation": 1,
+            "node_id": "node-1",
+            "profile_epoch": 2,
+            "requested_at_seconds": 30,
+            "requested_state": 1,
+            "run_id": "m6r-a47daed2044c4ec88049b6a0eb2aba1f",
+            "schema_version": 1
+          },
+          "ignored_old": 6,
+          "outside_window": 0,
+          "ready": {
+            "command_sha256": "8347aeb1fa0d3f8b606b27317d6a134a128b75afb379a610ea150d53c41b1bdb",
+            "completeness": "PENDING_M4_VALIDATION",
+            "data_sha256": "5f555f6351557c570b8f958ba1abdb6b7ae229e3af916560189dac493fdb9c7e",
+            "drained_at_seconds": 50.2,
+            "records": 3,
+            "source": "CPU_SIMULATED_DRAIN"
+          },
+          "samples": [
+            {
+              "collected_at_seconds": 31,
+              "command_id": "e2-g1-s1-node-1",
+              "generation": 1,
+              "local_generation": 1,
+              "row": {
+                "api": "ncclAllReduce",
+                "comm_generation": 1,
+                "comm_rank": 1,
+                "comm_size": 2,
+                "count": 4,
+                "count_unit": "elements",
+                "cuda_results": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -1
+                ],
+                "datatype": 7,
+                "duration_unit": "us",
+                "duration_us": 11,
+                "global_rank": 1,
+                "group_depth": 0,
+                "group_id": 0,
+                "id_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "identity_source": "UNIQUE_ID_SHA256",
+                "node_id": "node-1",
+                "process_instance": "p1",
+                "profile_epoch": 2,
+                "result": 0,
+                "run_id": "m6r-a47daed2044c4ec88049b6a0eb2aba1f",
+                "sample_seq": 1,
+                "state": 1,
+                "thread_id": "t0",
+                "timing_definition": "synthetic_nonnegative_v1",
+                "timing_scope": "collective",
+                "timing_status": "VALID"
+              },
+              "sha256": "c67cd75e7095539c786178375331c8b15c8c7d0a9d133ae39a15cae23efc1185",
+              "source": "CPU_SIMULATED_PROBE"
+            },
+            {
+              "collected_at_seconds": 31,
+              "command_id": "e2-g1-s1-node-1",
+              "generation": 1,
+              "local_generation": 1,
+              "row": {
+                "api": "ncclAllReduce",
+                "comm_generation": 1,
+                "comm_rank": 1,
+                "comm_size": 2,
+                "count": 4,
+                "count_unit": "elements",
+                "cuda_results": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -1
+                ],
+                "datatype": 7,
+                "duration_unit": "us",
+                "duration_us": 30,
+                "global_rank": 3,
+                "group_depth": 0,
+                "group_id": 0,
+                "id_hash": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+                "identity_source": "UNIQUE_ID_SHA256",
+                "node_id": "node-1",
+                "process_instance": "p3",
+                "profile_epoch": 2,
+                "result": 0,
+                "run_id": "m6r-a47daed2044c4ec88049b6a0eb2aba1f",
+                "sample_seq": 1,
+                "state": 1,
+                "thread_id": "t0",
+                "timing_definition": "synthetic_nonnegative_v1",
+                "timing_scope": "collective",
+                "timing_status": "VALID"
+              },
+              "sha256": "dbfc9e1aa8809a8c8897e6569aa1145ebfb0468786531cb2cdd0304a9fa46370",
+              "source": "CPU_SIMULATED_PROBE"
+            },
+            {
+              "collected_at_seconds": 31,
+              "command_id": "e2-g1-s1-node-1",
+              "generation": 1,
+              "local_generation": 1,
+              "row": {
+                "api": "ncclAllReduce",
+                "comm_generation": 1,
+                "comm_rank": 1,
+                "comm_size": 2,
+                "count": 4,
+                "count_unit": "elements",
+                "cuda_results": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -1
+                ],
+                "datatype": 7,
+                "duration_unit": "us",
+                "duration_us": 15,
+                "global_rank": 5,
+                "group_depth": 0,
+                "group_id": 0,
+                "id_hash": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+                "identity_source": "UNIQUE_ID_SHA256",
+                "node_id": "node-1",
+                "process_instance": "p5",
+                "profile_epoch": 2,
+                "result": 0,
+                "run_id": "m6r-a47daed2044c4ec88049b6a0eb2aba1f",
+                "sample_seq": 1,
+                "state": 1,
+                "thread_id": "t0",
+                "timing_definition": "synthetic_nonnegative_v1",
+                "timing_scope": "collective",
+                "timing_status": "VALID"
+              },
+              "sha256": "4e3aa29b41ed61e0c0f902b850820fc515d60d5d8271cc4a366e83371cdbee4f",
+              "source": "CPU_SIMULATED_PROBE"
+            }
+          ]
+        }
+      },
+      "request_id": "two",
+      "request_sha256": "952e6960bf39a5c489d26feaf6995c16afae426dda585f97f02f076d2c89a2a5",
+      "reset_nodes": {
+        "node-0": {
+          "ack": {
+            "accepted_at_seconds": 50.5,
+            "command_id": "e2-g1-s0-node-0",
+            "command_sha256": "e9670e3e6f2fe19a0d46d9272ebb4013e0cc43346cb115f3deec7e4665d10494",
+            "kind": "COMMAND_ACCEPTED_ONLY",
+            "local_generation": 1,
+            "source": "CPU_LOCAL_CONTROLLER"
+          },
+          "applied": {
+            "0": {
+              "applied_at_seconds": 50.6,
+              "boundary": "legal_scope_start",
+              "command_id": "e2-g1-s0-node-0",
+              "generation": 1,
+              "global_rank": 0,
+              "local_generation": 1,
+              "node_id": "node-0",
+              "profile_epoch": 2,
+              "requested_state": 0,
+              "run_id": "m6r-a47daed2044c4ec88049b6a0eb2aba1f",
+              "scope_sequence": 4,
+              "source": "CPU_SIMULATED_PROBE"
+            },
+            "2": {
+              "applied_at_seconds": 50.6,
+              "boundary": "legal_scope_start",
+              "command_id": "e2-g1-s0-node-0",
+              "generation": 1,
+              "global_rank": 2,
+              "local_generation": 1,
+              "node_id": "node-0",
+              "profile_epoch": 2,
+              "requested_state": 0,
+              "run_id": "m6r-a47daed2044c4ec88049b6a0eb2aba1f",
+              "scope_sequence": 4,
+              "source": "CPU_SIMULATED_PROBE"
+            },
+            "4": {
+              "applied_at_seconds": 50.6,
+              "boundary": "legal_scope_start",
+              "command_id": "e2-g1-s0-node-0",
+              "generation": 1,
+              "global_rank": 4,
+              "local_generation": 1,
+              "node_id": "node-0",
+              "profile_epoch": 2,
+              "requested_state": 0,
+              "run_id": "m6r-a47daed2044c4ec88049b6a0eb2aba1f",
+              "scope_sequence": 4,
+              "source": "CPU_SIMULATED_PROBE"
+            }
+          },
+          "command": {
+            "command_id": "e2-g1-s0-node-0",
+            "deadline_seconds": 55.5,
+            "expected_nodes": [
+              "node-0",
+              "node-1"
+            ],
+            "expected_ranks": [
+              0,
+              2,
+              4
+            ],
+            "generation": 1,
+            "local_generation": 1,
+            "node_id": "node-0",
+            "profile_epoch": 2,
+            "requested_at_seconds": 50.5,
+            "requested_state": 0,
+            "run_id": "m6r-a47daed2044c4ec88049b6a0eb2aba1f",
+            "schema_version": 1
+          },
+          "ignored_old": 9,
+          "ready": null,
+          "samples": []
+        },
+        "node-1": {
+          "ack": {
+            "accepted_at_seconds": 50.5,
+            "command_id": "e2-g1-s0-node-1",
+            "command_sha256": "5ac4b07595007f82b0c56d1873893ffbe437a2493ca35947605e785c8f094b5f",
+            "kind": "COMMAND_ACCEPTED_ONLY",
+            "local_generation": 1,
+            "source": "CPU_LOCAL_CONTROLLER"
+          },
+          "applied": {
+            "1": {
+              "applied_at_seconds": 50.6,
+              "boundary": "legal_scope_start",
+              "command_id": "e2-g1-s0-node-1",
+              "generation": 1,
+              "global_rank": 1,
+              "local_generation": 1,
+              "node_id": "node-1",
+              "profile_epoch": 2,
+              "requested_state": 0,
+              "run_id": "m6r-a47daed2044c4ec88049b6a0eb2aba1f",
+              "scope_sequence": 4,
+              "source": "CPU_SIMULATED_PROBE"
+            },
+            "3": {
+              "applied_at_seconds": 50.6,
+              "boundary": "legal_scope_start",
+              "command_id": "e2-g1-s0-node-1",
+              "generation": 1,
+              "global_rank": 3,
+              "local_generation": 1,
+              "node_id": "node-1",
+              "profile_epoch": 2,
+              "requested_state": 0,
+              "run_id": "m6r-a47daed2044c4ec88049b6a0eb2aba1f",
+              "scope_sequence": 4,
+              "source": "CPU_SIMULATED_PROBE"
+            },
+            "5": {
+              "applied_at_seconds": 50.6,
+              "boundary": "legal_scope_start",
+              "command_id": "e2-g1-s0-node-1",
+              "generation": 1,
+              "global_rank": 5,
+              "local_generation": 1,
+              "node_id": "node-1",
+              "profile_epoch": 2,
+              "requested_state": 0,
+              "run_id": "m6r-a47daed2044c4ec88049b6a0eb2aba1f",
+              "scope_sequence": 4,
+              "source": "CPU_SIMULATED_PROBE"
+            }
+          },
+          "command": {
+            "command_id": "e2-g1-s0-node-1",
+            "deadline_seconds": 55.5,
+            "expected_nodes": [
+              "node-0",
+              "node-1"
+            ],
+            "expected_ranks": [
+              1,
+              3,
+              5
+            ],
+            "generation": 1,
+            "local_generation": 1,
+            "node_id": "node-1",
+            "profile_epoch": 2,
+            "requested_at_seconds": 50.5,
+            "requested_state": 0,
+            "run_id": "m6r-a47daed2044c4ec88049b6a0eb2aba1f",
+            "schema_version": 1
+          },
+          "ignored_old": 9,
+          "ready": null,
+          "samples": []
+        }
+      },
+      "reset_verified": true,
+      "result": {
+        "candidate_ranks": [
+          2
+        ],
+        "completeness": {
+          "communicator_scope_observations": 6,
+          "expected_instances": 6,
+          "independent_process_scopes": 6,
+          "records": 6,
+          "valid_records": 6
+        },
+        "context": {
+          "profile_epoch": 2,
+          "run_id": "m6r-a47daed2044c4ec88049b6a0eb2aba1f"
+        },
+        "cross_tag": {
+          "conflict": false,
+          "support": {
+            "2": {
+              "evidence": [
+                {
+                  "avg_latency_us": 2.0,
+                  "comparison_rank_means_us": {
+                    "2": 2.0,
+                    "3": 30.0
+                  },
+                  "id_hash": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+                  "label": "DP",
+                  "method": "unweighted_communicator_mean",
+                  "rank_cv": {
+                    "convention": "population baseline; sample sensitivity (ADAPTATION G04)",
+                    "decision": "ABOVE",
+                    "mean_us": 16.0,
+                    "population": 0.875,
+                    "sample": 1.2374368670764582
+                  },
+                  "rule": "min rank after max group/CV",
+                  "status": "PROVISIONAL_CANDIDATE"
+                },
+                {
+                  "avg_latency_us": 2.0,
+                  "comparison_rank_means_us": {
+                    "2": 2.0,
+                    "3": 30.0
+                  },
+                  "id_hash": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+                  "label": "DP",
+                  "method": "sample_weighted",
+                  "rank_cv": {
+                    "convention": "population baseline; sample sensitivity (ADAPTATION G04)",
+                    "decision": "ABOVE",
+                    "mean_us": 16.0,
+                    "population": 0.875,
+                    "sample": 1.2374368670764582
+                  },
+                  "rule": "min rank after max group/CV",
+                  "status": "PROVISIONAL_CANDIDATE"
+                }
+              ],
+              "labels": [
+                "DP"
+              ]
+            }
+          }
+        },
+        "final_alert": false,
+        "final_fault_ranks": [],
+        "groups": {
+          "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa": {
+            "clique_mean_us": 10.0,
+            "id_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+            "local_communicators": [
+              {
+                "avg_latency_us": 9.0,
+                "comm_generation": 1,
+                "global_rank": 0,
+                "max_us": 9.0,
+                "min_us": 9.0,
+                "node_id": "node-0",
+                "process_instance": "p0",
+                "sample_count": 1
+              },
+              {
+                "avg_latency_us": 11.0,
+                "comm_generation": 1,
+                "global_rank": 1,
+                "max_us": 11.0,
+                "min_us": 11.0,
+                "node_id": "node-1",
+                "process_instance": "p1",
+                "sample_count": 1
+              }
+            ],
+            "max_avg_latency_us": 11.0,
+            "members": [
+              0,
+              1
+            ]
+          },
+          "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb": {
+            "clique_mean_us": 16.0,
+            "id_hash": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+            "local_communicators": [
+              {
+                "avg_latency_us": 2.0,
+                "comm_generation": 1,
+                "global_rank": 2,
+                "max_us": 2.0,
+                "min_us": 2.0,
+                "node_id": "node-0",
+                "process_instance": "p2",
+                "sample_count": 1
+              },
+              {
+                "avg_latency_us": 30.0,
+                "comm_generation": 1,
+                "global_rank": 3,
+                "max_us": 30.0,
+                "min_us": 30.0,
+                "node_id": "node-1",
+                "process_instance": "p3",
+                "sample_count": 1
+              }
+            ],
+            "max_avg_latency_us": 30.0,
+            "members": [
+              2,
+              3
+            ]
+          },
+          "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc": {
+            "clique_mean_us": 15.0,
+            "id_hash": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+            "local_communicators": [
+              {
+                "avg_latency_us": 15.0,
+                "comm_generation": 1,
+                "global_rank": 4,
+                "max_us": 15.0,
+                "min_us": 15.0,
+                "node_id": "node-0",
+                "process_instance": "p4",
+                "sample_count": 1
+              },
+              {
+                "avg_latency_us": 15.0,
+                "comm_generation": 1,
+                "global_rank": 5,
+                "max_us": 15.0,
+                "min_us": 15.0,
+                "node_id": "node-1",
+                "process_instance": "p5",
+                "sample_count": 1
+              }
+            ],
+            "max_avg_latency_us": 15.0,
+            "members": [
+              4,
+              5
+            ]
+          }
+        },
+        "input_sha256": "403d99e584138374f22d7430c111633cee4c63c513d3ede810825562798764a4",
+        "interpretation": "Offline ordering evidence only; no final fault decision, probability or automatic diagnosis",
+        "manifest_sha256": "e6fbe23b4010a2657bc33a4dcc7e5ae1cafaa5c1d9011e73d1e28859228e7847",
+        "measurement_signatures": [
+          {
+            "api": "ncclAllReduce",
+            "count": 4,
+            "count_unit": "elements",
+            "datatype": 7,
+            "member_records": 6
+          }
+        ],
+        "risks": [],
+        "schema_version": 1,
+        "source": "CPU_SIMULATED_M4_REPLAY",
+        "status": "PROVISIONAL_CANDIDATE",
+        "tags": {
+          "DP": {
+            "clique_scores": {
+              "reference_mean_us": 13.666666666666666,
+              "scores": {
+                "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa": -0.2682926829268293,
+                "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb": 0.17073170731707332,
+                "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc": 0.09756097560975618
+              },
+              "status": "DEFINED"
+            },
+            "excluded_single_rank": [],
+            "group_cv": {
+              "convention": "population baseline; sample sensitivity (ADAPTATION G04)",
+              "decision": "ABOVE",
+              "mean_us": 18.666666666666668,
+              "population": 0.43813729094233195,
+              "sample": 0.5366064000470256
+            },
+            "max_avg_latency_us": {
+              "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa": 11.0,
+              "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb": 30.0,
+              "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc": 15.0
+            },
+            "selected_groups": [
+              "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+            ],
+            "stage1": "MAX_GROUP",
+            "stage2": {
+              "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb": {
+                "methods": {
+                  "sample_weighted": {
+                    "avg_latency_us": {
+                      "2": 2.0,
+                      "3": 30.0
+                    },
+                    "candidates": [
+                      2
+                    ],
+                    "cv": {
+                      "convention": "population baseline; sample sensitivity (ADAPTATION G04)",
+                      "decision": "ABOVE",
+                      "mean_us": 16.0,
+                      "population": 0.875,
+                      "sample": 1.2374368670764582
+                    },
+                    "rank_scores": {
+                      "reference_mean_us": 16.0,
+                      "scores": {
+                        "2": 0.875,
+                        "3": -0.875
+                      },
+                      "status": "DEFINED"
+                    },
+                    "rule": "minimum avg_latency; 20% filter unresolved and disabled"
+                  },
+                  "unweighted_communicator_mean": {
+                    "avg_latency_us": {
+                      "2": 2.0,
+                      "3": 30.0
+                    },
+                    "candidates": [
+                      2
+                    ],
+                    "cv": {
+                      "convention": "population baseline; sample sensitivity (ADAPTATION G04)",
+                      "decision": "ABOVE",
+                      "mean_us": 16.0,
+                      "population": 0.875,
+                      "sample": 1.2374368670764582
+                    },
+                    "rank_scores": {
+                      "reference_mean_us": 16.0,
+                      "scores": {
+                        "2": 0.875,
+                        "3": -0.875
+                      },
+                      "status": "DEFINED"
+                    },
+                    "rule": "minimum avg_latency; 20% filter unresolved and disabled"
+                  }
+                },
+                "sensitivity_disagreement": false,
+                "status": "PROVISIONAL_CANDIDATE"
+              }
+            },
+            "status": "PROVISIONAL_CANDIDATE"
+          }
+        },
+        "unresolved": [
+          "G04: 20% reference/filter undefined",
+          "G04: communicator aggregation weights undefined",
+          "G04: statistical references and std convention not uniquely specified"
+        ]
+      },
+      "started_at_seconds": 30,
+      "transitions": [
+        "MONITOR",
+        "PROFILE_REQUESTED",
+        "PROFILE_ARMING",
+        "PROFILE_COLLECTING",
+        "PROFILE_DRAINING",
+        "PROFILE_READY",
+        "ANALYZED_PROVISIONAL",
+        "MONITOR_RESET_REQUESTED",
+        "MONITOR"
+      ],
+      "trigger": "MANUAL_TEST_TRIGGER",
+      "window": {
+        "end_seconds": 50.2,
+        "start_seconds": 30.2,
+        "time_domain": "single_host_cpu_simulation_monotonic_seconds"
+      }
+    }
+  ],
+  "events": [
+    {
+      "generation": 1,
+      "kind": "GLOBAL_CLAIM",
+      "sequence": 1
+    },
+    {
+      "generation": 1,
+      "kind": "LOCAL_CLAIM",
+      "node_id": "node-0",
+      "sequence": 2
+    },
+    {
+      "generation": 1,
+      "kind": "LOCAL_CLAIM",
+      "node_id": "node-1",
+      "sequence": 3
+    },
+    {
+      "iteration": 1,
+      "kind": "ITERATION_RECEIPT",
+      "rank": 0,
+      "sequence": 4,
+      "status": "WRITE_CONFIRMED"
+    },
+    {
+      "at_seconds": 0,
+      "duration_seconds": 20.0,
+      "generation": 1,
+      "kind": "PROFILE_REQUEST",
+      "profile_epoch": 1,
+      "sequence": 5,
+      "trigger": "MANUAL_TEST_TRIGGER"
+    },
+    {
+      "command_id": "e1-g1-s1-node-0",
+      "kind": "COMMAND_ACK",
+      "node_id": "node-0",
+      "sequence": 6
+    },
+    {
+      "command_id": "e1-g1-s1-node-1",
+      "kind": "COMMAND_ACK",
+      "node_id": "node-1",
+      "sequence": 7
+    },
+    {
+      "at_seconds": 0,
+      "kind": "TRANSITION",
+      "profile_epoch": 1,
+      "sequence": 8,
+      "state": "PROFILE_ARMING"
+    },
+    {
+      "at_seconds": 0.2,
+      "kind": "TRANSITION",
+      "profile_epoch": 1,
+      "sequence": 9,
+      "state": "PROFILE_COLLECTING"
+    },
+    {
+      "at_seconds": 20.2,
+      "kind": "TRANSITION",
+      "profile_epoch": 1,
+      "sequence": 10,
+      "state": "PROFILE_DRAINING"
+    },
+    {
+      "at_seconds": 20.3,
+      "kind": "TRANSITION",
+      "profile_epoch": 1,
+      "sequence": 11,
+      "state": "PROFILE_READY"
+    },
+    {
+      "at_seconds": 20.4,
+      "kind": "TRANSITION",
+      "profile_epoch": 1,
+      "sequence": 12,
+      "state": "ANALYZED_PROVISIONAL"
+    },
+    {
+      "at_seconds": 20.5,
+      "kind": "TRANSITION",
+      "profile_epoch": 1,
+      "sequence": 13,
+      "state": "MONITOR_RESET_REQUESTED"
+    },
+    {
+      "command_id": "e1-g1-s0-node-0",
+      "kind": "COMMAND_ACK",
+      "node_id": "node-0",
+      "sequence": 14
+    },
+    {
+      "command_id": "e1-g1-s0-node-1",
+      "kind": "COMMAND_ACK",
+      "node_id": "node-1",
+      "sequence": 15
+    },
+    {
+      "at_seconds": 20.7,
+      "kind": "MONITOR_VERIFIED",
+      "profile_epoch": 1,
+      "sequence": 16
+    },
+    {
+      "at_seconds": 30,
+      "duration_seconds": 20.0,
+      "generation": 1,
+      "kind": "PROFILE_REQUEST",
+      "profile_epoch": 2,
+      "sequence": 17,
+      "trigger": "MANUAL_TEST_TRIGGER"
+    },
+    {
+      "command_id": "e2-g1-s1-node-0",
+      "kind": "COMMAND_ACK",
+      "node_id": "node-0",
+      "sequence": 18
+    },
+    {
+      "command_id": "e2-g1-s1-node-1",
+      "kind": "COMMAND_ACK",
+      "node_id": "node-1",
+      "sequence": 19
+    },
+    {
+      "at_seconds": 30,
+      "kind": "TRANSITION",
+      "profile_epoch": 2,
+      "sequence": 20,
+      "state": "PROFILE_ARMING"
+    },
+    {
+      "at_seconds": 30.2,
+      "kind": "TRANSITION",
+      "profile_epoch": 2,
+      "sequence": 21,
+      "state": "PROFILE_COLLECTING"
+    },
+    {
+      "at_seconds": 50.2,
+      "kind": "TRANSITION",
+      "profile_epoch": 2,
+      "sequence": 22,
+      "state": "PROFILE_DRAINING"
+    },
+    {
+      "at_seconds": 50.300000000000004,
+      "kind": "TRANSITION",
+      "profile_epoch": 2,
+      "sequence": 23,
+      "state": "PROFILE_READY"
+    },
+    {
+      "at_seconds": 50.400000000000006,
+      "kind": "TRANSITION",
+      "profile_epoch": 2,
+      "sequence": 24,
+      "state": "ANALYZED_PROVISIONAL"
+    },
+    {
+      "at_seconds": 50.5,
+      "kind": "TRANSITION",
+      "profile_epoch": 2,
+      "sequence": 25,
+      "state": "MONITOR_RESET_REQUESTED"
+    },
+    {
+      "command_id": "e2-g1-s0-node-0",
+      "kind": "COMMAND_ACK",
+      "node_id": "node-0",
+      "sequence": 26
+    },
+    {
+      "command_id": "e2-g1-s0-node-1",
+      "kind": "COMMAND_ACK",
+      "node_id": "node-1",
+      "sequence": 27
+    },
+    {
+      "at_seconds": 50.7,
+      "kind": "MONITOR_VERIFIED",
+      "profile_epoch": 2,
+      "sequence": 28
+    }
+  ],
+  "expected_nodes": [
+    "node-0",
+    "node-1"
+  ],
+  "expected_ranks": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "final_alert": false,
+  "final_fault_ranks": [],
+  "global_generation": 1,
+  "iterations": {
+    "0": {
+      "last": 1,
+      "records": [
+        {
+          "confirmed_at_seconds": 0,
+          "record": {
+            "cuda_completion_wait": false,
+            "global_rank": 0,
+            "iteration": 1,
+            "iteration_time_ms": 100.0,
+            "run_id": "m6r-a47daed2044c4ec88049b6a0eb2aba1f",
+            "source": "CPU_SIMULATED_FRAMEWORK",
+            "timestamp": "2026-10-10T00:00:00+00:00",
+            "timing_boundary": "cpu_simulated_iteration_end"
+          },
+          "sha256": "6955513d9a560d13afd92f94b8e63e0ee2f455ad017074db136e3d2dc12a4778"
+        }
+      ]
+    }
+  },
+  "nodes": {
+    "node-0": {
+      "generation": 1,
+      "ranks": [
+        0,
+        2,
+        4
+      ]
+    },
+    "node-1": {
+      "generation": 1,
+      "ranks": [
+        1,
+        3,
+        5
+      ]
+    }
+  },
+  "profile_epoch": 2,
+  "revision": 68,
+  "run_id": "m6r-a47daed2044c4ec88049b6a0eb2aba1f",
+  "schema_version": 1,
+  "state": "MONITOR"
+}

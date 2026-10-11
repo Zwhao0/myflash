@@ -1,0 +1,30 @@
+test_bad_record_and_abi (__main__.RecoveryTests.test_bad_record_and_abi) ... ok
+test_boundaries_and_wrap (__main__.RecoveryTests.test_boundaries_and_wrap) ... ok
+test_bounded_lock_loss (__main__.RecoveryTests.test_bounded_lock_loss) ... ok
+test_cli_restart_durable_before_ack (__main__.RecoveryTests.test_cli_restart_durable_before_ack) ... ok
+test_concurrent_threads_and_reader (__main__.RecoveryTests.test_concurrent_threads_and_reader) ... ok
+test_control_protocol (__main__.RecoveryTests.test_control_protocol) ... ok
+test_full_and_loss (__main__.RecoveryTests.test_full_and_loss) ... ok
+test_middle_corruption_and_confirmed_loss (__main__.RecoveryTests.test_middle_corruption_and_confirmed_loss) ... ok
+test_normal_writer_close_and_cleanup (__main__.RecoveryTests.test_normal_writer_close_and_cleanup) ... ok
+test_owner_death_is_poisoned (__main__.RecoveryTests.test_owner_death_is_poisoned) ... ok
+test_reader_restart_and_exclusive_reader (__main__.RecoveryTests.test_reader_restart_and_exclusive_reader) ... ok
+test_run_isolation_and_stale (__main__.RecoveryTests.test_run_isolation_and_stale) ... ok
+test_tail_and_replay (__main__.RecoveryTests.test_tail_and_replay) ... ok
+test_unacknowledged_reader_restart (__main__.RecoveryTests.test_unacknowledged_reader_restart) ... ok
+test_bad_record_and_abi (m2_ring.RingTests.test_bad_record_and_abi) ... ok
+test_boundaries_and_wrap (m2_ring.RingTests.test_boundaries_and_wrap) ... ok
+test_bounded_lock_loss (m2_ring.RingTests.test_bounded_lock_loss) ... ok
+test_cli_restart_durable_before_ack (m2_ring.RingTests.test_cli_restart_durable_before_ack) ... ok
+test_concurrent_threads_and_reader (m2_ring.RingTests.test_concurrent_threads_and_reader) ... ok
+test_full_and_loss (m2_ring.RingTests.test_full_and_loss) ... ok
+test_normal_writer_close_and_cleanup (m2_ring.RingTests.test_normal_writer_close_and_cleanup) ... ok
+test_owner_death_is_poisoned (m2_ring.RingTests.test_owner_death_is_poisoned) ... ok
+test_reader_restart_and_exclusive_reader (m2_ring.RingTests.test_reader_restart_and_exclusive_reader) ... ok
+test_run_isolation_and_stale (m2_ring.RingTests.test_run_isolation_and_stale) ... ok
+test_unacknowledged_reader_restart (m2_ring.RingTests.test_unacknowledged_reader_restart) ... ok
+
+----------------------------------------------------------------------
+Ran 25 tests in 1.345s
+
+OK

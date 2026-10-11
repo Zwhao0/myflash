@@ -1,0 +1,58 @@
+[
+  {
+    "operation": "Initial private checkout preparation",
+    "exit_code": 128,
+    "status": "FAIL_RETAINED",
+    "reason": "Historical server checkout lacks published5b91977 object. No test child started. Fetch from verified historical execution e3f6b422 then source02 bundle carried all later commits; exact97a6399 tree validated before tests.",
+    "evidence": "evidence/setup-1.json / evidence/setup-1.stderr"
+  },
+  {
+    "operation": "Initial progress probe after failed setup",
+    "exit_code": 1,
+    "status": "FAIL_RETAINED",
+    "reason": "Probe attempted absent driver.stdout; FileNotFoundError; no runtime mutation or workload.",
+    "raw_reference": "<local-private-run>/progress.stderr",
+    "original_stderr_sha256": "d28be016224b0ea81047154b5de010c3f1943b249b7100b786d15ee7471c663b"
+  },
+  {
+    "operation": "Initial package-root Git inventory",
+    "status": "TOOL_OUTPUT_ONLY",
+    "exit_code": "NOT_CAPTURED_PER_SUBCOMMAND",
+    "reason": "Package root is not Git; git status/worktree reported fatal, actual approved m6b-ready-work clean exact baseline used. Raw tool output not persisted as filesystem log."
+  },
+  {
+    "operation": "push",
+    "exit_code": 128,
+    "status": "FAIL_RETAINED",
+    "reason": "Local HTTPS push has no configured noninteractive write authentication",
+    "evidence": "publication-transport/push.receipt.json"
+  },
+  {
+    "operation": "ssh-read",
+    "exit_code": 128,
+    "status": "FAIL_RETAINED",
+    "reason": "Local default SSH Git host key verification failed; no key bypass used",
+    "evidence": "publication-transport/ssh-read.receipt.json"
+  },
+  {
+    "operation": "ssh443-read",
+    "exit_code": 128,
+    "status": "FAIL_RETAINED",
+    "reason": "Previously used SSH443 endpoint authenticates no local public key; Permission denied (publickey)",
+    "evidence": "publication-transport/ssh443-read.receipt.json"
+  },
+  {
+    "operation": "Initial server publication helper",
+    "exit_code": 1,
+    "status": "FAIL_RETAINED",
+    "reason": "Template substitution replaced the literal Git HEAD argv token as well as expected SHA, producing a Python SyntaxError before any execution/file writes. Corrected saved helper is locally parsed before retry; no runtime or Git mutation occurred.",
+    "raw_reference": "<local-private-run>/server-push.stderr"
+  },
+  {
+    "operation": "Server publication prepush read",
+    "exit_code": 128,
+    "status": "FAIL_RETAINED",
+    "reason": "The node-0 SSH endpoint lacked a trusted host-key entry. Git transport stopped before publication; no host-key bypass or credential installation. Existing local GitHub-specific identity explicitly selected and read authorization verified.",
+    "raw_reference": "<private-run>/remote-prepush.receipt.json / remote-prepush.stderr"
+  }
+]

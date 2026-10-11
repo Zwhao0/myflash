@@ -1,0 +1,52 @@
+{
+  "status": "PASS",
+  "machine_alias": "node-0",
+  "formal_unchanged": true,
+  "formal_file_count": 1424,
+  "formal_rbeast_native_hashes": {
+    "lib/python3.12/site-packages/Rbeast/Rbeast.cpython-312-x86_64-linux-gnu.so": "a7432000e18465d8e4d2ba895a8618b388007528757718d286fcb82440bbb157"
+  },
+  "owned_redis_processes_alive": 0,
+  "owned_sockets_remaining": 0,
+  "cleanups": [
+    {
+      "path": "runs/m6r-jdc7hweu/cleanup.json",
+      "sha256": "30758301b10286969c5a2e2200dd5a0456d8a6b08949d2bab031e9d5482c9ecc",
+      "child_finished": true,
+      "child_exits": [
+        0
+      ],
+      "socket_remaining": false
+    },
+    {
+      "path": "runs/m6r-lr11bpwb/cleanup.json",
+      "sha256": "30758301b10286969c5a2e2200dd5a0456d8a6b08949d2bab031e9d5482c9ecc",
+      "child_finished": true,
+      "child_exits": [
+        0
+      ],
+      "socket_remaining": false
+    },
+    {
+      "path": "runs/m6s-_h94im07/restart.json",
+      "sha256": "10d52444574f79879517464c848c8e7f0faf90755adbac5bb9a55d5daf3c1bdc",
+      "child_finished": true,
+      "child_exits": [
+        0,
+        0
+      ],
+      "socket_remaining": false
+    }
+  ],
+  "released_read_only_links": [
+    "build",
+    "runs/m3abc-local-01"
+  ],
+  "private_dependencies_retained": true,
+  "system_service_changed": false,
+  "host_thp_adjusted": false,
+  "gpu_jobs_started": 0,
+  "new_rbeast_fits": 0,
+  "old_logs_retained": true,
+  "other_resources_touched": false
+}
