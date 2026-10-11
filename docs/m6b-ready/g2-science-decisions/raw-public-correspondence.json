@@ -9,8 +9,24 @@
       "sha256": "85aed5c92eb8082171b5c2a5d7aa001bb774d70b46d623ffcef7b27d2b87cfa9"
     },
     {
+      "name": "commit.receipt.json",
+      "sha256": "4aed7ae2a1d8c19346b592cb87a5961ab88b3b71029807a763aa3a1c70ffa75c"
+    },
+    {
       "name": "data-shapes.receipt.json",
       "sha256": "abd0419e43355a6b9aea52e7a85864220098268ff6d7cf110fbe8b788eda6e51"
+    },
+    {
+      "name": "diff-check-final.receipt.json",
+      "sha256": "c98e699cccdb6906ee1df3bd6f1c8cdf43cb37eb811cac221c83c1979bc3fd90"
+    },
+    {
+      "name": "diff-check.receipt.json",
+      "sha256": "8569621f9726ad70d99af3d89286fea0b3f29a02b1b22753ef28f16f267731d5"
+    },
+    {
+      "name": "finish-evidence.receipt.json",
+      "sha256": "1e9d053096635031195fec69711f3609c2c6dea117e13b61d549ed27a154336a"
     },
     {
       "name": "historical-audit01.receipt.json",
@@ -53,8 +69,24 @@
       "sha256": "85b54d84311ccc1701c8ab6a859543a373e269a39008b36e4de30fd082bf3ba1"
     },
     {
+      "name": "seal-packet.receipt.json",
+      "sha256": "e05d2c474d8c0e9e70fb809148e5b430dff55651a8a10208096972dcc793c630"
+    },
+    {
+      "name": "seal-packet02.receipt.json",
+      "sha256": "4b75d1bb78fde6b9816c0cba0e1ad65ca0ee170b7fd50dc2d75f54b76eefa928"
+    },
+    {
       "name": "shapes-small.receipt.json",
       "sha256": "5e74b8f2498e263136b50197a8931b8ca178e3fce0ce8e769eebbde17c79b22c"
+    },
+    {
+      "name": "stage-final.receipt.json",
+      "sha256": "01b744c235ad5b560a371b55b5cdf524efa0a137142d09971cf5031fa7cbe249"
+    },
+    {
+      "name": "stage.receipt.json",
+      "sha256": "f1cb899f6e0a1e61dd85be302674f4fda7bc1e1f6a6feab59448f89ee6710f16"
     },
     {
       "name": "wrapper-tail.receipt.json",

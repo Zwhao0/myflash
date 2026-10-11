@@ -410,6 +410,206 @@
         }
       },
       "id": "wrapper-tail"
+    },
+    {
+      "argv": [
+        "python3",
+        "runs/m6b-ready-g2-science-20261011/finish_evidence.py"
+      ],
+      "cwd": "<project>",
+      "exit_code": 0,
+      "timeout": false,
+      "elapsed_s": 0.8388097286224365,
+      "platform": "macOS-26.6.2-arm64-arm-64bit",
+      "python": "3.9.6 (default, May 22 2026, 11:13:45) \n[Clang 21.0.0 (clang-2100.1.1.101)]",
+      "logs": {
+        "stdout": {
+          "path": "finish-evidence.stdout",
+          "sha256": "6d68ec34ee01328ff996e1e477781fa0d17dd7ec612f7f137b7734230c47903b"
+        },
+        "stderr": {
+          "path": "finish-evidence.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      "id": "finish-evidence"
+    },
+    {
+      "argv": [
+        "git",
+        "add",
+        "--",
+        "docs/m6b-ready/g2-science-decisions",
+        "tasks/06b_ready_g2_science_decisions.md",
+        "STATUS.md",
+        "GAPS.md"
+      ],
+      "cwd": "<checkout>",
+      "exit_code": 0,
+      "timeout": false,
+      "elapsed_s": 0.023797988891601562,
+      "platform": "macOS-26.6.2-arm64-arm-64bit",
+      "python": "3.9.6 (default, May 22 2026, 11:13:45) \n[Clang 21.0.0 (clang-2100.1.1.101)]",
+      "logs": {
+        "stdout": {
+          "path": "stage.stdout",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stderr": {
+          "path": "stage.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      "id": "stage"
+    },
+    {
+      "argv": [
+        "git",
+        "diff",
+        "--cached",
+        "--check"
+      ],
+      "cwd": "<checkout>",
+      "exit_code": 0,
+      "timeout": false,
+      "elapsed_s": 0.01307988166809082,
+      "platform": "macOS-26.6.2-arm64-arm-64bit",
+      "python": "3.9.6 (default, May 22 2026, 11:13:45) \n[Clang 21.0.0 (clang-2100.1.1.101)]",
+      "logs": {
+        "stdout": {
+          "path": "diff-check.stdout",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stderr": {
+          "path": "diff-check.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      "id": "diff-check"
+    },
+    {
+      "argv": [
+        "python3",
+        "runs/m6b-ready-g2-science-20261011/seal_packet.py"
+      ],
+      "cwd": "<project>",
+      "exit_code": 1,
+      "timeout": false,
+      "elapsed_s": 0.013466119766235352,
+      "platform": "macOS-26.6.2-arm64-arm-64bit",
+      "python": "3.9.6 (default, May 22 2026, 11:13:45) \n[Clang 21.0.0 (clang-2100.1.1.101)]",
+      "logs": {
+        "stdout": {
+          "path": "seal-packet.stdout",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stderr": {
+          "path": "seal-packet.stderr",
+          "sha256": "cd43e9e28bcd4f6f7a004b2a13bb92df9df09506055542c45cb2ae8214d320de"
+        }
+      },
+      "id": "seal-packet"
+    },
+    {
+      "argv": [
+        "git",
+        "add",
+        "--",
+        "docs/m6b-ready/g2-science-decisions",
+        "tasks/06b_ready_g2_science_decisions.md",
+        "STATUS.md",
+        "GAPS.md"
+      ],
+      "cwd": "<checkout>",
+      "exit_code": 0,
+      "timeout": false,
+      "elapsed_s": 0.008442163467407227,
+      "platform": "macOS-26.6.2-arm64-arm-64bit",
+      "python": "3.9.6 (default, May 22 2026, 11:13:45) \n[Clang 21.0.0 (clang-2100.1.1.101)]",
+      "logs": {
+        "stdout": {
+          "path": "stage-final.stdout",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stderr": {
+          "path": "stage-final.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      "id": "stage-final"
+    },
+    {
+      "argv": [
+        "git",
+        "diff",
+        "--cached",
+        "--check"
+      ],
+      "cwd": "<checkout>",
+      "exit_code": 0,
+      "timeout": false,
+      "elapsed_s": 0.008980989456176758,
+      "platform": "macOS-26.6.2-arm64-arm-64bit",
+      "python": "3.9.6 (default, May 22 2026, 11:13:45) \n[Clang 21.0.0 (clang-2100.1.1.101)]",
+      "logs": {
+        "stdout": {
+          "path": "diff-check-final.stdout",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stderr": {
+          "path": "diff-check-final.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      "id": "diff-check-final"
+    },
+    {
+      "argv": [
+        "git",
+        "commit",
+        "-m",
+        "docs(m6): propose complete G01 G02 G13 scientific decisions for owner review"
+      ],
+      "cwd": "<checkout>",
+      "exit_code": 0,
+      "timeout": false,
+      "elapsed_s": 0.022834300994873047,
+      "platform": "macOS-26.6.2-arm64-arm-64bit",
+      "python": "3.9.6 (default, May 22 2026, 11:13:45) \n[Clang 21.0.0 (clang-2100.1.1.101)]",
+      "logs": {
+        "stdout": {
+          "path": "commit.stdout",
+          "sha256": "404ed3d25ab1b665c293b76a9dc44682e45d794b8e006e7b2dc21addec461927"
+        },
+        "stderr": {
+          "path": "commit.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      "id": "commit"
+    },
+    {
+      "argv": [
+        "python3",
+        "runs/m6b-ready-g2-science-20261011/seal_packet.py"
+      ],
+      "cwd": "<project>",
+      "exit_code": 0,
+      "timeout": false,
+      "elapsed_s": 0.830554723739624,
+      "platform": "macOS-26.6.2-arm64-arm-64bit",
+      "python": "3.9.6 (default, May 22 2026, 11:13:45) \n[Clang 21.0.0 (clang-2100.1.1.101)]",
+      "logs": {
+        "stdout": {
+          "path": "seal-packet02.stdout",
+          "sha256": "e0608f23f109817af622b22705c9e3fd2b1557136e3881fd228ac0692972ef14"
+        },
+        "stderr": {
+          "path": "seal-packet02.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      "id": "seal-packet02"
     }
   ],
   "actual_raw_path": "project-private runs/m6b-ready-g2-science-20261011",

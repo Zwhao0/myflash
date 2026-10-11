@@ -15,9 +15,9 @@
     {
       "path": "STATUS.md",
       "old_sha256": "322c257fb07efd8e8ffaec00f71e2a64d6bfe87279a49f49bc95c8838e8c3843",
-      "new_sha256": "047fd2892c106d684b9d529f6333724cb14919ebb3ef51d2581067e886c06e2e",
+      "new_sha256": "75b6837bb0ed5f9ff2ac49ae217e6d69ec6d04491d8654121b659e14d1e937b6",
       "old_bytes": 65302,
-      "new_bytes": 67284
+      "new_bytes": 67633
     }
   ],
   "complete_manifest": "baseline-files.json",

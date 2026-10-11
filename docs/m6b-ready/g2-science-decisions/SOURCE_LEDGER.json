@@ -515,5 +515,6 @@
     "publication": "original task04 independent Draft PR only"
   },
   "licensing": "fixed package MIT; historical third-party/publication rights DEFERRED/OPEN; no wheel/full upstream redistribution",
-  "prohibited_old_project": "not accessed; only current clean-room task-specified S1/P1 history"
+  "prohibited_old_project": "not accessed; only current clean-room task-specified S1/P1 history",
+  "inherited_receipt_scope": "fixed_source.upstream ADAPTATION entries cite historical P1 d2973f5 bytes; current_sources separately pins task03 actual bytes; old receipts not rewritten"
 }

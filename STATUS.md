@@ -534,3 +534,5 @@ formal default adoption/Redis/GPU/fault injection/M6-B; formal environment
 preservation this round NOT_PROBED, previous gaps not repaired. Rights/privacy
 DEFERRED/OPEN, ordinary CI text-only. Next unique action independent exact-head
 Draft review and explicit full per-gap science approvals; STOP, no task05.
+
+Task04 seal helper initial encoding error exit1 retained; initial local docs commit e352d95 created before seal completion but not pushed. ASCII-only repaired helper seal-packet02 actual0, original science/data untouched. Final exact head/tree/ordinary push/Draft/CI binding in private publication receipt and PR body. No CI/science PASS inferred.
