@@ -1,0 +1,144 @@
+{
+  "base_head": "0dd0e1c5cac043aef1449d5cfe9e74ed38447cf3",
+  "upstream_code_reuse": false,
+  "new_choices": [
+    {
+      "classification": "ADAPTATION",
+      "choice": "persist decision+intent before independent cursor ACK; stable logical ID and CAS dedup; pending-first bounded backpressure",
+      "source": "current human TASK12 authorization and CONTRACT.md"
+    },
+    {
+      "classification": "EXTENSION",
+      "choice": "controlled CPU adapter/MemoryStore/crash fixtures",
+      "source": "tests/task12_auto_profile.py"
+    }
+  ],
+  "sources": [
+    {
+      "commit": "0dd0e1c5cac043aef1449d5cfe9e74ed38447cf3",
+      "path": "SPEC.md",
+      "functions": [
+        "S2",
+        "S3",
+        "S4"
+      ],
+      "sha256": "d2695119f155129ca704cf6e524b3690e82827a2bbaf4f9c4cb046baf615e755",
+      "classification": "PAPER",
+      "reuse": "same clean-room project; preserved bytes except explicitly allowed controller ingress"
+    },
+    {
+      "commit": "0dd0e1c5cac043aef1449d5cfe9e74ed38447cf3",
+      "path": "flash/change_detection.py",
+      "functions": [
+        "detect",
+        "_detect_approved",
+        "_filter_approved_candidates"
+      ],
+      "sha256": "a116ef88a31f52226a545fa5e3d08f7eb5d8264456ec5c7de637e0c6d76b1957",
+      "classification": "ADAPTATION",
+      "reuse": "same clean-room project; preserved bytes except explicitly allowed controller ingress"
+    },
+    {
+      "commit": "0dd0e1c5cac043aef1449d5cfe9e74ed38447cf3",
+      "path": "flash/rbeast_adapter.py",
+      "functions": [
+        "RbeastAdapter",
+        "worker",
+        "CANDIDATE_C_SHA256",
+        "PARAMETERS"
+      ],
+      "sha256": "e96aff41234a3beabb03ad15c712f8de064410ca8fad50cb74b5b0f440284408",
+      "classification": "ADAPTATION",
+      "reuse": "same clean-room project; preserved bytes except explicitly allowed controller ingress"
+    },
+    {
+      "commit": "0dd0e1c5cac043aef1449d5cfe9e74ed38447cf3",
+      "path": "flash/iteration_outbox.py",
+      "functions": [
+        "_Ledger",
+        "DurableIterationConsumer.poll",
+        "DurableIterationConsumer.commit"
+      ],
+      "sha256": "a7bcfdbf27a716944fd4d4403bb524d41343890b30af57c571438d88803c5fe8",
+      "classification": "ADAPTATION",
+      "reuse": "same clean-room project; preserved bytes except explicitly allowed controller ingress"
+    },
+    {
+      "commit": "0dd0e1c5cac043aef1449d5cfe9e74ed38447cf3",
+      "path": "flash/m6_controller.py",
+      "functions": [
+        "GlobalController.start",
+        "GlobalController._owned",
+        "GlobalController.tick"
+      ],
+      "sha256": "12cf7cf7a96a4d3e83f78ae59a305738878f7e53e39c1b7d68e3a2b4facfdc37",
+      "classification": "ADAPTATION",
+      "reuse": "same clean-room project; preserved bytes except explicitly allowed controller ingress"
+    },
+    {
+      "commit": "0dd0e1c5cac043aef1449d5cfe9e74ed38447cf3",
+      "path": "flash/m6_store.py",
+      "functions": [
+        "transaction",
+        "MemoryStore.cas"
+      ],
+      "sha256": "54b3e3d613353e7719b7dcf0ab4d824ad0f606ae23cfc693a7cefebe4ab36c1e",
+      "classification": "ADAPTATION",
+      "reuse": "same clean-room project; preserved bytes except explicitly allowed controller ingress"
+    },
+    {
+      "commit": "0dd0e1c5cac043aef1449d5cfe9e74ed38447cf3",
+      "path": "flash/m6_protocol.py",
+      "functions": [
+        "window_seconds",
+        "registration",
+        "digest"
+      ],
+      "sha256": "02428d0c45c00843b4c66f9298c1f751fbca6a67eb82cf786c5621128b14454e",
+      "classification": "ADAPTATION",
+      "reuse": "same clean-room project; preserved bytes except explicitly allowed controller ingress"
+    },
+    {
+      "commit": "0dd0e1c5cac043aef1449d5cfe9e74ed38447cf3",
+      "path": "flash/m6_abi2_bridge.py",
+      "functions": [
+        "Abi2GlobalController"
+      ],
+      "sha256": "548d7d177b181f04aebc1a892715a3e9e73b35e6d10fd2e5986f93088a098697",
+      "classification": "ADAPTATION",
+      "reuse": "same clean-room project; preserved bytes except explicitly allowed controller ingress"
+    },
+    {
+      "commit": "0dd0e1c5cac043aef1449d5cfe9e74ed38447cf3",
+      "path": "docs/m6b-ready/g2-approved-detector/APPROVAL.json",
+      "functions": [
+        "G01-a",
+        "G02-inclusive_span",
+        "G13-A"
+      ],
+      "sha256": "4f5ca046ca67e7cc9bb1ebd76b3659616d9bb1e165ba48e3be8a6f33809f6409",
+      "classification": "ADAPTATION",
+      "reuse": "same clean-room project; preserved bytes except explicitly allowed controller ingress"
+    },
+    {
+      "commit": "0dd0e1c5cac043aef1449d5cfe9e74ed38447cf3",
+      "path": "docs/m6b-ready/g3-g04-implementation/APPROVAL.json",
+      "functions": [
+        "existing G04 choices"
+      ],
+      "sha256": "6b103ddb9e20cd7f10ddc91c3b94603b78690d812320e3eaeb97b0efbcb325de",
+      "classification": "ADAPTATION",
+      "reuse": "same clean-room project; preserved bytes except explicitly allowed controller ingress"
+    },
+    {
+      "commit": "0dd0e1c5cac043aef1449d5cfe9e74ed38447cf3",
+      "path": "docs/m6b-ready/task11-final-audit/AUDIT.md",
+      "functions": [
+        "B01"
+      ],
+      "sha256": "bc3f709cb6f79c76c5987d47793dc3377c52e88fbdcb022788f7c0cb592cc4f1",
+      "classification": "ADAPTATION",
+      "reuse": "same clean-room project; preserved bytes except explicitly allowed controller ingress"
+    }
+  ]
+}

@@ -1,0 +1,246 @@
+{
+  "classification": "ADAPTATION CPU engineering only",
+  "base_head": "0dd0e1c5cac043aef1449d5cfe9e74ed38447cf3",
+  "runs": [
+    {
+      "name": "auto03",
+      "test_count": 24,
+      "exit_code": 0,
+      "timeout": false,
+      "duration_seconds": 22.527235746383667,
+      "argv": [
+        "<local-home>/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-B",
+        "tests/task12_auto_profile.py"
+      ],
+      "cwd": "<workspace>",
+      "machine": "arm64",
+      "platform": "macOS-26.6.2-arm64-arm-64bit",
+      "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+      "private_receipt_path": "runs/task12-auto-profile-20261011/auto03.receipt.json",
+      "private_receipt_sha256": "b5ad431e90c907698d805b5ce826f100c7fcb468e6e7b41db76cba7d28b78c98",
+      "executed_source_sha256": {
+        "flash/m6_controller.py": "e728e4cca4e1b074804dfd8dbe304967cf6f9fe16d2e696a82af77dfc01625d7",
+        "flash/automatic_profile.py": "bb4875a30c51e27352fa2b5e79ec1a7cd54c8b016beec1bcf666cd0e2971f703",
+        "tests/task12_auto_profile.py": "d5a1e3900122a07eedbb9826a38fabc56c2805610b0ae80c7b1f96e363dfb2b0"
+      },
+      "stdout_path": "logs/auto03.stdout.txt",
+      "stdout_raw_sha256": "d5fd9db038751e8923871b42f25f61d63ed033a85fa1487b92a68879822bfa54",
+      "stdout_public_sha256": "d5fd9db038751e8923871b42f25f61d63ed033a85fa1487b92a68879822bfa54",
+      "stderr_path": "logs/auto03.stderr.txt",
+      "stderr_raw_sha256": "7eea3417b090a12373777d944839d721bd5f589e8d043ca4f1cb5b6af201829e",
+      "stderr_public_sha256": "7eea3417b090a12373777d944839d721bd5f589e8d043ca4f1cb5b6af201829e"
+    },
+    {
+      "name": "regression01",
+      "test_count": 32,
+      "exit_code": 0,
+      "timeout": false,
+      "duration_seconds": 3.0537030696868896,
+      "argv": [
+        "<local-home>/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "m6_control.py",
+        "-v"
+      ],
+      "cwd": "<workspace>",
+      "machine": "arm64",
+      "platform": "macOS-26.6.2-arm64-arm-64bit",
+      "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+      "private_receipt_path": "runs/task12-auto-profile-20261011/regression01.receipt.json",
+      "private_receipt_sha256": "0b5a3707b62061573a96473cac0fe1760efb284c21643a69833c41133bcf6a04",
+      "executed_source_sha256": {
+        "flash/m6_controller.py": "e728e4cca4e1b074804dfd8dbe304967cf6f9fe16d2e696a82af77dfc01625d7"
+      },
+      "stdout_path": "logs/regression01.stdout.txt",
+      "stdout_raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_path": "logs/regression01.stderr.txt",
+      "stderr_raw_sha256": "307e4510fe0cf8471b208027e6fe7ab1a644cd424179176cf46d6d9f2eae9f69",
+      "stderr_public_sha256": "307e4510fe0cf8471b208027e6fe7ab1a644cd424179176cf46d6d9f2eae9f69"
+    },
+    {
+      "name": "regression02",
+      "test_count": 108,
+      "exit_code": 0,
+      "timeout": false,
+      "duration_seconds": 36.32568573951721,
+      "argv": [
+        "<local-home>/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-B",
+        "-c",
+        "import sys,unittest; sys.path.insert(0,\"tests\"); names=[\"m5_detection\",\"m6b_ready_approved_detection\",\"m5_reporter\",\"m6b_ready_c_optin\",\"m6b_ready_cursor_extra\",\"m6b_ready_reporter_outbox\",\"task09_abi2_cpu\"]; result=unittest.TextTestRunner(verbosity=2).run(unittest.defaultTestLoader.loadTestsFromNames(names)); sys.exit(not result.wasSuccessful())"
+      ],
+      "cwd": "<workspace>",
+      "machine": "arm64",
+      "platform": "macOS-26.6.2-arm64-arm-64bit",
+      "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+      "private_receipt_path": "runs/task12-auto-profile-20261011/regression02.receipt.json",
+      "private_receipt_sha256": "eb9d17c6ed92b2f9340e83baa480ec2d9fa3283ca5041acee5ff274156aae724",
+      "executed_source_sha256": {
+        "flash/m6_controller.py": "e728e4cca4e1b074804dfd8dbe304967cf6f9fe16d2e696a82af77dfc01625d7"
+      },
+      "stdout_path": "logs/regression02.stdout.txt",
+      "stdout_raw_sha256": "abcbe2ac2c865cf022a0bf84891e1bc2ff57118cab69cd15b78b6877113dc2be",
+      "stdout_public_sha256": "d344ab23a917d40e967dcd12cf62336ec49d5c62c69d455b68757a94ee2f7a25",
+      "stderr_path": "logs/regression02.stderr.txt",
+      "stderr_raw_sha256": "8a1a30786452f5640d7a683f92bc3455c6e42f345a0be8a180b044d89c54e0c8",
+      "stderr_public_sha256": "8a1a30786452f5640d7a683f92bc3455c6e42f345a0be8a180b044d89c54e0c8"
+    },
+    {
+      "name": "cursor01",
+      "test_count": 9,
+      "exit_code": 0,
+      "timeout": false,
+      "duration_seconds": 6.278979063034058,
+      "argv": [
+        "<local-home>/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-B",
+        "tests/m6b_ready_cursor_contract.py",
+        "--output",
+        "runs/task12-auto-profile-20261011/cursor01"
+      ],
+      "cwd": "<workspace>",
+      "machine": "arm64",
+      "platform": "macOS-26.6.2-arm64-arm-64bit",
+      "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+      "private_receipt_path": "runs/task12-auto-profile-20261011/cursor01.receipt.json",
+      "private_receipt_sha256": "ef116b1c332c365198623bf07864c021112a2925ac9a403ea7ea68220e7e1755",
+      "executed_source_sha256": {
+        "flash/m6_controller.py": "e728e4cca4e1b074804dfd8dbe304967cf6f9fe16d2e696a82af77dfc01625d7"
+      },
+      "stdout_path": "logs/cursor01.stdout.txt",
+      "stdout_raw_sha256": "dc070e57abe78db199d4e33ffe157695546bc0af9d09aa301b988f9389378351",
+      "stdout_public_sha256": "dc070e57abe78db199d4e33ffe157695546bc0af9d09aa301b988f9389378351",
+      "stderr_path": "logs/cursor01.stderr.txt",
+      "stderr_raw_sha256": "d3b608ede1ce5952737dc5eff1075cafcfa5a8acaea1cb893b1ae8e7f843eb4c",
+      "stderr_public_sha256": "d3b608ede1ce5952737dc5eff1075cafcfa5a8acaea1cb893b1ae8e7f843eb4c"
+    }
+  ],
+  "total_new_tests": 24,
+  "total_original_tests": 149,
+  "simulation_mode": "CPU_SIMULATION, no native fitting or Redis",
+  "test_environment": {
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "machine": "arm64",
+    "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+    "sqlite": "3.53.1",
+    "hardware": "Mac17,3",
+    "cpu": "Apple M5"
+  },
+  "states": [
+    {
+      "path": "states/test_disconnect_before_request_keeps_intent_and_backpressure.json",
+      "raw_sha256": "4d7f1fb604f44fbd900cde702d8c0e3ddb3c6595bd5760ed279574dc93c9c31e",
+      "public_sha256": "4d7f1fb604f44fbd900cde702d8c0e3ddb3c6595bd5760ed279574dc93c9c31e"
+    },
+    {
+      "path": "states/test_lost_remote_ack_and_reopen_no_duplicate_epoch_or_refit.json",
+      "raw_sha256": "4dd4d9b815e0f97d082c37f5648487dee3cce6f0071f77c35c7f4439b90a52fe",
+      "public_sha256": "4dd4d9b815e0f97d082c37f5648487dee3cce6f0071f77c35c7f4439b90a52fe"
+    },
+    {
+      "path": "states/test_subprocess_hard_exit_after_intent_commit_reopens.json",
+      "raw_sha256": "f50cc497172e456ede6fe00a0b476439681afb78ad5ab19d31899e31303f63b0",
+      "public_sha256": "f50cc497172e456ede6fe00a0b476439681afb78ad5ab19d31899e31303f63b0"
+    },
+    {
+      "path": "states/test_trigger_during_partial_reset_waits_for_verified_monitor.json",
+      "raw_sha256": "045e4cfbafcb6707b5ce368888f85567a1ce70dbe5a9455a5be64ca4e1158812",
+      "public_sha256": "045e4cfbafcb6707b5ce368888f85567a1ce70dbe5a9455a5be64ca4e1158812"
+    }
+  ],
+  "all_private_states_count": 24,
+  "earlier_runs": [
+    {
+      "name": "auto01",
+      "exit_code": 0,
+      "receipt_sha256": "ccfec81c4baa3ee0d06fbc87bd90265bcfb648350ce191c52505e57e86f130eb"
+    },
+    {
+      "name": "auto02",
+      "exit_code": 0,
+      "receipt_sha256": "dea02998be239d68666be48ddf19405cd29a1bf37e1239cf1f3c62212734cd5f"
+    }
+  ],
+  "failures": "No task12 CPU test failures. Initial root Git128 and unmatched glob1 were discovery-command failures, transcript-only/raw NOT_CAPTURED; no test assertions changed to mask failures.",
+  "expected_child_exit": 73,
+  "not_run": [
+    "real Redis",
+    "GPU",
+    "native/Rbeast fit",
+    "native ABI2",
+    "server",
+    "framework orchestration",
+    "physical sampling window",
+    "power loss",
+    "M6-B",
+    "publication"
+  ],
+  "static_verification": {
+    "name": "verify01 before evidence seal",
+    "exit_code": 0,
+    "timeout": false,
+    "duration_seconds": 85.69441485404968,
+    "argv": [
+      "<local-home>/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+      "-B",
+      "docs/m6b-ready/task12-auto-profile/verify_evidence.py"
+    ],
+    "cwd": "<workspace>",
+    "stdout_path": "preservation.json",
+    "stdout_sha256": "51c45557bd6ee73039aef51644d715df794150ba66673e713b876898b2e8d367",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "receipt_path": "runs/task12-auto-profile-20261011/verify01.receipt.json",
+    "receipt_sha256": "dd3ced4484556d35bc3c16f13c7ab0065d79f917c42843e51196d7b375e5b87c",
+    "script_sha256": "ff94c88370e5130ca7cad8869d510c2701274d488993ac87ffba158f508f020c",
+    "original_script_snapshot_path": "runs/task12-auto-profile-20261011/verify02-source.py"
+  },
+  "execution_environment": {
+    "auto03": {
+      "TASK12_EVIDENCE_DIR": "runs/task12-auto-profile-20261011/auto03-states"
+    }
+  },
+  "environment_receipt": {
+    "path": "runs/task12-auto-profile-20261011/environment01.receipt.json",
+    "sha256": "94cfa04c61547b5db4b9a1726130c86bf9a5eb2e700d1afc665650b1b6c1b695",
+    "exit_code": 0
+  },
+  "static_failure": {
+    "name": "verify02",
+    "parent_exit_code": 1,
+    "timeout": true,
+    "timeout_seconds": 90,
+    "child_exit_code": null,
+    "child_raw_logs": "NOT_CAPTURED; original exception retained in tool transcript",
+    "source_snapshot_path": "runs/task12-auto-profile-20261011/verify02-source.py",
+    "source_sha256": "ff94c88370e5130ca7cad8869d510c2701274d488993ac87ffba158f508f020c",
+    "receipt_path": "runs/task12-auto-profile-20261011/verify02.failure.json",
+    "receipt_sha256": "88d2505bdcc67678bbcfb2943e9c70c55eaf58561e6f87e615a35cf25883c3be",
+    "repair": "same pinned blob inputs in Git batch; unchanged protection assertions; timeout remains90s"
+  },
+  "final_static_verification": {
+    "name": "verify03",
+    "exit_code": 0,
+    "timeout": false,
+    "duration_seconds": 8.470221042633057,
+    "argv": [
+      "<local-home>/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+      "-B",
+      "docs/m6b-ready/task12-auto-profile/verify_evidence.py"
+    ],
+    "cwd": "<workspace>",
+    "stdout_path": "preservation-final.json",
+    "stdout_sha256": "b79c7e266acd36cf3e850e81566e4d10e6af99a50e6aea54ed30db65e4548d7d",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "receipt_path": "runs/task12-auto-profile-20261011/verify03.receipt.json",
+    "receipt_sha256": "53c5cd97c158d4ff8a7762dde6147449bb22e79aea788a2babcee702fc623b77",
+    "script_sha256": "5c0947ee93a1eebb2d11f8e3a3b233f1c3545f8b5787ae346b9272c612925c96"
+  }
+}

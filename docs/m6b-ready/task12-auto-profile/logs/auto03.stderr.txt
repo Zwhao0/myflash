@@ -1,0 +1,29 @@
+test_busy_active_retains_trigger_and_blocks_next_cursor (__main__.AutoTests.test_busy_active_retains_trigger_and_blocks_next_cursor) ... ok
+test_candidates_and_nonboolean_trigger_never_request (__main__.AutoTests.test_candidates_and_nonboolean_trigger_never_request) ... ok
+test_capacity_and_binding_changes_block_without_skipping (__main__.AutoTests.test_capacity_and_binding_changes_block_without_skipping) ... ok
+test_concurrent_completed_duplicate_is_checked_inside_CAS (__main__.AutoTests.test_concurrent_completed_duplicate_is_checked_inside_CAS) ... ok
+test_controller_C_identity_and_approved_config_fail_closed (__main__.AutoTests.test_controller_C_identity_and_approved_config_fail_closed) ... ok
+test_corrupt_or_missing_intent_refused_at_reopen (__main__.AutoTests.test_corrupt_or_missing_intent_refused_at_reopen) ... ok
+test_crash_after_decision_before_cursor_ack_replays_frozen_decision (__main__.AutoTests.test_crash_after_decision_before_cursor_ack_replays_frozen_decision) ... ok
+test_crash_after_remote_accept_before_local_receipt (__main__.AutoTests.test_crash_after_remote_accept_before_local_receipt) ... ok
+test_crash_before_local_commit_does_not_ack (__main__.AutoTests.test_crash_before_local_commit_does_not_ack) ... ok
+test_deterministic_request_and_prefix_inputs_no_future_leak (__main__.AutoTests.test_deterministic_request_and_prefix_inputs_no_future_leak) ... ok
+test_disconnect_before_request_keeps_intent_and_backpressure (__main__.AutoTests.test_disconnect_before_request_keeps_intent_and_backpressure) ... ok
+test_exact_duplicate_and_conflict (__main__.AutoTests.test_exact_duplicate_and_conflict) ... ok
+test_explicit_optin_C_and_rank_scope_gates (__main__.AutoTests.test_explicit_optin_C_and_rank_scope_gates) ... ok
+test_finished_request_deduplicates_after_reset_and_next_trigger_is_retained (__main__.AutoTests.test_finished_request_deduplicates_after_reset_and_next_trigger_is_retained) ... ok
+test_formal_trigger_only_and_distinct_controller_entry (__main__.AutoTests.test_formal_trigger_only_and_distinct_controller_entry) ... ok
+test_intent_with_acknowledged_cursor_but_evicted_source_is_never_dropped (__main__.AutoTests.test_intent_with_acknowledged_cursor_but_evicted_source_is_never_dropped) ... ok
+test_invalid_raw_freezes_without_cursor_ack (__main__.AutoTests.test_invalid_raw_freezes_without_cursor_ack) ... ok
+test_lost_remote_ack_and_reopen_no_duplicate_epoch_or_refit (__main__.AutoTests.test_lost_remote_ack_and_reopen_no_duplicate_epoch_or_refit) ... ok
+test_missing_remote_document_or_accepted_history_blocks (__main__.AutoTests.test_missing_remote_document_or_accepted_history_blocks) ... ok
+test_native_failure_freezes_decision_without_ack (__main__.AutoTests.test_native_failure_freezes_decision_without_ack) ... ok
+test_recovery_rejects_changed_or_evicted_unacked_source (__main__.AutoTests.test_recovery_rejects_changed_or_evicted_unacked_source) ... ok
+test_stale_generation_cannot_dispatch_and_new_owner_replays (__main__.AutoTests.test_stale_generation_cannot_dispatch_and_new_owner_replays) ... ok
+test_subprocess_hard_exit_after_intent_commit_reopens (__main__.AutoTests.test_subprocess_hard_exit_after_intent_commit_reopens) ... ok
+test_trigger_during_partial_reset_waits_for_verified_monitor (__main__.AutoTests.test_trigger_during_partial_reset_waits_for_verified_monitor) ... ok
+
+----------------------------------------------------------------------
+Ran 24 tests in 22.397s
+
+OK

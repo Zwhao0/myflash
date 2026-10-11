@@ -69,9 +69,28 @@ class GlobalController:
             raise StaleOwner('STALE global fencing token')
 
     def start(self, trigger, manifest, now, *, request_id):
+        if trigger != TRIGGER:
+            raise ValueError('only MANUAL_TEST_TRIGGER is approved')
+        return self._start(trigger, manifest, now, request_id=request_id)
+
+    def start_automatic_v1(self, request, now):
+        """ADAPTATION TASK12: distinct, idempotent approved Detector ingress.
+
+        Evidence is caller-provided, not an authentication or native execution
+        permission. The durable dispatcher is the supported caller.
+        """
+        from flash.automatic_profile import validate_request, AUTO_TRIGGER
+        request = copy.deepcopy(request)
+        validate_request(request, self.run_id)
+        return self._start(AUTO_TRIGGER, request['manifest'], now,
+                           request_id=request['request_id'], automatic=request)
+
+    def _start(self, trigger, manifest, now, *, request_id, automatic=None):
         number(now)
         identity(request_id)
         request_hash = digest(dict(trigger=trigger, manifest=manifest))
+        if automatic is not None:
+            request_hash = digest(automatic)
         try:
             existing = self.store.read(self.run_id)
         except Unavailable as exc:
@@ -89,7 +108,7 @@ class GlobalController:
                     raise ValueError('conflicting manual request_id')
                 return dict(status='DUPLICATE_CONFIRMED', profile_epoch=prior['profile_epoch'],
                             final_alert=False, final_fault_ranks=[])
-        if trigger != TRIGGER:
+        if automatic is None and trigger != TRIGGER:
             raise ValueError('only MANUAL_TEST_TRIGGER is approved')
         stream = IterationReader(self.store, self.run_id, 0).read(now=now, timeout_seconds=self.iteration_timeout)
         if stream['status'] != 'READ_CONFIRMED':
@@ -107,6 +126,20 @@ class GlobalController:
             raise ValueError('truth prohibited')
         def begin(doc):
             self._owned(doc)
+            # Repeat deduplication inside CAS: a concurrent accepted request may
+            # have completed/reset since the initial read.
+            for prior in doc['epochs'] + ([doc['active']] if doc['active'] else []):
+                if prior['request_id'] == request_id:
+                    if prior['request_sha256'] != request_hash:
+                        raise ValueError('conflicting request_id')
+                    return dict(status='DUPLICATE_CONFIRMED', profile_epoch=prior['profile_epoch'],
+                                final_alert=False, final_fault_ranks=[])
+            if automatic is not None:
+                source = automatic['record']
+                confirmed = doc['iterations'].get('0', {}).get('records', [])
+                if not any(item['record'] == source and item['sha256'] == digest(source)
+                           for item in confirmed):
+                    return provisional('BLOCKED', 'automatic source no longer confirmed/retained')
             if doc['active'] and doc['active']['request_id'] == request_id:
                 if doc['active']['request_sha256'] != request_hash:
                     raise ValueError('conflicting manual request_id')
@@ -131,6 +164,8 @@ class GlobalController:
                 deadline_seconds=now + self.control_timeout, window=None, failure=None,
                 analysis=None, nodes={}, transitions=['MONITOR', 'PROFILE_REQUESTED'])
             doc['state'] = 'PROFILE_REQUESTED'
+            if automatic is not None:
+                doc['active']['automatic_request'] = copy.deepcopy(automatic)
             _request(doc, 1)
             event(doc, 'PROFILE_REQUEST', profile_epoch=epoch, generation=self.generation,
                   trigger=trigger, duration_seconds=duration, at_seconds=now)
