@@ -448,3 +448,26 @@ docs/m6b-ready/task10-g09-protocol/RESULT.md and private task10 run. CPU science
 matrices not repeated. Server/GPU/NCCL/Redis/installation/fault injection/M6-B
 NOT_RUN/NOT_STARTED. Next unique task independent TASK10 precise-head protocol
 review, then separate explicit execution scope if approved; STOP.
+
+
+## TASK11 final admission audit / 2026-10-11
+
+ADAPTATION, sole exact base b517c5a922d52895e274c3758b5b7c2c409d91ca.
+G01-a/G02-inclusive_span/G13-A and G04 eight choices remain ACCEPTED_ASSUMPTION
+per independent task05/07 APPROVAL.json; historical null/OPEN text preserved.
+G09/G20 physical scope remains OPEN. Current Detector trigger has no automatic
+consumer; Global/ABI2 Global still manual-only. Current DDP Reporter is LocalHistory
+and its descriptive completion boundary is not accepted by M6 window_seconds.
+Redis GET/EVAL/socket historical M6-A PASS exists; current ABI2/outbox/two-host
+combination NOT_RUN. Bridge calls approved G04 but uses same-host receive window,
+thread-local single-scope proof, memory-before-ACK, no integrated durable raw journal.
+Actual clocks/physical windows, native fences/drain/reset, truth access isolation,
+resource/runtime/capacity and safety recovery remain separate real admission gates.
+Failstop runtime unimplemented; F-PROVISIONAL final always empty/false.
+
+Audit final checklist10blockers/8bounded deviations/U00-U06 future tasks:
+docs/m6b-ready/task11-final-audit/AUDIT.md and CHECKLIST.json. No new scientific
+decisions or runtime/native/tests/fixtures/evidence modifications. Historical
+FAIL/NOT_CAPTURED/915-cache/rights/privacy OPEN/DEFERRED unchanged. No CPU matrix
+rerun/native fits/GPU/Redis/server probe/M6-B. Next unique action independent
+TASK11 precise-head review; no task12 or experiment authorization inferred. STOP.

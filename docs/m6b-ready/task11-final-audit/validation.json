@@ -1,0 +1,616 @@
+{
+  "task": "TASK11",
+  "base_head": "b517c5a922d52895e274c3758b5b7c2c409d91ca",
+  "base_tree": "59b3de2df840a3a6bda22e52911feaf20925778b",
+  "scope": "documents/static audit only",
+  "status": "DOCUMENT_STATIC_INTEGRITY_PASS_ONLY",
+  "admission": "BLOCKED",
+  "runtime_tests": 0,
+  "native_fits": 0,
+  "gpu": "NOT_RUN",
+  "redis": "NOT_RUN",
+  "server": "NOT_PROBED",
+  "m6b": "NOT_RUN",
+  "execution_authorized": false,
+  "machine": {
+    "os": "macOS-26.6.2-arm64-arm-64bit",
+    "architecture": "arm64",
+    "python": "3.9.6",
+    "alias": "local_MacBook_Air"
+  },
+  "commands": [
+    {
+      "label": "worktree01",
+      "argv": [
+        "git",
+        "worktree",
+        "add",
+        "<task11-checkout>",
+        "-b",
+        "codex/task11-m6b-ready-audit",
+        "b517c5a922d52895e274c3758b5b7c2c409d91ca"
+      ],
+      "cwd": "<task10-checkout>",
+      "host": "<local_macOS_host>",
+      "platform": "macOS-26.6.2-arm64-arm-64bit",
+      "machine": "arm64",
+      "python": "3.9.6 (default, May 22 2026, 11:13:45) \n[Clang 21.0.0 (clang-2100.1.1.101)]",
+      "start_utc": "2026-10-11T07:49:32.785439+00:00",
+      "end_utc": "2026-10-11T07:49:36.118618+00:00",
+      "exit_code": 0,
+      "timeout": false,
+      "logs": {
+        "stdout": {
+          "path": "<task11-private-run>/worktree01.stdout",
+          "sha256": "01cc74ac0d3d4f2b7a41f8d4ddf9fc97090e02a2eb3b028ad641ee1b07554f13"
+        },
+        "stderr": {
+          "path": "<task11-private-run>/worktree01.stderr",
+          "sha256": "47b750faa93b27dc90527dbfb667d71d6a426c9f291cf1322d6d29ca46523ee0"
+        }
+      },
+      "raw_receipt_sha256": "b947add2d709908a9570059d23c0dfeee73945c89ceb765a255b7a0292ad06cc"
+    },
+    {
+      "label": "evidence-index01",
+      "argv": [
+        "/usr/bin/python3",
+        "-c",
+        "import json; from pathlib import Path; paths=[\"docs/m6/validation.json\",\"docs/m6b-ready/g2-approved-detector/validation.json\",\"docs/m6b-ready/g3-g04-implementation/validation.json\",\"docs/m6b-ready/g20-reporter/validation.json\",\"docs/m6b-ready/task09-abi2-cpu/validation.json\",\"docs/m6b-ready/task09-abi2-cpu/review-logs.json\",\"docs/m6b-ready/task10-g09-protocol/validation.json\"]; print(json.dumps({p:{\"keys\":list(json.loads(Path(p).read_text())),\"bytes\":Path(p).stat().st_size} for p in paths},indent=2))"
+      ],
+      "cwd": "<task11-checkout>",
+      "host": "<local_macOS_host>",
+      "platform": "macOS-26.6.2-arm64-arm-64bit",
+      "machine": "arm64",
+      "python": "3.9.6 (default, May 22 2026, 11:13:45) \n[Clang 21.0.0 (clang-2100.1.1.101)]",
+      "start_utc": "2026-10-11T07:50:57.386023+00:00",
+      "end_utc": "2026-10-11T07:50:57.437393+00:00",
+      "exit_code": 0,
+      "timeout": false,
+      "logs": {
+        "stdout": {
+          "path": "<task11-private-run>/evidence-index01.stdout",
+          "sha256": "1cb528c8fca2c5f848fb937e508d523c8cdd0fd417ab1083f07d0e839217d7e4"
+        },
+        "stderr": {
+          "path": "<task11-private-run>/evidence-index01.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      "raw_receipt_sha256": "f827c29d42ab6494736cdfa04268b0341d5b5d59fe7ffe1002f8baa73ba9dd2b"
+    },
+    {
+      "label": "prepare01",
+      "argv": [
+        "/usr/bin/python3",
+        "<task11-private-run>/prepare_packet.py"
+      ],
+      "cwd": "<task11-checkout>",
+      "host": "<local_macOS_host>",
+      "platform": "macOS-26.6.2-arm64-arm-64bit",
+      "machine": "arm64",
+      "python": "3.9.6 (default, May 22 2026, 11:13:45) \n[Clang 21.0.0 (clang-2100.1.1.101)]",
+      "start_utc": "2026-10-11T07:57:38.092170+00:00",
+      "end_utc": "2026-10-11T07:57:38.812436+00:00",
+      "exit_code": 0,
+      "timeout": false,
+      "logs": {
+        "stdout": {
+          "path": "<task11-private-run>/prepare01.stdout",
+          "sha256": "0d9179ac0307731a17336dec3b40a7057e84c63b4b22473736ec7f302ca4bf18"
+        },
+        "stderr": {
+          "path": "<task11-private-run>/prepare01.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      "raw_receipt_sha256": "d963f061e70e912fd749c2e968749c41a6552214c57de0761ffcd9490c340d82"
+    },
+    {
+      "label": "verify01",
+      "argv": [
+        "/usr/bin/python3",
+        "docs/m6b-ready/task11-final-audit/verify_audit.py",
+        "--root",
+        "<task11-checkout>",
+        "--output",
+        "<task11-private-run>/verify01.json"
+      ],
+      "cwd": "<task11-checkout>",
+      "host": "<local_macOS_host>",
+      "platform": "macOS-26.6.2-arm64-arm-64bit",
+      "machine": "arm64",
+      "python": "3.9.6 (default, May 22 2026, 11:13:45) \n[Clang 21.0.0 (clang-2100.1.1.101)]",
+      "start_utc": "2026-10-11T07:57:47.032058+00:00",
+      "end_utc": "2026-10-11T07:57:52.877222+00:00",
+      "exit_code": 1,
+      "timeout": false,
+      "logs": {
+        "stdout": {
+          "path": "<task11-private-run>/verify01.stdout",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stderr": {
+          "path": "<task11-private-run>/verify01.stderr",
+          "sha256": "cb4f83b61038f79cd7026bea524a144c7715f29caf5cf2c1e41843d79731ffe9"
+        }
+      },
+      "raw_receipt_sha256": "c4196904c7f7cf33099a46880f3c1f992280254a846693a92322cae1fd9b434c"
+    },
+    {
+      "label": "verify02",
+      "argv": [
+        "/usr/bin/python3",
+        "docs/m6b-ready/task11-final-audit/verify_audit.py",
+        "--root",
+        "<task11-checkout>",
+        "--output",
+        "<task11-private-run>/verify02.json"
+      ],
+      "cwd": "<task11-checkout>",
+      "host": "<local_macOS_host>",
+      "platform": "macOS-26.6.2-arm64-arm-64bit",
+      "machine": "arm64",
+      "python": "3.9.6 (default, May 22 2026, 11:13:45) \n[Clang 21.0.0 (clang-2100.1.1.101)]",
+      "start_utc": "2026-10-11T07:59:22.029505+00:00",
+      "end_utc": "2026-10-11T07:59:26.740477+00:00",
+      "exit_code": 0,
+      "timeout": false,
+      "logs": {
+        "stdout": {
+          "path": "<task11-private-run>/verify02.stdout",
+          "sha256": "b591bc971f5dd6d97c1de74ded7d2a27bb961baa2232f9f6681ec8434ec9bc39"
+        },
+        "stderr": {
+          "path": "<task11-private-run>/verify02.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      "raw_receipt_sha256": "3f887d56549c2aa5371c75c8ed7c33be56095f23b63df7987503804d587b8ece"
+    },
+    {
+      "label": "caller-search01",
+      "argv": [
+        "rg",
+        "-n",
+        "m6_abi2_bridge|approved_rules=True|DurableIterationOutbox|DurableIterationConsumer|MANUAL_TEST_TRIGGER",
+        "flash",
+        "scripts",
+        "tests",
+        "--glob",
+        "*.py"
+      ],
+      "cwd": "<task11-checkout>",
+      "host": "<local_macOS_host>",
+      "platform": "macOS-26.6.2-arm64-arm-64bit",
+      "machine": "arm64",
+      "python": "3.9.6 (default, May 22 2026, 11:13:45) \n[Clang 21.0.0 (clang-2100.1.1.101)]",
+      "start_utc": "2026-10-11T08:02:36.579423+00:00",
+      "end_utc": "2026-10-11T08:02:36.601559+00:00",
+      "exit_code": 0,
+      "timeout": false,
+      "logs": {
+        "stdout": {
+          "path": "<task11-private-run>/caller-search01.stdout",
+          "sha256": "a9d7ce3d5d4dbc4e851dc2de1adb2a5bb00c7d2bdbc352ed678917b05679ff95"
+        },
+        "stderr": {
+          "path": "<task11-private-run>/caller-search01.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      "raw_receipt_sha256": "50d605430bcdc417dbbbaa2a87216e039d5d3f79fd12299be9a15a82ffa3268f"
+    },
+    {
+      "label": "failstop-search01",
+      "argv": [
+        "rg",
+        "-n",
+        "failstop_ranks|failstop|freshness|last_call|timeout_ranks",
+        "flash",
+        "scripts",
+        "native",
+        "tests",
+        "--glob",
+        "*.py",
+        "--glob",
+        "*.cpp",
+        "--glob",
+        "*.hpp"
+      ],
+      "cwd": "<task11-checkout>",
+      "host": "<local_macOS_host>",
+      "platform": "macOS-26.6.2-arm64-arm-64bit",
+      "machine": "arm64",
+      "python": "3.9.6 (default, May 22 2026, 11:13:45) \n[Clang 21.0.0 (clang-2100.1.1.101)]",
+      "start_utc": "2026-10-11T08:02:18.588995+00:00",
+      "end_utc": "2026-10-11T08:02:18.624198+00:00",
+      "exit_code": 1,
+      "timeout": false,
+      "logs": {
+        "stdout": {
+          "path": "<task11-private-run>/failstop-search01.stdout",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stderr": {
+          "path": "<task11-private-run>/failstop-search01.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      "raw_receipt_sha256": "00423fe0ca676d5a45a84e56b85ded59e1406dbb8e28dd44059d53ed453df719",
+      "interpretation": "rg exit1 means no match in declared source scopes; not a runtime failure"
+    },
+    {
+      "label": "changed-text01",
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "<task11-private-run>/changed_text.py"
+      ],
+      "cwd": "<task11-checkout>",
+      "host": "<local_macOS_host>",
+      "platform": "macOS-26.6.2-arm64-arm-64bit",
+      "machine": "arm64",
+      "python": "3.9.6 (default, May 22 2026, 11:13:45) \n[Clang 21.0.0 (clang-2100.1.1.101)]",
+      "start_utc": "2026-10-11T08:01:27.963972+00:00",
+      "end_utc": "2026-10-11T08:01:28.105624+00:00",
+      "exit_code": 0,
+      "timeout": false,
+      "logs": {
+        "stdout": {
+          "path": "<task11-private-run>/changed-text01.stdout",
+          "sha256": "18ed9edd2d0dcbcdc4d69ce484e20593a31dc716b89c086f57164af0f3178f08"
+        },
+        "stderr": {
+          "path": "<task11-private-run>/changed-text01.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      "raw_receipt_sha256": "423a0e8d50dc00ea71a5c6d42c01577dd1a69978e2837a8922f0dedf558314a5"
+    },
+    {
+      "label": "verify03",
+      "argv": [
+        "/usr/bin/python3",
+        "docs/m6b-ready/task11-final-audit/verify_audit.py",
+        "--root",
+        "<task11-checkout>",
+        "--output",
+        "<task11-private-run>/verify03.json"
+      ],
+      "cwd": "<task11-checkout>",
+      "host": "<local_macOS_host>",
+      "platform": "macOS-26.6.2-arm64-arm-64bit",
+      "machine": "arm64",
+      "python": "3.9.6 (default, May 22 2026, 11:13:45) \n[Clang 21.0.0 (clang-2100.1.1.101)]",
+      "start_utc": "2026-10-11T08:01:55.079414+00:00",
+      "end_utc": "2026-10-11T08:02:01.077927+00:00",
+      "exit_code": 0,
+      "timeout": false,
+      "logs": {
+        "stdout": {
+          "path": "<task11-private-run>/verify03.stdout",
+          "sha256": "414f51bf621113c57e6111299ea7d432c1689d4dfa7eff5e57d5c31b687d1efe"
+        },
+        "stderr": {
+          "path": "<task11-private-run>/verify03.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      "raw_receipt_sha256": "066d88eb594851600c698eaf3cf907752e8c81e2c41b3646fc5d87097ff822dc"
+    },
+    {
+      "label": "staged-check01",
+      "argv": [
+        "git",
+        "diff",
+        "--cached",
+        "--check"
+      ],
+      "cwd": "<task11-checkout>",
+      "host": "<local_macOS_host>",
+      "platform": "macOS-26.6.2-arm64-arm-64bit",
+      "machine": "arm64",
+      "python": "3.9.6 (default, May 22 2026, 11:13:45) \n[Clang 21.0.0 (clang-2100.1.1.101)]",
+      "start_utc": "2026-10-11T08:02:52.980257+00:00",
+      "end_utc": "2026-10-11T08:02:53.013940+00:00",
+      "exit_code": 0,
+      "timeout": false,
+      "logs": {
+        "stdout": {
+          "path": "<task11-private-run>/staged-check01.stdout",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stderr": {
+          "path": "<task11-private-run>/staged-check01.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      "raw_receipt_sha256": "8b808d66be27c52430876cc4bb1be1e9d02b9a36e2e77af83b53fc3ac23d4fb8"
+    }
+  ],
+  "verify02": {
+    "status": "DOCUMENT_STATIC_INTEGRITY_PASS_ONLY",
+    "base_head": "b517c5a922d52895e274c3758b5b7c2c409d91ca",
+    "base_tree": "59b3de2df840a3a6bda22e52911feaf20925778b",
+    "base_files": 2076,
+    "protected_byte_identical": 2074,
+    "append_only_files": 2,
+    "changed_paths": [
+      "GAPS.md",
+      "STATUS.md",
+      "docs/m6b-ready/task11-final-audit/AUDIT.md",
+      "docs/m6b-ready/task11-final-audit/CHECKLIST.json",
+      "docs/m6b-ready/task11-final-audit/INHERITED_EVIDENCE.json",
+      "docs/m6b-ready/task11-final-audit/RESULT.md",
+      "docs/m6b-ready/task11-final-audit/SOURCE_LEDGER.json",
+      "docs/m6b-ready/task11-final-audit/verify_audit.py",
+      "tasks/06b_ready_task11_final_admission_audit.md"
+    ],
+    "source_files": 51,
+    "inherited_source_bindings": 68,
+    "inherited_review_logs": 30,
+    "inherited_inline_review_streams": 24,
+    "runtime_tests_executed": 0,
+    "native_fits": 0,
+    "gpu": "NOT_RUN",
+    "redis": "NOT_RUN",
+    "server": "NOT_PROBED",
+    "m6b_admission": "BLOCKED",
+    "checker_sha256": "0ae3c901378da972cda1e1781240b136c331c42d9d8711ca8229cedf3bd8fb93"
+  },
+  "failure_index": [
+    {
+      "command": "verify01",
+      "exit_code": 1,
+      "reason": "RESULT.md had not yet been created; required local link check refused",
+      "source_snapshot_sha256": "0ae3c901378da972cda1e1781240b136c331c42d9d8711ca8229cedf3bd8fb93",
+      "raw_logs": "verify01.stdout/verify01.stderr and receipt",
+      "assertions": "unchanged"
+    }
+  ],
+  "transcript_only_failures": [
+    {
+      "action": "initial root Git probe",
+      "exit_code": 128,
+      "raw": "NOT_CAPTURED"
+    },
+    {
+      "action": "search supplied nonexistent tests/m6_demo.py",
+      "exit_code": 2,
+      "raw": "NOT_CAPTURED"
+    },
+    {
+      "action": "search guessed docs/m6a path",
+      "whole_command_exit": 0,
+      "child_rg_error": "2 not independently captured",
+      "raw": "NOT_CAPTURED"
+    }
+  ],
+  "official_doc_check": "web open/find structured results; no process exit; no local original HTML snapshot",
+  "historical_limits": "unchanged FAIL/NOT_CAPTURED/915 cache preinstall SHA gap/rights/privacy OPEN-DEFERRED",
+  "new_source_preservation": "2074 protected Git blob byte matches, STATUS/GAPS prefix unchanged",
+  "checker_sha256": "4004c7433d57fb187eaee47fc10e1b1b0f96a6957f47805a3034095119daaa17",
+  "private_raw_receipt_root": "runs/task11-m6b-ready-audit-20261011",
+  "final_commit_binding": "private final-git receipts; parent must be exact base; in-commit future SHA not fabricated",
+  "next_unique_action": "Independent exact TASK11 local commit review",
+  "publication": "NOT_AUTHORIZED/NOT_RUN",
+  "verify03": {
+    "status": "DOCUMENT_STATIC_INTEGRITY_PASS_ONLY",
+    "base_head": "b517c5a922d52895e274c3758b5b7c2c409d91ca",
+    "base_tree": "59b3de2df840a3a6bda22e52911feaf20925778b",
+    "base_files": 2076,
+    "protected_byte_identical": 2074,
+    "append_only_files": 2,
+    "changed_paths": [
+      "GAPS.md",
+      "STATUS.md",
+      "docs/m6b-ready/task11-final-audit/AUDIT.md",
+      "docs/m6b-ready/task11-final-audit/CHECKLIST.json",
+      "docs/m6b-ready/task11-final-audit/INHERITED_EVIDENCE.json",
+      "docs/m6b-ready/task11-final-audit/RESULT.md",
+      "docs/m6b-ready/task11-final-audit/SOURCE_LEDGER.json",
+      "docs/m6b-ready/task11-final-audit/validation.json",
+      "docs/m6b-ready/task11-final-audit/verify_audit.py",
+      "tasks/06b_ready_task11_final_admission_audit.md"
+    ],
+    "source_files": 51,
+    "inherited_source_bindings": 68,
+    "inherited_review_logs": 30,
+    "inherited_inline_review_streams": 24,
+    "runtime_tests_executed": 0,
+    "native_fits": 0,
+    "gpu": "NOT_RUN",
+    "redis": "NOT_RUN",
+    "server": "NOT_PROBED",
+    "m6b_admission": "BLOCKED",
+    "checker_sha256": "4004c7433d57fb187eaee47fc10e1b1b0f96a6957f47805a3034095119daaa17"
+  },
+  "static_checker_seal": "Added support for staged authorized new regular files; still rejects existing mode/rename/delete changes. No runtime assertions changed.",
+  "changed_text_check": "10 changed paths, added STATUS/GAPS text only; findings0; not full history or rights audit",
+  "final_seal": "Only actual check receipts appended; final byte verification and diff check recorded privately before commit",
+  "publication_update": {
+    "authorized": true,
+    "authorization_date": "2026-10-11",
+    "request": "Human: push to GitHub for ChatGPT review and next steps",
+    "classification": "ADAPTATION publication receipts only",
+    "audit_commit": "43b7711328e02c4ac3d8f536a97825396e1b288e",
+    "base": "b517c5a922d52895e274c3758b5b7c2c409d91ca",
+    "head_branch": "codex/task11-m6b-ready-audit",
+    "base_branch": "codex/task10-g09-protocol-review",
+    "base_remote_verified": true,
+    "identity_read": {
+      "label": "identity-read01",
+      "argv": [
+        "git",
+        "-c",
+        "core.sshCommand=ssh -i <approved-github-identity> -o IdentitiesOnly=yes -o BatchMode=yes -o ConnectTimeout=10",
+        "ls-remote",
+        "ssh://git@ssh.github.com:443/Zwhao0/myflash.git"
+      ],
+      "cwd": "<task11-checkout>",
+      "host": "<local_macOS_host>",
+      "platform": "macOS-26.6.2-arm64-arm-64bit",
+      "machine": "arm64",
+      "python": "3.9.6 (default, May 22 2026, 11:13:45) \n[Clang 21.0.0 (clang-2100.1.1.101)]",
+      "start_utc": "2026-10-11T08:06:27.846654+00:00",
+      "end_utc": "2026-10-11T08:06:30.429289+00:00",
+      "exit_code": 0,
+      "timeout": false,
+      "logs": {
+        "stdout": {
+          "path": "<task11-private-run>/publication/identity-read01.stdout",
+          "sha256": "220b2c4da3c084259b695456efeac904e686a02dfde817c133c89054beff4a36"
+        },
+        "stderr": {
+          "path": "<task11-private-run>/publication/identity-read01.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      }
+    },
+    "raw_receipt_sha256": "72c99f0f1d3043ec8b853b7ce08a7ebcd9da879791532f22eda28358ff5159a8",
+    "execution_authorized": false,
+    "status": "PUSH01_AND_DRAFT_PR22_VERIFIED_FINAL_RECEIPT_SEAL_PENDING",
+    "ci": "NOT_VERIFIED",
+    "next_unique_action": "Independent exact remote TASK11 PR review; TASK12 B01 implementation still requires separate authorization",
+    "early_metadata_helper": {
+      "exit_code": 1,
+      "reason": "stdin source encoding SyntaxError before writes",
+      "raw": "NOT_CAPTURED, tool transcript retained; corrected ASCII source"
+    },
+    "local_checks": {
+      "verify01": {
+        "exit_code": 0,
+        "receipt": "<private-workspace>/runs/task11-m6b-ready-audit-20261011/publication/verify01.receipt.json",
+        "logs": {
+          "stdout": {
+            "path": "<private-workspace>/runs/task11-m6b-ready-audit-20261011/publication/verify01.stdout",
+            "sha256": "414f51bf621113c57e6111299ea7d432c1689d4dfa7eff5e57d5c31b687d1efe"
+          },
+          "stderr": {
+            "path": "<private-workspace>/runs/task11-m6b-ready-audit-20261011/publication/verify01.stderr",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          }
+        }
+      },
+      "changed-text01": {
+        "exit_code": 0,
+        "receipt": "<private-workspace>/runs/task11-m6b-ready-audit-20261011/publication/changed-text01.receipt.json",
+        "logs": {
+          "stdout": {
+            "path": "<private-workspace>/runs/task11-m6b-ready-audit-20261011/publication/changed-text01.stdout",
+            "sha256": "18ed9edd2d0dcbcdc4d69ce484e20593a31dc716b89c086f57164af0f3178f08"
+          },
+          "stderr": {
+            "path": "<private-workspace>/runs/task11-m6b-ready-audit-20261011/publication/changed-text01.stderr",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          }
+        }
+      },
+      "diff-check01": {
+        "exit_code": 0,
+        "receipt": "<private-workspace>/runs/task11-m6b-ready-audit-20261011/publication/diff-check01.receipt.json",
+        "logs": {
+          "stdout": {
+            "path": "<private-workspace>/runs/task11-m6b-ready-audit-20261011/publication/diff-check01.stdout",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          "stderr": {
+            "path": "<private-workspace>/runs/task11-m6b-ready-audit-20261011/publication/diff-check01.stderr",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          }
+        }
+      }
+    },
+    "audit_commit_unchanged_files": 2081,
+    "pr_url": "https://github.com/Zwhao0/myflash/pull/22",
+    "published_head": "5d63a7b001183f74bb5087c05250543668910a58",
+    "published_tree": "d2c308de950fb1b422d6c28eba3cdf7866b25577",
+    "publication_receipts": {
+      "push01": {
+        "exit_code": 0,
+        "receipt": "<private-workspace>/runs/task11-m6b-ready-audit-20261011/publication/push01.receipt.json",
+        "logs": {
+          "stdout": {
+            "path": "<private-workspace>/runs/task11-m6b-ready-audit-20261011/publication/push01.stdout",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          "stderr": {
+            "path": "<private-workspace>/runs/task11-m6b-ready-audit-20261011/publication/push01.stderr",
+            "sha256": "5002f0c9d34adb98dd051aaaa5e4eb243a60756dcf111a956914256a21302edc"
+          }
+        },
+        "argv_public": "Git SSH443 task branch command; exact argv retained in private receipt"
+      },
+      "remote-read01": {
+        "exit_code": 0,
+        "receipt": "<private-workspace>/runs/task11-m6b-ready-audit-20261011/publication/remote-read01.receipt.json",
+        "logs": {
+          "stdout": {
+            "path": "<private-workspace>/runs/task11-m6b-ready-audit-20261011/publication/remote-read01.stdout",
+            "sha256": "275347fc470462ce2458446da0bdeba43121fc61f9d17b37cde235f380e8f313"
+          },
+          "stderr": {
+            "path": "<private-workspace>/runs/task11-m6b-ready-audit-20261011/publication/remote-read01.stderr",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          }
+        },
+        "argv_public": "Git SSH443 task branch command; exact argv retained in private receipt"
+      },
+      "fetch01": {
+        "exit_code": 0,
+        "receipt": "<private-workspace>/runs/task11-m6b-ready-audit-20261011/publication/fetch01.receipt.json",
+        "logs": {
+          "stdout": {
+            "path": "<private-workspace>/runs/task11-m6b-ready-audit-20261011/publication/fetch01.stdout",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          "stderr": {
+            "path": "<private-workspace>/runs/task11-m6b-ready-audit-20261011/publication/fetch01.stderr",
+            "sha256": "76f016f08306197325f373975bdca1f3ff10e990c57040604d47e6622670db89"
+          }
+        },
+        "argv_public": "Git SSH443 task branch command; exact argv retained in private receipt"
+      },
+      "tree-read01": {
+        "exit_code": 0,
+        "receipt": "<private-workspace>/runs/task11-m6b-ready-audit-20261011/publication/tree-read01.receipt.json",
+        "logs": {
+          "stdout": {
+            "path": "<private-workspace>/runs/task11-m6b-ready-audit-20261011/publication/tree-read01.stdout",
+            "sha256": "27830d185d5c65c7fd2127b45f939f8afec75f63fd95a931e9c8a76c7bb9be92"
+          },
+          "stderr": {
+            "path": "<private-workspace>/runs/task11-m6b-ready-audit-20261011/publication/tree-read01.stderr",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          }
+        },
+        "argv_public": "Git SSH443 task branch command; exact argv retained in private receipt"
+      },
+      "local-read01": {
+        "exit_code": 0,
+        "receipt": "<private-workspace>/runs/task11-m6b-ready-audit-20261011/publication/local-read01.receipt.json",
+        "logs": {
+          "stdout": {
+            "path": "<private-workspace>/runs/task11-m6b-ready-audit-20261011/publication/local-read01.stdout",
+            "sha256": "27830d185d5c65c7fd2127b45f939f8afec75f63fd95a931e9c8a76c7bb9be92"
+          },
+          "stderr": {
+            "path": "<private-workspace>/runs/task11-m6b-ready-audit-20261011/publication/local-read01.stderr",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          }
+        },
+        "argv_public": "Git SSH443 task branch command; exact argv retained in private receipt"
+      }
+    },
+    "pr_readback": {
+      "path": "<private-workspace>/runs/task11-m6b-ready-audit-20261011/publication/pr22-read01.json",
+      "draft": true,
+      "merged": false,
+      "base_sha": "b517c5a922d52895e274c3758b5b7c2c409d91ca",
+      "head_sha": "5d63a7b001183f74bb5087c05250543668910a58"
+    },
+    "final_seal": "Final receipt-only commit and ordinary push head/tree bound by final PR body and private final-readback receipts; no runtime authorization.",
+    "privacy_repair": "changed-text02 actual exit1: user_home paths in publication receipt metadata; replaced with private-workspace placeholder, no secret content. Prior published metadata paths remain in Git history; no force rewrite. Original logs preserved."
+  }
+}
