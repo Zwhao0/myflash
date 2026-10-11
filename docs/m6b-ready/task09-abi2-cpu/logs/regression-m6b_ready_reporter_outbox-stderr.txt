@@ -1,0 +1,38 @@
+test_consumer_500_boundary_gap_and_restart (__main__.Reliability.test_consumer_500_boundary_gap_and_restart) ... ok
+test_consumer_corruption_future_and_missing_run_fail_closed (__main__.Reliability.test_consumer_corruption_future_and_missing_run_fail_closed) ... ok
+test_consumer_ledger_kind_scope_and_overflow (__main__.Reliability.test_consumer_ledger_kind_scope_and_overflow) ... ok
+test_consumer_missing_offline_future_hash_keeps_cursor (__main__.Reliability.test_consumer_missing_offline_future_hash_keeps_cursor) ... ok
+test_consumer_poll_does_not_advance_restart_redelivers (__main__.Reliability.test_consumer_poll_does_not_advance_restart_redelivers) ... ok
+test_consumer_prefix_only_no_skip_change_or_fabrication (__main__.Reliability.test_consumer_prefix_only_no_skip_change_or_fabrication) ... ok
+test_consumer_two_instances_stale_commit (__main__.Reliability.test_consumer_two_instances_stale_commit) ... ok
+test_disconnect_at_cas_before_write (__main__.Reliability.test_disconnect_at_cas_before_write) ... ok
+test_durable_reporter_restart_recovers_unconfirmed (__main__.Reliability.test_durable_reporter_restart_recovers_unconfirmed) ... ok
+test_enqueue_commits_before_transport (__main__.Reliability.test_enqueue_commits_before_transport) ... ok
+test_false_ack_not_removed (__main__.Reliability.test_false_ack_not_removed) ... ok
+test_local_corruption_and_scope_rejected (__main__.Reliability.test_local_corruption_and_scope_rejected) ... ok
+test_missing_remote_registration_never_recreated (__main__.Reliability.test_missing_remote_registration_never_recreated) ... ok
+test_new_outbox_uncommitted_enqueue_rolls_back_on_process_exit (__main__.Reliability.test_new_outbox_uncommitted_enqueue_rolls_back_on_process_exit) ... ok
+test_outbox_500_ack_plus_pending_never_evicted (__main__.Reliability.test_outbox_500_ack_plus_pending_never_evicted) ... ok
+test_outbox_bad_schema_not_rebuilt (__main__.Reliability.test_outbox_bad_schema_not_rebuilt) ... ok
+test_outbox_duplicate_and_local_conflict (__main__.Reliability.test_outbox_duplicate_and_local_conflict) ... ok
+test_outbox_lost_ack_recovered_by_read_no_second_cas (__main__.Reliability.test_outbox_lost_ack_recovered_by_read_no_second_cas) ... ok
+test_outbox_write_before_disconnect_restart (__main__.Reliability.test_outbox_write_before_disconnect_restart) ... ok
+test_pending_blocks_next_gap_or_scope (__main__.Reliability.test_pending_blocks_next_gap_or_scope) ... ok
+test_process_crash_after_enqueue_and_before_commit (__main__.Reliability.test_process_crash_after_enqueue_and_before_commit) ... ok
+test_process_crash_consumer_after_poll_and_after_commit (__main__.Reliability.test_process_crash_consumer_after_poll_and_after_commit) ... ok
+test_process_crash_remote_committed_local_ack_not_committed (__main__.Reliability.test_process_crash_remote_committed_local_ack_not_committed) ... ok
+test_remote_conflict_retains_pending (__main__.Reliability.test_remote_conflict_retains_pending) ... ok
+test_remote_hash_corruption_never_acknowledged (__main__.Reliability.test_remote_hash_corruption_never_acknowledged) ... ok
+test_remote_loss_after_previous_ack_does_not_skip_gap (__main__.Reliability.test_remote_loss_after_previous_ack_does_not_skip_gap) ... ok
+test_repeated_unknown_attempts_one_write_per_call (__main__.Reliability.test_repeated_unknown_attempts_one_write_per_call) ... ok
+test_reporter_exception_preserves_frozen_record (__main__.Reliability.test_reporter_exception_preserves_frozen_record) ... ok
+test_reporter_lost_ack_never_retimes_or_resynchronizes (__main__.Reliability.test_reporter_lost_ack_never_retimes_or_resynchronizes) ... ok
+test_reporter_malformed_false_or_wrong_hash_ack_rejected (__main__.Reliability.test_reporter_malformed_false_or_wrong_hash_ack_rejected) ... ok
+test_reporter_write_before_disconnect_keeps_exact_record (__main__.Reliability.test_reporter_write_before_disconnect_keeps_exact_record) ... ok
+test_unknown_evicted_result_not_guessed (__main__.Reliability.test_unknown_evicted_result_not_guessed) ... ok
+test_unknown_exact_retention_boundary (__main__.Reliability.test_unknown_exact_retention_boundary) ... ok
+
+----------------------------------------------------------------------
+Ran 33 tests in 25.242s
+
+OK

@@ -1,0 +1,124 @@
+{
+  "base": "b082d16939aab0d4ba4b9208475886c4b9ec808c",
+  "paper": "SPEC S1/S4/S5; pp23\u201324/27\u201335",
+  "sources": [
+    {
+      "classification": "ADAPTATION",
+      "commit": "b082d16939aab0d4ba4b9208475886c4b9ec808c",
+      "path": "native/ring.hpp",
+      "functions": [
+        "Event",
+        "Header",
+        "ABI"
+      ],
+      "sha256": "94599dcc02fba33f275d59ec5d3b7dcaa1cf88d431b5afc973ee47f73bd8bd5d",
+      "license": "same project inherited source; no external code reuse",
+      "adjustment": "opt-in new wrapper/subclasses; inherited source unchanged"
+    },
+    {
+      "classification": "ADAPTATION",
+      "commit": "b082d16939aab0d4ba4b9208475886c4b9ec808c",
+      "path": "native/ring.cpp",
+      "functions": [
+        "request",
+        "boundary",
+        "snapshot",
+        "flash_ring_read"
+      ],
+      "sha256": "2214ea8adc167f8d0fdcfcf956e4930cba15a20687cfccd05df497ea4be1c5f6",
+      "license": "same project inherited source; no external code reuse",
+      "adjustment": "opt-in new wrapper/subclasses; inherited source unchanged"
+    },
+    {
+      "classification": "ADAPTATION",
+      "commit": "b082d16939aab0d4ba4b9208475886c4b9ec808c",
+      "path": "native/probe.cpp",
+      "functions": [
+        "control (thread_local)",
+        "apply_boundary",
+        "timing_prepare",
+        "ncclGroupStart",
+        "ncclGroupEnd"
+      ],
+      "sha256": "7a397516cd5d4bb84d21207a3b19558846463c8c099d59d7179ad4f611882311",
+      "license": "same project inherited source; no external code reuse",
+      "adjustment": "opt-in new wrapper/subclasses; inherited source unchanged"
+    },
+    {
+      "classification": "ADAPTATION",
+      "commit": "b082d16939aab0d4ba4b9208475886c4b9ec808c",
+      "path": "flash/reader.py",
+      "functions": [
+        "Reader.request",
+        "Reader.read",
+        "Reader.acknowledge",
+        "Reader.snapshot"
+      ],
+      "sha256": "ef0a0b2ac43fa3c245ce5c9dac74fb5ccde522221ddfd2ea8118c3666908eda1",
+      "license": "same project inherited source; no external code reuse",
+      "adjustment": "opt-in new wrapper/subclasses; inherited source unchanged"
+    },
+    {
+      "classification": "ADAPTATION",
+      "commit": "b082d16939aab0d4ba4b9208475886c4b9ec808c",
+      "path": "flash/m6_controller.py",
+      "functions": [
+        "GlobalController",
+        "LocalController",
+        "_failed"
+      ],
+      "sha256": "12cf7cf7a96a4d3e83f78ae59a305738878f7e53e39c1b7d68e3a2b4facfdc37",
+      "license": "same project inherited source; no external code reuse",
+      "adjustment": "opt-in new wrapper/subclasses; inherited source unchanged"
+    },
+    {
+      "classification": "ADAPTATION",
+      "commit": "b082d16939aab0d4ba4b9208475886c4b9ec808c",
+      "path": "flash/profile_input.py",
+      "functions": [
+        "read_records",
+        "validate_bundle"
+      ],
+      "sha256": "54d61ba4f579cee0622a023b76db8dd4be9587b01fce98bc68842253bf27a8c9",
+      "license": "same project inherited source; no external code reuse",
+      "adjustment": "opt-in new wrapper/subclasses; inherited source unchanged"
+    },
+    {
+      "classification": "ADAPTATION",
+      "commit": "b082d16939aab0d4ba4b9208475886c4b9ec808c",
+      "path": "flash/localization.py",
+      "functions": [
+        "analyze_approved_g04"
+      ],
+      "sha256": "b32008fe4800f86b2fe8dc27196db2b3d2daaf555598e77ddd744d9c7d3e805a",
+      "license": "same project inherited source; no external code reuse",
+      "adjustment": "opt-in new wrapper/subclasses; inherited source unchanged"
+    },
+    {
+      "classification": "ADAPTATION",
+      "commit": "b082d16939aab0d4ba4b9208475886c4b9ec808c",
+      "path": "flash/iteration_reporter.py",
+      "functions": [
+        "confirmed_receipt",
+        "IterationReporter"
+      ],
+      "sha256": "5425f9be08ea49968734ae6ef125694bc65ae182ff2f3ae4c3ef57adbbf01f6e",
+      "license": "same project inherited source; no external code reuse",
+      "adjustment": "opt-in new wrapper/subclasses; inherited source unchanged"
+    },
+    {
+      "classification": "ADAPTATION",
+      "commit": "b082d16939aab0d4ba4b9208475886c4b9ec808c",
+      "path": "flash/m6_iteration.py",
+      "functions": [
+        "IterationPublisher",
+        "IterationReader"
+      ],
+      "sha256": "91d33ed162c914708a01ea499e7711b98d49b5ededf14e943a668178a3121221",
+      "license": "same project inherited source; no external code reuse",
+      "adjustment": "opt-in new wrapper/subclasses; inherited source unchanged"
+    }
+  ],
+  "upstream_code_reuse": false,
+  "greyhound_reuse": false
+}

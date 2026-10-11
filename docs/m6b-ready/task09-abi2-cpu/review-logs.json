@@ -1,0 +1,215 @@
+{
+  "redaction": "exact local checkout/interpreter/private-run and ephemeral temporary paths only; raw files retained",
+  "logs": [
+    {
+      "command": "bridge01",
+      "stream": "stdout",
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "path": "docs/m6b-ready/task09-abi2-cpu/logs/bridge01-stdout.txt"
+    },
+    {
+      "command": "bridge01",
+      "stream": "stderr",
+      "raw_sha256": "503af26c163dca95469a44b0436ffaab2bee5afbd311a51c7531ea16bdf7bf75",
+      "review_sha256": "6d3377c1848403dd62c2be7e8e84e6f5bf96ef3dbe748a1ca3c14de63f0193f8",
+      "path": "docs/m6b-ready/task09-abi2-cpu/logs/bridge01-stderr.txt"
+    },
+    {
+      "command": "bridge02",
+      "stream": "stdout",
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "path": "docs/m6b-ready/task09-abi2-cpu/logs/bridge02-stdout.txt"
+    },
+    {
+      "command": "bridge02",
+      "stream": "stderr",
+      "raw_sha256": "2b11d43df90056849a736e8f9157a1a977645422259810734aa9c531c5dc65f2",
+      "review_sha256": "2b11d43df90056849a736e8f9157a1a977645422259810734aa9c531c5dc65f2",
+      "path": "docs/m6b-ready/task09-abi2-cpu/logs/bridge02-stderr.txt"
+    },
+    {
+      "command": "bridge03",
+      "stream": "stdout",
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "path": "docs/m6b-ready/task09-abi2-cpu/logs/bridge03-stdout.txt"
+    },
+    {
+      "command": "bridge03",
+      "stream": "stderr",
+      "raw_sha256": "41fce980cd282490ba6970376f5650b5e3c6c62f7e127738a9da2446bfc68100",
+      "review_sha256": "41fce980cd282490ba6970376f5650b5e3c6c62f7e127738a9da2446bfc68100",
+      "path": "docs/m6b-ready/task09-abi2-cpu/logs/bridge03-stderr.txt"
+    },
+    {
+      "command": "bridge04",
+      "stream": "stdout",
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "path": "docs/m6b-ready/task09-abi2-cpu/logs/bridge04-stdout.txt"
+    },
+    {
+      "command": "bridge04",
+      "stream": "stderr",
+      "raw_sha256": "4bd68c5a5525afc251b88bd3f586f1736b99da7bcad850d12c8728f9c98ed661",
+      "review_sha256": "4bd68c5a5525afc251b88bd3f586f1736b99da7bcad850d12c8728f9c98ed661",
+      "path": "docs/m6b-ready/task09-abi2-cpu/logs/bridge04-stderr.txt"
+    },
+    {
+      "command": "bridge05",
+      "stream": "stdout",
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "path": "docs/m6b-ready/task09-abi2-cpu/logs/bridge05-stdout.txt"
+    },
+    {
+      "command": "bridge05",
+      "stream": "stderr",
+      "raw_sha256": "7d667bdb303cc8230a3ddc4d4b4ffc815f68031a943f1baa4709d90dde8d3848",
+      "review_sha256": "7d667bdb303cc8230a3ddc4d4b4ffc815f68031a943f1baa4709d90dde8d3848",
+      "path": "docs/m6b-ready/task09-abi2-cpu/logs/bridge05-stderr.txt"
+    },
+    {
+      "command": "regression-cursor02",
+      "stream": "stdout",
+      "raw_sha256": "dc070e57abe78db199d4e33ffe157695546bc0af9d09aa301b988f9389378351",
+      "review_sha256": "dc070e57abe78db199d4e33ffe157695546bc0af9d09aa301b988f9389378351",
+      "path": "docs/m6b-ready/task09-abi2-cpu/logs/regression-cursor02-stdout.txt"
+    },
+    {
+      "command": "regression-cursor02",
+      "stream": "stderr",
+      "raw_sha256": "6a7af5253afa13e0d262288be4ddf4f4795b29b34b5cd1f51f04a9bc68e58119",
+      "review_sha256": "6a7af5253afa13e0d262288be4ddf4f4795b29b34b5cd1f51f04a9bc68e58119",
+      "path": "docs/m6b-ready/task09-abi2-cpu/logs/regression-cursor02-stderr.txt"
+    },
+    {
+      "command": "regression-m5_detection",
+      "stream": "stdout",
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "path": "docs/m6b-ready/task09-abi2-cpu/logs/regression-m5_detection-stdout.txt"
+    },
+    {
+      "command": "regression-m5_detection",
+      "stream": "stderr",
+      "raw_sha256": "77d39d232626e3e59e6a916819491f0ba13a87739af70ac3ae4468c1f8dea0c8",
+      "review_sha256": "77d39d232626e3e59e6a916819491f0ba13a87739af70ac3ae4468c1f8dea0c8",
+      "path": "docs/m6b-ready/task09-abi2-cpu/logs/regression-m5_detection-stderr.txt"
+    },
+    {
+      "command": "regression-m5_reporter",
+      "stream": "stdout",
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "path": "docs/m6b-ready/task09-abi2-cpu/logs/regression-m5_reporter-stdout.txt"
+    },
+    {
+      "command": "regression-m5_reporter",
+      "stream": "stderr",
+      "raw_sha256": "00ea0fe86fea1c2f6a317e64c94a1f86e1fa61a58138b44cffadba7baaec01a8",
+      "review_sha256": "00ea0fe86fea1c2f6a317e64c94a1f86e1fa61a58138b44cffadba7baaec01a8",
+      "path": "docs/m6b-ready/task09-abi2-cpu/logs/regression-m5_reporter-stderr.txt"
+    },
+    {
+      "command": "regression-m6_control",
+      "stream": "stdout",
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "path": "docs/m6b-ready/task09-abi2-cpu/logs/regression-m6_control-stdout.txt"
+    },
+    {
+      "command": "regression-m6_control",
+      "stream": "stderr",
+      "raw_sha256": "0cf3b7dc1c0f1ef71ff999772c6d661a89e667ab0a5e768bf4188eb5b2cb278e",
+      "review_sha256": "0cf3b7dc1c0f1ef71ff999772c6d661a89e667ab0a5e768bf4188eb5b2cb278e",
+      "path": "docs/m6b-ready/task09-abi2-cpu/logs/regression-m6_control-stderr.txt"
+    },
+    {
+      "command": "regression-m6b_ready_approved_detection",
+      "stream": "stdout",
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "path": "docs/m6b-ready/task09-abi2-cpu/logs/regression-m6b_ready_approved_detection-stdout.txt"
+    },
+    {
+      "command": "regression-m6b_ready_approved_detection",
+      "stream": "stderr",
+      "raw_sha256": "f5607b209fc9fe3c0cad5ca369e7a51ef49494691637386102fe52b6ccc98e82",
+      "review_sha256": "f5607b209fc9fe3c0cad5ca369e7a51ef49494691637386102fe52b6ccc98e82",
+      "path": "docs/m6b-ready/task09-abi2-cpu/logs/regression-m6b_ready_approved_detection-stderr.txt"
+    },
+    {
+      "command": "regression-m6b_ready_approved_localization",
+      "stream": "stdout",
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "path": "docs/m6b-ready/task09-abi2-cpu/logs/regression-m6b_ready_approved_localization-stdout.txt"
+    },
+    {
+      "command": "regression-m6b_ready_approved_localization",
+      "stream": "stderr",
+      "raw_sha256": "bfc2cdd2513b7fe8f5d1e960130677a6652eb0ded3a3406e474b24b91b3372a4",
+      "review_sha256": "bfc2cdd2513b7fe8f5d1e960130677a6652eb0ded3a3406e474b24b91b3372a4",
+      "path": "docs/m6b-ready/task09-abi2-cpu/logs/regression-m6b_ready_approved_localization-stderr.txt"
+    },
+    {
+      "command": "regression-m6b_ready_cursor_contract",
+      "stream": "stdout",
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "path": "docs/m6b-ready/task09-abi2-cpu/logs/regression-m6b_ready_cursor_contract-stdout.txt"
+    },
+    {
+      "command": "regression-m6b_ready_cursor_contract",
+      "stream": "stderr",
+      "raw_sha256": "eca31da36bc5ba87a822955d67a6e8d2ec707de35324cf48c1693e40b652f0ad",
+      "review_sha256": "eca31da36bc5ba87a822955d67a6e8d2ec707de35324cf48c1693e40b652f0ad",
+      "path": "docs/m6b-ready/task09-abi2-cpu/logs/regression-m6b_ready_cursor_contract-stderr.txt"
+    },
+    {
+      "command": "regression-m6b_ready_cursor_extra",
+      "stream": "stdout",
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "path": "docs/m6b-ready/task09-abi2-cpu/logs/regression-m6b_ready_cursor_extra-stdout.txt"
+    },
+    {
+      "command": "regression-m6b_ready_cursor_extra",
+      "stream": "stderr",
+      "raw_sha256": "b911ac856cc4c5ec379bf4e223c687d8dedbea34e1827b0489c717df8b6ab8d6",
+      "review_sha256": "b911ac856cc4c5ec379bf4e223c687d8dedbea34e1827b0489c717df8b6ab8d6",
+      "path": "docs/m6b-ready/task09-abi2-cpu/logs/regression-m6b_ready_cursor_extra-stderr.txt"
+    },
+    {
+      "command": "regression-m6b_ready_reporter_outbox",
+      "stream": "stdout",
+      "raw_sha256": "00f4c59c5dffd2ba561e87672c29ce52447ac278ff7f61432b792e780f2d3276",
+      "review_sha256": "a4d902de1847a26ae0dece63fb395cca74c19169c3a7883d2247a68fc237e7a3",
+      "path": "docs/m6b-ready/task09-abi2-cpu/logs/regression-m6b_ready_reporter_outbox-stdout.txt"
+    },
+    {
+      "command": "regression-m6b_ready_reporter_outbox",
+      "stream": "stderr",
+      "raw_sha256": "67fa7d6d4ab73fe67856721d3b40261bd1651ab6ee6c54fe9bf514e7cd66e132",
+      "review_sha256": "67fa7d6d4ab73fe67856721d3b40261bd1651ab6ee6c54fe9bf514e7cd66e132",
+      "path": "docs/m6b-ready/task09-abi2-cpu/logs/regression-m6b_ready_reporter_outbox-stderr.txt"
+    },
+    {
+      "command": "verify01",
+      "stream": "stdout",
+      "raw_sha256": "9f13a1b10cbba1cdb23e188a98e5fbf6bc81e98884a14a85354cd432d4912bf1",
+      "review_sha256": "9f13a1b10cbba1cdb23e188a98e5fbf6bc81e98884a14a85354cd432d4912bf1",
+      "path": "docs/m6b-ready/task09-abi2-cpu/logs/verify01-stdout.txt"
+    },
+    {
+      "command": "verify01",
+      "stream": "stderr",
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "path": "docs/m6b-ready/task09-abi2-cpu/logs/verify01-stderr.txt"
+    }
+  ]
+}

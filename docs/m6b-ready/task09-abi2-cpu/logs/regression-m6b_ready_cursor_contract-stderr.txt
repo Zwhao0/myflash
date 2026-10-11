@@ -1,0 +1,2 @@
+usage: m6b_ready_cursor_contract.py [-h] --output OUTPUT
+m6b_ready_cursor_contract.py: error: the following arguments are required: --output

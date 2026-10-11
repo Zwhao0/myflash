@@ -1,0 +1,14 @@
+{
+  "base": "b082d16939aab0d4ba4b9208475886c4b9ec808c",
+  "tree": "10188bb80a4b9a10dff46c6eac5bb425fe3828ad",
+  "base_files": 2024,
+  "protected_files": 2022,
+  "append_only": [
+    "GAPS.md",
+    "STATUS.md"
+  ],
+  "tests": 162,
+  "status": "PASS",
+  "protected_list_sha256": "8d21dbe399629b05ccffdfb6069e3b7a1a00be4c02215e29fc4eb9fdd314fc50",
+  "full_private_index": "runs/task09-abi2-cpu-20261011/preservation.json"
+}

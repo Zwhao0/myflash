@@ -1,0 +1,76 @@
+test_bounded_drain_and_truth_fields_rejected (__main__.BridgeTests.test_bounded_drain_and_truth_fields_rejected) ... ok
+test_command_ack_exact_selection (__main__.BridgeTests.test_command_ack_exact_selection) ... ok
+test_controller_restart_fences_old_owner (__main__.BridgeTests.test_controller_restart_fences_old_owner) ... ok
+test_corrupt_digest_gap_and_duplicate_rejected (__main__.BridgeTests.test_corrupt_digest_gap_and_duplicate_rejected) ... ok
+test_disconnect_and_reconnect_invalidates_epoch (__main__.BridgeTests.test_disconnect_and_reconnect_invalidates_epoch) ... ok
+test_forged_or_mixed_source_scope_cannot_arm (__main__.BridgeTests.test_forged_or_mixed_source_scope_cannot_arm) ... ok
+test_future_epoch_refused_without_ack (__main__.BridgeTests.test_future_epoch_refused_without_ack) ... ok
+test_hash_consistent_group_duration_mismatch (__main__.BridgeTests.test_hash_consistent_group_duration_mismatch) ... ok
+test_header_and_command_ack_do_not_arm (__main__.BridgeTests.test_header_and_command_ack_do_not_arm) ... ok
+test_invalid_profile_values_rejected (__main__.BridgeTests.test_invalid_profile_values_rejected) ... ok
+test_local_restart_invalidates_epoch_and_old_boundaries (__main__.BridgeTests.test_local_restart_invalidates_epoch_and_old_boundaries) ... ok
+test_loss_closed_poison_and_replacement_reject (__main__.BridgeTests.test_loss_closed_poison_and_replacement_reject) ... ok
+test_missing_rank_data_rejected (__main__.BridgeTests.test_missing_rank_data_rejected) ... ok
+test_missing_rank_scope_timeout_and_reset_blocks_new_epoch (__main__.BridgeTests.test_missing_rank_scope_timeout_and_reset_blocks_new_epoch) ... ok
+test_mode_and_manifest_mismatch_rejected (__main__.BridgeTests.test_mode_and_manifest_mismatch_rejected) ... ok
+test_partial_reset_requires_fresh_monitor_record (__main__.BridgeTests.test_partial_reset_requires_fresh_monitor_record) ... ok
+test_pre_request_record_cannot_be_relabelled (__main__.BridgeTests.test_pre_request_record_cannot_be_relabelled) ... ok
+test_request_read_ack_and_snapshot_errors_reject (__main__.BridgeTests.test_request_read_ack_and_snapshot_errors_reject) ... ok
+test_sample_and_ready_hash_corruption_refused (__main__.BridgeTests.test_sample_and_ready_hash_corruption_refused) ... ok
+test_shared_group_keeps_records_and_independent_scopes (__main__.BridgeTests.test_shared_group_keeps_records_and_independent_scopes) ... FAIL
+test_single_scope_is_insufficient_under_approved_g04 (__main__.BridgeTests.test_single_scope_is_insufficient_under_approved_g04) ... ERROR
+test_stale_raw_epoch_is_audited_not_pooled (__main__.BridgeTests.test_stale_raw_epoch_is_audited_not_pooled) ... FAIL
+test_two_epochs_strict_units_scope_and_reset (__main__.BridgeTests.test_two_epochs_strict_units_scope_and_reset) ... FAIL
+test_unconfirmed_request_and_read_ack_refused (__main__.BridgeTests.test_unconfirmed_request_and_read_ack_refused) ... ok
+test_wrong_units_and_group_duration_mismatch (__main__.BridgeTests.test_wrong_units_and_group_duration_mismatch) ... ok
+test_none_is_rejected_in_explicit_strict_path_legacy_preserved (__main__.StrictReporterTests.test_none_is_rejected_in_explicit_strict_path_legacy_preserved) ... ok
+test_strict_memory_store_lost_ack_and_exact_retry (__main__.StrictReporterTests.test_strict_memory_store_lost_ack_and_exact_retry) ... ok
+test_unknown_or_malformed_ack_retains_frozen_record (__main__.StrictReporterTests.test_unknown_or_malformed_ack_retains_frozen_record) ... ok
+
+======================================================================
+ERROR: test_single_scope_is_insufficient_under_approved_g04 (__main__.BridgeTests.test_single_scope_is_insufficient_under_approved_g04)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<project>/tests/task09_abi2_cpu.py", line 193, in test_single_scope_is_insufficient_under_approved_g04
+    self.assertEqual(e['result']['status'],'INCOMPLETE');self.assertEqual(e['result']['candidate_ranks'],[])
+                                                                          ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+KeyError: 'candidate_ranks'
+
+======================================================================
+FAIL: test_shared_group_keeps_records_and_independent_scopes (__main__.BridgeTests.test_shared_group_keeps_records_and_independent_scopes)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<project>/tests/task09_abi2_cpu.py", line 164, in test_shared_group_keeps_records_and_independent_scopes
+    self.assertEqual(e['result']['status'],'PROVISIONAL_CANDIDATE')
+AssertionError: 'INCOMPLETE' != 'PROVISIONAL_CANDIDATE'
+- INCOMPLETE
++ PROVISIONAL_CANDIDATE
+
+
+======================================================================
+FAIL: test_stale_raw_epoch_is_audited_not_pooled (__main__.BridgeTests.test_stale_raw_epoch_is_audited_not_pooled)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<project>/tests/task09_abi2_cpu.py", line 186, in test_stale_raw_epoch_is_audited_not_pooled
+    e=h.finish();self.assertEqual(e['status'],'PROVISIONAL_CANDIDATE')
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'INCOMPLETE' != 'PROVISIONAL_CANDIDATE'
+- INCOMPLETE
++ PROVISIONAL_CANDIDATE
+
+
+======================================================================
+FAIL: test_two_epochs_strict_units_scope_and_reset (__main__.BridgeTests.test_two_epochs_strict_units_scope_and_reset)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<project>/tests/task09_abi2_cpu.py", line 151, in test_two_epochs_strict_units_scope_and_reset
+    self.assertEqual(e['result']['status'],'PROVISIONAL_CANDIDATE')
+AssertionError: 'INCOMPLETE' != 'PROVISIONAL_CANDIDATE'
+- INCOMPLETE
++ PROVISIONAL_CANDIDATE
+
+
+----------------------------------------------------------------------
+Ran 28 tests in 0.933s
+
+FAILED (failures=3, errors=1)
