@@ -1,0 +1,14 @@
+{
+  "remote_mutations": [],
+  "remote_environment_created": false,
+  "native_library_loaded": false,
+  "native_fits": 0,
+  "local_mirror_clean": true,
+  "remote_checkout_clean": true,
+  "formal_pre_post_equal": true,
+  "own_remote_test_children": 0,
+  "transport_children_finished": true,
+  "own_redis_gpu_resources_created": 0,
+  "unrelated_processes_or_resources": "NOT_INSPECTED; no broad cleanup",
+  "rollback": "No deployment enabled; preserved formal environment remains in place"
+}
