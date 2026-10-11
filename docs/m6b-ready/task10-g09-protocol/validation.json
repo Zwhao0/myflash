@@ -1,0 +1,216 @@
+{
+  "task": "TASK10",
+  "scope": "DOCUMENT_CHECK_PASS_ONLY; protocol requires independent review; M6-B NOT_STARTED",
+  "base": "f44e3fb44e48979298a13efbd9dccad5000c3eef",
+  "machine": "macOS-26.6.2-arm64-arm-64bit",
+  "architecture": "arm64",
+  "python": "3.9.6",
+  "runtime_source_native_tests_changed": false,
+  "gpu_fault_injection": "NOT_RUN",
+  "m6b": "NOT_STARTED",
+  "protocol_review": "PENDING",
+  "publication": {
+    "authorization": "human: 推送github便于ChatGPT审核, 2026-10-11",
+    "status": "AUTHORIZED_PREPARED; precise final remote identity is bound by PR and private receipts",
+    "branch": "codex/task10-g09-protocol-review",
+    "base_branch": "codex/task09-m3-abi2-m6-cpu",
+    "base_head": "f44e3fb44e48979298a13efbd9dccad5000c3eef",
+    "local_original_head_retained": "f2e435cad268b197019b39d6387e0108b8e1fbb2",
+    "redaction_scope": "STATUS/RESULT/validation home paths only; protocol/template/source ledger/task unchanged",
+    "argv_policy": "Published argv use path placeholders. Complete argv and original log bytes remain in private run; listed SHA identify those original bytes.",
+    "ssh443_preflight_exit": 0,
+    "remote_base_head_matches": true,
+    "new_gpu_or_cpu_algorithm_tests": "NOT_RUN",
+    "history_privacy_and_binary_rights": "NOT_AUDITED/OPEN; no force or history deletion",
+    "receipt_location": "runs/task10-g09-protocol-20261011/publication/",
+    "checks": {
+      "check01": {
+        "argv": [
+          "/usr/bin/python3",
+          "<publication-private-run>/check.py"
+        ],
+        "cwd": "<task10-checkout>",
+        "exit": 0,
+        "machine": "macOS-26.6.2-arm64-arm-64bit",
+        "utc": "2026-10-11T07:30:28.897114+00:00",
+        "stdout_sha256": "69038adf1775957966a8aad458402e81bcf17e53befbfaa8069729f7d72e9ac5",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "script_sha256": "fda4e4fdde5a7ea2ff97cf2d456bb1fb67824c5971343bfe746d97a2af620c57",
+        "stdout": "{\n  \"scope\": \"changed-file text, JSON, exact original protocol/template/source/task and baseline preservation only\",\n  \"machine\": \"macOS-26.6.2-arm64-arm-64bit\",\n  \"python\": \"3.9.6\",\n  \"changed_files\": 8,\n  \"text_findings\": 0,\n  \"protected_files\": 2068,\n  \"append_only\": [\n    \"STATUS.md\",\n    \"GAPS.md\"\n  ],\n  \"unchanged_vs_original_task10\": [\n    \"GAPS.md\",\n    \"docs/m6b-ready/task10-g09-protocol/G09_PROTOCOL.md\",\n    \"docs/m6b-ready/task10-g09-protocol/RUN_MANIFEST_TEMPLATE.json\",\n    \"docs/m6b-ready/task10-g09-protocol/SOURCE_LEDGER.json\",\n    \"tasks/06b_ready_task10_g09_protocol.md\"\n  ],\n  \"history_scan\": \"NOT_RUN\",\n  \"gpu_and_cpu_tests\": \"NOT_RUN\"\n}\n",
+        "stderr": ""
+      }
+    },
+    "new_changed_file_scan": "8files/findings0; check01 exit0; final docs seal does not alter protected protocol sources"
+  },
+  "checks": {
+    "classification": "ADAPTATION",
+    "scope": "local document and byte preservation only; no FLASH import or tests",
+    "base": "f44e3fb44e48979298a13efbd9dccad5000c3eef",
+    "base_file_count": 2070,
+    "protected_byte_identical": 2068,
+    "append_only": [
+      "GAPS.md",
+      "STATUS.md"
+    ],
+    "allowed_new_paths": [
+      "docs/m6b-ready/task10-g09-protocol/G09_PROTOCOL.md",
+      "docs/m6b-ready/task10-g09-protocol/RESULT.md",
+      "docs/m6b-ready/task10-g09-protocol/RUN_MANIFEST_TEMPLATE.json",
+      "docs/m6b-ready/task10-g09-protocol/SOURCE_LEDGER.json",
+      "docs/m6b-ready/task10-g09-protocol/validation.json",
+      "tasks/06b_ready_task10_g09_protocol.md"
+    ],
+    "changed_paths_observed": [
+      "GAPS.md",
+      "STATUS.md",
+      "docs/m6b-ready/task10-g09-protocol/G09_PROTOCOL.md",
+      "docs/m6b-ready/task10-g09-protocol/RESULT.md",
+      "docs/m6b-ready/task10-g09-protocol/RUN_MANIFEST_TEMPLATE.json",
+      "docs/m6b-ready/task10-g09-protocol/SOURCE_LEDGER.json",
+      "docs/m6b-ready/task10-g09-protocol/validation.json",
+      "tasks/06b_ready_task10_g09_protocol.md"
+    ],
+    "machine": "macOS-26.6.2-arm64-arm-64bit",
+    "architecture": "arm64",
+    "python": "3.9.6",
+    "checks": "byte preservation, allowed files, JSON, source SHA, templates and protocol invariants"
+  },
+  "commands": [
+    {
+      "label": "worktree",
+      "argv": [
+        "git",
+        "worktree",
+        "add",
+        "-b",
+        "codex/task10-g09-protocol",
+        "<task10-checkout>",
+        "f44e3fb44e48979298a13efbd9dccad5000c3eef"
+      ],
+      "cwd": "<task09-checkout>",
+      "exit": 0,
+      "machine": "macOS-26.6.2-arm64-arm-64bit",
+      "time_utc": "2026-10-11T07:13:50.502906+00:00",
+      "stdout_sha256": "56d91d7476d2cab77ddc9aa296dcdaaf961cd55d7597cf2608752c77b8864a61",
+      "stderr_sha256": "9ec3ad16ce8c5f269fa64a37a0a212548b77285c779ca8f8c33853a41a533eb1"
+    },
+    {
+      "label": "prepare",
+      "argv": [
+        "git",
+        "status",
+        "--porcelain"
+      ],
+      "cwd": "<task10-checkout>",
+      "exit": 0,
+      "machine": "macOS-26.6.2-arm64-arm-64bit",
+      "python": "3.9.6",
+      "utc": "2026-10-11T07:19:03.845449+00:00",
+      "source_ledger_verified_base_files": 16,
+      "stdout_sha256": "264997ed90783197ef25b4da774084cebafd3d1c205c912478557f597f5254b5",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "verify01",
+      "argv": [
+        "/usr/bin/python3",
+        "<task10-private-run>/verify_protocol.py"
+      ],
+      "cwd": "<task10-checkout>",
+      "exit": 0,
+      "timeout_s": 60,
+      "timed_out": false,
+      "start_utc": "2026-10-11T07:21:05.046990+00:00",
+      "end_utc": "2026-10-11T07:21:12.484184+00:00",
+      "machine": "macOS-26.6.2-arm64-arm-64bit",
+      "python": "3.9.6",
+      "stdout_sha256": "6d5f60354a4abba45f61a41bcde0d132abd629d9a8bc58ece0165d0c12978dfd",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "script_sha256": "6670a7f55d43576e6e5b9dd97de5a81ff1e523087ec7f15b8b0c055b36fccff3"
+    },
+    {
+      "label": "verify02",
+      "argv": [
+        "/usr/bin/python3",
+        "<task10-private-run>/verify_protocol.py"
+      ],
+      "cwd": "<task10-checkout>",
+      "exit": 0,
+      "timeout_s": 60,
+      "timed_out": false,
+      "start_utc": "2026-10-11T07:22:23.369017+00:00",
+      "end_utc": "2026-10-11T07:22:28.689791+00:00",
+      "machine": "macOS-26.6.2-arm64-arm-64bit",
+      "python": "3.9.6",
+      "stdout_sha256": "7a6e2588845d51f6e092525be544b4d90fdc94e592972464ef1950c3983e2137",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "script_sha256": "81f187f0a8bc74c929007815a0b0712f6763f5b22cc25c0c173675b370ace13e"
+    },
+    {
+      "label": "stage01",
+      "argv": [
+        "git",
+        "add",
+        "STATUS.md",
+        "GAPS.md",
+        "tasks/06b_ready_task10_g09_protocol.md",
+        "docs/m6b-ready/task10-g09-protocol/G09_PROTOCOL.md",
+        "docs/m6b-ready/task10-g09-protocol/RUN_MANIFEST_TEMPLATE.json",
+        "docs/m6b-ready/task10-g09-protocol/SOURCE_LEDGER.json",
+        "docs/m6b-ready/task10-g09-protocol/RESULT.md",
+        "docs/m6b-ready/task10-g09-protocol/validation.json"
+      ],
+      "cwd": "<task10-checkout>",
+      "exit": 0,
+      "timeout_s": 60,
+      "timed_out": false,
+      "start_utc": "2026-10-11T07:22:28.778376+00:00",
+      "end_utc": "2026-10-11T07:22:28.807221+00:00",
+      "machine": "macOS-26.6.2-arm64-arm-64bit",
+      "python": "3.9.6",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "staged-check01",
+      "argv": [
+        "git",
+        "-C",
+        "<task10-checkout>",
+        "diff",
+        "--cached",
+        "--check"
+      ],
+      "cwd": "<task10-checkout>",
+      "exit": 0,
+      "timeout_s": 60,
+      "timed_out": false,
+      "start_utc": "2026-10-11T07:22:28.910795+00:00",
+      "end_utc": "2026-10-11T07:22:28.930956+00:00",
+      "machine": "macOS-26.6.2-arm64-arm-64bit",
+      "python": "3.9.6",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "source_inputs": {
+    "G09_PROTOCOL.md": "135fa9724c9ba050dbd2c54ed505c1df8cce4a492dc55b69246e8d64c492378a",
+    "RUN_MANIFEST_TEMPLATE.json": "387e418053d58856b42f24fab716cb5f397b63f42cd4b6edeebed0e728d0cddc",
+    "SOURCE_LEDGER.json": "9fabb7f81960b1404f354fd4a5593189d65761575ca497124bd37ebd2c6d989b",
+    "task_file": "5d4744fb0582e9be52409750ca272606c9c53a91ec96820ad14cea69fd1c8327"
+  },
+  "raw_private_run": "runs/task10-g09-protocol-20261011",
+  "early_failures": [
+    {
+      "command": "initial git status/rev-parse from package root",
+      "exit": 128,
+      "raw": "tool transcript only; standalone raw NOT_CAPTURED"
+    },
+    {
+      "command": "desktop create_worktree",
+      "exit": null,
+      "error": "Not a git repository; tool error, no process exit"
+    }
+  ],
+  "final_seal": "RESULT/STATUS/validation receipts only; source_inputs unchanged; final Git identity outside its own tree in private final-head receipt"
+}

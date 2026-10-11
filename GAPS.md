@@ -419,3 +419,32 @@ journal remain OPEN/NOT_RUN. Existing G04 approved assumptions reused unchanged;
 no scientific gap is silently closed, no M6-B or final diagnosis. 35new+127old CPU
 checks0, original reset comparator failure1/cursor caller2 retained. Sources and
 limits: docs/m6b-ready/task09-abi2-cpu/RESULT.md and SOURCE_LEDGER.json. STOP.
+
+## TASK10 G09 protocol-only / 2026-10-11
+
+G09 remains OPEN: this task defines admission/evaluation, not measured fault
+applicability. Explicit human source exactf44e3fb44e48979298a13efbd9dccad5000c3eef;
+separate codex/task10-g09-protocol. PAPER SPEC S4/S6/S7/S9 max-group/min-rank,
+Event/Group timing/W and fail-stop freshness preserved. ADAPTATION distinct
+CPU rank/node lateness, GPU front-compute/clock limitation, background NCCL
+competition and worker fail-stop truth; isolated evaluator, bounded budgets,
+precise targets/restoration, real ABI2/Redis/framework/clock/window admission
+gates and separate provisional/final/forced/automatic metrics. EXTENSION
+controlled auxiliary fault models/candidate-level evaluation; UPSTREAM official
+CUDA12.8/NCCL2.27.3/PyTorch2.8/nvidia-smi API docs only, no code reuse.
+
+G08/G12/G13/G20 physical scope not closed: clock restriction can affect compute
+and NCCL together; shared-link pressure may lack a rank root set; secondary
+stalled ranks are not root TP. No false all-rank reset after worker exit; no
+missing-data zero-fill/min-max reversal/threshold tuning. Current F-PROVISIONAL
+and final_alert=false remain; final diagnosis/E2E NOT_IMPLEMENTED. Historical
+FAIL/NOT_CAPTURED/915-cache gap/rights/privacy OPEN unchanged. Native auto
+detector wiring/fail-stop runtime, truth access boundary, physical sample window
+and clocks need future independent implementation/validation; no implicit approval.
+
+Protocol docs/template/source ledger only, STATUS/GAPS append; no runtime/test/
+fixture/native change. Local document/preservation commands/exits/logs in
+docs/m6b-ready/task10-g09-protocol/RESULT.md and private task10 run. CPU science
+matrices not repeated. Server/GPU/NCCL/Redis/installation/fault injection/M6-B
+NOT_RUN/NOT_STARTED. Next unique task independent TASK10 precise-head protocol
+review, then separate explicit execution scope if approved; STOP.

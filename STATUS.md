@@ -813,3 +813,69 @@ Actual48paths/2936additions/0deletions; staged diff check0. Final documentation
 seal only appends this binding; bridge05 runtime/test source hashes unchanged.
 Protected2022/append-only2 and changed48-file checker exit0 verified. No push;
 local final HEAD/tree/clean status in runs/task09-abi2-cpu-20261011/git-final. STOP.
+
+## TASK10 G09 fault scope / GPU protocol only — 2026-10-11
+
+Human explicitly requests an independent task from exact local HEAD
+f44e3fb44e48979298a13efbd9dccad5000c3eef/tree1a4f6cec6597f907f9ebe647c62de921fbcb70e4;
+base clean verified, no independent review PASS invented. New worktree
+m6b-task10-work / branch codex/task10-g09-protocol. Docs/task only; STATUS/GAPS
+append. Existing runtime/native/test/fixture/parameters/labels/evidence immutable.
+
+PAPER SPEC S4/S6/S7/S9 preserves Event/Group/W/max-group/min-rank. ADAPTATION
+protocol distinguishes CPU rank/node arrival, GPU front-compute/clock restriction,
+real background NCCL pressure and worker fail-stop with evaluator-private roots,
+affected/secondary sets, explicit GPU/PID/job targets, bounded injection/timeouts/
+restoration and separate detector/Profile/provisional/final/forced/automatic metrics.
+EXTENSION auxiliary fault models/candidate-level evaluation; UPSTREAM official
+CUDA12.8/NCCL2.27.3/PyTorch2.8/nvidia-smi semantics only, no code/dependency reuse.
+F-PROVISIONAL/final empty unchanged; final diagnosis/E2E NOT_IMPLEMENTED. G09 OPEN.
+
+Local document/preservation checks and actual macOS/Python/commands/exits/raw log
+SHA are recorded in docs/m6b-ready/task10-g09-protocol/RESULT.md/validation.json
+and private runs/task10-g09-protocol-20261011. Full commands:
+/usr/bin/python3 <task10-private-run>/verify_protocol.py;
+git -C <task10-checkout> diff --cached --check.
+Git implementation/final HEAD/tree/diff/clean receipt in private final-head files.
+Initial root Git128 transcript-only/raw NOT_CAPTURED and app worktree tool error
+retained; git worktree fallback exit0. No tests/matrices/native fits/build/install/
+server probe/Redis/GPU/fault injection/M6-B/publication/merge. CPU history cited,
+not revalidated. Historical failure/NOT_CAPTURED/915-cache/rights/privacy unchanged.
+
+G20 physical framework clocks/window, durable raw or epoch-abort policy, real
+ABI2/Redis, automatic detector wiring/fail-stop implementation, access-isolated
+truth and resource approval remain future gates. Protocol/template does not
+authorize execution. M6-B NOT_STARTED/NOT_RUN; next unique task independent
+TASK10 precise-head protocol review, followed only by separately explicit
+minimal implementation/execution authorization. STOP after local delivery.
+
+TASK10 document verify01 actual exit0/no timeout: local macOS26.6.2 arm64,
+system Python3.9.6; base2070/protected2068 byte-identical, STATUS/GAPS append-only,
+16 source SHA/JSON/allowed-path/protocol invariants pass. DOCUMENT_CHECK_PASS_ONLY,
+not G09/GPU applicability or execution admission. Raw argv/stdout/stderr/script
+snapshot/preservation in private task10 run; final staged check and local Git
+HEAD/tree binding follow in validation.json/final-head receipts. No CPU test rerun.
+
+TASK10 final document verify02 exit0/no timeout and staged-check01 exit0:
+all8allowed changed paths/new JSON/input SHA verified; base2068protected bytes
+and2append-only records intact. Final seal only adds these receipts/results;
+protocol/manifest/source/task and runtime bytes unchanged. Local commit direct
+parent exactf44e3fb; final HEAD/tree/diff/clean in private final-head receipt.
+STOP for precise-head TASK10 protocol review; no execution/publication inferred.
+
+TASK10 GitHub publication explicitly authorized by human 2026-10-11:
+"推送github便于ChatGPT审核". ADAPTATION documentation-only local-path redaction;
+original local f2e435cad268b197019b39d6387e0108b8e1fbb2/private raw receipts retained.
+Separate codex/task10-g09-protocol-review directly parents exactf44e3fb; remote
+task09 base SHA verified by existing GitHub identity SSH443 ls-remote exit0.
+Only STATUS/RESULT/validation publication text changes; protocol/template/source
+ledger/task/runtime/test/native/fixture bytes preserved. Ordinary branch push
+and independent Draft PR against exact task09 base, no merge/force/main changes.
+Actual macOS command exits/logs/remote HEAD/tree/PR identity in private task10
+publication receipts; public validation has sanitized argv and original log SHA.
+Initial this-turn chained identity-config probe exit1/no test ran, raw standalone
+NOT_CAPTURED/tool transcript retained. Publication text check limited to8changed
+files, not full history or rights. G09 OPEN; GPU/Redis/server/M6-B NOT_RUN.
+Next unique task independent TASK10 precise remote HEAD protocol review; STOP.
+
+TASK10 publication check01 actual0: local macOS26.6.2 arm64/systemPython3.9.6; 8changed-file text findings0/2068base protected unchanged/two append-only. Protocol/template/ledger/task exact original local f2e435c bytes. Public command/stdout/stderr/script/log SHA in validation publication.checks; private exact argv preserved. No new runtime/science/GPU evidence.
