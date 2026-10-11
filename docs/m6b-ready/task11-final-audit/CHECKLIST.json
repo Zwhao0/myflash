@@ -1,0 +1,292 @@
+{
+  "task": "TASK11",
+  "base_head": "b517c5a922d52895e274c3758b5b7c2c409d91ca",
+  "classification": "ADAPTATION audit only",
+  "admission": "BLOCKED",
+  "execution_authorized": false,
+  "new_scientific_decisions": [],
+  "blockers": [
+    {
+      "id": "B01",
+      "layers": [
+        "L1"
+      ],
+      "gap": "approved Detector automatic dispatcher",
+      "status": "IMPLEMENTATION_MISSING",
+      "classification": "ADAPTATION",
+      "resolution": "See AUDIT.md section3; future separately authorized task"
+    },
+    {
+      "id": "B02",
+      "layers": [
+        "L0",
+        "L1",
+        "L2"
+      ],
+      "gap": "real ABI2/Redis orchestration",
+      "status": "INTEGRATION_NOT_RUN",
+      "classification": "ADAPTATION",
+      "resolution": "See AUDIT.md section3; future separately authorized task"
+    },
+    {
+      "id": "B03",
+      "layers": [
+        "L0",
+        "L1"
+      ],
+      "gap": "real framework boundary and outbox integration",
+      "status": "INTEGRATION_MISSING",
+      "classification": "ADAPTATION",
+      "resolution": "See AUDIT.md section3; future separately authorized task"
+    },
+    {
+      "id": "B04",
+      "layers": [
+        "L0",
+        "L1"
+      ],
+      "gap": "clock mapping and physical sampling window",
+      "status": "PHYSICAL_WINDOW_NOT_VERIFIED",
+      "classification": "ADAPTATION",
+      "resolution": "See AUDIT.md section3; future separately authorized task"
+    },
+    {
+      "id": "B05",
+      "layers": [
+        "L0",
+        "L1",
+        "L2"
+      ],
+      "gap": "raw journal or crash epoch invalidation",
+      "status": "INTEGRATION_MISSING",
+      "classification": "ADAPTATION",
+      "resolution": "See AUDIT.md section3; future separately authorized task"
+    },
+    {
+      "id": "B06",
+      "layers": [
+        "L0",
+        "L1",
+        "L2"
+      ],
+      "gap": "native fence/reset and resource recovery",
+      "status": "REAL_PATH_NOT_RUN",
+      "classification": "ADAPTATION",
+      "resolution": "See AUDIT.md section3; future separately authorized task"
+    },
+    {
+      "id": "B07",
+      "layers": [
+        "L0",
+        "L1",
+        "L2"
+      ],
+      "gap": "truth isolation and actual framework groups",
+      "status": "NOT_VERIFIED",
+      "classification": "ADAPTATION",
+      "resolution": "See AUDIT.md section3; future separately authorized task"
+    },
+    {
+      "id": "B08",
+      "layers": [
+        "L0",
+        "L1",
+        "L2"
+      ],
+      "gap": "current resource/runtime/capacity and authorization",
+      "status": "NOT_PROBED_OR_AUTHORIZED",
+      "classification": "ADAPTATION",
+      "resolution": "See AUDIT.md section3; future separately authorized task"
+    },
+    {
+      "id": "B09",
+      "layers": [
+        "L2"
+      ],
+      "gap": "NCCL freshness fail-stop runtime",
+      "status": "NOT_IMPLEMENTED",
+      "classification": "ADAPTATION",
+      "resolution": "See AUDIT.md section3; future separately authorized task"
+    },
+    {
+      "id": "B10",
+      "layers": [
+        "L3"
+      ],
+      "gap": "final diagnosis and actual MoE/formal experiments",
+      "status": "NOT_IMPLEMENTED_OR_NOT_RUN",
+      "classification": "ADAPTATION",
+      "resolution": "See AUDIT.md section3; future separately authorized task"
+    }
+  ],
+  "accepted_deviations": [
+    {
+      "id": "A01",
+      "status": "BOUNDED_EXISTING_CONTRACT_ONLY",
+      "source": "AUDIT.md section4; no new scope approval"
+    },
+    {
+      "id": "A02",
+      "status": "BOUNDED_EXISTING_CONTRACT_ONLY",
+      "source": "AUDIT.md section4; no new scope approval"
+    },
+    {
+      "id": "A03",
+      "status": "BOUNDED_EXISTING_CONTRACT_ONLY",
+      "source": "AUDIT.md section4; no new scope approval"
+    },
+    {
+      "id": "A04",
+      "status": "BOUNDED_EXISTING_CONTRACT_ONLY",
+      "source": "AUDIT.md section4; no new scope approval"
+    },
+    {
+      "id": "A05",
+      "status": "BOUNDED_EXISTING_CONTRACT_ONLY",
+      "source": "AUDIT.md section4; no new scope approval"
+    },
+    {
+      "id": "A06",
+      "status": "BOUNDED_EXISTING_CONTRACT_ONLY",
+      "source": "AUDIT.md section4; no new scope approval"
+    },
+    {
+      "id": "A07",
+      "status": "BOUNDED_EXISTING_CONTRACT_ONLY",
+      "source": "AUDIT.md section4; no new scope approval"
+    },
+    {
+      "id": "A08",
+      "status": "BOUNDED_EXISTING_CONTRACT_ONLY",
+      "source": "AUDIT.md section4; no new scope approval"
+    }
+  ],
+  "gpu_queue": [
+    {
+      "id": "U00",
+      "title": "two-host read-only preflight",
+      "required_blockers": [
+        "B08"
+      ],
+      "status": "NOT_RUN",
+      "authorized": false,
+      "targets": null,
+      "actual_code_sha": null,
+      "budget_and_recovery": "inherit TASK10 ceilings; precise resources and authorization required"
+    },
+    {
+      "id": "U01",
+      "title": "current-build numeric and ABI smoke",
+      "required_blockers": [
+        "B02",
+        "B06",
+        "B08"
+      ],
+      "status": "NOT_RUN",
+      "authorized": false,
+      "targets": null,
+      "actual_code_sha": null,
+      "budget_and_recovery": "inherit TASK10 ceilings; precise resources and authorization required"
+    },
+    {
+      "id": "U02",
+      "title": "real manual two-epoch integration",
+      "required_blockers": [
+        "B02",
+        "B03",
+        "B04",
+        "B05",
+        "B06",
+        "B07",
+        "B08"
+      ],
+      "status": "NOT_RUN",
+      "authorized": false,
+      "targets": null,
+      "actual_code_sha": null,
+      "budget_and_recovery": "inherit TASK10 ceilings; precise resources and authorization required"
+    },
+    {
+      "id": "U03",
+      "title": "normal/CPU lateness/GPU front-compute then automatic",
+      "required_blockers": [
+        "B01",
+        "B02",
+        "B03",
+        "B04",
+        "B05",
+        "B06",
+        "B07",
+        "B08"
+      ],
+      "status": "NOT_RUN",
+      "authorized": false,
+      "targets": null,
+      "actual_code_sha": null,
+      "budget_and_recovery": "inherit TASK10 ceilings; precise resources and authorization required"
+    },
+    {
+      "id": "U04",
+      "title": "single GPU clock restriction",
+      "required_blockers": [
+        "B02",
+        "B03",
+        "B04",
+        "B05",
+        "B06",
+        "B07",
+        "B08"
+      ],
+      "status": "NOT_RUN",
+      "authorized": false,
+      "targets": null,
+      "actual_code_sha": null,
+      "budget_and_recovery": "inherit TASK10 ceilings; precise resources and authorization required",
+      "automatic_mode_additional_blockers": [
+        "B01"
+      ],
+      "forced_mode_metrics": "FORCED_PROFILE only; automatic detection metrics NOT_APPLICABLE"
+    },
+    {
+      "id": "U05",
+      "title": "own bounded background NCCL",
+      "required_blockers": [
+        "B02",
+        "B03",
+        "B04",
+        "B05",
+        "B06",
+        "B07",
+        "B08"
+      ],
+      "status": "NOT_RUN",
+      "authorized": false,
+      "targets": null,
+      "actual_code_sha": null,
+      "budget_and_recovery": "inherit TASK10 ceilings; precise resources and authorization required",
+      "automatic_mode_additional_blockers": [
+        "B01"
+      ],
+      "forced_mode_metrics": "FORCED_PROFILE only; automatic detection metrics NOT_APPLICABLE"
+    },
+    {
+      "id": "U06",
+      "title": "controlled worker exit",
+      "required_blockers": [
+        "B02",
+        "B05",
+        "B06",
+        "B07",
+        "B08",
+        "B09"
+      ],
+      "status": "NOT_RUN",
+      "authorized": false,
+      "targets": null,
+      "actual_code_sha": null,
+      "budget_and_recovery": "inherit TASK10 ceilings; precise resources and authorization required"
+    }
+  ],
+  "next_unique_action": "Independent review of exact TASK11 commit",
+  "suggested_after_review_only": "TASK12 confirmed rank0 -> approved Detector -> versioned automatic Profile request; targeted tests only"
+}

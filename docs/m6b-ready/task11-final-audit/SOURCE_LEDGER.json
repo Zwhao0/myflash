@@ -1,0 +1,1484 @@
+{
+  "base_head": "b517c5a922d52895e274c3758b5b7c2c409d91ca",
+  "base_tree": "59b3de2df840a3a6bda22e52911feaf20925778b",
+  "classification": {
+    "PAPER": "SPEC S1-S9; inherited summary only, no new PDF visual audit",
+    "ADAPTATION": "this audit and exact same-project source contracts",
+    "EXTENSION": "TASK10 auxiliary fault/candidate evaluation only",
+    "UPSTREAM": "official API documentation, no source reuse"
+  },
+  "files": [
+    {
+      "path": "AGENTS.md",
+      "commit": "b517c5a922d52895e274c3758b5b7c2c409d91ca",
+      "sha256": "25a4533f0df0b3054cd7fe23bc8d1627361ac3cc900e3b218103c967eea8242d",
+      "bytes": 3410,
+      "anchors": []
+    },
+    {
+      "path": "PLAN.md",
+      "commit": "b517c5a922d52895e274c3758b5b7c2c409d91ca",
+      "sha256": "14fdd2f6f6940709590ceda2621e440255c1ee2b5d2ca253b76ff9de30057121",
+      "bytes": 9415,
+      "anchors": []
+    },
+    {
+      "path": "SPEC.md",
+      "commit": "b517c5a922d52895e274c3758b5b7c2c409d91ca",
+      "sha256": "d2695119f155129ca704cf6e524b3690e82827a2bbaf4f9c4cb046baf615e755",
+      "bytes": 7050,
+      "anchors": []
+    },
+    {
+      "path": "docs/m3/RESULTS.md",
+      "commit": "b517c5a922d52895e274c3758b5b7c2c409d91ca",
+      "sha256": "5c5683a3058e653a5bbefd44ae0f157ddc4aa07659d9eff63cf3cfc8219b5093",
+      "bytes": 8314,
+      "anchors": []
+    },
+    {
+      "path": "docs/m3/VALIDATION.md",
+      "commit": "b517c5a922d52895e274c3758b5b7c2c409d91ca",
+      "sha256": "b3fa1a6d0661187fb7f4a3f7b013348f851657278fd8b7fa96a62dcd34c25797",
+      "bytes": 12398,
+      "anchors": []
+    },
+    {
+      "path": "docs/m6/INTEGRATION_BOUNDARIES.md",
+      "commit": "b517c5a922d52895e274c3758b5b7c2c409d91ca",
+      "sha256": "674fe9d36a0be803cdd2d8fbe834dd2489a773862a234c909d65591c56340e61",
+      "bytes": 4776,
+      "anchors": []
+    },
+    {
+      "path": "docs/m6/RESULTS.md",
+      "commit": "b517c5a922d52895e274c3758b5b7c2c409d91ca",
+      "sha256": "4cbe9d78aa54cb1ea865f0aff86afad9848b7777ff613f8b8ece31fa645df222",
+      "bytes": 8024,
+      "anchors": []
+    },
+    {
+      "path": "docs/m6/validation.json",
+      "commit": "b517c5a922d52895e274c3758b5b7c2c409d91ca",
+      "sha256": "4ff89c24a45f6d8040d597a47fff08dc974f1bb3ff3e82219c1557208eb6f8e6",
+      "bytes": 46246,
+      "anchors": []
+    },
+    {
+      "path": "docs/m6b-ready/g2-approved-detector/APPROVAL.json",
+      "commit": "b517c5a922d52895e274c3758b5b7c2c409d91ca",
+      "sha256": "4f5ca046ca67e7cc9bb1ebd76b3659616d9bb1e165ba48e3be8a6f33809f6409",
+      "bytes": 3043,
+      "anchors": []
+    },
+    {
+      "path": "docs/m6b-ready/g2-approved-detector/RESULT.md",
+      "commit": "b517c5a922d52895e274c3758b5b7c2c409d91ca",
+      "sha256": "504b4f9c31a6fac1804e13ad9bb2172edaf2e17b6b94d4ad942fecb6e0588d8c",
+      "bytes": 6096,
+      "anchors": []
+    },
+    {
+      "path": "docs/m6b-ready/g2-approved-detector/validation.json",
+      "commit": "b517c5a922d52895e274c3758b5b7c2c409d91ca",
+      "sha256": "f795d07f77e30707003679386208fa291f5555f22f7bcf740ab0d8c62abc6bea",
+      "bytes": 6367,
+      "anchors": []
+    },
+    {
+      "path": "docs/m6b-ready/g20-reporter/RESULT.md",
+      "commit": "b517c5a922d52895e274c3758b5b7c2c409d91ca",
+      "sha256": "e3c284b0a9e55b5f8579c1f01f987d2bb70d638d530c75a683154414e9cf9a6b",
+      "bytes": 8560,
+      "anchors": []
+    },
+    {
+      "path": "docs/m6b-ready/g20-reporter/review-logs.json",
+      "commit": "b517c5a922d52895e274c3758b5b7c2c409d91ca",
+      "sha256": "9eed9cde49a187cc06dac947bbdf9c121515498a7681c2c50a49b21ddc300044",
+      "bytes": 38499,
+      "anchors": []
+    },
+    {
+      "path": "docs/m6b-ready/g20-reporter/validation.json",
+      "commit": "b517c5a922d52895e274c3758b5b7c2c409d91ca",
+      "sha256": "113ae294cdda5697e4bcfc6547d46be4e9a5f9452c4801fd51998cf01e7f342d",
+      "bytes": 14007,
+      "anchors": []
+    },
+    {
+      "path": "docs/m6b-ready/g3-g04-implementation/APPROVAL.json",
+      "commit": "b517c5a922d52895e274c3758b5b7c2c409d91ca",
+      "sha256": "6b103ddb9e20cd7f10ddc91c3b94603b78690d812320e3eaeb97b0efbcb325de",
+      "bytes": 4184,
+      "anchors": []
+    },
+    {
+      "path": "docs/m6b-ready/g3-g04-implementation/RESULT.md",
+      "commit": "b517c5a922d52895e274c3758b5b7c2c409d91ca",
+      "sha256": "b29f69e39598d2b5b6b3baf2ff58ae87dfd755c66b6b532bad8a1de3f708747a",
+      "bytes": 7714,
+      "anchors": []
+    },
+    {
+      "path": "docs/m6b-ready/g3-g04-implementation/validation.json",
+      "commit": "b517c5a922d52895e274c3758b5b7c2c409d91ca",
+      "sha256": "ab8ad455ddec84ce2fcd0a45ff35324ed7c6964d646f9b9d55c0479f15c233b4",
+      "bytes": 2166,
+      "anchors": []
+    },
+    {
+      "path": "docs/m6b-ready/task09-abi2-cpu/RESULT.md",
+      "commit": "b517c5a922d52895e274c3758b5b7c2c409d91ca",
+      "sha256": "42e155b8e5c8fe78f84a4e667565a1d15b17bd2ef11281713b4c93f83fb3c864",
+      "bytes": 7022,
+      "anchors": []
+    },
+    {
+      "path": "docs/m6b-ready/task09-abi2-cpu/SOURCE_LEDGER.json",
+      "commit": "b517c5a922d52895e274c3758b5b7c2c409d91ca",
+      "sha256": "d117f523f1428ad08bd8a8cce5aea2aa0962df7f92988f04a9c37e8fe286a512",
+      "bytes": 4577,
+      "anchors": []
+    },
+    {
+      "path": "docs/m6b-ready/task09-abi2-cpu/review-logs.json",
+      "commit": "b517c5a922d52895e274c3758b5b7c2c409d91ca",
+      "sha256": "b9db6fe08ac6187fc4429bbd9c5039ca8f1ae862c3602928a8ddd6f9ca0e1f64",
+      "bytes": 10503,
+      "anchors": []
+    },
+    {
+      "path": "docs/m6b-ready/task09-abi2-cpu/validation.json",
+      "commit": "b517c5a922d52895e274c3758b5b7c2c409d91ca",
+      "sha256": "1ae41098bda78250342ff05ad444dd58393524198ed7019d84ffab4ce684738f",
+      "bytes": 83375,
+      "anchors": []
+    },
+    {
+      "path": "docs/m6b-ready/task10-g09-protocol/G09_PROTOCOL.md",
+      "commit": "b517c5a922d52895e274c3758b5b7c2c409d91ca",
+      "sha256": "2ff85a4416f997a85f83cb7d026929aa13917d86170e12475ffd428bd0fd718d",
+      "bytes": 21340,
+      "anchors": []
+    },
+    {
+      "path": "docs/m6b-ready/task10-g09-protocol/RESULT.md",
+      "commit": "b517c5a922d52895e274c3758b5b7c2c409d91ca",
+      "sha256": "dd7e8953b1c09f8c933d8beb8178a6abc4a7fc4e1e075f1e49776becae0058d7",
+      "bytes": 5646,
+      "anchors": []
+    },
+    {
+      "path": "docs/m6b-ready/task10-g09-protocol/RUN_MANIFEST_TEMPLATE.json",
+      "commit": "b517c5a922d52895e274c3758b5b7c2c409d91ca",
+      "sha256": "387e418053d58856b42f24fab716cb5f397b63f42cd4b6edeebed0e728d0cddc",
+      "bytes": 3120,
+      "anchors": []
+    },
+    {
+      "path": "docs/m6b-ready/task10-g09-protocol/SOURCE_LEDGER.json",
+      "commit": "b517c5a922d52895e274c3758b5b7c2c409d91ca",
+      "sha256": "9fabb7f81960b1404f354fd4a5593189d65761575ca497124bd37ebd2c6d989b",
+      "bytes": 7221,
+      "anchors": []
+    },
+    {
+      "path": "docs/m6b-ready/task10-g09-protocol/validation.json",
+      "commit": "b517c5a922d52895e274c3758b5b7c2c409d91ca",
+      "sha256": "cdb9e8d4754a34a5516abfdb918aadb012e95a306672a0c492953828933d6cc5",
+      "bytes": 9898,
+      "anchors": []
+    },
+    {
+      "path": "flash/change_detection.py",
+      "commit": "b517c5a922d52895e274c3758b5b7c2c409d91ca",
+      "sha256": "a116ef88a31f52226a545fa5e3d08f7eb5d8264456ec5c7de637e0c6d76b1957",
+      "bytes": 16851,
+      "anchors": [
+        {
+          "line": 18,
+          "text": "class DetectionConfig:"
+        },
+        {
+          "line": 27,
+          "text": "    def __post_init__(self):"
+        },
+        {
+          "line": 34,
+          "text": "def preprocess(records, config):"
+        },
+        {
+          "line": 63,
+          "text": "def filter_candidates(prepared, candidates, latest, config, *, approved_rules=False):"
+        },
+        {
+          "line": 117,
+          "text": "def _positive_finite(value):"
+        },
+        {
+          "line": 121,
+          "text": "def _filter_approved_candidates(prepared, candidates, latest, config):"
+        },
+        {
+          "line": 206,
+          "text": "def _detect_approved(records, adapter, config):"
+        },
+        {
+          "line": 257,
+          "text": "def detect(records, adapter=None, config=DetectionConfig(), *, approved_rules=False):"
+        },
+        {
+          "line": 282,
+          "text": "def prefix_replay(records, adapter=None, *, approved_rules=False):"
+        }
+      ]
+    },
+    {
+      "path": "flash/iteration_outbox.py",
+      "commit": "b517c5a922d52895e274c3758b5b7c2c409d91ca",
+      "sha256": "a7bcfdbf27a716944fd4d4403bb524d41343890b30af57c571438d88803c5fe8",
+      "bytes": 12644,
+      "anchors": [
+        {
+          "line": 20,
+          "text": "def _index(value):"
+        },
+        {
+          "line": 26,
+          "text": "def _unconfirmed(record, status, reason):"
+        },
+        {
+          "line": 31,
+          "text": "class _Ledger:"
+        },
+        {
+          "line": 37,
+          "text": "    def __init__(self, path, run_id, rank, kind):"
+        },
+        {
+          "line": 80,
+          "text": "    def _transaction(self):"
+        },
+        {
+          "line": 91,
+          "text": "    def position(self):"
+        },
+        {
+          "line": 96,
+          "text": "    def close(self):"
+        },
+        {
+          "line": 99,
+          "text": "    def _record(self, row):"
+        },
+        {
+          "line": 109,
+          "text": "class DurableIterationOutbox(_Ledger):"
+        },
+        {
+          "line": 116,
+          "text": "    def __init__(self, path, store, run_id, rank, *, clock=None):"
+        },
+        {
+          "line": 125,
+          "text": "    def _validate(self):"
+        },
+        {
+          "line": 137,
+          "text": "    def pending(self):"
+        },
+        {
+          "line": 144,
+          "text": "    def next_iteration(self):"
+        },
+        {
+          "line": 148,
+          "text": "    def enqueue(self, record):"
+        },
+        {
+          "line": 167,
+          "text": "    def _acknowledge(self, record, receipt):"
+        },
+        {
+          "line": 188,
+          "text": "    def _resolve(self, record):"
+        },
+        {
+          "line": 209,
+          "text": "    def publish(self, record):"
+        },
+        {
+          "line": 213,
+          "text": "    def recover(self):"
+        },
+        {
+          "line": 218,
+          "text": "class DurableIterationConsumer(_Ledger):"
+        },
+        {
+          "line": 225,
+          "text": "    def __init__(self, path, store, run_id, rank):"
+        },
+        {
+          "line": 232,
+          "text": "    def poll(self, **kwargs):"
+        },
+        {
+          "line": 242,
+          "text": "    def commit(self, records):"
+        }
+      ]
+    },
+    {
+      "path": "flash/iteration_reporter.py",
+      "commit": "b517c5a922d52895e274c3758b5b7c2c409d91ca",
+      "sha256": "5425f9be08ea49968734ae6ef125694bc65ae182ff2f3ae4c3ef57adbbf01f6e",
+      "bytes": 7595,
+      "anchors": [
+        {
+          "line": 16,
+          "text": "def integer(value, minimum, field):"
+        },
+        {
+          "line": 22,
+          "text": "class IterationRecord:"
+        },
+        {
+          "line": 32,
+          "text": "    def __post_init__(self):"
+        },
+        {
+          "line": 52,
+          "text": "class Publisher(Protocol):"
+        },
+        {
+          "line": 54,
+          "text": "    def publish(self, record: IterationRecord) -> object: ..."
+        },
+        {
+          "line": 57,
+          "text": "class PublicationUnconfirmed(RuntimeError):"
+        },
+        {
+          "line": 59,
+          "text": "    def __init__(self, record, receipt):"
+        },
+        {
+          "line": 64,
+          "text": "def confirmed_receipt(record, receipt, *, legacy_none=False):"
+        },
+        {
+          "line": 75,
+          "text": "def validate_sequence(records):"
+        },
+        {
+          "line": 90,
+          "text": "class LocalHistory:"
+        },
+        {
+          "line": 92,
+          "text": "    def __init__(self, path, run_id, global_rank, limit=500):"
+        },
+        {
+          "line": 106,
+          "text": "    def load(path):"
+        },
+        {
+          "line": 112,
+          "text": "    def publish(self, record):"
+        },
+        {
+          "line": 130,
+          "text": "class IterationReporter:"
+        },
+        {
+          "line": 137,
+          "text": "    def __init__(self, publisher, run_id, global_rank, *, source, timing_boundary,"
+        },
+        {
+          "line": 145,
+          "text": "    def begin(self, iteration):"
+        },
+        {
+          "line": 153,
+          "text": "    def abort(self):"
+        },
+        {
+          "line": 158,
+          "text": "    def end(self):"
+        }
+      ]
+    },
+    {
+      "path": "flash/localization.py",
+      "commit": "b517c5a922d52895e274c3758b5b7c2c409d91ca",
+      "sha256": "b32008fe4800f86b2fe8dc27196db2b3d2daaf555598e77ddd744d9c7d3e805a",
+      "bytes": 17696,
+      "anchors": [
+        {
+          "line": 11,
+          "text": "def mean(values):"
+        },
+        {
+          "line": 17,
+          "text": "def cv(values):"
+        },
+        {
+          "line": 31,
+          "text": "def clique_scores(clique_means):"
+        },
+        {
+          "line": 38,
+          "text": "def rank_scores(rank_means):"
+        },
+        {
+          "line": 45,
+          "text": "def extrema(values, highest=False):"
+        },
+        {
+          "line": 50,
+          "text": "def rank_analysis(group):"
+        },
+        {
+          "line": 69,
+          "text": "def analyze(bundle):"
+        },
+        {
+          "line": 143,
+          "text": "def _g04_cv(values):"
+        },
+        {
+          "line": 174,
+          "text": "def _g04_threshold(rank_means, rank):"
+        },
+        {
+          "line": 193,
+          "text": "def _g04_groups(valid):"
+        },
+        {
+          "line": 216,
+          "text": "def _g04_rank_analysis(group):"
+        },
+        {
+          "line": 252,
+          "text": "def analyze_approved_g04(bundle):"
+        }
+      ]
+    },
+    {
+      "path": "flash/m6_abi2_bridge.py",
+      "commit": "b517c5a922d52895e274c3758b5b7c2c409d91ca",
+      "sha256": "548d7d177b181f04aebc1a892715a3e9e73b35e6d10fd2e5986f93088a098697",
+      "bytes": 23143,
+      "anchors": [
+        {
+          "line": 23,
+          "text": "class StrictAckPublisher:"
+        },
+        {
+          "line": 25,
+          "text": "    def __init__(self, publisher):"
+        },
+        {
+          "line": 28,
+          "text": "    def publish(self, record):"
+        },
+        {
+          "line": 35,
+          "text": "def strict_reporter(publisher, run_id, rank, **kwargs):"
+        },
+        {
+          "line": 39,
+          "text": "def uint(value, field, minimum=0):"
+        },
+        {
+          "line": 44,
+          "text": "def raw_valid(raw, run, node, rank, pid):"
+        },
+        {
+          "line": 58,
+          "text": "def scope_record(raw):"
+        },
+        {
+          "line": 66,
+          "text": "def normalize(raw):"
+        },
+        {
+          "line": 84,
+          "text": "class Abi2ProbeAdapter:"
+        },
+        {
+          "line": 87,
+          "text": "    def __init__(self, run_id, node_id, readers, fence, *, scope_threads):"
+        },
+        {
+          "line": 103,
+          "text": "    def _snapshot(self, s, rank, *, clean=False):"
+        },
+        {
+          "line": 122,
+          "text": "    def _bounded(self, sequence):"
+        },
+        {
+          "line": 125,
+          "text": "    def request(self, command):"
+        },
+        {
+          "line": 150,
+          "text": "    def poll(self):"
+        },
+        {
+          "line": 214,
+          "text": "class Abi2LocalController(LocalController):"
+        },
+        {
+          "line": 215,
+          "text": "    def __init__(self, store, run_id, node_id, probe):"
+        },
+        {
+          "line": 229,
+          "text": "    def tick(self, now):"
+        },
+        {
+          "line": 272,
+          "text": "class Abi2GlobalController(GlobalController):"
+        },
+        {
+          "line": 274,
+          "text": "    def __init__(self, store, run_id, nodes, **kwargs):"
+        },
+        {
+          "line": 281,
+          "text": "    def _all_applied(self, doc, state):"
+        },
+        {
+          "line": 324,
+          "text": "    def _analyze(self, doc):"
+        }
+      ]
+    },
+    {
+      "path": "flash/m6_controller.py",
+      "commit": "b517c5a922d52895e274c3758b5b7c2c409d91ca",
+      "sha256": "12cf7cf7a96a4d3e83f78ae59a305738878f7e53e39c1b7d68e3a2b4facfdc37",
+      "bytes": 21801,
+      "anchors": [
+        {
+          "line": 14,
+          "text": "TRIGGER = 'MANUAL_TEST_TRIGGER'"
+        },
+        {
+          "line": 17,
+          "text": "def _node_command(doc, active, node, state):"
+        },
+        {
+          "line": 26,
+          "text": "def _request(doc, state):"
+        },
+        {
+          "line": 33,
+          "text": "def _failed(doc, status, reason):"
+        },
+        {
+          "line": 40,
+          "text": "class GlobalController:"
+        },
+        {
+          "line": 41,
+          "text": "    def __init__(self, store, run_id, nodes, *, resume=False, control_timeout=5.0, reset_timeout=5.0, iteration_timeout=60.0):"
+        },
+        {
+          "line": 67,
+          "text": "    def _owned(self, doc):"
+        },
+        {
+          "line": 71,
+          "text": "    def start(self, trigger, manifest, now, *, request_id):"
+        },
+        {
+          "line": 140,
+          "text": "    def _transition(self, doc, state, now):"
+        },
+        {
+          "line": 145,
+          "text": "    def _reset(self, doc, now):"
+        },
+        {
+          "line": 155,
+          "text": "    def _all_applied(self, doc, state):"
+        },
+        {
+          "line": 175,
+          "text": "    def _analyze(self, doc):"
+        },
+        {
+          "line": 207,
+          "text": "    def tick(self, now):"
+        },
+        {
+          "line": 291,
+          "text": "class LocalController:"
+        },
+        {
+          "line": 292,
+          "text": "    def __init__(self, store, run_id, node_id, probe):"
+        },
+        {
+          "line": 305,
+          "text": "    def fence(self, command):"
+        },
+        {
+          "line": 313,
+          "text": "    def tick(self, now):"
+        }
+      ]
+    },
+    {
+      "path": "flash/m6_iteration.py",
+      "commit": "b517c5a922d52895e274c3758b5b7c2c409d91ca",
+      "sha256": "91d33ed162c914708a01ea499e7711b98d49b5ededf14e943a668178a3121221",
+      "bytes": 4817,
+      "anchors": [
+        {
+          "line": 9,
+          "text": "class IterationPublisher:"
+        },
+        {
+          "line": 10,
+          "text": "    def __init__(self, store, run_id, rank, *, clock=time.monotonic):"
+        },
+        {
+          "line": 14,
+          "text": "    def publish(self, record):"
+        },
+        {
+          "line": 47,
+          "text": "class IterationReader:"
+        },
+        {
+          "line": 48,
+          "text": "    def __init__(self, store, run_id, rank):"
+        },
+        {
+          "line": 52,
+          "text": "    def read(self, *, now=None, timeout_seconds=None, after_iteration=None):"
+        }
+      ]
+    },
+    {
+      "path": "flash/m6_probe.py",
+      "commit": "b517c5a922d52895e274c3758b5b7c2c409d91ca",
+      "sha256": "b206ace6d7603a4d1f2762de37346acca19e219b0c8a9194fa5df9dc160ca7aa",
+      "bytes": 3888,
+      "anchors": [
+        {
+          "line": 6,
+          "text": "class ProbeAdapter:"
+        },
+        {
+          "line": 9,
+          "text": "    def __init__(self, run_id, node_id, ranks, fence):"
+        },
+        {
+          "line": 15,
+          "text": "    def request(self, command):"
+        },
+        {
+          "line": 30,
+          "text": "    def boundary(self, rank, now, *, legal=True):"
+        },
+        {
+          "line": 52,
+          "text": "    def sample(self, rank, row, now):"
+        }
+      ]
+    },
+    {
+      "path": "flash/m6_protocol.py",
+      "commit": "b517c5a922d52895e274c3758b5b7c2c409d91ca",
+      "sha256": "02428d0c45c00843b4c66f9298c1f751fbca6a67eb82cf786c5621128b14454e",
+      "bytes": 3120,
+      "anchors": [
+        {
+          "line": 15,
+          "text": "def encode(value):"
+        },
+        {
+          "line": 19,
+          "text": "def digest(value):"
+        },
+        {
+          "line": 23,
+          "text": "def identity(value):"
+        },
+        {
+          "line": 29,
+          "text": "def number(value):"
+        },
+        {
+          "line": 35,
+          "text": "def window_seconds(record):"
+        },
+        {
+          "line": 45,
+          "text": "def event(doc, kind, **fields):"
+        },
+        {
+          "line": 51,
+          "text": "def provisional(status, reason=None):"
+        },
+        {
+          "line": 55,
+          "text": "class StaleOwner(ValueError):"
+        },
+        {
+          "line": 57,
+          "text": "    def __init__(self, reason):"
+        },
+        {
+          "line": 62,
+          "text": "def registration(run_id, nodes):"
+        }
+      ]
+    },
+    {
+      "path": "flash/m6_store.py",
+      "commit": "b517c5a922d52895e274c3758b5b7c2c409d91ca",
+      "sha256": "54b3e3d613353e7719b7dcf0ab4d824ad0f606ae23cfc693a7cefebe4ab36c1e",
+      "bytes": 4248,
+      "anchors": [
+        {
+          "line": 19,
+          "text": "class Unavailable(ConnectionError):"
+        },
+        {
+          "line": 23,
+          "text": "class MemoryStore:"
+        },
+        {
+          "line": 25,
+          "text": "    def __init__(self):"
+        },
+        {
+          "line": 29,
+          "text": "    def read(self, run):"
+        },
+        {
+          "line": 36,
+          "text": "    def cas(self, run, revision, value):"
+        },
+        {
+          "line": 52,
+          "text": "class RedisStore:"
+        },
+        {
+          "line": 58,
+          "text": "    def __init__(self, client):"
+        },
+        {
+          "line": 70,
+          "text": "    def key(self, run):"
+        },
+        {
+          "line": 73,
+          "text": "    def _server(self):"
+        },
+        {
+          "line": 77,
+          "text": "    def read(self, run):"
+        },
+        {
+          "line": 88,
+          "text": "    def cas(self, run, revision, value):"
+        },
+        {
+          "line": 102,
+          "text": "def check_size(value):"
+        },
+        {
+          "line": 107,
+          "text": "def transaction(store, run, mutate):"
+        }
+      ]
+    },
+    {
+      "path": "flash/profile_input.py",
+      "commit": "b517c5a922d52895e274c3758b5b7c2c409d91ca",
+      "sha256": "54d61ba4f579cee0622a023b76db8dd4be9587b01fce98bc68842253bf27a8c9",
+      "bytes": 13655,
+      "anchors": [
+        {
+          "line": 11,
+          "text": "class InputError(ValueError):"
+        },
+        {
+          "line": 15,
+          "text": "def integer(value, name, minimum=0):"
+        },
+        {
+          "line": 21,
+          "text": "def require(condition, reason):"
+        },
+        {
+          "line": 26,
+          "text": "def read_records(paths, source_format, context, supplements=None):"
+        },
+        {
+          "line": 93,
+          "text": "def validate_bundle(bundle):"
+        }
+      ]
+    },
+    {
+      "path": "flash/rbeast_adapter.py",
+      "commit": "b517c5a922d52895e274c3758b5b7c2c409d91ca",
+      "sha256": "e96aff41234a3beabb03ad15c712f8de064410ca8fad50cb74b5b0f440284408",
+      "bytes": 9833,
+      "anchors": [
+        {
+          "line": 28,
+          "text": "def candidates_from_raw(raw, size):"
+        },
+        {
+          "line": 64,
+          "text": "def json_safe(value):"
+        },
+        {
+          "line": 81,
+          "text": "class RbeastAdapter:"
+        },
+        {
+          "line": 82,
+          "text": "    def __init__(self, timeout_s=30, *, candidate_c_python=None):"
+        },
+        {
+          "line": 91,
+          "text": "    def analyze(self, values):"
+        },
+        {
+          "line": 122,
+          "text": "def runtime_identity(rb):"
+        },
+        {
+          "line": 147,
+          "text": "def worker(candidate_c=False):"
+        }
+      ]
+    },
+    {
+      "path": "flash/reader.py",
+      "commit": "b517c5a922d52895e274c3758b5b7c2c409d91ca",
+      "sha256": "ef0a0b2ac43fa3c245ce5c9dac74fb5ccde522221ddfd2ea8118c3666908eda1",
+      "bytes": 9571,
+      "anchors": [
+        {
+          "line": 6,
+          "text": "class Reader:"
+        },
+        {
+          "line": 7,
+          "text": "    def __init__(self,name,run_id,node_id,library=None):"
+        },
+        {
+          "line": 24,
+          "text": "    def _check(self,rc):"
+        },
+        {
+          "line": 27,
+          "text": "    def snapshot(self):"
+        },
+        {
+          "line": 33,
+          "text": "    def request(self,state,epoch):"
+        },
+        {
+          "line": 35,
+          "text": "    def acknowledge(self,sequence):"
+        },
+        {
+          "line": 37,
+          "text": "    def read(self,acknowledge=True):"
+        },
+        {
+          "line": 52,
+          "text": "    def close(self):"
+        },
+        {
+          "line": 54,
+          "text": "    def cleanup(self):"
+        },
+        {
+          "line": 56,
+          "text": "    def __enter__(self):return self"
+        },
+        {
+          "line": 57,
+          "text": "    def __exit__(self,*args):self.close()"
+        },
+        {
+          "line": 58,
+          "text": "def recover_tail(path,context):"
+        },
+        {
+          "line": 78,
+          "text": "def main():"
+        }
+      ]
+    },
+    {
+      "path": "native/probe.cpp",
+      "commit": "b517c5a922d52895e274c3758b5b7c2c409d91ca",
+      "sha256": "7a397516cd5d4bb84d21207a3b19558846463c8c099d59d7179ad4f611882311",
+      "bytes": 18430,
+      "anchors": [
+        {
+          "line": 29,
+          "text": "thread_local unsigned group_depth=0;"
+        },
+        {
+          "line": 30,
+          "text": "thread_local uint64_t group_id=0;"
+        },
+        {
+          "line": 31,
+          "text": "thread_local uint64_t control=0;"
+        },
+        {
+          "line": 32,
+          "text": "thread_local bool inside=false;"
+        },
+        {
+          "line": 33,
+          "text": "thread_local std::vector<Pending> pending;"
+        },
+        {
+          "line": 107,
+          "text": "void apply_boundary() {"
+        },
+        {
+          "line": 189,
+          "text": "thread_local Timer group_timer;"
+        },
+        {
+          "line": 190,
+          "text": "thread_local bool group_timing_started=false;"
+        },
+        {
+          "line": 191,
+          "text": "thread_local std::vector<flash::Event> group_members;"
+        },
+        {
+          "line": 192,
+          "text": "void timing_prepare(flash::Event& e,cudaStream_t stream,Timer& timer) {"
+        },
+        {
+          "line": 200,
+          "text": "void timing_done(flash::Event e,cudaStream_t,Timer& timer,ncclResult_t result) {"
+        },
+        {
+          "line": 208,
+          "text": "void timing_group_end(ncclResult_t result) {"
+        },
+        {
+          "line": 266,
+          "text": "extern \"C\" ncclResult_t ncclGroupStart() {"
+        },
+        {
+          "line": 271,
+          "text": "extern \"C\" ncclResult_t ncclGroupEnd() {"
+        }
+      ]
+    },
+    {
+      "path": "native/ring.cpp",
+      "commit": "b517c5a922d52895e274c3758b5b7c2c409d91ca",
+      "sha256": "2214ea8adc167f8d0fdcfcf956e4930cba15a20687cfccd05df497ea4be1c5f6",
+      "bytes": 12655,
+      "anchors": [
+        {
+          "line": 89,
+          "text": "int request(Handle* handle,uint32_t state,uint64_t epoch) {"
+        },
+        {
+          "line": 97,
+          "text": "uint64_t boundary(Handle* handle) {"
+        },
+        {
+          "line": 143,
+          "text": "int snapshot(Handle* handle,char* out,size_t n) {"
+        },
+        {
+          "line": 185,
+          "text": "int flash_ring_read(void* handle,char* out,size_t n) {"
+        }
+      ]
+    },
+    {
+      "path": "native/ring.hpp",
+      "commit": "b517c5a922d52895e274c3758b5b7c2c409d91ca",
+      "sha256": "94599dcc02fba33f275d59ec5d3b7dcaa1cf88d431b5afc973ee47f73bd8bd5d",
+      "bytes": 2079,
+      "anchors": [
+        {
+          "line": 37,
+          "text": "int request(Handle*,uint32_t,uint64_t);"
+        },
+        {
+          "line": 38,
+          "text": "uint64_t boundary(Handle*);"
+        },
+        {
+          "line": 44,
+          "text": "int snapshot(Handle*,char*,size_t);"
+        },
+        {
+          "line": 51,
+          "text": "int flash_ring_read(void*,char*,size_t);"
+        }
+      ]
+    },
+    {
+      "path": "scripts/m6_demo.py",
+      "commit": "b517c5a922d52895e274c3758b5b7c2c409d91ca",
+      "sha256": "a96bb73ff3b87f6e5605d8926498c5f4846722d6b4668f2ee88d1c28f5c63a84",
+      "bytes": 5205,
+      "anchors": [
+        {
+          "line": 18,
+          "text": "class Simulation:"
+        },
+        {
+          "line": 19,
+          "text": "    def __init__(self, fixture='three_groups_max_then_min', *, store=None, run='m6a-cpu'):"
+        },
+        {
+          "line": 50,
+          "text": "    def publish_iteration(self, iteration=1, time_ms=100.0, boundary='cpu_simulated_iteration_end', now=0):"
+        },
+        {
+          "line": 55,
+          "text": "    def poll(self, now):"
+        },
+        {
+          "line": 58,
+          "text": "    def boundaries(self, now, *, skip=()):"
+        },
+        {
+          "line": 63,
+          "text": "    def arm(self, now=0, request_id='manual-1'):"
+        },
+        {
+          "line": 72,
+          "text": "    def samples(self, now):"
+        },
+        {
+          "line": 77,
+          "text": "    def finish(self, end, *, reset_skip=()):"
+        },
+        {
+          "line": 88,
+          "text": "    def cycle(self, now, request_id):"
+        },
+        {
+          "line": 96,
+          "text": "def main():"
+        }
+      ]
+    },
+    {
+      "path": "tasks/06b_ready_g20_reporter.md",
+      "commit": "b517c5a922d52895e274c3758b5b7c2c409d91ca",
+      "sha256": "8a2b5e3da7422707a6221301d08b41efaffeec9772647c886ddb45cf4b4ebe6a",
+      "bytes": 3359,
+      "anchors": []
+    },
+    {
+      "path": "tasks/06b_ready_g2_approved_detector.md",
+      "commit": "b517c5a922d52895e274c3758b5b7c2c409d91ca",
+      "sha256": "91686142193c8f6bf7dfe850281214c30ef0906a12ce1854417b8d3a53d7f91a",
+      "bytes": 2521,
+      "anchors": []
+    },
+    {
+      "path": "tasks/06b_ready_g3_g04_implementation.md",
+      "commit": "b517c5a922d52895e274c3758b5b7c2c409d91ca",
+      "sha256": "2cfad132c5bd303dfbc1520f957ff9ba4b77842c844a136483c1d8ae80854297",
+      "bytes": 1773,
+      "anchors": []
+    },
+    {
+      "path": "tasks/06b_ready_task09_abi2_cpu.md",
+      "commit": "b517c5a922d52895e274c3758b5b7c2c409d91ca",
+      "sha256": "8e671f3a077200964a104a821b3fab5c0f68fc9c6dddb7893ae2159aec2ff9a1",
+      "bytes": 3196,
+      "anchors": []
+    },
+    {
+      "path": "tasks/06b_ready_task10_g09_protocol.md",
+      "commit": "b517c5a922d52895e274c3758b5b7c2c409d91ca",
+      "sha256": "5d4744fb0582e9be52409750ca272606c9c53a91ec96820ad14cea69fd1c8327",
+      "bytes": 2135,
+      "anchors": []
+    },
+    {
+      "path": "tests/m5_ddp.py",
+      "commit": "b517c5a922d52895e274c3758b5b7c2c409d91ca",
+      "sha256": "91966de75bc5348e9c577f92994f0366cc18cfcd1d167919f203b33d321a664e",
+      "bytes": 10553,
+      "anchors": [
+        {
+          "line": 10,
+          "text": "def loaded_versions():"
+        },
+        {
+          "line": 31,
+          "text": "def own_memory_mib():"
+        },
+        {
+          "line": 41,
+          "text": "def main():"
+        }
+      ]
+    },
+    {
+      "path": "tests/m6_redis.py",
+      "commit": "b517c5a922d52895e274c3758b5b7c2c409d91ca",
+      "sha256": "1d6d1f4a56d19d0ac102462a55494834ff0bbf45172432de89388f2e1b5b74ec",
+      "bytes": 12099,
+      "anchors": [
+        {
+          "line": 28,
+          "text": "def private_client(socket, timeout):"
+        },
+        {
+          "line": 43,
+          "text": "class RedisTests(unittest.TestCase):"
+        },
+        {
+          "line": 44,
+          "text": "    def setUp(self):"
+        },
+        {
+          "line": 47,
+          "text": "    def tearDown(self):"
+        },
+        {
+          "line": 56,
+          "text": "    def test_two_epochs_actual_lua_and_private_socket(self):"
+        },
+        {
+          "line": 64,
+          "text": "    def test_concurrent_idempotence_conflict_and_500(self):"
+        },
+        {
+          "line": 78,
+          "text": "    def test_acceptance_timeout_partial_monitor(self):"
+        },
+        {
+          "line": 87,
+          "text": "    def test_restart_fencing_and_previous_epoch_not_pooled(self):"
+        },
+        {
+          "line": 97,
+          "text": "    def test_client_reconnect_and_namespace_isolation(self):"
+        },
+        {
+          "line": 109,
+          "text": "    def test_actual_server_stop_restart_and_lost_document(self):"
+        },
+        {
+          "line": 176,
+          "text": "def main():"
+        }
+      ]
+    },
+    {
+      "path": "tests/task09_abi2_cpu.py",
+      "commit": "b517c5a922d52895e274c3758b5b7c2c409d91ca",
+      "sha256": "a57cdbbeb96ba74db377d7da7ec7e24593e6e678c46600659913eae5251b69c8",
+      "bytes": 26265,
+      "anchors": [
+        {
+          "line": 21,
+          "text": "class MockReader:"
+        },
+        {
+          "line": 23,
+          "text": "    def __init__(self, run, node, rank):"
+        },
+        {
+          "line": 32,
+          "text": "    def snapshot(self):"
+        },
+        {
+          "line": 36,
+          "text": "    def request(self, state, epoch):"
+        },
+        {
+          "line": 41,
+          "text": "    def emit(self, api=1, duration=2.0, **changes):"
+        },
+        {
+          "line": 61,
+          "text": "    def boundary(self):"
+        },
+        {
+          "line": 68,
+          "text": "    def read(self, acknowledge=True):"
+        },
+        {
+          "line": 75,
+          "text": "    def acknowledge(self, seq):"
+        },
+        {
+          "line": 82,
+          "text": "class Harness:"
+        },
+        {
+          "line": 83,
+          "text": "    def __init__(self, *, group=False, scopes=2, durations=(2,18)):"
+        },
+        {
+          "line": 99,
+          "text": "    def doc(self): return self.store.read(self.run)"
+        },
+        {
+          "line": 100,
+          "text": "    def mutate(self,fn): return transaction(self.store,self.run,fn)"
+        },
+        {
+          "line": 101,
+          "text": "    def iteration(self,i=1,now=0):"
+        },
+        {
+          "line": 106,
+          "text": "    def poll(self,now): return [x.tick(now) for x in self.locals.values()]"
+        },
+        {
+          "line": 107,
+          "text": "    def boundaries(self,skip=()):"
+        },
+        {
+          "line": 110,
+          "text": "    def arm(self,now=0,request='first'):"
+        },
+        {
+          "line": 113,
+          "text": "    def samples(self,now=1,skip=(),changes=None):"
+        },
+        {
+          "line": 123,
+          "text": "    def reset(self,now,skip=()):"
+        },
+        {
+          "line": 125,
+          "text": "    def finish(self,skip=()):"
+        },
+        {
+          "line": 129,
+          "text": "    def cycle(self,now=0,request='first'):"
+        },
+        {
+          "line": 133,
+          "text": "class BridgeTests(unittest.TestCase):"
+        },
+        {
+          "line": 134,
+          "text": "    def setUp(self): self.h=Harness()"
+        },
+        {
+          "line": 135,
+          "text": "    def tearDown(self):"
+        },
+        {
+          "line": 142,
+          "text": "    def assert_refused(self):"
+        },
+        {
+          "line": 147,
+          "text": "    def test_two_epochs_strict_units_scope_and_reset(self):"
+        },
+        {
+          "line": 163,
+          "text": "    def test_shared_group_keeps_records_and_independent_scopes(self):"
+        },
+        {
+          "line": 168,
+          "text": "    def test_header_and_command_ack_do_not_arm(self):"
+        },
+        {
+          "line": 174,
+          "text": "    def test_missing_rank_scope_timeout_and_reset_blocks_new_epoch(self):"
+        },
+        {
+          "line": 180,
+          "text": "    def test_pre_request_record_cannot_be_relabelled(self):"
+        },
+        {
+          "line": 185,
+          "text": "    def test_stale_raw_epoch_is_audited_not_pooled(self):"
+        },
+        {
+          "line": 189,
+          "text": "    def test_missing_rank_data_rejected(self):"
+        },
+        {
+          "line": 192,
+          "text": "    def test_single_scope_is_insufficient_under_approved_g04(self):"
+        },
+        {
+          "line": 195,
+          "text": "    def test_future_epoch_refused_without_ack(self):"
+        },
+        {
+          "line": 198,
+          "text": "    def test_corrupt_digest_gap_and_duplicate_rejected(self):"
+        },
+        {
+          "line": 204,
+          "text": "    def test_loss_closed_poison_and_replacement_reject(self):"
+        },
+        {
+          "line": 210,
+          "text": "    def test_request_read_ack_and_snapshot_errors_reject(self):"
+        },
+        {
+          "line": 217,
+          "text": "    def test_unconfirmed_request_and_read_ack_refused(self):"
+        },
+        {
+          "line": 224,
+          "text": "    def test_invalid_profile_values_rejected(self):"
+        },
+        {
+          "line": 232,
+          "text": "    def test_wrong_units_and_group_duration_mismatch(self):"
+        },
+        {
+          "line": 245,
+          "text": "    def test_hash_consistent_group_duration_mismatch(self):"
+        },
+        {
+          "line": 253,
+          "text": "    def test_sample_and_ready_hash_corruption_refused(self):"
+        },
+        {
+          "line": 261,
+          "text": "    def test_command_ack_exact_selection(self):"
+        },
+        {
+          "line": 268,
+          "text": "    def test_forged_or_mixed_source_scope_cannot_arm(self):"
+        },
+        {
+          "line": 273,
+          "text": "    def test_partial_reset_requires_fresh_monitor_record(self):"
+        },
+        {
+          "line": 279,
+          "text": "    def test_controller_restart_fences_old_owner(self):"
+        },
+        {
+          "line": 283,
+          "text": "    def test_local_restart_invalidates_epoch_and_old_boundaries(self):"
+        },
+        {
+          "line": 290,
+          "text": "    def test_disconnect_and_reconnect_invalidates_epoch(self):"
+        },
+        {
+          "line": 295,
+          "text": "    def test_mode_and_manifest_mismatch_rejected(self):"
+        },
+        {
+          "line": 300,
+          "text": "    def test_bounded_drain_and_truth_fields_rejected(self):"
+        },
+        {
+          "line": 309,
+          "text": "    def test_group_scope_lineage_and_unfinished_drain_refused(self):"
+        },
+        {
+          "line": 325,
+          "text": "    def test_drain_snapshot_corruption_and_late_read_rejected(self):"
+        },
+        {
+          "line": 331,
+          "text": "    def test_late_and_future_samples_cannot_enter_window(self):"
+        },
+        {
+          "line": 334,
+          "text": "    def test_ambiguous_numeric_boundary_is_preserved(self):"
+        },
+        {
+          "line": 338,
+          "text": "    def test_restart_during_partial_reset_requires_new_generation_scope(self):"
+        },
+        {
+          "line": 347,
+          "text": "    def test_bridge_restart_requires_fresh_reader_record_not_old_header(self):"
+        },
+        {
+          "line": 356,
+          "text": "    def test_explicit_thread_declaration_and_unexpected_thread_refused(self):"
+        },
+        {
+          "line": 365,
+          "text": "class StrictReporterTests(unittest.TestCase):"
+        },
+        {
+          "line": 366,
+          "text": "    def make(self,sink,strict=True,waits=None):"
+        },
+        {
+          "line": 371,
+          "text": "    def test_none_is_rejected_in_explicit_strict_path_legacy_preserved(self):"
+        },
+        {
+          "line": 378,
+          "text": "    def test_unknown_or_malformed_ack_retains_frozen_record(self):"
+        },
+        {
+          "line": 391,
+          "text": "    def test_strict_memory_store_lost_ack_and_exact_retry(self):"
+        }
+      ]
+    }
+  ],
+  "official_docs": [
+    {
+      "title": "CUDA12.8 Event",
+      "url": "https://docs.nvidia.com/cuda/archive/12.8.0/cuda-runtime-api/group__CUDART__EVENT.html",
+      "verified_date": "2026-10-11",
+      "semantics": "elapsed milliseconds; stop synchronization; interference",
+      "target_runtime": "NOT_PROBED",
+      "tool": "web open/find; no process exit or local original HTML snapshot"
+    },
+    {
+      "title": "NCCL2.27.3 Group",
+      "url": "https://docs.nvidia.com/deeplearning/nccl/archives/nccl_2273/user-guide/docs/usage/groups.html",
+      "verified_date": "2026-10-11",
+      "semantics": "outer GroupEnd enqueue boundary",
+      "target_runtime": "NOT_PROBED",
+      "tool": "web open/find; no process exit or local original HTML snapshot"
+    },
+    {
+      "title": "Redis Lua",
+      "url": "https://redis.io/docs/latest/develop/programmability/eval-intro/",
+      "verified_date": "2026-10-11",
+      "semantics": "atomic script execution",
+      "target_runtime": "NOT_PROBED",
+      "tool": "web open/find; no process exit or local original HTML snapshot"
+    },
+    {
+      "title": "Python3.12 time",
+      "url": "https://docs.python.org/3.12/library/time.html#time.monotonic",
+      "verified_date": "2026-10-11",
+      "semantics": "undefined reference; differences only",
+      "target_runtime": "NOT_PROBED",
+      "tool": "web open/find; no process exit or local original HTML snapshot"
+    }
+  ],
+  "greyhound_reuse": false
+}

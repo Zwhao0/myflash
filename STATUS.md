@@ -881,3 +881,59 @@ Next unique task independent TASK10 precise remote HEAD protocol review; STOP.
 TASK10 publication check01 actual0: local macOS26.6.2 arm64/systemPython3.9.6; 8changed-file text findings0/2068base protected unchanged/two append-only. Protocol/template/ledger/task exact original local f2e435c bytes. Public command/stdout/stderr/script/log SHA in validation publication.checks; private exact argv preserved. No new runtime/science/GPU evidence.
 
 TASK10 first ordinary GitHub push actual exit0: acfb5383f3326954e017b6746732bde72113aaa2 / tree ff52fa3952f2fa9b7639274998a170750c693453. Remote head/tree readback MATCH, task09 exactf44e3fb unchanged. Publication check02 and staged diff actual0. Final seal adds only actual publication receipts; final precise head/tree/Draft PR in PR body/private publication receipts. STOP for independent remote protocol review; no M6-B.
+
+
+## TASK11 — M6B-READY final admission audit / 2026-10-11
+
+Human authorizes audit only from sole exact HEAD
+b517c5a922d52895e274c3758b5b7c2c409d91ca. Base clean; independent worktree
+m6b-task11-work / branch codex/task11-m6b-ready-audit. No previous independent
+review PASS invented. Only task/docs/static checker new, STATUS/GAPS append;
+all existing runtime/native/tests/fixtures/parameters/protocol/evidence immutable.
+
+Result: real two-host automatic provisional chain BLOCKED; final diagnosis
+NOT_IMPLEMENTED, M6-B/GPU/fault injection NOT_RUN. 10hard blockers,8bounded
+accepted deviations,7future tasks distinguish manual/automatic/fail-stop/final.
+Existing approved detector/localizer, outbox/ACK/cursor and CPU ABI2 engineering
+results reused. Actual Redis transport historical PASS retained; current real
+ABI2/Redis/framework/two-host clock/window/reset integration has no acceptance.
+DDP boundary/LocalHistory mismatch, manual-only trigger, in-memory raw-before-ACK,
+native thread scope, physical windows, capacity and safety gaps explicitly listed.
+No repeat of completed CPU/native/posterior/sensitivity matrices.
+
+PAPER SPEC/approved summaries; ADAPTATION source-level admission judgment;
+UPSTREAM official CUDA12.8/NCCL2.27.3/Redis/Python clock docs checked online;
+EXTENSION only inherited TASK10 auxiliary faults/candidate metrics. No source reuse.
+51fixed source docs;68saved final source bindings67match/1superseded(old M6-A
+iteration cursor, now covered by task09 final);30bridge review logs/24Reporter
+inline review streams indexed. Hash binding only, not new original execution.
+
+Actual local macOS26.6.2 arm64/systemPython3.9.6. worktree01/evidence-index01/
+prepare01 exit0. verify01 exit1 retained: result-page link checked before file
+creation; no runtime test ran. Full exact argv/host/exit/raw logs/checker snapshots
+in private runs/task11-m6b-ready-audit-20261011; public validation/results in
+docs/m6b-ready/task11-final-audit. Command: /usr/bin/python3
+docs/m6b-ready/task11-final-audit/verify_audit.py --root <task11-checkout>
+--output <task11-private-run>/verifyNN.json; git diff --cached --check.
+Final successful verification and commit/tree/parent/diff/clean bound by seal
+and private final-git receipt, without self-referential in-commit future SHA.
+Initial root Git128 and mistaken path searches only transcript/raw NOT_CAPTURED;
+no failure hidden. Historical failures/cache/privacy/rights limits remain.
+
+No install/native build/load/server/Redis service/GPU/publication/merge/new code
+integration/task12. Next unique action independent exact TASK11 local commit
+review; suggested separately authorized TASK12 B01 confirmed rank0 -> approved
+Detector -> versioned automatic Profile request, targeted checks only. STOP.
+
+TASK11 verify02 actual exit0/no timeout:2076base/2074protected byte hashes match,
+STATUS/GAPS prefix unchanged;51source files/68history bindings/30review logs/
+24inline streams/local links/checklist pass. DOCUMENT_STATIC_INTEGRITY_PASS_ONLY,
+no runtime/science/GPU claim. Full argv/stdout/stderr/SHA in validation/private
+verify02 receipt. Final sealed packet and staged diff checks follow; no new scope.
+
+TASK11 sealed audit verify03/changed-text01/staged-check01 actual0;2074protected
+byte-identical/2append-only,10changed text paths findings0. B01manual-only and
+missing failstop source search recorded (rg no-match exit1 is not test FAIL).
+Seal adds actual receipts only; final byte/diff/commit parent-tree-clean commands
+retained privately. Source checker staged-addition support preserves immutable
+mode/rename/delete assertions. M6B-READY remains BLOCKED; no GPU/CPU rerun or push.
