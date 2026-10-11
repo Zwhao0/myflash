@@ -1,0 +1,4 @@
+cursor-contract-correct-argv 0
+cursor-extra 0
+privacy-unit 0
+complete-comparison 0

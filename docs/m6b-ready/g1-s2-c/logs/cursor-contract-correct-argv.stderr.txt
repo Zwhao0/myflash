@@ -1,0 +1,14 @@
+test_cursor_before_retention_gap (__main__.CursorContract.test_cursor_before_retention_gap) ... ok
+test_empty_history (__main__.CursorContract.test_empty_history) ... ok
+test_expired_record (__main__.CursorContract.test_expired_record) ... ok
+test_future_after_500_retained (__main__.CursorContract.test_future_after_500_retained) ... ok
+test_future_large (__main__.CursorContract.test_future_large) ... ok
+test_future_one_step (__main__.CursorContract.test_future_one_step) ... ok
+test_invalid_types_strict_integer_adaptation (__main__.CursorContract.test_invalid_types_strict_integer_adaptation) ... ok
+test_legal_boundaries_keep_full_window (__main__.CursorContract.test_legal_boundaries_keep_full_window) ... ok
+test_missing_run (__main__.CursorContract.test_missing_run) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 6.606s
+
+OK

@@ -1,0 +1,103 @@
+{
+  "machine": {
+    "machine": "local-macOS",
+    "python": "3.9.6 (default, May 22 2026, 11:13:45) \n[Clang 21.0.0 (clang-2100.1.1.101)]",
+    "architecture": "arm64",
+    "purpose": "standard-library-only source/transport/privacy/Git checks; no native Rbeast fits",
+    "interpreter_sha256": "bdea59019a38eb6600cc9e71e984a97fedadc406448431281e7657030f54987e"
+  },
+  "checks": [
+    {
+      "label": "export01",
+      "exit_code": 0,
+      "timeout": false,
+      "elapsed_s": 10.603367792,
+      "stdout_sha256": "932d9957757558e477d1dd8297e55bff7eab45deb17f5148d016226bac01ee85",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "raw": "private run/export01.{stdout,stderr,receipt.json}"
+    },
+    {
+      "label": "publication-text-preliminary",
+      "exit_code": null,
+      "timeout": true,
+      "elapsed_s": 55.020229333,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "raw": "private run/publication-text-preliminary.{stdout,stderr,receipt.json}"
+    },
+    {
+      "label": "publication-text-preliminary02",
+      "exit_code": 0,
+      "timeout": false,
+      "elapsed_s": 87.515467542,
+      "stdout_sha256": "31eff501cde277c28ccf012327ba9f2900a0fc523e7e28bbc7a1c73fe486d860",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "raw": "private run/publication-text-preliminary02.{stdout,stderr,receipt.json}"
+    },
+    {
+      "label": "publication-text-final01",
+      "exit_code": 0,
+      "timeout": false,
+      "elapsed_s": 125.962814,
+      "stdout_sha256": "9cfa49223ebcbc67309ad5d1ef0053fbe07933b020b58195dfc05b2158a75a71",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "raw": "private run/publication-text-final01.{stdout,stderr,receipt.json}"
+    },
+    {
+      "label": "exact-privacy01",
+      "exit_code": 1,
+      "timeout": false,
+      "elapsed_s": 0.048234584,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "f8d50b8c713b9cc356c364e338abcdcc2f63a6b3e8344950f3297a9b43b946b6",
+      "raw": "private run/exact-privacy01.{stdout,stderr,receipt.json}"
+    },
+    {
+      "label": "exact-privacy02",
+      "exit_code": 0,
+      "timeout": false,
+      "elapsed_s": 4.667894875,
+      "stdout_sha256": "3fc003addddd084b86201ce9e9313779db59c684623107488eb215e114c3002e",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "raw": "private run/exact-privacy02.{stdout,stderr,receipt.json}"
+    },
+    {
+      "label": "diff-format01",
+      "exit_code": 2,
+      "timeout": false,
+      "elapsed_s": 0.8061727080000001,
+      "stdout_sha256": "5b62498ca6656c7314753aa0319940b7b9ed601932de612cd564fbde327154d0",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "raw": "private run/diff-format01.{stdout,stderr,receipt.json}"
+    },
+    {
+      "label": "local-privacy-unit01",
+      "exit_code": 0,
+      "timeout": false,
+      "elapsed_s": 0.040576584,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "c6b9b1f09add0403cc07e90bfdf272129b1ddfa2f8f7675ea8218862f2516371",
+      "raw": "private run/local-privacy-unit01.{stdout,stderr,receipt.json}"
+    }
+  ],
+  "scope": {
+    "status": "PASS",
+    "changed_paths": 253,
+    "baseline_files": 1517,
+    "old1515files_byte_equal": true,
+    "STATUS_GAPS_original_prefix_preserved": true,
+    "allowed_paths_only": true,
+    "preflight7byte_equal": true,
+    "third_party_wheel_so_added": false
+  },
+  "exact_privacy": {
+    "status": "PASS",
+    "files": 253,
+    "findings": [],
+    "scope": "new/changed current text; SSH/project literals plus whole JSON textual or quoted source/log credential tokens; no numeric/base64/hash substring inference; no values printed",
+    "historical_scope": "DEFERRED/OPEN"
+  },
+  "exact_privacy_code_sha256": "99bd7d4f384d41cd8a6dfffd030d264970d91cec55b44106e58067858b588b23",
+  "full_text_scanner_scope": "heuristic current full tree; history/rights DEFERRED/OPEN",
+  "format_check": "FAIL exit2; complete original stdout keeps trailing whitespace; not native/science acceptance"
+}

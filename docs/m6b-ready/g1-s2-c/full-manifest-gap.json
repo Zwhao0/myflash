@@ -1,0 +1,9 @@
+{
+  "actual_all_files": 2339,
+  "no_automatic_adoption": true,
+  "postinstall_full_manifest_preserved": true,
+  "preinstall_complete_manifest": "NOT_CAPTURED",
+  "preinstall_noncache_files": 1424,
+  "status": "BLOCKED",
+  "uncovered_cache_files": 915
+}

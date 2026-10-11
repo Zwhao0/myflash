@@ -1,0 +1,9 @@
+{
+  "array_bytes": 12948480,
+  "arrays": 265920,
+  "comparison_files_byte_preserved": true,
+  "dtype_shape_size_and_base64_sha_verified": true,
+  "machine": "local-macOS",
+  "scientific_data_redaction": false,
+  "standard_library_only": true
+}

@@ -1,0 +1,5 @@
+Looking in links: <s2-private-run>/execution01/wheels
+Processing <s2-private-run>/execution01/wheels/rbeast-0.1.25-2c-cp312-cp312-linux_x86_64.whl (from -r <s2-private-run>/execution01/runtime.lock (line 1))
+Processing <s2-private-run>/execution01/wheels/numpy-2.2.6-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (from -r <s2-private-run>/execution01/runtime.lock (line 2))
+Installing collected packages: Rbeast, numpy
+Successfully installed Rbeast-0.1.25 numpy-2.2.6

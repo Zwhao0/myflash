@@ -1,0 +1,13 @@
+{
+  "all_driver_children_waited": true,
+  "direct_active_child": null,
+  "driver_actual_exit": 0,
+  "driver_timeout": false,
+  "environment_kept_private": true,
+  "finisher_actual_exit": 0,
+  "first_driver_actual_exit": 1,
+  "formal_adoption": "NOT_APPROVED",
+  "new_redis_gpu_resources": 0,
+  "observed_owned_remaining": [],
+  "rollback": "Do not enable new environment; original interpreter remains unchanged"
+}

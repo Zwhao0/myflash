@@ -1,0 +1,12 @@
+{
+  "formal_before_after_equal": true,
+  "formal_file_count": 1424,
+  "historical_after_sha256": "87066155a02f5ff2313298ed6c07d19e9752acd8561e4015326a8e4ae8458929",
+  "historical_before_sha256": "87066155a02f5ff2313298ed6c07d19e9752acd8561e4015326a8e4ae8458929",
+  "historical_raw_equal": true,
+  "historical_raw_files": 131811,
+  "historical_snapshot_timing": "taken during first C matrix, after isolated install; verified after full run, alongside byte-preserved historical source and fixed preflight formal snapshot",
+  "original_native_sha256": "a7432000e18465d8e4d2ba895a8618b388007528757718d286fcb82440bbb157",
+  "source_before_after_equal": true,
+  "source_file_count": 1517
+}

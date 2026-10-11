@@ -1,0 +1,1 @@
+{"argv":["nice","-n","10","python3","<s2-private-run>/finish_acceptance.py","--project","<project>","--run","<s2-private-run>"],"cwd":"<s2-private-run>/checkout","deadline_s":1800,"pgid":"owned-process-36","pid":"owned-process-36"}
