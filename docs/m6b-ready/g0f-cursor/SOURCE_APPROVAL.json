@@ -1,0 +1,70 @@
+{
+  "task": "M6B-READY-G0F / task01",
+  "authorization": {
+    "human_message": "FLASH_M6B_READY_Codex_Tasks \u6267\u884c\u672c\u4efb\u52a1\u5305\u7684\u4efb\u52a101",
+    "task_package_file": "01_G0F_FUTURE_CURSOR_FIX.md",
+    "task_package_sha256": "44f5c5e3a5c35703acf040bd77605ce6d07f205ddc3408702750b1c15efbad23",
+    "scope": "Existing Python; deterministic CPU; minimal cursor engineering fix; ordinary push independent Draft PR then stop",
+    "timestamp": "Exact user-message timestamp NOT_PROVIDED"
+  },
+  "baseline": {
+    "pr": 11,
+    "head": "70a83e7dfc3f705420464e0eb4dc0cb1807bac4e",
+    "tree": "43a4688efb720156b62defdce2b7e6c155a22763",
+    "base_branch": "codex/m6b-ready-g0-evidence"
+  },
+  "execution": {
+    "head": "97a639979689a82974c129827f018fd4fe2b872b",
+    "tree": "d1787e5fe0f095d91f69e4ab8ab6348d840ccdcd",
+    "source_hashes": {
+      "flash/.gitkeep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "flash/__init__.py": "ebd6b85348d4590ef8db6c4720c0c46f694ebc13a6b7c01cdfa4687d6d707e18",
+      "flash/change_detection.py": "ea7e0112924221d4251cf8dbfb1a39129bb552d4426ff3ff032350aad1e9104d",
+      "flash/iteration_reporter.py": "a2429053bf895cd4afb6301072480ccaec82f97696598704eea030f4b1b6c3a9",
+      "flash/localization.py": "43604fc3f2c8a32482c1420380efe40731c898e87df8036d8d7371083127f51c",
+      "flash/m6_controller.py": "12cf7cf7a96a4d3e83f78ae59a305738878f7e53e39c1b7d68e3a2b4facfdc37",
+      "flash/m6_iteration.py": "91d33ed162c914708a01ea499e7711b98d49b5ededf14e943a668178a3121221",
+      "flash/m6_probe.py": "b206ace6d7603a4d1f2762de37346acca19e219b0c8a9194fa5df9dc160ca7aa",
+      "flash/m6_protocol.py": "02428d0c45c00843b4c66f9298c1f751fbca6a67eb82cf786c5621128b14454e",
+      "flash/m6_store.py": "54b3e3d613353e7719b7dcf0ab4d824ad0f606ae23cfc693a7cefebe4ab36c1e",
+      "flash/profile_input.py": "54d61ba4f579cee0622a023b76db8dd4be9587b01fce98bc68842253bf27a8c9",
+      "flash/rbeast_adapter.py": "ff14c1b21d88f48268c3fe1594256f3de565707b6f29f19c0aa81a877d54f651",
+      "flash/reader.py": "ef0a0b2ac43fa3c245ce5c9dac74fb5ccde522221ddfd2ea8118c3666908eda1",
+      "tests/m5_detection.py": "5acada38b9076658fd2ca11811e10517fc44c1c6a65c6b31645a949124030df0",
+      "tests/m5_reporter.py": "9a3005562c60ffe3f0e1566c00d64078893de0430e3c7a9d1d7c5e3461a86c59",
+      "tests/m5_s1_offline.py": "fdebbc3b3118ff6cfa8bc68936f7152ddfefa3754bce196ed5bb829734c2fc46",
+      "tests/m6_control.py": "b324716ce57ba3f357e55cf57e65c873715ffd065fe61e866183ba516eca0079",
+      "tests/m6b_ready_cursor_contract.py": "fca99d078fb4ac5c1a9dc99ba3fa0293961969617e4e684f4eeafd7a4994c6cf",
+      "tests/m6b_ready_cursor_extra.py": "ffcf337aa4df12784c34424eeb4edd8000ad48f13f02047ae51ad75b4855ce67"
+    },
+    "collector_sha256": "667da61cebd189ac2c6fec013fbe5482f074a7182fa36fa099059c69d2810dc4"
+  },
+  "sources": [
+    {
+      "nature": "PAPER",
+      "source": "SPEC.md S2 / chapter3 \u00a73.2.2 pp25\u201327",
+      "decision": "500-item retained window is unchanged; paper does not specify this cursor API"
+    },
+    {
+      "nature": "ADAPTATION",
+      "source": "Task01 cursor contract; baseline flash/m6_iteration.py:IterationReader.read; flash/iteration_reporter.py:integer",
+      "decision": "Strict nonnegative builtin int validation before store read; after integrity checks cursor greater than last yields INSUFFICIENT_EVIDENCE"
+    },
+    {
+      "nature": "EXTENSION",
+      "source": "tests/m6b_ready_cursor_extra.py / existing MemoryStore",
+      "decision": "Deterministic synthetic CPU tests only, no Redis transport/GPU/scientific proof"
+    }
+  ],
+  "regression_argv_source": "baseline scripts/m6_validate.py:88\u201392; tests/m5_s1_offline.py uses existing frozen CPU data",
+  "interface": {
+    "None": "current full window",
+    "invalid_type_or_negative": "ValueError before any store read",
+    "future_valid_int": "INSUFFICIENT_EVIDENCE after original integrity checks",
+    "retained_from_minus_one_and_last": "READ_CONFIRMED with full retained window",
+    "retention_gap": "existing gap rule retained",
+    "missing_empty_expired_corrupt": "original behavior retained for valid cursors"
+  },
+  "upstream_or_greyhound_code_reuse": "NONE",
+  "next_unique_task": "Independent review of new Draft PR exact head and complete evidence; task02 not executed"
+}

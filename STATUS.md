@@ -391,3 +391,30 @@ updated sanitized hashes; original evidence SHA/science/status/exits preserved.
 Earlier reachable commit retains those identifiers: history privacy FAIL /
 REQUIRES_OWNER_DECISION. No force-push/history rewriting. This failure is
 recorded in PID_REDACTION_RECEIPT and validation; current CI has limited scope.
+
+
+## M6B-READY-G0F task01 delivered (2026-10-11)
+ADAPTATION cursor contract only: strict builtin nonnegative int validated before
+store access; valid future cursor returns INSUFFICIENT_EVIDENCE after original
+integrity checks. None/legal boundary/full500/gap/hash/expiry semantics preserved.
+Baseline PR11 70a83e7/tree43a4688; independent codex/m6b-ready-g0f-cursor with
+Draft base codex/m6b-ready-g0-evidence. Execution97a639979689a82974c129827f018fd4fe2b872b/
+treed1787e5fe0f095d91f69e4ab8ab6348d840ccdcd, node-0 existing Python3.12.3.
+77 CPU tests across unchanged cursor9/control32/Reporter4/detection8/S1offline16
+and new boundary8 all actual exit0/no timeout; six children waited, collector0
+observed by waiting supervisor. Full commands/source/log SHA/exit and raw-public
+correspondence in docs/m6b-ready/g0f-cursor; private runs/m6b-ready-g0f-20261011.
+Formal1424 files/original.so a7432000... match historical and pre/post; original
+server checkout clean; only existing implementation m6_iteration changed,
+STATUS/GAPS append-only, all prior tests/fixtures/G0-E515 files preserved.
+Original red fca99d... and23 raw failure files/exit1/9failures remain unchanged.
+Setup128 (published object absent in historical server checkout) and probe1
+(absent driver file) retained; exact-source bundle corrected preparation before
+any tests. Local package-root Git error TOOL_OUTPUT_ONLY retained in index.
+PAPER500 retention unchanged; EXTENSION deterministic CPU mocks. No scientific
+thresholds/min-rank/GreyHound reuse, installation/Redis/native fits/build/GPU/
+node-1/formal adoption/M6-B. G01/G02/G04/G13 not approved; overall M6B-READY
+BLOCKED, historical privacy/copyright DEFERRED/OPEN. Publication head/tree/
+independent Draft PR/current-checkout CI recorded in private publication receipt;
+CI is not cursor/science/GPU proof. Next unique task: independent exact-head
+review of G0F; stop, do not execute task02.

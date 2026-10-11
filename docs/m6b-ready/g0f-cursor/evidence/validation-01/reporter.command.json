@@ -1,0 +1,16 @@
+{
+  "command": [
+    "<approved-project>/.venv-m5/bin/python",
+    "tests/m5_reporter.py"
+  ],
+  "cwd": "<approved-checkout>",
+  "machine_alias": "node-0",
+  "timeout_budget_seconds": 120,
+  "environment": {
+    "LD_PRELOAD": "REMOVED",
+    "CUDA_VISIBLE_DEVICES": "",
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "M6_EVIDENCE_DIR": "<private-run>/validation-01/control-states"
+  },
+  "child_finished": false
+}
