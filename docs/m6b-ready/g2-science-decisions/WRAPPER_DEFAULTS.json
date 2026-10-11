@@ -1,0 +1,220 @@
+{
+  "release": "Rbeast0.1.25",
+  "sdist_sha256": "8265bd53f9c16bdb1ab103de047288ea1af6875415394abf3ac0104cfb2917ec",
+  "wrapper_sha256": "3f6414e2a62831a58d8aebd3793a8477dc3d3ed04994f820717347b84da5a6ed",
+  "signature_omitted": {
+    "period": {
+      "expression": "float('nan')",
+      "json_note": "NaN represented as expression; not zero"
+    },
+    "scp_minmax": [
+      0,
+      10
+    ],
+    "sorder_minmax": [
+      0,
+      5
+    ],
+    "sseg_minlength": null,
+    "sseg_leftmargin": null,
+    "sseg_rightmargin": null,
+    "s_complexfct": 0.0,
+    "t_complexfct": 0.0,
+    "detrend": false,
+    "deseasonalize": false,
+    "ocp_minmax": [
+      0,
+      10
+    ]
+  },
+  "wrapper_hardcoded": [
+    {
+      "field": "metadata.isRegularOrdered",
+      "value": true,
+      "line": 393,
+      "source_classification": "UPSTREAM",
+      "activation": "conditional/outlier/season may be disabled; see wrapper"
+    },
+    {
+      "field": "metadata.missingValue",
+      "value": {
+        "expression": "float('nan')",
+        "json_note": "NaN represented as expression; not zero"
+      },
+      "line": 403,
+      "source_classification": "UPSTREAM",
+      "activation": "conditional/outlier/season may be disabled; see wrapper"
+    },
+    {
+      "field": "metadata.maxMissingRate",
+      "value": 0.75,
+      "line": 404,
+      "source_classification": "UPSTREAM",
+      "activation": "conditional/outlier/season may be disabled; see wrapper"
+    },
+    {
+      "field": "prior.modelPriorType",
+      "value": 1,
+      "line": 412,
+      "source_classification": "UPSTREAM",
+      "activation": "conditional/outlier/season may be disabled; see wrapper"
+    },
+    {
+      "field": "prior.K_MAX",
+      "value": 0,
+      "line": 431,
+      "source_classification": "UPSTREAM",
+      "activation": "conditional/outlier/season may be disabled; see wrapper"
+    },
+    {
+      "field": "mcmc.maxMoveStepSize",
+      "value": 6,
+      "line": 445,
+      "source_classification": "UPSTREAM",
+      "activation": "conditional/outlier/season may be disabled; see wrapper"
+    },
+    {
+      "field": "mcmc.trendResamplingOrderProb",
+      "value": 0.1,
+      "line": 446,
+      "source_classification": "UPSTREAM",
+      "activation": "conditional/outlier/season may be disabled; see wrapper"
+    },
+    {
+      "field": "mcmc.seasonResamplingOrderProb",
+      "value": 0.17,
+      "line": 447,
+      "source_classification": "UPSTREAM",
+      "activation": "conditional/outlier/season may be disabled; see wrapper"
+    },
+    {
+      "field": "mcmc.credIntervalAlphaLevel",
+      "value": 0.95,
+      "line": 448,
+      "source_classification": "UPSTREAM",
+      "activation": "conditional/outlier/season may be disabled; see wrapper"
+    },
+    {
+      "field": "extra.dumpInputData",
+      "value": true,
+      "line": 453,
+      "source_classification": "UPSTREAM",
+      "activation": "conditional/outlier/season may be disabled; see wrapper"
+    },
+    {
+      "field": "extra.whichOutputDimIsTime",
+      "value": 1,
+      "line": 454,
+      "source_classification": "UPSTREAM",
+      "activation": "conditional/outlier/season may be disabled; see wrapper"
+    },
+    {
+      "field": "extra.fastCIComputation",
+      "value": true,
+      "line": 458,
+      "source_classification": "UPSTREAM",
+      "activation": "conditional/outlier/season may be disabled; see wrapper"
+    },
+    {
+      "field": "extra.computeSeasonOrder",
+      "value": true,
+      "line": 459,
+      "source_classification": "UPSTREAM",
+      "activation": "conditional/outlier/season may be disabled; see wrapper"
+    },
+    {
+      "field": "extra.computeTrendOrder",
+      "value": true,
+      "line": 460,
+      "source_classification": "UPSTREAM",
+      "activation": "conditional/outlier/season may be disabled; see wrapper"
+    },
+    {
+      "field": "extra.computeSeasonChngpt",
+      "value": true,
+      "line": 461,
+      "source_classification": "UPSTREAM",
+      "activation": "conditional/outlier/season may be disabled; see wrapper"
+    },
+    {
+      "field": "extra.computeTrendChngpt",
+      "value": true,
+      "line": 462,
+      "source_classification": "UPSTREAM",
+      "activation": "conditional/outlier/season may be disabled; see wrapper"
+    },
+    {
+      "field": "extra.computeSeasonAmp",
+      "value": false,
+      "line": 463,
+      "source_classification": "UPSTREAM",
+      "activation": "conditional/outlier/season may be disabled; see wrapper"
+    },
+    {
+      "field": "extra.computeTrendSlope",
+      "value": true,
+      "line": 464,
+      "source_classification": "UPSTREAM",
+      "activation": "conditional/outlier/season may be disabled; see wrapper"
+    },
+    {
+      "field": "extra.tallyPosNegSeasonJump",
+      "value": false,
+      "line": 465,
+      "source_classification": "UPSTREAM",
+      "activation": "conditional/outlier/season may be disabled; see wrapper"
+    },
+    {
+      "field": "extra.tallyPosNegTrendJump",
+      "value": false,
+      "line": 466,
+      "source_classification": "UPSTREAM",
+      "activation": "conditional/outlier/season may be disabled; see wrapper"
+    },
+    {
+      "field": "extra.tallyIncDecTrendJump",
+      "value": false,
+      "line": 467,
+      "source_classification": "UPSTREAM",
+      "activation": "conditional/outlier/season may be disabled; see wrapper"
+    },
+    {
+      "field": "extra.consoleWidth",
+      "value": 85,
+      "line": 473,
+      "source_classification": "UPSTREAM",
+      "activation": "conditional/outlier/season may be disabled; see wrapper"
+    },
+    {
+      "field": "extra.numThreadsPerCPU",
+      "value": 2,
+      "line": 474,
+      "source_classification": "UPSTREAM",
+      "activation": "conditional/outlier/season may be disabled; see wrapper"
+    },
+    {
+      "field": "extra.numParThreads",
+      "value": 0,
+      "line": 475,
+      "source_classification": "UPSTREAM",
+      "activation": "conditional/outlier/season may be disabled; see wrapper"
+    }
+  ],
+  "kwargs": {
+    "freq": "not supplied; season none",
+    "ci": "not supplied; dump_ci false",
+    "cputype": "not supplied; actual runtime ISA must be observed",
+    "local": "not supplied; normal native dispatch"
+  },
+  "native_constraints": "trendMinSepDist at least trendMaxOrder+1 (2 here), further N-dependent max knots/margins; exact effective config per historical native output, never infer right guard k from rightmargin0",
+  "native_source": "ext_src/beastv2_io_in_args.c:GetArg_3rd_Prior L852-889; pinned ledger SOURCE_LEDGER.json",
+  "native_runtime": "task03 C opt-in engineering only; no native call in task04",
+  "native_effective_current_N8_to30": {
+    "trendMinSepDist": "min(max(request1,trendMaxOrder1+1),floor(N/2)-1) = 2 for N8..30",
+    "leftMargin": 0,
+    "rightMargin": 0,
+    "MaxChangePointPossible": "ceil((N-1)/(2+1))",
+    "trendMaxKnotNum": "min(request10, MaxChangePointPossible)",
+    "source": "fixed sdist GetArg_3rd_Prior L852-889"
+  }
+}

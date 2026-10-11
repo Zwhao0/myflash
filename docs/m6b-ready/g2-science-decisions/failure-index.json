@@ -1,0 +1,31 @@
+{
+  "current": [
+    {
+      "name": "root-git-probe",
+      "exit_code": 128,
+      "raw": "tool transcript only; raw file NOT_CAPTURED",
+      "effect": "workspace root not git; identified existing exact task03 checkout"
+    },
+    {
+      "name": "combined-reference-tool-probe",
+      "exit_code": 1,
+      "raw": "tool transcript only; raw file NOT_CAPTURED",
+      "effect": "gh executable absent; Poppler present; no workflow/science executed"
+    },
+    {
+      "name": "render-paper",
+      "exit_code": 1,
+      "receipt": "render-paper.receipt.json",
+      "effect": "fitz unavailable; used installed Poppler, no dependency install"
+    },
+    {
+      "name": "seal-packet",
+      "exit_code": 1,
+      "raw": "seal-packet.receipt.json, seal-packet.stderr",
+      "failed_helper_sha256": "0671238acf20ddcaba48dd35fc4960800a0a063d12a4502bdada8c8e0a284ed3",
+      "effect": "invalid UTF8 in new private helper; failed before writes; first local docs commit happened before seal completion, not pushed; repaired ASCII-only helper, scientific sources untouched"
+    }
+  ],
+  "historical": "all baseline files protected by preservation.json; M5-R/P1 A/B/native/CLI/cache/NOT_CAPTURED not rewritten",
+  "final_alert": false
+}

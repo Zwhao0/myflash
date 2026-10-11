@@ -506,3 +506,33 @@ audit/history backfill. C controlled CALLER_ADOPTION_PASS only; G01/G02/G13/G04/
 G09/G20 OPEN. Next unique task precise-head independent Draft PR review; STOP.
 
 Final full diff whitespace check actual exit2 from preserved new native stdout trailing spaces; code-only prior check0. Receipt/raw stdout retained and indexed, no log trimming.
+
+
+## M6B-READY task04 G01/G02/G13 decision packet (2026-10-11)
+Human confirms PR14 exact7c898ecbf8636eed6d07ec0070d2c3c0c99688e0 /
+tree10533c34d6b3aab4f50e61f898be78249580afba independently reviewed. New
+branch codex/m6b-ready-g2-science-decisions, docs/task only, STATUS/GAPS append.
+PAPER complete printed26/27/40/43/44 visually reviewed; UPSTREAM fixed0.1.25
+sdist/wrapper/source-span SHA verified; ADAPTATION full24params/implicit
+defaults/compressed axis/actual filtering order; EXTENSION six persistence
+interpretations and A/B historical sensitivity. Recommendations remain pending:
+G01-a finite-window BEAST functional candidate, G02 inclusive t-j+1>20 primary
+textual comparison (age not physical persistence), G13 A=(d-b)/b strict>0.2;
+all approved=null, final_alert=false, science NOT_APPROVED.
+Actual local macOS/System Python3.9.6 stdlib audit command:
+python3 docs/m6b-ready/g2-science-decisions/verify_packet.py --output <private-run>/historical-audit01.json
+exit0/no timeout:280historical replays/12600prefixes,630 independently recomputed
+prefixes/3716candidate slots; all seven scenarios/both batches/A-B/six gates.
+Exact100->119/120/121/125/126 arithmetic checked; all original1858files
+preserved except these two append-only records, evidence SHA in docs. Original
+M5-R/P1 A/B failures/three NOT_CAPTURED/915-cache preinstall gap retained.
+Root nongit128/absent gh probe1 raw transcript-only NOT_CAPTURED; renderer
+fitz missing1 retained; installed Poppler five pages0. Original argv/real exits/
+raw stdio in project runs/m6b-ready-g2-science-20261011; sanitized ledger in
+docs/m6b-ready/g2-science-decisions. No server probe/native fits/install/build/
+formal default adoption/Redis/GPU/fault injection/M6-B; formal environment
+preservation this round NOT_PROBED, previous gaps not repaired. Rights/privacy
+DEFERRED/OPEN, ordinary CI text-only. Next unique action independent exact-head
+Draft review and explicit full per-gap science approvals; STOP, no task05.
+
+Task04 seal helper initial encoding error exit1 retained; initial local docs commit e352d95 created before seal completion but not pushed. ASCII-only repaired helper seal-packet02 actual0, original science/data untouched. Final exact head/tree/ordinary push/Draft/CI binding in private publication receipt and PR body. No CI/science PASS inferred.

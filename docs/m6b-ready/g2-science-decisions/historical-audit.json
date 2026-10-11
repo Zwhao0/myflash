@@ -1,0 +1,527 @@
+{
+  "status": "PASS_LOCAL_STATIC_HISTORICAL_ARITHMETIC_ONLY",
+  "source_head": "7c898ecbf8636eed6d07ec0070d2c3c0c99688e0",
+  "source_tree": "10533c34d6b3aab4f50e61f898be78249580afba",
+  "host_class": "local macOS CPU",
+  "python": "3.9.6 (default, May 22 2026, 11:13:45) \n[Clang 21.0.0 (clang-2100.1.1.101)]",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "counts": {
+    "replays": 280,
+    "prefixes": 12600,
+    "candidates": 3716,
+    "independent_first_replay_prefixes": 630
+  },
+  "inputs_sha256": {
+    "docs/m5/patch-p1/data/m5-p1-c-batch01/decisions-stable.json": "c832a4f63ef207380fd5de368703f8f57aebe902e8844e4563ea8ce670d41510",
+    "tests/m5_fixtures/records/stable.json": "10c6abfa683bea71bc94b19bec642f89223586c4af9b6e37a8983cf027b68469",
+    "docs/m5/patch-p1/data/m5-p1-c-batch01/decisions-sustained.json": "48b84d1c79515160cb02d7017686818ab93611051489b2c202dfd6b502b46281",
+    "tests/m5_fixtures/records/sustained.json": "1a97c72c5a15f7f2b59885c356eab978bb5dd429ad48545df45edc6214c8095e",
+    "docs/m5/patch-p1/data/m5-p1-c-batch01/decisions-growth_19.json": "a134ba7b26a121c575489cd323fce58a08b2c34fc2d7662444910b889f870704",
+    "tests/m5_fixtures/records/growth_19.json": "3357c294b30b8f9aba75a8df85a868b86fe7543eef71b49d1daf9f7ba0190952",
+    "docs/m5/patch-p1/data/m5-p1-c-batch01/decisions-growth_20.json": "68bcf52bb621f12577909adba96a3d76856ec1716bea21266a3e410536767951",
+    "tests/m5_fixtures/records/growth_20.json": "b9b67c2070e1771af7e3e37a62ad7d697caf53cfd69dd8dfcd9ef7daa3f34711",
+    "docs/m5/patch-p1/data/m5-p1-c-batch01/decisions-growth_21.json": "3318bb4d435e1540729bf5c7209c99d5c9d158c656303b7adc33f91992b6d830",
+    "tests/m5_fixtures/records/growth_21.json": "7d2a38c09e8e74e8f7cbd75d056f0c67be97c23d9a6bc7da2b64f4e71f915d9d",
+    "docs/m5/patch-p1/data/m5-p1-c-batch01/decisions-spike.json": "4d3e75697a7ec7b25bfe06881b60ea43a3dda8d59ead2a7b9c2f77f90cf13099",
+    "tests/m5_fixtures/records/spike.json": "19a40ed383bc5f82badd1c733b62ae4a3ab9e7d3ada3975633358dbba1a7c4bc",
+    "docs/m5/patch-p1/data/m5-p1-c-batch01/decisions-recovery.json": "56391deafdf2ccebb931934b98fb08734a748dbd877ede9755a51f5ee8ff71cc",
+    "tests/m5_fixtures/records/recovery.json": "325fad48530957e2d331a68c0182aa7e09a670dfb713a3eb26bd3edf22d5b618",
+    "docs/m5/patch-p1/data/m5-p1-c-batch02/decisions-stable.json": "c832a4f63ef207380fd5de368703f8f57aebe902e8844e4563ea8ce670d41510",
+    "docs/m5/patch-p1/data/m5-p1-c-batch02/decisions-sustained.json": "48b84d1c79515160cb02d7017686818ab93611051489b2c202dfd6b502b46281",
+    "docs/m5/patch-p1/data/m5-p1-c-batch02/decisions-growth_19.json": "a134ba7b26a121c575489cd323fce58a08b2c34fc2d7662444910b889f870704",
+    "docs/m5/patch-p1/data/m5-p1-c-batch02/decisions-growth_20.json": "68bcf52bb621f12577909adba96a3d76856ec1716bea21266a3e410536767951",
+    "docs/m5/patch-p1/data/m5-p1-c-batch02/decisions-growth_21.json": "3318bb4d435e1540729bf5c7209c99d5c9d158c656303b7adc33f91992b6d830",
+    "docs/m5/patch-p1/data/m5-p1-c-batch02/decisions-spike.json": "4d3e75697a7ec7b25bfe06881b60ea43a3dda8d59ead2a7b9c2f77f90cf13099",
+    "docs/m5/patch-p1/data/m5-p1-c-batch02/decisions-recovery.json": "56391deafdf2ccebb931934b98fb08734a748dbd877ede9755a51f5ee8ff71cc",
+    "docs/m5/science-s1/data/timeline.json": "8ca8d05e21912e539a2de209597b9b482f984896a1c2adf661c80dfa2384754c",
+    "docs/m5/science-s1/data/timeline-summary.json": "a147cda7892244ceff8e469dd148a907a1d2732e5aa8aeccb843018cc6e10800",
+    "docs/m5/science-s1/data/sensitivity.json": "a41ea46bad43e6be78feace2d829cea15cba0ccd677ed6301f927a635da31bae",
+    "docs/m5/science-s1/data/repeat-coverage.json": "7f6d3b3c24b22732737bd5c399ac242fe1956e06dc863e1f0724aa71d1132804"
+  },
+  "results": [
+    {
+      "batch": "m5-p1-c-batch01",
+      "scenario": "stable",
+      "first_probability": null,
+      "first_provisional": {
+        "A": null,
+        "B": null
+      },
+      "first_persistence": {
+        "A": {
+          "span_inclusive_gt20": null,
+          "elapsed_exclusive_gt20": null,
+          "retained_right_gt20": null,
+          "qualified_consecutive_prefixes_gt20": null,
+          "right_guard_original_k1": null,
+          "right_guard_original_k2": null
+        },
+        "B": {
+          "span_inclusive_gt20": null,
+          "elapsed_exclusive_gt20": null,
+          "retained_right_gt20": null,
+          "qualified_consecutive_prefixes_gt20": null,
+          "right_guard_original_k1": null,
+          "right_guard_original_k2": null
+        }
+      },
+      "disagreement": []
+    },
+    {
+      "batch": "m5-p1-c-batch01",
+      "scenario": "sustained",
+      "first_probability": 22,
+      "first_provisional": {
+        "A": 22,
+        "B": 22
+      },
+      "first_persistence": {
+        "A": {
+          "span_inclusive_gt20": 41,
+          "elapsed_exclusive_gt20": 42,
+          "retained_right_gt20": 41,
+          "qualified_consecutive_prefixes_gt20": 42,
+          "right_guard_original_k1": 22,
+          "right_guard_original_k2": 23
+        },
+        "B": {
+          "span_inclusive_gt20": 41,
+          "elapsed_exclusive_gt20": 42,
+          "retained_right_gt20": 41,
+          "qualified_consecutive_prefixes_gt20": 42,
+          "right_guard_original_k1": 22,
+          "right_guard_original_k2": 23
+        }
+      },
+      "disagreement": []
+    },
+    {
+      "batch": "m5-p1-c-batch01",
+      "scenario": "growth_19",
+      "first_probability": 22,
+      "first_provisional": {
+        "A": null,
+        "B": null
+      },
+      "first_persistence": {
+        "A": {
+          "span_inclusive_gt20": null,
+          "elapsed_exclusive_gt20": null,
+          "retained_right_gt20": null,
+          "qualified_consecutive_prefixes_gt20": null,
+          "right_guard_original_k1": null,
+          "right_guard_original_k2": null
+        },
+        "B": {
+          "span_inclusive_gt20": null,
+          "elapsed_exclusive_gt20": null,
+          "retained_right_gt20": null,
+          "qualified_consecutive_prefixes_gt20": null,
+          "right_guard_original_k1": null,
+          "right_guard_original_k2": null
+        }
+      },
+      "disagreement": []
+    },
+    {
+      "batch": "m5-p1-c-batch01",
+      "scenario": "growth_20",
+      "first_probability": 22,
+      "first_provisional": {
+        "A": 23,
+        "B": null
+      },
+      "first_persistence": {
+        "A": {
+          "span_inclusive_gt20": 43,
+          "elapsed_exclusive_gt20": 43,
+          "retained_right_gt20": 43,
+          "qualified_consecutive_prefixes_gt20": null,
+          "right_guard_original_k1": 23,
+          "right_guard_original_k2": 23
+        },
+        "B": {
+          "span_inclusive_gt20": null,
+          "elapsed_exclusive_gt20": null,
+          "retained_right_gt20": null,
+          "qualified_consecutive_prefixes_gt20": null,
+          "right_guard_original_k1": null,
+          "right_guard_original_k2": null
+        }
+      },
+      "disagreement": [
+        23,
+        24,
+        25,
+        28,
+        29,
+        30,
+        33,
+        34,
+        35,
+        38,
+        39,
+        40,
+        43,
+        45
+      ]
+    },
+    {
+      "batch": "m5-p1-c-batch01",
+      "scenario": "growth_21",
+      "first_probability": 22,
+      "first_provisional": {
+        "A": 22,
+        "B": null
+      },
+      "first_persistence": {
+        "A": {
+          "span_inclusive_gt20": 41,
+          "elapsed_exclusive_gt20": 42,
+          "retained_right_gt20": 41,
+          "qualified_consecutive_prefixes_gt20": 42,
+          "right_guard_original_k1": 22,
+          "right_guard_original_k2": 23
+        },
+        "B": {
+          "span_inclusive_gt20": null,
+          "elapsed_exclusive_gt20": null,
+          "retained_right_gt20": null,
+          "qualified_consecutive_prefixes_gt20": null,
+          "right_guard_original_k1": null,
+          "right_guard_original_k2": null
+        }
+      },
+      "disagreement": [
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45
+      ]
+    },
+    {
+      "batch": "m5-p1-c-batch01",
+      "scenario": "spike",
+      "first_probability": null,
+      "first_provisional": {
+        "A": null,
+        "B": null
+      },
+      "first_persistence": {
+        "A": {
+          "span_inclusive_gt20": null,
+          "elapsed_exclusive_gt20": null,
+          "retained_right_gt20": null,
+          "qualified_consecutive_prefixes_gt20": null,
+          "right_guard_original_k1": null,
+          "right_guard_original_k2": null
+        },
+        "B": {
+          "span_inclusive_gt20": null,
+          "elapsed_exclusive_gt20": null,
+          "retained_right_gt20": null,
+          "qualified_consecutive_prefixes_gt20": null,
+          "right_guard_original_k1": null,
+          "right_guard_original_k2": null
+        }
+      },
+      "disagreement": []
+    },
+    {
+      "batch": "m5-p1-c-batch01",
+      "scenario": "recovery",
+      "first_probability": 22,
+      "first_provisional": {
+        "A": 22,
+        "B": 22
+      },
+      "first_persistence": {
+        "A": {
+          "span_inclusive_gt20": null,
+          "elapsed_exclusive_gt20": null,
+          "retained_right_gt20": null,
+          "qualified_consecutive_prefixes_gt20": null,
+          "right_guard_original_k1": 22,
+          "right_guard_original_k2": 23
+        },
+        "B": {
+          "span_inclusive_gt20": null,
+          "elapsed_exclusive_gt20": null,
+          "retained_right_gt20": null,
+          "qualified_consecutive_prefixes_gt20": null,
+          "right_guard_original_k1": 22,
+          "right_guard_original_k2": 23
+        }
+      },
+      "disagreement": [
+        30,
+        31,
+        32
+      ]
+    },
+    {
+      "batch": "m5-p1-c-batch02",
+      "scenario": "stable",
+      "first_probability": null,
+      "first_provisional": {
+        "A": null,
+        "B": null
+      },
+      "first_persistence": {
+        "A": {
+          "span_inclusive_gt20": null,
+          "elapsed_exclusive_gt20": null,
+          "retained_right_gt20": null,
+          "qualified_consecutive_prefixes_gt20": null,
+          "right_guard_original_k1": null,
+          "right_guard_original_k2": null
+        },
+        "B": {
+          "span_inclusive_gt20": null,
+          "elapsed_exclusive_gt20": null,
+          "retained_right_gt20": null,
+          "qualified_consecutive_prefixes_gt20": null,
+          "right_guard_original_k1": null,
+          "right_guard_original_k2": null
+        }
+      },
+      "disagreement": []
+    },
+    {
+      "batch": "m5-p1-c-batch02",
+      "scenario": "sustained",
+      "first_probability": 22,
+      "first_provisional": {
+        "A": 22,
+        "B": 22
+      },
+      "first_persistence": {
+        "A": {
+          "span_inclusive_gt20": 41,
+          "elapsed_exclusive_gt20": 42,
+          "retained_right_gt20": 41,
+          "qualified_consecutive_prefixes_gt20": 42,
+          "right_guard_original_k1": 22,
+          "right_guard_original_k2": 23
+        },
+        "B": {
+          "span_inclusive_gt20": 41,
+          "elapsed_exclusive_gt20": 42,
+          "retained_right_gt20": 41,
+          "qualified_consecutive_prefixes_gt20": 42,
+          "right_guard_original_k1": 22,
+          "right_guard_original_k2": 23
+        }
+      },
+      "disagreement": []
+    },
+    {
+      "batch": "m5-p1-c-batch02",
+      "scenario": "growth_19",
+      "first_probability": 22,
+      "first_provisional": {
+        "A": null,
+        "B": null
+      },
+      "first_persistence": {
+        "A": {
+          "span_inclusive_gt20": null,
+          "elapsed_exclusive_gt20": null,
+          "retained_right_gt20": null,
+          "qualified_consecutive_prefixes_gt20": null,
+          "right_guard_original_k1": null,
+          "right_guard_original_k2": null
+        },
+        "B": {
+          "span_inclusive_gt20": null,
+          "elapsed_exclusive_gt20": null,
+          "retained_right_gt20": null,
+          "qualified_consecutive_prefixes_gt20": null,
+          "right_guard_original_k1": null,
+          "right_guard_original_k2": null
+        }
+      },
+      "disagreement": []
+    },
+    {
+      "batch": "m5-p1-c-batch02",
+      "scenario": "growth_20",
+      "first_probability": 22,
+      "first_provisional": {
+        "A": 23,
+        "B": null
+      },
+      "first_persistence": {
+        "A": {
+          "span_inclusive_gt20": 43,
+          "elapsed_exclusive_gt20": 43,
+          "retained_right_gt20": 43,
+          "qualified_consecutive_prefixes_gt20": null,
+          "right_guard_original_k1": 23,
+          "right_guard_original_k2": 23
+        },
+        "B": {
+          "span_inclusive_gt20": null,
+          "elapsed_exclusive_gt20": null,
+          "retained_right_gt20": null,
+          "qualified_consecutive_prefixes_gt20": null,
+          "right_guard_original_k1": null,
+          "right_guard_original_k2": null
+        }
+      },
+      "disagreement": [
+        23,
+        24,
+        25,
+        28,
+        29,
+        30,
+        33,
+        34,
+        35,
+        38,
+        39,
+        40,
+        43,
+        45
+      ]
+    },
+    {
+      "batch": "m5-p1-c-batch02",
+      "scenario": "growth_21",
+      "first_probability": 22,
+      "first_provisional": {
+        "A": 22,
+        "B": null
+      },
+      "first_persistence": {
+        "A": {
+          "span_inclusive_gt20": 41,
+          "elapsed_exclusive_gt20": 42,
+          "retained_right_gt20": 41,
+          "qualified_consecutive_prefixes_gt20": 42,
+          "right_guard_original_k1": 22,
+          "right_guard_original_k2": 23
+        },
+        "B": {
+          "span_inclusive_gt20": null,
+          "elapsed_exclusive_gt20": null,
+          "retained_right_gt20": null,
+          "qualified_consecutive_prefixes_gt20": null,
+          "right_guard_original_k1": null,
+          "right_guard_original_k2": null
+        }
+      },
+      "disagreement": [
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45
+      ]
+    },
+    {
+      "batch": "m5-p1-c-batch02",
+      "scenario": "spike",
+      "first_probability": null,
+      "first_provisional": {
+        "A": null,
+        "B": null
+      },
+      "first_persistence": {
+        "A": {
+          "span_inclusive_gt20": null,
+          "elapsed_exclusive_gt20": null,
+          "retained_right_gt20": null,
+          "qualified_consecutive_prefixes_gt20": null,
+          "right_guard_original_k1": null,
+          "right_guard_original_k2": null
+        },
+        "B": {
+          "span_inclusive_gt20": null,
+          "elapsed_exclusive_gt20": null,
+          "retained_right_gt20": null,
+          "qualified_consecutive_prefixes_gt20": null,
+          "right_guard_original_k1": null,
+          "right_guard_original_k2": null
+        }
+      },
+      "disagreement": []
+    },
+    {
+      "batch": "m5-p1-c-batch02",
+      "scenario": "recovery",
+      "first_probability": 22,
+      "first_provisional": {
+        "A": 22,
+        "B": 22
+      },
+      "first_persistence": {
+        "A": {
+          "span_inclusive_gt20": null,
+          "elapsed_exclusive_gt20": null,
+          "retained_right_gt20": null,
+          "qualified_consecutive_prefixes_gt20": null,
+          "right_guard_original_k1": 22,
+          "right_guard_original_k2": 23
+        },
+        "B": {
+          "span_inclusive_gt20": null,
+          "elapsed_exclusive_gt20": null,
+          "retained_right_gt20": null,
+          "qualified_consecutive_prefixes_gt20": null,
+          "right_guard_original_k1": 22,
+          "right_guard_original_k2": 23
+        }
+      },
+      "disagreement": [
+        30,
+        31,
+        32
+      ]
+    }
+  ],
+  "native_fits": 0,
+  "GPU_experiments": 0,
+  "final_alert": false,
+  "scientific_status": "NOT_APPROVED"
+}

@@ -300,3 +300,23 @@ sys.executable/original.so a7432000.... Original strict45/24prefix assertion0;
 Evidence docs/m6b-ready/g1-c-optin. Full environment preservation NOT_CLAIMED;
 default production switch NOT_APPROVED, final_alert=false/M6-B NOT_RUN.
 G01/G02/G13/G04/G09/G20 remain OPEN; only next independent Draft PR review.
+
+
+## M6B-READY task04 science decision request (2026-10-11)
+G01/G02/G13 remain OPEN / REQUIRES_OWNER_DECISION. docs/m6b-ready/
+g2-science-decisions/SCIENTIFIC_DECISIONS.json: options/recommendations/full
+contract/impact/required_owner_approval; every approved=null. G01-a recommends
+bounded BEAST refit functional reproduction with all24parameters, implicit
+wrapper defaults/native constraints, compressed axis, cpPr>=0.8 and actual
+filter priority; no classic run-length equivalence/probability calibration.
+G02 recommends original inclusive t-j+1>20 as primary p40 textual comparison,
+remaining five sensitivity rules; cp age does not prove every step degraded,
+p44 k1/2 conflict remains. G13 recommends A direct duration growth strict>0.2,
+B fixed-work proxy and measured throughput separate; no fixture-driven choice.
+Local static/historical arithmetic audit actual0 for280replays/12600prefixes,
+630independent prefix recomputations; no native/GPU/new scientific rule.
+Human predecessor PR14 exact7c898ec/tree10533c3 independent review approval
+only enables task04 base, not science approval. Original failures/NOT_CAPTURED
+and historical rights/privacy stay unchanged. G04/G09/G20/M6-B still not approved.
+Next unique action independent Draft exact-head review and explicit full G01/
+G02/G13 selections; STOP, no task05.

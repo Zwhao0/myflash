@@ -1,0 +1,329 @@
+{
+  "task": "M6B-READY-task04",
+  "baseline": {
+    "head": "7c898ecbf8636eed6d07ec0070d2c3c0c99688e0",
+    "tree": "10533c34d6b3aab4f50e61f898be78249580afba"
+  },
+  "status": "REQUIRES_OWNER_DECISION",
+  "final_alert": false,
+  "scientific_validity": "NOT_APPROVED",
+  "formal_default_switch": "NOT_RUN",
+  "G20": "OPEN; separate task08 required",
+  "decisions": {
+    "G01": {
+      "options": [
+        {
+          "id": "a",
+          "description": "Rbeast0.1.25 finite-window BEAST candidate functional reproduction; trend.cpPr is not classic P(r_t=0|x_1:t)",
+          "source_classification": "ADAPTATION",
+          "impact": "historical cp revised; probability/model/axis/order bounded, CPU repeatability not scientific equivalence",
+          "required_owner_approval": true,
+          "approved": null
+        },
+        {
+          "id": "b",
+          "description": "cpOccPr pointwise sensitivity only",
+          "source_classification": "EXTENSION",
+          "impact": "different posterior quantity, independent authorization; cannot silently replace cpPr",
+          "required_owner_approval": true,
+          "approved": null
+        },
+        {
+          "id": "c",
+          "description": "require classic run-length BOCD equivalence",
+          "source_classification": "ADAPTATION",
+          "impact": "current path does not satisfy; separate design/authorization, no substitution now",
+          "required_owner_approval": true,
+          "approved": null
+        }
+      ],
+      "recommended": "a",
+      "source_classification": [
+        "PAPER p26/27",
+        "UPSTREAM fixed sdist",
+        "ADAPTATION existing model/axis/order"
+      ],
+      "impact": "functional reproduction only; not probability calibration, convergence, GPU recall or BOCD equivalence",
+      "required_owner_approval": true,
+      "approved": null,
+      "parameters": {
+        "start": 1,
+        "deltat": 1,
+        "season": "none",
+        "method": "bayes",
+        "tcp_minmax": [
+          0,
+          10
+        ],
+        "torder_minmax": [
+          0,
+          1
+        ],
+        "tseg_minlength": 1,
+        "tseg_leftmargin": 0,
+        "tseg_rightmargin": 0,
+        "mcmc_seed": 20261010,
+        "mcmc_burbin": 200,
+        "mcmc_chains": 3,
+        "mcmc_thin": 5,
+        "mcmc_samples": 8000,
+        "precValue": 1.5,
+        "precPriorType": "componentwise",
+        "hasOutlier": false,
+        "print_param": true,
+        "print_progress": false,
+        "print_warning": true,
+        "quiet": false,
+        "gui": false,
+        "dump_ci": false,
+        "dump_mcmc": false
+      },
+      "parameter_classification": {
+        "start": "ADAPTATION",
+        "deltat": "ADAPTATION",
+        "season": "ADAPTATION",
+        "method": "ADAPTATION",
+        "tcp_minmax": "ADAPTATION",
+        "torder_minmax": "ADAPTATION",
+        "tseg_minlength": "ADAPTATION",
+        "tseg_leftmargin": "ADAPTATION",
+        "tseg_rightmargin": "ADAPTATION",
+        "mcmc_seed": "ADAPTATION",
+        "mcmc_burbin": "ADAPTATION",
+        "mcmc_chains": "ADAPTATION",
+        "mcmc_thin": "ADAPTATION",
+        "mcmc_samples": "ADAPTATION",
+        "precValue": "ADAPTATION",
+        "precPriorType": "ADAPTATION",
+        "hasOutlier": "ADAPTATION",
+        "print_param": "ADAPTATION",
+        "print_progress": "ADAPTATION",
+        "print_warning": "ADAPTATION",
+        "quiet": "ADAPTATION",
+        "gui": "ADAPTATION",
+        "dump_ci": "ADAPTATION",
+        "dump_mcmc": "ADAPTATION"
+      },
+      "wrapper_defaults": "WRAPPER_DEFAULTS.json",
+      "filter_order": [
+        {
+          "step": 1,
+          "rule": "validate_sequence: one run, rank0, positive finite time_ms, contiguous unique ordered iterations; invalid input -> INVALID_INPUT",
+          "classification": "ADAPTATION"
+        },
+        {
+          "step": 2,
+          "rule": "take last 30 original records before removals",
+          "classification": "PAPER window30 / ADAPTATION truncation order"
+        },
+        {
+          "step": 3,
+          "rule": "drop global iteration<=3, not first3 of each rolling window",
+          "classification": "PAPER warmup3 / ADAPTATION global interpretation"
+        },
+        {
+          "step": 4,
+          "rule": "population mean/std over eligible current window; abs z>3 removes points, z=3 retained; zero std uses z0; sample z audit only",
+          "classification": "PAPER z>3 / ADAPTATION population absolute statistic"
+        },
+        {
+          "step": 5,
+          "rule": "compress retained samples into start1/deltat1; preserve bidirectional mapping; <8 retained or constant series -> INSUFFICIENT_EVIDENCE",
+          "classification": "ADAPTATION"
+        },
+        {
+          "step": 6,
+          "rule": "fresh subprocess BEAST bayes refit current retained prefix window only, timeout30s; version/selected binary identity checked; failures never become zero probability",
+          "classification": "UPSTREAM BEAST / ADAPTATION per-prefix worker, timeout, identity"
+        },
+        {
+          "step": 7,
+          "rule": "raw tree kept; cp time->cp-1->current original iteration; cpPr paired slots, cpOccPr length N; null/null padding skipped; invalid/duplicate coordinate, invalid probability/shape -> INSUFFICIENT_EVIDENCE; no ncp_mode truncation",
+          "classification": "UPSTREAM output / ADAPTATION validation"
+        },
+        {
+          "step": 8,
+          "rule": "sort valid candidates chronologically by filtered index0 then slot; probability cpPr>=0.8",
+          "classification": "PAPER0.8 / ADAPTATION inclusive comparison and sorting"
+        },
+        {
+          "step": 9,
+          "rule": "spacing original_iteration-previous>=2; previous only updated if probability AND spacing pass, BEFORE recovery/strength; later recovery-rejected point can suppress neighbour",
+          "classification": "PAPER distance<2 / ADAPTATION reference and order"
+        },
+        {
+          "step": 10,
+          "rule": "whole filtered window left[:i], right[i:], recent[i+1:]; means b,d,r; A=(d-b)/b,B=(d-b)/d calculated for audit before status selection, both strict>0.2; no approved formula",
+          "classification": "PAPER slices20% / ADAPTATION both formulas"
+        },
+        {
+          "step": 11,
+          "rule": "status precedence: probability fail -> spacing fail -> insufficient left/recent or d-b=0 -> recovery>=0.75 transient -> d-b<=0 no increase -> AMBIGUOUS_SPEC; recovery=(d-r)/(d-b), no clipping",
+          "classification": "PAPER recovery / ADAPTATION exception and priority"
+        },
+        {
+          "step": 12,
+          "rule": "after choosing formula, proposed final conjunction additionally requires selected G02 gate in this current prefix. Current persistence decision None, final_alert always false; no winner conflict/dedupe/final alarm invented",
+          "classification": "ADAPTATION approval boundary"
+        }
+      ],
+      "owner_must_approve": [
+        "all24 parameters",
+        "implicit wrapper/native constraints",
+        "compressed axis+mapping",
+        "cpPr>=0.8",
+        "window/warmup/population absolute z/order",
+        "min8/constant/error handling",
+        "spacing reference before recovery",
+        "whole window means and status precedence",
+        "bounded functional claim"
+      ]
+    },
+    "G02": {
+      "options": [
+        {
+          "id": "inclusive_span",
+          "description": "t-j+1>20",
+          "source_classification": "ADAPTATION",
+          "impact": "21 inclusive observed positions; age alone does not prove physical degradation",
+          "required_owner_approval": true,
+          "approved": null,
+          "earliest_count_only": "t=j+20"
+        },
+        {
+          "id": "exclusive_span",
+          "description": "t-j>20",
+          "source_classification": "EXTENSION",
+          "impact": "21 elapsed gaps, one step later",
+          "required_owner_approval": true,
+          "approved": null,
+          "earliest_count_only": "t=j+21"
+        },
+        {
+          "id": "retained_samples",
+          "description": "R=len(current retained right[i:])>20",
+          "source_classification": "EXTENSION",
+          "impact": "rolling-window/removal can erase evidence",
+          "required_owner_approval": true,
+          "approved": null,
+          "earliest_count_only": "t=j+20 only with no removals"
+        },
+        {
+          "id": "qualified_prefixes",
+          "description": "S(t,j,F)>20; S=previous+1 only same original j, same formula F, current qualified and previous iteration t-1 qualified; otherwise0/reset",
+          "source_classification": "EXTENSION",
+          "impact": "missing/invalid prefix, cp drift, lost probability/spacing/recovery/strength reset; not proof of physical continuity",
+          "required_owner_approval": true,
+          "approved": null,
+          "earliest_count_only": "first qualified prefix+20"
+        },
+        {
+          "id": "k1",
+          "description": "t-j>=1",
+          "source_classification": "ADAPTATION",
+          "impact": "original-iteration reinterpretation of PAPER c<=W-1; compressed guard instead N-1-i>=1",
+          "required_owner_approval": true,
+          "approved": null,
+          "earliest_count_only": "t=j+1"
+        },
+        {
+          "id": "k2",
+          "description": "t-j>=2",
+          "source_classification": "ADAPTATION",
+          "impact": "original-iteration reinterpretation of PAPER c<=W-2; compressed guard instead N-1-i>=2",
+          "required_owner_approval": true,
+          "approved": null,
+          "earliest_count_only": "t=j+2"
+        }
+      ],
+      "recommended": "inclusive_span",
+      "source_classification": [
+        "PAPER p40 >20 conflicts p44 k1/2",
+        "ADAPTATION inclusive original-span main textual comparison",
+        "EXTENSION remaining sensitivity"
+      ],
+      "impact": "inclusive span is primary literal p40 comparison, all others sensitivity; no1-2 final-detection claim; age does not certify all samples degraded",
+      "required_owner_approval": true,
+      "approved": null,
+      "coordinate": {
+        "j": "current cp mapped to original iteration, not evaluator onset",
+        "t": "latest completed original iteration",
+        "R": "current retained right count including cp",
+        "F": "approved A or B formula",
+        "candidate": "valid probability + spacing + recovery + positive delta + selected intensity"
+      },
+      "count_boundaries": {
+        "inclusive": {
+          "j+19": false,
+          "j+20": true
+        },
+        "exclusive": {
+          "j+20": false,
+          "j+21": true
+        },
+        "retained": {
+          "20": false,
+          "21": true
+        },
+        "streak": {
+          "20": false,
+          "21": true
+        },
+        "k1": {
+          "j": false,
+          "j+1": true
+        },
+        "k2": {
+          "j+1": false,
+          "j+2": true
+        }
+      },
+      "window_state": "no pinned old cp/baseline; refit drift may change j. Count only current candidate. No missing-prefix bridge in streak.",
+      "owner_must_approve": [
+        "primary inclusive original span >20 or explicit other",
+        "remaining options sensitivity only, not OR/AND alarm",
+        "k original vs compressed if selected; do not set native rightmargin without separate change",
+        "age is not every-step physical persistence",
+        "final detection latency measured separately"
+      ]
+    },
+    "G13": {
+      "options": [
+        {
+          "id": "A",
+          "description": "(d-b)/b iteration-duration growth, strict>0.2",
+          "source_classification": "ADAPTATION",
+          "impact": "d>1.2b; directly observed ms, not GPU frequency ratio",
+          "required_owner_approval": true,
+          "approved": null
+        },
+        {
+          "id": "B",
+          "description": "(d-b)/d fixed-work throughput-loss proxy, strict>0.2",
+          "source_classification": "ADAPTATION",
+          "impact": "d>1.25b; assumes equal work and comparable time boundaries; not measured throughput",
+          "required_owner_approval": true,
+          "approved": null
+        }
+      ],
+      "recommended": "A",
+      "source_classification": [
+        "PAPER p26 threshold/p43 severity incomplete",
+        "ADAPTATION A primary duration metric",
+        "EXTENSION B/measured throughput distinct sensitivity"
+      ],
+      "impact": "do not select denominator by fixture label; automatic trigger recall and forced-profile localization separately; actual throughput and injected frequency are separate units",
+      "required_owner_approval": true,
+      "approved": null,
+      "boundaries": "THRESHOLD_BOUNDARIES.json",
+      "scenarios": "SCENARIO_COMPARISON.json",
+      "owner_must_approve": [
+        "A main iteration-growth strict>0.2 or explicit B",
+        "b/d from current whole filtered slices in ms",
+        "nonpositive/nonfinite/missing evidence -> insufficient, never zero/fake healthy",
+        "report B and independently measured work/walltime throughput separately",
+        "no frequency/severity/iteration equivalence without physical measurement"
+      ]
+    }
+  }
+}
