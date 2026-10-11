@@ -1,0 +1,5 @@
+Updating dd71cf7..87d2137
+Fast-forward
+ flash/rbeast_adapter.py    | 13 ++++++++-----
+ tests/m6b_ready_c_optin.py | 12 ++++++++++++
+ 2 files changed, 20 insertions(+), 5 deletions(-)

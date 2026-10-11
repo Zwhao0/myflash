@@ -1,0 +1,110 @@
+docs/m6b-ready/g1-c-optin/evidence/api-fields.stdout:2: trailing whitespace.
++Model fitted:  Y =  trend + error 
+docs/m6b-ready/g1-c-optin/evidence/api-fields.stdout:15: trailing whitespace.
++HasOutlierCmpt: False | If true, Y=Trend+Outlier+Error (experimental) is fitted instead of Y=Trend+Error 
+docs/m6b-ready/g1-c-optin/evidence/api-fields.stdout:17: trailing whitespace.
++MissingValue  : NaN  flagged as missing values 
+docs/m6b-ready/g1-c-optin/evidence/api-fields.stdout:43: trailing whitespace.
++prior.trendComplexityFactor = 0.000000   # t_complexfct    : how complex the trend curve is 
+docs/m6b-ready/g1-c-optin/evidence/api-fields.stdout:46: trailing whitespace.
++prior.modelPriorType        = 1         
+docs/m6b-ready/g1-c-optin/evidence/api-fields.stdout:54: trailing whitespace.
++mcmc.thinningFactor            = 5          # Thinning the chain: the larger, the better 
+docs/m6b-ready/g1-c-optin/evidence/api-fields.stdout:58: trailing whitespace.
++mcmc.trendResamplingOrderProb  = 0.1        # Proposal probability of sampling trend polynominal order 
+docs/m6b-ready/g1-c-optin/evidence/api-fields.stdout:65: trailing whitespace.
++extra.dumpInputData        = True  # if true, dump a copy of the input data as o.data 
+docs/m6b-ready/g1-c-optin/evidence/api-fields.stdout:68: trailing whitespace.
++extra.fastCIComputation    = True  # if true, do not sort but approximiate CI 
+docs/m6b-ready/g1-c-optin/evidence/api-fields.stdout:69: trailing whitespace.
++extra.computeTrendOrder    = True  # if true, dump the estimated trend polynomial order 
+docs/m6b-ready/g1-c-optin/evidence/api-fields.stdout:70: trailing whitespace.
++extra.computeTrendChngpt   = True  # if true, dump the trend changepoints (tcp) in the output 
+docs/m6b-ready/g1-c-optin/evidence/api-fields.stdout:85: trailing whitespace.
++Model fitted:  Y =  trend + error 
+docs/m6b-ready/g1-c-optin/evidence/api-fields.stdout:98: trailing whitespace.
++HasOutlierCmpt: False | If true, Y=Trend+Outlier+Error (experimental) is fitted instead of Y=Trend+Error 
+docs/m6b-ready/g1-c-optin/evidence/api-fields.stdout:100: trailing whitespace.
++MissingValue  : NaN  flagged as missing values 
+docs/m6b-ready/g1-c-optin/evidence/api-fields.stdout:126: trailing whitespace.
++prior.trendComplexityFactor = 0.000000   # t_complexfct    : how complex the trend curve is 
+docs/m6b-ready/g1-c-optin/evidence/api-fields.stdout:129: trailing whitespace.
++prior.modelPriorType        = 1         
+docs/m6b-ready/g1-c-optin/evidence/api-fields.stdout:137: trailing whitespace.
++mcmc.thinningFactor            = 5          # Thinning the chain: the larger, the better 
+docs/m6b-ready/g1-c-optin/evidence/api-fields.stdout:141: trailing whitespace.
++mcmc.trendResamplingOrderProb  = 0.1        # Proposal probability of sampling trend polynominal order 
+docs/m6b-ready/g1-c-optin/evidence/api-fields.stdout:148: trailing whitespace.
++extra.dumpInputData        = True  # if true, dump a copy of the input data as o.data 
+docs/m6b-ready/g1-c-optin/evidence/api-fields.stdout:151: trailing whitespace.
++extra.fastCIComputation    = True  # if true, do not sort but approximiate CI 
+docs/m6b-ready/g1-c-optin/evidence/api-fields.stdout:152: trailing whitespace.
++extra.computeTrendOrder    = True  # if true, dump the estimated trend polynomial order 
+docs/m6b-ready/g1-c-optin/evidence/api-fields.stdout:153: trailing whitespace.
++extra.computeTrendChngpt   = True  # if true, dump the trend changepoints (tcp) in the output 
+docs/m6b-ready/g1-c-optin/evidence/strict-api.stdout:2: trailing whitespace.
++Model fitted:  Y =  trend + error 
+docs/m6b-ready/g1-c-optin/evidence/strict-api.stdout:15: trailing whitespace.
++HasOutlierCmpt: False | If true, Y=Trend+Outlier+Error (experimental) is fitted instead of Y=Trend+Error 
+docs/m6b-ready/g1-c-optin/evidence/strict-api.stdout:17: trailing whitespace.
++MissingValue  : NaN  flagged as missing values 
+docs/m6b-ready/g1-c-optin/evidence/strict-api.stdout:43: trailing whitespace.
++prior.trendComplexityFactor = 0.000000   # t_complexfct    : how complex the trend curve is 
+docs/m6b-ready/g1-c-optin/evidence/strict-api.stdout:46: trailing whitespace.
++prior.modelPriorType        = 1         
+docs/m6b-ready/g1-c-optin/evidence/strict-api.stdout:54: trailing whitespace.
++mcmc.thinningFactor            = 5          # Thinning the chain: the larger, the better 
+docs/m6b-ready/g1-c-optin/evidence/strict-api.stdout:58: trailing whitespace.
++mcmc.trendResamplingOrderProb  = 0.1        # Proposal probability of sampling trend polynominal order 
+docs/m6b-ready/g1-c-optin/evidence/strict-api.stdout:65: trailing whitespace.
++extra.dumpInputData        = True  # if true, dump a copy of the input data as o.data 
+docs/m6b-ready/g1-c-optin/evidence/strict-api.stdout:68: trailing whitespace.
++extra.fastCIComputation    = True  # if true, do not sort but approximiate CI 
+docs/m6b-ready/g1-c-optin/evidence/strict-api.stdout:69: trailing whitespace.
++extra.computeTrendOrder    = True  # if true, dump the estimated trend polynomial order 
+docs/m6b-ready/g1-c-optin/evidence/strict-api.stdout:70: trailing whitespace.
++extra.computeTrendChngpt   = True  # if true, dump the trend changepoints (tcp) in the output 
+docs/m6b-ready/g1-c-optin/evidence/strict-api.stdout:85: trailing whitespace.
++Model fitted:  Y =  trend + error 
+docs/m6b-ready/g1-c-optin/evidence/strict-api.stdout:98: trailing whitespace.
++HasOutlierCmpt: False | If true, Y=Trend+Outlier+Error (experimental) is fitted instead of Y=Trend+Error 
+docs/m6b-ready/g1-c-optin/evidence/strict-api.stdout:100: trailing whitespace.
++MissingValue  : NaN  flagged as missing values 
+docs/m6b-ready/g1-c-optin/evidence/strict-api.stdout:126: trailing whitespace.
++prior.trendComplexityFactor = 0.000000   # t_complexfct    : how complex the trend curve is 
+docs/m6b-ready/g1-c-optin/evidence/strict-api.stdout:129: trailing whitespace.
++prior.modelPriorType        = 1         
+docs/m6b-ready/g1-c-optin/evidence/strict-api.stdout:137: trailing whitespace.
++mcmc.thinningFactor            = 5          # Thinning the chain: the larger, the better 
+docs/m6b-ready/g1-c-optin/evidence/strict-api.stdout:141: trailing whitespace.
++mcmc.trendResamplingOrderProb  = 0.1        # Proposal probability of sampling trend polynominal order 
+docs/m6b-ready/g1-c-optin/evidence/strict-api.stdout:148: trailing whitespace.
++extra.dumpInputData        = True  # if true, dump a copy of the input data as o.data 
+docs/m6b-ready/g1-c-optin/evidence/strict-api.stdout:151: trailing whitespace.
++extra.fastCIComputation    = True  # if true, do not sort but approximiate CI 
+docs/m6b-ready/g1-c-optin/evidence/strict-api.stdout:152: trailing whitespace.
++extra.computeTrendOrder    = True  # if true, dump the estimated trend polynomial order 
+docs/m6b-ready/g1-c-optin/evidence/strict-api.stdout:153: trailing whitespace.
++extra.computeTrendChngpt   = True  # if true, dump the trend changepoints (tcp) in the output 
+docs/m6b-ready/g1-c-optin/evidence/strict-api.stdout:168: trailing whitespace.
++Model fitted:  Y =  trend + error 
+docs/m6b-ready/g1-c-optin/evidence/strict-api.stdout:181: trailing whitespace.
++HasOutlierCmpt: False | If true, Y=Trend+Outlier+Error (experimental) is fitted instead of Y=Trend+Error 
+docs/m6b-ready/g1-c-optin/evidence/strict-api.stdout:183: trailing whitespace.
++MissingValue  : NaN  flagged as missing values 
+docs/m6b-ready/g1-c-optin/evidence/strict-api.stdout:209: trailing whitespace.
++prior.trendComplexityFactor = 0.000000   # t_complexfct    : how complex the trend curve is 
+docs/m6b-ready/g1-c-optin/evidence/strict-api.stdout:212: trailing whitespace.
++prior.modelPriorType        = 1         
+docs/m6b-ready/g1-c-optin/evidence/strict-api.stdout:220: trailing whitespace.
++mcmc.thinningFactor            = 5          # Thinning the chain: the larger, the better 
+docs/m6b-ready/g1-c-optin/evidence/strict-api.stdout:224: trailing whitespace.
++mcmc.trendResamplingOrderProb  = 0.1        # Proposal probability of sampling trend polynominal order 
+docs/m6b-ready/g1-c-optin/evidence/strict-api.stdout:231: trailing whitespace.
++extra.dumpInputData        = True  # if true, dump a copy of the input data as o.data 
+docs/m6b-ready/g1-c-optin/evidence/strict-api.stdout:234: trailing whitespace.
++extra.fastCIComputation    = True  # if true, do not sort but approximiate CI 
+docs/m6b-ready/g1-c-optin/evidence/strict-api.stdout:235: trailing whitespace.
++extra.computeTrendOrder    = True  # if true, dump the estimated trend polynomial order 
+docs/m6b-ready/g1-c-optin/evidence/strict-api.stdout:236: trailing whitespace.
++extra.computeTrendChngpt   = True  # if true, dump the trend changepoints (tcp) in the output 

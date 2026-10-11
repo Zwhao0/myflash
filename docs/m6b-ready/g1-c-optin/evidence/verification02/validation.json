@@ -1,0 +1,239 @@
+{
+  "machine": "node-0",
+  "platform": "Linux-6.8.0-142-generic-x86_64-with-glibc2.39",
+  "cpu": "Intel(R) Xeon(R) Platinum 8463B",
+  "head": "87d213751df975603bb045029b2e7d2859252a27",
+  "tree": "e0958a459061c00cdbc652e7c5608a9db6748467",
+  "before": {
+    "formal": {
+      "path": "<project>/.venv-m5/lib/python3.12/site-packages/Rbeast/Rbeast.cpython-312-x86_64-linux-gnu.so",
+      "sha256": "a7432000e18465d8e4d2ba895a8618b388007528757718d286fcb82440bbb157"
+    },
+    "candidate": {
+      "path": "<project>/runs/m6b-ready-g1-s2-c-20261011/execution01/.venv-m5-s2-c/lib/python3.12/site-packages/Rbeast/Rbeast.cpython-312-x86_64-linux-gnu.so",
+      "sha256": "1f08fbc9f24d0c00eb21f91f357519f15289ffd1ef18b9e7e0aca47c2596faeb"
+    }
+  },
+  "receipts": [
+    {
+      "label": "versions",
+      "argv": [
+        "nice",
+        "-n",
+        "10",
+        "<project>/.venv-m5/bin/python",
+        "-c",
+        "import sys,numpy,importlib.metadata;print(sys.version);print(numpy.__version__);print(importlib.metadata.version(\"Rbeast\"))"
+      ],
+      "cwd": "<project>/runs/m6b-ready-g1-c-optin-20261011/checkout",
+      "env_overrides": {
+        "CUDA_VISIBLE_DEVICES": "",
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "PYTHONNOUSERSITE": "1",
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "removed_env": [
+        "LD_PRELOAD",
+        "PYTHONPATH"
+      ],
+      "timeout_s": 180,
+      "exit_code": 0,
+      "timeout": false,
+      "pid": "OWNED_CHILD_versions",
+      "waited": true,
+      "elapsed_s": 0.10412788391113281,
+      "stdout_sha256": "6a930c27e6806a06464e943d1e103ccd11f4cbf2339bc620a9ce25ee4377c3d4",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "unit",
+      "argv": [
+        "nice",
+        "-n",
+        "10",
+        "<project>/.venv-m5/bin/python",
+        "tests/m6b_ready_c_optin.py"
+      ],
+      "cwd": "<project>/runs/m6b-ready-g1-c-optin-20261011/checkout",
+      "env_overrides": {
+        "CUDA_VISIBLE_DEVICES": "",
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "PYTHONNOUSERSITE": "1",
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "removed_env": [
+        "LD_PRELOAD",
+        "PYTHONPATH"
+      ],
+      "timeout_s": 180,
+      "exit_code": 0,
+      "timeout": false,
+      "pid": "OWNED_CHILD_unit",
+      "waited": true,
+      "elapsed_s": 0.09234118461608887,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "21c7e48d0b1ec908feef784bbce1fa55f2c9a7acf76382fa7578754a78bd1ed8"
+    },
+    {
+      "label": "native-caller",
+      "argv": [
+        "nice",
+        "-n",
+        "10",
+        "<project>/.venv-m5/bin/python",
+        "tests/m6b_ready_c_native.py",
+        "--candidate-python",
+        "<project>/runs/m6b-ready-g1-s2-c-20261011/execution01/.venv-m5-s2-c/bin/python",
+        "--output",
+        "<project>/runs/m6b-ready-g1-c-optin-20261011/verification02/native"
+      ],
+      "cwd": "<project>/runs/m6b-ready-g1-c-optin-20261011/checkout",
+      "env_overrides": {
+        "CUDA_VISIBLE_DEVICES": "",
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "PYTHONNOUSERSITE": "1",
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "removed_env": [
+        "LD_PRELOAD",
+        "PYTHONPATH"
+      ],
+      "timeout_s": 180,
+      "exit_code": 0,
+      "timeout": false,
+      "pid": "OWNED_CHILD_native-caller",
+      "waited": true,
+      "elapsed_s": 0.7682743072509766,
+      "stdout_sha256": "51705f32365ce5e4643fc96d138b51a1e7f494e2ff551f5af5df773efc623547",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "reporter",
+      "argv": [
+        "nice",
+        "-n",
+        "10",
+        "<project>/.venv-m5/bin/python",
+        "tests/m5_reporter.py"
+      ],
+      "cwd": "<project>/runs/m6b-ready-g1-c-optin-20261011/checkout",
+      "env_overrides": {
+        "CUDA_VISIBLE_DEVICES": "",
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "PYTHONNOUSERSITE": "1",
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "removed_env": [
+        "LD_PRELOAD",
+        "PYTHONPATH"
+      ],
+      "timeout_s": 180,
+      "exit_code": 0,
+      "timeout": false,
+      "pid": "OWNED_CHILD_reporter",
+      "waited": true,
+      "elapsed_s": 1.1169993877410889,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "a15172e546cb76a37080c803ce244a0c6b555a9a2f7201b1a2275f7faa4a1461"
+    },
+    {
+      "label": "detection",
+      "argv": [
+        "nice",
+        "-n",
+        "10",
+        "<project>/.venv-m5/bin/python",
+        "tests/m5_detection.py"
+      ],
+      "cwd": "<project>/runs/m6b-ready-g1-c-optin-20261011/checkout",
+      "env_overrides": {
+        "CUDA_VISIBLE_DEVICES": "",
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "PYTHONNOUSERSITE": "1",
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "removed_env": [
+        "LD_PRELOAD",
+        "PYTHONPATH"
+      ],
+      "timeout_s": 180,
+      "exit_code": 0,
+      "timeout": false,
+      "pid": "OWNED_CHILD_detection",
+      "waited": true,
+      "elapsed_s": 0.08624577522277832,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "fc23540c8545d4075fe2f0420accd022e74e5566176c3bd4c597964ff02c2e14"
+    },
+    {
+      "label": "arithmetic",
+      "argv": [
+        "nice",
+        "-n",
+        "10",
+        "<project>/.venv-m5/bin/python",
+        "tests/m5_contract_evidence.py",
+        "<project>/runs/m6b-ready-g1-c-optin-20261011/verification02/arithmetic.json"
+      ],
+      "cwd": "<project>/runs/m6b-ready-g1-c-optin-20261011/checkout",
+      "env_overrides": {
+        "CUDA_VISIBLE_DEVICES": "",
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "PYTHONNOUSERSITE": "1",
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "removed_env": [
+        "LD_PRELOAD",
+        "PYTHONPATH"
+      ],
+      "timeout_s": 180,
+      "exit_code": 0,
+      "timeout": false,
+      "pid": "OWNED_CHILD_arithmetic",
+      "waited": true,
+      "elapsed_s": 0.06987380981445312,
+      "stdout_sha256": "a5cf8743802ffd090677978eda15a8c60f51488c16457560567253d03796bcf0",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "gpu": false,
+  "final_alert": false,
+  "cache_inventory": "NOT_RUN",
+  "source_sha256": {
+    "flash/rbeast_adapter.py": "5a07f566d6b671493c63d32eb3efa50abd1c2c8edd10173a28a10145a916d4a3",
+    "tests/m6b_ready_c_optin.py": "ddf5f152c2a7788fc9ad38a30f1c2547cfd334a947bab496952ea1f06f663691",
+    "tests/m6b_ready_c_native.py": "76eae046de3d968f32ddf92cbf51a35ff13f170d81e4da8d63d79c8b2f0b0d66"
+  },
+  "after": {
+    "formal": {
+      "path": "<project>/.venv-m5/lib/python3.12/site-packages/Rbeast/Rbeast.cpython-312-x86_64-linux-gnu.so",
+      "sha256": "a7432000e18465d8e4d2ba895a8618b388007528757718d286fcb82440bbb157"
+    },
+    "candidate": {
+      "path": "<project>/runs/m6b-ready-g1-s2-c-20261011/execution01/.venv-m5-s2-c/lib/python3.12/site-packages/Rbeast/Rbeast.cpython-312-x86_64-linux-gnu.so",
+      "sha256": "1f08fbc9f24d0c00eb21f91f357519f15289ffd1ef18b9e7e0aca47c2596faeb"
+    }
+  },
+  "binary_preserved": true,
+  "source_clean": true,
+  "status": "PASS_CONTROLLED_CPU_OPT_IN",
+  "elapsed_s": 2.2732622959883884
+}

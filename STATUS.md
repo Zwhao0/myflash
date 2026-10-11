@@ -475,3 +475,34 @@ Next unique task: independent ChatGPT exact-head Draft PR review, including
 full-manifest gap; STOP, no task03 or automatic formal adoption.
 
 Final own-runner instrumentation correction: complete_files covers formal cache bytes; this corrected full installer/native runner NOT_RUN, no additional fits or environment. Read-only postflight helper check separately bound; current missing preinstall915-cache snapshot stays NOT_CAPTURED/BLOCKED. Actual native code684d5c7 and CLI-only finishing4a4721c remain unchanged history. Independent Draft PR13 created, no prior PR/main changes; final published head/tree/CI in PR/private receipt.
+
+
+## M6B-READY task03 controlled CPU opt-in (2026-10-11)
+Human independent PR13 exact319600d/tree432f09f review: native/ABI/full posterior
+PASS; Gate1 ACCEPTED_WITH_DEVIATION. Historical915-cache preinstall SHA remains
+NOT_CAPTURED; complete environment preservation NOT_CLAIMED. New independent
+codex/m6b-ready-g1-c-optin from that exact source. ADAPTATION only adapter worker
+selection/fixed .so SHA+loaded map identity; new two CPU tests/task/evidence;
+STATUS/GAPS append. Default sys.executable command/model/science unchanged;
+identity observation failure cannot gate default fit. C opt-in failure exit78
+BLOCKED before fit. Restore by omitting adapter; original.so a7432000... observed.
+
+node-0 Xeon8463B/Python3.12.3/NumPy2.2.6: final execution85c949abc6abd64b74241fe7d62d93f24346eb8e
+/treeafa636f05bcab153716e12c135d81c76d086c23d. New7 tests, Reporter4/detection8/
+arithmetic and final real detect C/wrong .so/default restoration all exit0;
+original strict API/fields initial exit0. Original45/24prefix assertion actual0,
+35+14fits exact full-first24==short. Final52fits; three stages63total, no matrix.
+All22child commands0/no timeout/waited. Commands: formal Python tests/m6b_ready_c_native.py
+--candidate-python <existing-S2-python> --output <run>/verification03/native;
+C Python scripts/m5_replay.py --input tests/m5_fixtures/records/sustained.json
+--output <run>/verification03/replay; C Python scripts/m5_p1_strict.py
+<run>/verification03/prefix-capture.json <run>/verification03/replay. Complete
+argv/exits/log SHA/source in docs/m6b-ready/g1-c-optin; private originals
+runs/m6b-ready-g1-c-optin-20261011. Initial bundle ref fetch128/parent1 retained
+and repaired before fits. .so pre/post preserved only; no full cache inventory.
+PAPER rules unchanged; UPSTREAM existing C; EXTENSION CPU synthetic invocation.
+No install/build/formal default switch/GPU/NCCL/Redis/M6-B/final alerts/privacy
+audit/history backfill. C controlled CALLER_ADOPTION_PASS only; G01/G02/G13/G04/
+G09/G20 OPEN. Next unique task precise-head independent Draft PR review; STOP.
+
+Final full diff whitespace check actual exit2 from preserved new native stdout trailing spaces; code-only prior check0. Receipt/raw stdout retained and indexed, no log trimming.

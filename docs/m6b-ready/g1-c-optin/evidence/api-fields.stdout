@@ -1,0 +1,167 @@
+
+Model fitted:  Y =  trend + error 
+
+INFO: To supress messages, set print_param/print_warning/print_progresss = 0 in beast() and beast_irreg()
+INFO: To supress messages, Set extra.printParameter/printWarning/printProgress = 0 in beast123()
+INFO: To supress all messaages, set quiet=1 in beast() and beast_irreg() or extra.quiet=1 in beast123()
+
+#--------------------------------------------------#
+#       Brief summary of Input Data                #
+#--------------------------------------------------#
+Data Dimension: One signal of length 30
+IsOrdered     : Yes, ordered in time
+IsRegular     : Yes, evenly spaced at interval of  1 (unknown unit)
+hasSeasonCmpnt: False | no periodic or seasonal component. The model Y=Trend+Error is fitted.
+HasOutlierCmpt: False | If true, Y=Trend+Outlier+Error (experimental) is fitted instead of Y=Trend+Error 
+Detrend       : False | If true, remove a global trend component before running BEAST & add it back after BEAST
+MissingValue  : NaN  flagged as missing values 
+MaxMissingRate: if more than 75% of data is missing, BEAST will skip it.
+
+
+#--------------------------------------------------#
+#      OPTIONS used in the MCMC inference          #
+#--------------------------------------------------#
+
+#......Start of displaying 'MetaData' ......
+metadata                =  rb.args() ### or 'lambda: None': just get an empty object### # metadata is used to interpret the input data Y
+metadata.season         = 'none'     # trend-only data with no periodic variation
+metadata.startTime      = 1          # unknown unit
+metadata.deltaTime      = 1          # unknown unit
+metadata.maxMissingRate = 0.75       # if more than 75% of data is missing, BEAST will skip it.
+metadata.detrend        = False      # if true,remove a global trend  cmpnt before running BEAST & add it back later
+#........End of displaying MetaData ........
+
+#......Start of displaying 'prior' ......
+prior                       =  rb.args() ### or 'lambda: None': just get an empty object### # prior is the true hyperprior parameters of BEAST model
+prior.trendMinOrder         = 0          # torder_minmax[0]: min trend polynomial order alllowed
+prior.trendMaxOrder         = 1          # torder_minmax[1]: max trend polynomial order alllowed
+prior.trendMinKnotNum       = 0          # tcp_minmax[0]   : min num of chngpts in trend allowed
+prior.trendMaxKnotNum       = 10         # tcp_minmax[1]   : max num of chngpts in trend allowed
+prior.trendMinSepDist       = 2          # tseg_min        : min trend segment length in terms of datapoints
+prior.trendLeftMargin       = 0          # tseg_leftmargin : no trend chngpts in the first 0 datapoints
+prior.trendRightMargin      = 0          # tseg_rightmargin: no trend chngpts in the last 0 datapoints
+prior.trendComplexityFactor = 0.000000   # t_complexfct    : how complex the trend curve is 
+prior.K_MAX                 = 22         # max number of terms in general linear model (relevant only at small values)
+prior.precValue             = 1.5        # useful mainly when precPriorType='constant'
+prior.modelPriorType        = 1         
+prior.precPriorType     = 'uniform'
+#......End of displaying prior ......
+
+#......Start of displaying 'mcmc' ......
+mcmc                           =  rb.args() ### or 'lambda: None': just get an empty object### # mcmc is not BEAST parameters but MCMC sampler options
+mcmc.seed                      = 20261010   # A nonzero seed to replicate among runs
+mcmc.samples                   = 8000       # Number of samples saved per chain: the larger, the better
+mcmc.thinningFactor            = 5          # Thinning the chain: the larger, the better 
+mcmc.burnin                    = 200        # Number of initial samples discarded: the larger, the better
+mcmc.chainNumber               = 3          # Number of chains: the larger, the better
+mcmc.maxMoveStepSize           = 6          # Max step of jumping from current changepoint: No need to change
+mcmc.trendResamplingOrderProb  = 0.1        # Proposal probability of sampling trend polynominal order 
+mcmc.credIntervalAlphaLevel    = 0.95       # The alphal level for Credible Intervals
+# Total number of models randomly visited in BEAST is (burnin+sampples*thinFactor)*chainNumber=120600
+#......End of displaying mcmc ......
+
+#......Start of displaying 'extra' ......
+extra                      =  rb.args() ### or 'lambda: None': just get an empty object### # extra is used to configure output/computing options
+extra.dumpInputData        = True  # if true, dump a copy of the input data as o.data 
+extra.whichOutputDimIsTime = 1     # 1,2 or 3; which dim of the result is time; used for a 2D/3D input Y
+extra.computeCredible      = False # if true, compute  credibiel interval of estimated Y (e.g., o.trend.CI)
+extra.fastCIComputation    = True  # if true, do not sort but approximiate CI 
+extra.computeTrendOrder    = True  # if true, dump the estimated trend polynomial order 
+extra.computeTrendChngpt   = True  # if true, dump the trend changepoints (tcp) in the output 
+extra.computeTrendSlope    = True  # if true, dump the time-varying slope in trend
+extra.tallyPosNegTrendJump = False # differentiate postive/negative jumps at tcp
+extra.tallyIncDecTrendJump = False # differentiate increased/decreased slopes at tcp
+extra.quiet                = False # if true, print nothing
+extra.printProgress        = False # if true, show an ascii progressbar
+extra.printParameter       = True  # if true, print the parameters of the BEAST run
+extra.printWarning         = True  # if true, print warnings, if any
+extra.printCpuInfo         = False # if true, print the cpu info
+extra.consoleWidth         = 85    # an integer specifying the console width for printing
+extra.numThreadsPerCPU     = 2     # each cpu core spawns 2 concurrent threads (for beast123())
+extra.numParThreads        = 0     # total number of threads (for beast123() only)
+#......End of displaying extra ......
+
+
+Model fitted:  Y =  trend + error 
+
+INFO: To supress messages, set print_param/print_warning/print_progresss = 0 in beast() and beast_irreg()
+INFO: To supress messages, Set extra.printParameter/printWarning/printProgress = 0 in beast123()
+INFO: To supress all messaages, set quiet=1 in beast() and beast_irreg() or extra.quiet=1 in beast123()
+
+#--------------------------------------------------#
+#       Brief summary of Input Data                #
+#--------------------------------------------------#
+Data Dimension: One signal of length 30
+IsOrdered     : Yes, ordered in time
+IsRegular     : Yes, evenly spaced at interval of  1 (unknown unit)
+hasSeasonCmpnt: False | no periodic or seasonal component. The model Y=Trend+Error is fitted.
+HasOutlierCmpt: False | If true, Y=Trend+Outlier+Error (experimental) is fitted instead of Y=Trend+Error 
+Detrend       : False | If true, remove a global trend component before running BEAST & add it back after BEAST
+MissingValue  : NaN  flagged as missing values 
+MaxMissingRate: if more than 75% of data is missing, BEAST will skip it.
+
+
+#--------------------------------------------------#
+#      OPTIONS used in the MCMC inference          #
+#--------------------------------------------------#
+
+#......Start of displaying 'MetaData' ......
+metadata                =  rb.args() ### or 'lambda: None': just get an empty object### # metadata is used to interpret the input data Y
+metadata.season         = 'none'     # trend-only data with no periodic variation
+metadata.startTime      = 101        # unknown unit
+metadata.deltaTime      = 1          # unknown unit
+metadata.maxMissingRate = 0.75       # if more than 75% of data is missing, BEAST will skip it.
+metadata.detrend        = False      # if true,remove a global trend  cmpnt before running BEAST & add it back later
+#........End of displaying MetaData ........
+
+#......Start of displaying 'prior' ......
+prior                       =  rb.args() ### or 'lambda: None': just get an empty object### # prior is the true hyperprior parameters of BEAST model
+prior.trendMinOrder         = 0          # torder_minmax[0]: min trend polynomial order alllowed
+prior.trendMaxOrder         = 1          # torder_minmax[1]: max trend polynomial order alllowed
+prior.trendMinKnotNum       = 0          # tcp_minmax[0]   : min num of chngpts in trend allowed
+prior.trendMaxKnotNum       = 10         # tcp_minmax[1]   : max num of chngpts in trend allowed
+prior.trendMinSepDist       = 2          # tseg_min        : min trend segment length in terms of datapoints
+prior.trendLeftMargin       = 0          # tseg_leftmargin : no trend chngpts in the first 0 datapoints
+prior.trendRightMargin      = 0          # tseg_rightmargin: no trend chngpts in the last 0 datapoints
+prior.trendComplexityFactor = 0.000000   # t_complexfct    : how complex the trend curve is 
+prior.K_MAX                 = 22         # max number of terms in general linear model (relevant only at small values)
+prior.precValue             = 1.5        # useful mainly when precPriorType='constant'
+prior.modelPriorType        = 1         
+prior.precPriorType     = 'uniform'
+#......End of displaying prior ......
+
+#......Start of displaying 'mcmc' ......
+mcmc                           =  rb.args() ### or 'lambda: None': just get an empty object### # mcmc is not BEAST parameters but MCMC sampler options
+mcmc.seed                      = 20261010   # A nonzero seed to replicate among runs
+mcmc.samples                   = 8000       # Number of samples saved per chain: the larger, the better
+mcmc.thinningFactor            = 5          # Thinning the chain: the larger, the better 
+mcmc.burnin                    = 200        # Number of initial samples discarded: the larger, the better
+mcmc.chainNumber               = 3          # Number of chains: the larger, the better
+mcmc.maxMoveStepSize           = 6          # Max step of jumping from current changepoint: No need to change
+mcmc.trendResamplingOrderProb  = 0.1        # Proposal probability of sampling trend polynominal order 
+mcmc.credIntervalAlphaLevel    = 0.95       # The alphal level for Credible Intervals
+# Total number of models randomly visited in BEAST is (burnin+sampples*thinFactor)*chainNumber=120600
+#......End of displaying mcmc ......
+
+#......Start of displaying 'extra' ......
+extra                      =  rb.args() ### or 'lambda: None': just get an empty object### # extra is used to configure output/computing options
+extra.dumpInputData        = True  # if true, dump a copy of the input data as o.data 
+extra.whichOutputDimIsTime = 1     # 1,2 or 3; which dim of the result is time; used for a 2D/3D input Y
+extra.computeCredible      = False # if true, compute  credibiel interval of estimated Y (e.g., o.trend.CI)
+extra.fastCIComputation    = True  # if true, do not sort but approximiate CI 
+extra.computeTrendOrder    = True  # if true, dump the estimated trend polynomial order 
+extra.computeTrendChngpt   = True  # if true, dump the trend changepoints (tcp) in the output 
+extra.computeTrendSlope    = True  # if true, dump the time-varying slope in trend
+extra.tallyPosNegTrendJump = False # differentiate postive/negative jumps at tcp
+extra.tallyIncDecTrendJump = False # differentiate increased/decreased slopes at tcp
+extra.quiet                = False # if true, print nothing
+extra.printProgress        = False # if true, show an ascii progressbar
+extra.printParameter       = True  # if true, print the parameters of the BEAST run
+extra.printWarning         = True  # if true, print warnings, if any
+extra.printCpuInfo         = False # if true, print the cpu info
+extra.consoleWidth         = 85    # an integer specifying the console width for printing
+extra.numThreadsPerCPU     = 2     # each cpu core spawns 2 concurrent threads (for beast123())
+extra.numParThreads        = 0     # total number of threads (for beast123() only)
+#......End of displaying extra ......
+
+real Rbeast coordinate/field contract PASS; repeatability separate FAIL

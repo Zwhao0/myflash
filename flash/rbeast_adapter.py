@@ -2,11 +2,17 @@
 Not Adams–MacKay incremental run-length BOCD. No GreyHound code copied.
 """
 import importlib.metadata
+import hashlib
+import importlib.machinery
 import json
 import math
+import os
 import subprocess
 import sys
 from pathlib import Path
+
+# ADAPTATION task03: fixed reviewed candidate, never selected by version alone.
+CANDIDATE_C_SHA256 = '1f08fbc9f24d0c00eb21f91f357519f15289ffd1ef18b9e7e0aca47c2596faeb'
 
 # ADAPTATION explicit experimental model, not paper-approved Rbeast parameters.
 PARAMETERS = dict(start=1, deltat=1, season='none', method='bayes',
@@ -73,8 +79,14 @@ def json_safe(value):
 
 
 class RbeastAdapter:
-    def __init__(self, timeout_s=30):
+    def __init__(self, timeout_s=30, *, candidate_c_python=None):
         self.timeout_s=timeout_s
+        if candidate_c_python is not None:
+            candidate_c_python=str(candidate_c_python)
+            if not Path(candidate_c_python).is_absolute():
+                raise ValueError('candidate_c_python must be an absolute interpreter path')
+        # Keep the venv entry path; resolving its symlink loses the venv identity.
+        self.candidate_c_python=candidate_c_python
 
     def analyze(self, values):
         evidence=dict(engine='Rbeast.beast', semantics='retrospective-window-refit',
@@ -83,12 +95,15 @@ class RbeastAdapter:
                       coordinate='start=1/deltat=1 time; Python index=cp-1',
                       scientific_status='AMBIGUOUS_SPEC', raw=None)
         try:
-            command=[sys.executable,str(Path(__file__).resolve()),'--worker']
+            command=[self.candidate_c_python or sys.executable,str(Path(__file__).resolve()),'--worker']
+            if self.candidate_c_python is not None:command.append('--candidate-c')
             run=subprocess.run(command,input=json.dumps(values,allow_nan=False),
                                text=True,capture_output=True,timeout=self.timeout_s)
             evidence.update(worker_exit_code=run.returncode, native_stdout=run.stdout,
                             native_stderr=run.stderr)
             lines=[line[len('M5_RESULT='):] for line in run.stdout.splitlines() if line.startswith('M5_RESULT=')]
+            if run.returncode==78 and len(lines)==1:
+                evidence.update(json.loads(lines[0]));return evidence
             if run.returncode or len(lines)!=1:
                 evidence.update(status='BLOCKED' if run.returncode==77 else 'INSUFFICIENT_EVIDENCE',reason='NATIVE_WORKER_FAILED')
                 return evidence
@@ -104,7 +119,32 @@ class RbeastAdapter:
         return evidence
 
 
-def worker():
+def runtime_identity(rb):
+    """ADAPTATION identify the imported extension, not a package-directory glob."""
+    modules=[m for name,m in list(sys.modules.items()) if name.startswith('Rbeast.')
+             and getattr(m,'__file__',None) and any(str(m.__file__).endswith(s)
+             for s in importlib.machinery.EXTENSION_SUFFIXES)]
+    if len(modules)!=1:raise ValueError('expected one loaded Rbeast extension')
+    path=Path(modules[0].__file__).resolve(strict=True)
+    stat=path.stat();mapped=[]
+    maps=Path('/proc/self/maps')
+    if maps.exists():
+        for line in maps.read_text().splitlines():
+            fields=line.split(maxsplit=5)
+            device=f'{os.major(stat.st_dev):02x}:{os.minor(stat.st_dev):02x}'
+            if (len(fields)==6 and fields[5]==str(path) and fields[3]==device
+                    and int(fields[4])==stat.st_ino):
+                # Virtual addresses vary with ASLR. Keep stable mapping identity
+                # so existing complete prefix evidence remains comparable.
+                mapped.append(dict(permissions=fields[1],offset=fields[2],device=fields[3],
+                                   inode=int(fields[4]),path=fields[5]))
+    return dict(sys_executable=sys.executable,sys_prefix=sys.prefix,
+                Rbeast_file=rb.__file__,native_module=modules[0].__name__,
+                native_file=str(path),native_sha256=hashlib.sha256(path.read_bytes()).hexdigest(),
+                mapped_library_segments=mapped)
+
+
+def worker(candidate_c=False):
     try:
         import numpy as np
         import Rbeast as rb
@@ -113,12 +153,29 @@ def worker():
         return 77
     if importlib.metadata.version('Rbeast')!='0.1.25' or np.__version__!='2.2.6':
         raise RuntimeError('unverified Rbeast/NumPy version')
+    # Default invocation/model is unchanged; identity is additional diagnostic evidence.
+    identity=None;identity_error=None
+    try:
+        identity=runtime_identity(rb)
+        if candidate_c and (identity['native_sha256']!=CANDIDATE_C_SHA256 or
+                            not identity['mapped_library_segments']):
+            raise ValueError('candidate C binary SHA256 or loaded mapping mismatch')
+    except (ValueError,OSError) as error:
+        identity_error=str(error)
+        if candidate_c:
+            payload=dict(status='BLOCKED',reason='CANDIDATE_C_IDENTITY_REJECTED',raw=None,
+                         runtime_identity=identity,expected_native_sha256=CANDIDATE_C_SHA256,
+                         identity_error=identity_error,native_fit_started=False)
+            print('M5_RESULT='+json.dumps(payload,allow_nan=False));return 78
     values=json.load(sys.stdin)
     out=rb.beast(np.asarray(values,dtype=np.float64),**PARAMETERS)
-    payload=dict(raw=json_safe(out),versions=dict(Rbeast=importlib.metadata.version('Rbeast'),numpy=np.__version__,python=sys.version))
+    payload=dict(raw=json_safe(out),versions=dict(Rbeast=importlib.metadata.version('Rbeast'),numpy=np.__version__,python=sys.version),
+                 runtime_identity=identity,runtime_selection='candidate-c-opt-in' if candidate_c else 'default',
+                 native_fit_started=True)
+    if identity_error is not None:payload['runtime_identity_error']=identity_error
     print('M5_RESULT='+json.dumps(payload,allow_nan=False))
     return 0
 
 if __name__=='__main__':
-    if sys.argv[1:]!=['--worker']:raise SystemExit('only --worker supported')
-    raise SystemExit(worker())
+    if sys.argv[1:] not in (['--worker'],['--worker','--candidate-c']):raise SystemExit('only --worker [--candidate-c] supported')
+    raise SystemExit(worker(candidate_c=sys.argv[1:]==['--worker','--candidate-c']))

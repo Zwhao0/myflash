@@ -288,3 +288,15 @@ Next unique task independent precise-head Draft PR review and gap decision;
 stop, do not execute task03 or reinstall/rerun to backfill missing baseline.
 
 Own formal-inventory instrumentation corrected to include cache; readonly function actual2339/915 omitted-cache, fits0/installations0. Corrected full installer/native runner NOT_RUN; current preinstall full snapshot still NOT_CAPTURED and overallBLOCKED. PR13 independent Draft, precise final publication/CI bound in PR/private receipt; STOP.
+
+
+## M6B-READY task03 (2026-10-11)
+ADAPTATION human accepts PR13 exact319600d/tree432f09f Gate1 with deviation;
+915-cache historical preinstall SHA remains NOT_CAPTURED. Controlled CPU detect
+per-instance candidate_c_python opt-in engineering PASS: actual C.so1f08fbc9...
+loaded/fit, same-version original.so rejected before fit78, omission restores
+sys.executable/original.so a7432000.... Original strict45/24prefix assertion0;
+22child commands0, final52/total63fits, no full matrix/build/install/cache audit.
+Evidence docs/m6b-ready/g1-c-optin. Full environment preservation NOT_CLAIMED;
+default production switch NOT_APPROVED, final_alert=false/M6-B NOT_RUN.
+G01/G02/G13/G04/G09/G20 remain OPEN; only next independent Draft PR review.
