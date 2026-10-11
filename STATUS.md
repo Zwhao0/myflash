@@ -536,3 +536,52 @@ DEFERRED/OPEN, ordinary CI text-only. Next unique action independent exact-head
 Draft review and explicit full per-gap science approvals; STOP, no task05.
 
 Task04 seal helper initial encoding error exit1 retained; initial local docs commit e352d95 created before seal completion but not pushed. ASCII-only repaired helper seal-packet02 actual0, original science/data untouched. Final exact head/tree/ordinary push/Draft/CI binding in private publication receipt and PR body. No CI/science PASS inferred.
+
+
+## M6B-READY task05 approved detector rules / 2026-10-11
+Human independent PR15 exact5f9cccf2c8582837ba1050fafdf7f56106964465 /
+tree017b7f2eb65328c5b52788957ea0bd2e96e99f8c review PASS and complete explicit
+G01-a/G02-inclusive_span/G13-A approval. New independent branch
+codex/m6b-ready-g2-approved-detector from that exact head. Detection module
+only: explicit approved_rules=True versioned path, model/qualified/detection
+trigger separated, current original t-j+1>20 AND strict current (d-b)/b>0.2;
+G01 original preprocessing/spacing-before-recovery/means/order retained.
+B/other5 counters diagnostics only. G20 OPEN; final_alert=false throughout.
+Original default schema/output/adapter/24params/worker/fixtures/assertions/
+M4/Redis/controller unchanged. Invalid means/raw/config/overflow fail closed.
+New test/task/docs; STATUS/GAPS append only. Sources PAPER SPEC S3/PR15 paper
+audit, UPSTREAM fixed0.1.25/implicit source ledger, ADAPTATION approved rules/
+opt-in/error evidence, EXTENSION artificial CPU/history sensitivity.
+
+Actual local MacBook Air/macOS26.6.2 arm64; existing bundled Python3.12.14 new13
+CPU tests exit0, original systemPython3.9.6 detection8/reporter4/C-optin7/cursor
+extra8/contract9 all actual0. Commands: <existing-bundled-python-3.12.14>
+tests/m6b_ready_approved_detection.py -v; same interpreter
+docs/m6b-ready/g2-approved-detector/verify_history.py --output <new-private-dir>.
+History final0/no timeout:560saved C replays/25200prefixes, strict default
+whole outputs equal, 1260detailed prefixes/7432slots, 138strict full/short
+prefixes and 960arrays/40saved C reference fits validated; new native fits0.
+All raw inputs/arrays/PARAMETERS preserved; no evaluator truth used online.
+Sustained/growth21 first approved trigger41, growth20 at43; other four fixed
+scenarios null, full candidates and A/B/six sensitivity retained. CPU functional
+PASS does not claim physical persistence/1-2final latency/real fault rates.
+
+Own failures retained: initial CPU1, cursor argparse2, fixture-wrapper verifier1,
+Python3.9.6 strict historical sample std/z last-bit1; unchanged exact assertions
+pass in existing3.12.14, no install/tolerance/field removal. Nongit128 and wrong
+taskpack path error tool transcript-only/raw NOT_CAPTURED. Full argv/cwd/host/
+true exits/raw stdio and SHA in docs/m6b-ready/g2-approved-detector and private
+runs/m6b-ready-g2-detector-20261011. Failed interim source snapshots NOT_CAPTURED;
+final executed code hashes bound in history/validation. 1882base files preserved
+except detector and append-only STATUS/GAPS; protected original files1879.
+Historical M5-R/P1 A/B/threeNOT_CAPTURED/915-cache gap unchanged; server binary/
+environment this round NOT_PROBED. No privacy专项/history backfill/new dependencies/
+native compile/GPU/NCCL/Redis service/fault injection/M6-B/task06. Rights/privacy
+DEFERRED/OPEN. G01/G02/G13 ACCEPTED_ASSUMPTION for engineering rules, G04/G09/G20
+OPEN; overall M6B-READY not claimed PASS. Commit/diff and final Draft remote
+head/tree publication receipt live in task05 evidence/PR/private run.
+Next unique task independent exact-head Draft PR review; STOP after publication.
+
+Task05 publication precheck: tracked pre-staging diff check0; complete staged
+diff check2 due to retained raw CPU-failure stderr trailing unittest whitespace.
+Actual exit2/stdout preserved; no raw log trimming, no code/science failure.

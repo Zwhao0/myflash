@@ -1,0 +1,12 @@
+test_bad_worker_output (__main__.Tests) ... ok
+test_default_identity_observation_does_not_gate_fit (__main__.Tests) ... ok
+test_explicit_command_and_rollback (__main__.Tests) ... ok
+test_identity_failure_propagated (__main__.Tests) ... ok
+test_relative_interpreter_rejected (__main__.Tests) ... ok
+test_timeout_and_missing_interpreter (__main__.Tests) ... ok
+test_worker_rejects_before_fit (__main__.Tests) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.002s
+
+OK

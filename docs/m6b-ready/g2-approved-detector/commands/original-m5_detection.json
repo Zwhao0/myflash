@@ -1,0 +1,28 @@
+{
+  "argv": [
+    "python3",
+    "tests/m5_detection.py",
+    "-v"
+  ],
+  "cwd": "<task05-checkout>",
+  "started_utc": "2026-10-11T05:00:36.684428+00:00",
+  "elapsed_s": 0.071993875,
+  "exit_code": 0,
+  "timeout": false,
+  "deadline_s": 120,
+  "logs": {
+    "stdout": {
+      "path": "<task05-private-run>/original-m5_detection.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    "stderr": {
+      "path": "<task05-private-run>/original-m5_detection.stderr",
+      "sha256": "a02e2698891154b281d5c7bce134a7cb1e8b9b978ab9326d207557a0242badba",
+      "size": 523
+    }
+  },
+  "machine": "zhangweihaodeMacBook-Air.local",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "recorder_python": "3.9.6 (default, May 22 2026, 11:13:45) \n[Clang 21.0.0 (clang-2100.1.1.101)]"
+}

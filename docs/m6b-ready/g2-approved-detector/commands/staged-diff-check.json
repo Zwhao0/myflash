@@ -1,0 +1,29 @@
+{
+  "argv": [
+    "git",
+    "diff",
+    "--cached",
+    "--check"
+  ],
+  "cwd": "<task05-checkout>",
+  "started_utc": "2026-10-11T05:08:53.109996+00:00",
+  "elapsed_s": 0.013487375,
+  "exit_code": 2,
+  "timeout": false,
+  "deadline_s": 120,
+  "logs": {
+    "stdout": {
+      "path": "<task05-private-run>/staged-diff-check.stdout",
+      "sha256": "f39e7e09a09b2918796417da801503e85a6037d95ce5a3ae4cef1f0a64dcee72",
+      "size": 153
+    },
+    "stderr": {
+      "path": "<task05-private-run>/staged-diff-check.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    }
+  },
+  "machine": "zhangweihaodeMacBook-Air.local",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "recorder_python": "3.9.6 (default, May 22 2026, 11:13:45) \n[Clang 21.0.0 (clang-2100.1.1.101)]"
+}

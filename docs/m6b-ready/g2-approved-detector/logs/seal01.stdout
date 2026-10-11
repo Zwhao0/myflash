@@ -1,0 +1,1 @@
+{"status": "PASS_SEAL", "files": 1882, "protected": 1879, "new_tests": 13, "old_tests": 36, "history": {"replays": 560, "prefixes": 25200, "detailed_prefixes": 1260, "native_candidate_slots": 7432, "strict_prefixes": 138, "reference_arrays": 960, "reference_fits_read": 40, "new_native_fits": 0}, "failures": 4}

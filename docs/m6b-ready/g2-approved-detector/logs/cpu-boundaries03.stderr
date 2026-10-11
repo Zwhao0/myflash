@@ -1,0 +1,18 @@
+test_compressed_count_does_not_gate_original_span (__main__.Tests.test_compressed_count_does_not_gate_original_span) ... ok
+test_drift_uses_current_cp_and_current_means (__main__.Tests.test_drift_uses_current_cp_and_current_means) ... ok
+test_engine_failure_never_becomes_no_trigger (__main__.Tests.test_engine_failure_never_becomes_no_trigger) ... ok
+test_exact_recovery_and_direction_precedence (__main__.Tests.test_exact_recovery_and_direction_precedence) ... ok
+test_inclusive_20_21_22 (__main__.Tests.test_inclusive_20_21_22) ... ok
+test_input_missing_duplicate_order_empty_short_constant (__main__.Tests.test_input_missing_duplicate_order_empty_short_constant) ... ok
+test_invalid_raw_and_padding (__main__.Tests.test_invalid_raw_and_padding) ... ok
+test_invalid_values_and_insufficient_means_fail_closed (__main__.Tests.test_invalid_values_and_insufficient_means_fail_closed) ... ok
+test_no_future_leakage_and_default_optin (__main__.Tests.test_no_future_leakage_and_default_optin) ... ok
+test_parameter_identity_and_missing_engine_output (__main__.Tests.test_parameter_identity_and_missing_engine_output) ... ok
+test_probability_and_spacing_before_recovery (__main__.Tests.test_probability_and_spacing_before_recovery) ... ok
+test_real_preprocess_removal_and_compressed_cp (__main__.Tests.test_real_preprocess_removal_and_compressed_cp) ... ok
+test_strict_binary64_A_and_diagnostic_B (__main__.Tests.test_strict_binary64_A_and_diagnostic_B) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.007s
+
+OK

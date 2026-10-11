@@ -1,0 +1,9 @@
+test_callback_boundaries_abort (__main__.ReporterTests) ... ok
+test_invalid_records (__main__.ReporterTests) ... ok
+test_reload_rejects_corruption (__main__.ReporterTests) ... ok
+test_retention_and_resume (__main__.ReporterTests) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 1.291s
+
+OK

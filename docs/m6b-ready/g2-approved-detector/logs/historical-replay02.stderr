@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "<task05-checkout>/docs/m6b-ready/g2-approved-detector/verify_history.py", line 246, in <module>
+    main()
+  File "<task05-checkout>/docs/m6b-ready/g2-approved-detector/verify_history.py", line 183, in main
+    checked = [check_prefix(d, fixture) for d in repeat['decisions']]
+  File "<task05-checkout>/docs/m6b-ready/g2-approved-detector/verify_history.py", line 183, in <listcomp>
+    checked = [check_prefix(d, fixture) for d in repeat['decisions']]
+  File "<task05-checkout>/docs/m6b-ready/g2-approved-detector/verify_history.py", line 55, in check_prefix
+    assert legacy == saved, 'default output changed at prefix ' + str(t)
+AssertionError: default output changed at prefix 5

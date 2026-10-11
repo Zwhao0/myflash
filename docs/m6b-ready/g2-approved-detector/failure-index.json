@@ -1,0 +1,78 @@
+{
+  "this_round": [
+    {
+      "label": "cpu-boundaries01",
+      "exit_code": 1,
+      "timeout": false,
+      "command": "commands/cpu-boundaries01.json",
+      "stdout": "logs/cpu-boundaries01.stdout",
+      "stderr": "logs/cpu-boundaries01.stderr"
+    },
+    {
+      "label": "historical-replay01",
+      "exit_code": 1,
+      "timeout": false,
+      "command": "commands/historical-replay01.json",
+      "stdout": "logs/historical-replay01.stdout",
+      "stderr": "logs/historical-replay01.stderr"
+    },
+    {
+      "label": "historical-replay02",
+      "exit_code": 1,
+      "timeout": false,
+      "command": "commands/historical-replay02.json",
+      "stdout": "logs/historical-replay02.stdout",
+      "stderr": "logs/historical-replay02.stderr"
+    },
+    {
+      "label": "original-m6b_ready_cursor_contract",
+      "exit_code": 2,
+      "timeout": false,
+      "command": "commands/original-m6b_ready_cursor_contract.json",
+      "stdout": "logs/original-m6b_ready_cursor_contract.stdout",
+      "stderr": "logs/original-m6b_ready_cursor_contract.stderr"
+    },
+    {
+      "label": "staged-diff-check",
+      "exit_code": 2,
+      "timeout": false,
+      "command": "commands/staged-diff-check.json",
+      "stdout": "logs/staged-diff-check.stdout",
+      "stderr": "logs/staged-diff-check.stderr"
+    }
+  ],
+  "transcript_only": [
+    {
+      "action": "git status in nongit workspace parent",
+      "exit_code": 128,
+      "stdout_stderr": "fatal: not a git repository (or any of the parent directories): .git",
+      "raw_location": "tool transcript",
+      "raw_file": "NOT_CAPTURED",
+      "recovery": "selected approved project worktree"
+    },
+    {
+      "action": "cat external task05 at checkout-relative path",
+      "exit_code": "NOT_CAPTURED",
+      "stderr": "cat: FLASH_M6B_READY_Codex_Tasks/05_G2_APPROVED_DETECTOR_REGRESSION.md: No such file or directory",
+      "compound_tool_exit": 0,
+      "raw_location": "tool transcript",
+      "raw_file": "NOT_CAPTURED",
+      "recovery": "read parent task pack at actual path"
+    }
+  ],
+  "failed_source_snapshot": "NOT_CAPTURED; source edits retained in tool transcript, final execution hashes in history.json",
+  "causes": {
+    "cpu_boundaries01": "new fixture/manual-recovery/mean assumptions plus uncaught candidate overflow",
+    "original_m6b_ready_cursor_contract": "required --output omitted; original test unchanged",
+    "historical_replay01": "new verifier missed existing records wrapper",
+    "historical_replay02": "Python3.9.6 sample std/sample-z differs at last bits from historical3.12; strict assertion preserved",
+    "staged-diff-check": "original new CPU failure stderr contains unittest subtest trailing space; raw preserved, no trim; pre-staging tracked code-only diff check0 excluded new logs"
+  },
+  "inherited": [
+    "M5-R native strict failure",
+    "P1 A/B failures",
+    "three NOT_CAPTURED",
+    "915-cache preinstall SHA NOT_CAPTURED"
+  ],
+  "historical_records": "all prior docs byte-preserved; not rerun or reclassified"
+}

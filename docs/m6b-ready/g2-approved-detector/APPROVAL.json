@@ -1,0 +1,84 @@
+{
+  "task": "M6B-READY-task05",
+  "approver": "human project owner in current chat",
+  "date": "2026-10-11",
+  "message_locator": "FLASH M6B-READY｜任务 04 科学规则批准与任务 05 执行授权",
+  "independent_review": "PASS reported explicitly by owner",
+  "approved_base": "5f9cccf2c8582837ba1050fafdf7f56106964465",
+  "approved_base_tree": "017b7f2eb65328c5b52788957ea0bd2e96e99f8c",
+  "branch": "codex/m6b-ready-g2-approved-detector",
+  "decisions": {
+    "G01": {
+      "approved": "a",
+      "parameters": {
+        "start": 1,
+        "deltat": 1,
+        "season": "none",
+        "method": "bayes",
+        "tcp_minmax": [
+          0,
+          10
+        ],
+        "torder_minmax": [
+          0,
+          1
+        ],
+        "tseg_minlength": 1,
+        "tseg_leftmargin": 0,
+        "tseg_rightmargin": 0,
+        "mcmc_seed": 20261010,
+        "mcmc_burbin": 200,
+        "mcmc_chains": 3,
+        "mcmc_thin": 5,
+        "mcmc_samples": 8000,
+        "precValue": 1.5,
+        "precPriorType": "componentwise",
+        "hasOutlier": false,
+        "print_param": true,
+        "print_progress": false,
+        "print_warning": true,
+        "quiet": false,
+        "gui": false,
+        "dump_ci": false,
+        "dump_mcmc": false
+      },
+      "wrapper_native_implicit": "approved in full",
+      "compressed_axis_mapping": "approved",
+      "filter_order": "complete G01 contract approved",
+      "source_classification": "ADAPTATION"
+    },
+    "G02": {
+      "approved": "inclusive_span",
+      "expression": "t-j+1>20",
+      "other_five": "sensitivity only; no OR/AND",
+      "source_classification": "ADAPTATION"
+    },
+    "G13": {
+      "approved": "A",
+      "expression": "(d-b)/b>0.2",
+      "B": "diagnostic only",
+      "actual_throughput": "separate measured diagnostic; NOT_MEASURED this task",
+      "source_classification": "ADAPTATION"
+    }
+  },
+  "final_alert": false,
+  "G20": "OPEN",
+  "scope": "CPU rules/history and independent Draft; preserve defaults/C opt-in",
+  "prohibited": [
+    "privacy专项",
+    "history hash backfill",
+    "dependency installation",
+    "native compilation",
+    "GPU/NCCL",
+    "fault injection",
+    "M6-B"
+  ],
+  "approved_contract_sha256": {
+    "docs/m6b-ready/g2-science-decisions/G01_COMPLETE_CONTRACT.md": "28e9a785fd53a1aa4b8c04aee2d30a6eb372b638158909636fe258b32c8c0ffb",
+    "docs/m6b-ready/g2-science-decisions/G02_TIMELINE_OPTIONS.md": "9e7186ffcc3b18702890e1b5683e18921bdcf44a73bb86095dd64d2d844ed691",
+    "docs/m6b-ready/g2-science-decisions/G13_INTENSITY_OPTIONS.md": "60d57843b3dc3791f214f0948e77403c9079dbd6cdc6227d707414bd445444a7",
+    "docs/m6b-ready/g2-science-decisions/WRAPPER_DEFAULTS.json": "605a7855bfb78882db66c04a239e898ceff98f6a9f48fb2bbc1b261d1bb6dc45",
+    "docs/m6b-ready/g2-science-decisions/SOURCE_LEDGER.json": "873ee4b683042c321b74257f3142845ccfa46577b8fd8d067ddd515e699b9eed",
+    "docs/m6b-ready/g2-science-decisions/SCIENTIFIC_DECISIONS.json": "7eb89d82bf3bb4585369b13b52ae9f01b6701f3346ac47e97951101ac1d744b3"
+  }
+}

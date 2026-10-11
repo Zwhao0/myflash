@@ -1,0 +1,81 @@
+test_compressed_count_does_not_gate_original_span (__main__.Tests) ... ok
+test_drift_uses_current_cp_and_current_means (__main__.Tests) ... ok
+test_engine_failure_never_becomes_no_trigger (__main__.Tests) ... FAIL
+test_exact_recovery_and_direction_precedence (__main__.Tests) ... FAIL
+test_inclusive_20_21_22 (__main__.Tests) ... ok
+test_input_missing_duplicate_order_empty_short_constant (__main__.Tests) ... ok
+test_invalid_raw_and_padding (__main__.Tests) ... FAIL
+test_invalid_values_and_insufficient_means_fail_closed (__main__.Tests) ... ERROR
+test_no_future_leakage_and_default_optin (__main__.Tests) ... ok
+test_probability_and_spacing_before_recovery (__main__.Tests) ... ok
+test_real_preprocess_removal_and_compressed_cp (__main__.Tests) ... ok
+test_strict_binary64_A_and_diagnostic_B (__main__.Tests) ... 
+======================================================================
+ERROR: test_invalid_values_and_insufficient_means_fail_closed (__main__.Tests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<task05-checkout>/tests/m6b_ready_approved_detection.py", line 128, in test_invalid_values_and_insufficient_means_fail_closed
+    r = row(values, i=i)
+  File "<task05-checkout>/tests/m6b_ready_approved_detection.py", line 21, in row
+    return filter_candidates(prepared, [candidate(i, p)],
+  File "<task05-checkout>/flash/change_detection.py", line 67, in filter_candidates
+    return _filter_approved_candidates(prepared, candidates, latest, config)
+  File "<task05-checkout>/flash/change_detection.py", line 147, in _filter_approved_candidates
+    rows = filter_candidates(prepared, candidates, latest, config)
+  File "<task05-checkout>/flash/change_detection.py", line 84, in filter_candidates
+    degraded=statistics.fmean(right) if right else None
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/statistics.py", line 341, in fmean
+    total = fsum(data)
+OverflowError: intermediate overflow in fsum
+
+======================================================================
+FAIL: test_engine_failure_never_becomes_no_trigger (__main__.Tests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<task05-checkout>/tests/m6b_ready_approved_detection.py", line 174, in test_engine_failure_never_becomes_no_trigger
+    self.assertEqual((r['status'], r['reason']), (status, reason))
+AssertionError: Tuples differ: ('INSUFFICIENT_EVIDENCE', 'CONSTANT_SERIES_ZERO_VARIANCE') != ('BLOCKED', 'CANDIDATE_C_IDENTITY_REJECTED')
+
+First differing element 0:
+'INSUFFICIENT_EVIDENCE'
+'BLOCKED'
+
+- ('INSUFFICIENT_EVIDENCE', 'CONSTANT_SERIES_ZERO_VARIANCE')
++ ('BLOCKED', 'CANDIDATE_C_IDENTITY_REJECTED')
+
+======================================================================
+FAIL: test_exact_recovery_and_direction_precedence (__main__.Tests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<task05-checkout>/tests/m6b_ready_approved_detection.py", line 115, in test_exact_recovery_and_direction_precedence
+    self.assertEqual(r['stages']['recovery']['value'], .75)
+AssertionError: 0.25 != 0.75
+
+======================================================================
+FAIL: test_invalid_raw_and_padding (__main__.Tests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<task05-checkout>/tests/m6b_ready_approved_detection.py", line 161, in test_invalid_raw_and_padding
+    self.assertTrue(r['detection_trigger'])
+AssertionError: False is not true
+
+======================================================================
+FAIL: test_strict_binary64_A_and_diagnostic_B (__main__.Tests) (d=119.99999999999999)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<task05-checkout>/tests/m6b_ready_approved_detection.py", line 53, in test_strict_binary64_A_and_diagnostic_B
+    self.assertEqual(r['statistics']['degraded_mean'], d)
+AssertionError: 119.99999999999997 != 119.99999999999999
+
+======================================================================
+FAIL: test_strict_binary64_A_and_diagnostic_B (__main__.Tests) (d=120.00000000000001)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<task05-checkout>/tests/m6b_ready_approved_detection.py", line 53, in test_strict_binary64_A_and_diagnostic_B
+    self.assertEqual(r['statistics']['degraded_mean'], d)
+AssertionError: 120.00000000000003 != 120.00000000000001
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.018s
+
+FAILED (failures=5, errors=1)
