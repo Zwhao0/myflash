@@ -1,0 +1,12 @@
+{
+  "argv": [
+    "git",
+    "-C",
+    "<approved-checkout>",
+    "fetch",
+    "<private-run>/source02.bundle",
+    "refs/heads/codex/m6b-ready-g0f-cursor"
+  ],
+  "exit_code": 0,
+  "child_finished": true
+}

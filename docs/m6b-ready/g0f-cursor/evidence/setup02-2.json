@@ -1,0 +1,13 @@
+{
+  "argv": [
+    "git",
+    "-C",
+    "<approved-checkout>",
+    "switch",
+    "-c",
+    "codex/m6b-ready-g0f-cursor",
+    "FETCH_HEAD"
+  ],
+  "exit_code": 0,
+  "child_finished": true
+}

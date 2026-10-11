@@ -1,0 +1,14 @@
+{
+  "formal_unchanged": true,
+  "original_rbeast_sha256": "a7432000e18465d8e4d2ba895a8618b388007528757718d286fcb82440bbb157",
+  "original_server_checkout_clean_unchanged": true,
+  "all_six_test_children_waited": true,
+  "collector_actual_exit": 0,
+  "owned_services_created": 0,
+  "own_run_sockets": 0,
+  "redis": "NOT_RUN",
+  "gpu": "NOT_RUN",
+  "native_fit_or_build": "NOT_RUN",
+  "source_report": "evidence/validation-01/postflight.json",
+  "original_checkout_report": "evidence/original-checkout-postflight.json"
+}

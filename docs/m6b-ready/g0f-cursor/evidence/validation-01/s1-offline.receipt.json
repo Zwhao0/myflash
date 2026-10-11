@@ -1,0 +1,24 @@
+{
+  "command": [
+    "<approved-project>/.venv-m5/bin/python",
+    "tests/m5_s1_offline.py"
+  ],
+  "cwd": "<approved-checkout>",
+  "machine_alias": "node-0",
+  "timeout_budget_seconds": 120,
+  "environment": {
+    "LD_PRELOAD": "REMOVED",
+    "CUDA_VISIBLE_DEVICES": "",
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "M6_EVIDENCE_DIR": "<private-run>/validation-01/control-states"
+  },
+  "child_finished": true,
+  "exit_code": 0,
+  "timeout": false,
+  "owned_pid": "<owned-child-6>",
+  "elapsed_wall_seconds": 9.627239019959234,
+  "stdout": "s1-offline.stdout.txt",
+  "stderr": "s1-offline.stderr.txt",
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_sha256": "cfba7fb554787187d7109f74c8f10a9dfa2d01da39490c94caa681260c687514"
+}

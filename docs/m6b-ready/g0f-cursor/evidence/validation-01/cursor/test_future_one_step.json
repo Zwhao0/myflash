@@ -1,0 +1,36 @@
+{
+  "case": "test_future_one_step",
+  "input": {
+    "after_iteration_repr": "2",
+    "cursor_type": "int",
+    "read_kwargs": {}
+  },
+  "server_last": 1,
+  "server_retained_from": 1,
+  "server_stream": {
+    "last": 1,
+    "records": [
+      {
+        "record": {
+          "run_id": "m6b-cursor-cpu",
+          "global_rank": 0,
+          "iteration": 1,
+          "iteration_time_ms": 100.0,
+          "timestamp": "2026-10-10T00:00:00+00:00",
+          "source": "CPU_SIMULATED_FRAMEWORK",
+          "timing_boundary": "cpu_simulated_iteration_end",
+          "cuda_completion_wait": false
+        },
+        "sha256": "1a155df98433b996871cc5fcb80b97713b2046e70cea66415ae9ec3b3b5770fb",
+        "confirmed_at_seconds": 10.0
+      }
+    ]
+  },
+  "reader_sha256": "91d33ed162c914708a01ea499e7711b98d49b5ededf14e943a668178a3121221",
+  "returned": {
+    "status": "INSUFFICIENT_EVIDENCE",
+    "reason": "consumer cursor ahead of last confirmed iteration",
+    "final_alert": false,
+    "final_fault_ranks": []
+  }
+}

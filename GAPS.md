@@ -251,3 +251,17 @@ Historical installation original human message located (scope M6-A only, message
 time/version/path not supplied); future reuse requires owner decision. Prior
 FAIL/NOT_CAPTURED/normal provisional candidates/cross-label conflicts retained.
 See docs/m6b-ready/g0-evidence. Only next task: independent ChatGPT review.
+
+
+## M6B-READY-G0F cursor engineering scope (2026-10-11)
+ADAPTATION / task01 human-authorized future cursor contract implemented in
+flash/m6_iteration.py:IterationReader.read. Existing integer helper enforces
+type(value) is int and >=0 before store read; valid future cursor rejected only
+after existing integrity checks. None and legal boundaries preserve full window.
+77 CPU tests exit0; unchanged original9 red tests now green, old9failures/exit1
+raw and sanitized history byte preserved. Sources/argv/logs/environment and
+formal1424/.so preservation: docs/m6b-ready/g0f-cursor. Cursor engineering PASS
+only; original G01/G02/G04/G13/G09/G20 and other gate decisions remain OPEN/
+NOT_APPROVED, M6B-READY overall BLOCKED. No Redis/service/install/GPU/native fit.
+Historical privacy/PID/binary rights DEFERRED/OPEN by current task package, no
+history rewriting or scientific acceptance implied. Stop for exact-head review.

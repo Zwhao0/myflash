@@ -1,0 +1,12 @@
+{
+  "argv": [
+    "git",
+    "-C",
+    "<approved-checkout>",
+    "fetch",
+    "<historical-checkout>",
+    "5b91977b07b4f357e0c2e37490739e4a5803fea0"
+  ],
+  "exit_code": 128,
+  "child_finished": true
+}

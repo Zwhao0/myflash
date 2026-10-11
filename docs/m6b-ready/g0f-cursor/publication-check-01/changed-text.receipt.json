@@ -1,0 +1,18 @@
+{
+  "command": [
+    "/Library/Developer/CommandLineTools/usr/bin/python3",
+    "-c",
+    "import subprocess,sys\nfrom scripts.privacy_check import scan_text,sensitive_path\nfrom pathlib import Path\npaths=subprocess.check_output(['git','diff','70a83e7','--name-only']).decode().splitlines()\nassert all(p in ['STATUS.md','GAPS.md','flash/m6_iteration.py','tests/m6b_ready_cursor_extra.py','tasks/06b_ready_g0f_cursor.md'] or p.startswith('docs/m6b-ready/g0f-cursor/') for p in paths)\ncount=0\nfor p in paths:\n data=Path(p).read_text();findings=scan_text(p,data)\n if sensitive_path(p):findings.append((0,'private_path'))\n for line,category in findings:print(p,line,category)\n count+=len(findings)\nprint('CHANGED_TEXT files='+str(len(paths))+' findings='+str(count))\nsys.exit(int(bool(count)))\n"
+  ],
+  "cwd": "<local-project>/m6b-ready-work",
+  "exit_code": 0,
+  "timeout": false,
+  "child_finished": true,
+  "machine_alias": "local-macOS",
+  "python": "3.9.6 (default, May 22 2026, 11:13:45) \n[Clang 21.0.0 (clang-2100.1.1.101)]",
+  "elapsed_seconds": 0.5161057090000001,
+  "stdout": "changed-text.stdout.txt",
+  "stderr": "changed-text.stderr.txt",
+  "stdout_sha256": "907d4f949a9e2db60dc12d83264a8c57a503609d7bca7b82d07f7646c0379ba0",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

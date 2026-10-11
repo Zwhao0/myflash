@@ -1,0 +1,19 @@
+{
+  "command": [
+    "git",
+    "diff",
+    "70a83e7",
+    "--check"
+  ],
+  "cwd": "<local-project>/m6b-ready-work",
+  "exit_code": 0,
+  "timeout": false,
+  "child_finished": true,
+  "machine_alias": "local-macOS",
+  "python": "3.9.6 (default, May 22 2026, 11:13:45) \n[Clang 21.0.0 (clang-2100.1.1.101)]",
+  "elapsed_seconds": 0.01790675,
+  "stdout": "diff-check.stdout.txt",
+  "stderr": "diff-check.stderr.txt",
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

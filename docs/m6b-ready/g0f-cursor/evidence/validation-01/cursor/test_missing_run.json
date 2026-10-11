@@ -1,0 +1,18 @@
+{
+  "case": "test_missing_run",
+  "input": {
+    "after_iteration_repr": "0",
+    "cursor_type": "int",
+    "read_kwargs": {}
+  },
+  "server_last": null,
+  "server_retained_from": null,
+  "server_stream": null,
+  "reader_sha256": "91d33ed162c914708a01ea499e7711b98d49b5ededf14e943a668178a3121221",
+  "returned": {
+    "status": "BLOCKED",
+    "reason": "run state missing/restart",
+    "final_alert": false,
+    "final_fault_ranks": []
+  }
+}
