@@ -78,3 +78,6 @@ bridge02/03/04 的中间源码全文未保存，只有真实运行 SHA：NOT_CAP
 STATUS/GAPS append-only。changed-check01 使用既有 scan_text/sensitive_path
 规则，只检查本轮48个变化文件并解析新增 Python；actual exit0/findings0。
 没有完整历史隐私扫描 PASS，也没有用此检查关闭权利/隐私问题。
+
+Implementation commit `5d15bffc263efaf194a3eb27d357ba1d11376acf`, tree `b5018d4882843f880f6a391a56c4b8b5d39a5de7`; direct parent exact PR19.
+48 paths / 2936 additions / 0 deletions. Final seal changes docs only.
