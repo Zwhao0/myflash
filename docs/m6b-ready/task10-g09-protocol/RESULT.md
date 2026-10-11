@@ -72,3 +72,5 @@ SHA始终指明关联原始日志，脱敏内容不冒充原始字节。
 G09 OPEN、GPU注入NOT_RUN、M6-B NOT_STARTED；发布完即停，等待精确HEAD审核。
 
 发布检查check01实际exit0：本地macOS26.6.2 arm64/Python3.9.6；8变化文件文本findings0，2068基点文件字节相同，STATUS/GAPS对基点仅追加，协议/模板/ledger/任务对原TASK10提交字节完全相同。检查stdout/stderr/原脚本SHA公开在validation.json publication.checks；完整原argv/日志留私有。最终封存只补此回执。
+
+首次普通push实际exit0：审核提交 acfb5383f3326954e017b6746732bde72113aaa2 / tree ff52fa3952f2fa9b7639274998a170750c693453；远端HEAD及fetch回读tree与本地完全一致，task09基点仍为精确f44e3fb。check02及staged diff检查实际exit0。最后文档封存仅增加该实测发布回执，不改变协议/模板/来源/任务/运行字节；最终精确HEAD/tree与Draft PR链接绑定在PR正文和私有发布回执。

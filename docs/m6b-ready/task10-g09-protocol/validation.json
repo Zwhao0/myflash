@@ -40,7 +40,18 @@
         "stderr": ""
       }
     },
-    "new_changed_file_scan": "8files/findings0; check01 exit0; final docs seal does not alter protected protocol sources"
+    "new_changed_file_scan": "8files/findings0; check01 exit0; final docs seal does not alter protected protocol sources",
+    "first_push_and_readback": {
+      "head": "acfb5383f3326954e017b6746732bde72113aaa2",
+      "tree": "ff52fa3952f2fa9b7639274998a170750c693453",
+      "branch": "codex/task10-g09-protocol-review",
+      "base_branch": "codex/task09-m3-abi2-m6-cpu",
+      "base_head": "f44e3fb44e48979298a13efbd9dccad5000c3eef",
+      "head_and_tree_readback": "MATCH",
+      "all_readback_commands_exit": 0
+    },
+    "first_push_exit": 0,
+    "final_document_seal": "Only STATUS/RESULT/validation add actual first publication receipts; final precise HEAD/tree bound by Draft PR and private receipts"
   },
   "checks": {
     "classification": "ADAPTATION",

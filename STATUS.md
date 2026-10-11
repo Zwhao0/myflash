@@ -879,3 +879,5 @@ files, not full history or rights. G09 OPEN; GPU/Redis/server/M6-B NOT_RUN.
 Next unique task independent TASK10 precise remote HEAD protocol review; STOP.
 
 TASK10 publication check01 actual0: local macOS26.6.2 arm64/systemPython3.9.6; 8changed-file text findings0/2068base protected unchanged/two append-only. Protocol/template/ledger/task exact original local f2e435c bytes. Public command/stdout/stderr/script/log SHA in validation publication.checks; private exact argv preserved. No new runtime/science/GPU evidence.
+
+TASK10 first ordinary GitHub push actual exit0: acfb5383f3326954e017b6746732bde72113aaa2 / tree ff52fa3952f2fa9b7639274998a170750c693453. Remote head/tree readback MATCH, task09 exactf44e3fb unchanged. Publication check02 and staged diff actual0. Final seal adds only actual publication receipts; final precise head/tree/Draft PR in PR body/private publication receipts. STOP for independent remote protocol review; no M6-B.
