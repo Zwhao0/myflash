@@ -70,3 +70,19 @@ verify01 逐文件 Git 读取实际85.694s；最小修正仅批量读取完全�
 源码绑定和改变文本 findings0 全部再次通过。最终结果见 preservation-final.json 和
 validation.json；verify02 原超时与 NOT_CAPTURED 不回填为成功。最后只封装证据后
 再检查，不改运行代码或重跑 CPU 科学测试。
+
+## GitHub 审阅发布（ADAPTATION，2026-10-11）
+用户明确授权“GitHub pull 便于chat审核”。原本地工程提交
+`665fd51e87aa168576662e1979978bc3d0e6df74` / tree
+`530ddc7945533700facbc97adf98213e6a939a92` 保留；发布记录提交仅追加本结果、
+STATUS、task，其余2103个文件字节不变，运行代码/测试 SHA 仍对应实际24+149 CPU验收。
+本任务分支 `codex/task12-detector-profile` 建立独立 Draft PR，base 固定为 PR22
+分支 `codex/task11-m6b-ready-audit` 的精确0dd0e1c5。采用现有获准 GitHub 身份/
+SSH443，普通推送；未 force/merge/改变 main 或前序 PR，未执行下一任务。
+每条真实命令的 argv/cwd/实际主机/退出码/原始 stdout/stderr/SHA、最终远端
+HEAD/tree、独立 PR draft/base/head/未合并 readback 保存在私有
+`runs/task12-auto-profile-20261011/publication/publication-receipt.json` 和同目录
+独立回执；API 调用仅结构化结果，无进程退出码。最终精确 HEAD 在 PR正文及交付
+链接标明，避免此提交内自引用未来 SHA。CPU/GPU/native/Redis/server 不重跑；
+CI 未验证，历史失败和 NOT_CAPTURED 不变。下一唯一任务是独立审核该 Draft 精确
+HEAD；本次发布不构成 M6-B 或真实 H800 执行授权。

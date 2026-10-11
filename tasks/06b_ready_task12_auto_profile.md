@@ -34,3 +34,15 @@ intent 后 ACK 前/ACK 后请求前/远端成功后本地回执前中断、实�
 退出：本地可审阅提交，报告精确 HEAD/tree/diff/证据/未测边界，然后停止。
 本轮未授权远程发布；不默认生产切换、安装、阈值调整、最终告警、真实 Redis/
 GPU/native/server/框架/物理窗口/恢复实验或 M6-B。不推进后续任务。
+
+## 发布授权追加（ADAPTATION，2026-10-11）
+用户明确要求“GitHub pull 便于chat审核”，授权本任务分支
+`codex/task12-detector-profile` 普通推送及独立 Draft PR，base 为 PR22 的
+`codex/task11-m6b-ready-audit`，须确认精确0dd0e1c5。原本地工程提交
+`665fd51e87aa168576662e1979978bc3d0e6df74` 保留；仅本任务/STATUS/RESULT 追加
+发布记录，不改变运行代码、测试、原证据或已有科学规则。不重跑 CPU/GPU/native。
+使用用户指定既有 GitHub 身份与 SSH443；每条命令独立退出码和原始输出保留。
+身份/认证失败停止发布，不禁用主机校验、不改全局配置、不 force push/merge。
+远端 HEAD/tree、PR draft/base/head/未合并状态必须独立回读，完成后停止。
+完整回执位于私有 runs/task12-auto-profile-20261011/publication；连接器没有
+进程退出码。下一唯一动作是 ChatGPT 独立审核新 PR 精确 HEAD，不推进下一任务。

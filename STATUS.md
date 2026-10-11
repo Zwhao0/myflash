@@ -1025,3 +1025,18 @@ protected/2append-only/11source bindings/four executed runs,changed-text0.
 Original verify02 TIMEOUT1/source/NOT_CAPTURED retained. preservation-final.json
 and validation bind actual rerun; final evidence-only seal rechecked before local
 commit. No new runtime changes, CPU rerun, remote publish or next task.
+
+TASK12 GitHub publication authorization / 2026-10-11 (ADAPTATION): human explicitly
+asks “GitHub pull 便于chat审核”. Publish independent Draft from current task branch
+codex/task12-detector-profile to exact PR22 branch codex/task11-m6b-ready-audit.
+Original local implementation665fd51e87aa168576662e1979978bc3d0e6df74/tree
+530ddc7945533700facbc97adf98213e6a939a92 retained. Publication metadata only
+appends this STATUS, task and RESULT; all other2103files/runtime/test/raw evidence
+unchanged. No fresh CPU/science/GPU/native/Redis/server/M6-B execution or merge.
+Existing fixed GitHub identity via SSH443; separate argv/cwd/host/exit/stdout/
+stderr receipts in runs/task12-auto-profile-20261011/publication. Final ordinary
+push/remote HEAD+tree/PR Draft readback and local clean diff bound by private
+publication-receipt.json; connector responses have no process exit code.
+Historical verify02 static TIMEOUT1/NOT_CAPTURED and all prior gaps retained;
+CI NOT_VERIFIED, wider M6B-READY BLOCKED. Next unique independent ChatGPT exact
+remote-head review; STOP after publication, no further task authorization inferred.
