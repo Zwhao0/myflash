@@ -1,0 +1,29 @@
+{
+  "argv": [
+    "python3",
+    "docs/m6b-ready/g2-approved-detector/verify_history.py",
+    "--output",
+    "<task05-private-run>/history02"
+  ],
+  "cwd": "<task05-checkout>",
+  "started_utc": "2026-10-11T05:02:50.404926+00:00",
+  "elapsed_s": 0.23797020900000002,
+  "exit_code": 1,
+  "timeout": false,
+  "deadline_s": 120,
+  "logs": {
+    "stdout": {
+      "path": "<task05-private-run>/historical-replay02.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    "stderr": {
+      "path": "<task05-private-run>/historical-replay02.stderr",
+      "sha256": "1585bf8cc5b728963e28ef9a0ca022687d2fe9c588dbc3d6915734dd6a5408ea",
+      "size": 835
+    }
+  },
+  "machine": "zhangweihaodeMacBook-Air.local",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "recorder_python": "3.9.6 (default, May 22 2026, 11:13:45) \n[Clang 21.0.0 (clang-2100.1.1.101)]"
+}

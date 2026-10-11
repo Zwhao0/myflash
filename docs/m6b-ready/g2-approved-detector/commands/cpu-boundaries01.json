@@ -1,0 +1,28 @@
+{
+  "argv": [
+    "python3",
+    "tests/m6b_ready_approved_detection.py",
+    "-v"
+  ],
+  "cwd": "<task05-checkout>",
+  "started_utc": "2026-10-11T04:59:54.448670+00:00",
+  "elapsed_s": 0.094097292,
+  "exit_code": 1,
+  "timeout": false,
+  "deadline_s": 120,
+  "logs": {
+    "stdout": {
+      "path": "<task05-private-run>/cpu-boundaries01.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    "stderr": {
+      "path": "<task05-private-run>/cpu-boundaries01.stderr",
+      "sha256": "9caac76f575f92991542b77085cc2d8a0d770b8c9a2951add2969f1005798e0c",
+      "size": 5057
+    }
+  },
+  "machine": "zhangweihaodeMacBook-Air.local",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "recorder_python": "3.9.6 (default, May 22 2026, 11:13:45) \n[Clang 21.0.0 (clang-2100.1.1.101)]"
+}

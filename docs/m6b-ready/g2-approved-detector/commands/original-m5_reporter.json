@@ -1,0 +1,28 @@
+{
+  "argv": [
+    "python3",
+    "tests/m5_reporter.py",
+    "-v"
+  ],
+  "cwd": "<task05-checkout>",
+  "started_utc": "2026-10-11T05:00:36.688785+00:00",
+  "elapsed_s": 1.329838041,
+  "exit_code": 0,
+  "timeout": false,
+  "deadline_s": 120,
+  "logs": {
+    "stdout": {
+      "path": "<task05-private-run>/original-m5_reporter.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    "stderr": {
+      "path": "<task05-private-run>/original-m5_reporter.stderr",
+      "sha256": "c1f2d4a4b9f8d99f5e3e6474b74207a1b2cd68b447290ec12c6e87d53d15fccb",
+      "size": 335
+    }
+  },
+  "machine": "zhangweihaodeMacBook-Air.local",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "recorder_python": "3.9.6 (default, May 22 2026, 11:13:45) \n[Clang 21.0.0 (clang-2100.1.1.101)]"
+}

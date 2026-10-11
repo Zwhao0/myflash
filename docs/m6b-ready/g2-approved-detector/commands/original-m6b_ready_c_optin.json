@@ -1,0 +1,28 @@
+{
+  "argv": [
+    "python3",
+    "tests/m6b_ready_c_optin.py",
+    "-v"
+  ],
+  "cwd": "<task05-checkout>",
+  "started_utc": "2026-10-11T05:00:36.688620+00:00",
+  "elapsed_s": 0.06114625,
+  "exit_code": 0,
+  "timeout": false,
+  "deadline_s": 120,
+  "logs": {
+    "stdout": {
+      "path": "<task05-private-run>/original-m6b_ready_c_optin.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    "stderr": {
+      "path": "<task05-private-run>/original-m6b_ready_c_optin.stderr",
+      "sha256": "9b9709759c1d97e2da9376106f7d13993a4f20b09a5ea3ddfa8defa23ff8ae17",
+      "size": 512
+    }
+  },
+  "machine": "zhangweihaodeMacBook-Air.local",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "recorder_python": "3.9.6 (default, May 22 2026, 11:13:45) \n[Clang 21.0.0 (clang-2100.1.1.101)]"
+}

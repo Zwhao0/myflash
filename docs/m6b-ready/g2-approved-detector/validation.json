@@ -1,0 +1,183 @@
+{
+  "task": "M6B-READY-task05",
+  "status": "PASS_CPU_RULES_ONLY",
+  "approved_base": "5f9cccf2c8582837ba1050fafdf7f56106964465",
+  "source_sha256": {
+    "flash/change_detection.py": "a116ef88a31f52226a545fa5e3d08f7eb5d8264456ec5c7de637e0c6d76b1957",
+    "flash/rbeast_adapter.py": "e96aff41234a3beabb03ad15c712f8de064410ca8fad50cb74b5b0f440284408",
+    "tests/m6b_ready_approved_detection.py": "acf5a083ec9c5a1f13612bbc2444d05625755599ee5f4ba6cf92e9140d55e9ca",
+    "docs/m6b-ready/g2-approved-detector/verify_history.py": "c23bc01f2eadb937cb36912d8326fbba6f7b033e8434f0182cdf3ddbea1891f5"
+  },
+  "machine": "zhangweihaodeMacBook-Air.local",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "final_runtime": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+  "original_test_runtime": "local system Python3.9.6",
+  "new_tests": 13,
+  "original_tests": 36,
+  "history_counts": {
+    "replays": 560,
+    "prefixes": 25200,
+    "detailed_prefixes": 1260,
+    "native_candidate_slots": 7432,
+    "strict_prefixes": 138,
+    "reference_arrays": 960,
+    "reference_fits_read": 40,
+    "new_native_fits": 0
+  },
+  "commands": [
+    {
+      "label": "bundled-runtime-version",
+      "exit_code": 0,
+      "timeout": false,
+      "command": "commands/bundled-runtime-version.json",
+      "stdout": "logs/bundled-runtime-version.stdout",
+      "stderr": "logs/bundled-runtime-version.stderr"
+    },
+    {
+      "label": "cpu-boundaries-final",
+      "exit_code": 0,
+      "timeout": false,
+      "command": "commands/cpu-boundaries-final.json",
+      "stdout": "logs/cpu-boundaries-final.stdout",
+      "stderr": "logs/cpu-boundaries-final.stderr"
+    },
+    {
+      "label": "cpu-boundaries01",
+      "exit_code": 1,
+      "timeout": false,
+      "command": "commands/cpu-boundaries01.json",
+      "stdout": "logs/cpu-boundaries01.stdout",
+      "stderr": "logs/cpu-boundaries01.stderr"
+    },
+    {
+      "label": "cpu-boundaries02",
+      "exit_code": 0,
+      "timeout": false,
+      "command": "commands/cpu-boundaries02.json",
+      "stdout": "logs/cpu-boundaries02.stdout",
+      "stderr": "logs/cpu-boundaries02.stderr"
+    },
+    {
+      "label": "cpu-boundaries03",
+      "exit_code": 0,
+      "timeout": false,
+      "command": "commands/cpu-boundaries03.json",
+      "stdout": "logs/cpu-boundaries03.stdout",
+      "stderr": "logs/cpu-boundaries03.stderr"
+    },
+    {
+      "label": "historical-replay-final",
+      "exit_code": 0,
+      "timeout": false,
+      "command": "commands/historical-replay-final.json",
+      "stdout": "logs/historical-replay-final.stdout",
+      "stderr": "logs/historical-replay-final.stderr"
+    },
+    {
+      "label": "historical-replay01",
+      "exit_code": 1,
+      "timeout": false,
+      "command": "commands/historical-replay01.json",
+      "stdout": "logs/historical-replay01.stdout",
+      "stderr": "logs/historical-replay01.stderr"
+    },
+    {
+      "label": "historical-replay02",
+      "exit_code": 1,
+      "timeout": false,
+      "command": "commands/historical-replay02.json",
+      "stdout": "logs/historical-replay02.stdout",
+      "stderr": "logs/historical-replay02.stderr"
+    },
+    {
+      "label": "historical-replay03",
+      "exit_code": 0,
+      "timeout": false,
+      "command": "commands/historical-replay03.json",
+      "stdout": "logs/historical-replay03.stdout",
+      "stderr": "logs/historical-replay03.stderr"
+    },
+    {
+      "label": "original-cursor-correct02",
+      "exit_code": 0,
+      "timeout": false,
+      "command": "commands/original-cursor-correct02.json",
+      "stdout": "logs/original-cursor-correct02.stdout",
+      "stderr": "logs/original-cursor-correct02.stderr"
+    },
+    {
+      "label": "original-m5_detection",
+      "exit_code": 0,
+      "timeout": false,
+      "command": "commands/original-m5_detection.json",
+      "stdout": "logs/original-m5_detection.stdout",
+      "stderr": "logs/original-m5_detection.stderr"
+    },
+    {
+      "label": "original-m5_reporter",
+      "exit_code": 0,
+      "timeout": false,
+      "command": "commands/original-m5_reporter.json",
+      "stdout": "logs/original-m5_reporter.stdout",
+      "stderr": "logs/original-m5_reporter.stderr"
+    },
+    {
+      "label": "original-m6b_ready_c_optin",
+      "exit_code": 0,
+      "timeout": false,
+      "command": "commands/original-m6b_ready_c_optin.json",
+      "stdout": "logs/original-m6b_ready_c_optin.stdout",
+      "stderr": "logs/original-m6b_ready_c_optin.stderr"
+    },
+    {
+      "label": "original-m6b_ready_cursor_contract",
+      "exit_code": 2,
+      "timeout": false,
+      "command": "commands/original-m6b_ready_cursor_contract.json",
+      "stdout": "logs/original-m6b_ready_cursor_contract.stdout",
+      "stderr": "logs/original-m6b_ready_cursor_contract.stderr"
+    },
+    {
+      "label": "original-m6b_ready_cursor_extra",
+      "exit_code": 0,
+      "timeout": false,
+      "command": "commands/original-m6b_ready_cursor_extra.json",
+      "stdout": "logs/original-m6b_ready_cursor_extra.stdout",
+      "stderr": "logs/original-m6b_ready_cursor_extra.stderr"
+    },
+    {
+      "label": "seal01",
+      "exit_code": 0,
+      "timeout": false,
+      "command": "commands/seal01.json",
+      "stdout": "logs/seal01.stdout",
+      "stderr": "logs/seal01.stderr"
+    },
+    {
+      "label": "final-diff-check",
+      "exit_code": 0,
+      "timeout": false,
+      "command": "commands/final-diff-check.json",
+      "stdout": "logs/final-diff-check.stdout",
+      "stderr": "logs/final-diff-check.stderr"
+    },
+    {
+      "label": "staged-diff-check",
+      "exit_code": 2,
+      "timeout": false,
+      "command": "commands/staged-diff-check.json",
+      "stdout": "logs/staged-diff-check.stdout",
+      "stderr": "logs/staged-diff-check.stderr"
+    }
+  ],
+  "historical_binary_sha256": "1f08fbc9f24d0c00eb21f91f357519f15289ffd1ef18b9e7e0aca47c2596faeb",
+  "binary_this_round": "NOT_PROBED",
+  "native_fits": 0,
+  "install_compile_gpu_nccl_fault_m6b": "NOT_RUN",
+  "final_alert": false,
+  "G20": "OPEN",
+  "scientific_claim": "approved engineering rules only; no calibration/real fault recognition/GPU rates/online BOCD equivalence",
+  "history_3_9": "FAIL_STRICT_SAMPLE_STD_LAST_BITS_RETAINED",
+  "history_3_12_14": "PASS_SAME_STRICT_ASSERTION",
+  "diff_check": "tracked-before-staging exit0; full staged exit2 raw failure stderr whitespace retained"
+}

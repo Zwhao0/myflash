@@ -1,0 +1,28 @@
+{
+  "argv": [
+    "python3",
+    "tests/m6b_ready_cursor_contract.py",
+    "-v"
+  ],
+  "cwd": "<task05-checkout>",
+  "started_utc": "2026-10-11T05:00:36.689551+00:00",
+  "elapsed_s": 0.046354959,
+  "exit_code": 2,
+  "timeout": false,
+  "deadline_s": 120,
+  "logs": {
+    "stdout": {
+      "path": "<task05-private-run>/original-m6b_ready_cursor_contract.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    "stderr": {
+      "path": "<task05-private-run>/original-m6b_ready_cursor_contract.stderr",
+      "sha256": "eca31da36bc5ba87a822955d67a6e8d2ec707de35324cf48c1693e40b652f0ad",
+      "size": 141
+    }
+  },
+  "machine": "zhangweihaodeMacBook-Air.local",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "recorder_python": "3.9.6 (default, May 22 2026, 11:13:45) \n[Clang 21.0.0 (clang-2100.1.1.101)]"
+}

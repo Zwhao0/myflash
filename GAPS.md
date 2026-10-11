@@ -320,3 +320,23 @@ only enables task04 base, not science approval. Original failures/NOT_CAPTURED
 and historical rights/privacy stay unchanged. G04/G09/G20/M6-B still not approved.
 Next unique action independent Draft exact-head review and explicit full G01/
 G02/G13 selections; STOP, no task05.
+
+
+## Task05 owner-approved G01/G02/G13 engineering rules (2026-10-11)
+Status ACCEPTED_ASSUMPTION, not demonstrated classic online BOCD/calibration/
+real fault recognition. Explicit human approval in this chat at PR15 exact
+5f9cccf2c8582837ba1050fafdf7f56106964465: G01-a full24parameters/implicit behavior/
+compressed mapping/preprocessing/spacing/recovery/error order; G02 primary
+current-original inclusive t-j+1>20 (five others sensitivity only); G13 primary
+current filtered ms mean A=(d-b)/b strict>0.2, B/measured throughput diagnostics.
+PAPER facts/conflicts retained, UPSTREAM fixed Rbeast0.1.25, ADAPTATION selected
+engineering assumptions; EXTENSION CPU/history-only evidence. Implemented in
+flash/change_detection.py via explicit approved_rules=True; original default
+and C opt-in behavior retained. Model/qualified/trigger separate, final_alert=false,
+G20 OPEN. Contract approval/hash/CPU command exits and historical strict output/
+array evidence: docs/m6b-ready/g2-approved-detector. Existing3.12.14 local CPU13
+new+36old and560historical replays pass; no new native fits/GPU or claim of all
+21steps physical degradation/1-2final latency. Python3.9 historical strict std
+last-bit FAIL retained; no cross-version exact equality guarantee. Historical
+failure/NOT_CAPTURED/cache gaps unchanged. G04/G09/G20/M6-B require later gates;
+STOP for independent task05 exact-head Draft review, no next task execution.

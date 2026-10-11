@@ -1,0 +1,24 @@
+{
+  "implementation_head": "d167106ef5bc9fb882d0bb1ab1601786d8237328",
+  "implementation_tree": "c4e8302d545136ff68aa27a95054a5e3fbb9414e",
+  "base": "5f9cccf2c8582837ba1050fafdf7f56106964465",
+  "source_sha256": {
+    "flash/change_detection.py": "a116ef88a31f52226a545fa5e3d08f7eb5d8264456ec5c7de637e0c6d76b1957",
+    "flash/rbeast_adapter.py": "e96aff41234a3beabb03ad15c712f8de064410ca8fad50cb74b5b0f440284408",
+    "tests/m6b_ready_approved_detection.py": "acf5a083ec9c5a1f13612bbc2444d05625755599ee5f4ba6cf92e9140d55e9ca",
+    "docs/m6b-ready/g2-approved-detector/verify_history.py": "c23bc01f2eadb937cb36912d8326fbba6f7b033e8434f0182cdf3ddbea1891f5"
+  },
+  "actual_final_command_receipts": [
+    "commands/cpu-boundaries-final.json",
+    "commands/historical-replay-final.json"
+  ],
+  "final_documentation_only": "no scientific/source/test changes",
+  "strict_history_3_12_14": "PASS",
+  "strict_history_3_9_6": "FAIL_RETAINED",
+  "history_public_serialization": "compact JSON; all values semantically equal to private original",
+  "history_private_sha256": "339bc108d4eff7d0c8f16e24bc03418796d0d932f32d69798a24c418936aa5b1",
+  "history_public_sha256": "275243d9ccff8cecf37e32ea70038014b9a54b6b4fddebf655bb40d10b793b57",
+  "code_diff_check": 0,
+  "full_staged_diff_check": 2,
+  "reason": "retained initial CPU stderr unittest trailing whitespace"
+}

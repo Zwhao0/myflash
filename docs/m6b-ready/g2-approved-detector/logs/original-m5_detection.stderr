@@ -1,0 +1,13 @@
+test_input_defects (__main__.Tests) ... ok
+test_means_latest_and_recovery (__main__.Tests) ... ok
+test_native_shapes_and_indices (__main__.Tests) ... ok
+test_prefix_causality (__main__.Tests) ... ok
+test_preprocessing_mapping (__main__.Tests) ... ok
+test_right_endpoint_zero_denominator (__main__.Tests) ... ok
+test_spacing_original_iterations (__main__.Tests) ... ok
+test_threshold_sensitivity_facts (__main__.Tests) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.018s
+
+OK

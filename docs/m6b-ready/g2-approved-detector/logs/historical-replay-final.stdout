@@ -1,0 +1,247 @@
+{
+  "status": "PASS_LOCAL_CPU_HISTORICAL_RULES_ONLY",
+  "counts": {
+    "replays": 560,
+    "prefixes": 25200,
+    "detailed_prefixes": 1260,
+    "native_candidate_slots": 7432,
+    "strict_prefixes": 138,
+    "reference_arrays": 960,
+    "reference_fits_read": 40,
+    "new_native_fits": 0
+  },
+  "results": [
+    {
+      "batch": "m5-p1-c-batch01",
+      "scenario": "stable",
+      "first_detection_trigger": null,
+      "first_diagnostic_B": null,
+      "A_B_disagreements": []
+    },
+    {
+      "batch": "m5-p1-c-batch01",
+      "scenario": "sustained",
+      "first_detection_trigger": 41,
+      "first_diagnostic_B": 41,
+      "A_B_disagreements": []
+    },
+    {
+      "batch": "m5-p1-c-batch01",
+      "scenario": "growth_19",
+      "first_detection_trigger": null,
+      "first_diagnostic_B": null,
+      "A_B_disagreements": []
+    },
+    {
+      "batch": "m5-p1-c-batch01",
+      "scenario": "growth_20",
+      "first_detection_trigger": 43,
+      "first_diagnostic_B": null,
+      "A_B_disagreements": [
+        43,
+        45
+      ]
+    },
+    {
+      "batch": "m5-p1-c-batch01",
+      "scenario": "growth_21",
+      "first_detection_trigger": 41,
+      "first_diagnostic_B": null,
+      "A_B_disagreements": [
+        41,
+        42,
+        43,
+        44,
+        45
+      ]
+    },
+    {
+      "batch": "m5-p1-c-batch01",
+      "scenario": "spike",
+      "first_detection_trigger": null,
+      "first_diagnostic_B": null,
+      "A_B_disagreements": []
+    },
+    {
+      "batch": "m5-p1-c-batch01",
+      "scenario": "recovery",
+      "first_detection_trigger": null,
+      "first_diagnostic_B": null,
+      "A_B_disagreements": []
+    },
+    {
+      "batch": "m5-p1-c-batch02",
+      "scenario": "stable",
+      "first_detection_trigger": null,
+      "first_diagnostic_B": null,
+      "A_B_disagreements": []
+    },
+    {
+      "batch": "m5-p1-c-batch02",
+      "scenario": "sustained",
+      "first_detection_trigger": 41,
+      "first_diagnostic_B": 41,
+      "A_B_disagreements": []
+    },
+    {
+      "batch": "m5-p1-c-batch02",
+      "scenario": "growth_19",
+      "first_detection_trigger": null,
+      "first_diagnostic_B": null,
+      "A_B_disagreements": []
+    },
+    {
+      "batch": "m5-p1-c-batch02",
+      "scenario": "growth_20",
+      "first_detection_trigger": 43,
+      "first_diagnostic_B": null,
+      "A_B_disagreements": [
+        43,
+        45
+      ]
+    },
+    {
+      "batch": "m5-p1-c-batch02",
+      "scenario": "growth_21",
+      "first_detection_trigger": 41,
+      "first_diagnostic_B": null,
+      "A_B_disagreements": [
+        41,
+        42,
+        43,
+        44,
+        45
+      ]
+    },
+    {
+      "batch": "m5-p1-c-batch02",
+      "scenario": "spike",
+      "first_detection_trigger": null,
+      "first_diagnostic_B": null,
+      "A_B_disagreements": []
+    },
+    {
+      "batch": "m5-p1-c-batch02",
+      "scenario": "recovery",
+      "first_detection_trigger": null,
+      "first_diagnostic_B": null,
+      "A_B_disagreements": []
+    },
+    {
+      "batch": "s2-c-batch01",
+      "scenario": "stable",
+      "first_detection_trigger": null,
+      "first_diagnostic_B": null,
+      "A_B_disagreements": []
+    },
+    {
+      "batch": "s2-c-batch01",
+      "scenario": "sustained",
+      "first_detection_trigger": 41,
+      "first_diagnostic_B": 41,
+      "A_B_disagreements": []
+    },
+    {
+      "batch": "s2-c-batch01",
+      "scenario": "growth_19",
+      "first_detection_trigger": null,
+      "first_diagnostic_B": null,
+      "A_B_disagreements": []
+    },
+    {
+      "batch": "s2-c-batch01",
+      "scenario": "growth_20",
+      "first_detection_trigger": 43,
+      "first_diagnostic_B": null,
+      "A_B_disagreements": [
+        43,
+        45
+      ]
+    },
+    {
+      "batch": "s2-c-batch01",
+      "scenario": "growth_21",
+      "first_detection_trigger": 41,
+      "first_diagnostic_B": null,
+      "A_B_disagreements": [
+        41,
+        42,
+        43,
+        44,
+        45
+      ]
+    },
+    {
+      "batch": "s2-c-batch01",
+      "scenario": "spike",
+      "first_detection_trigger": null,
+      "first_diagnostic_B": null,
+      "A_B_disagreements": []
+    },
+    {
+      "batch": "s2-c-batch01",
+      "scenario": "recovery",
+      "first_detection_trigger": null,
+      "first_diagnostic_B": null,
+      "A_B_disagreements": []
+    },
+    {
+      "batch": "s2-c-batch02",
+      "scenario": "stable",
+      "first_detection_trigger": null,
+      "first_diagnostic_B": null,
+      "A_B_disagreements": []
+    },
+    {
+      "batch": "s2-c-batch02",
+      "scenario": "sustained",
+      "first_detection_trigger": 41,
+      "first_diagnostic_B": 41,
+      "A_B_disagreements": []
+    },
+    {
+      "batch": "s2-c-batch02",
+      "scenario": "growth_19",
+      "first_detection_trigger": null,
+      "first_diagnostic_B": null,
+      "A_B_disagreements": []
+    },
+    {
+      "batch": "s2-c-batch02",
+      "scenario": "growth_20",
+      "first_detection_trigger": 43,
+      "first_diagnostic_B": null,
+      "A_B_disagreements": [
+        43,
+        45
+      ]
+    },
+    {
+      "batch": "s2-c-batch02",
+      "scenario": "growth_21",
+      "first_detection_trigger": 41,
+      "first_diagnostic_B": null,
+      "A_B_disagreements": [
+        41,
+        42,
+        43,
+        44,
+        45
+      ]
+    },
+    {
+      "batch": "s2-c-batch02",
+      "scenario": "spike",
+      "first_detection_trigger": null,
+      "first_diagnostic_B": null,
+      "A_B_disagreements": []
+    },
+    {
+      "batch": "s2-c-batch02",
+      "scenario": "recovery",
+      "first_detection_trigger": null,
+      "first_diagnostic_B": null,
+      "A_B_disagreements": []
+    }
+  ]
+}

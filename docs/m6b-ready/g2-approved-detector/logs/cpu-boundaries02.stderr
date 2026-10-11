@@ -1,0 +1,17 @@
+test_compressed_count_does_not_gate_original_span (__main__.Tests) ... ok
+test_drift_uses_current_cp_and_current_means (__main__.Tests) ... ok
+test_engine_failure_never_becomes_no_trigger (__main__.Tests) ... ok
+test_exact_recovery_and_direction_precedence (__main__.Tests) ... ok
+test_inclusive_20_21_22 (__main__.Tests) ... ok
+test_input_missing_duplicate_order_empty_short_constant (__main__.Tests) ... ok
+test_invalid_raw_and_padding (__main__.Tests) ... ok
+test_invalid_values_and_insufficient_means_fail_closed (__main__.Tests) ... ok
+test_no_future_leakage_and_default_optin (__main__.Tests) ... ok
+test_probability_and_spacing_before_recovery (__main__.Tests) ... ok
+test_real_preprocess_removal_and_compressed_cp (__main__.Tests) ... ok
+test_strict_binary64_A_and_diagnostic_B (__main__.Tests) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.019s
+
+OK

@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "<task05-checkout>/docs/m6b-ready/g2-approved-detector/verify_history.py", line 245, in <module>
+    main()
+  File "<task05-checkout>/docs/m6b-ready/g2-approved-detector/verify_history.py", line 176, in main
+    assert isinstance(fixture, list) and len(fixture) == 45
+AssertionError

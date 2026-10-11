@@ -1,0 +1,22 @@
+{
+  "base": "5f9cccf2c8582837ba1050fafdf7f56106964465",
+  "base_tree": "017b7f2eb65328c5b52788957ea0bd2e96e99f8c",
+  "files": 1882,
+  "unchanged": 1879,
+  "append_only": [
+    "STATUS.md",
+    "GAPS.md"
+  ],
+  "modified": [
+    "flash/change_detection.py"
+  ],
+  "legacy_function_body_ast_equal": [
+    "preprocess",
+    "DetectionConfig",
+    "filter_candidates after explicit dispatch",
+    "detect after explicit dispatch"
+  ],
+  "preceding_pr15_checkout": "ALL1882_DISK_BLOBS_EQUAL",
+  "server_environment": "NOT_PROBED",
+  "original_failures": "PRESERVED"
+}
