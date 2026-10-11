@@ -1,0 +1,14 @@
+{
+  "base_head": "89cfdbb679b55aa8f81d39f39c72e77426976d85",
+  "base_files": 2015,
+  "manifest_sha256": "f9b134d9837a2498f5d0c03a4deaf8af2515e546b4ba7367e9b53f9ad5258d1f",
+  "protected_byte_identical": 2012,
+  "append_only": [
+    "STATUS.md",
+    "GAPS.md"
+  ],
+  "allowed_source_modification": [
+    "flash/iteration_reporter.py"
+  ],
+  "full_manifest_private_path": "runs/task08-g20-20261011/preservation-full.json"
+}

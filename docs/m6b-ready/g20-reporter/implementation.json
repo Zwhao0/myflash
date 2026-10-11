@@ -1,0 +1,101 @@
+{
+  "implementation_commit": "14a6a646a2b2990810be7e0728878e29b0cf5e50",
+  "implementation_tree": "3102ca2e131a0289a435bd180116eeb143f03352",
+  "parent": "89cfdbb679b55aa8f81d39f39c72e77426976d85",
+  "diff": {
+    "paths": 10,
+    "insertions": 1352,
+    "deletions": 7
+  },
+  "commands": {
+    "stage": {
+      "argv": [
+        "git",
+        "add",
+        "flash/iteration_reporter.py",
+        "flash/iteration_outbox.py",
+        "tests/m6b_ready_reporter_outbox.py",
+        "tasks/06b_ready_g20_reporter.md",
+        "docs/m6b-ready/g20-reporter",
+        "STATUS.md",
+        "GAPS.md"
+      ],
+      "exit_code": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "staged-diff-check": {
+      "argv": [
+        "git",
+        "diff",
+        "--cached",
+        "--check"
+      ],
+      "exit_code": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "staged-diff-stat": {
+      "argv": [
+        "git",
+        "diff",
+        "--cached",
+        "--stat"
+      ],
+      "exit_code": 0,
+      "stdout_sha256": "c48a4dcb98b9a0b72fd14a7be5d0d59b0a47cb6eba3b66f3129b0a9839be236a",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "implementation-commit": {
+      "argv": [
+        "git",
+        "-c",
+        "user.name=Codex",
+        "-c",
+        "user.email=codex@localhost",
+        "commit",
+        "-m",
+        "Implement G20 durable iteration outbox and explicit cursor ACK"
+      ],
+      "exit_code": 0,
+      "stdout_sha256": "14bd37b8fc7f5a3ced6800dec7e69e34026d2600bfef35d192773d6fa4f1b946",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "implementation-head": {
+      "argv": [
+        "git",
+        "show",
+        "--no-patch",
+        "--format=%H%n%T%n%P",
+        "HEAD"
+      ],
+      "exit_code": 0,
+      "stdout_sha256": "0a72a5f7239053792f3d83642b0c8246cade4d18e409b15b3cbd212169dee3bb",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "implementation-diff": {
+      "argv": [
+        "git",
+        "diff",
+        "--stat",
+        "89cfdbb679b55aa8f81d39f39c72e77426976d85",
+        "HEAD"
+      ],
+      "exit_code": 0,
+      "stdout_sha256": "c48a4dcb98b9a0b72fd14a7be5d0d59b0a47cb6eba3b66f3129b0a9839be236a",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "parent-worktree": {
+      "argv": [
+        "git",
+        "-C",
+        "../m6b-s7-work",
+        "status",
+        "--porcelain"
+      ],
+      "exit_code": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

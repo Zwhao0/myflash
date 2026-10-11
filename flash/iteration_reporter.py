@@ -2,6 +2,7 @@
 No torch import or CUDA synchronization unless a framework explicitly supplies it.
 """
 import datetime
+import hashlib
 import json
 import math
 import os
@@ -50,7 +51,25 @@ class IterationRecord:
 
 class Publisher(Protocol):
     """M6 may implement Redis publication of a completed record; no connection here."""
-    def publish(self, record: IterationRecord) -> None: ...
+    def publish(self, record: IterationRecord) -> object: ...
+
+
+class PublicationUnconfirmed(RuntimeError):
+    """Completed record retained; retry end() without recomputing timing."""
+    def __init__(self, record, receipt):
+        super().__init__('iteration publication not confirmed')
+        self.record, self.receipt = record, receipt
+
+
+def confirmed_receipt(record, receipt, *, legacy_none=False):
+    """ADAPTATION exact M6 ACK contract; None only for legacy local sinks."""
+    if receipt is None:
+        return legacy_none
+    payload = json.dumps(asdict(record), sort_keys=True, separators=(',', ':'), allow_nan=False)
+    return (isinstance(receipt, dict) and receipt.get('confirmed') is True and
+            receipt.get('status') in ('WRITE_CONFIRMED', 'DUPLICATE_CONFIRMED') and
+            receipt.get('sha256') == hashlib.sha256(payload.encode()).hexdigest() and
+            receipt.get('server_memory_ack') is True)
 
 
 def validate_sequence(records):
@@ -121,6 +140,7 @@ class IterationReporter:
         self.source, self.timing_boundary = source, timing_boundary
         self.completion_wait, self.clock = completion_wait, clock
         self.active = None
+        self.pending = None
 
     def begin(self, iteration):
         integer(iteration, 1, 'iteration')
@@ -131,18 +151,25 @@ class IterationReporter:
         self.active = (iteration, self.clock())
 
     def abort(self):
+        if self.pending is not None:
+            raise ValueError('completed unconfirmed iteration cannot be aborted; retry end')
         self.active = None
 
     def end(self):
         if self.active is None:
             raise ValueError('no active iteration')
-        if self.completion_wait:
-            self.completion_wait()
-        iteration, start = self.active
-        elapsed = (self.clock() - start) / 1_000_000
-        record = IterationRecord(self.run_id, self.global_rank, iteration, elapsed,
+        if self.pending is None:
+            if self.completion_wait:
+                self.completion_wait()
+            iteration, start = self.active
+            elapsed = (self.clock() - start) / 1_000_000
+            self.pending = IterationRecord(self.run_id, self.global_rank, iteration, elapsed,
                                  datetime.datetime.now(datetime.timezone.utc).isoformat(),
                                  self.source, self.timing_boundary, self.completion_wait is not None)
-        self.publisher.publish(record)
+        record = self.pending
+        receipt = self.publisher.publish(record)
+        if not confirmed_receipt(record, receipt, legacy_none=True):
+            raise PublicationUnconfirmed(record, receipt)
         self.active = None
+        self.pending = None
         return record
