@@ -1,0 +1,12 @@
+{
+  "local_tracked_files": 1517,
+  "local_all_byte_identical": true,
+  "formal_files": 1424,
+  "formal_before_after_equal": true,
+  "formal_original_native_sha256": "a7432000e18465d8e4d2ba895a8618b388007528757718d286fcb82440bbb157",
+  "formal_raw_before_sha256": "bb069f48d662ebf67bf85177fb5032156e22c2b82b959dbe70b39f2f38a98e6b",
+  "formal_raw_after_sha256": "e2a56c699d5eaf55b065c21f2125dc43a48b78594bc4f5e34156d2084a940c2f",
+  "formal_private_manifest": "formal-files.json",
+  "old_FAIL_NOT_CAPTURED": "All 1517 tracked files unchanged; historical raw failures not modified or rerun",
+  "no_core_tests_fixtures_scientific_changes": true
+}

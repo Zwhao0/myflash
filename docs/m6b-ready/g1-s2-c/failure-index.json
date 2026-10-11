@@ -1,0 +1,82 @@
+{
+  "failures": [
+    {
+      "label": "setup01",
+      "exit_code": null,
+      "timeout": true,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "scope": "preparation/publication wrapper; no scientific assertion changed"
+    },
+    {
+      "label": "launch01",
+      "exit_code": 1,
+      "timeout": false,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "8c91e2ef63e683740e2b28715766473da8e27aaf25926e7df43b3023b6e6e7b9",
+      "scope": "preparation/publication wrapper; no scientific assertion changed"
+    },
+    {
+      "label": "publication-text-preliminary",
+      "exit_code": null,
+      "timeout": true,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "scope": "preparation/publication wrapper; no scientific assertion changed"
+    },
+    {
+      "label": "first-cursor-invocation",
+      "exit_code": 2,
+      "original_parent_exit": 1,
+      "native_fit_retries": 0,
+      "remedy": "one required CLI argument in new caller; missed tests and unchanged comparator only"
+    },
+    {
+      "label": "complete-formal-preinstall-manifest",
+      "status": "NOT_CAPTURED",
+      "uncovered_cache_files": 915,
+      "overall_status": "BLOCKED"
+    },
+    {
+      "label": "exporter-syntax-preparation",
+      "actual_tool_shell_exit": 1,
+      "raw_capture": "TOOL_OUTPUT_ONLY",
+      "scientific_or_native_execution": false
+    },
+    {
+      "label": "local-progress-debug-read",
+      "actual_tool_shell_exit": 1,
+      "raw_capture": "TOOL_OUTPUT_ONLY",
+      "scientific_or_native_execution": false
+    },
+    {
+      "label": "historical_failures",
+      "status": "PRESERVED",
+      "items": "M5-R/A/B FAIL; three historical NOT_CAPTURED; G0-E original red9/exit1; preflight nested128",
+      "raw_files": 131811
+    },
+    {
+      "label": "new-exact-privacy-length-assumption",
+      "exit_code": 1,
+      "timeout": false,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "f8d50b8c713b9cc356c364e338abcdcc2f63a6b3e8344950f3297a9b43b946b6",
+      "scope": "new privacy helper had unsupported credential-length assumption; changed helper only, no original scanner/science assertions changed, no credential printed"
+    },
+    {
+      "label": "diff-format01",
+      "exit_code": 2,
+      "timeout": false,
+      "scope": "whitespace in complete original stdout; no log trimming or science assertions changed",
+      "stdout_sha256": "5b62498ca6656c7314753aa0319940b7b9ed601932de612cd564fbde327154d0"
+    },
+    {
+      "label": "local-checks-stdin-encoding",
+      "raw_capture": "TOOL_OUTPUT_ONLY",
+      "diagnostic": "Non-UTF-8 stdin parser diagnostic; helper did not execute; following stage command0 masked aggregate status",
+      "scientific_or_native_execution": false
+    }
+  ],
+  "never_overwrite": true,
+  "never_selective_native_retry": true
+}

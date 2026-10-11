@@ -265,3 +265,26 @@ only; original G01/G02/G04/G13/G09/G20 and other gate decisions remain OPEN/
 NOT_APPROVED, M6B-READY overall BLOCKED. No Redis/service/install/GPU/native fit.
 Historical privacy/PID/binary rights DEFERRED/OPEN by current task package, no
 history rewriting or scientific acceptance implied. Stop for exact-head review.
+
+
+## M6B-READY G1-S2-C / task02 (2026-10-11)
+ADAPTATION: explicit human isolated-C CPU execution authorization satisfied;
+Gate0F exact3ba7dad independently PASS per human report. Existing scientific
+parameters/fixtures/comparator/assertions unchanged, no new upstream build.
+C runtime/native/API/full-short and two full posterior matrices plus original
+CPU regressions actual PASS within bounded CPU scope; 11080matrix fits,
+265920arrays,12600prefixes. CLI caller missing-output defect retained2/parent1;
+new caller argument repaired, missed tests/comparator0, no native retry/data
+mutation. Historical M5-R/A/B failures and three NOT_CAPTURED remain.
+
+Overall S2 engineering acceptance BLOCKED: full formal preinstall inventory
+NOT_CAPTURED;1424noncache bytes/original.so a7432000... pre/post preserved,
+actual2339 files includes915cache files without preinstall SHA. Postinstall
+full2339 match cannot substitute. Source/history/probability/output audits and
+failure index: docs/m6b-ready/g1-s2-c; earlier unpublished preflight7 docs now
+included unchanged. Formal adoption NOT_APPROVED, M6-B NOT_RUN; original
+G01/G02/G04/G09/G13/G20 remain OPEN, historic rights/privacy DEFERRED/OPEN.
+Next unique task independent precise-head Draft PR review and gap decision;
+stop, do not execute task03 or reinstall/rerun to backfill missing baseline.
+
+Own formal-inventory instrumentation corrected to include cache; readonly function actual2339/915 omitted-cache, fits0/installations0. Corrected full installer/native runner NOT_RUN; current preinstall full snapshot still NOT_CAPTURED and overallBLOCKED. PR13 independent Draft, precise final publication/CI bound in PR/private receipt; STOP.

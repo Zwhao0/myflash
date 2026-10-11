@@ -1,0 +1,199 @@
+{
+  "task": "02 / G1 S2 C isolated acceptance",
+  "status": "REQUIRES_OWNER_DECISION",
+  "preflight": "PASS_STATIC_ONLY",
+  "source_head": "3ba7dad2070ad13466b4f14562ee54fa4a3e818b",
+  "source_tree": "a3bbf9d885e0f2f563f54086fb007f646c826f8d",
+  "machine": "node-0; local-macOS transport/report",
+  "node_python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "node_python_sha256": "e50d468e8b0adfb05733f5b87b3cff34829c4a8c1aea50c865aa8bdfe4bb150f",
+  "local_python": "3.9.6 (default, May 22 2026, 11:13:45) \n[Clang 21.0.0 (clang-2100.1.1.101)]",
+  "local_platform": "macOS-26.6.2-arm64-arm-64bit",
+  "source_status": "CLEAN",
+  "artifacts": [
+    {
+      "native": {
+        "Rbeast/Rbeast.cpython-312-x86_64-linux-gnu.so": {
+          "elf_class": 2,
+          "elf_data": 1,
+          "elf_machine": 62,
+          "magic": "7f454c46",
+          "sha256": "1f08fbc9f24d0c00eb21f91f357519f15289ffd1ef18b9e7e0aca47c2596faeb"
+        }
+      },
+      "notices": {
+        "rbeast-0.1.25.dist-info/licenses/LICENSE": "f8a7108c7df0decd71af2e669dbfafbc9592c381f9cb704c886249e93eebb0aa"
+      },
+      "path": "<project>/runs/m5-p1-work/runs/m5-p1-build-01/C/dist/rbeast-0.1.25-2c-cp312-cp312-linux_x86_64.whl",
+      "record": {
+        "checked_members": 22,
+        "errors": [],
+        "records": [
+          "rbeast-0.1.25.dist-info/RECORD"
+        ]
+      },
+      "sha256": "a4925769e85d015682712fd18f924d3ad02e4a02e4f8bca9e4280028353c29ce",
+      "size": 1472780,
+      "zip_test_bad_member": null
+    },
+    {
+      "notices": {
+        "numpy-2.2.6.dist-info/LICENSE.txt": "c002bd26de7dc7aa464250a0de063d58fe55974452e4389e5c21c350a820bf06",
+        "numpy/_core/include/numpy/random/LICENSE.txt": "fbc539f47d0cf83bc61378080fb873d5c14630126cacbfe754035c3926daa5ec",
+        "numpy/ma/LICENSE": "05f3b88351988ecfad10abe92c0c50e5875c6452d5009a0084cc291551ffcca6",
+        "numpy/random/LICENSE.md": "103166b62b80443afb9eb3488e052ea06be0cff566b908f199e561fde49af19f"
+      },
+      "path": "<project>/runs/m5-p1-access/packages/numpy-2.2.6-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "record": {
+        "checked_members": 875,
+        "errors": [],
+        "records": [
+          "numpy-2.2.6.dist-info/RECORD"
+        ]
+      },
+      "sha256": "fd83c01228a688733f1ded5201c678f0c53ecc1006ffbc404db9f7a899ac6249",
+      "size": 16527618,
+      "zip_test_bad_member": null
+    },
+    {
+      "path": "<project>/runs/m5-p1-access/rbeast-0.1.25.tar.gz",
+      "sha256": "8265bd53f9c16bdb1ab103de047288ea1af6875415394abf3ac0104cfb2917ec",
+      "size": 747648
+    },
+    {
+      "path": "<project>/runs/m5-s1-work/runs/m5-s1-input/rbeast-0.1.25.tar.gz",
+      "sha256": "8265bd53f9c16bdb1ab103de047288ea1af6875415394abf3ac0104cfb2917ec",
+      "size": 747648
+    }
+  ],
+  "wheel_metadata": [
+    {
+      "path": "<project>/runs/m5-p1-work/runs/m5-p1-build-01/C/dist/rbeast-0.1.25-2c-cp312-cp312-linux_x86_64.whl",
+      "WHEEL": {
+        "rbeast-0.1.25.dist-info/WHEEL": "Wheel-Version: 1.0\nGenerator: setuptools (80.9.0)\nRoot-Is-Purelib: false\nBuild: 2c\nTag: cp312-cp312-linux_x86_64\n\n"
+      },
+      "requirements": [
+        "Requires-Python: >=3.5",
+        "Requires-Dist: numpy>=1.10.0"
+      ]
+    },
+    {
+      "path": "<project>/runs/m5-p1-access/packages/numpy-2.2.6-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "WHEEL": {
+        "numpy-2.2.6.dist-info/WHEEL": "Wheel-Version: 1.0\nGenerator: meson\nRoot-Is-Purelib: false\nTag: cp312-cp312-manylinux_2_17_x86_64\nTag: cp312-cp312-manylinux2014_x86_64\n\n"
+      },
+      "requirements": [
+        "Requires-Python: >=3.10"
+      ]
+    }
+  ],
+  "receipts": [
+    {
+      "argv": [
+        "ssh",
+        "-o",
+        "ConnectTimeout=10",
+        "-o",
+        "NumberOfPasswordPrompts=1",
+        "<node-0>",
+        "env -u LD_PRELOAD CUDA_VISIBLE_DEVICES= PYTHONDONTWRITEBYTECODE=1 python3 -"
+      ],
+      "elapsed_s": 1.583362102508545,
+      "exit_code": 0,
+      "timeout": false,
+      "local_child_finished": true,
+      "remote_completion_observed": true,
+      "stdin_file": "<local-project>/runs/m6b-ready-g1-s2-preflight-20261011/inventory_remote.py",
+      "stdin_sha256": "ad66508807052620cfd462244caf273bcebb3eb2043ab5cf0b2db61c7b421ed1",
+      "stdout_sha256": "bb069f48d662ebf67bf85177fb5032156e22c2b82b959dbe70b39f2f38a98e6b",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "private_receipt": "runs/m6b-ready-g1-s2-preflight-20261011/inventory01.receipt.json",
+      "private_stdout": "runs/m6b-ready-g1-s2-preflight-20261011/inventory01.stdout",
+      "private_stderr": "runs/m6b-ready-g1-s2-preflight-20261011/inventory01.stderr"
+    },
+    {
+      "argv": [
+        "ssh",
+        "-o",
+        "ConnectTimeout=10",
+        "-o",
+        "NumberOfPasswordPrompts=1",
+        "<node-0>",
+        "env -u LD_PRELOAD CUDA_VISIBLE_DEVICES= PYTHONDONTWRITEBYTECODE=1 python3 -"
+      ],
+      "elapsed_s": 2.3810980319976807,
+      "exit_code": 0,
+      "timeout": false,
+      "local_child_finished": true,
+      "remote_completion_observed": true,
+      "stdin_file": "<local-project>/runs/m6b-ready-g1-s2-preflight-20261011/artifacts_remote.py",
+      "stdin_sha256": "09e4b0d7d6bf21da76aa2b79d38bbb0311953bbf9069831794964c403b00d64a",
+      "stdout_sha256": "e2a56c699d5eaf55b065c21f2125dc43a48b78594bc4f5e34156d2084a940c2f",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "private_receipt": "runs/m6b-ready-g1-s2-preflight-20261011/artifacts02.receipt.json",
+      "private_stdout": "runs/m6b-ready-g1-s2-preflight-20261011/artifacts02.stdout",
+      "private_stderr": "runs/m6b-ready-g1-s2-preflight-20261011/artifacts02.stderr"
+    },
+    {
+      "argv": [
+        "git",
+        "-c",
+        "core.sshCommand=<existing explicit GitHub identity; BatchMode; host verification enabled>",
+        "ls-remote",
+        "ssh://git@ssh.github.com:443/Zwhao0/myflash.git",
+        "refs/heads/codex/m6b-ready-g0f-cursor",
+        "refs/heads/codex/m6b-ready-g0-evidence",
+        "refs/heads/codex/m6a-control-plane",
+        "refs/heads/main"
+      ],
+      "exit_code": 0,
+      "timeout": false,
+      "elapsed_s": 2.765638828277588,
+      "machine": "local-macOS",
+      "stdout_sha256": "984fd1db092e64909f79affb82e26bfcd5b2b43d6822bceb5029ad269a2f8e49",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "private_receipt": "runs/m6b-ready-g1-s2-preflight-20261011/remote-heads.receipt.json",
+      "private_stdout": "runs/m6b-ready-g1-s2-preflight-20261011/remote-heads.stdout",
+      "private_stderr": "runs/m6b-ready-g1-s2-preflight-20261011/remote-heads.stderr"
+    }
+  ],
+  "source_ledger": {
+    "docs/m5/patch-p1/RESULTS.md": "8c51e365b65a3b71601857a8f3ae79d8760e0bcace7bfc7d4f2a61e0246ca101",
+    "docs/m5/patch-p1/build-manifest.json": "36bc83d44124ddecf07919b91f7e15a40cd9efeeff1bc07408240f0e877cda99",
+    "docs/m5/patch-p1/validation.json": "489831391f08f497aa6c8109778c520073f3106672a4df86be50f5da7d6ecf93",
+    "docs/m5/patch-p1/minimal.patch": "46acf5f1d44e7d1137818a83701b0c5aed55ef56ed53205c7ccf2a390b787cc8",
+    "docs/m5/patch-p1/SOURCE_LICENSE_AUDIT.md": "c2b51037e6e5fdb3ac30ed79fcf3ed64ba8f420f9073af9e7432fa8e038917da",
+    "docs/m5/patch-p1/protocol.json": "1edb2c900b67ec9d83493ea52057d25c09db3d0a1c41ef17c62f6a3d135e3ff9",
+    "docs/m5/patch-p1/STRICT_RESULTS.md": "f79f2db7dc685218c738c22f642d33134aa3d7b0abfc96eb770a728cc2e98d5a",
+    "docs/m5/patch-p1/MATRIX_RESULTS.md": "262bd9a921cca3e0987ef0c6314675c019bfb9c9afc1dae911991a45ab4ad1ba",
+    "docs/m5/science-s1/DECISION_PROPOSAL.md": "0057cc4ff7205ed79b85cc9135b03e7ed78794ef27131a47e897720bb99e6aba",
+    "tests/m5_real_api.py": "9e27ff7b3e8ca2a0b57ac851fcdd382c3978a4d389ca2497c0cdb7a57aca1e1b",
+    "tests/m5_replay.py": "859d72e4c48f14d7f3eba656e74fcfe59bd6055d19b2ac789f0c3c5fa77a354d",
+    "scripts/m5_p1_strict.py": "cefc2cfbcc80eb7d7c41eabb2f49a30acbf6a95e9602fa5a8e2514f033a7850e",
+    "scripts/m5_p1_run.py": "858c258d532d4c37e210235671967737e91ead93a4cb5a6ebdedf642d78603a7"
+  },
+  "remote_heads": {
+    "refs/heads/codex/m6a-control-plane": "5b91977b07b4f357e0c2e37490739e4a5803fea0",
+    "refs/heads/codex/m6b-ready-g0-evidence": "3ca5260754b09a5a6b6898c2edcacdc22bb42b72",
+    "refs/heads/codex/m6b-ready-g0f-cursor": "3ba7dad2070ad13466b4f14562ee54fa4a3e818b",
+    "refs/heads/main": "ce984ea21a604092312442c7c788f2f4b244fad4"
+  },
+  "prior_g0e_branch_drift": {
+    "task_snapshot": "70a83e7dfc3f705420464e0eb4dc0cb1807bac4e",
+    "observed": "3ca5260754b09a5a6b6898c2edcacdc22bb42b72",
+    "action": "READ_ONLY_RECORDED; no moving branch used, no repair"
+  },
+  "install": "NOT_RUN",
+  "native_fits": "NOT_RUN",
+  "strict_regressions": "NOT_RUN",
+  "new_deployment_identity": "NOT_RUN",
+  "actual_dispatch": "NOT_RUN; CPU flags only are not dispatch proof",
+  "formal_adoption": "NOT_APPROVED",
+  "gpu": "NOT_RUN",
+  "independent_g0f_review": "NOT_VERIFIED_IN_THIS_CHAT",
+  "publication": "NOT_RUN; no new branch/commit/push/PR",
+  "final_alert": false,
+  "failures": [
+    "inventory01 nested git command exit128: incorrect checkout path; artifacts02 corrected exact path exit0; original log retained"
+  ]
+}

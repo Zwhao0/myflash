@@ -1,0 +1,18 @@
+[
+  {
+    "command": [
+      "git",
+      "-C",
+      "<project>/runs/m6b-ready-work",
+      "log",
+      "-1",
+      "--format=%H%n%T"
+    ],
+    "exit_code": 128,
+    "outer_inventory_exit_code": 0,
+    "private_raw": "runs/m6b-ready-g1-s2-preflight-20261011/inventory01.stdout",
+    "raw_sha256": "bb069f48d662ebf67bf85177fb5032156e22c2b82b959dbe70b39f2f38a98e6b",
+    "cause": "Incorrect same-project checkout path",
+    "correction": "Read exact G0F publication checkout path and repeat only source read; artifacts02 git commands exit0"
+  }
+]

@@ -1,0 +1,39 @@
+{
+  "source": "ADAPTATION original M5 experimental model; science NOT_APPROVED",
+  "source_path": "flash/rbeast_adapter.py",
+  "source_sha256": "ff14c1b21d88f48268c3fe1594256f3de565707b6f29f19c0aa81a877d54f651",
+  "parameter_count": 24,
+  "parameters": {
+    "start": 1,
+    "deltat": 1,
+    "season": "none",
+    "method": "bayes",
+    "tcp_minmax": [
+      0,
+      10
+    ],
+    "torder_minmax": [
+      0,
+      1
+    ],
+    "tseg_minlength": 1,
+    "tseg_leftmargin": 0,
+    "tseg_rightmargin": 0,
+    "mcmc_seed": 20261010,
+    "mcmc_burbin": 200,
+    "mcmc_chains": 3,
+    "mcmc_thin": 5,
+    "mcmc_samples": 8000,
+    "precValue": 1.5,
+    "precPriorType": "componentwise",
+    "hasOutlier": false,
+    "print_param": true,
+    "print_progress": false,
+    "print_warning": true,
+    "quiet": false,
+    "gui": false,
+    "dump_ci": false,
+    "dump_mcmc": false
+  },
+  "reference_variants": "original P1 protocol varies chains and requested ISA only; no matrix change"
+}

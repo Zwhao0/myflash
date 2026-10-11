@@ -1,0 +1,13 @@
+test_adjacent_retention_gap_preserved (__main__.CursorExtra.test_adjacent_retention_gap_preserved) ... ok
+test_exact_500_boundaries_keep_full_window (__main__.CursorExtra.test_exact_500_boundaries_keep_full_window) ... ok
+test_future_reason_and_no_fabricated_records (__main__.CursorExtra.test_future_reason_and_no_fabricated_records) ... ok
+test_hash_corruption_not_hidden_by_future_cursor (__main__.CursorExtra.test_hash_corruption_not_hidden_by_future_cursor) ... ok
+test_invalid_cursors_before_any_store_read (__main__.CursorExtra.test_invalid_cursors_before_any_store_read) ... ok
+test_lost_commit_reply_read_then_exact_retry (__main__.CursorExtra.test_lost_commit_reply_read_then_exact_retry) ... ok
+test_none_keeps_full_retained_window (__main__.CursorExtra.test_none_keeps_full_retained_window) ... ok
+test_retention_corruption_not_hidden_by_future_cursor (__main__.CursorExtra.test_retention_corruption_not_hidden_by_future_cursor) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 6.576s
+
+OK

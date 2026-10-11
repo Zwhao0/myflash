@@ -1,0 +1,1029 @@
+{
+  "M6B": "NOT_RUN",
+  "baseline_head": "3ba7dad2070ad13466b4f14562ee54fa4a3e818b",
+  "batches": [
+    {
+      "counts": {
+        "arrays": 132960,
+        "fits": 5540,
+        "native_decision_fits": 4900,
+        "prefixes": 6300,
+        "reference_fits": 640
+      },
+      "fit_errors": [],
+      "integrity_errors": [],
+      "name": "s2-c-batch01",
+      "native_errors": 0
+    },
+    {
+      "counts": {
+        "arrays": 132960,
+        "fits": 5540,
+        "native_decision_fits": 4900,
+        "prefixes": 6300,
+        "reference_fits": 640
+      },
+      "fit_errors": [],
+      "integrity_errors": [],
+      "name": "s2-c-batch02",
+      "native_errors": 0
+    }
+  ],
+  "cpu_gate_status": "PASS_ISOLATED_C_CPU_GATES_ONLY",
+  "direct_receipts": [
+    {
+      "argv": [
+        "/usr/bin/python3",
+        "-m",
+        "venv",
+        "<isolated-c>"
+      ],
+      "child_finished": true,
+      "cwd": "<s2-private-run>/checkout",
+      "deadline_s": 120,
+      "elapsed_s": 2.5177956679835916,
+      "environment": {
+        "CUDA_VISIBLE_DEVICES": "",
+        "LD_PRELOAD": null,
+        "MKL_NUM_THREADS": null,
+        "NUMEXPR_NUM_THREADS": null,
+        "OMP_NUM_THREADS": null,
+        "OPENBLAS_NUM_THREADS": null,
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "PYTHONNOUSERSITE": "1"
+      },
+      "exit_code": 0,
+      "label": "create-isolated-venv",
+      "pgid": "owned-process-3",
+      "pid": "owned-process-3",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "timeout": false
+    },
+    {
+      "argv": [
+        "<isolated-c>/bin/python",
+        "-m",
+        "pip",
+        "install",
+        "--no-index",
+        "--no-deps",
+        "--no-compile",
+        "--require-hashes",
+        "--find-links",
+        "<s2-private-run>/execution01/wheels",
+        "-r",
+        "<s2-private-run>/execution01/runtime.lock"
+      ],
+      "child_finished": true,
+      "cwd": "<s2-private-run>/checkout",
+      "deadline_s": 120,
+      "elapsed_s": 0.8154205461032689,
+      "environment": {
+        "CUDA_VISIBLE_DEVICES": "",
+        "LD_PRELOAD": null,
+        "MKL_NUM_THREADS": null,
+        "NUMEXPR_NUM_THREADS": null,
+        "OMP_NUM_THREADS": null,
+        "OPENBLAS_NUM_THREADS": null,
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "PYTHONNOUSERSITE": "1"
+      },
+      "exit_code": 0,
+      "label": "install-offline",
+      "pgid": "owned-process-7",
+      "pid": "owned-process-7",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "e5ffba84c51113dc1eb5649fa8bfcbbac8c33404fde4e5e7174a39a2fdfb7771",
+      "timeout": false
+    },
+    {
+      "argv": [
+        "<isolated-c>/bin/python",
+        "scripts/m6b_ready_s2_identity.py",
+        "--environment",
+        "<isolated-c>",
+        "--output",
+        "<s2-private-run>/execution01/identity.json"
+      ],
+      "child_finished": true,
+      "cwd": "<s2-private-run>/checkout",
+      "deadline_s": 120,
+      "elapsed_s": 0.4666323069250211,
+      "environment": {
+        "CUDA_VISIBLE_DEVICES": "",
+        "LD_PRELOAD": null,
+        "MKL_NUM_THREADS": null,
+        "NUMEXPR_NUM_THREADS": null,
+        "OMP_NUM_THREADS": null,
+        "OPENBLAS_NUM_THREADS": null,
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "PYTHONNOUSERSITE": "1"
+      },
+      "exit_code": 0,
+      "label": "identity",
+      "pgid": "owned-process-1",
+      "pid": "owned-process-1",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "7c808b31680556c66b955000f615960b5a45b4179cad1cc8d194d6321c4967be",
+      "timeout": false
+    },
+    {
+      "argv": [
+        "readelf",
+        "-h",
+        "<isolated-c>/lib/python3.12/site-packages/Rbeast/Rbeast.cpython-312-x86_64-linux-gnu.so"
+      ],
+      "child_finished": true,
+      "cwd": "<s2-private-run>/checkout",
+      "deadline_s": 60,
+      "elapsed_s": 0.002462268923409283,
+      "environment": {
+        "CUDA_VISIBLE_DEVICES": "",
+        "LD_PRELOAD": null,
+        "MKL_NUM_THREADS": null,
+        "NUMEXPR_NUM_THREADS": null,
+        "OMP_NUM_THREADS": null,
+        "OPENBLAS_NUM_THREADS": null,
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "PYTHONNOUSERSITE": "1"
+      },
+      "exit_code": 0,
+      "label": "elf",
+      "pgid": "owned-process-5",
+      "pid": "owned-process-5",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "a3a59e833b65f8657a5d7654a3b8d315bed4d5203dcdbbdfd65110781e8d5b7a",
+      "timeout": false
+    },
+    {
+      "argv": [
+        "nm",
+        "-D",
+        "<isolated-c>/lib/python3.12/site-packages/Rbeast/Rbeast.cpython-312-x86_64-linux-gnu.so"
+      ],
+      "child_finished": true,
+      "cwd": "<s2-private-run>/checkout",
+      "deadline_s": 60,
+      "elapsed_s": 0.004412487964145839,
+      "environment": {
+        "CUDA_VISIBLE_DEVICES": "",
+        "LD_PRELOAD": null,
+        "MKL_NUM_THREADS": null,
+        "NUMEXPR_NUM_THREADS": null,
+        "OMP_NUM_THREADS": null,
+        "OPENBLAS_NUM_THREADS": null,
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "PYTHONNOUSERSITE": "1"
+      },
+      "exit_code": 0,
+      "label": "symbols",
+      "pgid": "owned-process-22",
+      "pid": "owned-process-22",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "a868011c62d9a7c490c269abee3914ffd3bd875657dc19c6aaa5205abec29dc5",
+      "timeout": false
+    },
+    {
+      "argv": [
+        "ldd",
+        "<isolated-c>/lib/python3.12/site-packages/Rbeast/Rbeast.cpython-312-x86_64-linux-gnu.so"
+      ],
+      "child_finished": true,
+      "cwd": "<s2-private-run>/checkout",
+      "deadline_s": 60,
+      "elapsed_s": 0.008163052960298955,
+      "environment": {
+        "CUDA_VISIBLE_DEVICES": "",
+        "LD_PRELOAD": null,
+        "MKL_NUM_THREADS": null,
+        "NUMEXPR_NUM_THREADS": null,
+        "OMP_NUM_THREADS": null,
+        "OPENBLAS_NUM_THREADS": null,
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "PYTHONNOUSERSITE": "1"
+      },
+      "exit_code": 0,
+      "label": "dependencies",
+      "pgid": "owned-process-4",
+      "pid": "owned-process-4",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "39a940cf6bc58d852e54a906251ad7db55f844f688773332097b9dbc0ebddf9a",
+      "timeout": false
+    },
+    {
+      "argv": [
+        "objdump",
+        "-d",
+        "--disassemble=avx512_pcg_set_seed",
+        "<isolated-c>/lib/python3.12/site-packages/Rbeast/Rbeast.cpython-312-x86_64-linux-gnu.so"
+      ],
+      "child_finished": true,
+      "cwd": "<s2-private-run>/checkout",
+      "deadline_s": 60,
+      "elapsed_s": 0.004087976994924247,
+      "environment": {
+        "CUDA_VISIBLE_DEVICES": "",
+        "LD_PRELOAD": null,
+        "MKL_NUM_THREADS": null,
+        "NUMEXPR_NUM_THREADS": null,
+        "OMP_NUM_THREADS": null,
+        "OPENBLAS_NUM_THREADS": null,
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "PYTHONNOUSERSITE": "1"
+      },
+      "exit_code": 0,
+      "label": "seeder",
+      "pgid": "owned-process-19",
+      "pid": "owned-process-19",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "884bd28b0afa02df2f553384973594bdd0efd3fef67c3f3c7c8a16a6b22e93fd",
+      "timeout": false
+    },
+    {
+      "argv": [
+        "<project>/runs/m5-p1-work/runs/m5-p1-build-01/C/abi"
+      ],
+      "child_finished": true,
+      "cwd": "<s2-private-run>/checkout",
+      "deadline_s": 30,
+      "elapsed_s": 0.003125163959339261,
+      "environment": {
+        "CUDA_VISIBLE_DEVICES": "",
+        "LD_PRELOAD": null,
+        "MKL_NUM_THREADS": null,
+        "NUMEXPR_NUM_THREADS": null,
+        "OMP_NUM_THREADS": null,
+        "OPENBLAS_NUM_THREADS": null,
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "PYTHONNOUSERSITE": "1"
+      },
+      "exit_code": 0,
+      "label": "abi-helper",
+      "pgid": "owned-process-2",
+      "pid": "owned-process-2",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "ce39a1393307c0049a187bfa0ffa42d7f887e471bbf5d6ebb6e08364405bfab3",
+      "timeout": false
+    },
+    {
+      "argv": [
+        "<isolated-c>/bin/python",
+        "scripts/m5_p1_diagnostic.py",
+        "rng",
+        "--abi",
+        "<project>/runs/m5-p1-work/runs/m5-p1-build-01/C/abi.json",
+        "--output",
+        "<s2-private-run>/execution01/rng.json"
+      ],
+      "child_finished": true,
+      "cwd": "<s2-private-run>/checkout",
+      "deadline_s": 30,
+      "elapsed_s": 0.3149680320639163,
+      "environment": {
+        "CUDA_VISIBLE_DEVICES": "",
+        "LD_PRELOAD": null,
+        "MKL_NUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "PYTHONNOUSERSITE": "1"
+      },
+      "exit_code": 0,
+      "label": "rng",
+      "pgid": "owned-process-16",
+      "pid": "owned-process-16",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "64170fdfa7e84501695cec6e49945b2c22f2c16f85a43bac280c63127ed1e5e3",
+      "timeout": false
+    },
+    {
+      "argv": [
+        "<isolated-c>/bin/python",
+        "tests/m5_real_api.py",
+        "<s2-private-run>/execution01/api"
+      ],
+      "child_finished": true,
+      "cwd": "<s2-private-run>/checkout",
+      "deadline_s": 120,
+      "elapsed_s": 0.36523478000890464,
+      "environment": {
+        "CUDA_VISIBLE_DEVICES": "",
+        "LD_PRELOAD": null,
+        "MKL_NUM_THREADS": null,
+        "NUMEXPR_NUM_THREADS": null,
+        "OMP_NUM_THREADS": null,
+        "OPENBLAS_NUM_THREADS": null,
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "PYTHONNOUSERSITE": "1"
+      },
+      "exit_code": 0,
+      "label": "strict-api",
+      "pgid": "owned-process-20",
+      "pid": "owned-process-20",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "f67d93385e4c99236c56fca5a12ea649480d9ffad53e42568a8b70fc4db9f0fd",
+      "timeout": false
+    },
+    {
+      "argv": [
+        "<isolated-c>/bin/python",
+        "scripts/m5_replay.py",
+        "--input",
+        "tests/m5_fixtures/records/sustained.json",
+        "--output",
+        "<s2-private-run>/execution01/replay"
+      ],
+      "child_finished": true,
+      "cwd": "<s2-private-run>/checkout",
+      "deadline_s": 180,
+      "elapsed_s": 9.728255274007097,
+      "environment": {
+        "CUDA_VISIBLE_DEVICES": "",
+        "LD_PRELOAD": null,
+        "MKL_NUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "PYTHONNOUSERSITE": "1"
+      },
+      "exit_code": 0,
+      "label": "full-replay",
+      "pgid": "owned-process-6",
+      "pid": "owned-process-6",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "0392098ce0ab00c6907ba5322485d946132333fb34789a910521a27c300dd109",
+      "timeout": false
+    },
+    {
+      "argv": [
+        "<isolated-c>/bin/python",
+        "scripts/m5_p1_strict.py",
+        "<s2-private-run>/execution01/prefix-capture.json",
+        "<s2-private-run>/execution01/replay"
+      ],
+      "child_finished": true,
+      "cwd": "<s2-private-run>/checkout",
+      "deadline_s": 180,
+      "elapsed_s": 4.119859577040188,
+      "environment": {
+        "CUDA_VISIBLE_DEVICES": "",
+        "LD_PRELOAD": null,
+        "MKL_NUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "PYTHONNOUSERSITE": "1"
+      },
+      "exit_code": 0,
+      "label": "strict-prefix",
+      "pgid": "owned-process-21",
+      "pid": "owned-process-21",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "cf7363a6e529d925c710e5fb3af18af9d0e6b4e68b9a4036e93c8720f17e0f83",
+      "timeout": false
+    },
+    {
+      "argv": [
+        "nice",
+        "-n",
+        "10",
+        "<isolated-c>/bin/python",
+        "scripts/m5_p1_diagnostic.py",
+        "suite",
+        "--output",
+        "<s2-private-run>/execution01/s2-c-batch01"
+      ],
+      "child_finished": true,
+      "cwd": "<s2-private-run>/checkout",
+      "deadline_s": 3600,
+      "elapsed_s": 1747.0719801179366,
+      "environment": {
+        "CUDA_VISIBLE_DEVICES": "",
+        "LD_PRELOAD": null,
+        "MKL_NUM_THREADS": null,
+        "NUMEXPR_NUM_THREADS": null,
+        "OMP_NUM_THREADS": null,
+        "OPENBLAS_NUM_THREADS": null,
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "PYTHONNOUSERSITE": "1"
+      },
+      "exit_code": 0,
+      "label": "s2-c-batch01",
+      "pgid": "owned-process-17",
+      "pid": "owned-process-17",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "3a101b8157922a0f9489256040e7e39ae61c74ca67d8490e53b4889d8387f12c",
+      "timeout": false
+    },
+    {
+      "argv": [
+        "nice",
+        "-n",
+        "10",
+        "<isolated-c>/bin/python",
+        "scripts/m5_p1_diagnostic.py",
+        "suite",
+        "--output",
+        "<s2-private-run>/execution01/s2-c-batch02"
+      ],
+      "child_finished": true,
+      "cwd": "<s2-private-run>/checkout",
+      "deadline_s": 3600,
+      "elapsed_s": 1747.63273217401,
+      "environment": {
+        "CUDA_VISIBLE_DEVICES": "",
+        "LD_PRELOAD": null,
+        "MKL_NUM_THREADS": null,
+        "NUMEXPR_NUM_THREADS": null,
+        "OMP_NUM_THREADS": null,
+        "OPENBLAS_NUM_THREADS": null,
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "PYTHONNOUSERSITE": "1"
+      },
+      "exit_code": 0,
+      "label": "s2-c-batch02",
+      "pgid": "owned-process-18",
+      "pid": "owned-process-18",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "3a101b8157922a0f9489256040e7e39ae61c74ca67d8490e53b4889d8387f12c",
+      "timeout": false
+    },
+    {
+      "argv": [
+        "<isolated-c>/bin/python",
+        "tests/m5_reporter.py"
+      ],
+      "child_finished": true,
+      "cwd": "<s2-private-run>/checkout",
+      "deadline_s": 120,
+      "elapsed_s": 1.216487642028369,
+      "environment": {
+        "CUDA_VISIBLE_DEVICES": "",
+        "LD_PRELOAD": null,
+        "MKL_NUM_THREADS": null,
+        "NUMEXPR_NUM_THREADS": null,
+        "OMP_NUM_THREADS": null,
+        "OPENBLAS_NUM_THREADS": null,
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "PYTHONNOUSERSITE": "1"
+      },
+      "exit_code": 0,
+      "label": "m5_reporter",
+      "pgid": "owned-process-12",
+      "pid": "owned-process-12",
+      "stderr_sha256": "8ef6374c81919a861de5146f98002e4ee9150ab77b12abad7e909b1ea572e3bc",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "timeout": false
+    },
+    {
+      "argv": [
+        "<isolated-c>/bin/python",
+        "tests/m5_detection.py"
+      ],
+      "child_finished": true,
+      "cwd": "<s2-private-run>/checkout",
+      "deadline_s": 120,
+      "elapsed_s": 0.11478449299465865,
+      "environment": {
+        "CUDA_VISIBLE_DEVICES": "",
+        "LD_PRELOAD": null,
+        "MKL_NUM_THREADS": null,
+        "NUMEXPR_NUM_THREADS": null,
+        "OMP_NUM_THREADS": null,
+        "OPENBLAS_NUM_THREADS": null,
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "PYTHONNOUSERSITE": "1"
+      },
+      "exit_code": 0,
+      "label": "m5_detection",
+      "pgid": "owned-process-10",
+      "pid": "owned-process-10",
+      "stderr_sha256": "fc23540c8545d4075fe2f0420accd022e74e5566176c3bd4c597964ff02c2e14",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "timeout": false
+    },
+    {
+      "argv": [
+        "<isolated-c>/bin/python",
+        "tests/m5_api_fields.py",
+        "<s2-private-run>/execution01/field-contract"
+      ],
+      "child_finished": true,
+      "cwd": "<s2-private-run>/checkout",
+      "deadline_s": 120,
+      "elapsed_s": 0.36505731602665037,
+      "environment": {
+        "CUDA_VISIBLE_DEVICES": "",
+        "LD_PRELOAD": null,
+        "MKL_NUM_THREADS": null,
+        "NUMEXPR_NUM_THREADS": null,
+        "OMP_NUM_THREADS": null,
+        "OPENBLAS_NUM_THREADS": null,
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "PYTHONNOUSERSITE": "1"
+      },
+      "exit_code": 0,
+      "label": "m5_api_fields",
+      "pgid": "owned-process-8",
+      "pid": "owned-process-8",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "682da72ed68070d0f8d73128a5182f963d3af944538186fa5c3421f6c4f38cfa",
+      "timeout": false
+    },
+    {
+      "argv": [
+        "<isolated-c>/bin/python",
+        "tests/m5_contract_evidence.py",
+        "<s2-private-run>/execution01/arithmetic-evidence.json"
+      ],
+      "child_finished": true,
+      "cwd": "<s2-private-run>/checkout",
+      "deadline_s": 120,
+      "elapsed_s": 0.11443334899377078,
+      "environment": {
+        "CUDA_VISIBLE_DEVICES": "",
+        "LD_PRELOAD": null,
+        "MKL_NUM_THREADS": null,
+        "NUMEXPR_NUM_THREADS": null,
+        "OMP_NUM_THREADS": null,
+        "OPENBLAS_NUM_THREADS": null,
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "PYTHONNOUSERSITE": "1"
+      },
+      "exit_code": 0,
+      "label": "m5_contract_evidence",
+      "pgid": "owned-process-9",
+      "pid": "owned-process-9",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "a5cf8743802ffd090677978eda15a8c60f51488c16457560567253d03796bcf0",
+      "timeout": false
+    },
+    {
+      "argv": [
+        "<isolated-c>/bin/python",
+        "tests/m5_p1_compare.py"
+      ],
+      "child_finished": true,
+      "cwd": "<s2-private-run>/checkout",
+      "deadline_s": 120,
+      "elapsed_s": 0.314922200050205,
+      "environment": {
+        "CUDA_VISIBLE_DEVICES": "",
+        "LD_PRELOAD": null,
+        "MKL_NUM_THREADS": null,
+        "NUMEXPR_NUM_THREADS": null,
+        "OMP_NUM_THREADS": null,
+        "OPENBLAS_NUM_THREADS": null,
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "PYTHONNOUSERSITE": "1"
+      },
+      "exit_code": 0,
+      "label": "m5_p1_compare",
+      "pgid": "owned-process-11",
+      "pid": "owned-process-11",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "76b5623147da5db476a09e4c17c85b59a081a95ed4f3c9392deed7ccf9a943cb",
+      "timeout": false
+    },
+    {
+      "argv": [
+        "<isolated-c>/bin/python",
+        "tests/m5_s1_offline.py"
+      ],
+      "child_finished": true,
+      "cwd": "<s2-private-run>/checkout",
+      "deadline_s": 120,
+      "elapsed_s": 9.227188011049293,
+      "environment": {
+        "CUDA_VISIBLE_DEVICES": "",
+        "LD_PRELOAD": null,
+        "MKL_NUM_THREADS": null,
+        "NUMEXPR_NUM_THREADS": null,
+        "OMP_NUM_THREADS": null,
+        "OPENBLAS_NUM_THREADS": null,
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "PYTHONNOUSERSITE": "1"
+      },
+      "exit_code": 0,
+      "label": "m5_s1_offline",
+      "pgid": "owned-process-13",
+      "pid": "owned-process-13",
+      "stderr_sha256": "8b1a647325fccc1323acc184c781314a9294d6d7d3c6e0dd78a67c566c67b745",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "timeout": false
+    },
+    {
+      "argv": [
+        "<isolated-c>/bin/python",
+        "tests/m6_control.py"
+      ],
+      "child_finished": true,
+      "cwd": "<s2-private-run>/checkout",
+      "deadline_s": 120,
+      "elapsed_s": 3.3195850891061127,
+      "environment": {
+        "CUDA_VISIBLE_DEVICES": "",
+        "LD_PRELOAD": null,
+        "MKL_NUM_THREADS": null,
+        "NUMEXPR_NUM_THREADS": null,
+        "OMP_NUM_THREADS": null,
+        "OPENBLAS_NUM_THREADS": null,
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "PYTHONNOUSERSITE": "1"
+      },
+      "exit_code": 0,
+      "label": "m6_control",
+      "pgid": "owned-process-14",
+      "pid": "owned-process-14",
+      "stderr_sha256": "2a3670b4b132af6f1b57bc698d65af7e83a48db20bde1bfb3598516b804e2eb6",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "timeout": false
+    },
+    {
+      "argv": [
+        "<isolated-c>/bin/python",
+        "tests/m6b_ready_cursor_contract.py"
+      ],
+      "child_finished": true,
+      "cwd": "<s2-private-run>/checkout",
+      "deadline_s": 120,
+      "elapsed_s": 0.1146944600623101,
+      "environment": {
+        "CUDA_VISIBLE_DEVICES": "",
+        "LD_PRELOAD": null,
+        "MKL_NUM_THREADS": null,
+        "NUMEXPR_NUM_THREADS": null,
+        "OMP_NUM_THREADS": null,
+        "OPENBLAS_NUM_THREADS": null,
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "PYTHONNOUSERSITE": "1"
+      },
+      "exit_code": 2,
+      "label": "m6b_ready_cursor_contract",
+      "pgid": "owned-process-15",
+      "pid": "owned-process-15",
+      "stderr_sha256": "eca31da36bc5ba87a822955d67a6e8d2ec707de35324cf48c1693e40b652f0ad",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "timeout": false
+    },
+    {
+      "argv": [
+        "<isolated-c>/bin/python",
+        "tests/m6b_ready_cursor_contract.py",
+        "--output",
+        "<s2-private-run>/finish02/cursor-contract"
+      ],
+      "child_finished": true,
+      "cwd": "<s2-private-run>/checkout",
+      "deadline_s": 120,
+      "elapsed_s": 6.723396728979424,
+      "environment": {
+        "CUDA_VISIBLE_DEVICES": "",
+        "LD_PRELOAD": null,
+        "MKL_NUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "PYTHONNOUSERSITE": "1"
+      },
+      "exit_code": 0,
+      "label": "cursor-contract-correct-argv",
+      "pgid": "owned-process-24",
+      "pid": "owned-process-24",
+      "stderr_sha256": "d49c3292509fd1f20ed8e98f5da4e24427415d6b8258b09dca0cc903bb3e0c4b",
+      "stdout_sha256": "dc070e57abe78db199d4e33ffe157695546bc0af9d09aa301b988f9389378351",
+      "timeout": false
+    },
+    {
+      "argv": [
+        "<isolated-c>/bin/python",
+        "tests/m6b_ready_cursor_extra.py"
+      ],
+      "child_finished": true,
+      "cwd": "<s2-private-run>/checkout",
+      "deadline_s": 120,
+      "elapsed_s": 6.6744576069759205,
+      "environment": {
+        "CUDA_VISIBLE_DEVICES": "",
+        "LD_PRELOAD": null,
+        "MKL_NUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "PYTHONNOUSERSITE": "1"
+      },
+      "exit_code": 0,
+      "label": "cursor-extra",
+      "pgid": "owned-process-25",
+      "pid": "owned-process-25",
+      "stderr_sha256": "aee154a498bbaa033e51f34c10fd70afb650410b8aac4be86eafded759414c66",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "timeout": false
+    },
+    {
+      "argv": [
+        "<isolated-c>/bin/python",
+        "tests/privacy_check_test.py"
+      ],
+      "child_finished": true,
+      "cwd": "<s2-private-run>/checkout",
+      "deadline_s": 120,
+      "elapsed_s": 0.06501240597572178,
+      "environment": {
+        "CUDA_VISIBLE_DEVICES": "",
+        "LD_PRELOAD": null,
+        "MKL_NUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "PYTHONNOUSERSITE": "1"
+      },
+      "exit_code": 0,
+      "label": "privacy-unit",
+      "pgid": "owned-process-26",
+      "pid": "owned-process-26",
+      "stderr_sha256": "c6b9b1f09add0403cc07e90bfdf272129b1ddfa2f8f7675ea8218862f2516371",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "timeout": false
+    },
+    {
+      "argv": [
+        "<isolated-c>/bin/python",
+        "scripts/m5_p1_compare.py",
+        "--execution",
+        "<s2-private-run>/execution01",
+        "--build",
+        "<project>/runs/m5-p1-work/runs/m5-p1-build-01",
+        "--output",
+        "<s2-private-run>/finish02/comparison"
+      ],
+      "child_finished": true,
+      "cwd": "<s2-private-run>/checkout",
+      "deadline_s": 900,
+      "elapsed_s": 52.586838146089576,
+      "environment": {
+        "CUDA_VISIBLE_DEVICES": "",
+        "LD_PRELOAD": null,
+        "MKL_NUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "PYTHONNOUSERSITE": "1"
+      },
+      "exit_code": 0,
+      "label": "complete-comparison",
+      "pgid": "owned-process-23",
+      "pid": "owned-process-23",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "74bfcc01e0bdac266b091b213e79ea7b6eb4edd9f22e2dc8766c74743a7d4e42",
+      "timeout": false
+    }
+  ],
+  "execution_head": "684d5c7a435fc36877b38e5397e2a1960eb4a354",
+  "execution_source_sha": {
+    "scripts/m6b_ready_s2_execute.py": "b7fe79656659057f6fc20484129499e3bb790d34a4431922ef710f9d160fc978",
+    "scripts/m6b_ready_s2_identity.py": "6cb40603020f749f5bc20aaaf9d0006f6f45a827885a1ee26326c45e168a9560"
+  },
+  "execution_tree": "092b57bd379a480c9d50c95b345605875fb0543a",
+  "final_alert": false,
+  "final_harness_correction": {
+    "current_preinstall_gap": "NOT_CAPTURED; not repaired by future code",
+    "native_installer_runner": "NOT_RUN_AFTER_CORRECTION",
+    "readonly_function_probe": {
+      "actual_python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+      "corrected_source_sha256": "e40314e649cffd139166ff634deac743fb0a052d8103f8f2ef97643ed591440a",
+      "current_preinstall_full_snapshot": "NOT_CAPTURED",
+      "full_corrected_installer_native_runner": "NOT_RUN",
+      "full_regular_file_bytes": 2339,
+      "included_previously_omitted_cache_files": 915,
+      "installations": 0,
+      "legacy_noncache_files": 1424,
+      "native_fits": 0,
+      "overall_acceptance": "BLOCKED",
+      "status": "PASS_READONLY_POSTFLIGHT_FUNCTION_ONLY"
+    },
+    "scope": "new runner complete formal inventory includes cache; original files helper/CPU scientific tests unchanged",
+    "source_sha256": "e40314e649cffd139166ff634deac743fb0a052d8103f8f2ef97643ed591440a"
+  },
+  "finisher": {
+    "argv": [
+      "nice",
+      "-n",
+      "10",
+      "python3",
+      "<s2-private-run>/finish_acceptance.py",
+      "--project",
+      "<project>",
+      "--run",
+      "<s2-private-run>"
+    ],
+    "child_finished": true,
+    "cwd": "<s2-private-run>/checkout",
+    "elapsed_s": 73.49052739411127,
+    "exit_code": 0,
+    "observed_owned_remaining": [],
+    "pid": "owned-process-36",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_sha256": "56c36ef930fdc7ff0f7108c256ab4a8cf27ee91ca571d6d2f3483d5590b2c777",
+    "timeout": false
+  },
+  "first_driver": {
+    "argv": [
+      "nice",
+      "-n",
+      "10",
+      "python3",
+      "scripts/m6b_ready_s2_execute.py",
+      "--project",
+      "<project>",
+      "--output",
+      "<s2-private-run>/execution01"
+    ],
+    "child_finished": true,
+    "cwd": "<s2-private-run>/checkout",
+    "elapsed_s": 3531.763914549025,
+    "exit_code": 1,
+    "observed_owned_remaining": [],
+    "pid": "owned-process-35",
+    "stderr_sha256": "1f4c06abc5be00bc6187d24215729297de867b3ee01256e4b9be518a244ac44c",
+    "stdout_sha256": "f2ec1f287be3b2bbbec34b1087e93859a20cdfa284db92de64fe73609289b89e",
+    "timeout": false
+  },
+  "first_published_evidence": {
+    "CI_job": 114381935875,
+    "CI_run": 38109503450,
+    "PR": 13,
+    "actual_checkout": "80e9e307ecaf9c4b2b65802619ec7d83e6ed1d4b",
+    "checkout_tree_equal": true,
+    "files": 1773,
+    "head": "814eb7852fe0d0d425b54523e06324fc9440e716",
+    "privacy_tests": 6,
+    "scanner_findings": 0,
+    "tree": "f336b343dec9587f880006ee55712543bd65d825"
+  },
+  "formal_adoption": "NOT_APPROVED",
+  "gpu": "NOT_RUN",
+  "license_privacy_history": "DEFERRED/OPEN; wheels/third-party source not published",
+  "machine": "node-0",
+  "old_failures": "M5-R/A/B FAIL and three NOT_CAPTURED preserved; not rerun under formal environment",
+  "required_gates": {
+    "C_decisions": "PASS",
+    "C_integrity": "PASS",
+    "C_native_validity": "PASS",
+    "C_numerical": "PASS"
+  },
+  "scientific_validity": "NOT_APPROVED/OPEN",
+  "source_and_approval": "APPROVAL.md plus tasks/06b_ready_g1_s2_c.md",
+  "source_repair": {
+    "finisher_sha256": "65287fc244ffde4ae122670b9d64d3861fbc431a21e2b2e78ce720c305fcfa60",
+    "first_cursor_argparse_retained_exit": 2,
+    "first_driver_retained_exit": 1,
+    "formal_adoption": "NOT_APPROVED",
+    "formal_preserved": true,
+    "models_fixtures_assertions_comparator_changed": false,
+    "native_fit_retries": 0,
+    "original_data_immutable": true,
+    "overall_acceptance": "BLOCKED_FULL_FORMAL_MANIFEST_PREINSTALL_NOT_CAPTURED",
+    "own_current_child": null,
+    "receipts": [
+      {
+        "argv": [
+          "<isolated-c>/bin/python",
+          "tests/m6b_ready_cursor_contract.py",
+          "--output",
+          "<s2-private-run>/finish02/cursor-contract"
+        ],
+        "child_finished": true,
+        "cwd": "<s2-private-run>/checkout",
+        "deadline_s": 120,
+        "elapsed_s": 6.723396728979424,
+        "environment": {
+          "CUDA_VISIBLE_DEVICES": "",
+          "LD_PRELOAD": null,
+          "MKL_NUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "PYTHONDONTWRITEBYTECODE": "1",
+          "PYTHONNOUSERSITE": "1"
+        },
+        "exit_code": 0,
+        "label": "cursor-contract-correct-argv",
+        "pgid": "owned-process-24",
+        "pid": "owned-process-24",
+        "stderr_sha256": "d49c3292509fd1f20ed8e98f5da4e24427415d6b8258b09dca0cc903bb3e0c4b",
+        "stdout_sha256": "dc070e57abe78db199d4e33ffe157695546bc0af9d09aa301b988f9389378351",
+        "timeout": false
+      },
+      {
+        "argv": [
+          "<isolated-c>/bin/python",
+          "tests/m6b_ready_cursor_extra.py"
+        ],
+        "child_finished": true,
+        "cwd": "<s2-private-run>/checkout",
+        "deadline_s": 120,
+        "elapsed_s": 6.6744576069759205,
+        "environment": {
+          "CUDA_VISIBLE_DEVICES": "",
+          "LD_PRELOAD": null,
+          "MKL_NUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "PYTHONDONTWRITEBYTECODE": "1",
+          "PYTHONNOUSERSITE": "1"
+        },
+        "exit_code": 0,
+        "label": "cursor-extra",
+        "pgid": "owned-process-25",
+        "pid": "owned-process-25",
+        "stderr_sha256": "aee154a498bbaa033e51f34c10fd70afb650410b8aac4be86eafded759414c66",
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "timeout": false
+      },
+      {
+        "argv": [
+          "<isolated-c>/bin/python",
+          "tests/privacy_check_test.py"
+        ],
+        "child_finished": true,
+        "cwd": "<s2-private-run>/checkout",
+        "deadline_s": 120,
+        "elapsed_s": 0.06501240597572178,
+        "environment": {
+          "CUDA_VISIBLE_DEVICES": "",
+          "LD_PRELOAD": null,
+          "MKL_NUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "PYTHONDONTWRITEBYTECODE": "1",
+          "PYTHONNOUSERSITE": "1"
+        },
+        "exit_code": 0,
+        "label": "privacy-unit",
+        "pgid": "owned-process-26",
+        "pid": "owned-process-26",
+        "stderr_sha256": "c6b9b1f09add0403cc07e90bfdf272129b1ddfa2f8f7675ea8218862f2516371",
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "timeout": false
+      },
+      {
+        "argv": [
+          "<isolated-c>/bin/python",
+          "scripts/m5_p1_compare.py",
+          "--execution",
+          "<s2-private-run>/execution01",
+          "--build",
+          "<project>/runs/m5-p1-work/runs/m5-p1-build-01",
+          "--output",
+          "<s2-private-run>/finish02/comparison"
+        ],
+        "child_finished": true,
+        "cwd": "<s2-private-run>/checkout",
+        "deadline_s": 900,
+        "elapsed_s": 52.586838146089576,
+        "environment": {
+          "CUDA_VISIBLE_DEVICES": "",
+          "LD_PRELOAD": null,
+          "MKL_NUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "PYTHONDONTWRITEBYTECODE": "1",
+          "PYTHONNOUSERSITE": "1"
+        },
+        "exit_code": 0,
+        "label": "complete-comparison",
+        "pgid": "owned-process-23",
+        "pid": "owned-process-23",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout_sha256": "74bfcc01e0bdac266b091b213e79ea7b6eb4edd9f22e2dc8766c74743a7d4e42",
+        "timeout": false
+      }
+    ],
+    "required_matrix_gates": {
+      "C_decisions": "PASS",
+      "C_integrity": "PASS",
+      "C_native_validity": "PASS",
+      "C_numerical": "PASS"
+    },
+    "runner_source_sha256": "a096c9a32081246bf6a9bec7f25ef2cab896547683e422df22c0429f7ab70570",
+    "scientific_validity": "NOT_APPROVED/OPEN",
+    "source_head": "4a4721c1426ba19f66b837220db82990987f6750",
+    "source_preserved": true,
+    "status": "PASS_ISOLATED_C_CPU_GATES_ONLY"
+  },
+  "status": "BLOCKED_FULL_FORMAL_MANIFEST_PREINSTALL_NOT_CAPTURED",
+  "strict_original_assertions": "PASS; original bytes unchanged",
+  "task": "M6B-READY-G1-S2-C-EXECUTE"
+}

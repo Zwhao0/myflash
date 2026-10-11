@@ -1,0 +1,1 @@
+{"sizeof":96,"alignof":32,"u64_sizeof":8,"state":0,"increment":32,"state512":0,"increment512":64,"MULTIPLIER_8steps":72,"INCREMENT_8steps":80}

@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "<s2-private-run>/checkout/scripts/m6b_ready_s2_execute.py", line 157, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "<s2-private-run>/checkout/scripts/m6b_ready_s2_execute.py", line 138, in main
+    run(name,argv)
+  File "<s2-private-run>/checkout/scripts/m6b_ready_s2_execute.py", line 80, in run
+    assert r['exit_code']==0 and not r['timeout'],label+' failed; evidence retained'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: m6b_ready_cursor_contract failed; evidence retained

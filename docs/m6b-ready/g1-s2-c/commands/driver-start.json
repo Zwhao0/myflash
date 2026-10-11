@@ -1,0 +1,1 @@
+{"argv":["nice","-n","10","python3","scripts/m6b_ready_s2_execute.py","--project","<project>","--output","<s2-private-run>/execution01"],"cwd":"<s2-private-run>/checkout","deadline_s":10800,"pgid":"owned-process-35","pid":"owned-process-35"}

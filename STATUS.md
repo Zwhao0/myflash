@@ -418,3 +418,60 @@ BLOCKED, historical privacy/copyright DEFERRED/OPEN. Publication head/tree/
 independent Draft PR/current-checkout CI recorded in private publication receipt;
 CI is not cursor/science/GPU proof. Next unique task: independent exact-head
 review of G0F; stop, do not execute task02.
+
+
+## M6B-READY task02 / G1-S2-C executed and blocked (2026-10-11)
+Human M6B-READY-G1-S2-C-EXECUTE explicitly approves C-only isolated offline
+install/CPU native tests, and reports independent Gate0F PASS at exact3ba7dad.
+Previously unpublished seven g1-s2-c-preflight reports are included unchanged;
+old authorization-pending/NOT_RUN history remains. Approved baseline3ba7dad /
+treea3bbf9d; new independent codex/m6b-ready-g1-s2-c, no main/prior PR change.
+Execution684d5c7; repair4a4721c adds required --output in new runner only.
+New scripts/task/docs; STATUS/GAPS append. Original1517-file source/fixtures/
+scientific assertions unchanged during all CPU sampling/finishing.
+
+node-0 Xeon Platinum8463B, existing Python3.12.3, NumPy2.2.6/glibc2.39.
+Fixed C wheel a4925769... / actually loaded.so1f08fbc9...; sdist8265bd53...,
+NumPywheel fd83c012...; lock/ZIP+installed RECORD/API/native maps verified.
+Only new private execution01/.venv-m5-s2-c, offline no-index/no-deps/no-compile/
+require-hashes. No new compilation/dependency download/system software/service/GPU/NCCL/
+node-1/fault injection/formal path adoption. PAPER SPEC S3 unchanged; UPSTREAM
+fixed artifacts/current interpreter/ABI helper; ADAPTATION isolated identity/
+evidence/protection/CLI repair; EXTENSION unchanged P1 artificial CPU matrix.
+
+Commands: <system-python> scripts/m6b_ready_s2_execute.py --project <project>
+--output <s2-private-run>/execution01; RNG original m5_p1_diagnostic.py rng;
+original tests/m5_real_api.py <api>, scripts/m5_replay.py --input sustained.json
+--output <replay>, scripts/m5_p1_strict.py <capture> <replay> all exit0.
+<s2-python> scripts/m5_p1_diagnostic.py suite --output <batch01/02>, two
+actual exits0/no timeout/476workers each0, each5540fits/132960arrays/6300prefixes.
+First cursor invocation argparse2/driver1 retained; corrected invocation9,
+extra8/privacy6 and original m5_p1_compare.py --execution <execution01> --build
+<fixed-build> --output <finish02/comparison> all actual0; finisher0/no native
+retry. All four original comparator gates PASS. Original77CPU tests,6privacy
+and API/field/arithmetic/comparator assertions0; 55prerequisite native raw
+probability audits PASS/no added fits. Full commands/env/deadline/real exits/
+raw stdio/source+artifact SHA and failure indexes in docs/m6b-ready/g1-s2-c;
+raw node0/local runs/m6b-ready-g1-s2-c-20261011, local remote-evidence/.
+
+Formal original.so a7432000... and1424noncache bytes pre/post equal. Complete
+formal has2339files:915cache files were excluded from preinstall inventory.
+Full preinstall manifest NOT_CAPTURED; postinstall full2339 recheck equal
+cannot repair this gap. Overall S2 acceptance BLOCKED, CPU gates PASS only.
+Historical131811raw files SHA same (snapshot taken first C matrix, after
+isolated install; disclose interval); M5-R/A/B FAIL/three NOT_CAPTURED and
+original red9 preserved. Sampling files immutable before/after finisher.
+Observed own350PIDs finished; own residual0, pip check0, no new GPU/Redis
+resources. Setup55s timeout/launch1, CLI2/parent1, local wrapper55s privacy
+scan timeout, exporter syntax/debug tool-output-only defects all retained;
+no scientific assertion/ISA/sample changes. Original full posterior JSON
+public bytes preserved; local stdlib265920arrays readback size/SHA verified.
+
+G01/G02/G04/G09/G13/G20 OPEN; final_alert=false, formal_adoption NOT_APPROVED,
+M6-B NOT_RUN. Historical licensing/privacy DEFERRED/OPEN; no third-party wheel
+or full source published. Ordinary push/independent Draft PR final head/tree/
+real CI checkout bound in PR/private publication receipt; CI is text-only.
+Next unique task: independent ChatGPT exact-head Draft PR review, including
+full-manifest gap; STOP, no task03 or automatic formal adoption.
+
+Final own-runner instrumentation correction: complete_files covers formal cache bytes; this corrected full installer/native runner NOT_RUN, no additional fits or environment. Read-only postflight helper check separately bound; current missing preinstall915-cache snapshot stays NOT_CAPTURED/BLOCKED. Actual native code684d5c7 and CLI-only finishing4a4721c remain unchanged history. Independent Draft PR13 created, no prior PR/main changes; final published head/tree/CI in PR/private receipt.
