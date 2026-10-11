@@ -1,0 +1,89 @@
+{
+  "task": "M6B-READY/task07/G04",
+  "status": "ACCEPTED_ASSUMPTION",
+  "implementation_authorized": true,
+  "publication_authorized": true,
+  "predecessor": {
+    "pr": "https://github.com/Zwhao0/myflash/pull/17",
+    "head": "8fa096c9af00449a1ce940f99d153406cfe323e1",
+    "tree": "5f05021646305fffd23663fe42bfa92b7bac7d43",
+    "independent_review": "PASS reported explicitly by human"
+  },
+  "authoritative_packet": {
+    "path": "docs/m6b-ready/g3-g04-decisions/G04_DECISION_PACKET.md",
+    "sha256": "23bd1a04f76a2861db2f280c41a1a72351bf21262506d4f23184e7218d5738bd"
+  },
+  "historical_approval_ledger": {
+    "path": "docs/m6b-ready/g3-g04-decisions/APPROVAL_LEDGER.json",
+    "sha256": "8d26024a729c353d3da864b80255bc8c32351d360f53b1fce33d1c8c841abfbf",
+    "preserved_null_slots": true
+  },
+  "dimensions": [
+    {
+      "id": "stage1",
+      "approved_choice": "S1-MAX",
+      "classification": "PAPER",
+      "source": "p30/p34 and Eq3-1 p41",
+      "contract": "max local communicator mean; singleton excluded; single group direct; CV>=0.1; max ties retained; plot means separate",
+      "approved_by": "project owner, explicit task07 authorization in this chat on 2026-10-11"
+    },
+    {
+      "id": "communicator_weight",
+      "approved_choice": "W-EQUAL",
+      "classification": "ADAPTATION",
+      "source": "p30 unspecified; task06; docs/m4/DESIGN.md",
+      "contract": "equal per local-instance means versus n_c weighted per-instance deduplicated scope observations within selected hash",
+      "approved_by": "project owner, explicit task07 authorization in this chat on 2026-10-11"
+    },
+    {
+      "id": "rank_20pct_reference",
+      "approved_choice": "R-GROUP",
+      "classification": "ADAPTATION",
+      "source": "p31 missing; Eq3-2 p42",
+      "contract": "group_mean; peer_mean; peer_over_min; nearest_peer, low-latency direction on minimum ranks only",
+      "approved_by": "project owner, explicit task07 authorization in this chat on 2026-10-11"
+    },
+    {
+      "id": "rank_20pct_comparator",
+      "approved_choice": "T-GE",
+      "classification": "ADAPTATION",
+      "source": "p31 unspecified equality",
+      "contract": "mathematical >=1/5 or >1/5; do not inherit G13 strict test",
+      "approved_by": "project owner, explicit task07 authorization in this chat on 2026-10-11"
+    },
+    {
+      "id": "CV_convention",
+      "approved_choice": "C-GUARD",
+      "classification": "ADAPTATION",
+      "source": "p31/p34 unspecified ddof",
+      "contract": "population and sample saved; guard disagreement across0.1; single convention alternatives diagnostic only",
+      "approved_by": "project owner, explicit task07 authorization in this chat on 2026-10-11"
+    },
+    {
+      "id": "numerical_boundary",
+      "approved_choice": "N-GUARD",
+      "classification": "ADAPTATION",
+      "source": "audit03 arithmetic_boundaries",
+      "contract": "compare binary64 gate with exact rational gate over input rank/group means; abstain on disagreement; no epsilon",
+      "approved_by": "project owner, explicit task07 authorization in this chat on 2026-10-11"
+    },
+    {
+      "id": "minimum_support",
+      "approved_choice": "Q-TWO",
+      "classification": "ADAPTATION",
+      "source": "p31 underspecified small samples",
+      "contract": "each contributing local communicator instance >=2 deduplicated scopes versus observations only",
+      "approved_by": "project owner, explicit task07 authorization in this chat on 2026-10-11"
+    },
+    {
+      "id": "conflicts_and_final",
+      "approved_choice": "F-PROVISIONAL",
+      "classification": "ADAPTATION",
+      "source": "p31 underspecified conflict/confidence/multiple faults",
+      "contract": "unique candidate remains provisional; no voting; optional hypothetical single/two-label final eligibility",
+      "approved_by": "project owner, explicit task07 authorization in this chat on 2026-10-11"
+    }
+  ],
+  "scope": "New explicit CPU opt-in only; unchanged production default; no final_fault_ranks or final_alert; no task08/M6-B/merge",
+  "interpretation": "Engineering assumptions approved; no demonstrated fault recognition, calibrated confidence, or GPU experiment"
+}

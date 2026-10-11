@@ -1,0 +1,30 @@
+{
+  "base_head": "8fa096c9af00449a1ce940f99d153406cfe323e1",
+  "base_localization_sha256": "43604fc3f2c8a32482c1420380efe40731c898e87df8036d8d7371083127f51c",
+  "original_module_body_unchanged_except_new_stdlib_import": true,
+  "executed_final_source_sha256": {
+    "flash/localization.py": "b32008fe4800f86b2fe8dc27196db2b3d2daaf555598e77ddd744d9c7d3e805a",
+    "flash/profile_input.py": "54d61ba4f579cee0622a023b76db8dd4be9587b01fce98bc68842253bf27a8c9",
+    "tests/m4_offline.py": "2979c9dd3ffd48d8015ceed73a2381a63affd63418fb0461bc4eb9b12d6848ef",
+    "tests/m6b_ready_approved_localization.py": "0426e2601e3f601fb8c36df1568d375385922d07323695de497500f816c39403",
+    "docs/m6b-ready/g3-g04-implementation/verify_history.py": "a43187673305de1ffa0a6ab18928d8e046d306b0123095d06e2f35f802df0565"
+  },
+  "source_classifications": [
+    {
+      "type": "PAPER",
+      "source": "SPEC S6 and PR17 packet audited printed pp30/31/34/Eq3-1 p41/Eq3-2 p42",
+      "implementation": "Stage1 max/local communicator means; singleton exclusion/single direct; Stage2 minimum rank; diagnostic clique mean"
+    },
+    {
+      "type": "ADAPTATION",
+      "source": "8fa096c9af00449a1ce940f99d153406cfe323e1:flash/localization.py:mean/cv/analyze and flash/profile_input.py:validate_bundle; task06 audit_matrix.py:cvs/gate/from_valid/decide; owner task07 eight approvals",
+      "implementation": "Preserve original default; standalone approved entry, per-instance equal means and scope diagnostic; exact threshold guards/support/ties/provisional; direct approved R-GROUP subtraction documented separately"
+    },
+    {
+      "type": "EXTENSION",
+      "source": "new CPU tests; existing same-project task06 sensitivity matrix reused",
+      "implementation": "Artificial deterministic arithmetic/identity cases only; no production alternative/no external upstream/GreyHound reuse"
+    }
+  ],
+  "external_code_reuse": false
+}

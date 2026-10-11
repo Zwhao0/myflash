@@ -1,0 +1,25 @@
+test_agree_and_conflict (__main__.ApprovedG04.test_agree_and_conflict) ... ok
+test_cross_comm_shared_scope_and_identity (__main__.ApprovedG04.test_cross_comm_shared_scope_and_identity) ... ok
+test_cv_convention_disagreement (__main__.ApprovedG04.test_cv_convention_disagreement) ... ok
+test_cv_exact_boundary_and_neighbors (__main__.ApprovedG04.test_cv_exact_boundary_and_neighbors) ... ok
+test_equal_group_maxima_cv_skip (__main__.ApprovedG04.test_equal_group_maxima_cv_skip) ... ok
+test_evaluator_fields_never_change_output (__main__.ApprovedG04.test_evaluator_fields_never_change_output) ... ok
+test_group_members_do_not_inflate_scope_support (__main__.ApprovedG04.test_group_members_do_not_inflate_scope_support) ... ok
+test_incomplete_priority_retains_other_label_evidence (__main__.ApprovedG04.test_incomplete_priority_retains_other_label_evidence) ... ok
+test_min_rank_tie (__main__.ApprovedG04.test_min_rank_tie) ... ok
+test_missing_invalid_data (__main__.ApprovedG04.test_missing_invalid_data) ... ok
+test_no_candidate_and_zero_rank (__main__.ApprovedG04.test_no_candidate_and_zero_rank) ... ok
+test_nominal_20_float_rational_disagreement (__main__.ApprovedG04.test_nominal_20_float_rational_disagreement) ... ok
+test_r_group_19_20_21 (__main__.ApprovedG04.test_r_group_19_20_21) ... ok
+test_single_group_min_rank (__main__.ApprovedG04.test_single_group_min_rank) ... ok
+test_singleton_excluded (__main__.ApprovedG04.test_singleton_excluded) ... ok
+test_stage1_cv_guard (__main__.ApprovedG04.test_stage1_cv_guard) ... ok
+test_stage1_max_not_plot_mean (__main__.ApprovedG04.test_stage1_max_not_plot_mean) ... ok
+test_stage1_passing_cv_max_tie (__main__.ApprovedG04.test_stage1_passing_cv_max_tie) ... ok
+test_weights_flip_is_diagnostic_only (__main__.ApprovedG04.test_weights_flip_is_diagnostic_only) ... ok
+test_zero_mean_and_insufficient_sample (__main__.ApprovedG04.test_zero_mean_and_insufficient_sample) ... ok
+
+----------------------------------------------------------------------
+Ran 20 tests in 0.020s
+
+OK
