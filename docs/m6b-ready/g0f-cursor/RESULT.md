@@ -70,3 +70,8 @@ write authentication), default SSH read128 (host key verification), SSH443 read1
 or history rewrite was performed. The existing node-0 publication channel is
 used for ordinary Git push; exact final outcome is in the private publication
 receipt and Draft PR metadata. These transport failures do not change CPU results.
+
+Initial server publication helper exited1 with template SyntaxError before any
+execution or writes. Full private error retained; saved helper was corrected
+and locally parsed before retry. Runtime source/tests and original evidence
+were unaffected.

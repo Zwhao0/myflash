@@ -40,5 +40,12 @@
     "status": "FAIL_RETAINED",
     "reason": "Previously used SSH443 endpoint authenticates no local public key; Permission denied (publickey)",
     "evidence": "publication-transport/ssh443-read.receipt.json"
+  },
+  {
+    "operation": "Initial server publication helper",
+    "exit_code": 1,
+    "status": "FAIL_RETAINED",
+    "reason": "Template substitution replaced the literal Git HEAD argv token as well as expected SHA, producing a Python SyntaxError before any execution/file writes. Corrected saved helper is locally parsed before retry; no runtime or Git mutation occurred.",
+    "raw_reference": "<local-private-run>/server-push.stderr"
   }
 ]
