@@ -1,0 +1,62 @@
+[
+  {
+    "baseline_ms": 100,
+    "degraded_ms": 119,
+    "A_exact": "19/100",
+    "B_exact": "19/119",
+    "A": 0.19,
+    "B": 0.15966386554621848,
+    "A_pass": false,
+    "B_pass": false,
+    "comparison": "strict >0.2",
+    "classification": "EXTENSION deterministic arithmetic, no native/GPU"
+  },
+  {
+    "baseline_ms": 100,
+    "degraded_ms": 120,
+    "A_exact": "1/5",
+    "B_exact": "1/6",
+    "A": 0.2,
+    "B": 0.16666666666666666,
+    "A_pass": false,
+    "B_pass": false,
+    "comparison": "strict >0.2",
+    "classification": "EXTENSION deterministic arithmetic, no native/GPU"
+  },
+  {
+    "baseline_ms": 100,
+    "degraded_ms": 121,
+    "A_exact": "21/100",
+    "B_exact": "21/121",
+    "A": 0.21,
+    "B": 0.17355371900826447,
+    "A_pass": true,
+    "B_pass": false,
+    "comparison": "strict >0.2",
+    "classification": "EXTENSION deterministic arithmetic, no native/GPU"
+  },
+  {
+    "baseline_ms": 100,
+    "degraded_ms": 125,
+    "A_exact": "1/4",
+    "B_exact": "1/5",
+    "A": 0.25,
+    "B": 0.2,
+    "A_pass": true,
+    "B_pass": false,
+    "comparison": "strict >0.2",
+    "classification": "EXTENSION deterministic arithmetic, no native/GPU"
+  },
+  {
+    "baseline_ms": 100,
+    "degraded_ms": 126,
+    "A_exact": "13/50",
+    "B_exact": "13/63",
+    "A": 0.26,
+    "B": 0.20634920634920634,
+    "A_pass": true,
+    "B_pass": true,
+    "comparison": "strict >0.2",
+    "classification": "EXTENSION deterministic arithmetic, no native/GPU"
+  }
+]

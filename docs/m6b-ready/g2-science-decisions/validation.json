@@ -1,0 +1,434 @@
+{
+  "status": "PASS_LOCAL_STATIC_HISTORICAL_ARITHMETIC_ONLY",
+  "baseline_head": "7c898ecbf8636eed6d07ec0070d2c3c0c99688e0",
+  "baseline_tree": "10533c34d6b3aab4f50e61f898be78249580afba",
+  "host": "local-macOS",
+  "machine": "arm64",
+  "python": "3.9.6",
+  "commands": [
+    {
+      "argv": [
+        "git",
+        "worktree",
+        "add",
+        "-b",
+        "codex/m6b-ready-g2-science-decisions",
+        "<checkout>",
+        "7c898ecbf8636eed6d07ec0070d2c3c0c99688e0"
+      ],
+      "cwd": "<predecessor-checkout>",
+      "exit_code": 0,
+      "timeout": false,
+      "elapsed_s": 1.9119880199432373,
+      "platform": "macOS-26.6.2-arm64-arm-64bit",
+      "python": "3.9.6 (default, May 22 2026, 11:13:45) \n[Clang 21.0.0 (clang-2100.1.1.101)]",
+      "logs": {
+        "stdout": {
+          "path": "branch.stdout",
+          "sha256": "33c741515fb85e1186717e87d2ac10fb7f123abd4fcaf45a3b89b14d875ff5cb"
+        },
+        "stderr": {
+          "path": "branch.stderr",
+          "sha256": "5c6541eeadb574e77de7c576d7663029f71e37d3d0f373f5e4b849ba69dcc93c"
+        }
+      },
+      "id": "branch"
+    },
+    {
+      "argv": [
+        "python3",
+        "runs/m6b-ready-g2-science-20261011/build_packet.py"
+      ],
+      "cwd": "<project>",
+      "exit_code": 0,
+      "timeout": false,
+      "elapsed_s": 0.06777191162109375,
+      "platform": "macOS-26.6.2-arm64-arm-64bit",
+      "python": "3.9.6 (default, May 22 2026, 11:13:45) \n[Clang 21.0.0 (clang-2100.1.1.101)]",
+      "logs": {
+        "stdout": {
+          "path": "build-packet.stdout",
+          "sha256": "d09833434d7b3d31be4579277038e9b3d16c4a9b78e631836bcc1d7c1cf0be5f"
+        },
+        "stderr": {
+          "path": "build-packet.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      "id": "build-packet"
+    },
+    {
+      "argv": [
+        "python3",
+        "-"
+      ],
+      "cwd": "<project>",
+      "exit_code": 0,
+      "timeout": false,
+      "elapsed_s": 0.3821110725402832,
+      "platform": "macOS-26.6.2-arm64-arm-64bit",
+      "python": "3.9.6 (default, May 22 2026, 11:13:45) \n[Clang 21.0.0 (clang-2100.1.1.101)]",
+      "logs": {
+        "stdout": {
+          "path": "data-shapes.stdout",
+          "sha256": "96362c14ced38bfea5fb6b02082c25956275ef2995cceb5be586a835cdf86e69"
+        },
+        "stderr": {
+          "path": "data-shapes.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      "id": "data-shapes"
+    },
+    {
+      "argv": [
+        "python3",
+        "docs/m6b-ready/g2-science-decisions/verify_packet.py",
+        "--output",
+        "<project>/runs/m6b-ready-g2-science-20261011/historical-audit01.json"
+      ],
+      "cwd": "<checkout>",
+      "exit_code": 0,
+      "timeout": false,
+      "elapsed_s": 4.745344877243042,
+      "platform": "macOS-26.6.2-arm64-arm-64bit",
+      "python": "3.9.6 (default, May 22 2026, 11:13:45) \n[Clang 21.0.0 (clang-2100.1.1.101)]",
+      "logs": {
+        "stdout": {
+          "path": "historical-audit01.stdout",
+          "sha256": "22cca2aa601b18808bebf9aadd016daeaaf42cb8876181e7eabce05a3d896618"
+        },
+        "stderr": {
+          "path": "historical-audit01.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      "id": "historical-audit01"
+    },
+    {
+      "argv": [
+        "python3",
+        "-"
+      ],
+      "cwd": "<project>",
+      "exit_code": 0,
+      "timeout": false,
+      "elapsed_s": 0.029920101165771484,
+      "platform": "macOS-26.6.2-arm64-arm-64bit",
+      "python": "3.9.6 (default, May 22 2026, 11:13:45) \n[Clang 21.0.0 (clang-2100.1.1.101)]",
+      "logs": {
+        "stdout": {
+          "path": "native-constraints.stdout",
+          "sha256": "ea770e12fa30493d46826a89b19feedd335ba1d6b99d7ac8504d1d592dd49734"
+        },
+        "stderr": {
+          "path": "native-constraints.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      "id": "native-constraints"
+    },
+    {
+      "argv": [
+        "<bundled-dependencies>/bin/override/pdftoppm",
+        "-f",
+        "8",
+        "-l",
+        "8",
+        "-singlefile",
+        "-scale-to",
+        "1500",
+        "-png",
+        "m6b-s3-work/references/chapter3.pdf",
+        "runs/m6b-ready-g2-science-20261011/paper-26"
+      ],
+      "cwd": "<project>",
+      "exit_code": 0,
+      "timeout": false,
+      "elapsed_s": 14.948164701461792,
+      "platform": "macOS-26.6.2-arm64-arm-64bit",
+      "python": "3.9.6 (default, May 22 2026, 11:13:45) \n[Clang 21.0.0 (clang-2100.1.1.101)]",
+      "logs": {
+        "stdout": {
+          "path": "paper-26.stdout",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stderr": {
+          "path": "paper-26.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      "id": "paper-26"
+    },
+    {
+      "argv": [
+        "<bundled-dependencies>/bin/override/pdftoppm",
+        "-f",
+        "9",
+        "-l",
+        "9",
+        "-singlefile",
+        "-scale-to",
+        "1500",
+        "-png",
+        "m6b-s3-work/references/chapter3.pdf",
+        "runs/m6b-ready-g2-science-20261011/paper-27"
+      ],
+      "cwd": "<project>",
+      "exit_code": 0,
+      "timeout": false,
+      "elapsed_s": 14.934759140014648,
+      "platform": "macOS-26.6.2-arm64-arm-64bit",
+      "python": "3.9.6 (default, May 22 2026, 11:13:45) \n[Clang 21.0.0 (clang-2100.1.1.101)]",
+      "logs": {
+        "stdout": {
+          "path": "paper-27.stdout",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stderr": {
+          "path": "paper-27.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      "id": "paper-27"
+    },
+    {
+      "argv": [
+        "<bundled-dependencies>/bin/override/pdftoppm",
+        "-f",
+        "22",
+        "-l",
+        "22",
+        "-singlefile",
+        "-scale-to",
+        "1500",
+        "-png",
+        "m6b-s3-work/references/chapter3.pdf",
+        "runs/m6b-ready-g2-science-20261011/paper-40"
+      ],
+      "cwd": "<project>",
+      "exit_code": 0,
+      "timeout": false,
+      "elapsed_s": 14.934936761856079,
+      "platform": "macOS-26.6.2-arm64-arm-64bit",
+      "python": "3.9.6 (default, May 22 2026, 11:13:45) \n[Clang 21.0.0 (clang-2100.1.1.101)]",
+      "logs": {
+        "stdout": {
+          "path": "paper-40.stdout",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stderr": {
+          "path": "paper-40.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      "id": "paper-40"
+    },
+    {
+      "argv": [
+        "<bundled-dependencies>/bin/override/pdftoppm",
+        "-f",
+        "25",
+        "-l",
+        "25",
+        "-singlefile",
+        "-scale-to",
+        "1500",
+        "-png",
+        "m6b-s3-work/references/chapter3.pdf",
+        "runs/m6b-ready-g2-science-20261011/paper-43"
+      ],
+      "cwd": "<project>",
+      "exit_code": 0,
+      "timeout": false,
+      "elapsed_s": 14.936922073364258,
+      "platform": "macOS-26.6.2-arm64-arm-64bit",
+      "python": "3.9.6 (default, May 22 2026, 11:13:45) \n[Clang 21.0.0 (clang-2100.1.1.101)]",
+      "logs": {
+        "stdout": {
+          "path": "paper-43.stdout",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stderr": {
+          "path": "paper-43.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      "id": "paper-43"
+    },
+    {
+      "argv": [
+        "<bundled-dependencies>/bin/override/pdftoppm",
+        "-f",
+        "26",
+        "-l",
+        "26",
+        "-singlefile",
+        "-scale-to",
+        "1500",
+        "-png",
+        "m6b-s3-work/references/chapter3.pdf",
+        "runs/m6b-ready-g2-science-20261011/paper-44"
+      ],
+      "cwd": "<project>",
+      "exit_code": 0,
+      "timeout": false,
+      "elapsed_s": 14.929322004318237,
+      "platform": "macOS-26.6.2-arm64-arm-64bit",
+      "python": "3.9.6 (default, May 22 2026, 11:13:45) \n[Clang 21.0.0 (clang-2100.1.1.101)]",
+      "logs": {
+        "stdout": {
+          "path": "paper-44.stdout",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stderr": {
+          "path": "paper-44.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      "id": "paper-44"
+    },
+    {
+      "argv": [
+        "python3",
+        "runs/m6b-ready-g2-science-20261011/preflight.py"
+      ],
+      "cwd": "<project>",
+      "exit_code": 0,
+      "timeout": false,
+      "elapsed_s": 3.602908134460449,
+      "platform": "macOS-26.6.2-arm64-arm-64bit",
+      "python": "3.9.6 (default, May 22 2026, 11:13:45) \n[Clang 21.0.0 (clang-2100.1.1.101)]",
+      "logs": {
+        "stdout": {
+          "path": "preflight.stdout",
+          "sha256": "fc8b5911679581122c779279c3f65d24402b5cc37bc0a6b6d30e6298c9d26eb9"
+        },
+        "stderr": {
+          "path": "preflight.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      "id": "preflight"
+    },
+    {
+      "argv": [
+        "git",
+        "-c",
+        "core.sshCommand=ssh -i <existing-approved-GitHub-key> -o IdentitiesOnly=yes -o BatchMode=yes -o ConnectTimeout=10",
+        "ls-remote",
+        "ssh://git@ssh.github.com:443/Zwhao0/myflash.git",
+        "refs/heads/codex/m6b-ready-g1-c-optin",
+        "refs/heads/main",
+        "refs/heads/codex/m6b-ready-g2-science-decisions"
+      ],
+      "cwd": "<project>",
+      "exit_code": 0,
+      "timeout": false,
+      "elapsed_s": 2.5679450035095215,
+      "platform": "macOS-26.6.2-arm64-arm-64bit",
+      "python": "3.9.6 (default, May 22 2026, 11:13:45) \n[Clang 21.0.0 (clang-2100.1.1.101)]",
+      "logs": {
+        "stdout": {
+          "path": "remote-baseline.stdout",
+          "sha256": "65787f6d432bf1a24634ffcdcf4f2a521cba77f2b8aa05baa87a3a9cea7d290e"
+        },
+        "stderr": {
+          "path": "remote-baseline.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      "id": "remote-baseline"
+    },
+    {
+      "argv": [
+        "<bundled-dependencies>/python/bin/python3",
+        "-c",
+        "import fitz; from pathlib import Path;d=fitz.open(\"m6b-s3-work/references/chapter3.pdf\"); print(\"pages\",len(d));out=Path(\"runs/m6b-ready-g2-science-20261011\");[(d[p-19].get_pixmap(matrix=fitz.Matrix(1.2,1.2)).save(out/(\"paper-\"+str(p)+\".png\"))) for p in [26,27,40,43,44]]"
+      ],
+      "cwd": "<project>",
+      "exit_code": 1,
+      "timeout": false,
+      "elapsed_s": 0.031084060668945312,
+      "platform": "macOS-26.6.2-arm64-arm-64bit",
+      "python": "3.9.6 (default, May 22 2026, 11:13:45) \n[Clang 21.0.0 (clang-2100.1.1.101)]",
+      "logs": {
+        "stdout": {
+          "path": "render-paper.stdout",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stderr": {
+          "path": "render-paper.stderr",
+          "sha256": "7f5407210ff6c44e43201d15af1a43fa5e701578a147a9771d576c449365b29b"
+        }
+      },
+      "id": "render-paper"
+    },
+    {
+      "argv": [
+        "python3",
+        "-"
+      ],
+      "cwd": "<project>",
+      "exit_code": 0,
+      "timeout": false,
+      "elapsed_s": 0.3774402141571045,
+      "platform": "macOS-26.6.2-arm64-arm-64bit",
+      "python": "3.9.6 (default, May 22 2026, 11:13:45) \n[Clang 21.0.0 (clang-2100.1.1.101)]",
+      "logs": {
+        "stdout": {
+          "path": "shapes-small.stdout",
+          "sha256": "eda7bdd82af226b8e0906b321d290a283d164998ec3c843824d71bb799a5bce8"
+        },
+        "stderr": {
+          "path": "shapes-small.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      "id": "shapes-small"
+    },
+    {
+      "argv": [
+        "python3",
+        "-c",
+        "from pathlib import Path; x=Path(\"runs/m6b-ready-g2-science-20261011/wrapper.txt\").read_text().splitlines();print(\"\\n\".join(str(i+1)+\": \"+l for i,l in enumerate(x) if 460<=i<503))"
+      ],
+      "cwd": "<project>",
+      "exit_code": 0,
+      "timeout": false,
+      "elapsed_s": 0.0177919864654541,
+      "platform": "macOS-26.6.2-arm64-arm-64bit",
+      "python": "3.9.6 (default, May 22 2026, 11:13:45) \n[Clang 21.0.0 (clang-2100.1.1.101)]",
+      "logs": {
+        "stdout": {
+          "path": "wrapper-tail.stdout",
+          "sha256": "d9a28a1d15222f7fc63d9910557f570c2280fe729fd2e31e2f5af9dad014925d"
+        },
+        "stderr": {
+          "path": "wrapper-tail.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      "id": "wrapper-tail"
+    }
+  ],
+  "actual_raw_path": "project-private runs/m6b-ready-g2-science-20261011",
+  "public_command_policy": "trusted replacements; real argv/raw remain private",
+  "counts": {
+    "replays": 280,
+    "prefixes": 12600,
+    "candidates": 3716,
+    "independent_first_replay_prefixes": 630
+  },
+  "not_run": [
+    "native fitting",
+    "GPU",
+    "Redis",
+    "formal runtime switch",
+    "task05",
+    "M6-B"
+  ],
+  "preliminary_capture_gaps": "two discovery failures transcript-only; explicitly NOT_CAPTURED in failure-index, no fabricated raw",
+  "native_fits": 0,
+  "scientific_status": "NOT_APPROVED"
+}

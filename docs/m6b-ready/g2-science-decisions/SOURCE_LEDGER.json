@@ -1,0 +1,519 @@
+{
+  "current_baseline": {
+    "head": "7c898ecbf8636eed6d07ec0070d2c3c0c99688e0",
+    "tree": "10533c34d6b3aab4f50e61f898be78249580afba"
+  },
+  "historical_p1_head": "d2973f5fa66ae99ec7ea09ea7040a11d1b95b845",
+  "fixed_source": {
+    "sdist_sha256": "8265bd53f9c16bdb1ab103de047288ea1af6875415394abf3ac0104cfb2917ec",
+    "release_url": "https://pypi.org/project/rbeast/0.1.25/",
+    "upstream": [
+      {
+        "nature": "UPSTREAM",
+        "release": "Rbeast0.1.25",
+        "sdist_sha256": "8265bd53f9c16bdb1ab103de047288ea1af6875415394abf3ac0104cfb2917ec",
+        "path": "py_src/Rbeast/beast.py",
+        "function": "beast",
+        "line_start": 1,
+        "line_end": 45,
+        "file_sha256": "3f6414e2a62831a58d8aebd3793a8477dc3d3ed04994f820717347b84da5a6ed",
+        "text_encoding": "latin1 lossless byte mapping",
+        "span_normalized_lf_sha256": "99f154baa4a79d7c0c21f7751524ccd77dcc7d3c3adf015f135aeb5d7cf83423",
+        "anchor": "def beast"
+      },
+      {
+        "nature": "UPSTREAM",
+        "release": "Rbeast0.1.25",
+        "sdist_sha256": "8265bd53f9c16bdb1ab103de047288ea1af6875415394abf3ac0104cfb2917ec",
+        "path": "py_src/Rbeast/beast.py",
+        "function": "beast output contract",
+        "line_start": 254,
+        "line_end": 280,
+        "file_sha256": "3f6414e2a62831a58d8aebd3793a8477dc3d3ed04994f820717347b84da5a6ed",
+        "text_encoding": "latin1 lossless byte mapping",
+        "span_normalized_lf_sha256": "c85589ed88f9387f0483519140dadcc15bab9d9788e79ebc7ac9cb3951ebef44",
+        "anchor": ".cpOccPr"
+      },
+      {
+        "nature": "UPSTREAM",
+        "release": "Rbeast0.1.25",
+        "sdist_sha256": "8265bd53f9c16bdb1ab103de047288ea1af6875415394abf3ac0104cfb2917ec",
+        "path": "py_src/Rbeast/beast.py",
+        "function": "beast prior/MCMC/extra/native call",
+        "line_start": 420,
+        "line_end": 503,
+        "file_sha256": "3f6414e2a62831a58d8aebd3793a8477dc3d3ed04994f820717347b84da5a6ed",
+        "text_encoding": "latin1 lossless byte mapping",
+        "span_normalized_lf_sha256": "60e6075b345b27d814a206754bd14bd5651b75a6325a041e540e4d5bd5829dc5",
+        "anchor": "mcmc.burnin"
+      },
+      {
+        "nature": "UPSTREAM",
+        "release": "Rbeast0.1.25",
+        "sdist_sha256": "8265bd53f9c16bdb1ab103de047288ea1af6875415394abf3ac0104cfb2917ec",
+        "path": "ext_src/glue_code.c",
+        "function": "beast dispatch",
+        "line_start": 150,
+        "line_end": 174,
+        "file_sha256": "b7242208eb485ce282d57c9bd850b726f1de4446f4a7d53854b47d67e8c912f1",
+        "text_encoding": "latin1 lossless byte mapping",
+        "span_normalized_lf_sha256": "ff1ad2677aa5837f1274fbe69c7a518c339a4a319da5e23b7205d8e61e135b94",
+        "anchor": "beast2_main_corev4"
+      },
+      {
+        "nature": "UPSTREAM",
+        "release": "Rbeast0.1.25",
+        "sdist_sha256": "8265bd53f9c16bdb1ab103de047288ea1af6875415394abf3ac0104cfb2917ec",
+        "path": "ext_src/beastv2_COREV4.c",
+        "function": "beast2_main_corev4 MCMC",
+        "line_start": 285,
+        "line_end": 390,
+        "file_sha256": "cef68f513a584a4772d260d3c3be6c00de623461a91347f5c0408086657f6a91",
+        "text_encoding": "latin1 lossless byte mapping",
+        "span_normalized_lf_sha256": "3fef781e0dc216b844c62b4a3272346d281c525f29e0a339dfd1728b81b6a1d9",
+        "anchor": "basis->Propose"
+      },
+      {
+        "nature": "UPSTREAM",
+        "release": "Rbeast0.1.25",
+        "sdist_sha256": "8265bd53f9c16bdb1ab103de047288ea1af6875415394abf3ac0104cfb2917ec",
+        "path": "ext_src/beastv2_COREV4.c",
+        "function": "proposal accept/store",
+        "line_start": 513,
+        "line_end": 625,
+        "file_sha256": "cef68f513a584a4772d260d3c3be6c00de623461a91347f5c0408086657f6a91",
+        "text_encoding": "latin1 lossless byte mapping",
+        "span_normalized_lf_sha256": "f071b665c534d0121922f13f39f5406b58442066526d3d01ac24ed96bc0688fc",
+        "anchor": "bStoreCurrentSample"
+      },
+      {
+        "nature": "UPSTREAM",
+        "release": "Rbeast0.1.25",
+        "sdist_sha256": "8265bd53f9c16bdb1ab103de047288ea1af6875415394abf3ac0104cfb2917ec",
+        "path": "ext_src/beastv2_COREV4.c",
+        "function": "knot tally",
+        "line_start": 836,
+        "line_end": 852,
+        "file_sha256": "cef68f513a584a4772d260d3c3be6c00de623461a91347f5c0408086657f6a91",
+        "text_encoding": "latin1 lossless byte mapping",
+        "span_normalized_lf_sha256": "0074fedd213d284c513334e690cfb71008fa92637c1f6594bdf9c9c504336a40",
+        "anchor": "xProb"
+      },
+      {
+        "nature": "UPSTREAM",
+        "release": "Rbeast0.1.25",
+        "sdist_sha256": "8265bd53f9c16bdb1ab103de047288ea1af6875415394abf3ac0104cfb2917ec",
+        "path": "ext_src/beastv2_COREV4.c",
+        "function": "posterior normalize",
+        "line_start": 1124,
+        "line_end": 1132,
+        "file_sha256": "cef68f513a584a4772d260d3c3be6c00de623461a91347f5c0408086657f6a91",
+        "text_encoding": "latin1 lossless byte mapping",
+        "span_normalized_lf_sha256": "5171d486aa0bd50d8cf4d6c5072a9d8981f310193973e79bfcdb97571f342013",
+        "anchor": "inv_sample"
+      },
+      {
+        "nature": "UPSTREAM",
+        "release": "Rbeast0.1.25",
+        "sdist_sha256": "8265bd53f9c16bdb1ab103de047288ea1af6875415394abf3ac0104cfb2917ec",
+        "path": "ext_src/beastv2_COREV4.c",
+        "function": "trend cp output",
+        "line_start": 1465,
+        "line_end": 1540,
+        "file_sha256": "cef68f513a584a4772d260d3c3be6c00de623461a91347f5c0408086657f6a91",
+        "text_encoding": "latin1 lossless byte mapping",
+        "span_normalized_lf_sha256": "6fdec95fffb9bce4a35bb67a4dfb71857470b1846fc4b697d48e4034f6122e97",
+        "anchor": "result.tcpPr"
+      },
+      {
+        "nature": "UPSTREAM",
+        "release": "Rbeast0.1.25",
+        "sdist_sha256": "8265bd53f9c16bdb1ab103de047288ea1af6875415394abf3ac0104cfb2917ec",
+        "path": "ext_src/abc_common.c",
+        "function": "FindChangepoint_LeftRightMargins",
+        "line_start": 995,
+        "line_end": 1052,
+        "file_sha256": "79968277ce908c16c65d477ef7f115d039045069a98a16c91c9f20f46c9a2357",
+        "text_encoding": "latin1 lossless byte mapping",
+        "span_normalized_lf_sha256": "1eeab76ef0ee7010462c4fae9cac92e32d55a2bbd34cebe2e774bcb73bb5ef01",
+        "anchor": "f32_sumfilter"
+      },
+      {
+        "nature": "UPSTREAM",
+        "release": "Rbeast0.1.25",
+        "sdist_sha256": "8265bd53f9c16bdb1ab103de047288ea1af6875415394abf3ac0104cfb2917ec",
+        "path": "ext_src/abc_common.c",
+        "function": "FindChangepoint_LeftRightMargins probability cap",
+        "line_start": 1248,
+        "line_end": 1264,
+        "file_sha256": "79968277ce908c16c65d477ef7f115d039045069a98a16c91c9f20f46c9a2357",
+        "text_encoding": "latin1 lossless byte mapping",
+        "span_normalized_lf_sha256": "5c38f8615ab05fd0016f84b83cbd3411435cc57b14c5cb91f4d9df1e89e7f9fe",
+        "anchor": "min(1.0"
+      },
+      {
+        "nature": "UPSTREAM",
+        "release": "Rbeast0.1.25",
+        "sdist_sha256": "8265bd53f9c16bdb1ab103de047288ea1af6875415394abf3ac0104cfb2917ec",
+        "path": "ext_src/beastv2_io_in_args.c",
+        "function": "GetArg_3rd_Prior native constraints",
+        "line_start": 852,
+        "line_end": 889,
+        "file_sha256": "b2683ec418dc5380a4c454daaa07c5efd54b44e4638f6b1f39d73215a551b62e",
+        "text_encoding": "latin1 lossless byte mapping",
+        "span_normalized_lf_sha256": "12a1cafe235f6861d4d6a8a3c77522626f2d3b896520d746d8ee76217985bf87",
+        "anchor": "trendMaxKnotNum"
+      },
+      {
+        "nature": "UPSTREAM",
+        "release": "Rbeast0.1.25",
+        "sdist_sha256": "8265bd53f9c16bdb1ab103de047288ea1af6875415394abf3ac0104cfb2917ec",
+        "path": "ext_src/abc_rand_pcg_local_avx512.c",
+        "function": "avx512_pcg_set_seed",
+        "line_start": 88,
+        "line_end": 111,
+        "file_sha256": "92041e7fea6aae20e53d706463de749aa9fcde694006b19bf4e81028ddef2c21",
+        "text_encoding": "latin1 lossless byte mapping",
+        "span_normalized_lf_sha256": "faa2a276a4511e20a4c6fa4385738984a2d2bbc19e5286381c5d8748f500ad13",
+        "anchor": "rng->increment"
+      },
+      {
+        "nature": "ADAPTATION",
+        "commit": "d2973f5fa66ae99ec7ea09ea7040a11d1b95b845",
+        "path": "flash/rbeast_adapter.py",
+        "function": "PARAMETERS",
+        "line_start": 12,
+        "line_end": 19,
+        "file_sha256": "ff14c1b21d88f48268c3fe1594256f3de565707b6f29f19c0aa81a877d54f651",
+        "span_normalized_lf_sha256": "116362af57b49a44b4588116bd39dbaf23a7c10f59edd509b45f3c66de97e896"
+      },
+      {
+        "nature": "ADAPTATION",
+        "commit": "d2973f5fa66ae99ec7ea09ea7040a11d1b95b845",
+        "path": "flash/rbeast_adapter.py",
+        "function": "candidates_from_raw",
+        "line_start": 22,
+        "line_end": 55,
+        "file_sha256": "ff14c1b21d88f48268c3fe1594256f3de565707b6f29f19c0aa81a877d54f651",
+        "span_normalized_lf_sha256": "02315ee2b6c21fdaecaec2ba11e9e02d75b3e619b30f1a541bba33d471fdd5c3"
+      },
+      {
+        "nature": "ADAPTATION",
+        "commit": "d2973f5fa66ae99ec7ea09ea7040a11d1b95b845",
+        "path": "flash/rbeast_adapter.py",
+        "function": "RbeastAdapter/worker",
+        "line_start": 75,
+        "line_end": 125,
+        "file_sha256": "ff14c1b21d88f48268c3fe1594256f3de565707b6f29f19c0aa81a877d54f651",
+        "span_normalized_lf_sha256": "63b1929bea8bed2a7080a3e1e2cf351aa456a07dd0f93d94e2d5c24a0038f168"
+      },
+      {
+        "nature": "ADAPTATION",
+        "commit": "d2973f5fa66ae99ec7ea09ea7040a11d1b95b845",
+        "path": "flash/change_detection.py",
+        "function": "preprocess",
+        "line_start": 28,
+        "line_end": 54,
+        "file_sha256": "ea7e0112924221d4251cf8dbfb1a39129bb552d4426ff3ff032350aad1e9104d",
+        "span_normalized_lf_sha256": "e50a96adec1d9ffde3ba4df482d42521c90cb43e57718cf0619ea4cc9ca5f3af"
+      },
+      {
+        "nature": "ADAPTATION",
+        "commit": "d2973f5fa66ae99ec7ea09ea7040a11d1b95b845",
+        "path": "flash/change_detection.py",
+        "function": "filter_candidates",
+        "line_start": 57,
+        "line_end": 104,
+        "file_sha256": "ea7e0112924221d4251cf8dbfb1a39129bb552d4426ff3ff032350aad1e9104d",
+        "span_normalized_lf_sha256": "d4d48cc2803326a39061d97af73a14bbf84d366cf624cc1ef669a007e8058d6f"
+      },
+      {
+        "nature": "ADAPTATION",
+        "commit": "d2973f5fa66ae99ec7ea09ea7040a11d1b95b845",
+        "path": "flash/change_detection.py",
+        "function": "detect/prefix_replay",
+        "line_start": 107,
+        "line_end": 130,
+        "file_sha256": "ea7e0112924221d4251cf8dbfb1a39129bb552d4426ff3ff032350aad1e9104d",
+        "span_normalized_lf_sha256": "06b9d6871ad435942207318381e9cc1b79048f8ed59b6f242247c05d7b6df711"
+      }
+    ],
+    "paper": [
+      {
+        "nature": "PAPER",
+        "section": "3.2.2",
+        "printed_page": 26,
+        "original_pdf_page": 42,
+        "chapter_pdf_page1": 8,
+        "text_line": 487,
+        "anchor": "FLASH 使用Rbeast",
+        "line_sha256": "54ff5eea99b7f2aaaec5d88e7f362ffaf12e2d9528f3dc065a8e155e6da98320"
+      },
+      {
+        "nature": "PAPER",
+        "section": "3.2.2",
+        "printed_page": 26,
+        "original_pdf_page": 42,
+        "chapter_pdf_page1": 8,
+        "text_line": 482,
+        "anchor": "计算每个时刻的运行长度",
+        "line_sha256": "8ff68d62989f4923a3ae3765a526a6ab102682d27532fdcb836b04778a6734f0"
+      },
+      {
+        "nature": "PAPER",
+        "section": "3.2.2",
+        "printed_page": 27,
+        "original_pdf_page": 43,
+        "chapter_pdf_page1": 9,
+        "text_line": 530,
+        "anchor": "recovery_ratio 定义",
+        "line_sha256": "50148c830fc17250b748eb32f1bdea5aefeeade0dc63ca1bbeee982f834d6efa"
+      },
+      {
+        "nature": "PAPER",
+        "section": "3.4.3",
+        "printed_page": 40,
+        "original_pdf_page": 56,
+        "chapter_pdf_page1": 22,
+        "text_line": 1419,
+        "anchor": "持续超过20",
+        "line_sha256": "360858bfc645265010635aad265a1c33481d90c314ab117282c7b5a1beaf223c"
+      },
+      {
+        "nature": "PAPER",
+        "section": "3.4.4",
+        "printed_page": 43,
+        "original_pdf_page": 59,
+        "chapter_pdf_page1": 25,
+        "text_line": 1621,
+        "anchor": "覆盖5% 到85%",
+        "line_sha256": "060f6d974a954a7dfb885f0a52ff7093b7384fe543e5478434a5b472cd8ee3e0"
+      },
+      {
+        "nature": "PAPER",
+        "section": "3.4.5",
+        "printed_page": 44,
+        "original_pdf_page": 60,
+        "chapter_pdf_page1": 26,
+        "text_line": 1697,
+        "anchor": "BOCD 变点检测通常引入1–2",
+        "line_sha256": "ef250bc93a38dc5797481b85050e10e42f406e03a301addfd8253e80a552fa53"
+      }
+    ],
+    "paper_files": {
+      "references/chapter3.pdf": "49694130e79e0f08e17aec8ad2f7955f2551cf0942f076389d8b11cf2aebadaa",
+      "references/chapter3_extracted.txt": "99363e7b59ee6c7db7cfbbc0f7db69caa405194c0c77390731c30fcfe85de07e",
+      "SPEC.md": "d2695119f155129ca704cf6e524b3690e82827a2bbaf4f9c4cb046baf615e755"
+    },
+    "parameters": {
+      "start": {
+        "value": 1,
+        "nature": "ADAPTATION",
+        "paper_authority": false,
+        "upstream_contract": "py_src/Rbeast/beast.py:beast",
+        "status": "UNAPPROVED_MODEL_OR_ENGINEERING_CHOICE"
+      },
+      "deltat": {
+        "value": 1,
+        "nature": "ADAPTATION",
+        "paper_authority": false,
+        "upstream_contract": "py_src/Rbeast/beast.py:beast",
+        "status": "UNAPPROVED_MODEL_OR_ENGINEERING_CHOICE"
+      },
+      "season": {
+        "value": "none",
+        "nature": "ADAPTATION",
+        "paper_authority": false,
+        "upstream_contract": "py_src/Rbeast/beast.py:beast",
+        "status": "UNAPPROVED_MODEL_OR_ENGINEERING_CHOICE"
+      },
+      "method": {
+        "value": "bayes",
+        "nature": "ADAPTATION",
+        "paper_authority": false,
+        "upstream_contract": "py_src/Rbeast/beast.py:beast",
+        "status": "UNAPPROVED_MODEL_OR_ENGINEERING_CHOICE"
+      },
+      "tcp_minmax": {
+        "value": [
+          0,
+          10
+        ],
+        "nature": "ADAPTATION",
+        "paper_authority": false,
+        "upstream_contract": "py_src/Rbeast/beast.py:beast",
+        "status": "UNAPPROVED_MODEL_OR_ENGINEERING_CHOICE"
+      },
+      "torder_minmax": {
+        "value": [
+          0,
+          1
+        ],
+        "nature": "ADAPTATION",
+        "paper_authority": false,
+        "upstream_contract": "py_src/Rbeast/beast.py:beast",
+        "status": "UNAPPROVED_MODEL_OR_ENGINEERING_CHOICE"
+      },
+      "tseg_minlength": {
+        "value": 1,
+        "nature": "ADAPTATION",
+        "paper_authority": false,
+        "upstream_contract": "py_src/Rbeast/beast.py:beast",
+        "status": "UNAPPROVED_MODEL_OR_ENGINEERING_CHOICE"
+      },
+      "tseg_leftmargin": {
+        "value": 0,
+        "nature": "ADAPTATION",
+        "paper_authority": false,
+        "upstream_contract": "py_src/Rbeast/beast.py:beast",
+        "status": "UNAPPROVED_MODEL_OR_ENGINEERING_CHOICE"
+      },
+      "tseg_rightmargin": {
+        "value": 0,
+        "nature": "ADAPTATION",
+        "paper_authority": false,
+        "upstream_contract": "py_src/Rbeast/beast.py:beast",
+        "status": "UNAPPROVED_MODEL_OR_ENGINEERING_CHOICE"
+      },
+      "mcmc_seed": {
+        "value": 20261010,
+        "nature": "ADAPTATION",
+        "paper_authority": false,
+        "upstream_contract": "py_src/Rbeast/beast.py:beast",
+        "status": "UNAPPROVED_MODEL_OR_ENGINEERING_CHOICE"
+      },
+      "mcmc_burbin": {
+        "value": 200,
+        "nature": "ADAPTATION",
+        "paper_authority": false,
+        "upstream_contract": "py_src/Rbeast/beast.py:beast",
+        "status": "UNAPPROVED_MODEL_OR_ENGINEERING_CHOICE"
+      },
+      "mcmc_chains": {
+        "value": 3,
+        "nature": "ADAPTATION",
+        "paper_authority": false,
+        "upstream_contract": "py_src/Rbeast/beast.py:beast",
+        "status": "UNAPPROVED_MODEL_OR_ENGINEERING_CHOICE"
+      },
+      "mcmc_thin": {
+        "value": 5,
+        "nature": "ADAPTATION",
+        "paper_authority": false,
+        "upstream_contract": "py_src/Rbeast/beast.py:beast",
+        "status": "UNAPPROVED_MODEL_OR_ENGINEERING_CHOICE"
+      },
+      "mcmc_samples": {
+        "value": 8000,
+        "nature": "ADAPTATION",
+        "paper_authority": false,
+        "upstream_contract": "py_src/Rbeast/beast.py:beast",
+        "status": "UNAPPROVED_MODEL_OR_ENGINEERING_CHOICE"
+      },
+      "precValue": {
+        "value": 1.5,
+        "nature": "ADAPTATION",
+        "paper_authority": false,
+        "upstream_contract": "py_src/Rbeast/beast.py:beast",
+        "status": "UNAPPROVED_MODEL_OR_ENGINEERING_CHOICE"
+      },
+      "precPriorType": {
+        "value": "componentwise",
+        "nature": "ADAPTATION",
+        "paper_authority": false,
+        "upstream_contract": "py_src/Rbeast/beast.py:beast",
+        "status": "UNAPPROVED_MODEL_OR_ENGINEERING_CHOICE"
+      },
+      "hasOutlier": {
+        "value": false,
+        "nature": "ADAPTATION",
+        "paper_authority": false,
+        "upstream_contract": "py_src/Rbeast/beast.py:beast",
+        "status": "UNAPPROVED_MODEL_OR_ENGINEERING_CHOICE"
+      },
+      "print_param": {
+        "value": true,
+        "nature": "ADAPTATION",
+        "paper_authority": false,
+        "upstream_contract": "py_src/Rbeast/beast.py:beast",
+        "status": "UNAPPROVED_MODEL_OR_ENGINEERING_CHOICE"
+      },
+      "print_progress": {
+        "value": false,
+        "nature": "ADAPTATION",
+        "paper_authority": false,
+        "upstream_contract": "py_src/Rbeast/beast.py:beast",
+        "status": "UNAPPROVED_MODEL_OR_ENGINEERING_CHOICE"
+      },
+      "print_warning": {
+        "value": true,
+        "nature": "ADAPTATION",
+        "paper_authority": false,
+        "upstream_contract": "py_src/Rbeast/beast.py:beast",
+        "status": "UNAPPROVED_MODEL_OR_ENGINEERING_CHOICE"
+      },
+      "quiet": {
+        "value": false,
+        "nature": "ADAPTATION",
+        "paper_authority": false,
+        "upstream_contract": "py_src/Rbeast/beast.py:beast",
+        "status": "UNAPPROVED_MODEL_OR_ENGINEERING_CHOICE"
+      },
+      "gui": {
+        "value": false,
+        "nature": "ADAPTATION",
+        "paper_authority": false,
+        "upstream_contract": "py_src/Rbeast/beast.py:beast",
+        "status": "UNAPPROVED_MODEL_OR_ENGINEERING_CHOICE"
+      },
+      "dump_ci": {
+        "value": false,
+        "nature": "ADAPTATION",
+        "paper_authority": false,
+        "upstream_contract": "py_src/Rbeast/beast.py:beast",
+        "status": "UNAPPROVED_MODEL_OR_ENGINEERING_CHOICE"
+      },
+      "dump_mcmc": {
+        "value": false,
+        "nature": "ADAPTATION",
+        "paper_authority": false,
+        "upstream_contract": "py_src/Rbeast/beast.py:beast",
+        "status": "UNAPPROVED_MODEL_OR_ENGINEERING_CHOICE"
+      }
+    },
+    "full_pages_visually_reviewed": [
+      26,
+      27,
+      40,
+      43,
+      44
+    ],
+    "license": "packaged MIT; P1 third-party notice/redistribution issues still OPEN"
+  },
+  "web_check": {
+    "url": "https://pypi.org/project/rbeast/0.1.25/",
+    "role": "primary release page confirms BEAST Bayesian model averaging; fixed sdist byte contracts remain authority"
+  },
+  "current_sources": {
+    "flash/change_detection.py": {
+      "sha256": "ea7e0112924221d4251cf8dbfb1a39129bb552d4426ff3ff032350aad1e9104d",
+      "head": "7c898ecbf8636eed6d07ec0070d2c3c0c99688e0"
+    },
+    "flash/rbeast_adapter.py": {
+      "sha256": "e96aff41234a3beabb03ad15c712f8de064410ca8fad50cb74b5b0f440284408",
+      "head": "7c898ecbf8636eed6d07ec0070d2c3c0c99688e0"
+    },
+    "flash/iteration_reporter.py": {
+      "sha256": "a2429053bf895cd4afb6301072480ccaec82f97696598704eea030f4b1b6c3a9",
+      "head": "7c898ecbf8636eed6d07ec0070d2c3c0c99688e0"
+    }
+  },
+  "authorization": {
+    "task": "human requested original task04 on2026-10-11",
+    "previous_head": "human explicitly replied 已审核通过，可作为任务04基线",
+    "science_options": "none approved; approved=null",
+    "publication": "original task04 independent Draft PR only"
+  },
+  "licensing": "fixed package MIT; historical third-party/publication rights DEFERRED/OPEN; no wheel/full upstream redistribution",
+  "prohibited_old_project": "not accessed; only current clean-room task-specified S1/P1 history"
+}

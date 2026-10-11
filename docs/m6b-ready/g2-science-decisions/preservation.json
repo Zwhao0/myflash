@@ -1,0 +1,27 @@
+{
+  "status": "PASS_LOCAL_TRACKED_BYTE_PRESERVATION",
+  "baseline_head": "7c898ecbf8636eed6d07ec0070d2c3c0c99688e0",
+  "baseline_tree": "10533c34d6b3aab4f50e61f898be78249580afba",
+  "baseline_files": 1858,
+  "unchanged": 1856,
+  "append_only": [
+    {
+      "path": "GAPS.md",
+      "old_sha256": "6de447b01cf45c9ce30ba24206593c66b673236f8cf680eaf07f9d9afe1a136c",
+      "new_sha256": "0e1e4335c5cbb91141a3aecb099311b971b4d9555dde507aebfd3353c32ff350",
+      "old_bytes": 29559,
+      "new_bytes": 30885
+    },
+    {
+      "path": "STATUS.md",
+      "old_sha256": "322c257fb07efd8e8ffaec00f71e2a64d6bfe87279a49f49bc95c8838e8c3843",
+      "new_sha256": "047fd2892c106d684b9d529f6333724cb14919ebb3ef51d2581067e886c06e2e",
+      "old_bytes": 65302,
+      "new_bytes": 67284
+    }
+  ],
+  "complete_manifest": "baseline-files.json",
+  "manifest_sha256": "89bc1fa5f66a6140927507da4bba1a014d62583ce2f500e1b300a72256269e50",
+  "formal_environment": "NOT_PROBED; no server/environment operation; historical gaps unchanged",
+  "prior_task03_checkout": "all1858 bytes unchanged"
+}
