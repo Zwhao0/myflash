@@ -504,3 +504,5 @@ PAPER rules unchanged; UPSTREAM existing C; EXTENSION CPU synthetic invocation.
 No install/build/formal default switch/GPU/NCCL/Redis/M6-B/final alerts/privacy
 audit/history backfill. C controlled CALLER_ADOPTION_PASS only; G01/G02/G13/G04/
 G09/G20 OPEN. Next unique task precise-head independent Draft PR review; STOP.
+
+Final full diff whitespace check actual exit2 from preserved new native stdout trailing spaces; code-only prior check0. Receipt/raw stdout retained and indexed, no log trimming.

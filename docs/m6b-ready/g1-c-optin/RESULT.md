@@ -15,3 +15,5 @@ CALLER_ADOPTION_PASS 仅限显式受控 CPU 调用。前置 PR13 精确 head3196
 当前调用方：flash.change_detection.detect默认创建原adapter；scripts/m5_replay.py、tests/m5_replay.py、tests/m5_causality.py依各caller的sys.executable；scripts/m5_verify_ddp.py的原GPU入口未运行/未改。scripts/m5_repeatability.py和m5_p1_diagnostic.py使用其历史CapturingAdapter子类/独立native worker，未改。只有新tests/m6b_ready_c_native.py以正式解释器启动并显式将一个detect诊断调用指向C。测试中的C解释器原prefix回放只是CPU回归，不构成生产默认切换。
 
 下一唯一动作：ChatGPT对独立Draft PR精确head及证据技术审核；交付后停止。G01/G02/G13/G04/G09/G20仍OPEN，整体M6B-READY未宣称PASS。
+
+最终全增量git diff --check实际exit2：新增原生stdout证据的尾随空白原样保留，详见git-diff-check.stdout.txt。实施代码diff检查此前exit0；未裁剪原始日志或把最终exit2写成PASS。

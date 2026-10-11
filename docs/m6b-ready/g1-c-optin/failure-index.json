@@ -37,5 +37,12 @@
     "status": "TOOL_OUTPUT_ONLY",
     "actual_exit_code": 1,
     "reason": "initial expected path set omitted the authorized already committed new tests/task; corrected expected set, original code/tests unchanged"
+  },
+  {
+    "stage": "final git diff --check",
+    "actual_exit_code": 2,
+    "reason": "new raw stdout evidence contains native library trailing whitespace; preserved unedited, no code whitespace errors",
+    "raw_log": "runs/m6b-ready-g1-c-optin-20261011/final-diff-check.stdout",
+    "raw_sha256": "fc1277301d7cec6f02a0c1ce1c3b87987d256ee2d69aa8548a2f078ffa2b8c7e"
   }
 ]
