@@ -286,3 +286,5 @@ included unchanged. Formal adoption NOT_APPROVED, M6-B NOT_RUN; original
 G01/G02/G04/G09/G13/G20 remain OPEN, historic rights/privacy DEFERRED/OPEN.
 Next unique task independent precise-head Draft PR review and gap decision;
 stop, do not execute task03 or reinstall/rerun to backfill missing baseline.
+
+Own formal-inventory instrumentation corrected to include cache; readonly function actual2339/915 omitted-cache, fits0/installations0. Corrected full installer/native runner NOT_RUN; current preinstall full snapshot still NOT_CAPTURED and overallBLOCKED. PR13 independent Draft, precise final publication/CI bound in PR/private receipt; STOP.

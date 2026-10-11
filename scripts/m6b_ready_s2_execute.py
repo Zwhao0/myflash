@@ -23,6 +23,9 @@ CURRENT=None
 def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
 def save(p,v):p.write_text(json.dumps(v,sort_keys=True,indent=2)+'\n')
 def files(root):return {str(p.relative_to(root)):sha(p) for p in sorted(root.rglob('*')) if p.is_file() and p.suffix!='.pyc' and '__pycache__' not in p.parts}
+def complete_files(root):
+    """ADAPTATION: formal file bytes include caches; never infer a missing past snapshot."""
+    return {str(p.relative_to(root)):sha(p) for p in sorted(root.rglob('*')) if p.is_file()}
 def clean_env(pinned=False):
     e=dict(os.environ,PYTHONNOUSERSITE='1',PYTHONDONTWRITEBYTECODE='1',CUDA_VISIBLE_DEVICES='',PIP_CONFIG_FILE=os.devnull)
     for k in ('PYTHONPATH','LD_PRELOAD'):e.pop(k,None)
@@ -69,7 +72,7 @@ def main():
     project=a.project.resolve();out=a.output.resolve()
     assert out.is_relative_to(project/'runs') and not out.exists()
     assert sys.version_info[:3]==(3,12,3)
-    out.mkdir();before=files(project/'.venv-m5');save(out/'formal-before.json',before)
+    out.mkdir();before=complete_files(project/'.venv-m5');save(out/'formal-before.json',before)
     original_source={name:sha(ROOT/name) for name in subprocess.check_output(['git','ls-tree','-r','--name-only',BASE],cwd=ROOT,text=True).splitlines()}
     save(out/'source-before.json',original_source)
     result=dict(task='M6B-READY-G1-S2-C-EXECUTE',machine='node-0',gpu=False,final_alert=False,batches=[],receipts=[],status='IN_PROGRESS')
@@ -146,7 +149,7 @@ def main():
         result['status']='FAIL_OR_BLOCKED';result['error']=type(error).__name__+': '+str(error)
         raise
     finally:
-        after=files(project/'.venv-m5');save(out/'formal-after.json',after)
+        after=complete_files(project/'.venv-m5');save(out/'formal-after.json',after)
         result['formal_files']=len(after);result['formal_preserved']=before==after
         result['source_preserved']=original_source=={name:sha(ROOT/name) for name in original_source}
         result['own_current_child']=None if CURRENT is None else CURRENT.pid

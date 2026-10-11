@@ -1,0 +1,13 @@
+{
+  "status": "PASS_READONLY_POSTFLIGHT_FUNCTION_ONLY",
+  "corrected_source_sha256": "e40314e649cffd139166ff634deac743fb0a052d8103f8f2ef97643ed591440a",
+  "full_regular_file_bytes": 2339,
+  "legacy_noncache_files": 1424,
+  "included_previously_omitted_cache_files": 915,
+  "actual_python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "native_fits": 0,
+  "installations": 0,
+  "full_corrected_installer_native_runner": "NOT_RUN",
+  "current_preinstall_full_snapshot": "NOT_CAPTURED",
+  "overall_acceptance": "BLOCKED"
+}

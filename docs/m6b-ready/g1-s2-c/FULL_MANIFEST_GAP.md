@@ -7,3 +7,5 @@
 整体隔离验收状态为 `BLOCKED_FULL_FORMAL_MANIFEST_PREINSTALL_NOT_CAPTURED`。CPU 身份、原断言和完整后验比较的实际结果分别报告，不能据此宣称整体工程验收 PASS。不重装、不回填哈希、不把后测清单标成前测，不借新 native 样本覆盖本轮记录。正式采纳继续 `NOT_APPROVED`。
 
 唯一下一步：ChatGPT 对本独立 Draft PR 精确提交进行审核，包含这个证据缺口和后续最小补救方案；本轮停止，不执行任务 03。
+
+最终新增 runner 仅将正式文件清单改用 `complete_files`，包括缓存。该修正在本轮拟合结束后提交；完整 installer/native runner **NOT_RUN**，不能回填本轮缺失的安装前 SHA。实际采样代码仍为684d5c7、补测仅为4a4721c。只允许另行只读验证采集函数能覆盖当前完整2339文件，当前整体 BLOCKED 不变；未来重装/采样/正式采纳仍需获批。

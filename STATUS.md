@@ -473,3 +473,5 @@ or full source published. Ordinary push/independent Draft PR final head/tree/
 real CI checkout bound in PR/private publication receipt; CI is text-only.
 Next unique task: independent ChatGPT exact-head Draft PR review, including
 full-manifest gap; STOP, no task03 or automatic formal adoption.
+
+Final own-runner instrumentation correction: complete_files covers formal cache bytes; this corrected full installer/native runner NOT_RUN, no additional fits or environment. Read-only postflight helper check separately bound; current missing preinstall915-cache snapshot stays NOT_CAPTURED/BLOCKED. Actual native code684d5c7 and CLI-only finishing4a4721c remain unchanged history. Independent Draft PR13 created, no prior PR/main changes; final published head/tree/CI in PR/private receipt.

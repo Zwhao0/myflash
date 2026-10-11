@@ -794,6 +794,25 @@
   },
   "execution_tree": "092b57bd379a480c9d50c95b345605875fb0543a",
   "final_alert": false,
+  "final_harness_correction": {
+    "current_preinstall_gap": "NOT_CAPTURED; not repaired by future code",
+    "native_installer_runner": "NOT_RUN_AFTER_CORRECTION",
+    "readonly_function_probe": {
+      "actual_python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+      "corrected_source_sha256": "e40314e649cffd139166ff634deac743fb0a052d8103f8f2ef97643ed591440a",
+      "current_preinstall_full_snapshot": "NOT_CAPTURED",
+      "full_corrected_installer_native_runner": "NOT_RUN",
+      "full_regular_file_bytes": 2339,
+      "included_previously_omitted_cache_files": 915,
+      "installations": 0,
+      "legacy_noncache_files": 1424,
+      "native_fits": 0,
+      "overall_acceptance": "BLOCKED",
+      "status": "PASS_READONLY_POSTFLIGHT_FUNCTION_ONLY"
+    },
+    "scope": "new runner complete formal inventory includes cache; original files helper/CPU scientific tests unchanged",
+    "source_sha256": "e40314e649cffd139166ff634deac743fb0a052d8103f8f2ef97643ed591440a"
+  },
   "finisher": {
     "argv": [
       "nice",
@@ -837,6 +856,18 @@
     "stderr_sha256": "1f4c06abc5be00bc6187d24215729297de867b3ee01256e4b9be518a244ac44c",
     "stdout_sha256": "f2ec1f287be3b2bbbec34b1087e93859a20cdfa284db92de64fe73609289b89e",
     "timeout": false
+  },
+  "first_published_evidence": {
+    "CI_job": 114381935875,
+    "CI_run": 38109503450,
+    "PR": 13,
+    "actual_checkout": "80e9e307ecaf9c4b2b65802619ec7d83e6ed1d4b",
+    "checkout_tree_equal": true,
+    "files": 1773,
+    "head": "814eb7852fe0d0d425b54523e06324fc9440e716",
+    "privacy_tests": 6,
+    "scanner_findings": 0,
+    "tree": "f336b343dec9587f880006ee55712543bd65d825"
   },
   "formal_adoption": "NOT_APPROVED",
   "gpu": "NOT_RUN",
