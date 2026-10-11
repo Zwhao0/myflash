@@ -470,7 +470,7 @@
     },
     "raw_receipt_sha256": "72c99f0f1d3043ec8b853b7ce08a7ebcd9da879791532f22eda28358ff5159a8",
     "execution_authorized": false,
-    "status": "PREPARED_NOT_YET_PUSHED",
+    "status": "PUSH01_AND_DRAFT_PR22_VERIFIED_FINAL_RECEIPT_SEAL_PENDING",
     "ci": "NOT_VERIFIED",
     "next_unique_action": "Independent exact remote TASK11 PR review; TASK12 B01 implementation still requires separate authorization",
     "early_metadata_helper": {
@@ -481,47 +481,136 @@
     "local_checks": {
       "verify01": {
         "exit_code": 0,
-        "receipt": "/Users/henry/Desktop/FLASH_Codex/runs/task11-m6b-ready-audit-20261011/publication/verify01.receipt.json",
+        "receipt": "<private-workspace>/runs/task11-m6b-ready-audit-20261011/publication/verify01.receipt.json",
         "logs": {
           "stdout": {
-            "path": "/Users/henry/Desktop/FLASH_Codex/runs/task11-m6b-ready-audit-20261011/publication/verify01.stdout",
+            "path": "<private-workspace>/runs/task11-m6b-ready-audit-20261011/publication/verify01.stdout",
             "sha256": "414f51bf621113c57e6111299ea7d432c1689d4dfa7eff5e57d5c31b687d1efe"
           },
           "stderr": {
-            "path": "/Users/henry/Desktop/FLASH_Codex/runs/task11-m6b-ready-audit-20261011/publication/verify01.stderr",
+            "path": "<private-workspace>/runs/task11-m6b-ready-audit-20261011/publication/verify01.stderr",
             "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
           }
         }
       },
       "changed-text01": {
         "exit_code": 0,
-        "receipt": "/Users/henry/Desktop/FLASH_Codex/runs/task11-m6b-ready-audit-20261011/publication/changed-text01.receipt.json",
+        "receipt": "<private-workspace>/runs/task11-m6b-ready-audit-20261011/publication/changed-text01.receipt.json",
         "logs": {
           "stdout": {
-            "path": "/Users/henry/Desktop/FLASH_Codex/runs/task11-m6b-ready-audit-20261011/publication/changed-text01.stdout",
+            "path": "<private-workspace>/runs/task11-m6b-ready-audit-20261011/publication/changed-text01.stdout",
             "sha256": "18ed9edd2d0dcbcdc4d69ce484e20593a31dc716b89c086f57164af0f3178f08"
           },
           "stderr": {
-            "path": "/Users/henry/Desktop/FLASH_Codex/runs/task11-m6b-ready-audit-20261011/publication/changed-text01.stderr",
+            "path": "<private-workspace>/runs/task11-m6b-ready-audit-20261011/publication/changed-text01.stderr",
             "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
           }
         }
       },
       "diff-check01": {
         "exit_code": 0,
-        "receipt": "/Users/henry/Desktop/FLASH_Codex/runs/task11-m6b-ready-audit-20261011/publication/diff-check01.receipt.json",
+        "receipt": "<private-workspace>/runs/task11-m6b-ready-audit-20261011/publication/diff-check01.receipt.json",
         "logs": {
           "stdout": {
-            "path": "/Users/henry/Desktop/FLASH_Codex/runs/task11-m6b-ready-audit-20261011/publication/diff-check01.stdout",
+            "path": "<private-workspace>/runs/task11-m6b-ready-audit-20261011/publication/diff-check01.stdout",
             "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
           },
           "stderr": {
-            "path": "/Users/henry/Desktop/FLASH_Codex/runs/task11-m6b-ready-audit-20261011/publication/diff-check01.stderr",
+            "path": "<private-workspace>/runs/task11-m6b-ready-audit-20261011/publication/diff-check01.stderr",
             "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
           }
         }
       }
     },
-    "audit_commit_unchanged_files": 2081
+    "audit_commit_unchanged_files": 2081,
+    "pr_url": "https://github.com/Zwhao0/myflash/pull/22",
+    "published_head": "5d63a7b001183f74bb5087c05250543668910a58",
+    "published_tree": "d2c308de950fb1b422d6c28eba3cdf7866b25577",
+    "publication_receipts": {
+      "push01": {
+        "exit_code": 0,
+        "receipt": "<private-workspace>/runs/task11-m6b-ready-audit-20261011/publication/push01.receipt.json",
+        "logs": {
+          "stdout": {
+            "path": "<private-workspace>/runs/task11-m6b-ready-audit-20261011/publication/push01.stdout",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          "stderr": {
+            "path": "<private-workspace>/runs/task11-m6b-ready-audit-20261011/publication/push01.stderr",
+            "sha256": "5002f0c9d34adb98dd051aaaa5e4eb243a60756dcf111a956914256a21302edc"
+          }
+        },
+        "argv_public": "Git SSH443 task branch command; exact argv retained in private receipt"
+      },
+      "remote-read01": {
+        "exit_code": 0,
+        "receipt": "<private-workspace>/runs/task11-m6b-ready-audit-20261011/publication/remote-read01.receipt.json",
+        "logs": {
+          "stdout": {
+            "path": "<private-workspace>/runs/task11-m6b-ready-audit-20261011/publication/remote-read01.stdout",
+            "sha256": "275347fc470462ce2458446da0bdeba43121fc61f9d17b37cde235f380e8f313"
+          },
+          "stderr": {
+            "path": "<private-workspace>/runs/task11-m6b-ready-audit-20261011/publication/remote-read01.stderr",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          }
+        },
+        "argv_public": "Git SSH443 task branch command; exact argv retained in private receipt"
+      },
+      "fetch01": {
+        "exit_code": 0,
+        "receipt": "<private-workspace>/runs/task11-m6b-ready-audit-20261011/publication/fetch01.receipt.json",
+        "logs": {
+          "stdout": {
+            "path": "<private-workspace>/runs/task11-m6b-ready-audit-20261011/publication/fetch01.stdout",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          "stderr": {
+            "path": "<private-workspace>/runs/task11-m6b-ready-audit-20261011/publication/fetch01.stderr",
+            "sha256": "76f016f08306197325f373975bdca1f3ff10e990c57040604d47e6622670db89"
+          }
+        },
+        "argv_public": "Git SSH443 task branch command; exact argv retained in private receipt"
+      },
+      "tree-read01": {
+        "exit_code": 0,
+        "receipt": "<private-workspace>/runs/task11-m6b-ready-audit-20261011/publication/tree-read01.receipt.json",
+        "logs": {
+          "stdout": {
+            "path": "<private-workspace>/runs/task11-m6b-ready-audit-20261011/publication/tree-read01.stdout",
+            "sha256": "27830d185d5c65c7fd2127b45f939f8afec75f63fd95a931e9c8a76c7bb9be92"
+          },
+          "stderr": {
+            "path": "<private-workspace>/runs/task11-m6b-ready-audit-20261011/publication/tree-read01.stderr",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          }
+        },
+        "argv_public": "Git SSH443 task branch command; exact argv retained in private receipt"
+      },
+      "local-read01": {
+        "exit_code": 0,
+        "receipt": "<private-workspace>/runs/task11-m6b-ready-audit-20261011/publication/local-read01.receipt.json",
+        "logs": {
+          "stdout": {
+            "path": "<private-workspace>/runs/task11-m6b-ready-audit-20261011/publication/local-read01.stdout",
+            "sha256": "27830d185d5c65c7fd2127b45f939f8afec75f63fd95a931e9c8a76c7bb9be92"
+          },
+          "stderr": {
+            "path": "<private-workspace>/runs/task11-m6b-ready-audit-20261011/publication/local-read01.stderr",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          }
+        },
+        "argv_public": "Git SSH443 task branch command; exact argv retained in private receipt"
+      }
+    },
+    "pr_readback": {
+      "path": "<private-workspace>/runs/task11-m6b-ready-audit-20261011/publication/pr22-read01.json",
+      "draft": true,
+      "merged": false,
+      "base_sha": "b517c5a922d52895e274c3758b5b7c2c409d91ca",
+      "head_sha": "5d63a7b001183f74bb5087c05250543668910a58"
+    },
+    "final_seal": "Final receipt-only commit and ordinary push head/tree bound by final PR body and private final-readback receipts; no runtime authorization.",
+    "privacy_repair": "changed-text02 actual exit1: user_home paths in publication receipt metadata; replaced with private-workspace placeholder, no secret content. Prior published metadata paths remain in Git history; no force rewrite. Original logs preserved."
   }
 }

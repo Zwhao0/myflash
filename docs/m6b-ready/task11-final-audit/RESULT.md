@@ -71,3 +71,24 @@ or TASK12 execution. M6B-READY BLOCKED. Initial stdin metadata helper SyntaxErro
 was before writes, tool transcript only/raw NOT_CAPTURED; corrected ASCII source.
 Next unique action independent precise-head review; then separately authorize
 TASK12 B01 confirmed rank0 -> approved detector -> versioned Profile request.
+
+## Publication completion receipts
+
+TASK11 publication actual completion: SSH443 push01/remote-read01/fetch01/
+tree-read01/local-read01 all exit0 on local macOS26.6.2 arm64; remote
+5d63a7b001183f74bb5087c05250543668910a58 / tree
+d2c308de950fb1b422d6c28eba3cdf7866b25577 match local; baseb517 unchanged.
+Draft PR https://github.com/Zwhao0/myflash/pull/22 created and independent
+get_pr_info confirms OPEN/DRAFT/unmerged/base exactb517/head5d63. Static
+verify01/changed-text01/diff-check01 all0; 2081 original audit files unchanged.
+Full argv/exit/raw log SHA under private publication receipts; this final
+receipt-only seal HEAD/tree will be bound by final push/readback and PR body.
+CI NOT_VERIFIED. No CPU/GPU/server rerun; M6B-READY BLOCKED. Next unique task
+is precise-head independent PR22 review, not TASK12 execution. STOP.
+
+Publication changed-text02 actual exit1 (user_home receipt paths); redact
+metadata with private-workspace placeholder and recheck, original logs retained.
+No credentials exposed; prior publication metadata paths remain in Git history.
+
+Publication final static verify02 exit0; redacted changed-text03 findings0/
+diff-check03 exit0 on same local machine. Receipt seal only; no runtime changes.
