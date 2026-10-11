@@ -1,0 +1,1 @@
+{"argv": ["git", "-c", "core.sshCommand=ssh -o BatchMode=yes -o ConnectTimeout=10", "ls-remote", "ssh://git@ssh.github.com:443/Zwhao0/myflash.git", "refs/heads/codex/m6b-ready-g0-evidence"], "exit_code": 128, "child_finished": true}

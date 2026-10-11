@@ -19,5 +19,26 @@
     "status": "TOOL_OUTPUT_ONLY",
     "exit_code": "NOT_CAPTURED_PER_SUBCOMMAND",
     "reason": "Package root is not Git; git status/worktree reported fatal, actual approved m6b-ready-work clean exact baseline used. Raw tool output not persisted as filesystem log."
+  },
+  {
+    "operation": "push",
+    "exit_code": 128,
+    "status": "FAIL_RETAINED",
+    "reason": "Local HTTPS push has no configured noninteractive write authentication",
+    "evidence": "publication-transport/push.receipt.json"
+  },
+  {
+    "operation": "ssh-read",
+    "exit_code": 128,
+    "status": "FAIL_RETAINED",
+    "reason": "Local default SSH Git host key verification failed; no key bypass used",
+    "evidence": "publication-transport/ssh-read.receipt.json"
+  },
+  {
+    "operation": "ssh443-read",
+    "exit_code": 128,
+    "status": "FAIL_RETAINED",
+    "reason": "Previously used SSH443 endpoint authenticates no local public key; Permission denied (publickey)",
+    "evidence": "publication-transport/ssh443-read.receipt.json"
   }
 ]

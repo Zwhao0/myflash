@@ -63,3 +63,10 @@ flash/tests/scripts hashes match exactly. Public publication-check-01 binds
 complete command/log hashes. Final new receipt bytes receive an additional
 changed-path scan; normal GitHub full-tree CI is observed after publication.
 No historical privacy/rights audit was performed.
+
+Publication transport attempts are retained: local HTTPS push128 (no configured
+write authentication), default SSH read128 (host key verification), SSH443 read128
+(no local public-key authorization). No host-key bypass, credential provisioning
+or history rewrite was performed. The existing node-0 publication channel is
+used for ordinary Git push; exact final outcome is in the private publication
+receipt and Draft PR metadata. These transport failures do not change CPU results.

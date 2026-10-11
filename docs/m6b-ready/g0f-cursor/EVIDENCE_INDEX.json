@@ -747,5 +747,47 @@
     "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "sanitized_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "original_read_and_verified": true
+  },
+  {
+    "private_reference": "<local-private-run>/push.receipt.json",
+    "public_path": "docs/m6b-ready/g0f-cursor/publication-transport/push.receipt.json",
+    "original_sha256": "2207f171b2bbc54918448cd01c09bfba313a38c6f9521898e928447d16460e03",
+    "sanitized_sha256": "2207f171b2bbc54918448cd01c09bfba313a38c6f9521898e928447d16460e03",
+    "original_read_and_verified": true
+  },
+  {
+    "private_reference": "<local-private-run>/push.stderr",
+    "public_path": "docs/m6b-ready/g0f-cursor/publication-transport/push.stderr",
+    "original_sha256": "84c1d555d8a4c174b1214551c5c8ad38d3d969311b9957b168c31f252ceaebe8",
+    "sanitized_sha256": "84c1d555d8a4c174b1214551c5c8ad38d3d969311b9957b168c31f252ceaebe8",
+    "original_read_and_verified": true
+  },
+  {
+    "private_reference": "<local-private-run>/ssh-read.receipt.json",
+    "public_path": "docs/m6b-ready/g0f-cursor/publication-transport/ssh-read.receipt.json",
+    "original_sha256": "0e849b66768c0ceed7e0bebb665951676bbeff7c0c6e7662c4dd4712aa38ae4d",
+    "sanitized_sha256": "0e849b66768c0ceed7e0bebb665951676bbeff7c0c6e7662c4dd4712aa38ae4d",
+    "original_read_and_verified": true
+  },
+  {
+    "private_reference": "<local-private-run>/ssh-read.stderr",
+    "public_path": "docs/m6b-ready/g0f-cursor/publication-transport/ssh-read.stderr",
+    "original_sha256": "dd4b8dda1eaa1103c76c5bf01d694dca0ca2a9d4d8c317fbfa82de5f16c6b00b",
+    "sanitized_sha256": "2c69eccfb34ef97319cb830d4d94d17f4dda7964bd3fefd299f86a9e14882309",
+    "original_read_and_verified": true
+  },
+  {
+    "private_reference": "<local-private-run>/ssh443-read.receipt.json",
+    "public_path": "docs/m6b-ready/g0f-cursor/publication-transport/ssh443-read.receipt.json",
+    "original_sha256": "d427aabfa6a0e8b19268594a8425819b92399732e8064a25cd26893779dae726",
+    "sanitized_sha256": "d427aabfa6a0e8b19268594a8425819b92399732e8064a25cd26893779dae726",
+    "original_read_and_verified": true
+  },
+  {
+    "private_reference": "<local-private-run>/ssh443-read.stderr",
+    "public_path": "docs/m6b-ready/g0f-cursor/publication-transport/ssh443-read.stderr",
+    "original_sha256": "b119a7fd46649ab53acd8e19e95e856a137f2bc745da29bfb61190458ee676dd",
+    "sanitized_sha256": "21bd2379e5ded2835ea5531bf478fc08d8d80e8abb28125d9ce9244b469abaef",
+    "original_read_and_verified": true
   }
 ]
