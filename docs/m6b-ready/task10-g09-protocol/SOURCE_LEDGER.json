@@ -1,0 +1,153 @@
+{
+  "base_commit": "f44e3fb44e48979298a13efbd9dccad5000c3eef",
+  "base_tree": "1a4f6cec6597f907f9ebe647c62de921fbcb70e4",
+  "paper_authority": "references/chapter3.pdf via SPEC S3/S4/S6/S7/S8/S9; no new PDF rendering/quotation in TASK10",
+  "classification_rule": "PAPER facts via SPEC; ADAPTATION inherited contracts and protocol sections 2-7; EXTENSION auxiliary fault models and candidate-layer metrics; UPSTREAM official interface documentation only",
+  "files": [
+    {
+      "classification": "PAPER",
+      "commit": "f44e3fb44e48979298a13efbd9dccad5000c3eef",
+      "path": "SPEC.md",
+      "sha256": "d2695119f155129ca704cf6e524b3690e82827a2bbaf4f9c4cb046baf615e755",
+      "use": "SPEC location facts"
+    },
+    {
+      "classification": "ADAPTATION",
+      "commit": "f44e3fb44e48979298a13efbd9dccad5000c3eef",
+      "path": "GAPS.md",
+      "sha256": "f22114fa8642fc2b38fc367003433154577c4d2829b9427e9ded810e68c4a7a4",
+      "use": "inherited approved contract / scope / source boundary; unchanged runtime"
+    },
+    {
+      "classification": "ADAPTATION",
+      "commit": "f44e3fb44e48979298a13efbd9dccad5000c3eef",
+      "path": "PLAN.md",
+      "sha256": "14fdd2f6f6940709590ceda2621e440255c1ee2b5d2ca253b76ff9de30057121",
+      "use": "inherited approved contract / scope / source boundary; unchanged runtime"
+    },
+    {
+      "classification": "ADAPTATION",
+      "commit": "f44e3fb44e48979298a13efbd9dccad5000c3eef",
+      "path": "STATUS.md",
+      "sha256": "cb747cd5a309da78e718419913d778429d895949d848954932e9ab5572cf4470",
+      "use": "inherited approved contract / scope / source boundary; unchanged runtime"
+    },
+    {
+      "classification": "ADAPTATION",
+      "commit": "f44e3fb44e48979298a13efbd9dccad5000c3eef",
+      "path": "tasks/06b_ready_task09_abi2_cpu.md",
+      "sha256": "8e671f3a077200964a104a821b3fab5c0f68fc9c6dddb7893ae2159aec2ff9a1",
+      "use": "inherited approved contract / scope / source boundary; unchanged runtime"
+    },
+    {
+      "classification": "ADAPTATION",
+      "commit": "f44e3fb44e48979298a13efbd9dccad5000c3eef",
+      "path": "docs/m6b-ready/task09-abi2-cpu/RESULT.md",
+      "sha256": "42e155b8e5c8fe78f84a4e667565a1d15b17bd2ef11281713b4c93f83fb3c864",
+      "use": "inherited approved contract / scope / source boundary; unchanged runtime"
+    },
+    {
+      "classification": "ADAPTATION",
+      "commit": "f44e3fb44e48979298a13efbd9dccad5000c3eef",
+      "path": "docs/m6b-ready/task09-abi2-cpu/SOURCE_LEDGER.json",
+      "sha256": "d117f523f1428ad08bd8a8cce5aea2aa0962df7f92988f04a9c37e8fe286a512",
+      "use": "inherited approved contract / scope / source boundary; unchanged runtime"
+    },
+    {
+      "classification": "ADAPTATION",
+      "commit": "f44e3fb44e48979298a13efbd9dccad5000c3eef",
+      "path": "docs/m6b-ready/g20-reporter/RESULT.md",
+      "sha256": "e3c284b0a9e55b5f8579c1f01f987d2bb70d638d530c75a683154414e9cf9a6b",
+      "use": "inherited approved contract / scope / source boundary; unchanged runtime"
+    },
+    {
+      "classification": "ADAPTATION",
+      "commit": "f44e3fb44e48979298a13efbd9dccad5000c3eef",
+      "path": "docs/m6b-ready/g2-approved-detector/APPROVAL.json",
+      "sha256": "4f5ca046ca67e7cc9bb1ebd76b3659616d9bb1e165ba48e3be8a6f33809f6409",
+      "use": "inherited approved contract / scope / source boundary; unchanged runtime"
+    },
+    {
+      "classification": "ADAPTATION",
+      "commit": "f44e3fb44e48979298a13efbd9dccad5000c3eef",
+      "path": "docs/m6b-ready/g3-g04-implementation/APPROVAL.json",
+      "sha256": "6b103ddb9e20cd7f10ddc91c3b94603b78690d812320e3eaeb97b0efbcb325de",
+      "use": "inherited approved contract / scope / source boundary; unchanged runtime"
+    },
+    {
+      "classification": "ADAPTATION",
+      "commit": "f44e3fb44e48979298a13efbd9dccad5000c3eef",
+      "path": "flash/m6_abi2_bridge.py",
+      "sha256": "548d7d177b181f04aebc1a892715a3e9e73b35e6d10fd2e5986f93088a098697",
+      "use": "inherited approved contract / scope / source boundary; unchanged runtime"
+    },
+    {
+      "classification": "ADAPTATION",
+      "commit": "f44e3fb44e48979298a13efbd9dccad5000c3eef",
+      "path": "flash/m6_controller.py",
+      "sha256": "12cf7cf7a96a4d3e83f78ae59a305738878f7e53e39c1b7d68e3a2b4facfdc37",
+      "use": "inherited approved contract / scope / source boundary; unchanged runtime"
+    },
+    {
+      "classification": "ADAPTATION",
+      "commit": "f44e3fb44e48979298a13efbd9dccad5000c3eef",
+      "path": "flash/change_detection.py",
+      "sha256": "a116ef88a31f52226a545fa5e3d08f7eb5d8264456ec5c7de637e0c6d76b1957",
+      "use": "inherited approved contract / scope / source boundary; unchanged runtime"
+    },
+    {
+      "classification": "ADAPTATION",
+      "commit": "f44e3fb44e48979298a13efbd9dccad5000c3eef",
+      "path": "flash/localization.py",
+      "sha256": "b32008fe4800f86b2fe8dc27196db2b3d2daaf555598e77ddd744d9c7d3e805a",
+      "use": "inherited approved contract / scope / source boundary; unchanged runtime"
+    },
+    {
+      "classification": "ADAPTATION",
+      "commit": "f44e3fb44e48979298a13efbd9dccad5000c3eef",
+      "path": "flash/iteration_reporter.py",
+      "sha256": "5425f9be08ea49968734ae6ef125694bc65ae182ff2f3ae4c3ef57adbbf01f6e",
+      "use": "inherited approved contract / scope / source boundary; unchanged runtime"
+    },
+    {
+      "classification": "ADAPTATION",
+      "commit": "f44e3fb44e48979298a13efbd9dccad5000c3eef",
+      "path": "native/probe.cpp",
+      "sha256": "7a397516cd5d4bb84d21207a3b19558846463c8c099d59d7179ad4f611882311",
+      "use": "inherited approved contract / scope / source boundary; unchanged runtime"
+    }
+  ],
+  "upstream_documents": [
+    {
+      "classification": "UPSTREAM",
+      "url": "https://docs.nvidia.com/cuda/archive/12.8.0/cuda-runtime-api/group__CUDART__EVENT.html",
+      "version": "12.8.0",
+      "section": "cudaEventElapsedTime/cudaEventSynchronize",
+      "use": "ms units/completion/timing caveat; no copied implementation"
+    },
+    {
+      "classification": "UPSTREAM",
+      "url": "https://docs.nvidia.com/deeplearning/nccl/archives/nccl_2273/user-guide/docs/usage/groups.html",
+      "version": "2.27.3",
+      "section": "Group Calls",
+      "use": "batch submission/order; no copied implementation"
+    },
+    {
+      "classification": "UPSTREAM",
+      "url": "https://docs.pytorch.org/docs/2.8/distributed.html",
+      "version": "2.8",
+      "section": "init_process_group timeout",
+      "use": "failure behavior; proposed 60s is ADAPTATION, not default"
+    },
+    {
+      "classification": "UPSTREAM",
+      "url": "https://docs.nvidia.com/deploy/nvidia-smi/index.html",
+      "version": "live document; not proof of installed H800 CLI version",
+      "section": "lock-gpu-clocks/reset-gpu-clocks",
+      "use": "privilege/restore caveat; no changes executed"
+    }
+  ],
+  "upstream_checked_date_local": "2026-10-11 Asia/Shanghai",
+  "upstream_receipt_scope": "web tool read; no CLI process exit or local page-byte hash claimed",
+  "licenses": "No third-party code copied, no dependency/artifact redistributed. Existing PDF/runtime/source rights remain OPEN/DEFERRED. Official API documentation linked and paraphrased. GreyHound not used."
+}
