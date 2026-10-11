@@ -1,0 +1,17 @@
+{
+  "binary_pre_post": true,
+  "snapshots": [
+    "evidence/validation.json",
+    "evidence/verification02/validation.json",
+    "evidence/verification03/validation.json"
+  ],
+  "formal_original_sha": "a7432000e18465d8e4d2ba895a8618b388007528757718d286fcb82440bbb157",
+  "candidate_sha": "1f08fbc9f24d0c00eb21f91f357519f15289ffd1ef18b9e7e0aca47c2596faeb",
+  "formal_environment_writes": "NONE_REQUESTED; bytecode disabled; no install/uninstall/build",
+  "full_formal_environment_sha_inventory": "NOT_RUN_BY_REQUEST",
+  "historical_preinstall915_cache_sha": "NOT_CAPTURED",
+  "full_environment_preservation": "NOT_CLAIMED",
+  "source_clean_after_each_execution": true,
+  "scientific_sources_tests_fixtures": "git base diff: only flash/rbeast_adapter.py changed among existing code; all previous tests/fixtures unchanged",
+  "gpu": false
+}

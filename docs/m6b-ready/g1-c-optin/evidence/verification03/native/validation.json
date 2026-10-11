@@ -1,0 +1,247 @@
+{
+  "status": "PASS_CONTROLLED_CPU_OPT_IN",
+  "native_fits": 3,
+  "wrong_binary_rejections": 1,
+  "parameters": {
+    "start": 1,
+    "deltat": 1,
+    "season": "none",
+    "method": "bayes",
+    "tcp_minmax": [
+      0,
+      10
+    ],
+    "torder_minmax": [
+      0,
+      1
+    ],
+    "tseg_minlength": 1,
+    "tseg_leftmargin": 0,
+    "tseg_rightmargin": 0,
+    "mcmc_seed": 20261010,
+    "mcmc_burbin": 200,
+    "mcmc_chains": 3,
+    "mcmc_thin": 5,
+    "mcmc_samples": 8000,
+    "precValue": 1.5,
+    "precPriorType": "componentwise",
+    "hasOutlier": false,
+    "print_param": true,
+    "print_progress": false,
+    "print_warning": true,
+    "quiet": false,
+    "gui": false,
+    "dump_ci": false,
+    "dump_mcmc": false
+  },
+  "calls": {
+    "default_before": {
+      "status": "AMBIGUOUS_SPEC",
+      "worker_exit_code": 0,
+      "runtime_identity": {
+        "sys_executable": "<project>/.venv-m5/bin/python",
+        "sys_prefix": "<project>/.venv-m5",
+        "Rbeast_file": "<project>/.venv-m5/lib/python3.12/site-packages/Rbeast/__init__.py",
+        "native_module": "cbeast",
+        "native_file": "<project>/.venv-m5/lib/python3.12/site-packages/Rbeast/Rbeast.cpython-312-x86_64-linux-gnu.so",
+        "native_sha256": "a7432000e18465d8e4d2ba895a8618b388007528757718d286fcb82440bbb157",
+        "mapped_library_segments": [
+          {
+            "permissions": "r--p",
+            "offset": "00000000",
+            "device": "fc:00",
+            "inode": 19667595,
+            "path": "<project>/.venv-m5/lib/python3.12/site-packages/Rbeast/Rbeast.cpython-312-x86_64-linux-gnu.so"
+          },
+          {
+            "permissions": "r-xp",
+            "offset": "0000c000",
+            "device": "fc:00",
+            "inode": 19667595,
+            "path": "<project>/.venv-m5/lib/python3.12/site-packages/Rbeast/Rbeast.cpython-312-x86_64-linux-gnu.so"
+          },
+          {
+            "permissions": "r--p",
+            "offset": "00096000",
+            "device": "fc:00",
+            "inode": 19667595,
+            "path": "<project>/.venv-m5/lib/python3.12/site-packages/Rbeast/Rbeast.cpython-312-x86_64-linux-gnu.so"
+          },
+          {
+            "permissions": "r--p",
+            "offset": "000aa000",
+            "device": "fc:00",
+            "inode": 19667595,
+            "path": "<project>/.venv-m5/lib/python3.12/site-packages/Rbeast/Rbeast.cpython-312-x86_64-linux-gnu.so"
+          },
+          {
+            "permissions": "rw-p",
+            "offset": "000ab000",
+            "device": "fc:00",
+            "inode": 19667595,
+            "path": "<project>/.venv-m5/lib/python3.12/site-packages/Rbeast/Rbeast.cpython-312-x86_64-linux-gnu.so"
+          }
+        ]
+      },
+      "native_fit_started": true,
+      "final_alert": false,
+      "output_sha256": "6c929126084383ebc8f9798761a8605bf952c89bcb75bac5006a07fbb1002276"
+    },
+    "candidate_c": {
+      "status": "AMBIGUOUS_SPEC",
+      "worker_exit_code": 0,
+      "runtime_identity": {
+        "sys_executable": "<project>/runs/m6b-ready-g1-s2-c-20261011/execution01/.venv-m5-s2-c/bin/python",
+        "sys_prefix": "<project>/runs/m6b-ready-g1-s2-c-20261011/execution01/.venv-m5-s2-c",
+        "Rbeast_file": "<project>/runs/m6b-ready-g1-s2-c-20261011/execution01/.venv-m5-s2-c/lib/python3.12/site-packages/Rbeast/__init__.py",
+        "native_module": "cbeast",
+        "native_file": "<project>/runs/m6b-ready-g1-s2-c-20261011/execution01/.venv-m5-s2-c/lib/python3.12/site-packages/Rbeast/Rbeast.cpython-312-x86_64-linux-gnu.so",
+        "native_sha256": "1f08fbc9f24d0c00eb21f91f357519f15289ffd1ef18b9e7e0aca47c2596faeb",
+        "mapped_library_segments": [
+          {
+            "permissions": "r--p",
+            "offset": "00000000",
+            "device": "fc:00",
+            "inode": 20465569,
+            "path": "<project>/runs/m6b-ready-g1-s2-c-20261011/execution01/.venv-m5-s2-c/lib/python3.12/site-packages/Rbeast/Rbeast.cpython-312-x86_64-linux-gnu.so"
+          },
+          {
+            "permissions": "r-xp",
+            "offset": "0000b000",
+            "device": "fc:00",
+            "inode": 20465569,
+            "path": "<project>/runs/m6b-ready-g1-s2-c-20261011/execution01/.venv-m5-s2-c/lib/python3.12/site-packages/Rbeast/Rbeast.cpython-312-x86_64-linux-gnu.so"
+          },
+          {
+            "permissions": "r--p",
+            "offset": "0007f000",
+            "device": "fc:00",
+            "inode": 20465569,
+            "path": "<project>/runs/m6b-ready-g1-s2-c-20261011/execution01/.venv-m5-s2-c/lib/python3.12/site-packages/Rbeast/Rbeast.cpython-312-x86_64-linux-gnu.so"
+          },
+          {
+            "permissions": "r--p",
+            "offset": "00092000",
+            "device": "fc:00",
+            "inode": 20465569,
+            "path": "<project>/runs/m6b-ready-g1-s2-c-20261011/execution01/.venv-m5-s2-c/lib/python3.12/site-packages/Rbeast/Rbeast.cpython-312-x86_64-linux-gnu.so"
+          },
+          {
+            "permissions": "rw-p",
+            "offset": "00093000",
+            "device": "fc:00",
+            "inode": 20465569,
+            "path": "<project>/runs/m6b-ready-g1-s2-c-20261011/execution01/.venv-m5-s2-c/lib/python3.12/site-packages/Rbeast/Rbeast.cpython-312-x86_64-linux-gnu.so"
+          }
+        ]
+      },
+      "native_fit_started": true,
+      "final_alert": false,
+      "output_sha256": "326b0f193898679d0660b4b5fbaddcbd497b388d9707423c04a3e54585b89d6f"
+    },
+    "wrong_binary": {
+      "status": "BLOCKED",
+      "worker_exit_code": 78,
+      "runtime_identity": {
+        "sys_executable": "<project>/.venv-m5/bin/python",
+        "sys_prefix": "<project>/.venv-m5",
+        "Rbeast_file": "<project>/.venv-m5/lib/python3.12/site-packages/Rbeast/__init__.py",
+        "native_module": "cbeast",
+        "native_file": "<project>/.venv-m5/lib/python3.12/site-packages/Rbeast/Rbeast.cpython-312-x86_64-linux-gnu.so",
+        "native_sha256": "a7432000e18465d8e4d2ba895a8618b388007528757718d286fcb82440bbb157",
+        "mapped_library_segments": [
+          {
+            "permissions": "r--p",
+            "offset": "00000000",
+            "device": "fc:00",
+            "inode": 19667595,
+            "path": "<project>/.venv-m5/lib/python3.12/site-packages/Rbeast/Rbeast.cpython-312-x86_64-linux-gnu.so"
+          },
+          {
+            "permissions": "r-xp",
+            "offset": "0000c000",
+            "device": "fc:00",
+            "inode": 19667595,
+            "path": "<project>/.venv-m5/lib/python3.12/site-packages/Rbeast/Rbeast.cpython-312-x86_64-linux-gnu.so"
+          },
+          {
+            "permissions": "r--p",
+            "offset": "00096000",
+            "device": "fc:00",
+            "inode": 19667595,
+            "path": "<project>/.venv-m5/lib/python3.12/site-packages/Rbeast/Rbeast.cpython-312-x86_64-linux-gnu.so"
+          },
+          {
+            "permissions": "r--p",
+            "offset": "000aa000",
+            "device": "fc:00",
+            "inode": 19667595,
+            "path": "<project>/.venv-m5/lib/python3.12/site-packages/Rbeast/Rbeast.cpython-312-x86_64-linux-gnu.so"
+          },
+          {
+            "permissions": "rw-p",
+            "offset": "000ab000",
+            "device": "fc:00",
+            "inode": 19667595,
+            "path": "<project>/.venv-m5/lib/python3.12/site-packages/Rbeast/Rbeast.cpython-312-x86_64-linux-gnu.so"
+          }
+        ]
+      },
+      "native_fit_started": false,
+      "final_alert": false,
+      "output_sha256": "c661e21160ef7671c442fc3d29ad7ce22c4d26ecea94c5e5476bbd9482c4bf13"
+    },
+    "default_restored": {
+      "status": "AMBIGUOUS_SPEC",
+      "worker_exit_code": 0,
+      "runtime_identity": {
+        "sys_executable": "<project>/.venv-m5/bin/python",
+        "sys_prefix": "<project>/.venv-m5",
+        "Rbeast_file": "<project>/.venv-m5/lib/python3.12/site-packages/Rbeast/__init__.py",
+        "native_module": "cbeast",
+        "native_file": "<project>/.venv-m5/lib/python3.12/site-packages/Rbeast/Rbeast.cpython-312-x86_64-linux-gnu.so",
+        "native_sha256": "a7432000e18465d8e4d2ba895a8618b388007528757718d286fcb82440bbb157",
+        "mapped_library_segments": [
+          {
+            "permissions": "r--p",
+            "offset": "00000000",
+            "device": "fc:00",
+            "inode": 19667595,
+            "path": "<project>/.venv-m5/lib/python3.12/site-packages/Rbeast/Rbeast.cpython-312-x86_64-linux-gnu.so"
+          },
+          {
+            "permissions": "r-xp",
+            "offset": "0000c000",
+            "device": "fc:00",
+            "inode": 19667595,
+            "path": "<project>/.venv-m5/lib/python3.12/site-packages/Rbeast/Rbeast.cpython-312-x86_64-linux-gnu.so"
+          },
+          {
+            "permissions": "r--p",
+            "offset": "00096000",
+            "device": "fc:00",
+            "inode": 19667595,
+            "path": "<project>/.venv-m5/lib/python3.12/site-packages/Rbeast/Rbeast.cpython-312-x86_64-linux-gnu.so"
+          },
+          {
+            "permissions": "r--p",
+            "offset": "000aa000",
+            "device": "fc:00",
+            "inode": 19667595,
+            "path": "<project>/.venv-m5/lib/python3.12/site-packages/Rbeast/Rbeast.cpython-312-x86_64-linux-gnu.so"
+          },
+          {
+            "permissions": "rw-p",
+            "offset": "000ab000",
+            "device": "fc:00",
+            "inode": 19667595,
+            "path": "<project>/.venv-m5/lib/python3.12/site-packages/Rbeast/Rbeast.cpython-312-x86_64-linux-gnu.so"
+          }
+        ]
+      },
+      "native_fit_started": true,
+      "final_alert": false,
+      "output_sha256": "ebc8f5c3664a74a9c6777d5aaa6339f05e7329ca8234c18bad9abf49c31ac399"
+    }
+  }
+}

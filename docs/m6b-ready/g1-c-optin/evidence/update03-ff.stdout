@@ -1,0 +1,6 @@
+Updating 87d2137..85c949a
+Fast-forward
+ flash/rbeast_adapter.py     | 9 ++++++---
+ tests/m6b_ready_c_native.py | 2 +-
+ tests/m6b_ready_c_optin.py  | 4 ++--
+ 3 files changed, 9 insertions(+), 6 deletions(-)

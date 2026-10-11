@@ -1,0 +1,12 @@
+{
+  "status": "PASS_ORIGINAL_STRICT_ASSERTION",
+  "full_prefixes": 45,
+  "short_prefixes": 24,
+  "full_fit_count": 35,
+  "short_fit_count": 14,
+  "full_first24_equals_short": true,
+  "capture_sha256": "066f20d97c9df16893b3194797912e743a5143224c56bce2f1e312d41c617d7a",
+  "replay_sha256": "ce5e77d246972ef7304f23aa2e664fbca7da06c1024e4a39ae28a62cc1b3ac49",
+  "raw_location": "runs/m6b-ready-g1-c-optin-20261011/verification03",
+  "assertion_source": "tests/m5_replay.py unchanged from PR13"
+}

@@ -1,0 +1,41 @@
+[
+  {
+    "stage": "source preparation",
+    "actual_exit_code": 128,
+    "parent_exit_code": 1,
+    "reason": "Bundle exported HEAD, first fetch requested a branch ref that bundle did not contain",
+    "raw_stdout_stderr": [
+      "setup-1.stdout",
+      "setup-1.stderr"
+    ],
+    "resolution": "fetch HEAD into own new branch, no native fit started; original files retained"
+  },
+  {
+    "stage": "wrong-binary negative acceptance",
+    "actual_exit_code": 78,
+    "test_parent_exit_code": 0,
+    "status": "EXPECTED_REJECTION",
+    "occurrences": 3,
+    "reason": "same Rbeast0.1.25 metadata, actual original .so SHA mismatch; no fit"
+  },
+  {
+    "stage": "local exploratory file/path probes",
+    "status": "TOOL_OUTPUT_ONLY",
+    "actual_exit_codes": [
+      128,
+      2
+    ],
+    "reason": "workspace package root is not a Git repo; several missing-file/wrong-root rg probes. Original outputs in chat; no runtime mutation/test failure"
+  },
+  {
+    "stage": "native/CPU tests",
+    "status": "NO_FAILURES_OR_TIMEOUTS",
+    "actual_exit_code": 0
+  },
+  {
+    "stage": "local source-scope helper",
+    "status": "TOOL_OUTPUT_ONLY",
+    "actual_exit_code": 1,
+    "reason": "initial expected path set omitted the authorized already committed new tests/task; corrected expected set, original code/tests unchanged"
+  }
+]
