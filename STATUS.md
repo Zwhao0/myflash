@@ -691,3 +691,93 @@ seal adds command/commit/preservation receipts only; executed source unchanged.
 1978protected baseline files and original localization body verified unchanged;
 STATUS/GAPS append-only. Staged diff check actual0. Final precise head/tree
 will be bound in new Draft PR and private publication receipts; STOP for review.
+
+## TASK08 G20 Reporter/outbox CPU mock / 2026-10-11
+Human explicitly authorizes G20 CPU mock reliability from PR18 exact
+89cfdbb679b55aa8f81d39f39c72e77426976d85/tree5edc2add8eb963a2f03086f635c5ba8a1f658eba;
+no independent PR18 PASS is inferred. Separate m6b-s8-work, branch
+codex/m6b-ready-g20-reporter-outbox. Only flash/iteration_reporter.py modified;
+new SQLite outbox/consumer module,33-test CPU suite,task/docs; STATUS/GAPS append.
+2012other base files byte-identical,2015base files audited. Existing M6 Publisher,
+Reader,MemoryStore,controller/protocol,detector/locator and original tests unchanged.
+
+ADAPTATION: end checks exact structured ACK and freezes payload once; unknown
+publication/exception preserves active/pending, retry neither retimes nor waits
+again, abort cannot discard completed pending. Legacy None local sinks compatible.
+Opt-in SQLite durable enqueue before transport, one pending with backpressure,
+500ACKed+pending local retention,read/exact-resubmit,atomic local ACK watermark,
+conflict/missing/evicted unknown fail closed. Consumer poll unchanged full-window
+Reader contract,explicit exact-prefix CAS cursor commit; restart redelivers until
+commit. No exactly-once application-effects/disk-or-GPU remote ACK claim.
+PAPER SPEC S2/G20 pp25,35 unchanged; UPSTREAM stdlib sqlite3/official SQLite API;
+EXTENSION deterministic MemoryStore faults and6owned self-exiting CPU children.
+
+Actual local MacBook Air/macOS26.6.2 arm64,bundled CPython3.12.14/SQLite3.53.1.
+Baseline defect repro1 retained; cpu01 28tests0; final cpu02 33tests0/no timeout.
+Original Reporter4/control32/cursor9+8/detection8/approved detector13/locator20
+all0,94unchanged tests. Six intentional child exits71-76 checked by parent0,
+10s child deadlines; test commands120s bound,all waited. Commands:
+<existing-bundled-python-3.12.14>
+-B tests/m6b_ready_reporter_outbox.py; same interpreter -B with each original
+test file, cursor contract --output runs/task08-g20-20261011/cursor-observations.
+Full actual argv,cwd,machine,source/log SHA,true exits and raw stdio in
+runs/task08-g20-20261011/<command>/receipt.json,stdout.txt,stderr.txt;
+command index/source/preservation and result docs/m6b-ready/g20-reporter/.
+
+CPU_TRANSPORT_CONTRACT_PASS_ONLY; G20 broader framework boundary/clocks/real
+transport/physical checkpoint recovery OPEN. Process crash after committed local
+enqueue tested; precommit unknown timing cannot be recovered,power-loss NOT_RUN.
+No real Redis/service/GPU/native compile/fit/ABI2 bridge/server/M6-B/task09/merge.
+No formal environment preservation claim this round; historical FAIL/NOT_CAPTURED,
+915cache gap and rights/privacy unchanged. Early root Git128/receipt inspection1/
+missing doc-patch context(tool error) retained transcript-only/raw NOT_CAPTURED.
+Final commit/diff bound in local Git receipt; no remote publication requested.
+Next unique task independent TASK08 implementation/evidence review; STOP.
+
+TASK08 evidence verification01 exit1: new verifier selected wrong parent directory;
+failed script snapshot/raw stdio retained in private verify01. Correction limited
+to new evidence helper path, no runtime/test/assertion change. Two doc patch
+context errors are transcript-only/tool errors, not process/test exits.
+
+TASK08 verifier02 actual0/no timeout: all saved test exits/source/log hashes
+and2015base files verified,2012byte-identical/two append-only/one allowed source
+modification. Raw argv/log/SHA in runs/task08-g20-20261011/verify02; new evidence
+helper can be rerun read-only. No additional native/GPU/Redis acceptance inferred.
+
+TASK08 implementation commit 14a6a646a2b2990810be7e0728878e29b0cf5e50 / tree 3102ca2e131a0289a435bd180116eeb143f03352.
+Actual incremental diff vs PR18:10paths/1352additions/7deletions; staged diff
+check0,parent checkout clean. Documentation-only final seal adds this receipt;
+executed runtime/test bytes unchanged. Final local head/tree in private
+runs/task08-g20-20261011/final-head/receipt.json; no push or remote CI. STOP.
+
+TASK08 publication authorized by human 2026-10-11: push GitHub for ChatGPT review.
+ADAPTATION documentation-only home-path redaction and sanitized saved CPU logs.
+Original local commits14a6a64/9c43d64 and private raw logs remain retained; new
+publication branch codex/m6b-ready-g20-reporter-review is a separate Git snapshot
+with direct parent PR18 exact89cfdbb679b55aa8f81d39f39c72e77426976d85. Runtime/test
+bytes unchanged; no force push/history deletion. Only task docs/STATUS allowed.
+Use existing GitHub identity/SSH443, preserve every command exit/stdout/stderr,
+read back remote head/tree and create independent Draft PR. G20 broader OPEN;
+real Redis/native/GPU/bridge/M6-B not run; historical rights/privacy unchanged.
+New missing privacy-script filename probes are transcript-only/raw NOT_CAPTURED.
+Final publication SHA/tree/Draft/readback receipt in private publication run;
+stop after publication for independent exact-head review.
+
+TASK08 publication transport preflight: fixed identity SSH443 ls-remote actual
+exit128 (connection closed before authentication response),raw stderr/argv kept
+in private publication-remote-preflight. No push via that channel and no global
+SSH/Git changes. Use connected GitHub plugin Git object API for a separate
+publication commit (different commit metadata; identical verified source/tree).
+Git API results have no process exit; preserve structured receipts and readback.
+
+Publication full-tree text checker hit120s timeout, child terminated/waited
+exit-15,parent1,raw receipt retained; full-tree PASS NOT_CLAIMED. Changed-file
+checker01 actual1: two description strings with slash-delimited home/interpreter
+words matched the user_home heuristic, no credential content. Descriptions
+changed to comma-separated prose; rule/actual test assertions unchanged.
+
+Publication changed-check02 actual0,12changed files/findings0; source/runtime
+SHA and protected-file verifier actual0. Full/history text check is not PASS.
+Snapshot publication uses GitHub plugin API with direct exactPR18 parent; shell
+SSH failure retained. Remote exact head/tree/PR and any automatic CI outcome
+will be recorded in the private final publication receipt; STOP for review.

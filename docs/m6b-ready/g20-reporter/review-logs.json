@@ -1,0 +1,201 @@
+{
+  "scope": "TASK08 existing CPU logs, no new tests",
+  "redactions": [
+    "project, home, interpreter paths",
+    "owned unique temporary directory names"
+  ],
+  "logs": [
+    {
+      "label": "baseline-defect",
+      "exit_code": 1,
+      "child_waited": true,
+      "timeout": false,
+      "stdout.txt": {
+        "raw_sha256": "59c533deef05f11647948e555fe2f3a37d5a2f1a24afd93c0cf12aa2f03dd0ec",
+        "sanitized_sha256": "59c533deef05f11647948e555fe2f3a37d5a2f1a24afd93c0cf12aa2f03dd0ec",
+        "text": "end returned: IterationRecord(run_id='task08', global_rank=0, iteration=1, iteration_time_ms=1.0, timestamp='2026-10-11T06:20:12.593027+00:00', source='CPU_MOCK', timing_boundary='cpu_simulated_iteration_end', cuda_completion_wait=False) active: None server documents retained: 1\n"
+      },
+      "stderr.txt": {
+        "raw_sha256": "c598ea3f2ee8536d380f09a30aac72df56603dd70eed473512370051683665b7",
+        "sanitized_sha256": "a9e217df89c9a040cde4fc4c426882e7c2dfe442ac4bb672e7e865794babefc2",
+        "text": "Traceback (most recent call last):\n  File \"<project>/runs/task08-g20-20261011/repro.py\", line 10, in <module>\n    assert r.active is not None, 'WRITE_UNCONFIRMED cleared completed iteration state'\n           ^^^^^^^^^^^^^^^^^^^^\nAssertionError: WRITE_UNCONFIRMED cleared completed iteration state\n"
+      }
+    },
+    {
+      "label": "cpu01",
+      "exit_code": 0,
+      "child_waited": true,
+      "timeout": false,
+      "stdout.txt": {
+        "raw_sha256": "23eba6ceb24101663ce7b030170afbaafac02e035c33c54b8a4369f2f38cd9ba",
+        "sanitized_sha256": "e714fcce790b2e0c0b9c72985d4d416f504a1ff2e5f01977e5415c70e3031e8b",
+        "text": "{\"case\": \"test_process_crash_after_enqueue_and_before_commit\", \"argv\": [\"<existing-bundled-python-3.12.14>\", \"-B\", \"-c\", \"\\nimport os,sys\\nfrom flash.iteration_outbox import DurableIterationOutbox\\nfrom flash.iteration_reporter import IterationRecord\\nfrom flash.m6_store import MemoryStore\\nr=IterationRecord('task08',0,1,10.0,'2026-10-11T00:00:00+00:00','CPU_MOCK','cpu_simulated_iteration_end',False)\\nb=DurableIterationOutbox(sys.argv[1],MemoryStore(),'task08',0)\\nb.enqueue(r)\\nos._exit(71)\", \"<owned-test-temporary-directory>/outbox.sqlite\", \"<owned-test-temporary-directory>/cursor.sqlite\"], \"exit_code\": 71, \"stdout\": \"\", \"stderr\": \"\"}\n{\"case\": \"test_process_crash_after_enqueue_and_before_commit\", \"argv\": [\"<existing-bundled-python-3.12.14>\", \"-B\", \"-c\", \"\\nimport os,sys\\nfrom flash.iteration_outbox import DurableIterationOutbox\\nfrom flash.iteration_reporter import IterationRecord\\nfrom flash.m6_store import MemoryStore\\nr=IterationRecord('task08',0,1,10.0,'2026-10-11T00:00:00+00:00','CPU_MOCK','cpu_simulated_iteration_end',False)\\nb=DurableIterationOutbox(sys.argv[1],MemoryStore(),'task08',0)\\nb.db.execute('BEGIN IMMEDIATE')\\nb.db.execute('UPDATE metadata SET position=1')\\nos._exit(72)\", \"<owned-test-temporary-directory>/outbox.sqlite\", \"<owned-test-temporary-directory>/cursor.sqlite\"], \"exit_code\": 72, \"stdout\": \"\", \"stderr\": \"\"}\n{\"case\": \"test_process_crash_consumer_after_poll_and_after_commit\", \"argv\": [\"<existing-bundled-python-3.12.14>\", \"-B\", \"-c\", \"\\nimport os,sys\\nfrom flash.iteration_outbox import DurableIterationConsumer\\nfrom flash.iteration_reporter import IterationRecord\\nfrom flash.m6_iteration import IterationPublisher\\nfrom flash.m6_controller import GlobalController\\nfrom flash.m6_store import MemoryStore\\ns=MemoryStore();GlobalController(s,'task08',{'node-0':[0],'node-1':[1]})\\nr=IterationRecord('task08',0,1,10.0,'2026-10-11T00:00:00+00:00','CPU_MOCK','cpu_simulated_iteration_end',False)\\nIterationPublisher(s,'task08',0).publish(r)\\nc=DurableIterationConsumer(sys.argv[2],s,'task08',0)\\nbatch=c.poll()['records']\\nos._exit(74)\", \"<owned-test-temporary-directory>/outbox.sqlite\", \"<owned-test-temporary-directory>/cursor.sqlite\"], \"exit_code\": 74, \"stdout\": \"\", \"stderr\": \"\"}\n{\"case\": \"test_process_crash_consumer_after_poll_and_after_commit\", \"argv\": [\"<existing-bundled-python-3.12.14>\", \"-B\", \"-c\", \"\\nimport os,sys\\nfrom flash.iteration_outbox import DurableIterationConsumer\\nfrom flash.iteration_reporter import IterationRecord\\nfrom flash.m6_iteration import IterationPublisher\\nfrom flash.m6_controller import GlobalController\\nfrom flash.m6_store import MemoryStore\\ns=MemoryStore();GlobalController(s,'task08',{'node-0':[0],'node-1':[1]})\\nr=IterationRecord('task08',0,1,10.0,'2026-10-11T00:00:00+00:00','CPU_MOCK','cpu_simulated_iteration_end',False)\\nIterationPublisher(s,'task08',0).publish(r)\\nc=DurableIterationConsumer(sys.argv[2],s,'task08',0)\\nbatch=c.poll()['records']\\nc.commit(batch)\\nos._exit(75)\", \"<owned-test-temporary-directory>/outbox.sqlite\", \"<owned-test-temporary-directory>/cursor.sqlite\"], \"exit_code\": 75, \"stdout\": \"\", \"stderr\": \"\"}\n{\"case\": \"test_process_crash_remote_committed_local_ack_not_committed\", \"argv\": [\"<existing-bundled-python-3.12.14>\", \"-B\", \"-c\", \"\\nimport json,os,sys\\nfrom dataclasses import asdict\\nfrom flash.iteration_outbox import DurableIterationOutbox\\nfrom flash.iteration_reporter import IterationRecord\\nfrom flash.m6_controller import GlobalController\\nfrom flash.m6_store import MemoryStore\\ns=MemoryStore();GlobalController(s,'task08',{'node-0':[0],'node-1':[1]})\\nr=IterationRecord('task08',0,1,10.0,'2026-10-11T00:00:00+00:00','CPU_MOCK','cpu_simulated_iteration_end',False)\\nb=DurableIterationOutbox(sys.argv[1],s,'task08',0,clock=lambda:10.0)\\ndef crash(record,receipt):\\n    with open(sys.argv[1]+'.remote.json','w') as f:\\n        json.dump(s.values,f);f.flush();os.fsync(f.fileno())\\n    os._exit(73)\\nb._acknowledge=crash\\nb.publish(r)\\n\", \"<owned-test-temporary-directory>/outbox.sqlite\", \"<owned-test-temporary-directory>/cursor.sqlite\"], \"exit_code\": 73, \"stdout\": \"\", \"stderr\": \"\"}\n"
+      },
+      "stderr.txt": {
+        "raw_sha256": "7140dc5bf2f914eabb492132c844075cf8b7e7eb7e19f8e510df5760c9c9de5a",
+        "sanitized_sha256": "7140dc5bf2f914eabb492132c844075cf8b7e7eb7e19f8e510df5760c9c9de5a",
+        "text": "test_consumer_500_boundary_gap_and_restart (__main__.Reliability.test_consumer_500_boundary_gap_and_restart) ... ok\ntest_consumer_ledger_kind_scope_and_overflow (__main__.Reliability.test_consumer_ledger_kind_scope_and_overflow) ... ok\ntest_consumer_missing_offline_future_hash_keeps_cursor (__main__.Reliability.test_consumer_missing_offline_future_hash_keeps_cursor) ... ok\ntest_consumer_poll_does_not_advance_restart_redelivers (__main__.Reliability.test_consumer_poll_does_not_advance_restart_redelivers) ... ok\ntest_consumer_prefix_only_no_skip_change_or_fabrication (__main__.Reliability.test_consumer_prefix_only_no_skip_change_or_fabrication) ... ok\ntest_consumer_two_instances_stale_commit (__main__.Reliability.test_consumer_two_instances_stale_commit) ... ok\ntest_durable_reporter_restart_recovers_unconfirmed (__main__.Reliability.test_durable_reporter_restart_recovers_unconfirmed) ... ok\ntest_enqueue_commits_before_transport (__main__.Reliability.test_enqueue_commits_before_transport) ... ok\ntest_false_ack_not_removed (__main__.Reliability.test_false_ack_not_removed) ... ok\ntest_local_corruption_and_scope_rejected (__main__.Reliability.test_local_corruption_and_scope_rejected) ... ok\ntest_missing_remote_registration_never_recreated (__main__.Reliability.test_missing_remote_registration_never_recreated) ... ok\ntest_outbox_500_ack_plus_pending_never_evicted (__main__.Reliability.test_outbox_500_ack_plus_pending_never_evicted) ... ok\ntest_outbox_bad_schema_not_rebuilt (__main__.Reliability.test_outbox_bad_schema_not_rebuilt) ... ok\ntest_outbox_duplicate_and_local_conflict (__main__.Reliability.test_outbox_duplicate_and_local_conflict) ... ok\ntest_outbox_lost_ack_recovered_by_read_no_second_cas (__main__.Reliability.test_outbox_lost_ack_recovered_by_read_no_second_cas) ... ok\ntest_outbox_write_before_disconnect_restart (__main__.Reliability.test_outbox_write_before_disconnect_restart) ... ok\ntest_pending_blocks_next_gap_or_scope (__main__.Reliability.test_pending_blocks_next_gap_or_scope) ... ok\ntest_process_crash_after_enqueue_and_before_commit (__main__.Reliability.test_process_crash_after_enqueue_and_before_commit) ... ok\ntest_process_crash_consumer_after_poll_and_after_commit (__main__.Reliability.test_process_crash_consumer_after_poll_and_after_commit) ... ok\ntest_process_crash_remote_committed_local_ack_not_committed (__main__.Reliability.test_process_crash_remote_committed_local_ack_not_committed) ... ok\ntest_remote_conflict_retains_pending (__main__.Reliability.test_remote_conflict_retains_pending) ... ok\ntest_remote_hash_corruption_never_acknowledged (__main__.Reliability.test_remote_hash_corruption_never_acknowledged) ... ok\ntest_reporter_exception_preserves_frozen_record (__main__.Reliability.test_reporter_exception_preserves_frozen_record) ... ok\ntest_reporter_lost_ack_never_retimes_or_resynchronizes (__main__.Reliability.test_reporter_lost_ack_never_retimes_or_resynchronizes) ... ok\ntest_reporter_malformed_false_or_wrong_hash_ack_rejected (__main__.Reliability.test_reporter_malformed_false_or_wrong_hash_ack_rejected) ... ok\ntest_reporter_write_before_disconnect_keeps_exact_record (__main__.Reliability.test_reporter_write_before_disconnect_keeps_exact_record) ... ok\ntest_unknown_evicted_result_not_guessed (__main__.Reliability.test_unknown_evicted_result_not_guessed) ... ok\ntest_unknown_exact_retention_boundary (__main__.Reliability.test_unknown_exact_retention_boundary) ... ok\n\n----------------------------------------------------------------------\nRan 28 tests in 25.348s\n\nOK\n"
+      }
+    },
+    {
+      "label": "cpu02",
+      "exit_code": 0,
+      "child_waited": true,
+      "timeout": false,
+      "stdout.txt": {
+        "raw_sha256": "e93137764803b866bbd8a4ede00f572953a76a0f58f2a5688ba5a96e6f63f5d0",
+        "sanitized_sha256": "2b7cedfcf2277787bc706f3467afaf4cb52a7532b403d0f0142b753c49dde94b",
+        "text": "{\"case\": \"test_new_outbox_uncommitted_enqueue_rolls_back_on_process_exit\", \"argv\": [\"<existing-bundled-python-3.12.14>\", \"-B\", \"-c\", \"\\nimport os,sys\\nfrom dataclasses import asdict\\nfrom flash.iteration_outbox import DurableIterationOutbox\\nfrom flash.iteration_reporter import IterationRecord\\nfrom flash.m6_protocol import encode,digest\\nfrom flash.m6_store import MemoryStore\\nb=DurableIterationOutbox(sys.argv[1],MemoryStore(),'task08',0)\\nr=IterationRecord('task08',0,1,10.0,'2026-10-11T00:00:00+00:00','CPU_MOCK','cpu_simulated_iteration_end',False)\\nb.db.execute('BEGIN IMMEDIATE')\\nb.db.execute('INSERT INTO records VALUES (?,?,?)',(1,encode(asdict(r)),digest(asdict(r))))\\nos._exit(76)\\n\", \"<owned-test-temporary-directory>/outbox.sqlite\", \"<owned-test-temporary-directory>/cursor.sqlite\"], \"exit_code\": 76, \"stdout\": \"\", \"stderr\": \"\"}\n{\"case\": \"test_process_crash_after_enqueue_and_before_commit\", \"argv\": [\"<existing-bundled-python-3.12.14>\", \"-B\", \"-c\", \"\\nimport os,sys\\nfrom flash.iteration_outbox import DurableIterationOutbox\\nfrom flash.iteration_reporter import IterationRecord\\nfrom flash.m6_store import MemoryStore\\nr=IterationRecord('task08',0,1,10.0,'2026-10-11T00:00:00+00:00','CPU_MOCK','cpu_simulated_iteration_end',False)\\nb=DurableIterationOutbox(sys.argv[1],MemoryStore(),'task08',0)\\nb.enqueue(r)\\nos._exit(71)\", \"<owned-test-temporary-directory>/outbox.sqlite\", \"<owned-test-temporary-directory>/cursor.sqlite\"], \"exit_code\": 71, \"stdout\": \"\", \"stderr\": \"\"}\n{\"case\": \"test_process_crash_after_enqueue_and_before_commit\", \"argv\": [\"<existing-bundled-python-3.12.14>\", \"-B\", \"-c\", \"\\nimport os,sys\\nfrom flash.iteration_outbox import DurableIterationOutbox\\nfrom flash.iteration_reporter import IterationRecord\\nfrom flash.m6_store import MemoryStore\\nr=IterationRecord('task08',0,1,10.0,'2026-10-11T00:00:00+00:00','CPU_MOCK','cpu_simulated_iteration_end',False)\\nb=DurableIterationOutbox(sys.argv[1],MemoryStore(),'task08',0)\\nb.db.execute('BEGIN IMMEDIATE')\\nb.db.execute('UPDATE metadata SET position=1')\\nos._exit(72)\", \"<owned-test-temporary-directory>/outbox.sqlite\", \"<owned-test-temporary-directory>/cursor.sqlite\"], \"exit_code\": 72, \"stdout\": \"\", \"stderr\": \"\"}\n{\"case\": \"test_process_crash_consumer_after_poll_and_after_commit\", \"argv\": [\"<existing-bundled-python-3.12.14>\", \"-B\", \"-c\", \"\\nimport os,sys\\nfrom flash.iteration_outbox import DurableIterationConsumer\\nfrom flash.iteration_reporter import IterationRecord\\nfrom flash.m6_iteration import IterationPublisher\\nfrom flash.m6_controller import GlobalController\\nfrom flash.m6_store import MemoryStore\\ns=MemoryStore();GlobalController(s,'task08',{'node-0':[0],'node-1':[1]})\\nr=IterationRecord('task08',0,1,10.0,'2026-10-11T00:00:00+00:00','CPU_MOCK','cpu_simulated_iteration_end',False)\\nIterationPublisher(s,'task08',0).publish(r)\\nc=DurableIterationConsumer(sys.argv[2],s,'task08',0)\\nbatch=c.poll()['records']\\nos._exit(74)\", \"<owned-test-temporary-directory>/outbox.sqlite\", \"<owned-test-temporary-directory>/cursor.sqlite\"], \"exit_code\": 74, \"stdout\": \"\", \"stderr\": \"\"}\n{\"case\": \"test_process_crash_consumer_after_poll_and_after_commit\", \"argv\": [\"<existing-bundled-python-3.12.14>\", \"-B\", \"-c\", \"\\nimport os,sys\\nfrom flash.iteration_outbox import DurableIterationConsumer\\nfrom flash.iteration_reporter import IterationRecord\\nfrom flash.m6_iteration import IterationPublisher\\nfrom flash.m6_controller import GlobalController\\nfrom flash.m6_store import MemoryStore\\ns=MemoryStore();GlobalController(s,'task08',{'node-0':[0],'node-1':[1]})\\nr=IterationRecord('task08',0,1,10.0,'2026-10-11T00:00:00+00:00','CPU_MOCK','cpu_simulated_iteration_end',False)\\nIterationPublisher(s,'task08',0).publish(r)\\nc=DurableIterationConsumer(sys.argv[2],s,'task08',0)\\nbatch=c.poll()['records']\\nc.commit(batch)\\nos._exit(75)\", \"<owned-test-temporary-directory>/outbox.sqlite\", \"<owned-test-temporary-directory>/cursor.sqlite\"], \"exit_code\": 75, \"stdout\": \"\", \"stderr\": \"\"}\n{\"case\": \"test_process_crash_remote_committed_local_ack_not_committed\", \"argv\": [\"<existing-bundled-python-3.12.14>\", \"-B\", \"-c\", \"\\nimport json,os,sys\\nfrom dataclasses import asdict\\nfrom flash.iteration_outbox import DurableIterationOutbox\\nfrom flash.iteration_reporter import IterationRecord\\nfrom flash.m6_controller import GlobalController\\nfrom flash.m6_store import MemoryStore\\ns=MemoryStore();GlobalController(s,'task08',{'node-0':[0],'node-1':[1]})\\nr=IterationRecord('task08',0,1,10.0,'2026-10-11T00:00:00+00:00','CPU_MOCK','cpu_simulated_iteration_end',False)\\nb=DurableIterationOutbox(sys.argv[1],s,'task08',0,clock=lambda:10.0)\\ndef crash(record,receipt):\\n    with open(sys.argv[1]+'.remote.json','w') as f:\\n        json.dump(s.values,f);f.flush();os.fsync(f.fileno())\\n    os._exit(73)\\nb._acknowledge=crash\\nb.publish(r)\\n\", \"<owned-test-temporary-directory>/outbox.sqlite\", \"<owned-test-temporary-directory>/cursor.sqlite\"], \"exit_code\": 73, \"stdout\": \"\", \"stderr\": \"\"}\n"
+      },
+      "stderr.txt": {
+        "raw_sha256": "96dd35997f4e2f8431c80e7a741c90517be67f36f7e221161bde97c5ab39b2b4",
+        "sanitized_sha256": "96dd35997f4e2f8431c80e7a741c90517be67f36f7e221161bde97c5ab39b2b4",
+        "text": "test_consumer_500_boundary_gap_and_restart (__main__.Reliability.test_consumer_500_boundary_gap_and_restart) ... ok\ntest_consumer_corruption_future_and_missing_run_fail_closed (__main__.Reliability.test_consumer_corruption_future_and_missing_run_fail_closed) ... ok\ntest_consumer_ledger_kind_scope_and_overflow (__main__.Reliability.test_consumer_ledger_kind_scope_and_overflow) ... ok\ntest_consumer_missing_offline_future_hash_keeps_cursor (__main__.Reliability.test_consumer_missing_offline_future_hash_keeps_cursor) ... ok\ntest_consumer_poll_does_not_advance_restart_redelivers (__main__.Reliability.test_consumer_poll_does_not_advance_restart_redelivers) ... ok\ntest_consumer_prefix_only_no_skip_change_or_fabrication (__main__.Reliability.test_consumer_prefix_only_no_skip_change_or_fabrication) ... ok\ntest_consumer_two_instances_stale_commit (__main__.Reliability.test_consumer_two_instances_stale_commit) ... ok\ntest_disconnect_at_cas_before_write (__main__.Reliability.test_disconnect_at_cas_before_write) ... ok\ntest_durable_reporter_restart_recovers_unconfirmed (__main__.Reliability.test_durable_reporter_restart_recovers_unconfirmed) ... ok\ntest_enqueue_commits_before_transport (__main__.Reliability.test_enqueue_commits_before_transport) ... ok\ntest_false_ack_not_removed (__main__.Reliability.test_false_ack_not_removed) ... ok\ntest_local_corruption_and_scope_rejected (__main__.Reliability.test_local_corruption_and_scope_rejected) ... ok\ntest_missing_remote_registration_never_recreated (__main__.Reliability.test_missing_remote_registration_never_recreated) ... ok\ntest_new_outbox_uncommitted_enqueue_rolls_back_on_process_exit (__main__.Reliability.test_new_outbox_uncommitted_enqueue_rolls_back_on_process_exit) ... ok\ntest_outbox_500_ack_plus_pending_never_evicted (__main__.Reliability.test_outbox_500_ack_plus_pending_never_evicted) ... ok\ntest_outbox_bad_schema_not_rebuilt (__main__.Reliability.test_outbox_bad_schema_not_rebuilt) ... ok\ntest_outbox_duplicate_and_local_conflict (__main__.Reliability.test_outbox_duplicate_and_local_conflict) ... ok\ntest_outbox_lost_ack_recovered_by_read_no_second_cas (__main__.Reliability.test_outbox_lost_ack_recovered_by_read_no_second_cas) ... ok\ntest_outbox_write_before_disconnect_restart (__main__.Reliability.test_outbox_write_before_disconnect_restart) ... ok\ntest_pending_blocks_next_gap_or_scope (__main__.Reliability.test_pending_blocks_next_gap_or_scope) ... ok\ntest_process_crash_after_enqueue_and_before_commit (__main__.Reliability.test_process_crash_after_enqueue_and_before_commit) ... ok\ntest_process_crash_consumer_after_poll_and_after_commit (__main__.Reliability.test_process_crash_consumer_after_poll_and_after_commit) ... ok\ntest_process_crash_remote_committed_local_ack_not_committed (__main__.Reliability.test_process_crash_remote_committed_local_ack_not_committed) ... ok\ntest_remote_conflict_retains_pending (__main__.Reliability.test_remote_conflict_retains_pending) ... ok\ntest_remote_hash_corruption_never_acknowledged (__main__.Reliability.test_remote_hash_corruption_never_acknowledged) ... ok\ntest_remote_loss_after_previous_ack_does_not_skip_gap (__main__.Reliability.test_remote_loss_after_previous_ack_does_not_skip_gap) ... ok\ntest_repeated_unknown_attempts_one_write_per_call (__main__.Reliability.test_repeated_unknown_attempts_one_write_per_call) ... ok\ntest_reporter_exception_preserves_frozen_record (__main__.Reliability.test_reporter_exception_preserves_frozen_record) ... ok\ntest_reporter_lost_ack_never_retimes_or_resynchronizes (__main__.Reliability.test_reporter_lost_ack_never_retimes_or_resynchronizes) ... ok\ntest_reporter_malformed_false_or_wrong_hash_ack_rejected (__main__.Reliability.test_reporter_malformed_false_or_wrong_hash_ack_rejected) ... ok\ntest_reporter_write_before_disconnect_keeps_exact_record (__main__.Reliability.test_reporter_write_before_disconnect_keeps_exact_record) ... ok\ntest_unknown_evicted_result_not_guessed (__main__.Reliability.test_unknown_evicted_result_not_guessed) ... ok\ntest_unknown_exact_retention_boundary (__main__.Reliability.test_unknown_exact_retention_boundary) ... ok\n\n----------------------------------------------------------------------\nRan 33 tests in 25.866s\n\nOK\n"
+      }
+    },
+    {
+      "label": "reporter",
+      "exit_code": 0,
+      "child_waited": true,
+      "timeout": false,
+      "stdout.txt": {
+        "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sanitized_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "text": ""
+      },
+      "stderr.txt": {
+        "raw_sha256": "b42f2ea454391e7b6324818a5a009f0abc670d08a19b2b9d8869890d3fc68b35",
+        "sanitized_sha256": "b42f2ea454391e7b6324818a5a009f0abc670d08a19b2b9d8869890d3fc68b35",
+        "text": "....\n----------------------------------------------------------------------\nRan 4 tests in 2.584s\n\nOK\n"
+      }
+    },
+    {
+      "label": "control",
+      "exit_code": 0,
+      "child_waited": true,
+      "timeout": false,
+      "stdout.txt": {
+        "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sanitized_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "text": ""
+      },
+      "stderr.txt": {
+        "raw_sha256": "d63679dd1a403857946c942aa93f233c15839c1d3852101f884d02d8d936cefa",
+        "sanitized_sha256": "d63679dd1a403857946c942aa93f233c15839c1d3852101f884d02d8d936cefa",
+        "text": "test_ambiguous_and_no_candidate_preserved (__main__.ControlTests.test_ambiguous_and_no_candidate_preserved) ... ok\ntest_cas_concurrent_publication_and_fenced_registration (__main__.ControlTests.test_cas_concurrent_publication_and_fenced_registration) ... ok\ntest_command_ack_without_application_and_missing_scope (__main__.ControlTests.test_command_ack_without_application_and_missing_scope) ... ok\ntest_data_timeout_not_no_candidate (__main__.ControlTests.test_data_timeout_not_no_candidate) ... ok\ntest_delayed_transport_bounded_error (__main__.ControlTests.test_delayed_transport_bounded_error) ... ok\ntest_disconnect_then_reconcile_not_no_candidate (__main__.ControlTests.test_disconnect_then_reconcile_not_no_candidate) ... ok\ntest_duplicate_ack_is_exact_idempotent (__main__.ControlTests.test_duplicate_ack_is_exact_idempotent) ... ok\ntest_finished_manual_request_stays_idempotent_and_clock_monotone (__main__.ControlTests.test_finished_manual_request_stays_idempotent_and_clock_monotone) ... ok\ntest_future_applied_boundary_cannot_arm_earlier_window (__main__.ControlTests.test_future_applied_boundary_cannot_arm_earlier_window) ... ok\ntest_global_restart_aborts_and_fences_old_commands (__main__.ControlTests.test_global_restart_aborts_and_fences_old_commands) ... ok\ntest_group_shared_counts_not_records (__main__.ControlTests.test_group_shared_counts_not_records) ... ok\ntest_iteration_duplicate_conflict_gap_retention_restart (__main__.ControlTests.test_iteration_duplicate_conflict_gap_retention_restart) ... ok\ntest_iteration_rank_isolation_and_missing_boundary (__main__.ControlTests.test_iteration_rank_isolation_and_missing_boundary) ... ok\ntest_iteration_timeout_and_cursor_gap_visible (__main__.ControlTests.test_iteration_timeout_and_cursor_gap_visible) ... ok\ntest_iteration_unconfirmed_reply_retry_and_corruption (__main__.ControlTests.test_iteration_unconfirmed_reply_retry_and_corruption) ... ok\ntest_local_restart_invalidates_epoch_and_fences_old_owner (__main__.ControlTests.test_local_restart_invalidates_epoch_and_fences_old_owner) ... ok\ntest_lost_registration_restart_blocked (__main__.ControlTests.test_lost_registration_restart_blocked) ... ok\ntest_manifest_coverage_and_hash_integrity (__main__.ControlTests.test_manifest_coverage_and_hash_integrity) ... ok\ntest_manual_request_idempotence_and_conflict (__main__.ControlTests.test_manual_request_idempotence_and_conflict) ... ok\ntest_manual_trigger_lost_store_returns_blocked (__main__.ControlTests.test_manual_trigger_lost_store_returns_blocked) ... ok\ntest_missing_data_fails_closed (__main__.ControlTests.test_missing_data_fails_closed) ... ok\ntest_missing_iteration_not_zero_filled (__main__.ControlTests.test_missing_iteration_not_zero_filled) ... ok\ntest_missing_node_timeout (__main__.ControlTests.test_missing_node_timeout) ... ok\ntest_no_previous_epoch_data_reuse (__main__.ControlTests.test_no_previous_epoch_data_reuse) ... ok\ntest_partial_reset_blocks_next_epoch (__main__.ControlTests.test_partial_reset_blocks_next_epoch) ... ok\ntest_profile_corruption_old_run_old_epoch_unsupported (__main__.ControlTests.test_profile_corruption_old_run_old_epoch_unsupported) ... ok\ntest_profile_duplicate_origin_rejected (__main__.ControlTests.test_profile_duplicate_origin_rejected) ... ok\ntest_redis_timeout_validation_before_any_network (__main__.ControlTests.test_redis_timeout_validation_before_any_network) ... ok\ntest_restart_during_partial_reset_requires_new_boundaries (__main__.ControlTests.test_restart_during_partial_reset_requires_new_boundaries) ... ok\ntest_sample_window_boundary_not_cpu_wall_duration (__main__.ControlTests.test_sample_window_boundary_not_cpu_wall_duration) ... ok\ntest_two_epochs_m4_equivalence_and_traces (__main__.ControlTests.test_two_epochs_m4_equivalence_and_traces) ... ok\ntest_window_ms_floor_and_long_iteration (__main__.ControlTests.test_window_ms_floor_and_long_iteration) ... ok\n\n----------------------------------------------------------------------\nRan 32 tests in 4.282s\n\nOK\n"
+      }
+    },
+    {
+      "label": "cursor-extra",
+      "exit_code": 0,
+      "child_waited": true,
+      "timeout": false,
+      "stdout.txt": {
+        "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sanitized_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "text": ""
+      },
+      "stderr.txt": {
+        "raw_sha256": "0ec1c4615fb4e41706fc069893a0b4833345c25745145899ad362df73dc3dab3",
+        "sanitized_sha256": "0ec1c4615fb4e41706fc069893a0b4833345c25745145899ad362df73dc3dab3",
+        "text": "test_adjacent_retention_gap_preserved (__main__.CursorExtra.test_adjacent_retention_gap_preserved) ... ok\ntest_exact_500_boundaries_keep_full_window (__main__.CursorExtra.test_exact_500_boundaries_keep_full_window) ... ok\ntest_future_reason_and_no_fabricated_records (__main__.CursorExtra.test_future_reason_and_no_fabricated_records) ... ok\ntest_hash_corruption_not_hidden_by_future_cursor (__main__.CursorExtra.test_hash_corruption_not_hidden_by_future_cursor) ... ok\ntest_invalid_cursors_before_any_store_read (__main__.CursorExtra.test_invalid_cursors_before_any_store_read) ... ok\ntest_lost_commit_reply_read_then_exact_retry (__main__.CursorExtra.test_lost_commit_reply_read_then_exact_retry) ... ok\ntest_none_keeps_full_retained_window (__main__.CursorExtra.test_none_keeps_full_retained_window) ... ok\ntest_retention_corruption_not_hidden_by_future_cursor (__main__.CursorExtra.test_retention_corruption_not_hidden_by_future_cursor) ... ok\n\n----------------------------------------------------------------------\nRan 8 tests in 7.609s\n\nOK\n"
+      }
+    },
+    {
+      "label": "cursor-contract",
+      "exit_code": 0,
+      "child_waited": true,
+      "timeout": false,
+      "stdout.txt": {
+        "raw_sha256": "dc070e57abe78db199d4e33ffe157695546bc0af9d09aa301b988f9389378351",
+        "sanitized_sha256": "dc070e57abe78db199d4e33ffe157695546bc0af9d09aa301b988f9389378351",
+        "text": "{\"case\": \"test_cursor_before_retention_gap\", \"input\": {\"after_iteration_repr\": \"0\", \"cursor_type\": \"int\", \"read_kwargs\": {}}, \"last\": 501, \"retained_from\": 2, \"returned_status\": \"INSUFFICIENT_EVIDENCE\", \"exception\": null}\n{\"case\": \"test_empty_history\", \"input\": {\"after_iteration_repr\": \"0\", \"cursor_type\": \"int\", \"read_kwargs\": {}}, \"last\": null, \"retained_from\": null, \"returned_status\": \"INSUFFICIENT_EVIDENCE\", \"exception\": null}\n{\"case\": \"test_expired_record\", \"input\": {\"after_iteration_repr\": \"1\", \"cursor_type\": \"int\", \"read_kwargs\": {\"now\": 70.0, \"timeout_seconds\": 60.0}}, \"last\": 1, \"retained_from\": 1, \"returned_status\": \"TIMEOUT\", \"exception\": null}\n{\"case\": \"test_future_after_500_retained\", \"input\": {\"after_iteration_repr\": \"502\", \"cursor_type\": \"int\", \"read_kwargs\": {}}, \"last\": 501, \"retained_from\": 2, \"returned_status\": \"INSUFFICIENT_EVIDENCE\", \"exception\": null}\n{\"case\": \"test_future_large\", \"input\": {\"after_iteration_repr\": \"1000000\", \"cursor_type\": \"int\", \"read_kwargs\": {}}, \"last\": 1, \"retained_from\": 1, \"returned_status\": \"INSUFFICIENT_EVIDENCE\", \"exception\": null}\n{\"case\": \"test_future_one_step\", \"input\": {\"after_iteration_repr\": \"2\", \"cursor_type\": \"int\", \"read_kwargs\": {}}, \"last\": 1, \"retained_from\": 1, \"returned_status\": \"INSUFFICIENT_EVIDENCE\", \"exception\": null}\n{\"case\": \"test_invalid_types_strict_integer_adaptation-0\", \"input\": {\"after_iteration_repr\": \"True\", \"cursor_type\": \"bool\", \"read_kwargs\": {}}, \"last\": 1, \"retained_from\": 1, \"returned_status\": null, \"exception\": {\"type\": \"ValueError\", \"message\": \"invalid after_iteration\"}}\n{\"case\": \"test_invalid_types_strict_integer_adaptation-1\", \"input\": {\"after_iteration_repr\": \"False\", \"cursor_type\": \"bool\", \"read_kwargs\": {}}, \"last\": 1, \"retained_from\": 1, \"returned_status\": null, \"exception\": {\"type\": \"ValueError\", \"message\": \"invalid after_iteration\"}}\n{\"case\": \"test_invalid_types_strict_integer_adaptation-2\", \"input\": {\"after_iteration_repr\": \"-1\", \"cursor_type\": \"int\", \"read_kwargs\": {}}, \"last\": 1, \"retained_from\": 1, \"returned_status\": null, \"exception\": {\"type\": \"ValueError\", \"message\": \"invalid after_iteration\"}}\n{\"case\": \"test_invalid_types_strict_integer_adaptation-3\", \"input\": {\"after_iteration_repr\": \"0.5\", \"cursor_type\": \"float\", \"read_kwargs\": {}}, \"last\": 1, \"retained_from\": 1, \"returned_status\": null, \"exception\": {\"type\": \"ValueError\", \"message\": \"invalid after_iteration\"}}\n{\"case\": \"test_invalid_types_strict_integer_adaptation-4\", \"input\": {\"after_iteration_repr\": \"1.0\", \"cursor_type\": \"float\", \"read_kwargs\": {}}, \"last\": 1, \"retained_from\": 1, \"returned_status\": null, \"exception\": {\"type\": \"ValueError\", \"message\": \"invalid after_iteration\"}}\n{\"case\": \"test_invalid_types_strict_integer_adaptation-5\", \"input\": {\"after_iteration_repr\": \"'1'\", \"cursor_type\": \"str\", \"read_kwargs\": {}}, \"last\": 1, \"retained_from\": 1, \"returned_status\": null, \"exception\": {\"type\": \"ValueError\", \"message\": \"invalid after_iteration\"}}\n{\"case\": \"test_invalid_types_strict_integer_adaptation-6\", \"input\": {\"after_iteration_repr\": \"nan\", \"cursor_type\": \"float\", \"read_kwargs\": {}}, \"last\": 1, \"retained_from\": 1, \"returned_status\": null, \"exception\": {\"type\": \"ValueError\", \"message\": \"invalid after_iteration\"}}\n{\"case\": \"test_invalid_types_strict_integer_adaptation-7\", \"input\": {\"after_iteration_repr\": \"inf\", \"cursor_type\": \"float\", \"read_kwargs\": {}}, \"last\": 1, \"retained_from\": 1, \"returned_status\": null, \"exception\": {\"type\": \"ValueError\", \"message\": \"invalid after_iteration\"}}\n{\"case\": \"test_invalid_types_strict_integer_adaptation-8\", \"input\": {\"after_iteration_repr\": \"-inf\", \"cursor_type\": \"float\", \"read_kwargs\": {}}, \"last\": 1, \"retained_from\": 1, \"returned_status\": null, \"exception\": {\"type\": \"ValueError\", \"message\": \"invalid after_iteration\"}}\n{\"case\": \"test_legal_boundaries_keep_full_window-501\", \"input\": {\"after_iteration_repr\": \"501\", \"cursor_type\": \"int\", \"read_kwargs\": {}}, \"last\": 501, \"retained_from\": 2, \"returned_status\": \"READ_CONFIRMED\", \"exception\": null}\n{\"case\": \"test_legal_boundaries_keep_full_window-1\", \"input\": {\"after_iteration_repr\": \"1\", \"cursor_type\": \"int\", \"read_kwargs\": {}}, \"last\": 501, \"retained_from\": 2, \"returned_status\": \"READ_CONFIRMED\", \"exception\": null}\n{\"case\": \"test_missing_run\", \"input\": {\"after_iteration_repr\": \"0\", \"cursor_type\": \"int\", \"read_kwargs\": {}}, \"last\": null, \"retained_from\": null, \"returned_status\": \"BLOCKED\", \"exception\": null}\n"
+      },
+      "stderr.txt": {
+        "raw_sha256": "d78004742568a92c693057271c54b53cbf4d0572eb5e108737ddc3d1e1144374",
+        "sanitized_sha256": "d78004742568a92c693057271c54b53cbf4d0572eb5e108737ddc3d1e1144374",
+        "text": "test_cursor_before_retention_gap (__main__.CursorContract.test_cursor_before_retention_gap) ... ok\ntest_empty_history (__main__.CursorContract.test_empty_history) ... ok\ntest_expired_record (__main__.CursorContract.test_expired_record) ... ok\ntest_future_after_500_retained (__main__.CursorContract.test_future_after_500_retained) ... ok\ntest_future_large (__main__.CursorContract.test_future_large) ... ok\ntest_future_one_step (__main__.CursorContract.test_future_one_step) ... ok\ntest_invalid_types_strict_integer_adaptation (__main__.CursorContract.test_invalid_types_strict_integer_adaptation) ... ok\ntest_legal_boundaries_keep_full_window (__main__.CursorContract.test_legal_boundaries_keep_full_window) ... ok\ntest_missing_run (__main__.CursorContract.test_missing_run) ... ok\n\n----------------------------------------------------------------------\nRan 9 tests in 7.765s\n\nOK\n"
+      }
+    },
+    {
+      "label": "detection",
+      "exit_code": 0,
+      "child_waited": true,
+      "timeout": false,
+      "stdout.txt": {
+        "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sanitized_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "text": ""
+      },
+      "stderr.txt": {
+        "raw_sha256": "b7daee1dd6b93b470651c1d1c37682587bf0709c0b1d5aeb367d88677fc6475e",
+        "sanitized_sha256": "b7daee1dd6b93b470651c1d1c37682587bf0709c0b1d5aeb367d88677fc6475e",
+        "text": "........\n----------------------------------------------------------------------\nRan 8 tests in 0.040s\n\nOK\n"
+      }
+    },
+    {
+      "label": "approved-detection",
+      "exit_code": 0,
+      "child_waited": true,
+      "timeout": false,
+      "stdout.txt": {
+        "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sanitized_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "text": ""
+      },
+      "stderr.txt": {
+        "raw_sha256": "ee1db5279c9a044fc58a4198a02cacb2fa57db913251f82c638f925fa9b4cb77",
+        "sanitized_sha256": "ee1db5279c9a044fc58a4198a02cacb2fa57db913251f82c638f925fa9b4cb77",
+        "text": ".............\n----------------------------------------------------------------------\nRan 13 tests in 0.033s\n\nOK\n"
+      }
+    },
+    {
+      "label": "approved-localization",
+      "exit_code": 0,
+      "child_waited": true,
+      "timeout": false,
+      "stdout.txt": {
+        "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sanitized_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "text": ""
+      },
+      "stderr.txt": {
+        "raw_sha256": "c10f9f08598ffc41b4fbb7a41612bc84e4eac582080b9cb26df255c014f5023b",
+        "sanitized_sha256": "c10f9f08598ffc41b4fbb7a41612bc84e4eac582080b9cb26df255c014f5023b",
+        "text": "....................\n----------------------------------------------------------------------\nRan 20 tests in 0.076s\n\nOK\n"
+      }
+    },
+    {
+      "label": "verify01",
+      "exit_code": 1,
+      "child_waited": true,
+      "timeout": false,
+      "stdout.txt": {
+        "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sanitized_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "text": ""
+      },
+      "stderr.txt": {
+        "raw_sha256": "f9b8d448bf801dfd080742a5a3b32ba952890e0e6fb57831d8d1b256af84b06d",
+        "sanitized_sha256": "8d0c899e8c2c66dce7f0e12476e8508e0839bebce558bbd06e0ce4572a22f7c4",
+        "text": "Traceback (most recent call last):\n  File \"<project>/docs/m6b-ready/g20-reporter/verify_evidence.py\", line 67, in <module>\n    verify(args.private_run)\n  File \"<project>/docs/m6b-ready/g20-reporter/verify_evidence.py\", line 18, in verify\n    assert sha((ROOT / path).read_bytes()) == expected, path\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<local-home>/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py\", line 1019, in read_bytes\n    with self.open(mode='rb') as f:\n         ^^^^^^^^^^^^^^^^^^^^\n  File \"<local-home>/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py\", line 1013, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: '<local-home>/Desktop/FLASH_Codex/flash/iteration_reporter.py'\n"
+      }
+    },
+    {
+      "label": "verify02",
+      "exit_code": 0,
+      "child_waited": true,
+      "timeout": false,
+      "stdout.txt": {
+        "raw_sha256": "9cb3a70f44a42eeb53e6057e23c3c9c4b56ee9f839cd741827c19383f5720f73",
+        "sanitized_sha256": "9cb3a70f44a42eeb53e6057e23c3c9c4b56ee9f839cd741827c19383f5720f73",
+        "text": "{\n  \"status\": \"PASS\",\n  \"commands\": [\n    {\n      \"label\": \"baseline-defect\",\n      \"exit_code\": 1\n    },\n    {\n      \"label\": \"cpu01\",\n      \"exit_code\": 0\n    },\n    {\n      \"label\": \"cpu02\",\n      \"exit_code\": 0\n    },\n    {\n      \"label\": \"reporter\",\n      \"exit_code\": 0\n    },\n    {\n      \"label\": \"control\",\n      \"exit_code\": 0\n    },\n    {\n      \"label\": \"cursor-extra\",\n      \"exit_code\": 0\n    },\n    {\n      \"label\": \"cursor-contract\",\n      \"exit_code\": 0\n    },\n    {\n      \"label\": \"detection\",\n      \"exit_code\": 0\n    },\n    {\n      \"label\": \"approved-detection\",\n      \"exit_code\": 0\n    },\n    {\n      \"label\": \"approved-localization\",\n      \"exit_code\": 0\n    },\n    {\n      \"label\": \"runtime\",\n      \"exit_code\": 0\n    }\n  ],\n  \"tracked_base_files\": 2015,\n  \"protected_byte_identical\": 2012\n}\n"
+      },
+      "stderr.txt": {
+        "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sanitized_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "text": ""
+      }
+    }
+  ]
+}

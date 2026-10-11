@@ -385,3 +385,25 @@ candidates, dual-tag possible false positives and conflicts preserved; final
 always empty. Does not resolve G09/G20 or authorize production/final/M6-B/task08.
 Historical failures/cache915preinstall gap/rights/privacy unchanged; no new
 GPU/native/service evidence. Stop for independent task07 exact-head Draft review.
+
+## TASK08 G20 CPU transport contract / 2026-10-11
+G20 remains OPEN beyond the explicitly authorized CPU mock scope. PAPER SPEC S2
+/ chapter3 pp25,35 callback/periodic sender distinction and500 remote retention
+unchanged. ADAPTATION Reporter now verifies M6 ACK and freezes pending completed
+record; opt-in SQLite outbox enqueues durably before MemoryStore transport,
+read/exact retry/atomic local ACK retain unknown/conflicting/evicted results;
+separate explicit consumer cursor commits delivered exact prefixes only.
+Source baseline PR18 exact89cfdbb679b55aa8f81d39f39c72e77426976d85:
+flash/iteration_reporter.py:end,flash/m6_iteration.py:publish/read,
+flash/m6_store.py:MemoryStore/transaction. No changes to those M6 APIs or science.
+UPSTREAM stdlib sqlite3 and official SQLite journal/synchronous API; EXTENSION
+33new artificial CPU tests and6intentional child exits,94original regressions0.
+Exact commands/exits/log/source hashes and2012protected-file evidence:
+docs/m6b-ready/g20-reporter; private runs/task08-g20-20261011. Original defect1
+retained,CPU functional PASS only. Legacy None publisher is local success only;
+remote ACK proves memory,not disk/GPU; application effects need idempotence.
+No recovery of uncommitted/unrecorded timing,no power-loss proof,no automatic
+framework resume,no real Redis/native/GPU bridge/M6-B. Existing caller-clock
+confirmed_at_seconds semantics remain,distributed clock freshness OPEN. Broader
+G20 requires later boundary/transport/checkpoint validation and independent
+review; historical gaps/failures/privacy/rights unchanged. STOP after local task.

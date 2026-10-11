@@ -1,0 +1,376 @@
+{
+  "base_head": "89cfdbb679b55aa8f81d39f39c72e77426976d85",
+  "base_tree": "5edc2add8eb963a2f03086f635c5ba8a1f658eba",
+  "status": "CPU_MOCK_PASS",
+  "runtime": {
+    "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+    "sqlite": "3.53.1",
+    "machine": "arm64",
+    "macos": "26.6.2"
+  },
+  "commands": [
+    {
+      "argv": [
+        "<existing-bundled-python-3.12.14>",
+        "-B",
+        "runs/task08-g20-20261011/repro.py"
+      ],
+      "cwd": "<project>",
+      "machine": {
+        "system": "Darwin",
+        "machine": "arm64",
+        "macos": "26.6.2",
+        "machine_alias": "local-MacBook-Air"
+      },
+      "driver_python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+      "exit_code": 1,
+      "timeout": false,
+      "elapsed_seconds": 0.07969284057617188,
+      "child_waited": true,
+      "sources_sha256": "159a14c821770b665288eeaaeddaa982b3ebe4de126cb749454b7464d5596dc5",
+      "stdout.txt_sha256": "59c533deef05f11647948e555fe2f3a37d5a2f1a24afd93c0cf12aa2f03dd0ec",
+      "stderr.txt_sha256": "c598ea3f2ee8536d380f09a30aac72df56603dd70eed473512370051683665b7",
+      "label": "baseline-defect",
+      "raw_receipt_path": "runs/task08-g20-20261011/baseline-defect/receipt.json"
+    },
+    {
+      "argv": [
+        "<existing-bundled-python-3.12.14>",
+        "-B",
+        "tests/m6b_ready_reporter_outbox.py"
+      ],
+      "cwd": "<project>",
+      "machine": {
+        "system": "Darwin",
+        "machine": "arm64",
+        "macos": "26.6.2",
+        "machine_alias": "local-MacBook-Air"
+      },
+      "driver_python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+      "exit_code": 0,
+      "timeout": false,
+      "elapsed_seconds": 25.4906108379364,
+      "child_waited": true,
+      "sources_sha256": "feb2138a5ebfb78341967b079ea7d1b42c3be72877241aa21279c1194196ffd0",
+      "stdout.txt_sha256": "23eba6ceb24101663ce7b030170afbaafac02e035c33c54b8a4369f2f38cd9ba",
+      "stderr.txt_sha256": "7140dc5bf2f914eabb492132c844075cf8b7e7eb7e19f8e510df5760c9c9de5a",
+      "label": "cpu01",
+      "raw_receipt_path": "runs/task08-g20-20261011/cpu01/receipt.json"
+    },
+    {
+      "argv": [
+        "<existing-bundled-python-3.12.14>",
+        "-B",
+        "tests/m6b_ready_reporter_outbox.py"
+      ],
+      "cwd": "<project>",
+      "machine": {
+        "system": "Darwin",
+        "machine": "arm64",
+        "macos": "26.6.2",
+        "machine_alias": "local-MacBook-Air"
+      },
+      "driver_python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+      "exit_code": 0,
+      "timeout": false,
+      "elapsed_seconds": 25.96596908569336,
+      "child_waited": true,
+      "sources_sha256": "1d8f57c5a13e7fa3abb1e6e33fafddf8a5c75829763fa6cfe6509e4f463cef76",
+      "stdout.txt_sha256": "e93137764803b866bbd8a4ede00f572953a76a0f58f2a5688ba5a96e6f63f5d0",
+      "stderr.txt_sha256": "96dd35997f4e2f8431c80e7a741c90517be67f36f7e221161bde97c5ab39b2b4",
+      "label": "cpu02",
+      "raw_receipt_path": "runs/task08-g20-20261011/cpu02/receipt.json"
+    },
+    {
+      "argv": [
+        "<existing-bundled-python-3.12.14>",
+        "-B",
+        "tests/m5_reporter.py"
+      ],
+      "cwd": "<project>",
+      "machine": {
+        "system": "Darwin",
+        "machine": "arm64",
+        "macos": "26.6.2",
+        "machine_alias": "local-MacBook-Air"
+      },
+      "driver_python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+      "exit_code": 0,
+      "timeout": false,
+      "elapsed_seconds": 2.694688081741333,
+      "child_waited": true,
+      "sources_sha256": "1d8f57c5a13e7fa3abb1e6e33fafddf8a5c75829763fa6cfe6509e4f463cef76",
+      "stdout.txt_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr.txt_sha256": "b42f2ea454391e7b6324818a5a009f0abc670d08a19b2b9d8869890d3fc68b35",
+      "label": "reporter",
+      "raw_receipt_path": "runs/task08-g20-20261011/reporter/receipt.json"
+    },
+    {
+      "argv": [
+        "<existing-bundled-python-3.12.14>",
+        "-B",
+        "tests/m6_control.py"
+      ],
+      "cwd": "<project>",
+      "machine": {
+        "system": "Darwin",
+        "machine": "arm64",
+        "macos": "26.6.2",
+        "machine_alias": "local-MacBook-Air"
+      },
+      "driver_python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+      "exit_code": 0,
+      "timeout": false,
+      "elapsed_seconds": 4.44358491897583,
+      "child_waited": true,
+      "sources_sha256": "1d8f57c5a13e7fa3abb1e6e33fafddf8a5c75829763fa6cfe6509e4f463cef76",
+      "stdout.txt_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr.txt_sha256": "d63679dd1a403857946c942aa93f233c15839c1d3852101f884d02d8d936cefa",
+      "label": "control",
+      "raw_receipt_path": "runs/task08-g20-20261011/control/receipt.json"
+    },
+    {
+      "argv": [
+        "<existing-bundled-python-3.12.14>",
+        "-B",
+        "tests/m6b_ready_cursor_extra.py"
+      ],
+      "cwd": "<project>",
+      "machine": {
+        "system": "Darwin",
+        "machine": "arm64",
+        "macos": "26.6.2",
+        "machine_alias": "local-MacBook-Air"
+      },
+      "driver_python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+      "exit_code": 0,
+      "timeout": false,
+      "elapsed_seconds": 7.706815958023071,
+      "child_waited": true,
+      "sources_sha256": "1d8f57c5a13e7fa3abb1e6e33fafddf8a5c75829763fa6cfe6509e4f463cef76",
+      "stdout.txt_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr.txt_sha256": "0ec1c4615fb4e41706fc069893a0b4833345c25745145899ad362df73dc3dab3",
+      "label": "cursor-extra",
+      "raw_receipt_path": "runs/task08-g20-20261011/cursor-extra/receipt.json"
+    },
+    {
+      "argv": [
+        "<existing-bundled-python-3.12.14>",
+        "-B",
+        "tests/m6b_ready_cursor_contract.py",
+        "--output",
+        "runs/task08-g20-20261011/cursor-observations"
+      ],
+      "cwd": "<project>",
+      "machine": {
+        "system": "Darwin",
+        "machine": "arm64",
+        "macos": "26.6.2",
+        "machine_alias": "local-MacBook-Air"
+      },
+      "driver_python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+      "exit_code": 0,
+      "timeout": false,
+      "elapsed_seconds": 7.877951145172119,
+      "child_waited": true,
+      "sources_sha256": "1d8f57c5a13e7fa3abb1e6e33fafddf8a5c75829763fa6cfe6509e4f463cef76",
+      "stdout.txt_sha256": "dc070e57abe78db199d4e33ffe157695546bc0af9d09aa301b988f9389378351",
+      "stderr.txt_sha256": "d78004742568a92c693057271c54b53cbf4d0572eb5e108737ddc3d1e1144374",
+      "label": "cursor-contract",
+      "raw_receipt_path": "runs/task08-g20-20261011/cursor-contract/receipt.json"
+    },
+    {
+      "argv": [
+        "<existing-bundled-python-3.12.14>",
+        "-B",
+        "tests/m5_detection.py"
+      ],
+      "cwd": "<project>",
+      "machine": {
+        "system": "Darwin",
+        "machine": "arm64",
+        "macos": "26.6.2",
+        "machine_alias": "local-MacBook-Air"
+      },
+      "driver_python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+      "exit_code": 0,
+      "timeout": false,
+      "elapsed_seconds": 0.24263811111450195,
+      "child_waited": true,
+      "sources_sha256": "1d8f57c5a13e7fa3abb1e6e33fafddf8a5c75829763fa6cfe6509e4f463cef76",
+      "stdout.txt_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr.txt_sha256": "b7daee1dd6b93b470651c1d1c37682587bf0709c0b1d5aeb367d88677fc6475e",
+      "label": "detection",
+      "raw_receipt_path": "runs/task08-g20-20261011/detection/receipt.json"
+    },
+    {
+      "argv": [
+        "<existing-bundled-python-3.12.14>",
+        "-B",
+        "tests/m6b_ready_approved_detection.py"
+      ],
+      "cwd": "<project>",
+      "machine": {
+        "system": "Darwin",
+        "machine": "arm64",
+        "macos": "26.6.2",
+        "machine_alias": "local-MacBook-Air"
+      },
+      "driver_python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+      "exit_code": 0,
+      "timeout": false,
+      "elapsed_seconds": 0.293715238571167,
+      "child_waited": true,
+      "sources_sha256": "1d8f57c5a13e7fa3abb1e6e33fafddf8a5c75829763fa6cfe6509e4f463cef76",
+      "stdout.txt_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr.txt_sha256": "ee1db5279c9a044fc58a4198a02cacb2fa57db913251f82c638f925fa9b4cb77",
+      "label": "approved-detection",
+      "raw_receipt_path": "runs/task08-g20-20261011/approved-detection/receipt.json"
+    },
+    {
+      "argv": [
+        "<existing-bundled-python-3.12.14>",
+        "-B",
+        "tests/m6b_ready_approved_localization.py"
+      ],
+      "cwd": "<project>",
+      "machine": {
+        "system": "Darwin",
+        "machine": "arm64",
+        "macos": "26.6.2",
+        "machine_alias": "local-MacBook-Air"
+      },
+      "driver_python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+      "exit_code": 0,
+      "timeout": false,
+      "elapsed_seconds": 0.19939017295837402,
+      "child_waited": true,
+      "sources_sha256": "1d8f57c5a13e7fa3abb1e6e33fafddf8a5c75829763fa6cfe6509e4f463cef76",
+      "stdout.txt_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr.txt_sha256": "c10f9f08598ffc41b4fbb7a41612bc84e4eac582080b9cb26df255c014f5023b",
+      "label": "approved-localization",
+      "raw_receipt_path": "runs/task08-g20-20261011/approved-localization/receipt.json"
+    },
+    {
+      "argv": [
+        "<existing-bundled-python-3.12.14>",
+        "-B",
+        "-c",
+        "import json,platform,sqlite3,sys; print(json.dumps(dict(python=sys.version,sqlite=sqlite3.sqlite_version,machine=platform.machine(),macos=platform.mac_ver()[0]))); c=sqlite3.connect(\":memory:\"); print(c.execute(\"PRAGMA compile_options\").fetchall())"
+      ],
+      "cwd": "<project>",
+      "machine": {
+        "system": "Darwin",
+        "machine": "arm64",
+        "macos": "26.6.2",
+        "machine_alias": "local-MacBook-Air"
+      },
+      "driver_python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+      "exit_code": 0,
+      "timeout": false,
+      "elapsed_seconds": 0.03928089141845703,
+      "child_waited": true,
+      "sources_sha256": "1d8f57c5a13e7fa3abb1e6e33fafddf8a5c75829763fa6cfe6509e4f463cef76",
+      "stdout.txt_sha256": "a80e3c4b281e67ebefe9ee7a53ddbb33e58ba206df400548554983a4babdd514",
+      "stderr.txt_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "label": "runtime",
+      "raw_receipt_path": "runs/task08-g20-20261011/runtime/receipt.json"
+    }
+  ],
+  "final_source_sha256": {
+    "flash/iteration_reporter.py": "5425f9be08ea49968734ae6ef125694bc65ae182ff2f3ae4c3ef57adbbf01f6e",
+    "flash/iteration_outbox.py": "a7bcfdbf27a716944fd4d4403bb524d41343890b30af57c571438d88803c5fe8",
+    "tests/m6b_ready_reporter_outbox.py": "d213f2a8537a1a1d0d057091acc6135b0325ff5ef14532813e3c37a0a8a40abd"
+  },
+  "final_test_labels": [
+    "cpu02",
+    "reporter",
+    "control",
+    "cursor-extra",
+    "cursor-contract",
+    "detection",
+    "approved-detection",
+    "approved-localization"
+  ],
+  "test_counts": {
+    "cpu01": 28,
+    "cpu02": 33,
+    "reporter": 4,
+    "control": 32,
+    "cursor-extra": 8,
+    "cursor-contract": 9,
+    "detection": 8,
+    "approved-detection": 13,
+    "approved-localization": 20
+  },
+  "final_new_tests": 33,
+  "unchanged_tests": 94,
+  "not_run": [
+    "real Redis",
+    "GPU",
+    "native bridge",
+    "M6-B",
+    "power loss",
+    "server"
+  ],
+  "initial_failure": "baseline-defect exit1; original defect preserved",
+  "runner_sha256": "85691793073ef00f3033c9b511a06e254094d7aa21b1e11fac04236baf3459d9",
+  "evidence_checks": [
+    {
+      "argv": [
+        "<existing-bundled-python-3.12.14>",
+        "-B",
+        "runs/task08-g20-20261011/seal.py"
+      ],
+      "cwd": "<project>",
+      "driver_python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+      "exit_code": 0,
+      "timeout": false,
+      "elapsed_seconds": 6.922550678253174,
+      "child_waited": true,
+      "sources_sha256": "1d8f57c5a13e7fa3abb1e6e33fafddf8a5c75829763fa6cfe6509e4f463cef76",
+      "stdout.txt_sha256": "d4748f15f3974f8c805acbbc1b46ebed368f46276d15e82ae3c9b3496c38c0b4",
+      "stderr.txt_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "label": "seal01"
+    },
+    {
+      "argv": [
+        "<existing-bundled-python-3.12.14>",
+        "-B",
+        "docs/m6b-ready/g20-reporter/verify_evidence.py",
+        "--private-run",
+        "runs/task08-g20-20261011"
+      ],
+      "cwd": "<project>",
+      "driver_python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+      "exit_code": 1,
+      "timeout": false,
+      "elapsed_seconds": 0.07470512390136719,
+      "child_waited": true,
+      "sources_sha256": "1d8f57c5a13e7fa3abb1e6e33fafddf8a5c75829763fa6cfe6509e4f463cef76",
+      "stdout.txt_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr.txt_sha256": "f9b8d448bf801dfd080742a5a3b32ba952890e0e6fb57831d8d1b256af84b06d",
+      "label": "verify01"
+    },
+    {
+      "argv": [
+        "<existing-bundled-python-3.12.14>",
+        "-B",
+        "docs/m6b-ready/g20-reporter/verify_evidence.py",
+        "--private-run",
+        "runs/task08-g20-20261011"
+      ],
+      "cwd": "<project>",
+      "driver_python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+      "exit_code": 0,
+      "timeout": false,
+      "elapsed_seconds": 5.451841831207275,
+      "child_waited": true,
+      "sources_sha256": "1d8f57c5a13e7fa3abb1e6e33fafddf8a5c75829763fa6cfe6509e4f463cef76",
+      "stdout.txt_sha256": "9cb3a70f44a42eeb53e6057e23c3c9c4b56ee9f839cd741827c19383f5720f73",
+      "stderr.txt_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "label": "verify02"
+    }
+  ],
+  "verifier_sha256": "02605137b9ece92e0d79485013b9be88eaaf19664a1c9df29446ba82f20b3dca"
+}
