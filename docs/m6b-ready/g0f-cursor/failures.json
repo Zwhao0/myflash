@@ -47,5 +47,12 @@
     "status": "FAIL_RETAINED",
     "reason": "Template substitution replaced the literal Git HEAD argv token as well as expected SHA, producing a Python SyntaxError before any execution/file writes. Corrected saved helper is locally parsed before retry; no runtime or Git mutation occurred.",
     "raw_reference": "<local-private-run>/server-push.stderr"
+  },
+  {
+    "operation": "Server publication prepush read",
+    "exit_code": 128,
+    "status": "FAIL_RETAINED",
+    "reason": "The node-0 SSH endpoint lacked a trusted host-key entry. Git transport stopped before publication; no host-key bypass or credential installation. Existing local GitHub-specific identity explicitly selected and read authorization verified.",
+    "raw_reference": "<private-run>/remote-prepush.receipt.json / remote-prepush.stderr"
   }
 ]

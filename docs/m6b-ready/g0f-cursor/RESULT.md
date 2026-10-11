@@ -67,9 +67,12 @@ No historical privacy/rights audit was performed.
 Publication transport attempts are retained: local HTTPS push128 (no configured
 write authentication), default SSH read128 (host key verification), SSH443 read128
 (no local public-key authorization). No host-key bypass, credential provisioning
-or history rewrite was performed. The existing node-0 publication channel is
-used for ordinary Git push; exact final outcome is in the private publication
-receipt and Draft PR metadata. These transport failures do not change CPU results.
+or history rewrite was performed. The node-0 SSH prepush read also stopped128 on host-key verification, retained
+privately. An existing local GitHub-specific identity was explicitly selected
+and its read authorization verified0. This existing identity is used for ordinary
+Git push without changing system SSH configuration; final outcome is in the
+private publication receipt and Draft PR metadata. No private-key contents were
+read or disclosed. These transport failures do not change CPU results.
 
 Initial server publication helper exited1 with template SyntaxError before any
 execution or writes. Full private error retained; saved helper was corrected
