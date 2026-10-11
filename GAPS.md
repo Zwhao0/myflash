@@ -471,3 +471,31 @@ decisions or runtime/native/tests/fixtures/evidence modifications. Historical
 FAIL/NOT_CAPTURED/915-cache/rights/privacy OPEN/DEFERRED unchanged. No CPU matrix
 rerun/native fits/GPU/Redis/server probe/M6-B. Next unique action independent
 TASK11 precise-head review; no task12 or experiment authorization inferred. STOP.
+
+
+## TASK12 B01 / 2026-10-11
+
+ADAPTATION, human explicitly approves minimal wiring from PR22 exact
+0dd0e1c5cac043aef1449d5cfe9e74ed38447cf3. G01-a/G02-inclusive_span/G13-A and
+G04 eight existing approved choices unchanged; no renewed scientific decision.
+B01 minimal durable confirmed rank0 -> approved Detector -> independent automatic
+Profile ingress implemented opt-in and CPU-validated; independent review PENDING.
+Local decision+intent commit precedes unchanged consumer ACK, deterministic source/
+version request_id and full-content conflict hash, CAS epoch dedup and restart
+replay, pending-first busy/reset backpressure. No silent lost trigger after ACK.
+
+G20 wider physical scope OPEN: two separate SQLite stores are ordered, not an
+atomic multi-store transaction; disk/hardware loss is not CPU crash proof.
+Redis disk persistence/HA/exactly-once effects not proved. Single dispatcher owner,
+max500 decision ledger capacity then BLOCKED; stale/evicted/conflicting source or
+lost accepted remote evidence requires explicit operator reconciliation. Frozen
+Detector failures do not ACK or automatically re-fit. No episode coalescing added.
+Already accepted but ABORTED Profile is recorded as request accepted, not successful
+localization; original reset/failure logic remains. No final_fault_ranks/final_alert.
+
+24new/149original CPU actual exit0 on local Mac17,3 Apple M5 arm64; raw commands/
+logs/exits/source preservation in task12 run and docs/m6b-ready/task12-auto-profile.
+No real Redis/native/Rbeast/GPU/ABI2 auto orchestration/framework integration/
+physical window/cross-host clocks/recovery/M6-B. Other TASK11 blockers and historical
+FAIL/NOT_CAPTURED/915-cache/privacy/rights status unchanged. Stop for independent
+precise-head review; no authorization for the next task inferred.

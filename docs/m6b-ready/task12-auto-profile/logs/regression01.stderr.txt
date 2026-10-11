@@ -1,0 +1,37 @@
+test_ambiguous_and_no_candidate_preserved (m6_control.ControlTests.test_ambiguous_and_no_candidate_preserved) ... ok
+test_cas_concurrent_publication_and_fenced_registration (m6_control.ControlTests.test_cas_concurrent_publication_and_fenced_registration) ... ok
+test_command_ack_without_application_and_missing_scope (m6_control.ControlTests.test_command_ack_without_application_and_missing_scope) ... ok
+test_data_timeout_not_no_candidate (m6_control.ControlTests.test_data_timeout_not_no_candidate) ... ok
+test_delayed_transport_bounded_error (m6_control.ControlTests.test_delayed_transport_bounded_error) ... ok
+test_disconnect_then_reconcile_not_no_candidate (m6_control.ControlTests.test_disconnect_then_reconcile_not_no_candidate) ... ok
+test_duplicate_ack_is_exact_idempotent (m6_control.ControlTests.test_duplicate_ack_is_exact_idempotent) ... ok
+test_finished_manual_request_stays_idempotent_and_clock_monotone (m6_control.ControlTests.test_finished_manual_request_stays_idempotent_and_clock_monotone) ... ok
+test_future_applied_boundary_cannot_arm_earlier_window (m6_control.ControlTests.test_future_applied_boundary_cannot_arm_earlier_window) ... ok
+test_global_restart_aborts_and_fences_old_commands (m6_control.ControlTests.test_global_restart_aborts_and_fences_old_commands) ... ok
+test_group_shared_counts_not_records (m6_control.ControlTests.test_group_shared_counts_not_records) ... ok
+test_iteration_duplicate_conflict_gap_retention_restart (m6_control.ControlTests.test_iteration_duplicate_conflict_gap_retention_restart) ... ok
+test_iteration_rank_isolation_and_missing_boundary (m6_control.ControlTests.test_iteration_rank_isolation_and_missing_boundary) ... ok
+test_iteration_timeout_and_cursor_gap_visible (m6_control.ControlTests.test_iteration_timeout_and_cursor_gap_visible) ... ok
+test_iteration_unconfirmed_reply_retry_and_corruption (m6_control.ControlTests.test_iteration_unconfirmed_reply_retry_and_corruption) ... ok
+test_local_restart_invalidates_epoch_and_fences_old_owner (m6_control.ControlTests.test_local_restart_invalidates_epoch_and_fences_old_owner) ... ok
+test_lost_registration_restart_blocked (m6_control.ControlTests.test_lost_registration_restart_blocked) ... ok
+test_manifest_coverage_and_hash_integrity (m6_control.ControlTests.test_manifest_coverage_and_hash_integrity) ... ok
+test_manual_request_idempotence_and_conflict (m6_control.ControlTests.test_manual_request_idempotence_and_conflict) ... ok
+test_manual_trigger_lost_store_returns_blocked (m6_control.ControlTests.test_manual_trigger_lost_store_returns_blocked) ... ok
+test_missing_data_fails_closed (m6_control.ControlTests.test_missing_data_fails_closed) ... ok
+test_missing_iteration_not_zero_filled (m6_control.ControlTests.test_missing_iteration_not_zero_filled) ... ok
+test_missing_node_timeout (m6_control.ControlTests.test_missing_node_timeout) ... ok
+test_no_previous_epoch_data_reuse (m6_control.ControlTests.test_no_previous_epoch_data_reuse) ... ok
+test_partial_reset_blocks_next_epoch (m6_control.ControlTests.test_partial_reset_blocks_next_epoch) ... ok
+test_profile_corruption_old_run_old_epoch_unsupported (m6_control.ControlTests.test_profile_corruption_old_run_old_epoch_unsupported) ... ok
+test_profile_duplicate_origin_rejected (m6_control.ControlTests.test_profile_duplicate_origin_rejected) ... ok
+test_redis_timeout_validation_before_any_network (m6_control.ControlTests.test_redis_timeout_validation_before_any_network) ... ok
+test_restart_during_partial_reset_requires_new_boundaries (m6_control.ControlTests.test_restart_during_partial_reset_requires_new_boundaries) ... ok
+test_sample_window_boundary_not_cpu_wall_duration (m6_control.ControlTests.test_sample_window_boundary_not_cpu_wall_duration) ... ok
+test_two_epochs_m4_equivalence_and_traces (m6_control.ControlTests.test_two_epochs_m4_equivalence_and_traces) ... ok
+test_window_ms_floor_and_long_iteration (m6_control.ControlTests.test_window_ms_floor_and_long_iteration) ... ok
+
+----------------------------------------------------------------------
+Ran 32 tests in 2.969s
+
+OK

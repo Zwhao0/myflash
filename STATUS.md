@@ -969,3 +969,59 @@ No credentials exposed; prior publication metadata paths remain in Git history.
 
 Publication final static verify02 exit0; redacted changed-text03 findings0/
 diff-check03 exit0 on same local machine. Receipt seal only; no runtime changes.
+
+
+TASK12 B01 / 2026-10-11 (ADAPTATION, explicit current human authorization):
+sole PR22 exact0dd0e1c5cac043aef1449d5cfe9e74ed38447cf3, independent local
+codex/task12-detector-profile. Added DurableAutomaticProfiler and independent
+GlobalController.start_automatic_v1; existing consumer/Detector/adapter/G04/native
+unchanged. SQLite atomically freezes decision+intent BEFORE consumer ACK;
+logical request_id bound to rank0 record/approved rule+packet/C versions, full
+payload hash rejects conflicts. Generation is not identity. CAS persists auto
+source with epoch; replay deduplicates active and completed requests. Busy/reset/
+unknown outcomes retain pending intent and stop subsequent ACK. Single owner,
+max500 decisions then BLOCKED; accepted evidence lost requires operator inspection.
+Formal detection_trigger only; CPU adapter requires explicit simulation selection;
+real selected-C path retains original identity guard and is NOT_RUN.
+
+Actual local Mac17,3/Apple M5/macOS26.6.2 arm64/CPython3.12.14/SQLite3.53.1:
+24new targeted+149original CPU tests PASS, actual exits0/no timeout. auto03,
+regression01(32),regression02(108),cursor01(9),environment01 complete argv/cwd/
+actual host/raw stdout/stderr/exits/SHA in runs/task12-auto-profile-20261011;
+public command/source/log bindings in docs/m6b-ready/task12-auto-profile/validation.json.
+Commands: existing-bundled-python -B runs/task12-auto-profile-20261011/run.py
+<run-name> <same-python> -B <complete argv in validation.json>; auto03 additionally
+TASK12_EVIDENCE_DIR=runs/task12-auto-profile-20261011/auto03-states. Expected child
+hard-exit73 then durable reopen covered. auto01(18)/auto02(24) each0 retained;
+no new CPU test failures/assertion relaxation. Root Git128/unmatched glob1 were
+read/discovery errors, transcript-only raw NOT_CAPTURED, retained explicitly.
+
+Only controller existing runtime changed; new module/test/task/docs, STATUS/GAPS
+append-only. PAPER/ADAPTATION/EXTENSION source/function/SHA in SOURCE_LEDGER.json;
+no upstream code copied. Static source preservation/changed-text/diff results
+and final commit/tree/diff/clean status bound by validation and private final-git
+receipt; no self-referential future commit hash in this append. Independent
+review PENDING. No default production switch/threshold/final alert/Redis/GPU/
+native/server/installation/M6-B/publication. Physics/ABI2 orchestration/framework/
+window/recovery and historical failures/cache/privacy/rights gaps remain.
+Next unique task independent exact local TASK12 review; STOP, no next gate.
+
+TASK12 static verify01 actual exit0:2084base/2081protected byte-identical,
+2append-only,11source bindings/four executed run-source hashes,changed-text
+findings0. Raw command and complete output private; preservation.json and
+validation.json bind the pre-seal result. Final evidence-only seal and local
+commit receipt follow, no runtime/test changes or new execution scope.
+
+TASK12 final static verify02 TIMEOUT90s, wrapper actual exit1; child exit/raw
+stdout/stderr NOT_CAPTURED because original private runner did not seal timeout
+exceptions. Exact argv/cwd/error locator/original verifier+runner source SHA
+retained in private verify02.failure.json and snapshots; public validation records
+failure. verify01 per-file Git reads actual85.694s. Minimal ADAPTATION checker
+repair batches identical pinned Git blobs, all protection assertions unchanged,
+no timeout increase or runtime/test/scientific changes; separately numbered rerun.
+
+TASK12 batched static verify03 actual exit0/no timeout: same2084base/2081
+protected/2append-only/11source bindings/four executed runs,changed-text0.
+Original verify02 TIMEOUT1/source/NOT_CAPTURED retained. preservation-final.json
+and validation bind actual rerun; final evidence-only seal rechecked before local
+commit. No new runtime changes, CPU rerun, remote publish or next task.
