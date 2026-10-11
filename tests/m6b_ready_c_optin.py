@@ -35,8 +35,8 @@ class Tests(unittest.TestCase):
         self.assertEqual(result['worker_exit_code'],78)
 
     def test_worker_rejects_before_fit(self):
-        for identity in (dict(native_sha256='0'*64,mapped_library_lines=['mapped']),
-                         dict(native_sha256=CANDIDATE_C_SHA256,mapped_library_lines=[])):
+        for identity in (dict(native_sha256='0'*64,mapped_library_segments=['mapped']),
+                         dict(native_sha256=CANDIDATE_C_SHA256,mapped_library_segments=[])):
             np=SimpleNamespace(__version__='2.2.6')
             rb=SimpleNamespace(beast=lambda *args,**kwargs:self.fail('fit entered before identity rejection'))
             stdout=io.StringIO()

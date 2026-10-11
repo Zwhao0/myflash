@@ -134,11 +134,14 @@ def runtime_identity(rb):
             device=f'{os.major(stat.st_dev):02x}:{os.minor(stat.st_dev):02x}'
             if (len(fields)==6 and fields[5]==str(path) and fields[3]==device
                     and int(fields[4])==stat.st_ino):
-                mapped.append(line)
+                # Virtual addresses vary with ASLR. Keep stable mapping identity
+                # so existing complete prefix evidence remains comparable.
+                mapped.append(dict(permissions=fields[1],offset=fields[2],device=fields[3],
+                                   inode=int(fields[4]),path=fields[5]))
     return dict(sys_executable=sys.executable,sys_prefix=sys.prefix,
                 Rbeast_file=rb.__file__,native_module=modules[0].__name__,
                 native_file=str(path),native_sha256=hashlib.sha256(path.read_bytes()).hexdigest(),
-                mapped_library_lines=mapped)
+                mapped_library_segments=mapped)
 
 
 def worker(candidate_c=False):
@@ -155,7 +158,7 @@ def worker(candidate_c=False):
     try:
         identity=runtime_identity(rb)
         if candidate_c and (identity['native_sha256']!=CANDIDATE_C_SHA256 or
-                            not identity['mapped_library_lines']):
+                            not identity['mapped_library_segments']):
             raise ValueError('candidate C binary SHA256 or loaded mapping mismatch')
     except (ValueError,OSError) as error:
         identity_error=str(error)

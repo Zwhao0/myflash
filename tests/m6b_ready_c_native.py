@@ -29,7 +29,7 @@ for name,adapter,sha,selection in [
     engine=result['engine'];identity=engine['runtime_identity']
     assert not result['final_alert']
     assert engine['parameters']==PARAMETERS
-    assert identity['native_sha256']==sha and identity['mapped_library_lines']
+    assert identity['native_sha256']==sha and identity['mapped_library_segments']
     assert identity['sys_executable']==(a.candidate_python if name=='candidate_c' else sys.executable)
     if name=='wrong_binary':
         assert result['status']=='BLOCKED' and result['reason']=='CANDIDATE_C_IDENTITY_REJECTED'
