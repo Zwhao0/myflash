@@ -151,22 +151,25 @@ def worker(candidate_c=False):
     if importlib.metadata.version('Rbeast')!='0.1.25' or np.__version__!='2.2.6':
         raise RuntimeError('unverified Rbeast/NumPy version')
     # Default invocation/model is unchanged; identity is additional diagnostic evidence.
+    identity=None;identity_error=None
     try:
         identity=runtime_identity(rb)
         if candidate_c and (identity['native_sha256']!=CANDIDATE_C_SHA256 or
                             not identity['mapped_library_lines']):
             raise ValueError('candidate C binary SHA256 or loaded mapping mismatch')
     except (ValueError,OSError) as error:
-        if not candidate_c:raise
-        payload=dict(status='BLOCKED',reason='CANDIDATE_C_IDENTITY_REJECTED',raw=None,
-                     runtime_identity=locals().get('identity'),expected_native_sha256=CANDIDATE_C_SHA256,
-                     identity_error=str(error),native_fit_started=False)
-        print('M5_RESULT='+json.dumps(payload,allow_nan=False));return 78
+        identity_error=str(error)
+        if candidate_c:
+            payload=dict(status='BLOCKED',reason='CANDIDATE_C_IDENTITY_REJECTED',raw=None,
+                         runtime_identity=identity,expected_native_sha256=CANDIDATE_C_SHA256,
+                         identity_error=identity_error,native_fit_started=False)
+            print('M5_RESULT='+json.dumps(payload,allow_nan=False));return 78
     values=json.load(sys.stdin)
     out=rb.beast(np.asarray(values,dtype=np.float64),**PARAMETERS)
     payload=dict(raw=json_safe(out),versions=dict(Rbeast=importlib.metadata.version('Rbeast'),numpy=np.__version__,python=sys.version),
                  runtime_identity=identity,runtime_selection='candidate-c-opt-in' if candidate_c else 'default',
                  native_fit_started=True)
+    if identity_error is not None:payload['runtime_identity_error']=identity_error
     print('M5_RESULT='+json.dumps(payload,allow_nan=False))
     return 0
 

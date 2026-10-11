@@ -52,6 +52,18 @@ class Tests(unittest.TestCase):
             self.assertEqual(result['status'],'INSUFFICIENT_EVIDENCE')
             self.assertEqual(result['reason'],reason)
 
+    def test_default_identity_observation_does_not_gate_fit(self):
+        np=SimpleNamespace(__version__='2.2.6',float64=float,asarray=lambda values,dtype:values)
+        from unittest.mock import Mock
+        rb=SimpleNamespace(beast=Mock(return_value={'real_default_result':True}))
+        stdout=io.StringIO()
+        with patch.dict(sys.modules,{'numpy':np,'Rbeast':rb}), patch('importlib.metadata.version',return_value='0.1.25'), patch('flash.rbeast_adapter.runtime_identity',side_effect=OSError('identity unavailable')), patch('sys.stdin',io.StringIO('[1,2,3]')), contextlib.redirect_stdout(stdout):
+            self.assertEqual(worker(),0)
+        rb.beast.assert_called_once()
+        payload=json.loads(stdout.getvalue().removeprefix('M5_RESULT='))
+        self.assertTrue(payload['native_fit_started'])
+        self.assertEqual(payload['runtime_identity_error'],'identity unavailable')
+
     def test_bad_worker_output(self):
         for code,stdout in [(1,''),(0,''),(0,'M5_RESULT={}\nM5_RESULT={}')]:
             with patch('flash.rbeast_adapter.subprocess.run',return_value=SimpleNamespace(returncode=code,stdout=stdout,stderr='failure')):
