@@ -135,6 +135,7 @@ def main():
             argv=[py,f'tests/{name}.py']
             if name=='m5_api_fields':argv.append(str(out/'field-contract'))
             if name=='m5_contract_evidence':argv.append(str(out/'arithmetic-evidence.json'))
+            if name=='m6b_ready_cursor_contract':argv.extend(['--output',str(out/'cursor-contract')])
             run(name,argv)
         save(out/'execution-private.json',result)
         run('complete-comparison',[py,'scripts/m5_p1_compare.py','--execution',str(out),'--build',str(build),'--output',str(out/'comparison')],900,True)
