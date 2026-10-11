@@ -592,3 +592,54 @@ final docs compaction/seal; source bytes equal final actual CPU/history hashes.
 Final documentation commit only seals evidence/STATUS and compacts equivalent
 JSON, no algorithm/test/data/parameter change; remote exact final head/tree
 bound in independent Draft PR and private publication-git.json. STOP for review.
+
+
+## M6B-READY task06 G04 decision packet / 2026-10-11
+Human confirms PR16 exact7588873d705668497694ac1d12041db5005e4b49 /
+5b345197cb70c95c66c65870c8608a9091c4621d independently reviewed PASS and
+explicitly authorizes task06 Draft publication. New independent branch
+codex/m6b-ready-g3-g04-decisions from exact source; new docs/task only,
+STATUS/GAPS append-only. No flash/localization.py/profile_input.py, other
+source, fixtures, original assertions, labels or raw evidence changes.
+PAPER complete printed30/31/34/41/42 visually checked; same-project ADAPTATION
+source/functions/sha in source-ledger; EXTENSION nearest-peer and hypothetical
+final sensitivity/artificial boundary probes. No GreyHound/upstream code reuse.
+
+Recommendation separately pending S1-MAX/W-EQUAL/R-GROUP/T-GE/C-GUARD/
+N-GUARD/Q-TWO/F-PROVISIONAL. Each approved_choice=null; G04 OPEN /
+REQUIRES_OWNER_DECISION. Keep min-rank/max-group, plot-mean separate,
+communicator scope observations and shared Group correlation explicit,
+population/sample disagreement, numeric boundary and tag conflict visible.
+Two agreed tags in original normal M4 can still falsely qualify both epochs;
+no voting/score-confidence/proven multi-fault/final alert claimed.
+
+Actual local MacBook Air/macOS26.6.2 arm64/existing bundled Python3.12.14:
+65unchanged fixture assertion sets/saved exits verified,24valid/41reject;
+32M4 full predictions exactly equal saved;40M3 public statistical windows
+match historical candidates, original raw identity/digest NOT_REVALIDATED.
+Matrix137rows x288policies=39456cells; valid statistical27648/rejected11808.
+Core16/16delayed candidate match, group-mean20percent still3/4normal candidates;
+five5/10conflicts remain; original normal five2/2candidate/two-tag support
+remain. These are historical sensitivity, no new GPU experiment/fault rates.
+
+Commands: existing-bundled-python -B docs/m6b-ready/g3-g04-decisions/audit_matrix.py
+--source . --output <private-run>/audit04; actual exit0/no timeout, original65
+assertions unchanged. audit01/02/03 each0 retained,04same final03rows after
+relocation to task06checkout; nominal80/120 mean rounds below100, inclusive
+20percent numerical guard shows AMBIGUOUS_SPEC, no epsilon/threshold repair.
+Sealer/actual argv/cwd/host/stdout/stderr/input/source/output SHA in task06
+evidence and private runs/m6b-ready-g3-g04-20261011. Transcript-only wrong root
+Git128, connector argument schema error(no process exit), diagnostic print
+SyntaxError1 retained with raw/source snapshots NOT_CAPTURED. Historical
+M5 failures/threeNOT_CAPTURED/915-cache gap/rights/privacy DEFERRED/OPEN remain.
+
+Reviewed task05checkout1954files remain original bytes; task06except two
+append records1952protected files unchanged. No server probe/new native fits/
+M5matrix/native compile/install/GPU/NCCL/Redis/services/control integration/
+M6-B/task07; formal server environment NOT_PROBED, no full preservation claim.
+Local new audit never imported by FLASH, all live final_fault_ranks=[] /
+final_alert=false. Commit/diff/final ordinary push/head/tree/Draft/CI status
+bound in private publication receipts and independent PR. CI text-only is
+not CPU or science proof. Next unique action: independent task06 precise-head
+review and complete per-dimension G04 approval; STOP, no task07 before explicit
+implementation authorization.

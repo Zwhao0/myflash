@@ -1,0 +1,59 @@
+{
+  "historical": "All old FAIL/NOT_CAPTURED evidence protected unchanged; no backfill",
+  "current": [
+    {
+      "id": "package-root-git",
+      "actual_exit": 128,
+      "status": "TOOL_OUTPUT_ONLY",
+      "raw": "NOT_CAPTURED",
+      "reason": "Root task package is not a Git repo; status/branch/log command used wrong cwd before selecting exact task05 checkout",
+      "source_snapshot": "NOT_CAPTURED"
+    },
+    {
+      "id": "github-schema-probe",
+      "actual_exit": null,
+      "connector_error": "INVALID_ARGUMENT",
+      "status": "TOOL_OUTPUT_ONLY",
+      "raw": "NOT_CAPTURED",
+      "reason": "get_pr_info required repository_full_name, first call passed repo_full_name; corrected read returned exact16 head",
+      "scientific_data_affected": false
+    },
+    {
+      "id": "exploratory-diagnostic-print",
+      "actual_exit": 1,
+      "status": "TOOL_OUTPUT_ONLY",
+      "raw": "NOT_CAPTURED",
+      "reason": "stdin-only summary comprehension bracket SyntaxError; corrected print read existing final03 only, no source/data mutation",
+      "source_snapshot": "NOT_CAPTURED"
+    },
+    {
+      "id": "workflow-name-read",
+      "actual_exit": null,
+      "status": "TOOL_OUTPUT_ONLY",
+      "raw": "NOT_CAPTURED",
+      "reason": "Guessed privacy-check.yml missing in compound read command; cat emitted error, final shell exit0 did not capture its standalone exit. rg inventory found actual privacy.yml. No test/CI/source mutation."
+    }
+  ],
+  "audits": [
+    {
+      "attempt": "audit01",
+      "exit": 0,
+      "reason": "Passed; earlier analysis versions retained"
+    },
+    {
+      "attempt": "audit02",
+      "exit": 0,
+      "reason": "Passed; earlier analysis versions retained"
+    },
+    {
+      "attempt": "audit03",
+      "exit": 0,
+      "reason": "Passed; earlier analysis versions retained"
+    },
+    {
+      "attempt": "audit04",
+      "exit": 0,
+      "reason": "Passed; earlier analysis versions retained"
+    }
+  ]
+}

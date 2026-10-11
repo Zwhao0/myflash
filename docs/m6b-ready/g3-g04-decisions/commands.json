@@ -1,0 +1,152 @@
+[
+  {
+    "argv": [
+      "<existing-bundled-python>",
+      "-B",
+      "docs/m6b-ready/g3-g04-decisions/audit_matrix.py",
+      "--source",
+      "m6b-s5-work",
+      "--output",
+      "runs/m6b-ready-g3-g04-20261011/audit01"
+    ],
+    "cwd": "<project>",
+    "host": "local-macOS",
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "exit_code": 0,
+    "seconds": 1.6797597408294678,
+    "timeout": false,
+    "source_sha256": "12296d17cdb8b21d4c96f102d0c0d592dc33c28c54c81852dba999e4f4a76760",
+    "stdout_sha256": "ba94936e0c152dbbc4b60345ef4896b1b16d4e9daf44dd0a074b5f53f75b326e",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "private_receipt_sha256": "3905b9f8cbe05b6dc1374964eccd81257d69e8705ee308710ceab2ee4db5182f",
+    "private_receipt": "runs/m6b-ready-g3-g04-20261011/audit01.receipt.json"
+  },
+  {
+    "argv": [
+      "<existing-bundled-python>",
+      "-B",
+      "docs/m6b-ready/g3-g04-decisions/audit_matrix.py",
+      "--source",
+      "m6b-s5-work",
+      "--output",
+      "runs/m6b-ready-g3-g04-20261011/audit02"
+    ],
+    "cwd": "<project>",
+    "host": "local-macOS",
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "exit_code": 0,
+    "seconds": 1.7879447937011719,
+    "timeout": false,
+    "source_sha256": "8a2110358f68cd88094e66622d5ef9e44099c1f0a93e3ac917df189f252cae85",
+    "stdout_sha256": "ba94936e0c152dbbc4b60345ef4896b1b16d4e9daf44dd0a074b5f53f75b326e",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "private_receipt_sha256": "f6d04293316a888b5f535fba670f1ad8fea149c33088b9f1e3b8a0ccce4be229",
+    "private_receipt": "runs/m6b-ready-g3-g04-20261011/audit02.receipt.json"
+  },
+  {
+    "argv": [
+      "<existing-bundled-python>",
+      "-B",
+      "docs/m6b-ready/g3-g04-decisions/audit_matrix.py",
+      "--source",
+      "m6b-s5-work",
+      "--output",
+      "runs/m6b-ready-g3-g04-20261011/audit03"
+    ],
+    "cwd": "<project>",
+    "host": "local-macOS",
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "exit_code": 0,
+    "seconds": 2.4469380378723145,
+    "timeout": false,
+    "source_sha256": "da885c717a8ab1266349168cdc439ab3a33c7ee5b9ab3253971c71df1babb626",
+    "stdout_sha256": "ba94936e0c152dbbc4b60345ef4896b1b16d4e9daf44dd0a074b5f53f75b326e",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "private_receipt_sha256": "84e2eb7aeb3d3065b4af5915053929ec6b8d65dd9d818fbc7bbfc5b435d71fdf",
+    "private_receipt": "runs/m6b-ready-g3-g04-20261011/audit03.receipt.json"
+  },
+  {
+    "argv": [
+      "<existing-bundled-python>",
+      "-B",
+      "docs/m6b-ready/g3-g04-decisions/audit_matrix.py",
+      "--source",
+      ".",
+      "--output",
+      "<project>/runs/m6b-ready-g3-g04-20261011/audit04"
+    ],
+    "cwd": "<project>",
+    "host": "local-macOS",
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 2.4947049617767334,
+    "stdout_sha256": "ba94936e0c152dbbc4b60345ef4896b1b16d4e9daf44dd0a074b5f53f75b326e",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "private_receipt_sha256": "142bf39adc19ed655e4cbc9bf1bc4610da11d99a0b6cf49265565dd067c039a4",
+    "private_receipt": "runs/m6b-ready-g3-g04-20261011/audit04.receipt.json"
+  },
+  {
+    "argv": [
+      "git",
+      "-c",
+      "core.sshCommand=ssh -i <existing-approved-GitHub-key> -o IdentitiesOnly=yes -o BatchMode=yes -o ConnectTimeout=10",
+      "ls-remote",
+      "ssh://git@ssh.github.com:443/Zwhao0/myflash.git",
+      "refs/heads/codex/m6b-ready-g2-approved-detector",
+      "refs/heads/main"
+    ],
+    "cwd": "<project>",
+    "host": "local-macOS",
+    "exit_code": 0,
+    "seconds": 2.6481242179870605,
+    "timeout": false,
+    "private_receipt_sha256": "d62895555c82a5a31cbd4f7c9bb85544067073c5c8fd802f0cbeab4ffed4175f",
+    "private_receipt": "runs/m6b-ready-g3-g04-20261011/remote-preflight.receipt.json"
+  },
+  {
+    "argv": [
+      "git",
+      "-C",
+      "m6b-s5-work",
+      "worktree",
+      "add",
+      "-b",
+      "codex/m6b-ready-g3-g04-decisions",
+      "../m6b-s6-work",
+      "7588873d705668497694ac1d12041db5005e4b49"
+    ],
+    "cwd": "<project>",
+    "host": "local-macOS",
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 3.4679360389709473,
+    "private_receipt_sha256": "7935b7ba4e9603275aee8169422ab13af8f9de1342b6ea1e4c129b3c3a5b50bf",
+    "private_receipt": "runs/m6b-ready-g3-g04-20261011/worktree.receipt.json"
+  },
+  {
+    "argv": [
+      "<existing-bundled-python>",
+      "-B",
+      "docs/m6b-ready/g3-g04-decisions/seal_packet.py",
+      "--baseline",
+      "<project>/runs/m6b-ready-g3-g04-20261011/baseline.json",
+      "--reviewed-source",
+      "<project>/m6b-s5-work",
+      "--raw-run",
+      "<project>/runs/m6b-ready-g3-g04-20261011",
+      "--output",
+      "<project>/runs/m6b-ready-g3-g04-20261011/seal01"
+    ],
+    "cwd": "<project>",
+    "host": "local-macOS",
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 2.9529857635498047,
+    "stdout_sha256": "572462421916c42967f6bc44c00b5581f74f564f8819817dab2f020eb36b60c3",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "private_receipt_sha256": "451f63b084d5b1c2572ce86731e227b82a09f1031619b06a8d260d92c53953ff",
+    "private_receipt": "runs/m6b-ready-g3-g04-20261011/seal01.receipt.json"
+  }
+]
