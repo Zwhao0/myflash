@@ -781,3 +781,35 @@ SHA and protected-file verifier actual0. Full/history text check is not PASS.
 Snapshot publication uses GitHub plugin API with direct exactPR18 parent; shell
 SSH failure retained. Remote exact head/tree/PR and any automatic CI outcome
 will be recorded in the private final publication receipt; STOP for review.
+
+## TASK09 M3 ABI2 / M6 CPU bridge — 2026-10-11
+Explicit human TASK09 scope; unique start PR19 exact
+b082d16939aab0d4ba4b9208475886c4b9ec808c/tree10188bb80a4b9a10dff46c6eac5bb425fe3828ad.
+Read-only GitHub confirms Open/Draft/unmerged, no independent review PASS inferred.
+Separate local branch codex/task09-m3-abi2-m6-cpu. New opt-in bridge/test/task/docs;
+all inherited source/native/tests/fixtures/scientific defaults unchanged.
+PAPER SPEC S1/S4/S5; ADAPTATION strict ACK selection, post-request ABI2 record
+scope proof, fenced epoch/generation, complete clean drain, verified Monitor reset;
+EXTENSION artificial CPU Reader/virtual receive time. No GreyHound/new API reuse.
+Explicit single scope thread per rank: native control thread_local, no claim
+multi-thread/application-wide timer teardown. CPU PASS35new+127original; actual
+local macOS26.6.2 arm64/existing bundled CPython3.12.14. Source/path/function ledger,
+full real argv/cwd/host/log SHA/exits and preservation in
+docs/m6b-ready/task09-abi2-cpu. Main actual command bundled Python -B
+tests/task09_abi2_cpu.py via private run.py bridge05 exit0/no timeout;
+original8test entrypoints exit0; cursor contract --output <private-run>/cursor-output.
+Original bridge01 exit1 (reset word-order bug) and cursor caller argparse2 retained;
+no assertion/threshold reduction. bridge01 failed full source captured;
+intermediate02/03/04 full source NOT_CAPTURED, actual SHA retained, final05 verified.
+All alerts/final fault ranks false/empty; G04 numeric ambiguity remains. GPU/native
+ABI/ctypes/shared-memory path/Redis/server/cross-host clock/durable raw journal
+NOT_RUN or OPEN; M2b/M3/full G04/M5 native matrix not repeated. M6-B NOT_STARTED.
+Historical failures/cache/privacy/rights unchanged. Implementation commit/diff
+and final local Git head/tree bound in private Git receipts, no push or PR mutation.
+Next unique task independent TASK09 precise local HEAD review; STOP, no task10/M6-B.
+
+TASK09 implementation commit 5d15bffc263efaf194a3eb27d357ba1d11376acf / tree b5018d4882843f880f6a391a56c4b8b5d39a5de7, direct parent exactPR19.
+Actual48paths/2936additions/0deletions; staged diff check0. Final documentation
+seal only appends this binding; bridge05 runtime/test source hashes unchanged.
+Protected2022/append-only2 and changed48-file checker exit0 verified. No push;
+local final HEAD/tree/clean status in runs/task09-abi2-cpu-20261011/git-final. STOP.

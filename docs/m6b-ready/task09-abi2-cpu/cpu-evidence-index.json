@@ -1,0 +1,174 @@
+[
+  {
+    "case": "test_ambiguous_numeric_boundary_is_preserved",
+    "raw_sha256": "7ee8d145d4f013de34f9d410129970dbde6573ad052fc437e7e8105f946b2ccb",
+    "source": "ARTIFICIAL_CPU_READER",
+    "path": "docs/m6b-ready/task09-abi2-cpu/cpu-evidence/test_ambiguous_numeric_boundary_is_preserved.json",
+    "review_sha256": "8bfd33474554cc9d953b8972ed2ee138da70ae94de716b6276d2b66cdf83f17e"
+  },
+  {
+    "case": "test_bounded_drain_and_truth_fields_rejected",
+    "raw_sha256": "4845320d17021e50060b359ebe793d23f4110ff3b80c639327f680e55cd12f62",
+    "source": "ARTIFICIAL_CPU_READER"
+  },
+  {
+    "case": "test_bridge_restart_requires_fresh_reader_record_not_old_header",
+    "raw_sha256": "0a44de5a9db4b3c96468aa4523a09b408f2e88a069a146693319d249a4025d3d",
+    "source": "ARTIFICIAL_CPU_READER"
+  },
+  {
+    "case": "test_command_ack_exact_selection",
+    "raw_sha256": "1873593a5f2ed641b69bee5ba7c9f073ca33b22e79deb32a86cefd9dc4b18421",
+    "source": "ARTIFICIAL_CPU_READER"
+  },
+  {
+    "case": "test_controller_restart_fences_old_owner",
+    "raw_sha256": "6f385ec624891ae73f53ebe29a809302cffad3223e4fbb466e70a8271387e292",
+    "source": "ARTIFICIAL_CPU_READER"
+  },
+  {
+    "case": "test_corrupt_digest_gap_and_duplicate_rejected",
+    "raw_sha256": "f2a644a137014a00ad67486c197fd73ba2a59989f0439db7cdd320bf2045290b",
+    "source": "ARTIFICIAL_CPU_READER"
+  },
+  {
+    "case": "test_disconnect_and_reconnect_invalidates_epoch",
+    "raw_sha256": "a1b4a0ac80069ca02cdbb6c36a22c468eb3926faa918b617a5dcd5c313ebd340",
+    "source": "ARTIFICIAL_CPU_READER"
+  },
+  {
+    "case": "test_drain_snapshot_corruption_and_late_read_rejected",
+    "raw_sha256": "6c52fc3f7853f20d16dcd49ebe94e509e1cf599f2dce6543315a5fd1345ae4f9",
+    "source": "ARTIFICIAL_CPU_READER"
+  },
+  {
+    "case": "test_explicit_thread_declaration_and_unexpected_thread_refused",
+    "raw_sha256": "a59a8c9aa3e8f5f17fb098f2980d5f44e634aa5fb6f31d1f86eddbf95deea593",
+    "source": "ARTIFICIAL_CPU_READER",
+    "path": "docs/m6b-ready/task09-abi2-cpu/cpu-evidence/test_explicit_thread_declaration_and_unexpected_thread_refused.json",
+    "review_sha256": "aecd69b36c7c1df00f13ae4d54c13784bddeb42fdedc73c20d5f78c395269ee4"
+  },
+  {
+    "case": "test_forged_or_mixed_source_scope_cannot_arm",
+    "raw_sha256": "4e98131fd9327cb83194acbed84eb75af12a8710cc484e7ad0b3022b4315b132",
+    "source": "ARTIFICIAL_CPU_READER"
+  },
+  {
+    "case": "test_future_epoch_refused_without_ack",
+    "raw_sha256": "4a349579d974a3bec54dd3efe192c31f56cd4852539e1d05b4046daf54e63c2b",
+    "source": "ARTIFICIAL_CPU_READER"
+  },
+  {
+    "case": "test_group_scope_lineage_and_unfinished_drain_refused",
+    "raw_sha256": "a3ab8a5d69411868bd7bf9d1ca27a823693144c6bd1f10b0bfd36b102bee96e0",
+    "source": "ARTIFICIAL_CPU_READER"
+  },
+  {
+    "case": "test_hash_consistent_group_duration_mismatch",
+    "raw_sha256": "197e4fa912aff83813597fa2387e4e9fb0085348ef6a08501b58fa840ac01126",
+    "source": "ARTIFICIAL_CPU_READER"
+  },
+  {
+    "case": "test_header_and_command_ack_do_not_arm",
+    "raw_sha256": "e40ad8acbc7d91540a39aee59989c4be28dbff12ec9f8e7eeed3dd18c3fbc8d0",
+    "source": "ARTIFICIAL_CPU_READER"
+  },
+  {
+    "case": "test_invalid_profile_values_rejected",
+    "raw_sha256": "758daf6d669815c1133b400ae5a22f88b135c997a6232321a05f940bc1764540",
+    "source": "ARTIFICIAL_CPU_READER"
+  },
+  {
+    "case": "test_late_and_future_samples_cannot_enter_window",
+    "raw_sha256": "50d4c61b5604dd39411b066153a7d6a39ad53e358844e6fd7f63dee044913608",
+    "source": "ARTIFICIAL_CPU_READER"
+  },
+  {
+    "case": "test_local_restart_invalidates_epoch_and_old_boundaries",
+    "raw_sha256": "fab22cafe98b67fa2c83cbf34c56c40e04032e7c9a887ad2ccc68f4f8c71575f",
+    "source": "ARTIFICIAL_CPU_READER"
+  },
+  {
+    "case": "test_loss_closed_poison_and_replacement_reject",
+    "raw_sha256": "f6c5b73d6967618c6b2277b4ee297f46af39d69bcca3c306d5fb1792e29675d0",
+    "source": "ARTIFICIAL_CPU_READER"
+  },
+  {
+    "case": "test_missing_rank_data_rejected",
+    "raw_sha256": "ec2ded70949082ccda1b44bce239db8729b4b447744ac8995763da586e5c86b4",
+    "source": "ARTIFICIAL_CPU_READER"
+  },
+  {
+    "case": "test_missing_rank_scope_timeout_and_reset_blocks_new_epoch",
+    "raw_sha256": "bb67582b020b9965ea5480933a0588a8e9dc7ab143d6f572c0da33baafb42e0b",
+    "source": "ARTIFICIAL_CPU_READER"
+  },
+  {
+    "case": "test_mode_and_manifest_mismatch_rejected",
+    "raw_sha256": "6bf3af4522d0319c319068b2f6e467744941955e31bd6f0a31fed6059b72d982",
+    "source": "ARTIFICIAL_CPU_READER"
+  },
+  {
+    "case": "test_partial_reset_requires_fresh_monitor_record",
+    "raw_sha256": "0ab6ba489214ac90ed4207388d1e56ceb4bb9ea0e58dd815703e524bab2cfdd4",
+    "source": "ARTIFICIAL_CPU_READER",
+    "path": "docs/m6b-ready/task09-abi2-cpu/cpu-evidence/test_partial_reset_requires_fresh_monitor_record.json",
+    "review_sha256": "8dcb7432a5fdcf84a06969e1934f604dcc39c58e3e871ccbee237aea349c8506"
+  },
+  {
+    "case": "test_pre_request_record_cannot_be_relabelled",
+    "raw_sha256": "ac5c39950ff1fa9076a8a11c5a8c3294dcd1e693931177e132c0b02aaf52a41d",
+    "source": "ARTIFICIAL_CPU_READER"
+  },
+  {
+    "case": "test_request_read_ack_and_snapshot_errors_reject",
+    "raw_sha256": "cd26b1191f768a57564639e281618e65db797242ed81ef74f687b59ff54ee84e",
+    "source": "ARTIFICIAL_CPU_READER"
+  },
+  {
+    "case": "test_restart_during_partial_reset_requires_new_generation_scope",
+    "raw_sha256": "bbaf5dd15c0a014d23f34e507ec7b8cc6614ebbb373f83807e5a59f5999150e8",
+    "source": "ARTIFICIAL_CPU_READER",
+    "path": "docs/m6b-ready/task09-abi2-cpu/cpu-evidence/test_restart_during_partial_reset_requires_new_generation_scope.json",
+    "review_sha256": "33b5d88dc793f97f16076108d6ddca55b6470ec482ccb76591220b515d49463c"
+  },
+  {
+    "case": "test_sample_and_ready_hash_corruption_refused",
+    "raw_sha256": "040ddf678d4fe55d0ded04cf9744eb3460441ee761c935ee11158973f82c3ae4",
+    "source": "ARTIFICIAL_CPU_READER"
+  },
+  {
+    "case": "test_shared_group_keeps_records_and_independent_scopes",
+    "raw_sha256": "b1d3f042d7039bf5543cdd23137f3c1348b3682ca70799b09696cf5110a3fc1a",
+    "source": "ARTIFICIAL_CPU_READER",
+    "path": "docs/m6b-ready/task09-abi2-cpu/cpu-evidence/test_shared_group_keeps_records_and_independent_scopes.json",
+    "review_sha256": "f1198ad323b02cf9a973c745ac25a467be0739aa45b81d6c55fc4da4b4ae3876"
+  },
+  {
+    "case": "test_single_scope_is_insufficient_under_approved_g04",
+    "raw_sha256": "a6a45b3facc3728ccceb7af7cb4b87ffb6e6d2d2a9e9200c2cefa538b2789780",
+    "source": "ARTIFICIAL_CPU_READER"
+  },
+  {
+    "case": "test_stale_raw_epoch_is_audited_not_pooled",
+    "raw_sha256": "d2bcbc6525f29f250a139ad42269edb7e49c2a74286bc4791d5debc739cb9954",
+    "source": "ARTIFICIAL_CPU_READER"
+  },
+  {
+    "case": "test_two_epochs_strict_units_scope_and_reset",
+    "raw_sha256": "aad527e47357d6d0e89fd8a8c31f0cb6f27c8b07e99e676635839964d2843db6",
+    "source": "ARTIFICIAL_CPU_READER",
+    "path": "docs/m6b-ready/task09-abi2-cpu/cpu-evidence/test_two_epochs_strict_units_scope_and_reset.json",
+    "review_sha256": "64e47d79816250d14bc831183ac3169c12ac5441b0f348d6c5bac5059b9d2bb9"
+  },
+  {
+    "case": "test_unconfirmed_request_and_read_ack_refused",
+    "raw_sha256": "ca54cad0034833e255707848ab0c7ebbacaabe4aa11324921fa58b4ef6a6d014",
+    "source": "ARTIFICIAL_CPU_READER"
+  },
+  {
+    "case": "test_wrong_units_and_group_duration_mismatch",
+    "raw_sha256": "82a38f37c9653b01cae8b3fdd926181c4e6b43740a0085eed7f58093c3a5c18b",
+    "source": "ARTIFICIAL_CPU_READER"
+  }
+]

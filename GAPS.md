@@ -407,3 +407,15 @@ framework resume,no real Redis/native/GPU bridge/M6-B. Existing caller-clock
 confirmed_at_seconds semantics remain,distributed clock freshness OPEN. Broader
 G20 requires later boundary/transport/checkpoint validation and independent
 review; historical gaps/failures/privacy/rights unchanged. STOP after local task.
+
+TASK09 / 2026-10-11 (ADAPTATION, CPU engineering only): strict ACK selection,
+epoch/scope completeness and reset refusal implemented as explicit opt-in from
+PR19 exactb082d16939aab0d4ba4b9208475886c4b9ec808c. Native ABI2 exposes only
+requested/applied control, no command generation. Fresh post-request successful
+standalone/outer GroupStart record required in addition to header; process/thread
+scope pinned explicitly because native control is thread_local. Multi-thread reset,
+actual native ABI/GPU evidence, distributed sample clock/window and durable raw
+journal remain OPEN/NOT_RUN. Existing G04 approved assumptions reused unchanged;
+no scientific gap is silently closed, no M6-B or final diagnosis. 35new+127old CPU
+checks0, original reset comparator failure1/cursor caller2 retained. Sources and
+limits: docs/m6b-ready/task09-abi2-cpu/RESULT.md and SOURCE_LEDGER.json. STOP.
