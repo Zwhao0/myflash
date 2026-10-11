@@ -53,3 +53,21 @@ caller-search01 exit0只显示模块/测试调用，failstop-search01 rg exit1�
 无匹配，不是runtime失败。最终封存仅加入上述真实回执，checker补支持合法staged
 新增常规文件，仍拒绝已有文件mode/rename/delete变化；原科学断言全部不变。
 最后字节检查/diff及精确提交回读存私有final-git回执；本轮不发布、不运行后续任务。
+
+## TASK11 GitHub review publication / 2026-10-11
+
+Human explicitly authorizes GitHub push for ChatGPT review and next steps.
+ADAPTATION only STATUS/RESULT/validation publication receipts; original audit
+43b7711328e02c4ac3d8f536a97825396e1b288e retained. Earlier no-publication text
+records the prior authorization snapshot and is superseded by this request.
+All other packet/runtime/native/test/fixture/source/threshold bytes unchanged.
+Existing approved identity SSH443 ls-remote actual0; TASK10 base exactb517c5a
+verified, TASK11 branch absent. Ordinary push of the task branch and Draft PR
+against codex/task10-g09-protocol-review; final remote HEAD/tree/parent-chain
+and PR readback are bound in private publication receipts and final PR body.
+Actual argv/stdout/stderr/exit preserved privately; public argv redacted with
+original log SHA. No force/merge/main/predecessor changes, CPU rerun, GPU, Redis
+or TASK12 execution. M6B-READY BLOCKED. Initial stdin metadata helper SyntaxError1
+was before writes, tool transcript only/raw NOT_CAPTURED; corrected ASCII source.
+Next unique action independent precise-head review; then separately authorize
+TASK12 B01 confirmed rank0 -> approved detector -> versioned Profile request.

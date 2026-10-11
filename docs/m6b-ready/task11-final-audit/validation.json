@@ -428,5 +428,100 @@
   },
   "static_checker_seal": "Added support for staged authorized new regular files; still rejects existing mode/rename/delete changes. No runtime assertions changed.",
   "changed_text_check": "10 changed paths, added STATUS/GAPS text only; findings0; not full history or rights audit",
-  "final_seal": "Only actual check receipts appended; final byte verification and diff check recorded privately before commit"
+  "final_seal": "Only actual check receipts appended; final byte verification and diff check recorded privately before commit",
+  "publication_update": {
+    "authorized": true,
+    "authorization_date": "2026-10-11",
+    "request": "Human: push to GitHub for ChatGPT review and next steps",
+    "classification": "ADAPTATION publication receipts only",
+    "audit_commit": "43b7711328e02c4ac3d8f536a97825396e1b288e",
+    "base": "b517c5a922d52895e274c3758b5b7c2c409d91ca",
+    "head_branch": "codex/task11-m6b-ready-audit",
+    "base_branch": "codex/task10-g09-protocol-review",
+    "base_remote_verified": true,
+    "identity_read": {
+      "label": "identity-read01",
+      "argv": [
+        "git",
+        "-c",
+        "core.sshCommand=ssh -i <approved-github-identity> -o IdentitiesOnly=yes -o BatchMode=yes -o ConnectTimeout=10",
+        "ls-remote",
+        "ssh://git@ssh.github.com:443/Zwhao0/myflash.git"
+      ],
+      "cwd": "<task11-checkout>",
+      "host": "<local_macOS_host>",
+      "platform": "macOS-26.6.2-arm64-arm-64bit",
+      "machine": "arm64",
+      "python": "3.9.6 (default, May 22 2026, 11:13:45) \n[Clang 21.0.0 (clang-2100.1.1.101)]",
+      "start_utc": "2026-10-11T08:06:27.846654+00:00",
+      "end_utc": "2026-10-11T08:06:30.429289+00:00",
+      "exit_code": 0,
+      "timeout": false,
+      "logs": {
+        "stdout": {
+          "path": "<task11-private-run>/publication/identity-read01.stdout",
+          "sha256": "220b2c4da3c084259b695456efeac904e686a02dfde817c133c89054beff4a36"
+        },
+        "stderr": {
+          "path": "<task11-private-run>/publication/identity-read01.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      }
+    },
+    "raw_receipt_sha256": "72c99f0f1d3043ec8b853b7ce08a7ebcd9da879791532f22eda28358ff5159a8",
+    "execution_authorized": false,
+    "status": "PREPARED_NOT_YET_PUSHED",
+    "ci": "NOT_VERIFIED",
+    "next_unique_action": "Independent exact remote TASK11 PR review; TASK12 B01 implementation still requires separate authorization",
+    "early_metadata_helper": {
+      "exit_code": 1,
+      "reason": "stdin source encoding SyntaxError before writes",
+      "raw": "NOT_CAPTURED, tool transcript retained; corrected ASCII source"
+    },
+    "local_checks": {
+      "verify01": {
+        "exit_code": 0,
+        "receipt": "/Users/henry/Desktop/FLASH_Codex/runs/task11-m6b-ready-audit-20261011/publication/verify01.receipt.json",
+        "logs": {
+          "stdout": {
+            "path": "/Users/henry/Desktop/FLASH_Codex/runs/task11-m6b-ready-audit-20261011/publication/verify01.stdout",
+            "sha256": "414f51bf621113c57e6111299ea7d432c1689d4dfa7eff5e57d5c31b687d1efe"
+          },
+          "stderr": {
+            "path": "/Users/henry/Desktop/FLASH_Codex/runs/task11-m6b-ready-audit-20261011/publication/verify01.stderr",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          }
+        }
+      },
+      "changed-text01": {
+        "exit_code": 0,
+        "receipt": "/Users/henry/Desktop/FLASH_Codex/runs/task11-m6b-ready-audit-20261011/publication/changed-text01.receipt.json",
+        "logs": {
+          "stdout": {
+            "path": "/Users/henry/Desktop/FLASH_Codex/runs/task11-m6b-ready-audit-20261011/publication/changed-text01.stdout",
+            "sha256": "18ed9edd2d0dcbcdc4d69ce484e20593a31dc716b89c086f57164af0f3178f08"
+          },
+          "stderr": {
+            "path": "/Users/henry/Desktop/FLASH_Codex/runs/task11-m6b-ready-audit-20261011/publication/changed-text01.stderr",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          }
+        }
+      },
+      "diff-check01": {
+        "exit_code": 0,
+        "receipt": "/Users/henry/Desktop/FLASH_Codex/runs/task11-m6b-ready-audit-20261011/publication/diff-check01.receipt.json",
+        "logs": {
+          "stdout": {
+            "path": "/Users/henry/Desktop/FLASH_Codex/runs/task11-m6b-ready-audit-20261011/publication/diff-check01.stdout",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          "stderr": {
+            "path": "/Users/henry/Desktop/FLASH_Codex/runs/task11-m6b-ready-audit-20261011/publication/diff-check01.stderr",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          }
+        }
+      }
+    },
+    "audit_commit_unchanged_files": 2081
+  }
 }
