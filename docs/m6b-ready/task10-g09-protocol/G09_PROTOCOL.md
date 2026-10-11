@@ -177,15 +177,24 @@ drain/reset成功率、拒判/不支持原因。原始CUDA duration分布与host
 缺rank、坏duration、loss、旧epoch、未完成Group、窗口不明直接INCOMPLETE；不补零。
 NO_CANDIDATE和INCOMPLETE/AMBIGUOUS_SPEC分别统计。
 
-**Localization**：online输出原有 provisional候选集合 C，对独立root集合 R
-计算TP_L=|C∩R|、FP_L=|C−R|、FN_L=|R−C|、集合完全匹配 `C=R`；ties全保留。
-报告micro分子/分母、逐trial指标、拒判率；拒判有R时为无命中/FN，不删出all-injection。
+**Localization**（候选有效性口径为 ADAPTATION）：`C_raw` 是online输出的原始
+provisional候选集合，仅用于诊断性候选指标；ties、原始候选、冲突及拒判记录全保留，
+不改写G04生产算法、科学阈值或历史测试。对独立root集合 R，诊断性指标单列
+TP_raw=|C_raw∩R|、FP_raw=|C_raw−R|、FN_raw=|R−C_raw|及 `C_raw=R`，
+不能作为正式链路成功定位的证据。
+仅当Profile完整且定位状态为 `PROVISIONAL_CANDIDATE` 时，`C_valid=C_raw`；
+其他情况 `C_valid=∅`，包括 `INCOMPLETE`、`AMBIGUOUS_SPEC`、`NO_CANDIDATE`
+及无定位结果。正式provisional指标计算TP_L=|C_valid∩R|、FP_L=|C_valid−R|、
+FN_L=|R−C_valid|及集合完全匹配 `C_valid=R`。
+报告micro分子/分母、逐trial指标、拒判率；拒判且R非空时TP_L=0、FN_L=|R|，
+即使保留的C_raw命中真值rank也不计成功，不删出all-injection。
 forced完整窗口的conditional指标明确独立列；无自动触发时自动链路计未命中。
 normal R=[]时空集合匹配可报告，但precision分母0仍UNDEFINED。
 机制证据另报目标Event mean/其他rank mean、最小rank与真值吻合比例、
 max-group/min-rank/CV/20%每道筛选与全部分布，不选“好看”的组。
 因现有F-PROVISIONAL，最终diagnosis precision/recall及最终E2E为NOT_IMPLEMENTED；
-只可报告automatic detection→valid Profile→正确provisional candidate的链路召回，
+只可报告automatic detection→完整Profile→正确provisional candidate的链路召回，
+该正式链路召回使用C_valid；拒判时真值rank计FN，不能以C_raw代替C_valid，
 不得改名为论文最终故障识别率。共享链路root无法定义时依第2节NOT_APPLICABLE。
 
 **Fail-stop**：单独记录FLASH原 `failstop_ranks` 集合 H，以及根集合 R、
