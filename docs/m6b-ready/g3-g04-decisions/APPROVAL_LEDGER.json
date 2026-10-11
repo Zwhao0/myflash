@@ -1,0 +1,163 @@
+{
+  "schema_version": 1,
+  "task": "M6B-READY/task06/G04",
+  "status": "REQUIRES_OWNER_DECISION",
+  "analysis_only": true,
+  "final_alert": false,
+  "approved": null,
+  "predecessor": {
+    "pr": "https://github.com/Zwhao0/myflash/pull/16",
+    "head": "7588873d705668497694ac1d12041db5005e4b49",
+    "tree": "5b345197cb70c95c66c65870c8608a9091c4621d",
+    "owner_review": "PASS reported by human in current chat",
+    "task06_publication_authorized": true
+  },
+  "dimensions": [
+    {
+      "id": "stage1",
+      "recommended": "S1-MAX",
+      "options": [
+        "S1-MAX"
+      ],
+      "classification": "PAPER",
+      "source": "p30/p34 and Eq3-1 p41",
+      "contract": "max local communicator mean; singleton excluded; single group direct; CV>=0.1; max ties retained; plot means separate",
+      "risk": "Zero CV cannot force selection; max differs from plotting score",
+      "approved_choice": null,
+      "approved_by": null,
+      "approval_evidence": null,
+      "implementation_authorized": false
+    },
+    {
+      "id": "communicator_weight",
+      "recommended": "W-EQUAL",
+      "options": [
+        "W-EQUAL",
+        "W-SCOPE"
+      ],
+      "classification": "ADAPTATION",
+      "source": "p30 unspecified; task06; docs/m4/DESIGN.md",
+      "contract": "equal per local-instance means versus n_c weighted per-instance deduplicated scope observations within selected hash",
+      "risk": "Known flip rank1 vs rank0; shared scopes are correlated, no independent random sample claim",
+      "approved_choice": null,
+      "approved_by": null,
+      "approval_evidence": null,
+      "implementation_authorized": false
+    },
+    {
+      "id": "rank_20pct_reference",
+      "recommended": "R-GROUP",
+      "options": [
+        "R-GROUP",
+        "R-PEER",
+        "R-MIN-DEN",
+        "R-NEAREST"
+      ],
+      "classification": "ADAPTATION",
+      "source": "p31 missing; Eq3-2 p42",
+      "contract": "group_mean; peer_mean; peer_over_min; nearest_peer, low-latency direction on minimum ranks only",
+      "risk": "Normal candidates remain; nearest is EXTENSION; denominator0 stays undefined",
+      "approved_choice": null,
+      "approved_by": null,
+      "approval_evidence": null,
+      "implementation_authorized": false
+    },
+    {
+      "id": "rank_20pct_comparator",
+      "recommended": "T-GE",
+      "options": [
+        "T-GE",
+        "T-GT"
+      ],
+      "classification": "ADAPTATION",
+      "source": "p31 unspecified equality",
+      "contract": "mathematical >=1/5 or >1/5; do not inherit G13 strict test",
+      "risk": "Exact20% differs; floating mean can move nominal boundary",
+      "approved_choice": null,
+      "approved_by": null,
+      "approval_evidence": null,
+      "implementation_authorized": false
+    },
+    {
+      "id": "CV_convention",
+      "recommended": "C-GUARD",
+      "options": [
+        "C-GUARD",
+        "C-POP",
+        "C-SAMPLE"
+      ],
+      "classification": "ADAPTATION",
+      "source": "p31/p34 unspecified ddof",
+      "contract": "population and sample saved; guard disagreement across0.1; single convention alternatives diagnostic only",
+      "risk": "N2 sample=sqrt2*population; zero mean undefined; N1 sample undefined",
+      "approved_choice": null,
+      "approved_by": null,
+      "approval_evidence": null,
+      "implementation_authorized": false
+    },
+    {
+      "id": "numerical_boundary",
+      "recommended": "N-GUARD",
+      "options": [
+        "N-GUARD",
+        "N-BINARY"
+      ],
+      "classification": "ADAPTATION",
+      "source": "audit03 arithmetic_boundaries",
+      "contract": "compare binary64 gate with exact rational gate over input rank/group means; abstain on disagreement; no epsilon",
+      "risk": "Does not repair physical precision or earlier averaging; N-BINARY alternate not separately swept",
+      "approved_choice": null,
+      "approved_by": null,
+      "approval_evidence": null,
+      "implementation_authorized": false
+    },
+    {
+      "id": "minimum_support",
+      "recommended": "Q-TWO",
+      "options": [
+        "Q-TWO",
+        "Q-OBSERVE"
+      ],
+      "classification": "ADAPTATION",
+      "source": "p31 underspecified small samples",
+      "contract": "each contributing local communicator instance >=2 deduplicated scopes versus observations only",
+      "risk": "14 original valid synthetic fixtures become insufficient under Q-TWO; all unchanged old assertions pass",
+      "approved_choice": null,
+      "approved_by": null,
+      "approval_evidence": null,
+      "implementation_authorized": false
+    },
+    {
+      "id": "conflicts_and_final",
+      "recommended": "F-PROVISIONAL",
+      "options": [
+        "F-PROVISIONAL",
+        "F-SINGLE",
+        "F-TWO"
+      ],
+      "classification": "ADAPTATION",
+      "source": "p31 underspecified conflict/confidence/multiple faults",
+      "contract": "unique candidate remains provisional; no voting; optional hypothetical single/two-label final eligibility",
+      "risk": "Original normal M4 two-label agreement falsely qualifies both epochs; multi-final requires separately approved EXTENSION",
+      "approved_choice": null,
+      "approved_by": null,
+      "approval_evidence": null,
+      "implementation_authorized": false
+    }
+  ],
+  "approval_requirements": [
+    "Approve each dimension independently including scope/count definitions and tie/zero/missing rules",
+    "Task07 implementation requires explicit separate authorization",
+    "No final alerts until relevant G09/G20/loop admission is separately approved"
+  ],
+  "formula_options": {
+    "W-EQUAL": "sum(m_c)/len(C_r)",
+    "W-SCOPE": "sum(n_c*m_c)/sum(n_c)",
+    "R-GROUP": "(mean(a_all)-a_r)/mean(a_all)",
+    "R-PEER": "(mean(a_other)-a_r)/mean(a_other)",
+    "R-MIN-DEN": "(mean(a_other)-a_r)/a_r",
+    "R-NEAREST": "(min(a_other)-a_r)/min(a_other)",
+    "CV-population": "sqrt(sum((x-mu)^2)/N)/mu",
+    "CV-sample": "sqrt(sum((x-mu)^2)/(N-1))/mu"
+  }
+}

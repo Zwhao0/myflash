@@ -340,3 +340,28 @@ new+36old and560historical replays pass; no new native fits/GPU or claim of all
 last-bit FAIL retained; no cross-version exact equality guarantee. Historical
 failure/NOT_CAPTURED/cache gaps unchanged. G04/G09/G20/M6-B require later gates;
 STOP for independent task05 exact-head Draft review, no next task execution.
+
+
+## M6B-READY task06 G04 options / 2026-10-11
+G04 remains OPEN / REQUIRES_OWNER_DECISION. PAPER pp30/31/34 max-group/min-rank,
+CV0.1,20percent unspecified reference/equality; Eq3-1 p41 uses plot group mean,
+Eq3-2 p42 uses rank-group mean denominator. Human predecessor PR16 exact
+7588873d/tree5b345197 independent PASS authorizes this decision packet/publication
+only. No scientific selection approved, no localization/default changes.
+Separate options and null approval slots: docs/m6b-ready/g3-g04-decisions/
+APPROVAL_LEDGER.json; prose G04_DECISION_PACKET.md. Recommend equal localcomm
+means, group rank mean denominator inclusive>=20percent, population primary
+with sample-convention guard, numeric arithmetic disagreement guard/no epsilon,
+>=2deduplicated scopes per contributing local instance, conservative provisional
+with ties/different-rank tag evidence AMBIGUOUS_SPEC. Weights/final alternatives
+and all data retained; shared Group members not independent observations.
+Read-only65original fixture assertions/32fullM4predictions/40M3public windows
+pass on local existing3.12.14;137x288policy sensitivity, no new fits/GPU.
+Real core normals still3/4candidates, five5/10conflicts, original normal five
+2/2dual-tag candidates; agreement cannot prove fault/confidence. Nominal20percent
+andCV0.1 arithmetic boundary differences explicitly preserved. Q-TWO insufficiency
+of14synthetic inputs is proposed scope, not changed tests/M4 failures.
+G09/G20/realloop/multi-final/physicalfault rates remain unapproved; all new science
+approved=null, final_alert=false. Historical gaps/failures/rights unchanged.
+Next only exact-head review and independent choices, then separately authorized
+task07; STOP after task06 publication.

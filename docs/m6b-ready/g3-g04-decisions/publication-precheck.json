@@ -1,0 +1,59 @@
+{
+  "status": "PASS_OWN_CHANGED_FILES_ONLY",
+  "receipts": [
+    {
+      "argv": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "cwd": "<project>",
+      "host": "local-macOS",
+      "platform": "macOS-26.6.2-arm64-arm-64bit",
+      "exit_code": 0,
+      "timeout": false,
+      "seconds": 0.8409609794616699,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "raw_receipt_sha256": "c1701fc2a6b03e4bde839379f96c6060afcf48177cfed96071bcde68afab6a3c"
+    },
+    {
+      "argv": [
+        "git",
+        "diff",
+        "--cached",
+        "--check"
+      ],
+      "cwd": "<project>",
+      "host": "local-macOS",
+      "platform": "macOS-26.6.2-arm64-arm-64bit",
+      "exit_code": 0,
+      "timeout": false,
+      "seconds": 0.04051041603088379,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "raw_receipt_sha256": "86bd09f811bb097343a577a3c1d14d979eb7889ec8e7b23888b4d0d13054e96c"
+    },
+    {
+      "argv": [
+        "<existing-bundled-python>",
+        "-B",
+        "<project>/runs/m6b-ready-g3-g04-20261011/changed_scope_check.py"
+      ],
+      "cwd": "<project>",
+      "host": "local-macOS",
+      "platform": "macOS-26.6.2-arm64-arm-64bit",
+      "exit_code": 0,
+      "timeout": false,
+      "seconds": 0.3452186584472656,
+      "stdout_sha256": "7177a93c5365b2bb942aea5efd33434cbc40026b7559be35b138677d9f2241ba",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "raw_receipt_sha256": "77f29b39deeebc06be25cb4f489f3f8306706c7f12e8e1ce2adef96fc7d81385"
+    }
+  ],
+  "checked_changed_files": 28,
+  "findings": 0,
+  "history_privacy": "DEFERRED/OPEN",
+  "whole_tree_scan": "NOT_RUN_LOCAL",
+  "full_ci_scope": "existing automatic text workflow only"
+}
