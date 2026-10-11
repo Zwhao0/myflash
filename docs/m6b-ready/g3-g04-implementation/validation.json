@@ -1,0 +1,68 @@
+{
+  "status": "PASS",
+  "machine": "zhangweihaodeMacBook-Air.local",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "python": "Python 3.12.14",
+  "tests": {
+    "new_cpu_tests": 20,
+    "cpu01_exit": 1,
+    "cpu02_exit": 0,
+    "original65fixture_exit": 0,
+    "original65assertions": "unchanged and PASS",
+    "history01_exit": 0
+  },
+  "history": {
+    "status": "PASS",
+    "default_full_predictions_equal": 32,
+    "fixtures": 65,
+    "approved_normalized_replays": 97,
+    "single_scope_valid_to_INCOMPLETE": [
+      "three_groups_max_then_min",
+      "max_is_not_clique_score",
+      "stage2_cv_below",
+      "cv_boundary_exact",
+      "std_convention_disagreement",
+      "normal_equal",
+      "zero_mean",
+      "same_members_distinct_hash",
+      "multitag_conflict",
+      "nested_group_shared_members",
+      "aggregation_weights_disagree",
+      "minimum_tie",
+      "subnormal_finite_equal",
+      "large_finite_no_overflow"
+    ],
+    "approved_statuses": {
+      "PROVISIONAL_CANDIDATE": 32,
+      "INCOMPLETE": 55,
+      "NO_CANDIDATE": 5,
+      "AMBIGUOUS_SPEC": 5
+    },
+    "new_native_fits": 0,
+    "new_gpu_runs": 0,
+    "final_alert": false,
+    "reused_task06_matrix_sha256": "a50cbadbee7f2125587b8901115ec2d862b86ddd67fbd44fbe582f824ed795a3"
+  },
+  "source_sha256": {
+    "flash/localization.py": "b32008fe4800f86b2fe8dc27196db2b3d2daaf555598e77ddd744d9c7d3e805a",
+    "flash/profile_input.py": "54d61ba4f579cee0622a023b76db8dd4be9587b01fce98bc68842253bf27a8c9",
+    "tests/m4_offline.py": "2979c9dd3ffd48d8015ceed73a2381a63affd63418fb0461bc4eb9b12d6848ef",
+    "tests/m6b_ready_approved_localization.py": "0426e2601e3f601fb8c36df1568d375385922d07323695de497500f816c39403",
+    "docs/m6b-ready/g3-g04-implementation/verify_history.py": "a43187673305de1ffa0a6ab18928d8e046d306b0123095d06e2f35f802df0565"
+  },
+  "final_fault_ranks": [],
+  "final_alert": false,
+  "not_run": [
+    "GPU/NCCL",
+    "native compile/fit",
+    "M5 native matrix",
+    "Redis services",
+    "fault injection",
+    "server probe",
+    "M6-B",
+    "task08",
+    "merge",
+    "privacy专项"
+  ],
+  "historical_gap": "915cache preinstall SHA NOT_CAPTURED; unchanged"
+}

@@ -643,3 +643,51 @@ bound in private publication receipts and independent PR. CI text-only is
 not CPU or science proof. Next unique action: independent task06 precise-head
 review and complete per-dimension G04 approval; STOP, no task07 before explicit
 implementation authorization.
+
+
+## M6B-READY task07 G04 approved opt-in / 2026-10-11
+Human explicitly reports PR17 exact8fa096c9af00449a1ce940f99d153406cfe323e1 /
+5f05021646305fffd23663fe42bfa92b7bac7d43 independently PASS and authorizes all
+S1-MAX/W-EQUAL/R-GROUP/T-GE/C-GUARD/N-GUARD/Q-TWO/F-PROVISIONAL, task07 CPU
+implementation and independent Draft publication. Independent branch
+codex/m6b-ready-g3-g04-implementation starts exactly there. New APPROVAL.json;
+original null approval ledger untouched. PAPER max-group/min-rank/plot separation;
+ADAPTATION approved guards/equal means/provisional; EXTENSION artificial CPU tests.
+Only source flash/localization.py adds analyze_approved_g04(bundle) and Fraction
+import; original default module functions/CLI/controller/profile schema untouched.
+W-SCOPE diagnostics only; final_fault_ranks=[]/final_alert=false every path.
+
+Local MacBook Air/macOS26.6.2 arm64/existing bundled CPython3.12.14 CPU PASS:
+new20tests cpu02 exit0; original65fixtures unchanged assertions and expected
+24exit0/41exit2 pass parent0; history01 exit0,32whole default predictions exact
+equal;97approved replays match task06 recommended state/candidate sets, including
+14valid original single-scope inputs INCOMPLETE without label/sample mutation.
+Max-group/min-rank passing ties, weights flip,19/20/21%,float/exact disagreement,
+CV conventions/zero/insufficient,Group dedup/identity/shared scope/conflicts tested.
+Literal approved (mu-min)/mu makes [8,12]us exact20% pass; original [80,120]us
+float mean99.99999999999999 remains AMBIGUOUS_SPEC/no epsilon/rounding/mean change.
+Normal candidates/dual-tag possible false positives and conflicts retained.
+
+Actual commands/host/exits/raw logs/source/input SHA and protected files:
+docs/m6b-ready/g3-g04-implementation; private
+runs/m6b-ready-g3-g04-implementation-20261011. Full argv in commands.json;
+existing-bundled-python -B tests/m6b_ready_approved_localization.py -v;
+same -B tests/m4_offline.py --output <private-run>/m4-original;
+same -B docs/m6b-ready/g3-g04-implementation/verify_history.py
+--output <private-run>/history01. cpu01 exit1 raw/source snapshot retained,
+new test second-scope declaration omission corrected, assertion unchanged.
+Two evidence builder exit1 snapshots/logs retained (Fraction import prefix,
+extra newline), final original module-body strict byte verification passes;
+root Git128 transcript-only/raw NOT_CAPTURED. Original failure/history/cache
+915 gap/rights/privacy DEFERRED/OPEN unchanged. New fits/compile/M5 matrix/
+GPU/NCCL/Redis/fault injection/server probe/privacy专项/M6-B/task08/merge NOT_RUN.
+CPU functionality only; G09/G20 remain OPEN. Final commit/diff/head/tree and
+Draft readback bound by publication receipts/PR, no self-referential SHA claim.
+Next unique action independent exact-head ChatGPT review; STOP after publication.
+
+Task07 implementation commit fb88d40f235a822554d845c323211e0bd706f64a / tree 56eaa998ee0deff9341cbd081b9beb74a30fc0f8.
+Implementation diff vs PR17:36paths/3088additions/0deletions. Final documentation
+seal adds command/commit/preservation receipts only; executed source unchanged.
+1978protected baseline files and original localization body verified unchanged;
+STATUS/GAPS append-only. Staged diff check actual0. Final precise head/tree
+will be bound in new Draft PR and private publication receipts; STOP for review.

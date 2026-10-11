@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/Users/henry/Desktop/FLASH_Codex/runs/m6b-ready-g3-g04-implementation-20261011/prepare_evidence.py", line 40, in <module>
+    assert (root/'flash/localization.py').read_bytes().startswith(original)
+AssertionError

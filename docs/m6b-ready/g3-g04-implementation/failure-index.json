@@ -1,0 +1,36 @@
+{
+  "current": [
+    {
+      "id": "cpu01",
+      "exit_code": 1,
+      "reason": "New Group regression constructed a second unique scope but retained expected_samples=1; original completeness validation correctly rejected it. Repaired only declaration to2; no assertion weakened.",
+      "stdout": "cpu01.stdout",
+      "stderr": "cpu01.stderr",
+      "source_snapshot": "cpu01-source"
+    },
+    {
+      "id": "prepare-evidence01",
+      "exit_code": 1,
+      "reason": "Evidence builder assumed literal source prefix but new stdlib Fraction import precedes unchanged original functions. Corrected verifier strips exactly that import and compares entire original module bytes.",
+      "stdout": "prepare-evidence.stdout",
+      "stderr": "prepare-evidence.stderr",
+      "source_snapshot": "private prepare-evidence01-source.py"
+    },
+    {
+      "id": "prepare-evidence02",
+      "exit_code": 1,
+      "reason": "Verifier added an extra newline to already newline-terminated original prefix; fixed exact byte equality after byte-length diagnosis.",
+      "stdout": "prepare-evidence02.stdout",
+      "stderr": "prepare-evidence02.stderr",
+      "source_snapshot": "private prepare-evidence02-source.py"
+    },
+    {
+      "id": "initial-root-git",
+      "exit_code": 128,
+      "reason": "Workspace root is not a Git repository; selected approved same-project PR17 checkout instead",
+      "evidence": "tool transcript",
+      "raw": "NOT_CAPTURED"
+    }
+  ],
+  "history": "All predecessor failures/NOT_CAPTURED and historical915cache preinstall SHA gap preserved unchanged; no source or history backfill"
+}

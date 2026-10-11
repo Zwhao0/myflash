@@ -365,3 +365,23 @@ G09/G20/realloop/multi-final/physicalfault rates remain unapproved; all new scie
 approved=null, final_alert=false. Historical gaps/failures/rights unchanged.
 Next only exact-head review and independent choices, then separately authorized
 task07; STOP after task06 publication.
+
+
+## Task07 G04 owner-approved engineering rules / 2026-10-11
+G04 ACCEPTED_ASSUMPTION for explicitly approved S1-MAX/W-EQUAL/R-GROUP/T-GE/
+C-GUARD/N-GUARD/Q-TWO/F-PROVISIONAL. Human reports exact PR17 independently PASS
+and authorizes task07 CPU implementation/publication. Independent approval in
+docs/m6b-ready/g3-g04-implementation/APPROVAL.json; historical task06 null slots
+and original gap text unchanged. PAPER max-group/min-rank/plot mean separation;
+ADAPTATION input-mean rational numeric guards, equal instances,20%inclusive,
+per-instance2dedup-scopes and provisional-only. New analyze_approved_g04(bundle)
+opt-in in flash/localization.py; old analyze/default/control/profile unchanged.
+CPU20new/65old assertions/32whole default outputs/97approved replays PASS actual
+local CPython3.12.14, exits0 and source/log SHA in implementation evidence.
+14original valid single-scope inputs now INCOMPLETE only on new entry; original
+labels/assertions retained. W-SCOPE flip diagnostic never votes; literal R-GROUP
+[8,12]exact20% passes, old[80,120]numeric disagreement still abstains. Normal
+candidates, dual-tag possible false positives and conflicts preserved; final
+always empty. Does not resolve G09/G20 or authorize production/final/M6-B/task08.
+Historical failures/cache915preinstall gap/rights/privacy unchanged; no new
+GPU/native/service evidence. Stop for independent task07 exact-head Draft review.
